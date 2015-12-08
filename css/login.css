@@ -1,9 +1,61 @@
+#loginContainer {
+	width:400px;
+	height:190px;
+	background: #00C5CD;
+	position: relative;
+	border-radius:5px;
+}
+
+#loginForm {
+	
+}
 label {
 	display: block;
+	color:red;
 }
 #submitLog {
 	display: block;
+	position: relative;
+	left:10px;
+	color:#fff;
+	background: #00F5CD;
+	outline:none;
+	border:1px solid #F7F7F7;
+	padding:10px;
+	border-radius:5px;
 }
-#loginContainer {
+
+.loginInput {
 	width:200px;
+	height:20px;
+	outline:none;
+	margin:10px;
+}
+#inputContainer {
+	width:200px;
+	margin:auto;
+	position: relative;
+	top:10px;
+
+}
+#user {
+	position: absolute;
+	top:-10px;
+	left:10px;
+
+}
+
+#pass {
+	position: absolute;
+	top:-10px;
+	left:10px;
+}
+.valContain {
+	position: relative;
+}
+
+h1 {
+	margin:0;
+	text-align: center;
+	color:#fff;
 }
