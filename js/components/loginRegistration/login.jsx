@@ -6,6 +6,7 @@ var test = new User();
 
 var Login = React.createClass({
 	_submit: function(e) {
+		var router =this.props.router;
 		e.preventDefault();
 		var username = $("#username").val();
 		var password = $("#password").val();

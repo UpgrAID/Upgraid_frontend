@@ -18,14 +18,13 @@ var Registration = React.createClass({
     },
     render: function() {
         return(
-            <div id="RegistrationContainer">
+            <div id="registrationContainer">
                 <form onSubmit={this._submit}>
+                <h2>Registration</h2>
                     <label>First Name:</label>
                     <input />
                     <label htmlFor="username">Username</label>
                         <input type="text" onChange={this._handleInputChange}/>
-                    <label htmlFor="username">Username</label>
-                        <input onChange={this._handleInputChange}/>
                     <label htmlFor="password">Password</label>
                         <input onChange={this._handleInputChange}/>
                     <label htmlFor="password-confirmation">Confirm Password</label>
