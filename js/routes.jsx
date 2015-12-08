@@ -2,12 +2,13 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var Backbone= require('backbone');
 var GoalList = require('./components/profilePage/goalListApp.jsx');
+
 	var Router=Backbone.Router.extend({  
 	  initialize: function () {
 	    Backbone.history.start({pushState: true});
 	  },
 	  routes: {
-	    "profile:/username":'profile'
+	    'profile:/username':'profile'
 	    "":"index"
 	    
 	    
