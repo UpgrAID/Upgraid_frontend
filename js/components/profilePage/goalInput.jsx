@@ -14,7 +14,7 @@ var GoalInput = React.createClass({
 
 test = new Goal; 
 		test.set({
-			
+
 			'title':$('#goalInput').val() 
 		})
 		test.save({}, {
@@ -28,7 +28,7 @@ test = new Goal;
 	},
 	render: function() {
 		return(
-			<form onSubmit={this._submit}>
+			<form method='POST'onSubmit={this._submit}>
 			<input id="goalInput" placeholder='test'/>
 			</form>)
 	}

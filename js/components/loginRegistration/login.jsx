@@ -2,7 +2,6 @@ var React =require('react');
 var User = require('../../models/user');
 var Backbone = require('backbone');
 
-
 var test = new User();
 
 var Login = React.createClass({
@@ -18,6 +17,7 @@ var Login = React.createClass({
 		}).then(function(resp){
 			console.log(resp);
 			setToken(resp.token);
+			router.navigate('profile/' + username, {trigger:true});
 			
 			
 		})

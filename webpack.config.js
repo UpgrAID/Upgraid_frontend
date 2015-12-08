@@ -9,7 +9,8 @@ module.exports = {
  plugins: [
    new webpack.ProvidePlugin({
      "_": "underscore",
-     "$": "jquery"
+     "$": "jquery",
+     "backbone":"backbone"
    })
  ],
  module: {
