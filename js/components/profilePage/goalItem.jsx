@@ -6,9 +6,10 @@ var Item = require('./item.jsx')
 var GoalItem = React.createClass({
 	
 	render: function() {
+
 		return(<ul key={this.props.objectId} className="listContainer">
 				{this.props.data.map(function(obj){
-					return(<Item data={obj.title}/>)
+					return(<Item data={obj.title} id={obj.id}/>)
 				})}	
 				</ul>
 

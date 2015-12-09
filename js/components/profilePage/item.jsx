@@ -5,7 +5,7 @@ var Item = React.createClass({
 		var props=this.props;
 		console.log(props);
 		var Goal = Backbone.Model.extend({
-			url:'https://safe-brook-9891.herokuapp.com/api/goals/',
+			url:'https://safe-brook-9891.herokuapp.com/api/goals/'+props.id,
 			initialize: function() {
 			console.log('Making Goal.')
 	}
@@ -18,7 +18,7 @@ var Item = React.createClass({
 
 		var collection = new GoalCollection(this.props);
 		
-		var item = collection.get(props.objectId);
+		var item = collection.get(props.id);
 		console.log(item);
 		
 		
