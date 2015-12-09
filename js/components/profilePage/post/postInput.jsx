@@ -44,9 +44,9 @@ var PostInput = React.createClass({
 	render:function() {
 		return(<form onSubmit={this._submit}>
 					<h2>Posts</h2>
-					<input id="titleInput" onChange={this.state.value}/>
-					<textarea id="descriptionInput"onChange={this.state.value}></textarea>
-					<button type="submit">Submit</button>
+					<input id="titleInput"/>
+					<textarea id="descriptionInput"></textarea>
+					<button  id="postBtn" type="submit">Submit</button>
 				</form>
 			  )
 		}

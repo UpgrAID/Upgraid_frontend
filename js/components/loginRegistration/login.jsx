@@ -39,11 +39,11 @@ var Login = React.createClass({
 					<div id="inputContainer">
 						<div className='valContain'>
 						<label id="user"></label>
-						<input id="username" className="loginInput" placeholder="username"/>
+						<input id="username" className="loginInput" placeholder="username" value="thomas1117"/>
 						</div>
 						<div className='valContain'>
 						<label id="pass"></label>
-						<input id="password" className="loginInput" placeholder="password" type="password"/>
+						<input id="password" className="loginInput" placeholder="password" value="1234567q"type="password"/>
 						</div>
 						<button id="submitLog" type="submit">Submit</button>
 						<button  id="registerBtn" onClick={this._reg}>Register</button>

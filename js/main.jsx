@@ -1,6 +1,7 @@
 require('../css/login.css');
 require('../css/registration.css');
 require('../css/goalListApp.css');
+require('../css/postListApp.css');
 var React = require('react');
 var ReactDOM = require('react-dom');
 var Login = require('./components/loginRegistration/login.jsx');

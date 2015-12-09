@@ -11,7 +11,7 @@ var PostListApp = React.createClass({
 	},
 	render: function() {
 		return(<div>
-		<PostInput/>
+		<PostInput id="postInput"/>
 		<PostItem data={this.props.data}/>
 		</div>
 		)

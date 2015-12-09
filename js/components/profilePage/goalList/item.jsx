@@ -1,8 +1,15 @@
 var React = require('react');
+
 var Item = React.createClass({
+	// getInitialState: function() {
+	// 	console.log(this.props);
+	// },
 	_delete: function(e) {
 		e.preventDefault();
-		var props=this.props;
+		props=this.props;
+		console.log('props');
+		console.log(props);
+		
 		
 		var Goal = Backbone.Model.extend({
 			url:'https://safe-brook-9891.herokuapp.com/api/goals/'+props.id,
@@ -16,15 +23,20 @@ var Item = React.createClass({
 			
 		});
 
-		var collection = new GoalCollection(this.props);
-		
+		var collection = new GoalCollection(this.props.datas);
+		console.log('propssss');
+		console.log(this.props.datas);
 		var item = collection.get(props.id);
 		console.log(item.toJSON());
 		
 		
 		item.destroy({
-			success: function() {
+			success: function(resp) {
+				console.log(resp);
+				collection.remove(resp)
+				console.log(collection.toJSON());
 				props.addInput(collection.toJSON());
+
 			}
 		})
 	},

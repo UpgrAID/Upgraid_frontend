@@ -3,4 +3,13 @@
 }
 .goalItem {
 	list-style: none;
+	width: 220px;
+    padding-top: 10px;
+    font-size: 18px;
+    background: #f7f7f7;
+    border-bottom: 1px solid #888888;
+    list-style: none;
+    position: relative;
 }
+
+	
