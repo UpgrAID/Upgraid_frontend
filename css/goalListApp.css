@@ -1,3 +1,6 @@
+.goalContainer {
+	padding:0;
+}
 .goalItem {
 	list-style: none;
 }

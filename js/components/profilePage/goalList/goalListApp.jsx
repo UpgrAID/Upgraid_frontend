@@ -3,8 +3,6 @@ var ReactDOM = require('react-dom')
 var GoalInput = require('./goalInput.jsx');
 var GoalItem = require('./GoalItem.jsx');
 
-
-
 var GoalList = React.createClass({
 	getInitialState: function () {
 		return {
@@ -21,9 +19,9 @@ var GoalList = React.createClass({
 	render: function() {
 		return(
 			<div>
-			<GoalInput data={this.state.data} addInput={this._addInput}/>
-			<GoalItem data={this.state.data} addInput={this._addInput}/>
-			
+				<h2>Your Goals</h2>
+				<GoalInput data={this.state.data} addInput={this._addInput}/>
+				<GoalItem data={this.state.data} addInput={this._addInput}/>
 			</div>
 			)
 	}

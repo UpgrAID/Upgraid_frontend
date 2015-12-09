@@ -1,7 +1,7 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 var Backbone= require('backbone');
-var GoalListApp = require('./components/profilePage/goalListApp.jsx');
+var GoalListApp = require('./components/profilePage/goalList/goalListApp.jsx');
 
 var Login = require('./components/loginRegistration/login.jsx');
 
@@ -15,7 +15,17 @@ var Router=Backbone.Router.extend({
 	},
 	index: function(){
 		ReactDOM.render(<Login router={this}/>, document.getElementById('app'));
-		username=$("#username").val();
+		
+		
+		
+	}
+});
+
+var router = new Router();
+
+
+router.on('route:profile', function(){
+	username=$("#username").val();
 		var Goal = Backbone.Model.extend({
 			url:'https://safe-brook-9891.herokuapp.com/api/goals/?username='+username
 		})
@@ -28,19 +38,9 @@ var Router=Backbone.Router.extend({
 		test.fetch({
 			success: function(resp) {
 			test=resp.toJSON();
-			ReactDOM.render(<GoalListApp data={test}/>, document.getElementById('goal'))
+			ReactDOM.render(<GoalListApp data={test}/>, document.getElementById('app'))
 			}
 		})
-		
-		
-	}
-});
-
-var router = new Router();
-
-
-router.on('route:profile', function(){
-	
 })
 
 

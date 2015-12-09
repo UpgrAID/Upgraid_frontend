@@ -21,7 +21,7 @@ var Login = React.createClass({
 			console.log(resp);
 			setToken(resp.token);
 			
-			//router.navigate('profile/' + username, {trigger:true});
+			router.navigate('profile/' + username, {trigger:true});
 			
 			
 		})

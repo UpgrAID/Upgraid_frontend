@@ -3,7 +3,7 @@ var Item = React.createClass({
 	_delete: function(e) {
 		e.preventDefault();
 		var props=this.props;
-		console.log(props);
+		
 		var Goal = Backbone.Model.extend({
 			url:'https://safe-brook-9891.herokuapp.com/api/goals/'+props.id,
 			initialize: function() {
@@ -19,19 +19,18 @@ var Item = React.createClass({
 		var collection = new GoalCollection(this.props);
 		
 		var item = collection.get(props.id);
-		console.log(item);
+		console.log(item.toJSON());
 		
 		
 		item.destroy({
 			success: function() {
-
 				props.addInput(collection.toJSON());
 			}
 		})
 	},
 	render: function() {
 		
-	return(<li>
+	return(<li className="goalItem">
 		<input type="checkbox" id={this.props.objectId}/>
 		<label htmlFor={this.props.objectId}>{this.props.data}</label>
 		<button className="delete" onClick={this._delete}>Delete</button>

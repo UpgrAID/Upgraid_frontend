@@ -34,6 +34,7 @@ var GoalInput = React.createClass({
 			success: function(resp) {
 				collection.add(resp);
 				props.addInput(collection.toJSON());
+				$('#goalInput').val('');
 			}
 		})
 },
