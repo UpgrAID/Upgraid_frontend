@@ -15,17 +15,7 @@ var Router=Backbone.Router.extend({
 	},
 	index: function(){
 		ReactDOM.render(<Login router={this}/>, document.getElementById('app'));
-		
-		
-		
-	}
-});
-
-var router = new Router();
-
-
-router.on('route:profile', function(){
-	username=$("#username").val();
+		username=$("#username").val();
 		var Goal = Backbone.Model.extend({
 			url:'https://safe-brook-9891.herokuapp.com/api/goals/?username='+username
 		})
@@ -38,9 +28,19 @@ router.on('route:profile', function(){
 		test.fetch({
 			success: function(resp) {
 			test=resp.toJSON();
-			ReactDOM.render(<GoalListApp data={test}/>, document.getElementById('app'))
+			ReactDOM.render(<GoalListApp data={test}/>, document.getElementById('goal'))
 			}
 		})
+		
+		
+	}
+});
+
+var router = new Router();
+
+
+router.on('route:profile', function(){
+	
 })
 
 
