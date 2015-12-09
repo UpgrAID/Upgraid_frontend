@@ -27,9 +27,12 @@ var PostInput = React.createClass({
 
 		var test = new Post();
 		test.set({
-			'title':this.state.value,
-			'description':this.state.value
+			'title':$('#titleInput').val(),
+			'description':$('#descriptionInput').val(),
+			'goal': 2
+
 		})
+		
 		test.save({}, {
 			success: function(resp) {
 				console.log(resp)
