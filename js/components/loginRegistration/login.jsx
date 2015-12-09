@@ -1,6 +1,8 @@
 var React =require('react');
+var ReactDOM = require('react-dom')
 var User = require('../../models/user');
 var Backbone = require('backbone');
+var Registration = require('./registration.jsx');
 
 var test = new User();
 
@@ -23,9 +25,14 @@ var Login = React.createClass({
 			
 		})
 	},
+	_reg: function(e) {
+		ReactDOM.render(<Registration/>,document.getElementById('register'));
+		$('#register').show();
+	},
 	render: function() {
 		return(
 			<div id="loginContainer">
+			
 			<h1>Login</h1>
 				<form id="loginForm" method='POST' onSubmit={this._submit}>
 					<div id="inputContainer">
@@ -38,6 +45,7 @@ var Login = React.createClass({
 						<input id="password" className="loginInput" placeholder="password" type="password"/>
 						</div>
 						<button id="submitLog" type="submit">Submit</button>
+						<button  id="registerBtn" onClick={this._reg}>Register</button>
 
 					</div>
 				</form>
@@ -52,7 +60,7 @@ function setToken(token) {
 	var backboneSync = Backbone.sync;
 	Backbone.sync = function(method,model,options) {
 		options.headers = {
-			'Authorization': 'Bearer' + token
+			'Authorization': 'Token ' + token
 		};
 
 		backboneSync(method,model,options);

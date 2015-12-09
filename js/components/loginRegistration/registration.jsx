@@ -1,4 +1,7 @@
 var React =require('react');
+var Reg = require('../../models/registration');
+
+var test = new Reg;
 
 var Registration = React.createClass({
     getIntialState: function(){
@@ -11,26 +14,41 @@ var Registration = React.createClass({
     },
     _submit: function(e) {
         e.preventDefault();
+        test.set({
+            first_name: $('#firstName').val(),
+            username: $('#userName').val(),
+            password: $('#passwordReg').val(),
+            email: $('#email').val(),
+        })
+       test.save({},{
+        success: function(resp) {
+            console.log(resp);
+        }
+       })
     },
     _handleInputChange: function(e){
         e.preventDefault();
         
     },
+    _close: function(e) {
+        $('#register').hide();
+    },
     render: function() {
         return(
             <div id="registrationContainer">
                 <form onSubmit={this._submit}>
-                <h2>Registration</h2>
+                <span id="close" onClick={this._close}>X</span>
+                <h1>Register</h1>
                     <label>First Name:</label>
-                    <input />
+                    <input id="firstName"/>
                     <label htmlFor="username">Username</label>
-                        <input type="text" onChange={this._handleInputChange}/>
+                        <input  id="userName" type="text" />
                     <label htmlFor="password">Password</label>
-                        <input onChange={this._handleInputChange}/>
+                        <input id="passwordReg"/>
                     <label htmlFor="password-confirmation">Confirm Password</label>
-                        <input type="password" onChange={this._handleInputChange}/>
+                        <input type="password"/>
                     <label>Email</label>
-                    <input />
+                    <input id="email"/>
                     <button id="submitReg" type="submit">Submit</button>
                 </form>
             </div>
