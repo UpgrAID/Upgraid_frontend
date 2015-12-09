@@ -39,6 +39,9 @@ var Item = React.createClass({
 
 			}
 		})
+		this.setState({
+			value:''
+		})
 	},
 	render: function() {
 		

@@ -37,6 +37,8 @@ var PostInput = React.createClass({
 		test.save({}, {
 			success: function(resp) {
 				console.log(resp)
+				collection.add(resp);
+				props.addInput(collection.toJSON());
 				$('#titleInput').val('');
 			}
 		})
@@ -44,8 +46,8 @@ var PostInput = React.createClass({
 	render:function() {
 		return(<form onSubmit={this._submit}>
 					<h2>Posts</h2>
-					<input id="titleInput"/>
-					<textarea id="descriptionInput"></textarea>
+					<input id="titleInput" placeholder="title"/>
+					<textarea id="descriptionInput" placeholder="description"></textarea>
 					<button  id="postBtn" type="submit">Submit</button>
 				</form>
 			  )

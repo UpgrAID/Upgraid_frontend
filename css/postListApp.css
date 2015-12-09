@@ -1,3 +1,6 @@
+.postContainer {
+	border:1px solid #F7F7F7;
+}
 #titleInput {
 	display: block;
 }
@@ -7,4 +10,12 @@
 
 #postBtn {
 	display: block;
+}
+
+.postTitle {
+	background: #f7f7f7;
+}
+
+.postDescription {
+	background: #ccc;
 }
