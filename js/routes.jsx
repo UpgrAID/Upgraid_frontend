@@ -2,6 +2,7 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var Backbone= require('backbone');
 var GoalListApp = require('./components/profilePage/goalList/goalListApp.jsx');
+var PostListApp = require('./components/profilePage/post/postListApp.jsx');
 
 var Login = require('./components/loginRegistration/login.jsx');
 
@@ -39,6 +40,22 @@ router.on('route:profile', function(){
 			success: function(resp) {
 			test=resp.toJSON();
 			ReactDOM.render(<GoalListApp data={test}/>, document.getElementById('app'))
+			}
+		})
+
+		var Post = Backbone.Model.extend({
+			url:'https://safe-brook-9891.herokuapp.com/api/posts/?username='+username
+		})
+
+		var PostCollection = Backbone.Collection.extend({
+			Model:Post,
+			url:'https://safe-brook-9891.herokuapp.com/api/posts/?username='+username
+		})
+		var post = new PostCollection();
+		post.fetch({
+			success: function(resp) {
+			test=resp.toJSON();
+			ReactDOM.render(<PostListApp data={test}/>, document.getElementById('app'))
 			}
 		})
 })
