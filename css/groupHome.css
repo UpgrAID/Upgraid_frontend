@@ -9,3 +9,19 @@
 	border-radius: 5px;
 	padding-left: 10px;
 }
+.postText {
+	line-height: 80%;
+}
+
+.userName {
+	font-weight: bold;
+	float: left;
+	margin-right: 30px;
+}
+.title {
+	float: left;
+}
+#userTag {
+	margin-top: 70px;
+
+}

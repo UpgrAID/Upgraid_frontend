@@ -15,9 +15,13 @@
 	padding:10px;
 	border-radius:5px;
 }
+#registerBtn:hover {
+	background: #33A1FF;
+}
 #loginContainer {
 	width:400px;
 	height:190px;
+	margin: auto;
 	background: #00C5CD;
 	position: relative;
 	border-radius:5px;
@@ -40,6 +44,9 @@ label {
 	border:1px solid #F7F7F7;
 	padding:10px;
 	border-radius:5px;
+}
+#submitLog:hover {
+	background: #33A1FF;
 }
 
 .loginInput {

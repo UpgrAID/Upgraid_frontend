@@ -27,7 +27,7 @@ var router = new Router();
 
 router.on('route:profile', function(){
 	username=$("#username").val();
-		
+
 
 		var Goal = Backbone.Model.extend({
 			url:'https://safe-brook-9891.herokuapp.com/api/goals/?username='+username
@@ -40,7 +40,7 @@ router.on('route:profile', function(){
 		test.fetch({
 			success: function(resp) {
 			test=resp.toJSON();
-			console.log(test);
+
 			ReactDOM.render(<GoalListApp data={test}/>, document.getElementById('goal'))
 			}
 		})
@@ -70,7 +70,7 @@ router.on('route:group', function(){
 
 	GroupPosts.fetch({
 		success: function(resp){
-			console.log(resp.toJSON());
+		
 			var posts = resp.toJSON();
 			ReactDOM.render(<GroupHome posts={posts} user={username}/>, document.getElementById('app'))
 		},

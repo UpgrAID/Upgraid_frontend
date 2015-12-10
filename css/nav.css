@@ -1,0 +1,27 @@
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+  background-color: #00C5CD;
+}
+
+#logo {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+#links {
+	position: absolute;
+	top: 10px;
+	right: 30px;
+}
+
+#profileLink {
+	margin-left: 30px;
+}
+#groupLink {
+	/*margin-right: 20px;*/
+}

@@ -15,7 +15,6 @@ var GoalInput = React.createClass({
 		var Goal = Backbone.Model.extend({
 		url:'https://safe-brook-9891.herokuapp.com/api/goals/',
 		initialize: function() {
-		console.log('Making Goal.')
 		}
 	});
 		var GoalCollection = Backbone.Collection.extend({
