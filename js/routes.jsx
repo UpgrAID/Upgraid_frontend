@@ -24,12 +24,14 @@ var Router=Backbone.Router.extend({
 var router = new Router();
 
 
+
 router.on('route:profile', function(){
 	username=$("#username").val();
+		
+
 		var Goal = Backbone.Model.extend({
 			url:'https://safe-brook-9891.herokuapp.com/api/goals/?username='+username
 		})
-
 		var GoalCollection = Backbone.Collection.extend({
 			Model:Goal,
 			url:'https://safe-brook-9891.herokuapp.com/api/goals/?username='+username
@@ -38,9 +40,11 @@ router.on('route:profile', function(){
 		test.fetch({
 			success: function(resp) {
 			test=resp.toJSON();
-			ReactDOM.render(<GoalListApp data={test}/>, document.getElementById('app'))
+			console.log(test);
+			ReactDOM.render(<GoalListApp data={test}/>, document.getElementById('goal'))
 			}
 		})
+
 
 		var Post = Backbone.Model.extend({
 			url:'https://safe-brook-9891.herokuapp.com/api/posts/?username='+username

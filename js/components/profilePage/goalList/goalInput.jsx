@@ -24,8 +24,6 @@ var GoalInput = React.createClass({
 		});
 
 		var collection = new GoalCollection(this.props.data);
-		console.log(collection);
-
 		var test = new Goal();
 		test.set({
 			'title': this.state.value

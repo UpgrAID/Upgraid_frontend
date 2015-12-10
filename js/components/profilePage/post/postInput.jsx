@@ -1,5 +1,15 @@
 var React = require('react');
 
+var Post = Backbone.Model.extend({
+		url:'https://safe-brook-9891.herokuapp.com/api/posts/',
+		initialize: function() {
+		console.log('Making Post.')
+		}	
+	});
+var PostCollection = Backbone.Collection.extend({
+			model: Post
+		});
+
 var PostInput = React.createClass({
 	getInitialState: function(e) {
 		return {value: ""}
@@ -12,16 +22,7 @@ var PostInput = React.createClass({
 	_submit: function(e) {
 		e.preventDefault();
 		var props=this.props;
-		var Post = Backbone.Model.extend({
-		url:'https://safe-brook-9891.herokuapp.com/api/posts/',
-		initialize: function() {
-		console.log('Making Post.')
-		}	
-	});
-		var PostCollection = Backbone.Collection.extend({
-			model: Post
-			
-		});
+	
 
 		var collection = new PostCollection(this.props.data);
 
@@ -36,6 +37,8 @@ var PostInput = React.createClass({
 		test.save({}, {
 			success: function(resp) {
 				console.log(resp)
+				collection.add(resp);
+				props.addInput(collection.toJSON());
 				$('#titleInput').val('');
 			}
 		})
@@ -43,9 +46,9 @@ var PostInput = React.createClass({
 	render:function() {
 		return(<form onSubmit={this._submit}>
 					<h2>Posts</h2>
-					<input id="titleInput" onChange={this.state.value}/>
-					<textarea id="descriptionInput"onChange={this.state.value}></textarea>
-					<button type="submit">Submit</button>
+					<input id="titleInput" placeholder="title"/>
+					<textarea id="descriptionInput" placeholder="description"></textarea>
+					<button  id="postBtn" type="submit">Submit</button>
 				</form>
 			  )
 		}
