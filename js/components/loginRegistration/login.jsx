@@ -20,10 +20,10 @@ var Login = React.createClass({
 		}).then(function(resp){
 			console.log(resp);
 			setToken(resp.token);
-			
-			router.navigate('profile/' + username, {trigger:true});
-			
-			
+
+			router.navigate('group/' + username, {trigger:true});
+
+
 		})
 	},
 	_reg: function(e) {
@@ -33,17 +33,17 @@ var Login = React.createClass({
 	render: function() {
 		return(
 			<div id="loginContainer">
-			
+
 			<h1>Login</h1>
 				<form id="loginForm" method='POST' onSubmit={this._submit}>
 					<div id="inputContainer">
 						<div className='valContain'>
 						<label id="user"></label>
-						<input id="username" className="loginInput" placeholder="username"/>
+						<input id="username" className="loginInput" value="xman" nplaceholder="username"/>
 						</div>
 						<div className='valContain'>
 						<label id="pass"></label>
-						<input id="password" className="loginInput" placeholder="password" type="password"/>
+						<input id="password" className="loginInput" value="ru486" placeholder="password" type="password"/>
 						</div>
 						<button id="submitLog" type="submit">Submit</button>
 						<button  id="registerBtn" onClick={this._reg}>Register</button>

@@ -1,0 +1,19 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+#container {
+	width: 1000px;
+	margin: auto;
+	text-align: center;
+}
+
+ul {
+	list-style: none;
+}
+
+#bigTitle {
+	font-size: 2.2rem;
+	font-family: 'Roboto', sans-serif;
+	color: #019CF6;
+}

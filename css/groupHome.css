@@ -1,0 +1,11 @@
+#postColumn {
+	width: 800px;
+	margin: auto;
+}
+
+.singlePost {
+	background: #8CF7F3;
+	border: 1px solid grey;
+	border-radius: 5px;
+	padding-left: 10px;
+}
