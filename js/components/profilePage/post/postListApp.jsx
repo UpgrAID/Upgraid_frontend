@@ -17,7 +17,7 @@ var PostListApp = React.createClass({
 
 	},
 	render: function() {
-		return(<div>
+		return(<div id="postMaster">
 					<PostInput id="postInput"data={this.state.data} addInput={this._addInput}/>
 					<PostItem data={this.state.data} addInput={this._addInput}/>
 				</div>

@@ -1,11 +1,17 @@
+#postMaster {
+	width:500px;
+}
 .postContainer {
 	border:1px solid #F7F7F7;
 }
 #titleInput {
 	display: block;
+	width:495px;
+	padding-top:20px;
 }
 #descriptionInput {
 	display: block;
+	width:495px;
 }
 
 #postBtn {
