@@ -1,7 +1,6 @@
 var React =require('react');
 var ReactDOM = require('react-dom')
 var User = require('../../models/user');
-var Backbone = require('backbone');
 var Registration = require('./registration.jsx');
 
 var test = new User();

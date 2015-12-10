@@ -31,18 +31,18 @@ router.on('route:profile', function(){
 		
 
 		var Goal = Backbone.Model.extend({
-			url:'https://safe-brook-9891.herokuapp.com/api/goals/?username='+username
+			url:'https://safe-brook-9891.herokuapp.com/api/profiles/?username='+username
 		})
 		var GoalCollection = Backbone.Collection.extend({
 			Model:Goal,
-			url:'https://safe-brook-9891.herokuapp.com/api/goals/?username='+username
+			url:'https://safe-brook-9891.herokuapp.com/api/profiles/?username='+username
 		})
 		var test = new GoalCollection();
 		test.fetch({
 			success: function(resp) {
-			test=resp.toJSON();
-			console.log(test);
-			ReactDOM.render(<GoalListApp data={test}/>, document.getElementById('goal'))
+			var test=resp.toJSON();
+			var mapped=test[0].user.goal_set;
+			ReactDOM.render(<GoalListApp data={mapped}/>, document.getElementById('goal'))
 			}
 		})
 
