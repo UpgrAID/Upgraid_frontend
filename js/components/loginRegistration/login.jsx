@@ -26,6 +26,7 @@ var Login = React.createClass({
 		})
 	},
 	_reg: function(e) {
+		e.preventDefault();
 		ReactDOM.render(<Registration/>,document.getElementById('register'));
 		$('#register').show();
 	},

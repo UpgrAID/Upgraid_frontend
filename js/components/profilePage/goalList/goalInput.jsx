@@ -28,7 +28,8 @@ var GoalInput = React.createClass({
 		
 		var test = new Goal();
 		test.set({
-			'title':this.state.value
+			'title':this.state.value,
+			'theme':$('.theme').val()
 		})
 		test.save({}, {
 			success: function(resp) {
@@ -40,8 +41,16 @@ var GoalInput = React.createClass({
 },
 	render: function() {
 		return(
-			<form method='POST'onSubmit={this._submit}>
+			<form method='POST' onSubmit={this._submit}>
 			<input id="goalInput" placeholder='test' onChange={this._onChange} value={this.state.value}/>
+			<p>Please Select a Category</p>
+			<label>Skills</label>
+			<input type='radio' className='theme' value='1'/>
+			<label>Bad Habits</label>
+			<input type='radio' className='theme' value='2'/>
+			<label>Health and Fitness</label>
+			<input type='radio' className='theme' value='3'/>
+			<button id="goalSubmit">Submit</button>
 			</form>)
 	}
 });
