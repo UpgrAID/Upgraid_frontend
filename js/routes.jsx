@@ -74,8 +74,7 @@ router.on('route:profile', function(userId){
 })
 
 router.on('route:userView', function(userId){
-		userId = $(".friend").val();
-		console.log(userId);
+		
 		
 		var userView = Backbone.Model.extend({
 			url:'https://safe-brook-9891.herokuapp.com/api/users/'+userId
