@@ -6,7 +6,7 @@ var PostListApp = require('./components/profilePage/post/postListApp.jsx');
 var Greeting = require('./components/profilePage/greeting.jsx');
 var Login = require('./components/loginRegistration/login.jsx');
 var Friends = require('./components/profilePage/friends.jsx')
-
+var OtherGoals = require('./components/profilePage/goalList/othersGoals.jsx')
 var Router=Backbone.Router.extend({
 	initialize:function() {
 		Backbone.history.start({pushState:true});
@@ -87,8 +87,9 @@ router.on('route:userView', function(userId){
 		UserProfile.fetch({
 			success: function(resp) {
 			var test=resp.toJSON();
-			console.log(test);
-			
+			var mapped =test[0].goal_set;
+			console.log(mapped);
+			ReactDOM.render(<OtherGoals data={mapped}/>, document.getElementById('goal'));
 
 			}
 });
