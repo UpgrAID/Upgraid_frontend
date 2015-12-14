@@ -5,13 +5,10 @@ require('../css/main.css');
 require('../css/nav.css');
 require('../css/groupHome.css');
 require('../css/postListApp.css');
-<<<<<<< HEAD
-require('../css/nav.css');
 require('../main.css');
 require('../css/friends.css');
-=======
 
->>>>>>> 7105a50da6f16ec83b47af4634b5b9f16d8c9689
+
 var React = require('react');
 var ReactDOM = require('react-dom');
 var Login = require('./components/loginRegistration/login.jsx');
