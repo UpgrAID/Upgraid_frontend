@@ -9,7 +9,7 @@ var FriendsBtn = React.createClass({
 	},
 	render:function(){
 		console.log('btn' + this.props.data);
-		return(<button className="friend" value={this.props.data} onClick={this._profileNav}></button>)
+		return(<button className="friend" value={this.props.data} onClick={this._profileNav}>{this.props.friendName}</button>)
 	}
 });
 

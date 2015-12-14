@@ -1,0 +1,23 @@
+#navContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+  background-color: #00C5CD;
+
+}
+
+#navUl {
+	margin:0;
+	list-style:none;
+}
+
+#navUl li {
+	color:#fff;
+	float: left;
+	position: relative;
+	width:50px;
+	top:10px;
+}
