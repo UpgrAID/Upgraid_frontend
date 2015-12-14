@@ -18,30 +18,7 @@ var PostInput = React.createClass({
 			value: e.target.value
 		})
 	},
-	_submit: function(e) {
-		e.preventDefault();
-		var props=this.props;
-
-
-		var collection = new PostCollection(this.props.data);
-
-		var test = new Post();
-		test.set({
-			'title':$('#titleInput').val(),
-			'description':$('#descriptionInput').val(),
-			'goal': 2
-
-		})
-
-		test.save({}, {
-			success: function(resp) {
-				
-				collection.add(resp);
-				props.addInput(collection.toJSON());
-				$('#titleInput').val('');
-			}
-		})
-	},
+	
 	render:function() {
 		return(<form onSubmit={this._submit}>
 					<h2>Posts</h2>

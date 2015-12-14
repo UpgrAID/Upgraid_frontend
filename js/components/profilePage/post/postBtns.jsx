@@ -36,7 +36,7 @@ var PostBtns = React.createClass({
 	},
 	render: function() {
 		
-			return(<button value={this.props.id} onClick={this._submit}>{this.props.id}</button>)
+			return(<button value={this.props.id} onClick={this._submit}>Goal</button>)
 		
 		
 	}
