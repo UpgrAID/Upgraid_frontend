@@ -1,7 +1,7 @@
 var React = require('react');
 var GroupPostCollection = require('../../collections/groupPostCollection');
 var Post = require('./post/post.jsx');
-var Navbar = require('../navbar.jsx');
+
 
 var GroupHome = React.createClass({
 

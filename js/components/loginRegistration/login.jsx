@@ -2,7 +2,7 @@ var React =require('react');
 var ReactDOM = require('react-dom')
 var User = require('../../models/user');
 var Backbone = require('backbone');
-var Navbar = require('../navbar.jsx');
+
 var Registration = require('./registration.jsx');
 
 var test = new User();
@@ -34,8 +34,7 @@ var Login = React.createClass({
 	render: function() {
 		return(
 			<div>
-				<Navbar />
-				<h1>UpgrAid</h1>
+				
 			<div id="loginContainer">
 			<h1>Login</h1>
 				<form id="loginForm" method='POST' onSubmit={this._submit}>
