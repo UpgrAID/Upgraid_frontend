@@ -28,8 +28,8 @@ var Router=Backbone.Router.extend({
 
 var router = new Router();
 
-router.on('route:profile', function(){
-		username=$("#username").val();
+router.on('route:profile', function(username){
+		
 		var Goal = Backbone.Model.extend({
 			url:'https://safe-brook-9891.herokuapp.com/api/profiles/?username='+username
 		})
@@ -47,7 +47,7 @@ router.on('route:profile', function(){
 			
 			var mapped=data[0].user.goal_set;
 			
-			ReactDOM.render(<Nav/>,document.getElementById('nav'));
+			ReactDOM.render(<Nav router={router} username={username}/>,document.getElementById('nav'));
 			ReactDOM.render(<Greeting name={name}/>,document.getElementById('greeting'));
 			ReactDOM.render(<GoalListApp data={mapped}/>, document.getElementById('goal'));
 			ReactDOM.render(<Friends data={friends} router={router}/>, document.getElementById('friends'))

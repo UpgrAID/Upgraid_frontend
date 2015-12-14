@@ -5,7 +5,10 @@ var OtherGoals = React.createClass({
 		var test=this.props.data.map(function(obj){
 			return(<p>{obj.title}</p>)
 	})
-		return(<div>{test}</div>)
+		return(<div>
+			<h2>Goals</h2>
+			{test}
+			</div>)
 	}
 })
 
