@@ -3,8 +3,7 @@ var React = require('react');
 var Post = Backbone.Model.extend({
 		url:'https://safe-brook-9891.herokuapp.com/api/posts/',
 		initialize: function() {
-		console.log('Making Post.')
-		}	
+		}
 	});
 var PostCollection = Backbone.Collection.extend({
 			model: Post
@@ -22,7 +21,7 @@ var PostInput = React.createClass({
 	_submit: function(e) {
 		e.preventDefault();
 		var props=this.props;
-	
+
 
 		var collection = new PostCollection(this.props.data);
 
@@ -33,10 +32,10 @@ var PostInput = React.createClass({
 			'goal': 2
 
 		})
-		
+
 		test.save({}, {
 			success: function(resp) {
-				console.log(resp)
+				
 				collection.add(resp);
 				props.addInput(collection.toJSON());
 				$('#titleInput').val('');

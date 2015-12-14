@@ -3,7 +3,7 @@ var Registration = require('../components/loginRegistration/registration.jsx')
 var Reg = Backbone.Model.extend({
     url:'https://safe-brook-9891.herokuapp.com/api/users/',
     intialize: function(){
-    	console.log('test')
+    	
     },
     validate: function(attrs){
         if(!attrs.username) {
@@ -15,7 +15,7 @@ var Reg = Backbone.Model.extend({
         if(!attrs.password) {
                 $('#pass').html('Password is required');
         }
-        
+
     }
 
 })

@@ -2,6 +2,7 @@ var Backbone = require('backbone');
 var Login = require('../components/loginRegistration/login.jsx');
 
 var User = Backbone.Model.extend({
+	url:'https://safe-brook-9891.herokuapp.com/api/users/',
 	validate: function(attrs) {
 		if(!attrs.username) {
 			$('#user').html('Username is required');
@@ -11,9 +12,9 @@ var User = Backbone.Model.extend({
 		}
 	},
 	initialize: function() {
-		console.log('Checking User.')
+		
 	}
-	
+
 })
 
 module.exports = User;
