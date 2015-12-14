@@ -25,12 +25,9 @@ var GoalInput = React.createClass({
 		var collection = new GoalCollection(this.props.data);
 		var test = new Goal();
 		test.set({
-<<<<<<< HEAD
+
 			'title':this.state.value,
 			'theme':$('.theme').val()
-=======
-			'title': this.state.value
->>>>>>> 7105a50da6f16ec83b47af4634b5b9f16d8c9689
 		})
 		test.save({}, {
 			success: function(resp) {

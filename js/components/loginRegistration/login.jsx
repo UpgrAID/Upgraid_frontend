@@ -1,11 +1,8 @@
 var React =require('react');
 var ReactDOM = require('react-dom')
 var User = require('../../models/user');
-<<<<<<< HEAD
-=======
 var Backbone = require('backbone');
 var Navbar = require('../navbar.jsx');
->>>>>>> 7105a50da6f16ec83b47af4634b5b9f16d8c9689
 var Registration = require('./registration.jsx');
 
 var test = new User();
@@ -24,7 +21,7 @@ var Login = React.createClass({
 		}).then(function(resp){
 			setToken(resp.token);
 
-			router.navigate('group/' + username, {trigger:true});
+			router.navigate('profile/' + username, {trigger:true});
 
 
 		})
@@ -45,11 +42,11 @@ var Login = React.createClass({
 					<div id="inputContainer">
 						<div className='valContain'>
 						<label id="user"></label>
-						<input id="username" className="loginInput" value="xman" nplaceholder="username"/>
+						<input id="username" className="loginInput" value="thomas1117" nplaceholder="username"/>
 						</div>
 						<div className='valContain'>
 						<label id="pass"></label>
-						<input id="password" className="loginInput" value="ru486" placeholder="password" type="password"/>
+						<input id="password" className="loginInput" value="1234567q" placeholder="password" type="password"/>
 						</div>
 						<button id="submitLog" type="submit">Submit</button>
 						<button  id="registerBtn" onClick={this._reg}>Register</button>

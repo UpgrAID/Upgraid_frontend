@@ -3,12 +3,9 @@ var ReactDOM = require('react-dom');
 var Backbone= require('backbone');
 var GoalListApp = require('./components/profilePage/goalList/goalListApp.jsx');
 var PostListApp = require('./components/profilePage/post/postListApp.jsx');
-<<<<<<< HEAD
 var Greeting = require('./components/profilePage/greeting.jsx');
-=======
 var GroupPostCollection = require('./collections/groupPostCollection');
 var GroupHome = require('./components/groupPage/groupHome.jsx')
->>>>>>> 7105a50da6f16ec83b47af4634b5b9f16d8c9689
 var Login = require('./components/loginRegistration/login.jsx');
 var Friends = require('./components/profilePage/friends.jsx')
 var OtherGoals = require('./components/profilePage/goalList/othersGoals.jsx')
@@ -19,11 +16,8 @@ var Router=Backbone.Router.extend({
 		Backbone.history.start({pushState:true});
 	},
 	routes:{
-<<<<<<< HEAD
 		'userView/:id':'userView',
-=======
 		'group/:username': 'group',
->>>>>>> 7105a50da6f16ec83b47af4634b5b9f16d8c9689
 		'profile/:username': 'profile',
 		"":"index"
 	},
@@ -33,15 +27,6 @@ var Router=Backbone.Router.extend({
 });
 
 var router = new Router();
-
-
-
-<<<<<<< HEAD
-=======
-router.on('route:profile', function(){
-	username=$("#username").val();
-
->>>>>>> 7105a50da6f16ec83b47af4634b5b9f16d8c9689
 
 router.on('route:profile', function(){
 		username=$("#username").val();
@@ -55,7 +40,6 @@ router.on('route:profile', function(){
 		var test = new GoalCollection();
 		test.fetch({
 			success: function(resp) {
-<<<<<<< HEAD
 			var data=resp.toJSON();
 			var name=data[0].user.first_name;
 			var friends=(data[0].user.friend_set);
@@ -66,11 +50,9 @@ router.on('route:profile', function(){
 			ReactDOM.render(<Greeting name={name}/>,document.getElementById('greeting'));
 			ReactDOM.render(<GoalListApp data={mapped}/>, document.getElementById('goal'));
 			ReactDOM.render(<Friends data={friends} router={router}/>, document.getElementById('friends'))
-=======
 			test=resp.toJSON();
 
-			ReactDOM.render(<GoalListApp data={test}/>, document.getElementById('goal'))
->>>>>>> 7105a50da6f16ec83b47af4634b5b9f16d8c9689
+			ReactDOM.render(<GoalListApp data={test}/>, document.getElementById('goal'));
 			}
 		})
 		
@@ -92,7 +74,6 @@ router.on('route:profile', function(){
 		})
 })
 
-<<<<<<< HEAD
 router.on('route:userView', function(userId){
 		
 		
@@ -125,7 +106,6 @@ router.on('route:userView', function(userId){
 
 
 
-=======
 router.on('route:group', function(){
 	username=$("#username").val();
 
@@ -144,6 +124,7 @@ router.on('route:group', function(){
 });
 
 
->>>>>>> 7105a50da6f16ec83b47af4634b5b9f16d8c9689
+
+
 
 module.exports = Router;
