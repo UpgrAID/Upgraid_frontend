@@ -11,7 +11,7 @@ var FriendsBtn = React.createClass({
 		router.navigate('userView/'+ userId , {trigger:true})
 	},
 	render:function(){
-		return(<button className="friend" value=8 onClick={this._profileNav}></button>)
+		return(<button className="friend" onClick={this._profileNav}></button>)
 	}
 });
 

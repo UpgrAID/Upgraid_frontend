@@ -2,7 +2,7 @@ var React = require('react');
 var PostInput = require('./postInput.jsx');
 var PostItem = require('./postItem.jsx');
 var Post = require('./post.jsx');
-
+var PostButtons = require('./postBtns.jsx');
 var PostListApp = React.createClass({
 	getInitialState: function () {
 		return {
@@ -17,8 +17,12 @@ var PostListApp = React.createClass({
 
 	},
 	render: function() {
+		props = this.props;
 		return(<div id="postMaster">
 					<PostInput id="postInput"data={this.state.data} addInput={this._addInput}/>
+					{this.props.goalId.map(function(obj){
+					return(<PostButtons goalId ={props.goalId} id={obj.id} addInput={props._addInput}/>)
+					})}
 					<PostItem data={this.state.data} addInput={this._addInput}/>
 				</div>
 			)

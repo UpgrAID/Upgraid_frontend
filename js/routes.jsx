@@ -46,6 +46,7 @@ router.on('route:profile', function(){
 			console.log(data);
 			
 			var mapped=data[0].user.goal_set;
+			
 			ReactDOM.render(<Nav/>,document.getElementById('nav'));
 			ReactDOM.render(<Greeting name={name}/>,document.getElementById('greeting'));
 			ReactDOM.render(<GoalListApp data={mapped}/>, document.getElementById('goal'));
@@ -58,18 +59,21 @@ router.on('route:profile', function(){
 		
 
 		var Post = Backbone.Model.extend({
-			url:'https://safe-brook-9891.herokuapp.com/api/posts/?username='+username
+			url:'https://safe-brook-9891.herokuapp.com/api/profiles/?username='+username
 		})
 
 		var PostCollection = Backbone.Collection.extend({
 			Model:Post,
-			url:'https://safe-brook-9891.herokuapp.com/api/posts/?username='+username
+			url:'https://safe-brook-9891.herokuapp.com/api/profiles/?username='+username
 		})
 		var post = new PostCollection();
 		post.fetch({
 			success: function(resp) {
 			test=resp.toJSON();
-			ReactDOM.render(<PostListApp data={test}/>, document.getElementById('app'))
+			var goalId = test[0].user.goal_set;
+			console.log(goalId);
+			var posts=test[0].user.post_set;
+			ReactDOM.render(<PostListApp data={posts} goalId = {goalId}/>, document.getElementById('app'))
 			}
 		})
 })
@@ -88,12 +92,12 @@ router.on('route:userView', function(userId){
 		UserProfile.fetch({
 			success: function(resp) {
 			var users=resp.toJSON();
-			console.log(users);
+			
 
 			var name= users[0].first_name;
-			console.log(name);
+			
 			var post= users[0].post_set;
-			console.log(post)
+			
 			var goals = users[0].goal_set;
 			ReactDOM.render(<OtherPosts data={post}/>, document.getElementById('app'));
 			ReactDOM.render(<OtherGoals data={goals}/>, document.getElementById('goal'));
