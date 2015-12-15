@@ -128,9 +128,11 @@ router.on('route:group', function(groupId){
 				var test = resp.toJSON();
 				var posts=test[0].post_set;
 				console.log(posts);
+				
+				
 				var groupId = posts[0].group;
 				ReactDOM.render(<PostListApp data={posts} groupId={groupId}/>, document.getElementById('app'));
-				ReactDOM.render(<UserList data={posts}/>, document.getElementById('goal'));
+				ReactDOM.render(<UserList data={posts} router={router}/>, document.getElementById('goal'));
 			}
 		})
 });

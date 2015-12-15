@@ -1,15 +1,15 @@
 var React = require('react');
-
-var userList = React.createClass({
+var User = require('./user.jsx');
+var UserList = React.createClass({
 	render:function() {
 		var props=this.props;
 			return(<ul>
 					{this.props.data.map(function(obj){
-						return(<li>{obj.user}</li>)
+						return(<User username={obj.user.username} id={obj.user.id} router={props.router}/>)
 					})}
 					</ul>
 				)
 	}
 });
 
-module.exports = userList;
+module.exports = UserList;
