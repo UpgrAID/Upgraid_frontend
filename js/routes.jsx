@@ -9,6 +9,7 @@ var GroupHome = require('./components/groupPage/groupHome.jsx')
 var Login = require('./components/loginRegistration/login.jsx');
 var Friends = require('./components/profilePage/friends/friends.jsx');
 var Groups = require('./components/profilePage/groups/groups.jsx');
+var UserList = require('./components/groupPage/userList/userList.jsx');
 var OtherGoals = require('./components/profilePage/goalList/othersGoals.jsx')
 var OtherPosts = require('./components/profilePage/post/othersPosts.jsx');
 var Nav = require('./components/nav/nav.jsx')
@@ -128,7 +129,8 @@ router.on('route:group', function(groupId){
 				var posts=test[0].post_set;
 				console.log(posts);
 				var groupId = posts[0].group;
-				ReactDOM.render(<PostListApp data={posts} groupId={groupId}/>, document.getElementById('app'))
+				ReactDOM.render(<PostListApp data={posts} groupId={groupId}/>, document.getElementById('app'));
+				ReactDOM.render(<UserList data={posts}/>, document.getElementById('goal'));
 			}
 		})
 });
