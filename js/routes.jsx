@@ -123,7 +123,7 @@ router.on('route:group', function(groupId){
 		var GroupData = new GroupCollection();
 		GroupData.fetch({
 			success: function(resp) {
-				console.log(resp);
+				console.log(resp.toJSON());
 			}
 		})
 });

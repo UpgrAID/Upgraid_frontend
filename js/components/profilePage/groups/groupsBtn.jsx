@@ -2,10 +2,10 @@ var React = require('react');
 
 var GroupsBtn = React.createClass({
 	_GroupsNav: function(e) {
-		
+
 		e.preventDefault();
 		
-		this.props.router.navigate('groups/'+ this.props.id , {trigger:true})
+		this.props.router.navigate('group/'+ this.props.id , {trigger:true})
 	},
 	render:function(){
 		
