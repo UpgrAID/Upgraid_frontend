@@ -5,7 +5,6 @@ var GoalListApp = require('./components/profilePage/goalList/goalListApp.jsx');
 var PostListApp = require('./components/profilePage/post/postListApp.jsx');
 var Greeting = require('./components/profilePage/greeting.jsx');
 var GroupPostCollection = require('./collections/groupPostCollection');
-var GroupHome = require('./components/groupPage/groupHome.jsx')
 var Login = require('./components/loginRegistration/login.jsx');
 var Friends = require('./components/profilePage/friends/friends.jsx');
 var Groups = require('./components/profilePage/groups/groups.jsx');
