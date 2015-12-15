@@ -31,6 +31,7 @@ var Post = React.createClass({
 	render: function() {
 
 			return(<div className="postContainer">
+					<span>{this.props.user}</span>
 					<p className="postTitle">{this.props.title}</p>
 					<p className="postDescription">{this.props.description}</p>
 					
