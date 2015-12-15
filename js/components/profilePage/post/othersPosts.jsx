@@ -8,7 +8,10 @@ var OtherPosts = React.createClass({
 					</div>
 					)
 	})
-		return(<div>{test}</div>)
+		return(<div>
+			<h2>Posts</h2>
+			{test}
+			</div>)
 	}
 });
 

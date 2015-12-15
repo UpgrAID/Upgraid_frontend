@@ -7,10 +7,13 @@ var Friends = React.createClass({
 		props=this.props;
 		console.log('data'+this.props.data)
 		var test=this.props.data.map(function(obj){
-			return(<li><FriendsBtn friendName={obj.to_friend.first_name} data={obj.to_friend.id} router={props.router}/></li>)
+			return(<li key={obj.id}><FriendsBtn friendName={obj.to_friend.first_name} data={obj.to_friend.id} router={props.router}/></li>)
 					})
 					
-				return(<ul>{test}</ul>)	
+				return(<ul>
+					<h2>Friends</h2>
+					{test}
+					</ul>)	
 				
 			
 	}

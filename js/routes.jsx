@@ -7,7 +7,7 @@ var Greeting = require('./components/profilePage/greeting.jsx');
 var GroupPostCollection = require('./collections/groupPostCollection');
 var GroupHome = require('./components/groupPage/groupHome.jsx')
 var Login = require('./components/loginRegistration/login.jsx');
-var Friends = require('./components/profilePage/friends.jsx')
+var Friends = require('./components/profilePage/friends/friends.jsx')
 var OtherGoals = require('./components/profilePage/goalList/othersGoals.jsx')
 var OtherPosts = require('./components/profilePage/post/othersPosts.jsx');
 var Nav = require('./components/nav/nav.jsx')
@@ -17,7 +17,7 @@ var Router=Backbone.Router.extend({
 	},
 	routes:{
 		'userView/:id':'userView',
-		'group/:username': 'group',
+		'group/:userId': 'group',
 		'profile/:username': 'profile',
 		"":"index"
 	},
@@ -29,7 +29,6 @@ var Router=Backbone.Router.extend({
 var router = new Router();
 
 router.on('route:profile', function(username){
-		
 		var Goal = Backbone.Model.extend({
 			url:'https://safe-brook-9891.herokuapp.com/api/profiles/?username='+username
 		})
@@ -46,11 +45,11 @@ router.on('route:profile', function(username){
 			console.log(data);
 			
 			var mapped=data[0].user.goal_set;
-			
 			ReactDOM.render(<Nav router={router} username={username}/>,document.getElementById('nav'));
 			ReactDOM.render(<Greeting name={name}/>,document.getElementById('greeting'));
-			ReactDOM.render(<GoalListApp data={mapped}/>, document.getElementById('goal'));
-			ReactDOM.render(<Friends data={friends} router={router}/>, document.getElementById('friends'))
+			ReactDOM.render(<GoalListApp data={mapped} router={router}/>, document.getElementById('goal'));
+			ReactDOM.render(<Friends data={friends} router={router}/>, document.getElementById('friends'));
+			ReactDOM.render(<Groups/>, document.getElementById('groups'));
 			test=resp.toJSON();
 
 			ReactDOM.render(<GoalListApp data={test}/>, document.getElementById('goal'));
@@ -110,21 +109,21 @@ router.on('route:userView', function(userId){
 
 
 
-router.on('route:group', function(){
-	username=$("#username").val();
-
-	var GroupPosts = new GroupPostCollection();
-
-	GroupPosts.fetch({
-		success: function(resp){
-		
-			var posts = resp.toJSON();
-			ReactDOM.render(<GroupHome posts={posts} user={username}/>, document.getElementById('app'))
-		},
-		error: function(err){
-			console.log(err);
-		}
-	})
+router.on('route:group', function(groupId){
+	console.log('test');
+	var groupView = Backbone.Model.extend({
+			url:'https://safe-brook-9891.herokuapp.com/api/groups/'+groupId
+		})
+		var GroupCollection = Backbone.Collection.extend({
+			Model:groupView,
+			url:'https://safe-brook-9891.herokuapp.com/api/groups/'+groupId
+		})
+		var GroupData = new GroupCollection();
+		GroupData.fetch({
+			success: function(resp) {
+				console.log(resp);
+			}
+		})
 });
 
 

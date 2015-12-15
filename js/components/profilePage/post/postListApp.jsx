@@ -22,7 +22,7 @@ var PostListApp = React.createClass({
 		return(<div id="postMaster">
 					<PostInput id="postInput"data={this.state.data} addInput={this._addInput}/>
 					{this.props.goalId.map(function(obj){
-					return(<PostButtons goalId ={props.goalId} id={obj.id} addInput={props.addInput} data={state.data}/>)
+					return(<PostButtons key={obj.id} goalId ={props.goalId} id={obj.id} addInput={props.addInput} data={state.data}/>)
 					})}
 					<PostItem data={this.state.data} addInput={this._addInput}/>
 				</div>

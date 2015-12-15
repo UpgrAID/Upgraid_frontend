@@ -24,4 +24,10 @@
     display: block;
 }
 
-	
+.categoryCheckbox {
+    float: left;
+}
+
+.categoryLabel {
+    float: left;
+}

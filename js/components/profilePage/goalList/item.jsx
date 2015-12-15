@@ -44,8 +44,9 @@ var Item = React.createClass({
 	render: function() {
 
 	return(<li className="goalItem">
-		<input type="checkbox" id={this.props.objectId}/>
-		<label htmlFor={this.props.objectId}>{this.props.data}</label>
+		<input type="checkbox" className="categoryCheckbox" id={this.props.objectId}/>
+		<label className="categoryLabel"htmlFor={this.props.objectId}>{this.props.data}</label>
+		
 		<button className="delete" onClick={this._delete}>Delete</button>
 		</li>)
 
