@@ -20,9 +20,7 @@ var GoalInput = React.createClass({
 		this.setState({
 			category: e.target.value
 		})
-		if(this.state.category===1) {
-			console.log('test')
-		}
+		
 	},
 	_submit: function(e) {
 		e.preventDefault();

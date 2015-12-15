@@ -7,7 +7,8 @@ var Greeting = require('./components/profilePage/greeting.jsx');
 var GroupPostCollection = require('./collections/groupPostCollection');
 var GroupHome = require('./components/groupPage/groupHome.jsx')
 var Login = require('./components/loginRegistration/login.jsx');
-var Friends = require('./components/profilePage/friends/friends.jsx')
+var Friends = require('./components/profilePage/friends/friends.jsx');
+var Groups = require('./components/profilePage/groups/groups.jsx');
 var OtherGoals = require('./components/profilePage/goalList/othersGoals.jsx')
 var OtherPosts = require('./components/profilePage/post/othersPosts.jsx');
 var Nav = require('./components/nav/nav.jsx')
@@ -42,14 +43,15 @@ router.on('route:profile', function(username){
 			var data=resp.toJSON();
 			var name=data[0].user.first_name;
 			var friends=(data[0].user.friend_set);
-			console.log(data);
+			var groups=(data[0].user.group_set);
+			console.log('goaldata', data);
 			
 			var mapped=data[0].user.goal_set;
 			ReactDOM.render(<Nav router={router} username={username}/>,document.getElementById('nav'));
 			ReactDOM.render(<Greeting name={name}/>,document.getElementById('greeting'));
 			ReactDOM.render(<GoalListApp data={mapped} router={router}/>, document.getElementById('goal'));
 			ReactDOM.render(<Friends data={friends} router={router}/>, document.getElementById('friends'));
-			ReactDOM.render(<Groups/>, document.getElementById('groups'));
+			ReactDOM.render(<Groups data={groups} router={router}/>, document.getElementById('groups'));
 			test=resp.toJSON();
 
 			ReactDOM.render(<GoalListApp data={test}/>, document.getElementById('goal'));
