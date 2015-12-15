@@ -32,7 +32,6 @@ var Item = React.createClass({
 			success: function(resp){
 				console.log(resp);
 				collection.remove(resp)
-			
 				props.addInput(collection.toJSON());
 			}
 		})
@@ -41,13 +40,13 @@ var Item = React.createClass({
 		})
 	},
 	render: function() {
-
-	return(<li className="goalItem">
-		<input type="checkbox" className="categoryCheckbox" id={this.props.objectId}/>
-		<label className="categoryLabel"htmlFor={this.props.objectId}>{this.props.data}</label>
-		
-		<button className="delete" onClick={this._completed}>Completed</button>
-		</li>)
+		return (<div>{(this.props.completed ? null : 
+					(<li className="goalItem">
+						<input type="checkbox" className="categoryCheckbox" id={this.props.objectId}/>
+						<label className="categoryLabel"htmlFor={this.props.objectId}>{this.props.data}</label>
+						<button className="delete" onClick={this._completed}>Completed</button>
+					</li>))}
+				</div>)
 
 	}
 })

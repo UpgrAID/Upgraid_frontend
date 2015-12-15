@@ -5,7 +5,7 @@ var GoalItem = require('./GoalItem.jsx');
 
 var GoalList = React.createClass({
 	getInitialState: function () {
-
+		
 		return {
 			data: this.props.data
 			

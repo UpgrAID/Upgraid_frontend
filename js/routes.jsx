@@ -128,8 +128,6 @@ router.on('route:group', function(groupId){
 				var posts=test[0].post_set;
 				var users = test[0].user;
 				console.log(users);
-				
-				
 				var groupId = posts[0].group;
 				ReactDOM.render(<PostListApp data={posts} groupId={groupId}/>, document.getElementById('app'));
 				ReactDOM.render(<UserList data={users} router={router}/>, document.getElementById('goal'));
