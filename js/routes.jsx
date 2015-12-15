@@ -44,7 +44,6 @@ router.on('route:profile', function(username){
 			var name=data[0].user.first_name;
 			var friends=(data[0].user.friend_set);
 			var groups=(data[0].user.group_set);
-			console.log('goaldata', data);
 			var mapped=data[0].user.goal_set;
 			ReactDOM.render(<Nav router={router} username={username}/>,document.getElementById('nav'));
 			ReactDOM.render(<Greeting name={name}/>,document.getElementById('greeting'));
@@ -56,7 +55,7 @@ router.on('route:profile', function(username){
 			ReactDOM.render(<GoalListApp data={test}/>, document.getElementById('goal'));
 			}
 		})
-		
+
 
 		var Post = Backbone.Model.extend({
 			url:'https://safe-brook-9891.herokuapp.com/api/profiles/?username='+username
@@ -71,16 +70,15 @@ router.on('route:profile', function(username){
 			success: function(resp) {
 			test=resp.toJSON();
 			var goalId = test[0].user.goal_set;
-			console.log(goalId);
 			var posts=test[0].user.post_set;
-			
+
 			}
 		})
 })
 
 router.on('route:userView', function(userId){
-		
-		
+
+
 		var userView = Backbone.Model.extend({
 			url:'https://safe-brook-9891.herokuapp.com/api/users/'+userId
 		})
@@ -92,12 +90,12 @@ router.on('route:userView', function(userId){
 		UserProfile.fetch({
 			success: function(resp) {
 			var users=resp.toJSON();
-			
+
 
 			var name= users[0].first_name;
-			
+
 			var post= users[0].post_set;
-			
+
 			var goals = users[0].goal_set;
 			ReactDOM.render(<OtherPosts data={post}/>, document.getElementById('app'));
 			ReactDOM.render(<OtherGoals data={goals}/>, document.getElementById('goal'));
@@ -111,7 +109,7 @@ router.on('route:userView', function(userId){
 
 
 router.on('route:group', function(groupId){
-	
+
 	var groupView = Backbone.Model.extend({
 			url:'https://safe-brook-9891.herokuapp.com/api/groups/'+ groupId
 		})
@@ -122,12 +120,10 @@ router.on('route:group', function(groupId){
 		var GroupData = new GroupCollection();
 		GroupData.fetch({
 			success: function(resp) {
-				
+
 				var test = resp.toJSON();
 				var posts=test[0].post_set;
-				console.log(posts);
-				
-				
+
 				var groupId = posts[0].group;
 				ReactDOM.render(<PostListApp data={posts} groupId={groupId}/>, document.getElementById('app'));
 				ReactDOM.render(<UserList data={posts} router={router}/>, document.getElementById('goal'));
