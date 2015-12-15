@@ -1,24 +1,18 @@
 var React = require('react');
+var Backbone = require('backbone');
+var Comment = require('../../models/comment');
+var Post = require('../../models/post');
 
-var Post = Backbone.Model.extend({
-		url:'https://safe-brook-9891.herokuapp.com/api/posts/',
-		initialize: function() {
-		}
-	});
-var PostCollection = Backbone.Collection.extend({
-			model: Post
-		});
 
-var PostInput = React.createClass({
-	getInitialState: function(e) {
-		return {value: ""}
+var CommentInput = React.createClass({
+	getInitialState: function() {
+		return {
+			post: null,
+			description: null}
 	},
 	_submit: function(e) {
 			e.preventDefault();
 			var props=this.props;
-
-
-			var collection = new PostCollection(this.props.data);
 
 			var test = new Post();
 			test.set({
@@ -45,15 +39,11 @@ var PostInput = React.createClass({
 	},
 
 	render:function() {
-		return(
-			<form onSubmit={this._submit}>
-					<h2>Posts</h2>
-					<input id="titleInput" placeholder="title"/>
+		return(<form onSubmit={this._submit}>
 					<textarea id="descriptionInput" placeholder="description"></textarea>
-					<button  id="postBtn" type="submit" onSubmit={this._submit}>Submit</button>
-			</form>
+				</form>
 			  )
 		}
 });
 
-module.exports = PostInput;
+module.exports = CommentInput;

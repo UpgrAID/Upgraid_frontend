@@ -1,10 +1,10 @@
 var Backbone = require('backbone');
-var GPost = require('../models/gpost');
+var Post = require('../models/post');
 
 
-var GroupPostCollection = Backbone.Collection.extend({
+var PostCollection = Backbone.Collection.extend({
 	url: 'https://safe-brook-9891.herokuapp.com/api/posts/',
-	model: GPost
+	model: Post
 });
 
-module.exports = GroupPostCollection;
+module.exports = PostCollection;
