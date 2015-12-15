@@ -33,7 +33,7 @@ var Post = React.createClass({
 			return(<div className="postContainer">
 					<p className="postTitle">{this.props.title}</p>
 					<p className="postDescription">{this.props.description}</p>
-					<button className="delete" onClick={this._delete}>Delete</button>
+					
 					</div>
 				  )
 

@@ -20,10 +20,7 @@ var PostListApp = React.createClass({
 		props = this.props;
 		state = this.state;
 		return(<div id="postMaster">
-					<PostInput id="postInput"data={this.state.data} addInput={this._addInput}/>
-					{this.props.goalId.map(function(obj){
-					return(<PostButtons key={obj.id} goalId ={props.goalId} id={obj.id} addInput={props.addInput} data={state.data}/>)
-					})}
+					<PostInput id="postInput"data={this.state.data} addInput={this._addInput} groupId={this.props.groupId}/>
 					<PostItem data={this.state.data} addInput={this._addInput}/>
 				</div>
 			)
@@ -32,3 +29,8 @@ var PostListApp = React.createClass({
 });
 
 module.exports = PostListApp;
+
+
+// {this.props.goalId.map(function(obj){
+// 					return(<PostButtons key={obj.id} goalId ={props.goalId} id={obj.id} addInput={props.addInput} data={state.data}/>)
+// 					})}

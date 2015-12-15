@@ -9,7 +9,7 @@ var GroupsBtn = React.createClass({
 	},
 	render:function(){
 		
-		return(<button onClick={this._GroupsNav}>{this.props.id}</button>)
+		return(<button className="group" onClick={this._GroupsNav}>{this.props.id}</button>)
 	}
 });
 

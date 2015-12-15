@@ -23,7 +23,7 @@ var Router=Backbone.Router.extend({
 		"":"index"
 	},
 	index: function(){
-		ReactDOM.render(<Login router={this}/>, document.getElementById('app'));
+		ReactDOM.render(<Login router={this}/>, document.getElementById('nav'));
 	}
 });
 
@@ -74,7 +74,7 @@ router.on('route:profile', function(username){
 			var goalId = test[0].user.goal_set;
 			console.log(goalId);
 			var posts=test[0].user.post_set;
-			ReactDOM.render(<PostListApp data={posts} goalId = {goalId}/>, document.getElementById('app'))
+			
 			}
 		})
 })
@@ -112,18 +112,23 @@ router.on('route:userView', function(userId){
 
 
 router.on('route:group', function(groupId){
-	console.log('test');
+	
 	var groupView = Backbone.Model.extend({
-			url:'https://safe-brook-9891.herokuapp.com/api/groups/'+groupId
+			url:'https://safe-brook-9891.herokuapp.com/api/groups/'+ groupId
 		})
 		var GroupCollection = Backbone.Collection.extend({
 			Model:groupView,
-			url:'https://safe-brook-9891.herokuapp.com/api/groups/'+groupId
+			url:'https://safe-brook-9891.herokuapp.com/api/groups/'+ groupId
 		})
 		var GroupData = new GroupCollection();
 		GroupData.fetch({
 			success: function(resp) {
-				console.log(resp.toJSON());
+				
+				var test = resp.toJSON();
+				var posts=test[0].post_set;
+				console.log(posts);
+				var groupId = posts[0].group;
+				ReactDOM.render(<PostListApp data={posts} groupId={groupId}/>, document.getElementById('app'))
 			}
 		})
 });

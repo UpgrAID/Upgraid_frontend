@@ -13,6 +13,31 @@ var PostInput = React.createClass({
 	getInitialState: function(e) {
 		return {value: ""}
 	},
+	_submit: function(e) {
+			e.preventDefault();
+			var props=this.props;
+
+
+			var collection = new PostCollection(this.props.data);
+
+			var test = new Post();
+			test.set({
+				'title':$('#titleInput').val(),
+				'description':$('#descriptionInput').val(),
+				'group': this.props.groupId
+
+			})
+
+			test.save({}, {
+				success: function(resp) {
+					
+					collection.add(resp);
+					props.addInput(collection.toJSON());
+					$('#titleInput').val('');
+					$('#descriptionInput').val('');
+				}
+			})
+		},
 	_onChange: function(e) {
 		this.setState({
 			value: e.target.value
@@ -24,7 +49,7 @@ var PostInput = React.createClass({
 					<h2>Posts</h2>
 					<input id="titleInput" placeholder="title"/>
 					<textarea id="descriptionInput" placeholder="description"></textarea>
-					<button  id="postBtn" type="submit">Submit</button>
+					<button  id="postBtn" type="submit" onSubmit={this._submit}>Submit</button>
 				</form>
 			  )
 		}
