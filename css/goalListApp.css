@@ -1,19 +1,24 @@
 #goalInput {
     width:340px;
     padding-top:20px;
+    font-size: 0.8rem;
 }
 .goalContainer {
+  margin-top: 50px;
+  width: 500px;
+  margin: auto;
 	padding:0;
 }
 .goalItem {
 	list-style: none;
-	width: 350px;
-    padding-top: 10px;
-    font-size: 18px;
-    background: #f7f7f7;
-    border-bottom: 1px solid #888888;
-    list-style: none;
-    position: relative;
+	width: 500px;
+  height: 40px;
+  padding-top: 10px;
+  font-size: 18px;
+  background: #f7f7f7;
+  border-radius: 5px;
+  border-bottom: 1px solid #888888;
+  position: relative;
 }
 
 .goalItem:last-child {
@@ -21,7 +26,14 @@
 }
 
 #goalSubmit {
-    display: block;
+    display: inline;
+    margin-left: 10px;
+    width: 60px;
+    height: 30px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 3px;
 }
 
 .categoryCheckbox {
@@ -30,4 +42,25 @@
 
 .categoryLabel {
     float: left;
+}
+#postList {
+  width: 60%;
+  margin: auto;
+}
+.delete {
+  float: right;
+  margin-right: 10px;
+  width: 50px;
+  height: 30px;
+  padding: 5px;
+  text-align: center;
+  font-size: 0.6rem;
+  border-radius: 3px;
+}
+.delete:hover {
+  background: red;
+  color: white;
+}
+#setGoal {
+  margin-bottom: 20px;
 }

@@ -23,7 +23,7 @@ var Router=Backbone.Router.extend({
 		"":"index"
 	},
 	index: function(){
-		ReactDOM.render(<Login router={this}/>, document.getElementById('nav'));
+		ReactDOM.render(<Login router={this}/>, document.getElementById('app'));
 	}
 });
 
@@ -97,7 +97,7 @@ router.on('route:userView', function(userId){
 			var post= users[0].post_set;
 
 			var goals = users[0].goal_set;
-			ReactDOM.render(<OtherPosts data={post}/>, document.getElementById('app'));
+			ReactDOM.render(<OtherPosts data={post}/>, document.getElementById('postList'));
 			ReactDOM.render(<OtherGoals data={goals}/>, document.getElementById('goal'));
 			ReactDOM.render(<Greeting name={name}/>,document.getElementById('greeting'));
 
@@ -125,7 +125,7 @@ router.on('route:group', function(groupId){
 				var posts=test[0].post_set;
 
 				var groupId = posts[0].group;
-				ReactDOM.render(<PostListApp data={posts} groupId={groupId}/>, document.getElementById('app'));
+				ReactDOM.render(<PostListApp data={posts} groupId={groupId}/>, document.getElementById('postList'));
 				ReactDOM.render(<UserList data={posts} router={router}/>, document.getElementById('goal'));
 			}
 		})
