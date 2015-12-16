@@ -3,10 +3,21 @@ var CommentInput = require('./commentInput.jsx');
 var Comment = require('./comment.jsx');
 
 var CommentApp = React.createClass({
+	getInitialState: function () {
+		return {
+			data: this.props.data,
+
+		}
+	},
+	_addInput: function(collection) {
+			this.setState({
+			data: collection
+		})
+	},
 	render:function() {
 		return(<div>
-				<CommentInput postId ={this.props.postId}/>
-				<Comment/>
+				<CommentInput postId ={this.props.postId} addInput = {this.props.addInput}/>
+				<Comment data = {this.state.data}/>
 			</div>)
 	}
 });

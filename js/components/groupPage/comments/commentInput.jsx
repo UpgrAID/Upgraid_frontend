@@ -8,6 +8,12 @@ var CommentInput = React.createClass({
 			post: null,
 			description: null}
 	},
+	_onChange: function(e) {
+		this.setState({
+			value: e.target.value
+
+		});
+	},
 	_submit: function(e) {
 			e.preventDefault();
 			var props=this.props;
@@ -39,13 +45,7 @@ var CommentInput = React.createClass({
 				}
 			})
 		},
-	_onChange: function(e) {
-		this.setState({
-			value: e.target.value
 
-		});
-	},
-	
 	render:function() {
 		return(<form onSubmit={this._submit}>
 					<input className="comment" onChange={this._onChange} placeholder="Add a comment"/>
