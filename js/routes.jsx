@@ -123,10 +123,9 @@ router.on('route:group', function(groupId){
 			success: function(resp) {
 
 				var test = resp.toJSON();
-				console.log('test', test);
 				var posts=test[0].post_set;
 				var users = test[0].user;
-				console.log(users);
+				
 
 				var groupId = posts[0].group;
 				ReactDOM.render(<PostListApp data={posts} groupId={groupId}/>, document.getElementById('app'));

@@ -10,7 +10,7 @@ var CommentApp = React.createClass({
 		}
 	},
 	_addInput: function(collection) {
-		console.log('collection',collection);
+		
 			this.setState({
 			data: collection
 		})
@@ -20,7 +20,7 @@ var CommentApp = React.createClass({
 		props=this.props;
 		return(<div>
 				<CommentInput postId ={this.props.postId} addInput = {this._addInput} data={this.state.data}/>
-				<Comment comments={this.props.comments} data={this.state.data} addInput = {this._addInput}/>
+				<Comment data={this.state.data} addInput = {this._addInput}/>
 			</div>)
 	}
 });

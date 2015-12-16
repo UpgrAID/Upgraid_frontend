@@ -40,7 +40,7 @@ var CommentInput = React.createClass({
 
 			test.save({}, {
 				success: function(resp) {
-					console.log('collection',collection.toJSON());
+					
 					collection.add(resp.toJSON());
 					props.addInput(collection.toJSON());
 					$('#comment').val('');
