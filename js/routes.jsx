@@ -3,6 +3,7 @@ var ReactDOM = require('react-dom');
 var Backbone= require('backbone');
 var GoalListApp = require('./components/profilePage/goalList/goalListApp.jsx');
 var PostListApp = require('./components/profilePage/post/postListApp.jsx');
+var CommentApp = require('./components/groupPage/comments/commentApp.jsx');
 var Greeting = require('./components/profilePage/greeting.jsx');
 var GroupPostCollection = require('./collections/groupPostCollection');
 var Login = require('./components/loginRegistration/login.jsx');
@@ -122,11 +123,16 @@ router.on('route:group', function(groupId){
 			success: function(resp) {
 
 				var test = resp.toJSON();
+				console.log('test', test);
 				var posts=test[0].post_set;
+				var users = test[0].user;
+				console.log(users);
 
 				var groupId = posts[0].group;
-				ReactDOM.render(<PostListApp data={posts} groupId={groupId}/>, document.getElementById('postList'));
-				ReactDOM.render(<UserList data={posts} router={router}/>, document.getElementById('goal'));
+
+				ReactDOM.render(<PostListApp data={posts} groupId={groupId}/>, document.getElementById('app'));
+				ReactDOM.render(<UserList data={users} router={router}/>, document.getElementById('goal'));
+
 			}
 		})
 });

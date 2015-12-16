@@ -1,5 +1,6 @@
 var React = require('react');
-
+var ReactDOM=require('react-dom');
+var CommentApp = require('../../../components/groupPage/comments/commentApp.jsx');
 
 var Post = React.createClass({
 
@@ -34,6 +35,7 @@ var Post = React.createClass({
 						<span>{this.props.user.username}</span>
 						<p className="postTitle">{this.props.title}</p>
 						<p className="postDescription">{this.props.description}</p>
+						<CommentApp postId = {this.props.postId} comments={this.props.comments} />
 			</div>
 		)
 
@@ -41,3 +43,5 @@ var Post = React.createClass({
 });
 
 module.exports = Post;
+
+

@@ -5,7 +5,7 @@ var UserList = React.createClass({
 		var props=this.props;
 			return(<ul>
 					{this.props.data.map(function(obj){
-						return(<User username={obj.user.username} id={obj.user.id} router={props.router}/>)
+						return(<User username={obj.username} id={obj.id} router={props.router}/>)
 					})}
 					</ul>
 				)

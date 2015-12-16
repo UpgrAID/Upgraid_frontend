@@ -4,7 +4,7 @@ var Item = React.createClass({
 	// getInitialState: function() {
 
 	// },
-	_delete: function(e) {
+	_completed: function(e) {
 		e.preventDefault();
 		props=this.props;
 
@@ -25,16 +25,14 @@ var Item = React.createClass({
 		var collection = new GoalCollection(this.props.datas);
 
 		var item = collection.get(props.id);
-
-
-
-		item.destroy({
-			success: function(resp) {
-
+		item.set({
+			completed: 'true'
+		});
+		item.save({}, {
+			success: function(resp){
+				console.log(resp);
 				collection.remove(resp)
-			
 				props.addInput(collection.toJSON());
-
 			}
 		})
 		this.setState({
@@ -42,13 +40,13 @@ var Item = React.createClass({
 		})
 	},
 	render: function() {
-
-	return(<li className="goalItem">
-		<input type="checkbox" className="categoryCheckbox" id={this.props.objectId}/>
-		<label className="categoryLabel"htmlFor={this.props.objectId}>{this.props.data}</label>
-		
-		<button className="delete" onClick={this._delete}>Delete</button>
-		</li>)
+		return (<div>{(this.props.completed ? null : 
+					(<li className="goalItem">
+						<input type="checkbox" className="categoryCheckbox" id={this.props.objectId}/>
+						<label className="categoryLabel"htmlFor={this.props.objectId}>{this.props.data}</label>
+						<button className="delete" onClick={this._completed}>Completed</button>
+					</li>))}
+				</div>)
 
 	}
 })
