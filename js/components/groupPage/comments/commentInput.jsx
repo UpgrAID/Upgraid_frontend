@@ -1,10 +1,8 @@
 var React = require('react');
 var Backbone = require('backbone');
-var Comment = require('../../models/comment');
-var Post = require('../../models/post');
-
 
 var CommentInput = React.createClass({
+
 	getInitialState: function() {
 		return {
 			post: null,
@@ -13,13 +11,22 @@ var CommentInput = React.createClass({
 	_submit: function(e) {
 			e.preventDefault();
 			var props=this.props;
+			var Comment = Backbone.Model.extend({
+			url:'https://safe-brook-9891.herokuapp.com/api/comments/',
+			initialize: function() {}
 
-			var test = new Post();
+		});
+			
+		var CommentCollection = Backbone.Collection.extend({
+			model: Comment
+
+		});
+
+		var collection = new CommentCollection(this.props.data);
+		var test = new Comment();
 			test.set({
-				'title':$('#titleInput').val(),
-				'description':$('#descriptionInput').val(),
-				'group': this.props.groupId
-
+				'post': this.props.postId,
+				'description':this.state.value,
 			})
 
 			test.save({}, {
@@ -27,20 +34,21 @@ var CommentInput = React.createClass({
 
 					collection.add(resp);
 					props.addInput(collection.toJSON());
-					$('#titleInput').val('');
-					$('#descriptionInput').val('');
+					$('#comment').val('');
+					
 				}
 			})
 		},
 	_onChange: function(e) {
 		this.setState({
 			value: e.target.value
-		})
-	},
 
+		});
+	},
+	
 	render:function() {
 		return(<form onSubmit={this._submit}>
-					<textarea id="descriptionInput" placeholder="description"></textarea>
+					<input className="comment" onChange={this._onChange} placeholder="Add a comment"/>
 				</form>
 			  )
 		}

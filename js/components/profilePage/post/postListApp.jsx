@@ -2,7 +2,7 @@ var React = require('react');
 var PostInput = require('./postInput.jsx');
 var PostItem = require('./postItem.jsx');
 var Post = require('./post.jsx');
-var PostButtons = require('./postBtns.jsx');
+
 
 var PostListApp = React.createClass({
 	getInitialState: function () {

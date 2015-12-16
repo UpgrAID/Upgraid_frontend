@@ -3,6 +3,7 @@ var ReactDOM = require('react-dom');
 var Backbone= require('backbone');
 var GoalListApp = require('./components/profilePage/goalList/goalListApp.jsx');
 var PostListApp = require('./components/profilePage/post/postListApp.jsx');
+var CommentApp = require('./components/groupPage/comments/commentApp.jsx');
 var Greeting = require('./components/profilePage/greeting.jsx');
 var GroupPostCollection = require('./collections/groupPostCollection');
 var Login = require('./components/loginRegistration/login.jsx');
