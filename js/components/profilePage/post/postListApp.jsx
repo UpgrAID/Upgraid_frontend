@@ -12,6 +12,7 @@ var PostListApp = React.createClass({
 		}
 	},
 	_addInput: function(collection) {
+		console.log('collection',collection)
 			this.setState({
 			data: collection
 		})

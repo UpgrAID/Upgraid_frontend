@@ -5,7 +5,7 @@ var Comment = require('./comment.jsx');
 var CommentApp = React.createClass({
 	getInitialState: function () {
 		return {
-			data: this.props.data,
+			data: this.props.comments,
 
 		}
 	},
@@ -13,11 +13,13 @@ var CommentApp = React.createClass({
 			this.setState({
 			data: collection
 		})
+			
 	},
 	render:function() {
+		props=this.props;
 		return(<div>
-				<CommentInput postId ={this.props.postId} addInput = {this.props.addInput}/>
-				<Comment data = {this.props.data} comments={this.props.comments}/>
+				<CommentInput postId ={this.props.postId} addInput = {this._addInput} data={this.state.data}/>
+				<Comment   comments={this.props.comments} addInput = {this._addInput}/>
 			</div>)
 	}
 });

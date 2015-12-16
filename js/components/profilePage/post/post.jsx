@@ -35,7 +35,7 @@ var Post = React.createClass({
 						<span>{this.props.user.username}</span>
 						<p className="postTitle">{this.props.title}</p>
 						<p className="postDescription">{this.props.description}</p>
-						<CommentApp postId = {this.props.postId} comments={this.props.comments}/>
+						<CommentApp postId = {this.props.postId} comments={this.props.comments} />
 			</div>
 		)
 
