@@ -2,7 +2,6 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var Backbone= require('backbone');
 var Login = require('./components/loginRegistration/login.jsx');
-
 var ProfileApp=require('./components/profilePage/profileApp.jsx');
 var UserViewApp = require('./components/userView/UserViewApp.jsx');
 var GroupApp = require('./components/groupPage/groupApp.jsx');
