@@ -17,7 +17,7 @@ var CommentApp = React.createClass({
 	render:function() {
 		return(<div>
 				<CommentInput postId ={this.props.postId} addInput = {this.props.addInput}/>
-				<Comment data = {this.state.data}/>
+				<Comment data = {this.props.data} comments={this.props.comments}/>
 			</div>)
 	}
 });
