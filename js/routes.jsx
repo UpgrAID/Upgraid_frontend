@@ -1,20 +1,12 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 var Backbone= require('backbone');
-var GoalListApp = require('./components/profilePage/goalList/goalListApp.jsx');
-var PostListApp = require('./components/profilePage/post/postListApp.jsx');
-var CommentApp = require('./components/groupPage/comments/commentApp.jsx');
-var Greeting = require('./components/profilePage/greeting.jsx');
-var GroupPostCollection = require('./collections/groupPostCollection');
 var Login = require('./components/loginRegistration/login.jsx');
-var Friends = require('./components/profilePage/friends/friends.jsx');
-var Groups = require('./components/profilePage/groups/groups.jsx');
-var UserList = require('./components/groupPage/userList/userList.jsx');
-var OtherGoals = require('./components/profilePage/goalList/othersGoals.jsx')
-var OtherPosts = require('./components/profilePage/post/othersPosts.jsx');
-var Nav = require('./components/nav/nav.jsx');
+
 var ProfileApp=require('./components/profilePage/profileApp.jsx');
 var UserViewApp = require('./components/userView/UserViewApp.jsx');
+var GroupApp = require('./components/groupPage/groupApp.jsx');
+
 var Router=Backbone.Router.extend({
 	initialize:function() {
 		Backbone.history.start({pushState:true});
@@ -49,13 +41,8 @@ router.on('route:profile', function(username){
 			var friends=(data[0].user.friend_set);
 			var groups=(data[0].user.group_set);
 			var mapped=data[0].user.goal_set;
-			ReactDOM.render(<ProfileApp router={router} username={username} name={name} goals={mapped} friends={friends} groups={groups}/>,document.getElementById('profile'));
-			// ReactDOM.render(<Nav router={router} username={username}/>,document.getElementById('nav'));
-			 //ReactDOM.render(<Greeting name={name}/>,document.getElementById('greeting'));
-			 //ReactDOM.render(<GoalListApp goals={mapped} router={router}/>, document.getElementById('goal'));
-			 //ReactDOM.render(<Friends friends={friends} router={router}/>, document.getElementById('friends'));
-			 //ReactDOM.render(<Groups groups={groups} router={router}/>, document.getElementById('groups'));
-			 // ReactDOM.render(<GoalListApp data={data}/>, document.getElementById('goal'));
+			ReactDOM.render(<ProfileApp router={router} username={username} name={name} goals={mapped} friends={friends} groups={groups}/>,document.getElementById('app'));
+			
 			}
 		})
 
@@ -100,10 +87,9 @@ router.on('route:userView', function(userId){
 			var post= users[0].post_set;
 
 			var goals = users[0].goal_set;
-			ReactDOM.render(<UserViewApp posts={post}/>,document.getElementById('profile'));
-			//ReactDOM.render(<OtherPosts posts={post}/>, document.getElementById('postList'));
-			//ReactDOM.render(<OtherGoals data={goals}/>, document.getElementById('goal'));
-			//ReactDOM.render(<Greeting name={name}/>,document.getElementById('greeting'));
+			
+			ReactDOM.render(<UserViewApp posts={post} goals={goals} name={name}/>,document.getElementById('app'));
+
 
 			}
 });
@@ -131,9 +117,8 @@ router.on('route:group', function(groupId){
 				
 
 				var groupId = posts[0].group;
-
-				ReactDOM.render(<PostListApp data={posts} groupId={groupId}/>, document.getElementById('postList'));
-				ReactDOM.render(<UserList data={users} router={router}/>, document.getElementById('goal'));
+				ReactDOM.render(<GroupApp posts={posts} groupId={groupId} router={router} users={users}/>,document.getElementById('app'));
+				
 
 			}
 		})
