@@ -87,7 +87,7 @@ router.on('route:userView', function(userId){
 
 			var goals = users[0].goal_set;
 			
-			ReactDOM.render(<UserViewApp posts={post} goals={goals} name={name}/>,document.getElementById('container'));
+			ReactDOM.render(<UserViewApp posts={post} goals={goals} name={name} router={router} username={username}/>,document.getElementById('container'));
 
 
 			}
