@@ -1,72 +1,65 @@
-#close {
-	position: absolute;
-	right:3px;
-	top:3px;
-}
+#loginPageWrapper {
+	width: 100%;
+	height: 100%;
 
-#registerBtn {
-	float: right;
-	position: relative;
-	left:10px;
-	color:#fff;
-	background: #00F5CD;
-	outline:none;
-	border:1px solid #F7F7F7;
-	padding:10px;
-	border-radius:5px;
-}
-#registerBtn:hover {
-	background: #33A1FF;
 }
 #loginContainer {
 	width:100%;
-	height:50px;
+	height:60px;
 	margin: auto;
 	background: #00C5CD;
 	position: relative;
 
 }
-#loginSpan {
-	float: left;
-}
-#loginForm {
-	width:500px;
-	float: left;
+
+#logoSpan {
+	display: inline-block;
+	margin-top: 15px;
+	margin-right: 150px;
+	margin-left: 5px;
+	color: white;
+	font-size: 1.2rem;
 }
 
-#submitLog {
-	float: right;
-	position: relative;
-	left:10px;
-	color:#fff;
-	background: #00F5CD;
-	outline:none;
-	border:1px solid #F7F7F7;
-	padding:10px;
-	border-radius:5px;
+#loginSpan {
+	display: inline-block;
+	margin-top: 15px;
+	margin-right: 10px;
+	font-size: 0.9rem;
 }
-#submitLog:hover {
-	background: #33A1FF;
+
+#loginForm {
+	display: inline-block;
+}
+
+.inputWindow {
+	display: inline-block;
+	margin-right: 20px;
+	width: 200px;
+	height: 40px;
+	background: white;
+	border-radius: 5px;
 }
 
 .loginInput {
 	width:200px;
-	height:20px;
-	outline:none;
-	
+	height:35px;
+	outline: none;
+	font-size: 0.8rem;
+	border-radius: 5px;
 }
-#inputContainer {
-	
-	width:535px;
-	position: relative;
-	top:10px;
 
+#inputContainer {
+	display: inline-block;
+	width: 700px;
+	height: 40px;
+	top:5px;
 }
+
 #user {
 	position: absolute;
 	top:-10px;
 	left:10px;
-
 }
 
 #pass {
@@ -77,9 +70,56 @@
 .valContain {
 	position: relative;
 }
-
-h1 {
-	margin:0;
-	
+#submitLog {
+	display: inline-block;
 	color:#fff;
+	background: #00F5CD;
+	outline:none;
+	border:1px solid #F7F7F7;
+	padding:10px;
+	border-radius:5px;
+	margin-right: 10px;
+}
+
+#submitLog:hover {
+	background: #33A1FF;
+}
+
+#registerBtn {
+	display: inline-block;
+	color:#fff;
+	background: #00F5CD;
+	outline:none;
+	border:1px solid #F7F7F7;
+	padding:10px;
+	border-radius:5px;
+
+}
+
+#registerBtn:hover {
+	background: #33A1FF;
+}
+
+#bigPic {
+	background-image: url('../assets/UpGbackground.jpeg');
+	margin-top: -20px;
+	margin-left: -35px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 1600px;
+	height: 1050px;
+}
+#home-wrapper {
+	position: relative;
+	width: 60%;
+	margin: auto;
+	text-align: center;
+}
+#bigTitle {
+	position: absolute;
+	top: 460px;
+	left: 220px;
+	font-size: 2rem;
+	font-family: 'Roboto', sans-serif;
+	color: #019CF6;
 }

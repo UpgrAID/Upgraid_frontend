@@ -13,15 +13,13 @@
 }
 
 #navUl {
-	margin:0;
+	margin-left: 10px;
 	list-style:none;
 }
 
 #navUl li {
 	color:#fff;
-	float: left;
-	position: relative;
-	width:50px;
-	top:10px;
+	display: inline-block;
 
+  margin-right: 10px;
 }

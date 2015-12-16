@@ -1,7 +1,7 @@
 var React = require('react');
 
 var GoalInput = React.createClass({
-	
+
 	getInitialState: function(e) {
 		return {value: "",
 				category:null,
@@ -13,14 +13,14 @@ var GoalInput = React.createClass({
 		this.setState({
 			value: e.target.value
 		})
-		
+
 	},
 	_setValue: function(e) {
-		
+
 		this.setState({
 			category: e.target.value
 		})
-		
+
 	},
 	_submit: function(e) {
 		e.preventDefault();
@@ -51,17 +51,17 @@ var GoalInput = React.createClass({
 				var groupId = test.group;
 				props.addInput(collection.toJSON());
 				$('#goalInput').val('');
-				
-				state.router.navigate('group/'+groupId, {trigger: true});
+
+				state.router.navigate('group/' + groupId, {trigger: true});
 			}
 		})
 },
 	render: function() {
 		return(
-			<form method='POST' onSubmit={this._submit}>
-			<input id="goalInput" placeholder='test' onChange={this._onChange} value={this.state.value}/>
+			<form id="setGoal" method='POST' onSubmit={this._submit}>
+			<input id="goalInput" placeholder='Set a Goal here...' onChange={this._onChange} value={this.state.value}/>
 			<p>Please Select a Category</p>
-			
+
 			<input type='radio' className='theme' onClick={this._setValue} checked={this.state.radio}value='1'/>
 			<label>Skills</label>
 			<input type='radio' className='theme' onClick={this._setValue} value='2'/>

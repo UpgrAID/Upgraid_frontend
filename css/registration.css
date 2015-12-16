@@ -5,3 +5,10 @@
 	position: relative;
 	border-radius:5px;
 }
+
+
+#close {
+	position: absolute;
+	right:3px;
+	top:3px;
+}
