@@ -41,7 +41,7 @@ router.on('route:profile', function(username){
 			var friends=(data[0].user.friend_set);
 			var groups=(data[0].user.group_set);
 			var mapped=data[0].user.goal_set;
-			ReactDOM.render(<ProfileApp router={router} username={username} name={name} goals={mapped} friends={friends} groups={groups}/>,document.getElementById('app'));
+			ReactDOM.render(<ProfileApp router={router} username={username} name={name} goals={mapped} friends={friends} groups={groups}/>,document.getElementById('container'));
 			
 			}
 		})
@@ -88,7 +88,7 @@ router.on('route:userView', function(userId){
 
 			var goals = users[0].goal_set;
 			
-			ReactDOM.render(<UserViewApp posts={post} goals={goals} name={name}/>,document.getElementById('app'));
+			ReactDOM.render(<UserViewApp posts={post} goals={goals} name={name}/>,document.getElementById('container'));
 
 
 			}
@@ -117,7 +117,7 @@ router.on('route:group', function(groupId){
 				
 
 				var groupId = posts[0].group;
-				ReactDOM.render(<GroupApp posts={posts} groupId={groupId} router={router} users={users}/>,document.getElementById('app'));
+				ReactDOM.render(<GroupApp posts={posts} groupId={groupId} router={router} users={users}/>,document.getElementById('container'));
 				
 
 			}
