@@ -129,7 +129,7 @@ router.on('route:group', function(groupId){
 
 				var groupId = posts[0].group;
 
-				ReactDOM.render(<PostListApp data={posts} groupId={groupId}/>, document.getElementById('app'));
+				ReactDOM.render(<PostListApp data={posts} groupId={groupId}/>, document.getElementById('postList'));
 				ReactDOM.render(<UserList data={users} router={router}/>, document.getElementById('goal'));
 
 			}

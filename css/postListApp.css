@@ -1,6 +1,7 @@
 #postMaster {
 	width:500px;
-	
+	height:500px;
+	overflow:scroll;
 }
 .postContainer {
 	border:1px solid #F7F7F7;
