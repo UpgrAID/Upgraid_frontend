@@ -7,7 +7,7 @@ var GoalList = React.createClass({
 	getInitialState: function () {
 		
 		return {
-			data: this.props.data
+			data: this.props.goals
 			
 		}
 	},

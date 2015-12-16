@@ -1,12 +1,19 @@
 var React = require('react');
-var GoalListApp = require('../goalList/GoalListApp.jsx');
-var PostListApp = require('../post/PostListApp.jsx');
+var Nav = require('../nav/nav.jsx');
+var Greeting =require('./greeting.jsx');
+var GoalListApp = require('./goalList/goalListApp.jsx');
+var Friends = require('./friends/friends.jsx');
+var Group = require('./groups/groups.jsx');
+// var PostListApp = require('./post/postListApp.jsx');
 
 var ProfileApp = React.createClass({
 	render: function() {
 		return(<div>
-				<GoalListApp/>
-				<PostListApp/>
+				<Nav router={this.props.router} username={this.props.username}/>
+				<Greeting name={this.props.name}/>
+				<GoalListApp goals={this.props.goals} router={this.props.router}/>
+				<Friends friends={this.props.friends} router={this.props.router}/>
+				<Group groups={this.props.groups} router={this.props.router}/>
 				</div>)
 	}
 })

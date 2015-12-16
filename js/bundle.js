@@ -104,7 +104,7 @@
 
 
 	// module
-	exports.push([module.id, "#loginPageWrapper {\n\twidth: 100%;\n\theight: 100%;\n\tbackground-image: url(" + __webpack_require__(4) + ");\n\tbackground-repeat: no-repeat;\n\tbackground-size: contain;\n}\n\n\n#loginContainer {\n\twidth:100%;\n\theight:60px;\n\tmargin: auto;\n\tbackground: #00C5CD;\n\tposition: relative;\n\n}\n\n#logoSpan {\n\tdisplay: inline-block;\n\tmargin-top: 15px;\n\tmargin-right: 30px;\n\tmargin-left: 5px;\n\tcolor: white\n}\n\n#loginSpan {\n\tdisplay: inline-block;\n\tmargin-top: 15px;\n\tmargin-right: 10px;\n}\n\n#loginForm {\n\tdisplay: inline-block;\n}\n\n#submitLog {\n\tposition: relative;\n\tleft:10px;\n\tcolor:#fff;\n\tbackground: #00F5CD;\n\toutline:none;\n\tborder:1px solid #F7F7F7;\n\tpadding:10px;\n\tborder-radius:5px;\n}\n\n#submitLog:hover {\n\tbackground: #33A1FF;\n}\n\n.inputWindow {\n\tdisplay: inline-block;\n\tmargin-right: 20px;\n\twidth: 200px;\n\theight: 40px;\n\tbackground: white;\n\tborder-radius: 5px;\n}\n\n.loginInput {\n\twidth:200px;\n\theight:35px;\n\toutline: none;\n\tfont-size: 0.8rem;\n\tborder-radius: 5px;\n}\n\n#inputContainer {\n\twidth:535px;\n\tposition: relative;\n\ttop:5px;\n}\n\n#user {\n\tposition: absolute;\n\ttop:-10px;\n\tleft:10px;\n}\n\n#pass {\n\tposition: absolute;\n\ttop:-10px;\n\tleft:10px;\n}\n\n.valContain {\n\tposition: relative;\n}\n\n#registerBtn {\n\tfloat: right;\n\tposition: relative;\n\tleft:10px;\n\tcolor:#fff;\n\tbackground: #00F5CD;\n\toutline:none;\n\tborder:1px solid #F7F7F7;\n\tpadding:10px;\n\tborder-radius:5px;\n\n}\n\n#registerBtn:hover {\n\tbackground: #33A1FF;\n}\n", ""]);
+	exports.push([module.id, "#loginPageWrapper {\n\twidth: 100%;\n\theight: 100%;\n\n}\n#loginContainer {\n\twidth:100%;\n\theight:60px;\n\tmargin: auto;\n\tbackground: #00C5CD;\n\tposition: relative;\n\n}\n\n#logoSpan {\n\tdisplay: inline-block;\n\tmargin-top: 15px;\n\tmargin-right: 150px;\n\tmargin-left: 5px;\n\tcolor: white;\n\tfont-size: 1.2rem;\n}\n\n#loginSpan {\n\tdisplay: inline-block;\n\tmargin-top: 15px;\n\tmargin-right: 10px;\n\tfont-size: 0.9rem;\n}\n\n#loginForm {\n\tdisplay: inline-block;\n}\n\n.inputWindow {\n\tdisplay: inline-block;\n\tmargin-right: 20px;\n\twidth: 200px;\n\theight: 40px;\n\tbackground: white;\n\tborder-radius: 5px;\n}\n\n.loginInput {\n\twidth:200px;\n\theight:35px;\n\toutline: none;\n\tfont-size: 0.8rem;\n\tborder-radius: 5px;\n}\n\n#inputContainer {\n\tdisplay: inline-block;\n\twidth: 700px;\n\theight: 40px;\n\ttop:5px;\n}\n\n#user {\n\tposition: absolute;\n\ttop:-10px;\n\tleft:10px;\n}\n\n#pass {\n\tposition: absolute;\n\ttop:-10px;\n\tleft:10px;\n}\n.valContain {\n\tposition: relative;\n}\n#submitLog {\n\tdisplay: inline-block;\n\tcolor:#fff;\n\tbackground: #00F5CD;\n\toutline:none;\n\tborder:1px solid #F7F7F7;\n\tpadding:10px;\n\tborder-radius:5px;\n\tmargin-right: 10px;\n}\n\n#submitLog:hover {\n\tbackground: #33A1FF;\n}\n\n#registerBtn {\n\tdisplay: inline-block;\n\tcolor:#fff;\n\tbackground: #00F5CD;\n\toutline:none;\n\tborder:1px solid #F7F7F7;\n\tpadding:10px;\n\tborder-radius:5px;\n\n}\n\n#registerBtn:hover {\n\tbackground: #33A1FF;\n}\n\n#bigPic {\n\tbackground-image: url(" + __webpack_require__(4) + ");\n\tmargin-top: -20px;\n\tmargin-left: -35px;\n\tbackground-repeat: no-repeat;\n\tbackground-size: contain;\n\twidth: 1600px;\n\theight: 1050px;\n}\n#home-wrapper {\n\tposition: relative;\n\twidth: 60%;\n\tmargin: auto;\n\ttext-align: center;\n}\n#bigTitle {\n\tposition: absolute;\n\ttop: 460px;\n\tleft: 220px;\n\tfont-size: 2rem;\n\tfont-family: 'Roboto', sans-serif;\n\tcolor: #019CF6;\n}\n", ""]);
 
 	// exports
 
@@ -500,7 +500,7 @@
 
 
 	// module
-	exports.push([module.id, "#goalInput {\n    width:340px;\n    padding-top:20px;\n}\n.goalContainer {\n\tpadding:0;\n}\n.goalItem {\n\tlist-style: none;\n\twidth: 350px;\n    padding-top: 10px;\n    font-size: 18px;\n    background: #f7f7f7;\n    border-bottom: 1px solid #888888;\n    list-style: none;\n    position: relative;\n}\n\n.goalItem:last-child {\n    border-bottom: none;\n}\n\n#goalSubmit {\n    display: block;\n}\n\n.categoryCheckbox {\n    float: left;\n}\n\n.categoryLabel {\n    float: left;\n}\n", ""]);
+	exports.push([module.id, "#goalInput {\n    width:340px;\n    padding-top:20px;\n    font-size: 0.8rem;\n}\n.goalContainer {\n  margin-top: 50px;\n  width: 500px;\n  margin: auto;\n\tpadding:0;\n}\n.goalItem {\n\tlist-style: none;\n\twidth: 500px;\n  height: 40px;\n  padding-top: 10px;\n  font-size: 18px;\n  background: #f7f7f7;\n  border-radius: 5px;\n  border-bottom: 1px solid #888888;\n  position: relative;\n}\n\n.goalItem:last-child {\n    border-bottom: none;\n}\n\n#goalSubmit {\n    display: inline;\n    margin-left: 10px;\n    width: 60px;\n    height: 30px;\n    border-radius: 4px;\n    font-size: 0.8rem;\n    text-align: center;\n    padding: 3px;\n}\n\n.categoryCheckbox {\n    float: left;\n}\n\n.categoryLabel {\n    float: left;\n}\n#postList {\n  width: 60%;\n  margin: auto;\n}\n.delete {\n  float: right;\n  margin-right: 10px;\n  width: 50px;\n  height: 30px;\n  padding: 5px;\n  text-align: center;\n  font-size: 0.6rem;\n  border-radius: 3px;\n}\n.delete:hover {\n  background: red;\n  color: white;\n}\n#setGoal {\n  margin-bottom: 20px;\n}\n", ""]);
 
 	// exports
 
@@ -540,7 +540,7 @@
 
 
 	// module
-	exports.push([module.id, "body {\n\tfont-family: 'Roboto', sans-serif;\n}\n\n#container {\n\twidth: 1000px;\n\tmargin: auto;\n\ttext-align: center;\n}\n\nul {\n\tlist-style: none;\n}\n\n#bigTitle {\n\tfont-size: 2.2rem;\n\tfont-family: 'Roboto', sans-serif;\n\tcolor: #019CF6;\n}\n\n#greeting {\n\tposition: relative;\n\n}\n\n", ""]);
+	exports.push([module.id, "body {\n\tfont-family: 'Roboto', sans-serif;\n}\n\n#container {\n\twidth: 1000px;\n\tmargin: auto;\n\ttext-align: center;\n}\n\nul {\n\tlist-style: none;\n}\n\nul li {\n\tlist-style: none;\n}\n\n\n#greeting {\n\tposition: relative;\n\n}\n", ""]);
 
 	// exports
 
@@ -580,7 +580,7 @@
 
 
 	// module
-	exports.push([module.id, "\n#navContainer {\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: 9999;\n  width: 100%;\n  height: 50px;\n  background-color: #00C5CD;\n  margin-bottom: 100px;\n\n\n}\n\n#navUl {\n\tmargin:0;\n\tlist-style:none;\n}\n\n#navUl li {\n\tcolor:#fff;\n\tfloat: left;\n\tposition: relative;\n\twidth:50px;\n\ttop:10px;\n\n}\n", ""]);
+	exports.push([module.id, "\n#navContainer {\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: 9999;\n  width: 100%;\n  height: 50px;\n  background-color: #00C5CD;\n  margin-bottom: 100px;\n\n\n}\n\n#navUl {\n\tmargin-left: 10px;\n\tlist-style:none;\n}\n\n#navUl li {\n\tcolor:#fff;\n\tdisplay: inline-block;\n\n  margin-right: 10px;\n}\n", ""]);
 
 	// exports
 
@@ -660,7 +660,7 @@
 
 
 	// module
-	exports.push([module.id, "#postMaster {\n\twidth:500px;\n\t\n}\n.postContainer {\n\tborder:1px solid #F7F7F7;\n}\n#titleInput {\n\tdisplay: block;\n\twidth:495px;\n\tpadding-top:20px;\n}\n#descriptionInput {\n\tdisplay: block;\n\twidth:495px;\n}\n\n#postBtn {\n\tdisplay: block;\n}\n\n.postTitle {\n\tbackground: #f7f7f7;\n}\n\n.postDescription {\n\tbackground: #ccc;\n}\n", ""]);
+	exports.push([module.id, "#postMaster {\n\twidth:500px;\n\theight:500px;\n\toverflow:scroll;\n}\n.postContainer {\n\tborder:1px solid #F7F7F7;\n}\n#titleInput {\n\tdisplay: block;\n\twidth:495px;\n\tpadding-top:20px;\n}\n#descriptionInput {\n\tdisplay: block;\n\twidth:495px;\n}\n\n#postBtn {\n\tdisplay: block;\n}\n\n.postTitle {\n\tbackground: #f7f7f7;\n}\n\n.postDescription {\n\tbackground: #ccc;\n}\n", ""]);
 
 	// exports
 
@@ -740,7 +740,7 @@
 
 
 	// module
-	exports.push([module.id, ".friend {\n\twidth:50px;\n\theight:50px;\n\tborder-radius:100%;\n\tbackground:#00c5cd;\n\toutline:none;\n\tborder:1px solid #f7f7f7;\n\ttext-align: center;\n\tcolor:#fff;\n}\n\n", ""]);
+	exports.push([module.id, ".friend {\n\twidth:50px;\n\theight:50px;\n\tborder-radius:100%;\n\tbackground:#00c5cd;\n\toutline:none;\n\tborder:1px solid #f7f7f7;\n\ttext-align: center;\n\tcolor:#fff;\n}\n.friendListItem {\n\tdisplay: inline-block;\n}\n", ""]);
 
 	// exports
 
@@ -780,7 +780,7 @@
 
 
 	// module
-	exports.push([module.id, ".group {\n\twidth:50px;\n\theight:50px;\n\tborder-radius:100%;\n\tbackground:#00c5cd;\n\toutline:none;\n\tborder:1px solid #f7f7f7;\n\ttext-align: center;\n\tcolor:#fff;\n}", ""]);
+	exports.push([module.id, ".group {\n\twidth:50px;\n\theight:50px;\n\tborder-radius:100%;\n\tbackground:#00c5cd;\n\toutline:none;\n\tborder:1px solid #f7f7f7;\n\ttext-align: center;\n\tcolor:#fff;\n}\n\n.groupButton {\n\tdisplay: inline-block;\n\t\n}\n", ""]);
 
 	// exports
 
@@ -20398,11 +20398,10 @@
 				data: {username: username, password:password}
 			}).then(function(resp){
 				setToken(resp.token);
-
 				router.navigate('profile/' + username, {trigger:true});
-
-
 			})
+			$("#app").hide();
+			$('#bigPic').hide();
 		},
 		_reg: function(e) {
 			e.preventDefault();
@@ -20426,6 +20425,12 @@
 								React.createElement("button", {id: "submitLog", type: "submit"}, "Submit"), 
 								React.createElement("button", {id: "registerBtn", onClick: this._reg}, "Register")
 							)
+						)
+					), 
+					React.createElement("div", {id: "bigPic"}, 
+						React.createElement("div", {id: "home-wrapper"}, 
+						React.createElement("p", null, "Please login or register"), 
+						React.createElement("h1", {id: "bigTitle"}, "Welcome to UpgrAID")
 						)
 					)
 			)
@@ -33268,15 +33273,13 @@
 		render: function() {
 			props=this.props;
 			var test=this.props.data.map(function(obj){
-				return(React.createElement("li", {key: obj.id}, React.createElement(FriendsBtn, {friendName: obj.to_friend.first_name, data: obj.to_friend.id, router: props.router})))
+				return(React.createElement("li", {key: obj.id, className: "friendListItem"}, React.createElement(FriendsBtn, {friendName: obj.to_friend.first_name, data: obj.to_friend.id, router: props.router})))
 						})
 
 					return(React.createElement("ul", null, 
 						React.createElement("h2", null, "Friends"), 
 						test
 						))
-
-
 		}
 	});
 
@@ -33313,15 +33316,16 @@
 	var Groups = React.createClass({displayName: "Groups",
 		render: function(){
 			var props = this.props;
-		
+
 			var test=this.props.data.map(function(obj){
-				return(React.createElement("li", {key: obj.id}, React.createElement(GroupsBtn, {router: props.router, id: obj.id})))
+				return(React.createElement("li", {key: obj.id, className: "groupButton"}, React.createElement(GroupsBtn, {router: props.router, id: obj.id})))
 						})
 			return(React.createElement("div", null, React.createElement("h2", null, "Groups"), test))
 		}
 	});
 
 	module.exports = Groups;
+
 
 /***/ },
 /* 193 */
@@ -33377,7 +33381,7 @@
 
 	var GoalList = React.createClass({displayName: "GoalList",
 		getInitialState: function () {
-
+			
 			return {
 				data: this.props.data
 				
@@ -33410,7 +33414,7 @@
 	/* WEBPACK VAR INJECTION */(function($) {/** @jsx React.DOM */var React = __webpack_require__(24);
 
 	var GoalInput = React.createClass({displayName: "GoalInput",
-		
+
 		getInitialState: function(e) {
 			return {value: "",
 					category:null,
@@ -33422,14 +33426,14 @@
 			this.setState({
 				value: e.target.value
 			})
-			
+
 		},
 		_setValue: function(e) {
-			
+
 			this.setState({
 				category: e.target.value
 			})
-			
+
 		},
 		_submit: function(e) {
 			e.preventDefault();
@@ -33460,17 +33464,17 @@
 					var groupId = test.group;
 					props.addInput(collection.toJSON());
 					$('#goalInput').val('');
-					
-					state.router.navigate('group/'+groupId, {trigger: true});
+
+					state.router.navigate('group/' + groupId, {trigger: true});
 				}
 			})
 	},
 		render: function() {
 			return(
-				React.createElement("form", {method: "POST", onSubmit: this._submit}, 
-				React.createElement("input", {id: "goalInput", placeholder: "test", onChange: this._onChange, value: this.state.value}), 
+				React.createElement("form", {id: "setGoal", method: "POST", onSubmit: this._submit}, 
+				React.createElement("input", {id: "goalInput", placeholder: "Set a Goal here...", onChange: this._onChange, value: this.state.value}), 
 				React.createElement("p", null, "Please Select a Category"), 
-				
+
 				React.createElement("input", {type: "radio", className: "theme", onClick: this._setValue, checked: this.state.radio, value: "1"}), 
 				React.createElement("label", null, "Skills"), 
 				React.createElement("input", {type: "radio", className: "theme", onClick: this._setValue, value: "2"}), 
@@ -33499,8 +33503,11 @@
 			var props =this.props;
 			return(React.createElement("ul", {key: this.props.objectId, className: "goalContainer"}, 
 					this.props.data.map(function(obj){
-						return(React.createElement(Item, {key: obj.id, addInput: props.addInput, data: obj.title, datas: props.data, id: obj.id}))
-					})
+
+						return(React.createElement(Item, {key: obj.id, addInput: props.addInput, data: obj.title, datas: props.data, id: obj.id, completed: obj.completed}))
+					})	
+
+
 					)
 
 				)
@@ -33520,7 +33527,7 @@
 		// getInitialState: function() {
 
 		// },
-		_delete: function(e) {
+		_completed: function(e) {
 			e.preventDefault();
 			props=this.props;
 
@@ -33541,16 +33548,14 @@
 			var collection = new GoalCollection(this.props.datas);
 
 			var item = collection.get(props.id);
-
-
-
-			item.destroy({
-				success: function(resp) {
-
+			item.set({
+				completed: 'true'
+			});
+			item.save({}, {
+				success: function(resp){
+					console.log(resp);
 					collection.remove(resp)
-				
 					props.addInput(collection.toJSON());
-
 				}
 			})
 			this.setState({
@@ -33558,13 +33563,13 @@
 			})
 		},
 		render: function() {
-
-		return(React.createElement("li", {className: "goalItem"}, 
-			React.createElement("input", {type: "checkbox", className: "categoryCheckbox", id: this.props.objectId}), 
-			React.createElement("label", {className: "categoryLabel", htmlFor: this.props.objectId}, this.props.data), 
-			
-			React.createElement("button", {className: "delete", onClick: this._delete}, "Delete")
-			))
+			return (React.createElement("div", null, (this.props.completed ? null : 
+						(React.createElement("li", {className: "goalItem"}, 
+							React.createElement("input", {type: "checkbox", className: "categoryCheckbox", id: this.props.objectId}), 
+							React.createElement("label", {className: "categoryLabel", htmlFor: this.props.objectId}, this.props.data), 
+							React.createElement("button", {className: "delete", onClick: this._completed}, "Completed")
+						)))
+					))
 
 		}
 	})
@@ -33581,15 +33586,16 @@
 	var Backbone= __webpack_require__(185);
 	var GoalListApp = __webpack_require__(195);
 	var PostListApp = __webpack_require__(200);
+	var CommentApp = __webpack_require__(204);
 	var Greeting = __webpack_require__(189);
-	var GroupPostCollection = __webpack_require__(204);
+	var GroupPostCollection = __webpack_require__(207);
 	var Login = __webpack_require__(182);
 	var Friends = __webpack_require__(190);
 	var Groups = __webpack_require__(192);
-	var UserList = __webpack_require__(206);
-	var OtherGoals = __webpack_require__(208)
-	var OtherPosts = __webpack_require__(209);
-	var Nav = __webpack_require__(210)
+	var UserList = __webpack_require__(209);
+	var OtherGoals = __webpack_require__(211)
+	var OtherPosts = __webpack_require__(212);
+	var Nav = __webpack_require__(213)
 	var Router=Backbone.Router.extend({
 		initialize:function() {
 			Backbone.history.start({pushState:true});
@@ -33601,7 +33607,7 @@
 			"":"index"
 		},
 		index: function(){
-			ReactDOM.render(React.createElement(Login, {router: this}), document.getElementById('nav'));
+			ReactDOM.render(React.createElement(Login, {router: this}), document.getElementById('app'));
 		}
 	});
 
@@ -33619,6 +33625,7 @@
 			test.fetch({
 				success: function(resp) {
 				var data=resp.toJSON();
+
 				var name=data[0].user.first_name;
 				var friends=(data[0].user.friend_set);
 				var groups=(data[0].user.group_set);
@@ -33628,9 +33635,9 @@
 				ReactDOM.render(React.createElement(GoalListApp, {data: mapped, router: router}), document.getElementById('goal'));
 				ReactDOM.render(React.createElement(Friends, {data: friends, router: router}), document.getElementById('friends'));
 				ReactDOM.render(React.createElement(Groups, {data: groups, router: router}), document.getElementById('groups'));
-				test=resp.toJSON();
+				
 
-				ReactDOM.render(React.createElement(GoalListApp, {data: test}), document.getElementById('goal'));
+				ReactDOM.render(React.createElement(GoalListApp, {data: data}), document.getElementById('goal'));
 				}
 			})
 
@@ -33675,7 +33682,7 @@
 				var post= users[0].post_set;
 
 				var goals = users[0].goal_set;
-				ReactDOM.render(React.createElement(OtherPosts, {data: post}), document.getElementById('app'));
+				ReactDOM.render(React.createElement(OtherPosts, {data: post}), document.getElementById('postList'));
 				ReactDOM.render(React.createElement(OtherGoals, {data: goals}), document.getElementById('goal'));
 				ReactDOM.render(React.createElement(Greeting, {name: name}),document.getElementById('greeting'));
 
@@ -33701,10 +33708,14 @@
 
 					var test = resp.toJSON();
 					var posts=test[0].post_set;
+					var users = test[0].user;
+					
 
 					var groupId = posts[0].group;
-					ReactDOM.render(React.createElement(PostListApp, {data: posts, groupId: groupId}), document.getElementById('app'));
-					ReactDOM.render(React.createElement(UserList, {data: posts, router: router}), document.getElementById('goal'));
+
+					ReactDOM.render(React.createElement(PostListApp, {data: posts, groupId: groupId}), document.getElementById('postList'));
+					ReactDOM.render(React.createElement(UserList, {data: users, router: router}), document.getElementById('goal'));
+
 				}
 			})
 	});
@@ -33733,6 +33744,7 @@
 			}
 		},
 		_addInput: function(collection) {
+			
 				this.setState({
 				data: collection
 			})
@@ -33742,7 +33754,7 @@
 
 		render: function() {
 			props = this.props;
-			console.log(props.data);
+
 			state = this.state;
 			return(React.createElement("div", {id: "postMaster"}, 
 						React.createElement(PostInput, {id: "postInput", data: this.state.data, addInput: this._addInput, groupId: this.props.groupId}), 
@@ -33837,9 +33849,10 @@
 		
 		render: function() {
 			var props=this.props;
+
 				return(React.createElement("div", {id: "postContainer"}, 
 						this.props.data.map(function(obj){
-							return(React.createElement(Post, {addInput: props.addInput, title: obj.title, description: obj.description, datas: props.data, groupId: obj.id, user: obj.user}))
+							return(React.createElement(Post, {key: obj.id, addInput: props.addInput, title: obj.title, description: obj.description, datas: props.data, groupId: obj.id, user: obj.user, postId: obj.id, comments: obj.comment_set}))
 						})
 						)
 					)
@@ -33855,7 +33868,8 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(24);
-
+	var ReactDOM=__webpack_require__(181);
+	var CommentApp = __webpack_require__(204);
 
 	var Post = React.createClass({displayName: "Post",
 
@@ -33889,7 +33903,8 @@
 				React.createElement("div", {className: "postContainer"}, 
 							React.createElement("span", null, this.props.user.username), 
 							React.createElement("p", {className: "postTitle"}, this.props.title), 
-							React.createElement("p", {className: "postDescription"}, this.props.description)
+							React.createElement("p", {className: "postDescription"}, this.props.description), 
+							React.createElement(CommentApp, {postId: this.props.postId, comments: this.props.comments})
 				)
 			)
 
@@ -33899,12 +33914,130 @@
 	module.exports = Post;
 
 
+
+
 /***/ },
 /* 204 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/** @jsx React.DOM */var React = __webpack_require__(24);
+	var CommentInput = __webpack_require__(205);
+	var Comment = __webpack_require__(206);
+
+	var CommentApp = React.createClass({displayName: "CommentApp",
+		getInitialState: function () {
+			return {
+				data: this.props.comments,
+
+			}
+		},
+		_addInput: function(collection) {
+			
+				this.setState({
+				data: collection
+			})
+				
+		},
+		render:function() {
+			props=this.props;
+			return(React.createElement("div", null, 
+					React.createElement(CommentInput, {postId: this.props.postId, addInput: this._addInput, data: this.state.data}), 
+					React.createElement(Comment, {data: this.state.data, addInput: this._addInput})
+				))
+		}
+	});
+
+	module.exports = CommentApp;
+
+/***/ },
+/* 205 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function($) {/** @jsx React.DOM */var React = __webpack_require__(24);
 	var Backbone = __webpack_require__(185);
-	var Post = __webpack_require__(205);
+
+	var CommentInput = React.createClass({displayName: "CommentInput",
+
+		getInitialState: function() {
+			return {
+				post: null,
+				description: null}
+		},
+		_onChange: function(e) {
+			this.setState({
+				value: e.target.value
+
+			});
+			
+		},
+		_submit: function(e) {
+				e.preventDefault();
+				var props=this.props;
+				console.log(props);
+				var Comment = Backbone.Model.extend({
+				url:'https://safe-brook-9891.herokuapp.com/api/comments/',
+				initialize: function() {}
+
+			});
+				
+			var CommentCollection = Backbone.Collection.extend({
+				model: Comment
+
+			});
+
+			var collection = new CommentCollection(props.data);
+		
+			var test = new Comment();
+				test.set({
+					'post': this.props.postId,
+					'description':this.state.value,
+				})
+
+				test.save({}, {
+					success: function(resp) {
+						
+						collection.add(resp.toJSON());
+						props.addInput(collection.toJSON());
+						$('#comment').val('');
+						
+					}
+				})
+			},
+
+		render:function() {
+			return(React.createElement("form", {onSubmit: this._submit}, 
+						React.createElement("input", {className: "comment", onChange: this._onChange, placeholder: "Add a comment"})
+					)
+				  )
+			}
+	});
+
+	module.exports = CommentInput;
+
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(183)))
+
+/***/ },
+/* 206 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/** @jsx React.DOM */var React = __webpack_require__(24);
+	var Comment = React.createClass({displayName: "Comment",
+		render:function(){
+			var test=this.props.data.map(function(obj){
+				return(React.createElement("p", null, obj.description))
+			})
+			return(React.createElement("div", null, test))
+		}
+	});
+
+	module.exports = Comment;
+
+/***/ },
+/* 207 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var Backbone = __webpack_require__(185);
+	var Post = __webpack_require__(208);
 
 
 	var PostCollection = Backbone.Collection.extend({
@@ -33916,7 +34049,7 @@
 
 
 /***/ },
-/* 205 */
+/* 208 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(24);
@@ -33932,17 +34065,17 @@
 
 
 /***/ },
-/* 206 */
+/* 209 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(24);
-	var User = __webpack_require__(207);
+	var User = __webpack_require__(210);
 	var UserList = React.createClass({displayName: "UserList",
 		render:function() {
 			var props=this.props;
 				return(React.createElement("ul", null, 
 						this.props.data.map(function(obj){
-							return(React.createElement(User, {username: obj.user.username, id: obj.user.id, router: props.router}))
+							return(React.createElement(User, {username: obj.username, id: obj.id, router: props.router}))
 						})
 						)
 					)
@@ -33952,7 +34085,7 @@
 	module.exports = UserList;
 
 /***/ },
-/* 207 */
+/* 210 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(24);
@@ -33973,7 +34106,7 @@
 	module.exports = User;
 
 /***/ },
-/* 208 */
+/* 211 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(24);
@@ -33993,7 +34126,7 @@
 	module.exports = OtherGoals;
 
 /***/ },
-/* 209 */
+/* 212 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(24);
@@ -34016,7 +34149,7 @@
 	module.exports = OtherPosts;
 
 /***/ },
-/* 210 */
+/* 213 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(24);
