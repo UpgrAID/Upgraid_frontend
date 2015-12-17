@@ -10,6 +10,7 @@ require('../css/friends.css');
 require('../css/groups.css');
 require('../css/comment.css')
 require('../css/addFriend.css');
+require('../css/userList.css');
 
 
 

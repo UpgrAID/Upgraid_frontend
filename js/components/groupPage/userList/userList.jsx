@@ -4,12 +4,15 @@ var UserList = React.createClass({
 	render:function() {
 		var props=this.props;
 			return(
-				<ul id="userList">
+				<div id="userListContainer">
+				<h2>Members</h2>
+				<ul id="userListUl">
 					{this.props.users.map(function(obj){
 						return(
 							<User username={obj.username} id={obj.id} router={props.router}/>)
 					})}
 				</ul>
+				</div>
 				)
 	}
 });

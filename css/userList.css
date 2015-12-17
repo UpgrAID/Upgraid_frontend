@@ -1,0 +1,12 @@
+#userListContainer {
+	width:200px;
+	text-align: justify;
+	position: absolute;
+	top:50px;
+	left:20px;
+	
+}
+
+#userListUl {
+	padding:0;
+}
