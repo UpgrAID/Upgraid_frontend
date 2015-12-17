@@ -5,9 +5,9 @@ var Groups = React.createClass({
 		var props = this.props;
 
 		var test=this.props.groups.map(function(obj){
-			return(<li key={obj.id} className="groupButton"><GroupsBtn router={props.router} id={obj.id}/></li>)
+			return(<p key={obj.id} className="groupButton"><GroupsBtn router={props.router} id={obj.id}/></p>)
 					})
-		return(<div><h2>Groups</h2>{test}</div>)
+		return(<div id="groupsContainer"><h2>Groups</h2>{test}</div>)
 	}
 });
 

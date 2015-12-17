@@ -90,8 +90,13 @@ router.on('route:userView', function(userId){
 			var post= users[0].post_set;
 
 			var goals = users[0].goal_set;
+			var myId = Store.data.userId;
+			console.log(myId);
+			
+			ReactDOM.render(<UserViewApp posts={post} goals={goals} name={name} router={router} username={username} userId={userId} myId={myId}/>,document.getElementById('container'));
 
-			ReactDOM.render(<UserViewApp posts={post} goals={goals} name={name} router={router} username={username}/>,document.getElementById('container'));
+
+
 
 
 			}
