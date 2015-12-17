@@ -1,7 +1,7 @@
 #postMaster {
 	margin: auto;
-	width:600px;
-	height:600px;
+	width: 600px;
+	height: 600px;
 	overflow:scroll;
 }
 #postInput {
@@ -17,14 +17,19 @@
 #titleInput {
 	display: block;
 	width:580px;
-	padding-top:20px;
 	border-radius: 7px;
+	height: 30px;
+	padding-bottom: -20px;
+	font-size: 0.8rem;
+
 }
 #descriptionInput {
 	display: block;
 	width:580px;
 	border-radius: 5px;
 	margin-top: 5px;
+	padding-top: 10px;
+	font-size: 0.8rem;
 }
 
 #postBtn {
@@ -44,9 +49,10 @@
 	font-weight: bold;
 }
 .postTitle {
-	padding: 8px 0;
-	background: #ccc;
+	padding: 8px 0 8px 8px;
+	background: #00C5CD;
 	margin: 0 0;
+	padding-left: 150px;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 }

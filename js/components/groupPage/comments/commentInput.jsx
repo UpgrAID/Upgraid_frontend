@@ -13,7 +13,7 @@ var CommentInput = React.createClass({
 			value: e.target.value
 
 		});
-		
+
 	},
 	_submit: function(e) {
 			e.preventDefault();
@@ -24,14 +24,14 @@ var CommentInput = React.createClass({
 			initialize: function() {}
 
 		});
-			
+
 		var CommentCollection = Backbone.Collection.extend({
 			model: Comment
 
 		});
 
 		var collection = new CommentCollection(props.data);
-	
+
 		var test = new Comment();
 			test.set({
 				'post': this.props.postId,
@@ -40,18 +40,18 @@ var CommentInput = React.createClass({
 
 			test.save({}, {
 				success: function(resp) {
-					
+
 					collection.add(resp.toJSON());
 					props.addInput(collection.toJSON());
 					$('#comment').val('');
-					
+
 				}
 			})
 		},
 
 	render:function() {
 		return(<form onSubmit={this._submit}>
-					<input className="comment" onChange={this._onChange} placeholder="Add a comment"/>
+					<input className="commentField" onChange={this._onChange} placeholder="Add a comment"/>
 				</form>
 			  )
 		}

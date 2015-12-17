@@ -7,7 +7,6 @@ body {
 	width: 1000px;
 	margin: auto;
 	margin-top: 70px;
-	text-align: center;
 }
 
 ul {
@@ -18,8 +17,6 @@ ul li {
 	list-style: none;
 }
 
-
 #greeting {
 	position: relative;
-
 }
