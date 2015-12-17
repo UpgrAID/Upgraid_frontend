@@ -8,6 +8,7 @@ require('../css/postListApp.css');
 require('../main.css');
 require('../css/friends.css');
 require('../css/groups.css');
+require('../css/addFriend.css');
 
 
 var React = require('react');

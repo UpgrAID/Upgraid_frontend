@@ -11,3 +11,20 @@
 .friendListItem {
 	display: inline-block;
 }
+
+#friendsContainer {
+	width:200px;
+	text-align: center;
+	position: absolute;
+	top:50px;
+	right:0px;
+}
+
+#listContain {
+	width:150px;
+	margin:auto;
+}
+
+#friendsUl {
+	padding: 0;
+}

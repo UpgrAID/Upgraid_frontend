@@ -27,7 +27,7 @@ var AddFriend = React.createClass({
 		})
 	},
 	render: function() {
-		return(<button onClick={this._friend}>Friend</button>)
+		return(<button id="addFriend" onClick={this._friend}>+Friend</button>)
 	}
 });
 
