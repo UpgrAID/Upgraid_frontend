@@ -11,7 +11,7 @@ var PostListApp = React.createClass({
 		}
 	},
 	_addInput: function(collection) {
-		
+
 			this.setState({
 			data: collection
 		})
@@ -23,10 +23,13 @@ var PostListApp = React.createClass({
 		props = this.props;
 
 		state = this.state;
-		return(<div id="postMaster">
-					<PostInput id="postInput" data={this.state.data} addInput={this._addInput} groupId={this.props.groupId}/>
+		return(
+			<div id="postInput">
+					<PostInput data={this.state.data} addInput={this._addInput} groupId={this.props.groupId}/>
+					<div id="postMaster">
 					<PostItem data={this.state.data} addInput={this._addInput}/>
-				</div>
+					</div>
+			</div>
 			)
 	}
 

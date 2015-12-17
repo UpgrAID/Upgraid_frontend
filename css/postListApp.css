@@ -1,29 +1,49 @@
 #postMaster {
-	width:500px;
-	height:500px;
+	margin: auto;
+	width:600px;
+	height:600px;
 	overflow:scroll;
+}
+#postInput {
+	margin: auto;
+	width: 600px;
 }
 .postContainer {
 	border:1px solid #F7F7F7;
 }
+
 #titleInput {
 	display: block;
-	width:495px;
+	width:600px;
 	padding-top:20px;
 }
 #descriptionInput {
 	display: block;
-	width:495px;
+	width:600px;
 }
 
 #postBtn {
 	display: block;
 }
-
+.postUser {
+	float: left;
+	margin-left: 5px;
+	font-weight: bold;
+}
 .postTitle {
-	background: #f7f7f7;
+	padding: 8px 0;
+	background: #ccc;
+	margin: 0 0;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
 }
 
 .postDescription {
-	background: #ccc;
+	margin-top: 0;
+	padding: 8px;
+	height: 30px;
+	text-align: left;
+	background: #f7f7f7;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 }

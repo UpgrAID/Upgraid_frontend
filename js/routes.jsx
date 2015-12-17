@@ -5,6 +5,7 @@ var Login = require('./components/loginRegistration/login.jsx');
 var ProfileApp=require('./components/profilePage/profileApp.jsx');
 var UserViewApp = require('./components/userView/UserViewApp.jsx');
 var GroupApp = require('./components/groupPage/groupApp.jsx');
+var Store = require('./store');
 
 var Router=Backbone.Router.extend({
 	initialize:function() {
@@ -36,12 +37,15 @@ router.on('route:profile', function(username){
 			success: function(resp) {
 			var data=resp.toJSON();
 
+			var loggedIn = _.extend(Store.data, {userId: data[0].user.id});
+			console.log(loggedIn);
+
 			var name=data[0].user.first_name;
 			var friends=(data[0].user.friend_set);
 			var groups=(data[0].user.group_set);
 			var mapped=data[0].user.goal_set;
 			ReactDOM.render(<ProfileApp router={router} username={username} name={name} goals={mapped} friends={friends} groups={groups}/>,document.getElementById('container'));
-			
+
 			}
 		})
 
@@ -86,8 +90,13 @@ router.on('route:userView', function(userId){
 			var post= users[0].post_set;
 
 			var goals = users[0].goal_set;
+			var myId = Store.data.userId;
+			console.log(myId);
 			
-			ReactDOM.render(<UserViewApp posts={post} goals={goals} name={name} router={router} username={username} userId={userId}/>,document.getElementById('container'));
+			ReactDOM.render(<UserViewApp posts={post} goals={goals} name={name} router={router} username={username} userId={userId} myId={myId}/>,document.getElementById('container'));
+
+
+
 
 
 			}
@@ -113,11 +122,11 @@ router.on('route:group', function(groupId){
 				var test = resp.toJSON();
 				var posts=test[0].post_set;
 				var users = test[0].user;
-				
+
 
 				var groupId = posts[0].group;
 				ReactDOM.render(<GroupApp posts={posts} groupId={groupId} router={router} users={users}/>,document.getElementById('container'));
-				
+
 
 			}
 		})

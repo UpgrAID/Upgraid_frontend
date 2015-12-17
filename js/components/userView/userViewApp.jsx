@@ -11,7 +11,7 @@ var UserViewApp = React.createClass({
 				<OtherPosts posts={this.props.posts}/>
 				<OtherGoals goals={this.props.goals}/>
 				<Greeting name={this.props.name}/>
-				<AddFriend userId={this.props.userId}/>
+				<AddFriend userId={this.props.userId} myId={this.props.myId}/>
 			</div>)
 	}
 });
