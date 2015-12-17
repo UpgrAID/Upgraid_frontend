@@ -6,7 +6,7 @@ var Comment = React.createClass({
 			return(
 				<p className="commentBox"><span className="commenter">{obj.user.username}:</span>{obj.description}</p>)
 		})
-		return(<div>Comments:{test}</div>)
+		return(<div><span className="commentHeader">Comments:</span>{test}</div>)
 	}
 });
 
