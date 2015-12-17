@@ -1,0 +1,10 @@
+#addFriend {
+	position: absolute;
+	top:0;
+	right:0;
+	z-index: 2;
+	padding:5px;
+	color:#fff;
+	background:#c2d22d;
+	border:1px solid #f7f7f7;
+}
