@@ -5,6 +5,7 @@ body {
 #container {
 	width: 1000px;
 	margin: auto;
+	margin-top: 70px;
 	text-align: center;
 }
 
