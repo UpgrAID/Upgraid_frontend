@@ -1,0 +1,23 @@
+#avatarDiv {
+	width:150px;
+	height:150px;
+	background: #fff;
+	position: relative;
+	left:5px;
+
+};
+
+#avatarRankXpContainer {
+	width: 180px;
+	position: relative;
+	left:5px;
+}
+
+.rank {
+	text-align: left;
+	
+}
+
+#exp {
+	
+}
