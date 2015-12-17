@@ -1,6 +1,7 @@
 #goalInput {
     width:340px;
     padding-top:20px;
+    border-radius: 5px;
     font-size: 0.8rem;
 }
 .goalContainer {
@@ -28,12 +29,16 @@
 #goalSubmit {
     display: inline;
     margin-left: 10px;
-    width: 60px;
+    width: 100px;
     height: 30px;
     border-radius: 4px;
     font-size: 0.8rem;
     text-align: center;
     padding: 3px;
+}
+#goalSubmit:hover {
+  background: blue;
+  color: white;
 }
 
 .categoryCheckbox {
@@ -50,7 +55,7 @@
 .delete {
   float: right;
   margin-right: 10px;
-  width: 50px;
+  width: 80px;
   height: 30px;
   padding: 5px;
   text-align: center;
