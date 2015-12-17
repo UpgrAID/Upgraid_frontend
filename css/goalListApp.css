@@ -1,6 +1,7 @@
 #goalContainer {
   width:400px;
-  background: #ccc;
+  background: #00c5cd;
+  text-align: center;
 }
 #goalInput {
     width:340px;
@@ -9,6 +10,9 @@
     font-size: 0.8rem;
     outline:none;
 }
+#goalHeader {
+  color:#fff;
+}
 .goalContainer {
   margin-top: 50px;
   width: 500px;
@@ -16,13 +20,11 @@
 }
 .goalItem {
 	list-style: none;
-	width: 340px;
+	width: 400px;
   height: 40px;
   padding-top: 10px;
   font-size: 18px;
   background: #f7f7f7;
-  border-radius: 5px;
-  border-bottom: 1px solid #888888;
   position: relative;
 }
 
@@ -39,6 +41,7 @@
     font-size: 0.8rem;
     text-align: center;
     padding: 3px;
+    background: #27556C;
 }
 #goalSubmit:hover {
   background: blue;
@@ -65,6 +68,8 @@
   text-align: center;
   font-size: 0.6rem;
   border-radius: 3px;
+  background:#27556C;
+  color:#fff;
 }
 .delete:hover {
   background: red;
@@ -72,4 +77,8 @@
 }
 #setGoal {
   margin-bottom: 20px;
+}
+
+.selectCategory {
+  color: #fff;
 }
