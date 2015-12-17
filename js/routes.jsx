@@ -39,12 +39,15 @@ router.on('route:profile', function(username){
 
 			var loggedIn = _.extend(Store.data, {userId: data[0].user.id});
 			console.log(loggedIn);
+			var rank = data[0].rank;
+			var exp = data[0].exp;
+			console.log(rank +"xp" +exp);
 
 			var name=data[0].user.first_name;
 			var friends=(data[0].user.friend_set);
 			var groups=(data[0].user.group_set);
 			var mapped=data[0].user.goal_set;
-			ReactDOM.render(<ProfileApp router={router} username={username} name={name} goals={mapped} friends={friends} groups={groups}/>,document.getElementById('container'));
+			ReactDOM.render(<ProfileApp rank={rank}  exp={exp} router={router} username={username} name={name} goals={mapped} friends={friends} groups={groups}/>,document.getElementById('container'));
 
 			}
 		})

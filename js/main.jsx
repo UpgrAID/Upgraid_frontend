@@ -11,6 +11,7 @@ require('../css/groups.css');
 require('../css/comment.css')
 require('../css/addFriend.css');
 require('../css/userList.css');
+require('../css/avatarRankXp.css')
 
 
 
@@ -25,3 +26,4 @@ var Reg = require('./models/registration');
 var User = require('./models/user');
 var Goals = require('./models/goals');
 var Router = require('./routes.jsx');
+var AvatarRankXp = require('./components/profilePage/avatarRankXp/avatarRankXp.jsx');

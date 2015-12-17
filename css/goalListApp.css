@@ -1,18 +1,22 @@
+#goalContainer {
+  width:400px;
+  background: #ccc;
+}
 #goalInput {
     width:340px;
     padding-top:20px;
     border-radius: 5px;
     font-size: 0.8rem;
+    outline:none;
 }
 .goalContainer {
   margin-top: 50px;
   width: 500px;
-  margin: auto;
 	padding:0;
 }
 .goalItem {
 	list-style: none;
-	width: 500px;
+	width: 340px;
   height: 40px;
   padding-top: 10px;
   font-size: 18px;
