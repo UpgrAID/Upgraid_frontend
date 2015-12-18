@@ -36,8 +36,13 @@ var PusherChat = React.createClass({
 		
 	},
 	render: function() {
+		console.log(this.props);
 		return(<div id="chatContain">
-				<div id="messageContain"></div>
+				<div id="messageContain">
+				{this.props.chat.map(function(obj){
+					return(<p>{obj.message}</p>)
+				})}
+				</div>
 				<form onSubmit={this._submit}>
 				
 				<input id="chatInput"/>

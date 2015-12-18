@@ -7,6 +7,7 @@ var UserViewApp = require('./components/userView/UserViewApp.jsx');
 var GroupApp = require('./components/groupPage/groupApp.jsx');
 var Store = require('./store');
 var Pusher = require('pusher-js');
+var ChatApp=require('./components/groupPage/pusherChat.jsx');
 
 var Router=Backbone.Router.extend({
 	initialize:function() {
@@ -113,12 +114,50 @@ router.on('route:userView', function(userId){
 
 
 router.on('route:group', function(groupId){
+ 
+ var ChatMessage = Backbone.Model.extend({
+			url:'https://safe-brook-9891.herokuapp.com/api/messages/group/?group=' +groupId
+		});
 
-var pusher = new Pusher('ba2dd22aafcc637cf7e7');
+		var ChatCollection = Backbone.Collection.extend({
+			Model:ChatMessage,
+			url:'https://safe-brook-9891.herokuapp.com/api/messages/group/?group=' +groupId
+
+		})
+		var Chat = new ChatCollection();
+		Chat.fetch({
+			success: function(resp) {
+				var data = resp.toJSON();
+				
+				ReactDOM.render(<ChatApp chat={data} channel={channel} groupId = {groupId} />, document.getElementById('chat'));
+				
+			}
+		});
+
+ var pusher = new Pusher('aa48a322f5c5c64fe315');
  var channel = pusher.subscribe('group_' + groupId);
  var eventName = 'new-message';
+
  var callback = function(data) {
-  	console.log('a new message');
+  	var ChatMessage = Backbone.Model.extend({
+			url:'https://safe-brook-9891.herokuapp.com/api/messages/group/?group=' +groupId
+		});
+
+		var ChatCollection = Backbone.Collection.extend({
+			Model:ChatMessage,
+			url:'https://safe-brook-9891.herokuapp.com/api/messages/group/?group=' +groupId
+
+		})
+		var Chat = new ChatCollection();
+		Chat.fetch({
+			success: function(resp) {
+				var data = resp.toJSON();
+				ReactDOM.render(<ChatApp chat={data} channel={channel} groupId = {groupId} />, document.getElementById('chat'));
+				
+				
+			}
+		})
+
   };
   pusher.bind(eventName, callback);
 
@@ -137,9 +176,11 @@ var pusher = new Pusher('ba2dd22aafcc637cf7e7');
 				var posts=test[0].post_set;
 				var users = test[0].user;
 				var userName = Store.data.userName;
-
+				var chatList = Store.data.chats;
+				var chatInit = Store.data.chatInit;
+				
 				var groupId = posts[0].group;
-				ReactDOM.render(<GroupApp posts={posts} groupId={groupId} router={router} users={users} channel={channel} username={userName}/>,document.getElementById('container'));
+				ReactDOM.render(<GroupApp posts={posts} groupId={groupId} router={router} users={users} channel={channel} username={userName} chatList={chatList} chatInit={chatInit}/>,document.getElementById('container'));
 
 
 			}

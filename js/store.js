@@ -1,7 +1,9 @@
 var Store = {
 	data: {
 		userId: null,
-		userName:null
+		userName:null,
+		chats:null,
+		chatInit: null
 	}
 };
 
