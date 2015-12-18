@@ -39,10 +39,8 @@ router.on('route:profile', function(username){
 			var data=resp.toJSON();
 
 			var loggedIn = _.extend(Store.data, {userId: data[0].user.id});
-			console.log(loggedIn);
 			var rank = data[0].rank;
 			var exp = data[0].exp;
-			console.log(rank +"xp" +exp);
 
 			var name=data[0].user.first_name;
 			var friends=(data[0].user.friend_set);
@@ -95,8 +93,7 @@ router.on('route:userView', function(userId){
 
 			var goals = users[0].goal_set;
 			var myId = Store.data.userId;
-			console.log(myId);
-			
+
 			ReactDOM.render(<UserViewApp posts={post} goals={goals} name={name} router={router} username={username} userId={userId} myId={myId}/>,document.getElementById('container'));
 
 

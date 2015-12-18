@@ -1,6 +1,7 @@
 var Store = {
 	data: {
-		userId: null
+		userId: null,
+		userName: null
 	}
 };
 

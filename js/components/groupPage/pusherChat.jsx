@@ -1,11 +1,8 @@
 var React = require('react');
 
 
-
-
 var PusherChat = React.createClass({
 	_submit: function(e) {
-		console.log(this.props.groupId);
 		e.preventDefault();
 		var ChatMessage = Backbone.Model.extend({
 			url:'https://safe-brook-9891.herokuapp.com/api/messages/group/'
@@ -25,24 +22,21 @@ var PusherChat = React.createClass({
 			event: 'new-message',
 		})
 
-
 		chat.save({}, {
 			success: function(resp) {
-				console.log(resp);
 			}
 		})
-		
-	 
-		
+
 	},
 	render: function() {
-		return(<div id="chatContain">
+		return(
+			<div id="chatContain">
 				<div id="messageContain"></div>
 				<form onSubmit={this._submit}>
-				
-				<input id="chatInput"/>
+					<input id="chatInput"/>
 				</form>
-				</div>)
+			</div>
+		)
 	}
 });
 

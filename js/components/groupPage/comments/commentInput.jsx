@@ -18,7 +18,6 @@ var CommentInput = React.createClass({
 	_submit: function(e) {
 			e.preventDefault();
 			var props=this.props;
-			console.log(props);
 			var Comment = Backbone.Model.extend({
 			url:'https://safe-brook-9891.herokuapp.com/api/comments/',
 			initialize: function() {}
