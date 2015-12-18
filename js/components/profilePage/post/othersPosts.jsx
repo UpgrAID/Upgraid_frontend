@@ -3,9 +3,9 @@ var React = require('react');
 var OtherPosts = React.createClass({
 	render: function() {
 		var test=this.props.posts.map(function(obj){
-			return(<div>
-						<p className='otherPostTitle'>{obj.title}</p>
-					    <p className='otherPostDescription'>{obj.description}</p>
+			return(<div key={obj.id}>
+						<p  className='otherPostTitle'>{obj.title}</p>
+					    <p  className='otherPostDescription'>{obj.description}</p>
 					</div>
 					)
 	})
