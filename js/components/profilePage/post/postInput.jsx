@@ -31,7 +31,7 @@ var PostInput = React.createClass({
 			test.save({}, {
 				success: function(resp) {
 
-					collection.add(resp);
+					collection.add(resp, {at: 0});
 					props.addInput(collection.toJSON());
 					$('#titleInput').val('');
 					$('#descriptionInput').val('');

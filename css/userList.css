@@ -1,14 +1,16 @@
+#members {
+	margin:0;
+}
 #userListContainer {
 	width:200px;
 	text-align: justify;
 	position: absolute;
 	top:50px;
-	left:20px;
+	left:0px;
 
 }
 
 #userListUl {
 	padding:0;
-	border: 3px solid #00C5CD;
-	border-radius: 10px;
+	
 }

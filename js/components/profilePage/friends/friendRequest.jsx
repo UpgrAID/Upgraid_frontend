@@ -4,6 +4,7 @@ var Friendlies = require('../../../collections/friendlies');
 var Store = require('../../../store');
 var User = require('../../../models/user');
 var Users = require('../../../collections/users');
+var AcceptReject = require('./acceptReject.jsx');
 
 
 var FriendRequest = React.createClass({
@@ -13,7 +14,9 @@ var FriendRequest = React.createClass({
 		}
 	},
 	_loadReq: function(req){
-		this.setState({frRq: req});
+		this.setState({
+			frRq: req
+		});
 	},
 	componentWillMount: function(){
 		var frq = new Friendlies();
@@ -22,13 +25,11 @@ var FriendRequest = React.createClass({
 			success: function(resp){
 				fr = resp.toJSON();
 				f = fr.filter(function(usr){
-					if(usr.to_friend === Store.data.userName){
+					if(usr.to_friend === Store.data.userName && !usr.accepted){
 						return true
 					}else {
 						return false
 					}
-				}).map(function(u){
-					return u.from_friend
 				})
 					self._loadReq(f);
 				}
@@ -38,9 +39,10 @@ var FriendRequest = React.createClass({
 	render: function(){
 		console.log(this.state.frRq);
 		return (
-			<div id="friendRequests">
-				{this.state.frRq.map(function(reqName){
-					return(<p>{reqName}</p>)
+			<div id="friendRequests">Users who want to be Friends:
+				{this.state.frRq.map(function(req){
+					return(
+						<AcceptReject requester={req}/>)
 			})}
 			</div>
 		)

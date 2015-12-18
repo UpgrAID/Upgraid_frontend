@@ -16,7 +16,7 @@
 	width:200px;
 	text-align: center;
 	position: absolute;
-	top:50px;
+	top:170px;
 	right:0px;
 }
 
@@ -27,4 +27,35 @@
 
 #friendsUl {
 	padding: 0;
+}
+.requester {
+
+	min-width: 40px;
+	margin-right: 15px;
+	color: black;
+}
+.reqObj {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+#friendRequests {
+	color: #2A8889;
+	margin-left: 10px;
+}
+
+.rejbutton, .accbutton {
+	margin-right: 15px;
+	width: 60px;
+	height: 40px;
+	border-radius: 3px;
+	/*font-size: 0.6rem;*/
+	background: #00C5CD;
+}
+.rejbutton:hover {
+	background: red;
+	color: white;
+}
+.accbutton:hover {
+	background: green;
+	color: white;
 }

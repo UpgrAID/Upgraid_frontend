@@ -28,6 +28,7 @@ var Router=Backbone.Router.extend({
 var router = new Router();
 
 router.on('route:profile', function(username){
+	$('#chat').hide()
 		var Goal = Backbone.Model.extend({
 			url:'https://safe-brook-9891.herokuapp.com/api/profiles/?username='+username
 		})
@@ -35,23 +36,30 @@ router.on('route:profile', function(username){
 			Model:Goal,
 			url:'https://safe-brook-9891.herokuapp.com/api/profiles/?username='+username
 		})
-		
+
 		var test = new GoalCollection();
 		test.fetch({
 			success: function(resp) {
 			var data=resp.toJSON();
-			 (data[0].user.username)
+
 			var loggedIn = _.extend(Store.data, {userId: data[0].user.id});
 
 			var userName = _.extend(Store.data, {userName: data[0].user.username});
+
+
+
 			var rank = data[0].rank;
 			var exp = data[0].exp;
 			var uid = data[0].user.id;
 			var name=data[0].user.first_name;
 			var friends=(data[0].user.friend_set);
 			var groups=(data[0].user.group_set);
+
 			var mapped=data[0].user.goal_set;
-			ReactDOM.render(<ProfileApp rank={rank}  exp={exp} router={router} username={username} uid={uid} name={name} goals={mapped} friends={friends} groups={groups}/>,document.getElementById('container'));
+
+
+			ReactDOM.render(<ProfileApp rank={rank}  exp={exp} router={router} username={username} name={name} goals={mapped} friends={friends} groups={groups}/>,document.getElementById('container'));
+
 
 			}
 		})
@@ -77,7 +85,7 @@ router.on('route:profile', function(username){
 })
 
 router.on('route:userView', function(userId){
-
+		$('#chat').hide()
 
 		var userView = Backbone.Model.extend({
 			url:'https://safe-brook-9891.herokuapp.com/api/profiles/?user='+userId
@@ -99,9 +107,18 @@ router.on('route:userView', function(userId){
 			var rank = users[0].rank;
 			var exp = users[0].exp;
 			var goals = users[0].user.goal_set;
-			var myId = Store.data.userId;
+			var goalsMapped = goals.filter(function(obj){
+				if(obj.completed===false) {
+					return true;
+				}
+			})
 
-			ReactDOM.render(<UserViewApp rank={rank}  exp={exp} posts={post} goals={goals} name={name} router={router} username={username} userId={userId} myId={myId} friends={friends} groups={groups}/>,document.getElementById('container'));
+
+
+			var myId = Store.data.userId;
+			var username = Store.data.userName;
+
+			ReactDOM.render(<UserViewApp rank={rank}  exp={exp} posts={post} goals={goalsMapped} name={name} router={router} username={username} userId={userId} myId={myId} friends={friends} groups={groups}/>,document.getElementById('container'));
 
 
 			}
@@ -112,6 +129,7 @@ router.on('route:userView', function(userId){
 
 
 router.on('route:group', function(groupId){
+$('#chat').show()
 
  var ChatMessage = Backbone.Model.extend({
 			url:'https://safe-brook-9891.herokuapp.com/api/messages/group/?group=' +groupId
@@ -173,13 +191,17 @@ router.on('route:group', function(groupId){
 
 				var test = resp.toJSON();
 
-				var posts=test[0].post_set;
+
+				var posts=test[0].post_set.reverse();
+
+
 				var users = test[0].user;
 				var userName = Store.data.userName;
 				var chatList = Store.data.chats;
 				var chatInit = Store.data.chatInit;
-
 				var groupId = test[0].id;
+
+
 
 				ReactDOM.render(<GroupApp posts={posts} groupId={groupId} router={router} users={users} channel={channel} username={userName} chatList={chatList} chatInit={chatInit}/>,document.getElementById('container'));
 

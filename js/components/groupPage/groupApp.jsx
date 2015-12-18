@@ -8,7 +8,7 @@ var GroupApp = React.createClass({
 		return(<div>
 				<Nav router={this.props.router} username={this.props.username}/>
 				<UserList users={this.props.users} router={this.props.router}/>
-				<PostListApp posts={this.props.posts}/>
+				<PostListApp posts={this.props.posts} groupId = {this.props.groupId}/>
 				
 			</div>)
 	}

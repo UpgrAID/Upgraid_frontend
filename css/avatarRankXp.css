@@ -1,16 +1,18 @@
 #avatarDiv {
-	width:150px;
-	height:150px;
-	background: #fff;
+	width:100%;
+	margin:0;
+	height:130px;
+	background: #ccc;
 	position: relative;
-	left:5px;
+	
 
 };
 
 #avatarRankXpContainer {
 	width: 180px;
 	position: relative;
-	left:5px;
+	
+
 }
 
 .rank {

@@ -6,6 +6,11 @@
 
 }
 
+.userNameChat {
+	font-size: 10px;
+	padding-right:5px;
+}
+
 #messageContain {
 	width:300px;
 	height:300px;

@@ -2,6 +2,9 @@ var React = require('react');
 
 
 var PusherChat = React.createClass({
+	getInitialState: function() {
+		return{newChat: this.props.chat}
+	},
 	_submit: function(e) {
 		e.preventDefault();
 		var ChatMessage = Backbone.Model.extend({
@@ -26,18 +29,19 @@ var PusherChat = React.createClass({
 			success: function(resp) {
 			}
 		})
+		console.log(this.state.newChat);
 
 	},
 	render: function() {
-		 (this.props);
+		 
 		return(<div id="chatContain">
 				<div id="messageContain">
 				{this.props.chat.map(function(obj){
-					return(<p className="message" key={obj.id}>{obj.message}</p>)
+					return(<p className="message" key={obj.id}><span className="userNameChat">{obj.user}</span>{obj.message}</p>)
 				})}
 				</div>
 				<form onSubmit={this._submit}>
-					<input id="chatInput"/>
+					<input id="chatInput" placeholder="Chat here"/>
 				</form>
 			</div>
 		)
