@@ -4,7 +4,7 @@ var Item = React.createClass({
 	getInitialState: function() {
 		return{value: $('.categoryLabel').val(),
 				category: this.props.category,
-	}
+			}
 	},
 	_completed: function(e) {
 		e.preventDefault();
@@ -12,9 +12,14 @@ var Item = React.createClass({
 		var Goal = Backbone.Model.extend({
 			url:'https://safe-brook-9891.herokuapp.com/api/goals/'+props.id,
 			initialize: function() {
-		}
 
-		});
+				}
+
+
+			})
+
+
+		
 		var GoalCollection = Backbone.Collection.extend({
 			url:'https://safe-brook-9891.herokuapp.com/api/goals/'+props.id,
 			model: Goal

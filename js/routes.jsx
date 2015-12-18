@@ -8,6 +8,7 @@ var GroupApp = require('./components/groupPage/groupApp.jsx');
 var Store = require('./store');
 var Pusher = require('pusher-js');
 var ChatApp=require('./components/groupPage/pusherChat.jsx');
+var Friendlies = ('./collections/friendlies');
 
 var Router=Backbone.Router.extend({
 	initialize:function() {
@@ -35,25 +36,30 @@ router.on('route:profile', function(username){
 			Model:Goal,
 			url:'https://safe-brook-9891.herokuapp.com/api/profiles/?username='+username
 		})
+
 		var test = new GoalCollection();
 		test.fetch({
 			success: function(resp) {
 			var data=resp.toJSON();
-			 
+
 			var loggedIn = _.extend(Store.data, {userId: data[0].user.id});
 
 			var userName = _.extend(Store.data, {userName: data[0].user.username});
-			 
+
+
+
 			var rank = data[0].rank;
 			var exp = data[0].exp;
-
+			var uid = data[0].user.id;
 			var name=data[0].user.first_name;
 			var friends=(data[0].user.friend_set);
 			var groups=(data[0].user.group_set);
-			
+
 			var mapped=data[0].user.goal_set;
-			
+
+
 			ReactDOM.render(<ProfileApp rank={rank}  exp={exp} router={router} username={username} name={name} goals={mapped} friends={friends} groups={groups}/>,document.getElementById('container'));
+
 
 			}
 		})
@@ -107,7 +113,7 @@ router.on('route:userView', function(userId){
 				}
 			})
 
-			
+
 
 			var myId = Store.data.userId;
 			var username = Store.data.userName;
@@ -184,15 +190,18 @@ $('#chat').show()
 			success: function(resp) {
 
 				var test = resp.toJSON();
-		
+
+
 				var posts=test[0].post_set.reverse();
+
+
 				var users = test[0].user;
 				var userName = Store.data.userName;
 				var chatList = Store.data.chats;
 				var chatInit = Store.data.chatInit;
 				var groupId = test[0].id;
-				
-				
+
+
 
 				ReactDOM.render(<GroupApp posts={posts} groupId={groupId} router={router} users={users} channel={channel} username={userName} chatList={chatList} chatInit={chatInit}/>,document.getElementById('container'));
 
