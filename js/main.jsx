@@ -28,3 +28,4 @@ var User = require('./models/user');
 var Goals = require('./models/goals');
 var Router = require('./routes.jsx');
 var AvatarRankXp = require('./components/profilePage/avatarRankXp/avatarRankXp.jsx');
+var Pusher = require('pusher-js');

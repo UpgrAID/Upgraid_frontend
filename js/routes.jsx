@@ -38,14 +38,14 @@ router.on('route:profile', function(username){
 		test.fetch({
 			success: function(resp) {
 			var data=resp.toJSON();
-			console.log(data[0].user.username)
+			 (data[0].user.username)
 			var loggedIn = _.extend(Store.data, {userId: data[0].user.id});
+
 			var userName = _.extend(Store.data, {userName: data[0].user.username});
-			console.log(loggedIn);
-			console.log(userName);
+			 (loggedIn);
+			 (userName);
 			var rank = data[0].rank;
 			var exp = data[0].exp;
-			console.log(rank +"xp" +exp);
 
 			var name=data[0].user.first_name;
 			var friends=(data[0].user.friend_set);
@@ -90,7 +90,7 @@ router.on('route:userView', function(userId){
 		UserProfile.fetch({
 			success: function(resp) {
 			var users=resp.toJSON();
-			console.log(users);
+
 
 			var name= users[0].user.first_name;
 			var friends=(users[0].user.friend_set);
@@ -100,8 +100,9 @@ router.on('route:userView', function(userId){
 			var exp = users[0].exp;
 			var goals = users[0].user.goal_set;
 			var myId = Store.data.userId;
-			
+
 			ReactDOM.render(<UserViewApp rank={rank}  exp={exp} posts={post} goals={goals} name={name} router={router} username={username} userId={userId} myId={myId} friends={friends} groups={groups}/>,document.getElementById('container'));
+
 
 			}
 	});
@@ -111,7 +112,7 @@ router.on('route:userView', function(userId){
 
 
 router.on('route:group', function(groupId){
- 
+
  var ChatMessage = Backbone.Model.extend({
 			url:'https://safe-brook-9891.herokuapp.com/api/messages/group/?group=' +groupId
 		});
@@ -127,7 +128,7 @@ router.on('route:group', function(groupId){
 				var data = resp.toJSON();
 				var dataReverse = data.reverse();
 				ReactDOM.render(<ChatApp chat={dataReverse} channel={channel} groupId = {groupId} />, document.getElementById('chat'));
-				
+
 			}
 		});
 
@@ -151,8 +152,8 @@ router.on('route:group', function(groupId){
 				var data = resp.toJSON();
 				var dataReverse = data.reverse();
 				ReactDOM.render(<ChatApp chat={data} channel={channel} groupId = {groupId} />, document.getElementById('chat'));
-				
-				
+
+
 			}
 		})
 
@@ -171,14 +172,15 @@ router.on('route:group', function(groupId){
 			success: function(resp) {
 
 				var test = resp.toJSON();
-					console.log(test);
+		
 				var posts=test[0].post_set;
 				var users = test[0].user;
 				var userName = Store.data.userName;
 				var chatList = Store.data.chats;
 				var chatInit = Store.data.chatInit;
+
 				var groupId = test[0].id;
-				// var groupId = posts[0].group;
+
 				ReactDOM.render(<GroupApp posts={posts} groupId={groupId} router={router} users={users} channel={channel} username={userName} chatList={chatList} chatInit={chatInit}/>,document.getElementById('container'));
 
 

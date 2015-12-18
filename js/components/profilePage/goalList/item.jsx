@@ -30,7 +30,6 @@ var Item = React.createClass({
 		});
 		item.save({}, {
 			success: function(resp){
-				console.log(resp);
 				collection.remove(resp)
 				props.addInput(collection.toJSON());
 			}
@@ -40,7 +39,7 @@ var Item = React.createClass({
 		})
 	},
 	render: function() {
-		return (<div>{(this.props.completed ? null : 
+		return (<div>{(this.props.completed ? null :
 					(<li className="goalItem">
 						<input type="checkbox" className="categoryCheckbox" id={this.props.objectId}/>
 						<label className="categoryLabel"htmlFor={this.props.objectId}>{this.props.data}</label>

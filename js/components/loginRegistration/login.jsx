@@ -39,7 +39,7 @@ var Login = React.createClass({
 					<form id="loginForm" method='POST' onSubmit={this._submit}>
 						<div id="inputContainer">
 							<div className="inputWindow">
-								<input id="username" className="loginInput" value="thomas1117" nplaceholder="username"/>
+								<input id="username" className="loginInput" value="thomas1117" placeholder="username"/>
 							</div>
 							<div className="inputWindow">
 								<input id="password" className="loginInput" value="1234567q" placeholder="password" type="password"/>
@@ -72,5 +72,3 @@ function setToken(token) {
 		backboneSync(method,model,options);
 	};
 }
-
-
