@@ -37,9 +37,11 @@ router.on('route:profile', function(username){
 		test.fetch({
 			success: function(resp) {
 			var data=resp.toJSON();
-
+			console.log(data[0].user.username)
 			var loggedIn = _.extend(Store.data, {userId: data[0].user.id});
+			var userName = _.extend(Store.data, {userName: data[0].user.username});
 			console.log(loggedIn);
+			console.log(userName);
 			var rank = data[0].rank;
 			var exp = data[0].exp;
 			console.log(rank +"xp" +exp);
@@ -116,7 +118,7 @@ var pusher = new Pusher('ba2dd22aafcc637cf7e7');
  var channel = pusher.subscribe('group_' + groupId);
  var eventName = 'new-message';
  var callback = function(data) {
-    // add comment into page
+  	console.log('a new message');
   };
   pusher.bind(eventName, callback);
 
@@ -134,10 +136,10 @@ var pusher = new Pusher('ba2dd22aafcc637cf7e7');
 				var test = resp.toJSON();
 				var posts=test[0].post_set;
 				var users = test[0].user;
-
+				var userName = Store.data.userName;
 
 				var groupId = posts[0].group;
-				ReactDOM.render(<GroupApp posts={posts} groupId={groupId} router={router} users={users}/>,document.getElementById('container'));
+				ReactDOM.render(<GroupApp posts={posts} groupId={groupId} router={router} users={users} channel={channel} username={userName}/>,document.getElementById('container'));
 
 
 			}

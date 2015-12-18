@@ -21,7 +21,7 @@ var PusherChat = React.createClass({
 		chat.set({
 			group:this.props.groupId,
 			message:$('#chatInput').val(),
-			channel: channel.name,
+			channel: this.props.channel.name,
 			event: 'new-message',
 		})
 

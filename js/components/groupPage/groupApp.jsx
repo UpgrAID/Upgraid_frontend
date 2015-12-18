@@ -9,7 +9,7 @@ var GroupApp = React.createClass({
 				<Nav router={this.props.router} username={this.props.username}/>
 				<UserList users={this.props.users} router={this.props.router}/>
 				<PostListApp posts={this.props.posts} groupId = {this.props.groupId}/>
-				<PusherChat groupId = {this.props.groupId}/>
+				<PusherChat groupId = {this.props.groupId} channel={this.props.channel}/>
 			</div>)
 	}
 });
