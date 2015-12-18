@@ -6,6 +6,7 @@ var ProfileApp=require('./components/profilePage/profileApp.jsx');
 var UserViewApp = require('./components/userView/UserViewApp.jsx');
 var GroupApp = require('./components/groupPage/groupApp.jsx');
 var Store = require('./store');
+var Pusher = require('pusher-js');
 
 var Router=Backbone.Router.extend({
 	initialize:function() {
@@ -110,6 +111,14 @@ router.on('route:userView', function(userId){
 
 
 router.on('route:group', function(groupId){
+
+var pusher = new Pusher('ba2dd22aafcc637cf7e7');
+ var channel = pusher.subscribe('group_' + groupId);
+ var eventName = 'new-message';
+ var callback = function(data) {
+    // add comment into page
+  };
+  pusher.bind(eventName, callback);
 
 	var groupView = Backbone.Model.extend({
 			url:'https://safe-brook-9891.herokuapp.com/api/groups/'+ groupId

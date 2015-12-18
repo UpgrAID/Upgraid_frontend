@@ -1,12 +1,7 @@
 var React = require('react');
-var Pusher = require('pusher-js');
 
-// var pusher = new Pusher({
-//   appId: '161638',
-//   key: 'ba2dd22aafcc637cf7e7',
-//   secret: '51125ba660d359bcaaae',
- 
-// });
+
+
 
 var PusherChat = React.createClass({
 	_submit: function(e) {
@@ -26,13 +21,17 @@ var PusherChat = React.createClass({
 		chat.set({
 			group:this.props.groupId,
 			message:$('#chatInput').val(),
+			channel: channel.name,
+			event: 'new-message',
 		})
+
 
 		chat.save({}, {
 			success: function(resp) {
 				console.log(resp);
 			}
 		})
+		
 	 
 		
 	},
