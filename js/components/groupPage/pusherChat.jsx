@@ -18,7 +18,7 @@ var PusherChat = React.createClass({
 		chat.set({
 			group:this.props.groupId,
 			message:$('#chatInput').val(),
-			channel: channel.name,
+			channel: this.props.channel.name,
 			event: 'new-message',
 		})
 
@@ -29,9 +29,13 @@ var PusherChat = React.createClass({
 
 	},
 	render: function() {
-		return(
-			<div id="chatContain">
-				<div id="messageContain"></div>
+		console.log(this.props);
+		return(<div id="chatContain">
+				<div id="messageContain">
+				{this.props.chat.map(function(obj){
+					return(<p>{obj.message}</p>)
+				})}
+				</div>
 				<form onSubmit={this._submit}>
 					<input id="chatInput"/>
 				</form>
