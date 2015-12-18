@@ -4,11 +4,17 @@ var Item = React.createClass({
 	getInitialState: function() {
 		return{value: $('.categoryLabel').val(),
 				category: this.props.category,
+				theme: null
 			}
 	},
 	_completed: function(e) {
 		e.preventDefault();
+		
 		props=this.props;
+		this.setState({
+			theme: this.props.theme
+		})
+		console.log(this.props.theme);
 		var Goal = Backbone.Model.extend({
 			url:'https://safe-brook-9891.herokuapp.com/api/goals/'+props.id,
 			initialize: function() {
@@ -31,7 +37,7 @@ var Item = React.createClass({
 		var item = collection.get(props.id);
 		item.set({
 			'title':this.props.data,
-			'theme':this.state.category,
+			'theme':this.props.theme,
 			 'completed': true
 		});
 		item.save({},{
@@ -52,7 +58,7 @@ var Item = React.createClass({
 					(<li className="goalItem">
 						
 						<label className="categoryLabel"htmlFor={this.props.objectId} value={this.props.data}>{this.props.data}</label>
-						<button className="delete" onClick={this._completed}>Completed</button>
+						<button className="delete" onClick={this._completed} value={this.props.theme}>Completed</button>
 					</li>))}
 				</div>)
 

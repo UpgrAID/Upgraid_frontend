@@ -56,6 +56,7 @@ router.on('route:profile', function(username){
 			var groups=(data[0].user.group_set);
 
 			var mapped=data[0].user.goal_set;
+			
 
 
 			ReactDOM.render(<ProfileApp rank={rank}  exp={exp} router={router} username={username} name={name} goals={mapped} friends={friends} groups={groups}/>,document.getElementById('container'));

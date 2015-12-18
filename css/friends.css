@@ -18,6 +18,10 @@
 	position: absolute;
 	top:170px;
 	right:0px;
+	margin-bottom: 10px;
+}
+#setGoal {
+	margin:0;
 }
 
 #listContain {

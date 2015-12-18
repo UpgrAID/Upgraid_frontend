@@ -14,9 +14,10 @@
   color:#fff;
 }
 .goalContainer {
-  margin-top: 50px;
+  margin:0;
   width: 500px;
 	padding:0;
+  float: left;
 }
 .goalItem {
 	list-style: none;
