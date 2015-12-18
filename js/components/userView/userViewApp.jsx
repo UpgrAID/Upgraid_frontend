@@ -14,7 +14,6 @@ var UserViewApp = React.createClass({
 		}
 	},
 	_isTrue: function(fr){
-
 		this.setState({frnds: fr});
 	},
 	componentWillMount: function(){
@@ -24,10 +23,8 @@ var UserViewApp = React.createClass({
 		friendList.fetch({
 			success: function(resp){
 				fr = resp.toJSON();
-				// var selfish = self;
 			var frs = fr.filter(function(f){
-				if (props.userId == f.to_friend && props.myId === f.from_friend){
-
+				if (props.userId === f.to_friend && props.myId === f.from_friend){
 					self._isTrue(true);
 				}
 			})
