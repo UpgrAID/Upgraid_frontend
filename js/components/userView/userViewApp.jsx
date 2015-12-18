@@ -16,7 +16,6 @@ var UserViewApp = React.createClass({
 		}
 	},
 	_isTrue: function(fr){
-
 		this.setState({frnds: fr});
 	},
 	componentWillMount: function(){

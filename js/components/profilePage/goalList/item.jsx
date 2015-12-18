@@ -14,7 +14,7 @@ var Item = React.createClass({
 			url:'https://safe-brook-9891.herokuapp.com/api/goals/'+props.id,
 			initialize: function() {
 
-	}
+			}
 
 		});
 		var GoalCollection = Backbone.Collection.extend({
