@@ -6,7 +6,7 @@ var Friends = React.createClass({
 	render: function() {
 		props=this.props;
 		var test=this.props.friends.map(function(obj){
-			return(<li key={obj.id} className="friendListItem"><FriendsBtn friendName={obj.to_friend.username} data={obj.to_friend.id} router={props.router}/></li>)
+			return(<li key={obj.id} className="friendListItem"><FriendsBtn friendName={obj.to_friend.username} data={obj.to_friend.id}  router={props.router}/></li>)
 					})
 
 				return(<div id="friendsContainer">

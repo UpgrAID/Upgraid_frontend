@@ -38,12 +38,12 @@ router.on('route:profile', function(username){
 		test.fetch({
 			success: function(resp) {
 			var data=resp.toJSON();
-			console.log(data[0].user.username)
+			 (data[0].user.username)
 			var loggedIn = _.extend(Store.data, {userId: data[0].user.id});
 
 			var userName = _.extend(Store.data, {userName: data[0].user.username});
-			console.log(loggedIn);
-			console.log(userName);
+			 (loggedIn);
+			 (userName);
 			var rank = data[0].rank;
 			var exp = data[0].exp;
 
@@ -90,10 +90,7 @@ router.on('route:userView', function(userId){
 		UserProfile.fetch({
 			success: function(resp) {
 			var users=resp.toJSON();
-
-
 			var name= users[0].first_name;
-
 			var post= users[0].post_set;
 
 			var goals = users[0].goal_set;

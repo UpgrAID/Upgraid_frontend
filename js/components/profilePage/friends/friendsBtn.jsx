@@ -5,6 +5,7 @@ var FriendsBtn = React.createClass({
 		var router = this.props.router;
 		e.preventDefault();
 		var userId = this.props.data;
+		
 		router.navigate('userView/'+ userId , {trigger:true})
 	},
 	render:function(){

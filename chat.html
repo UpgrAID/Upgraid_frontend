@@ -29,10 +29,10 @@ function ajaxCall(ajax_url, ajax_data) {
         dataType: "json",
         data: ajax_data,
         success: function(response, textStatus, jqXHR) {
-            console.log(jqXHR.responseText);
+             (jqXHR.responseText);
         },
         error: function(msg) {
-            console.log('test')
+             ('test')
         }
     });
 }

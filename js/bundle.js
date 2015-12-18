@@ -19125,7 +19125,7 @@
 	        'Instances': item.count
 	      };
 	    }));
-	    console.log('Total time:', ReactDefaultPerfAnalysis.getTotalTime(measurements).toFixed(2) + ' ms');
+	     ('Total time:', ReactDefaultPerfAnalysis.getTotalTime(measurements).toFixed(2) + ' ms');
 	  },
 
 	  getMeasurementsSummaryMap: function (measurements) {
@@ -19142,7 +19142,7 @@
 	  printWasted: function (measurements) {
 	    measurements = measurements || ReactDefaultPerf._allMeasurements;
 	    console.table(ReactDefaultPerf.getMeasurementsSummaryMap(measurements));
-	    console.log('Total time:', ReactDefaultPerfAnalysis.getTotalTime(measurements).toFixed(2) + ' ms');
+	     ('Total time:', ReactDefaultPerfAnalysis.getTotalTime(measurements).toFixed(2) + ' ms');
 	  },
 
 	  printDOM: function (measurements) {
@@ -19155,7 +19155,7 @@
 	      result.args = JSON.stringify(item.args);
 	      return result;
 	    }));
-	    console.log('Total time:', ReactDefaultPerfAnalysis.getTotalTime(measurements).toFixed(2) + ' ms');
+	     ('Total time:', ReactDefaultPerfAnalysis.getTotalTime(measurements).toFixed(2) + ' ms');
 	  },
 
 	  _recordWrite: function (id, fnName, totalTime, args) {
@@ -33723,7 +33723,7 @@
 			});
 			item.save({}, {
 				success: function(resp){
-					console.log(resp);
+					 (resp);
 					collection.remove(resp)
 					props.addInput(collection.toJSON());
 				}
@@ -33791,10 +33791,10 @@
 				var data=resp.toJSON();
 
 				var loggedIn = _.extend(Store.data, {userId: data[0].user.id});
-				console.log(loggedIn);
+				 (loggedIn);
 				var rank = data[0].rank;
 				var exp = data[0].exp;
-				console.log(rank +"xp" +exp);
+				 (rank +"xp" +exp);
 
 				var name=data[0].user.first_name;
 				var friends=(data[0].user.friend_set);
@@ -33847,7 +33847,7 @@
 
 				var goals = users[0].goal_set;
 				var myId = Store.data.userId;
-				console.log(myId);
+				 (myId);
 				
 				ReactDOM.render(React.createElement(UserViewApp, {posts: post, goals: goals, name: name, router: router, username: username, userId: userId, myId: myId}),document.getElementById('container'));
 
@@ -33956,7 +33956,7 @@
 
 	var AvatarRankXp = React.createClass({displayName: "AvatarRankXp",
 		render:function() {
-			console.log(this.props.rank)
+			 (this.props.rank)
 			return(React.createElement("div", {id: "avatarRankXpContainer"}, 
 					React.createElement("div", {id: "avatarDiv"}, 
 						
@@ -34048,11 +34048,11 @@
 	var AddFriend = React.createClass({displayName: "AddFriend",
 		_friend: function(e) {
 			e.preventDefault();
-			console.log('test');
+			 ('test');
 			var Friend = Backbone.Model.extend({
 				url:'http://safe-brook-9891.herokuapp.com/api/friends/',
 				intitialize: function() {
-					console.log('a new friendship has been created');
+					 ('a new friendship has been created');
 				}
 			});
 			var FriendCollection = Backbone.Collection.extend({
@@ -34067,7 +34067,7 @@
 			})
 			friend.save({}, {
 				success: function(resp) {
-					console.log(resp.toJSON());
+					 (resp.toJSON());
 				}
 			})
 		},
@@ -34347,7 +34347,7 @@
 		_submit: function(e) {
 				e.preventDefault();
 				var props=this.props;
-				console.log(props);
+				 (props);
 				var Comment = Backbone.Model.extend({
 				url:'https://safe-brook-9891.herokuapp.com/api/comments/',
 				initialize: function() {}
@@ -37067,9 +37067,9 @@
 	}
 
 
-	// log is just a thin wrapper to console.log that prepends a timestamp
+	// log is just a thin wrapper to   that prepends a timestamp
 	exports.log = function() {
-	  console.log('%s - %s', timestamp(), exports.format.apply(exports, arguments));
+	   ('%s - %s', timestamp(), exports.format.apply(exports, arguments));
 	};
 
 
@@ -37862,13 +37862,13 @@
 
 	// `get` is deprecated
 	Buffer.prototype.get = function get (offset) {
-	  console.log('.get() is deprecated. Access using array indexes instead.')
+	   ('.get() is deprecated. Access using array indexes instead.')
 	  return this.readUInt8(offset)
 	}
 
 	// `set` is deprecated
 	Buffer.prototype.set = function set (v, offset) {
-	  console.log('.set() is deprecated. Access using array indexes instead.')
+	   ('.set() is deprecated. Access using array indexes instead.')
 	  return this.writeUInt8(v, offset)
 	}
 
@@ -39508,7 +39508,7 @@
 	  Sha1.prototype._hash = function () {
 	    if(POOL.length < 100) POOL.push(this)
 	    var H = new Buffer(20)
-	    //console.log(this._a|0, this._b|0, this._c|0, this._d|0, this._e|0)
+	    // (this._a|0, this._b|0, this._c|0, this._d|0, this._e|0)
 	    H.writeInt32BE(this._a|0, A)
 	    H.writeInt32BE(this._b|0, B)
 	    H.writeInt32BE(this._c|0, C)

@@ -3,7 +3,7 @@ var React = require('react');
 var OtherPosts = React.createClass({
 	render: function() {
 		var test=this.props.posts.map(function(obj){
-			return(<div><p>{obj.title}</p>
+			return(<div key={obj.id}><p>{obj.title}</p>
 				   <p>{obj.description}</p>
 					</div>
 					)
