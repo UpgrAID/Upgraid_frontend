@@ -37,7 +37,7 @@ var PusherChat = React.createClass({
 				})}
 				</div>
 				<form onSubmit={this._submit}>
-					<input id="chatInput"/>
+					<input id="chatInput" placeholder="Chat here"/>
 				</form>
 			</div>
 		)

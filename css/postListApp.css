@@ -1,71 +1,69 @@
 #postMaster {
-	margin: auto;
-	width: 600px;
-	height: 600px;
+	width:505px;
+	height:505px;
 	overflow:scroll;
-}
-#postInput {
-	margin: auto;
-	width: 600px;
-
-}
-.postContainer {
-	border:1px solid #F7F7F7;
-	margin-top: 15px;
+	border:1px solid #f7f7f7;
+	position: relative;
+	
 }
 
 #titleInput {
+	width:500px;
+	height: 30px;
 	display: block;
-	width:580px;
-	border-radius: 7px;
+}
+
+#postInput {
+	width:500px;
+	height:500px;
+	margin:auto;
+	position: relative;
+	top:100px;
+}
+
+#descriptionInput {
+	width:500px;
+	height:50px;
+	display: block;
+}
+
+.commentBox {
+	border-bottom: 1px solid #888;
+	padding: 5px 0;
+	margin: 0;
+	text-indent: 10px;
+	background: #f7f7f7;
+}
+
+.commentBox:last-child() {
+	border-bottom:none;
+}
+.commenter {
+	font-weight: bold;
+	float: left;
+}
+.commentHeader {
+	text-align: left;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.commentField {
+	display: block;
+	width:505px;
+	
 	height: 30px;
 	padding-bottom: -20px;
 	font-size: 0.8rem;
-
-}
-#descriptionInput {
-	display: block;
-	width:580px;
-	border-radius: 5px;
-	margin-top: 5px;
-	padding-top: 10px;
-	font-size: 0.8rem;
-}
-
-#postBtn {
-	display: block;
-	width: 50px;
-	height: 30px;
-	text-align: center;
-	margin-top: 5px;
-}
-#postBtn:hover {
-	background: blue;
-	color: white;
 }
 .postUser {
-	float: left;
-	margin-left: 5px;
-	font-weight: bold;
-}
-.postTitle {
-	padding: 8px 0 8px 8px;
-	background: #00C5CD;
-	margin: 0 0;
-	padding-left: 150px;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
+	background: #888;
+	width:505px;
 }
 
-.postDescription {
-	margin-top: 0;
-	padding: 8px;
-	height: 30px;
-	text-align: left;
-	background: #f7f7f7;
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
+input {
+	outline: none;
 }
-#newPostInput {
-	margin-bottom: 15px;
+
+textarea {
+	outline:none;
 }

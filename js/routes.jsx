@@ -27,6 +27,7 @@ var Router=Backbone.Router.extend({
 var router = new Router();
 
 router.on('route:profile', function(username){
+	$('#chat').hide()
 		var Goal = Backbone.Model.extend({
 			url:'https://safe-brook-9891.herokuapp.com/api/profiles/?username='+username
 		})
@@ -77,7 +78,7 @@ router.on('route:profile', function(username){
 })
 
 router.on('route:userView', function(userId){
-
+		$('#chat').hide()
 
 		var userView = Backbone.Model.extend({
 			url:'https://safe-brook-9891.herokuapp.com/api/profiles/?user='+userId
@@ -112,7 +113,7 @@ router.on('route:userView', function(userId){
 
 
 router.on('route:group', function(groupId){
-
+$('#chat').show()
  var ChatMessage = Backbone.Model.extend({
 			url:'https://safe-brook-9891.herokuapp.com/api/messages/group/?group=' +groupId
 		});
