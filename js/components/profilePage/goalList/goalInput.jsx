@@ -33,16 +33,23 @@ var GoalInput = React.createClass({
 
 		});
 		var GoalCollection = Backbone.Collection.extend({
+			url:'https://safe-brook-9891.herokuapp.com/api/goals/',
 			model: Goal
 
 		});
 
-		var collection = new GoalCollection(this.props.data);
+		var collection = new GoalCollection();
+		collection.fetch({}, {
+			success: function(resp) {
+				console.log(resp);
+			}
+		})
 		var test = new Goal();
 		test.set({
 
 			'title':this.state.value,
 			'theme':this.state.category
+
 		})
 		test.save({}, {
 			success: function(resp) {

@@ -7,6 +7,8 @@
 	
 }
 
+
+
 #titleInput {
 	width:500px;
 	height: 30px;
@@ -33,13 +35,16 @@
 	margin: 0;
 	text-indent: 10px;
 	background: #f7f7f7;
+
 }
 
 .commentBox:last-child() {
 	border-bottom:none;
 }
 .commenter {
-	font-weight: bold;
+	font-size: 10px;
+	position: relative;
+	top:5px;
 	float: left;
 }
 .commentHeader {
@@ -50,14 +55,23 @@
 .commentField {
 	display: block;
 	width:505px;
-	
 	height: 30px;
-	padding-bottom: -20px;
 	font-size: 0.8rem;
 }
 .postUser {
 	background: #888;
 	width:505px;
+	margin:0;
+	padding-left: 10px;
+}
+
+.postTitle {
+	background: #fff;
+	margin:0;
+	padding-left: 10px;
+}
+.postDescription {
+	background:#F7F2F2;
 }
 
 input {
