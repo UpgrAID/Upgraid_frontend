@@ -1,0 +1,17 @@
+.otherPostTitle {
+	background: #ccc;
+	margin:0;
+	padding-top:2px;
+	padding-bottom: 2px;
+}
+
+.otherPostDescription {
+	background: #fff;
+	margin:0;
+	padding-top:2px;
+	padding-bottom: 2px;
+}
+
+#otherPostsContainer {
+	width:500px;
+}

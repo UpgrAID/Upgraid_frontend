@@ -80,30 +80,32 @@ router.on('route:userView', function(userId){
 
 
 		var userView = Backbone.Model.extend({
-			url:'https://safe-brook-9891.herokuapp.com/api/users/'+userId
+			url:'https://safe-brook-9891.herokuapp.com/api/profiles/?user='+userId
 		})
 		var UserCollection = Backbone.Collection.extend({
 			Model:userView,
-			url:'https://safe-brook-9891.herokuapp.com/api/users/'+userId
+			url:'https://safe-brook-9891.herokuapp.com/api/profiles/?user='+userId
 		})
 		var UserProfile = new UserCollection();
 		UserProfile.fetch({
 			success: function(resp) {
 			var users=resp.toJSON();
-			var name= users[0].first_name;
-			var post= users[0].post_set;
 
-			var goals = users[0].goal_set;
+
+			var name= users[0].user.first_name;
+			var friends=(users[0].user.friend_set);
+			var groups=(users[0].user.group_set);
+			var post= users[0].user.post_set;
+			var rank = users[0].rank;
+			var exp = users[0].exp;
+			var goals = users[0].user.goal_set;
 			var myId = Store.data.userId;
 
-			ReactDOM.render(<UserViewApp posts={post} goals={goals} name={name} router={router} username={username} userId={userId} myId={myId}/>,document.getElementById('container'));
-
-
-
+			ReactDOM.render(<UserViewApp rank={rank}  exp={exp} posts={post} goals={goals} name={name} router={router} username={username} userId={userId} myId={myId} friends={friends} groups={groups}/>,document.getElementById('container'));
 
 
 			}
-});
+	});
 
 });
 
@@ -124,8 +126,8 @@ router.on('route:group', function(groupId){
 		Chat.fetch({
 			success: function(resp) {
 				var data = resp.toJSON();
-
-				ReactDOM.render(<ChatApp chat={data} channel={channel} groupId = {groupId} />, document.getElementById('chat'));
+				var dataReverse = data.reverse();
+				ReactDOM.render(<ChatApp chat={dataReverse} channel={channel} groupId = {groupId} />, document.getElementById('chat'));
 
 			}
 		});
@@ -148,6 +150,7 @@ router.on('route:group', function(groupId){
 		Chat.fetch({
 			success: function(resp) {
 				var data = resp.toJSON();
+				var dataReverse = data.reverse();
 				ReactDOM.render(<ChatApp chat={data} channel={channel} groupId = {groupId} />, document.getElementById('chat'));
 
 
@@ -169,13 +172,15 @@ router.on('route:group', function(groupId){
 			success: function(resp) {
 
 				var test = resp.toJSON();
+		
 				var posts=test[0].post_set;
 				var users = test[0].user;
 				var userName = Store.data.userName;
 				var chatList = Store.data.chats;
 				var chatInit = Store.data.chatInit;
 
-				var groupId = posts[0].group;
+				var groupId = test[0].id;
+
 				ReactDOM.render(<GroupApp posts={posts} groupId={groupId} router={router} users={users} channel={channel} username={userName} chatList={chatList} chatInit={chatInit}/>,document.getElementById('container'));
 
 

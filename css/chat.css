@@ -1,8 +1,9 @@
 #chatContain {
 	position: absolute;
-	top:40px;
-	right:20px;
+	bottom:40px;
+	right:0px;
 	width:300px;
+
 }
 
 #messageContain {
@@ -10,6 +11,8 @@
 	height:300px;
 	overflow: scroll;
 	background: #fff;
+	padding-top: 20px;
+	box-sizing:border-box;
 }
 
 #chatInput {
@@ -17,3 +20,16 @@
 	padding-top:20px;
 	outline:none;
 }
+
+.message:nth-child(odd) {
+	background:#f7f7f7;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	
+}
+
+.message {
+	margin:0;
+	padding-left: 10px;
+}
+

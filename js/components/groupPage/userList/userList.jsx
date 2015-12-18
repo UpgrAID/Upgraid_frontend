@@ -9,7 +9,7 @@ var UserList = React.createClass({
 				<ul id="userListUl">
 					{this.props.users.map(function(obj){
 						return(
-							<User username={obj.username} id={obj.id} router={props.router}/>)
+							<User key={obj.id} username={obj.username} id={obj.id} router={props.router}/>)
 					})}
 				</ul>
 				</div>
