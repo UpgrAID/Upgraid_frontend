@@ -13,7 +13,8 @@ require('../css/addFriend.css');
 require('../css/userList.css');
 require('../css/avatarRankXp.css');
 require('../css/chat.css');
-require('../css/otherPosts.css')
+require('../css/otherPosts.css');
+require('../css/otherGoals.css')
 
 
 var React = require('react');
