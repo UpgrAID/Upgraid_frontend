@@ -11,7 +11,8 @@ require('../css/groups.css');
 require('../css/comment.css')
 require('../css/addFriend.css');
 require('../css/userList.css');
-require('../css/avatarRankXp.css')
+require('../css/avatarRankXp.css');
+require('../css/chat.css');
 
 
 
