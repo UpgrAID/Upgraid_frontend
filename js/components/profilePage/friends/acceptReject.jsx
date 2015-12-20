@@ -5,12 +5,14 @@ var Backbone = require('backbone');
 var AcceptReject = React.createClass({
 
 	_handleAccept: function(event){
+		
 		event.preventDefault();
 		var Fra = Backbone.Model.extend({
 			url:'https://safe-brook-9891.herokuapp.com/api/friends/' + this.props.requester.id
 		});
 		var Fa = new Fra();
 		Fa.set({
+			id: this.props.requester.id,
 			to_friend: this.props.requester.to_friend,
 			from_friend: this.props.requester.from_friend,
 			accepted: true
@@ -26,6 +28,7 @@ var AcceptReject = React.createClass({
 		});
 		var Fd = new Frd();
 		Fd.set({
+			id: this.props.requester.id,
 			to_friend: this.props.requester.to_friend,
 			from_friend: this.props.requester.from_friend,
 			accepted: false

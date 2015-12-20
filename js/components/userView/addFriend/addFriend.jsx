@@ -1,6 +1,7 @@
 var React = require('react');
 var Friendly = require('../../../models/friendly');
 var Friendlies = require('../../../collections/friendlies'); 
+
 var AddFriend = React.createClass({
 
 	_friend: function(e) {

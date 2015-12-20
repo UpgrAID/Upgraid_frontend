@@ -14,6 +14,7 @@ var FriendRequest = React.createClass({
 		}
 	},
 	_loadReq: function(req){
+		console.log('test');
 		this.setState({
 			frRq: req
 		});
@@ -25,7 +26,7 @@ var FriendRequest = React.createClass({
 			success: function(resp){
 				fr = resp.toJSON();
 				f = fr.filter(function(usr){
-					if(usr.to_friend === Store.data.userName && !usr.accepted){
+					if(usr.to_friend === Store.data.userId && !usr.accepted){
 						return true
 					}else {
 						return false
