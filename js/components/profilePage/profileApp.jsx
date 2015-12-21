@@ -18,7 +18,7 @@ var ProfileApp = React.createClass({
 				<AvatarRankXp rank={this.props.rank} exp={this.props.exp}/>
 				<Greeting name={this.props.name}/>
 				<GoalListApp goals={this.props.goals} router={this.props.router}/>
-				<Friends friends={this.props.friends} router={this.props.router}/>
+				<Friends fromFriends={this.props.fromFriends} toFriends={this.props.toFriends} router={this.props.router}/>
 				<Group groups={this.props.groups} router={this.props.router}/>
 				</div>)
 	}

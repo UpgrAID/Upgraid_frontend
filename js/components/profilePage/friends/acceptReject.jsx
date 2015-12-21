@@ -5,7 +5,7 @@ var Backbone = require('backbone');
 var AcceptReject = React.createClass({
 
 	_handleAccept: function(event){
-		
+
 		event.preventDefault();
 		var Fra = Backbone.Model.extend({
 			url:'https://safe-brook-9891.herokuapp.com/api/friends/' + this.props.requester.id

@@ -40,7 +40,7 @@ var UserViewApp = React.createClass({
 				<Nav router={this.props.router} username={this.props.username}/>
 				<AvatarRankXp rank={this.props.rank} exp={this.props.exp}/>
 				<Greeting name={this.props.name}/>
-				<Friends friends={this.props.friends} router={this.props.router}/>
+				<Friends fromFriends={this.props.fromFriends} toFriends={this.props.toFriends} router={this.props.router}/>
 				<Group groups={this.props.groups} router={this.props.router}/>
 				<OtherPosts posts={this.props.posts}/>
 				<OtherGoals goals={this.props.goals}/>

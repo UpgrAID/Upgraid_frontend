@@ -52,14 +52,27 @@ router.on('route:profile', function(username){
 			var exp = data[0].exp;
 			var uid = data[0].user.id;
 			var name=data[0].user.first_name;
-			var friends=(data[0].user.friend_set);
-			var groups=(data[0].user.group_set);
+			var fromFriends=data[0].user.to_friend_set;
+			var toFriends = data[0].user.friend_set;
+			var fromFriendsMap = fromFriends.filter(function(obj){
+				if(obj.accepted===true) {
+					return true
+				}
+			});
+			var toFriendsMap = toFriends.filter(function(obj){
+				if(obj.accepted===true) {
+					return true
+				}
+			});
 
+			console.log('tofriends',toFriendsMap);
+			
+			var groups=(data[0].user.group_set);
 			var mapped=data[0].user.goal_set;
 			
 
 
-			ReactDOM.render(<ProfileApp rank={rank}  exp={exp} router={router} username={username} name={name} goals={mapped} friends={friends} groups={groups}/>,document.getElementById('container'));
+			ReactDOM.render(<ProfileApp rank={rank}  exp={exp} router={router} username={username} name={name} goals={mapped} fromFriends={fromFriendsMap} toFriends={toFriendsMap} groups={groups}/>,document.getElementById('container'));
 
 
 			}
@@ -102,7 +115,18 @@ router.on('route:userView', function(userId){
 
 
 			var name= users[0].user.first_name;
-			var friends=(users[0].user.friend_set);
+			var fromFriends=(users[0].user.to_friend_set);
+			var toFriends = users[0].user.friend_set;
+			var fromFriendsMap = fromFriends.filter(function(obj){
+				if(obj.accepted===true) {
+					return true
+				}
+			});
+			var toFriendsMap = toFriends.filter(function(obj){
+				if(obj.accepted===true) {
+					return true
+				}
+			});
 			var groups=(users[0].user.group_set);
 			var post= users[0].user.post_set;
 			var rank = users[0].rank;
@@ -119,7 +143,7 @@ router.on('route:userView', function(userId){
 			var myId = Store.data.userId;
 			var username = Store.data.userName;
 
-			ReactDOM.render(<UserViewApp rank={rank}  exp={exp} posts={post} goals={goalsMapped} name={name} router={router} username={username} userId={userId} myId={myId} friends={friends} groups={groups}/>,document.getElementById('container'));
+			ReactDOM.render(<UserViewApp rank={rank}  exp={exp} posts={post} goals={goalsMapped} name={name} router={router} username={username} userId={userId} myId={myId} fromFriends={fromFriendsMap} toFriends={toFriendsMap} groups={groups}/>,document.getElementById('container'));
 
 
 			}
