@@ -20,25 +20,23 @@ var FriendRequest = React.createClass({
 		});
 	},
 	componentWillMount: function(){
-		var frq = new Friendlies();
-		self = this
-		frq.fetch({
-			success: function(resp){
-				fr = resp.toJSON();
+				self=this;
+				fr = this.props.fromAll;
+				console.log('fromAll',fr);
 				f = fr.filter(function(usr){
-					if(usr.to_friend === Store.data.userId && !usr.accepted){
+					if(!usr.accepted){
 						return true
 					}else {
 						return false
 					}
 				})
 					self._loadReq(f);
-				}
-			})
-	},
+				},
+			
+	
 
 	render: function(){
-		console.log(this.state.frRq);
+		console.log('test',this.state.frRq);
 		return (
 			<ul id="friendRequests">
 				{this.state.frRq.map(function(req){

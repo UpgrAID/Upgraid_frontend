@@ -14,11 +14,11 @@ var ProfileApp = React.createClass({
 		
 		return(<div>
 				
-				<Nav router={this.props.router} username={this.props.username} userId = {this.props.uid}/>
+				<Nav router={this.props.router} username={this.props.username} userId = {this.props.uid} fromAll ={this.props.fromAll}/>
 				<AvatarRankXp rank={this.props.rank} exp={this.props.exp}/>
 				<Greeting name={this.props.name}/>
 				<GoalListApp goals={this.props.goals} router={this.props.router}/>
-				<Friends fromFriends={this.props.fromFriends} toFriends={this.props.toFriends} router={this.props.router}/>
+				<Friends fromFriends={this.props.fromFriends} toFriends={this.props.toFriends}  router={this.props.router}/>
 				<Group groups={this.props.groups} router={this.props.router}/>
 				</div>)
 	}

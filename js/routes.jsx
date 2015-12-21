@@ -72,7 +72,7 @@ router.on('route:profile', function(username){
 			
 
 
-			ReactDOM.render(<ProfileApp rank={rank}  exp={exp} router={router} username={username} name={name} goals={mapped} fromFriends={fromFriendsMap} toFriends={toFriendsMap} groups={groups}/>,document.getElementById('container'));
+			ReactDOM.render(<ProfileApp rank={rank}  exp={exp} router={router} username={username} name={name} goals={mapped} fromFriends={fromFriendsMap} fromAll={fromFriends} toFriends={toFriendsMap} groups={groups}/>,document.getElementById('container'));
 
 
 			}

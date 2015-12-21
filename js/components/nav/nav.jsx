@@ -12,7 +12,7 @@ var Nav = React.createClass({
 						<li onClick={this._profileNav}>Profile</li>
 						<li>Group</li>
 						<li id="friendLi">
-							<FriendRequest userID={this.props.uid} />
+							<FriendRequest userID={this.props.uid} fromAll={this.props.fromAll}/>
 						</li>
 					</ul>
 				</div>)
