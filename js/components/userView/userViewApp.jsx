@@ -2,7 +2,7 @@ var React = require('react');
 var OtherPosts= require('../../components/profilePage/post/othersPosts.jsx');
 var OtherGoals= require('../../components/profilePage/goalList/othersGoals.jsx');
 var Greeting = require('../../components/profilePage/greeting.jsx');
-var Nav = require('../../components/nav/nav.jsx');
+var NavUserView = require('../../components/nav/navUserView.jsx');
 var Friendlies = require('../../collections/friendlies');
 var AddFriend = require('../userView/addFriend/addFriend.jsx');
 var AvatarRankXp = require('../../components/profilePage/avatarRankXp/avatarRankXp.jsx');
@@ -37,7 +37,7 @@ var UserViewApp = React.createClass({
 
 		return (
 			<div>
-				<Nav router={this.props.router} username={this.props.username}/>
+				<NavUserView router={this.props.router} username={this.props.username}/>
 				<AvatarRankXp rank={this.props.rank} exp={this.props.exp}/>
 				<Greeting name={this.props.name}/>
 				<Friends fromFriends={this.props.fromFriends} toFriends={this.props.toFriends} router={this.props.router}/>

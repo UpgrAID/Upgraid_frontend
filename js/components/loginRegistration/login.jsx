@@ -2,6 +2,7 @@ var React =require('react');
 var ReactDOM = require('react-dom')
 var User = require('../../models/user');
 var Backbone = require('backbone');
+var Cookie = require('jquery.cookie');
 
 var Registration = require('./registration.jsx');
 
@@ -63,12 +64,19 @@ var Login = React.createClass({
 module.exports= Login;
 
 function setToken(token) {
+	$.cookie("auth_token", token);
 	var backboneSync = Backbone.sync;
 	Backbone.sync = function(method,model,options) {
 		options.headers = {
-			'Authorization': 'Token ' + token
+			'Authorization': 'Token ' + token,
 		};
+		  if (!options.xhrFields) {
+      options.xhrFields = {withCredentials:true};
+    }
+		
 
 		backboneSync(method,model,options);
 	};
 }
+
+

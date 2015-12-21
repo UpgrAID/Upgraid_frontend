@@ -3,6 +3,7 @@ require('../css/registration.css');
 require('../css/goalListApp.css');
 require('../css/main.css');
 require('../css/nav.css');
+require('../css/navUserView.css');
 require('../css/groupHome.css');
 require('../css/postListApp.css');
 require('../main.css');
