@@ -1,4 +1,5 @@
 var React = require('react');
+var FriendRequest = require('../profilePage/friends/friendRequest.jsx');
 
 var Nav = React.createClass({
 	_profileNav: function(e){
@@ -10,6 +11,9 @@ var Nav = React.createClass({
 					<ul id="navUl">
 						<li onClick={this._profileNav}>Profile</li>
 						<li>Group</li>
+						<li id="friendLi">
+							<FriendRequest userID={this.props.uid} />
+						</li>
 					</ul>
 				</div>)
 	}

@@ -13,8 +13,8 @@ var ProfileApp = React.createClass({
 	render: function() {
 		
 		return(<div>
-				<FriendRequest userID={this.props.uid} />
-				<Nav router={this.props.router} username={this.props.username}/>
+				
+				<Nav router={this.props.router} username={this.props.username} userId = {this.props.uid}/>
 				<AvatarRankXp rank={this.props.rank} exp={this.props.exp}/>
 				<Greeting name={this.props.name}/>
 				<GoalListApp goals={this.props.goals} router={this.props.router}/>

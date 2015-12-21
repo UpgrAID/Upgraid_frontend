@@ -40,12 +40,12 @@ var FriendRequest = React.createClass({
 	render: function(){
 		console.log(this.state.frRq);
 		return (
-			<div id="friendRequests">Users who want to be Friends:
+			<ul id="friendRequests">
 				{this.state.frRq.map(function(req){
 					return(
 						<AcceptReject requester={req}/>)
 			})}
-			</div>
+			</ul>
 		)
 	},
 

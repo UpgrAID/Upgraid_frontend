@@ -40,11 +40,11 @@ var AcceptReject = React.createClass({
 	render: function(){
 		console.log(this.props);
 		return (
-			<div className="reqObj">
+			<li className="reqObj">
 				<span className="requester">{this.props.requester.from_friend}</span>
 				<span className="accbutton"><button id="accept" onClick={this._handleAccept}>Accept</button></span>
 				<span className="rejbutton"><button id="decline" onClick={this._handleDecline}>Deline</button></span>
-			</div>
+			</li>
 
 		)
 	}
