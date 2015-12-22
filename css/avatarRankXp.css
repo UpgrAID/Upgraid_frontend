@@ -1,25 +1,24 @@
 #avatarDiv {
-	width:100%;
+	width:200px;
 	margin:0;
-	height:130px;
-	background: #ccc;
+	height:260px;
+	background: #fbfcfe;
 	position: relative;
+	font-family: 'Press Start 2P', cursive;
 	
-
 };
 
-#avatarRankXpContainer {
-	width: 180px;
-	position: relative;
-	
 
-}
 
-.rank {
+#rank1 {
 	text-align: left;
+	font-family: 'Press Start 2P', cursive;
 	
 }
 
-#exp {
-	
+#picture {
+	width:150px;
+	height: 150px;
+	background: #fff;
+	content:url('../assets/avatar.png');
 }

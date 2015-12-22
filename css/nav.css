@@ -12,6 +12,14 @@
 
 }
 
+#header {
+  height:155px;
+  width:100%;
+  position: relative;
+  background: #001E1F;
+  position: relative;
+}
+
 #navUl {
 	margin-left: -35px;
 	list-style:none;
@@ -40,5 +48,7 @@
 #friendLi:hover #friendRequests {
   display: block;
 }
+
+
 
 

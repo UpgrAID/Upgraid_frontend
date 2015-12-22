@@ -20,7 +20,10 @@ var Login = React.createClass({
 			method:'post',
 			data: {username: username, password:password}
 		}).then(function(resp){
-			setToken(resp.token);
+
+			$.cookie('AuthToken',resp.token);
+			setToken(resp.token)
+
 			router.navigate('profile/' + username, {trigger:true});
 		})
 		$("#app").hide();
@@ -40,10 +43,10 @@ var Login = React.createClass({
 					<form id="loginForm" method='POST' onSubmit={this._submit}>
 						<div id="inputContainer">
 							<div className="inputWindow">
-								<input id="username" className="loginInput"  placeholder="username"/>
+								<input id="username" className="loginInput"  placeholder="username" value="thomas1117"/>
 							</div>
 							<div className="inputWindow">
-								<input id="password" className="loginInput"  placeholder="password" type="password"/>
+								<input id="password" className="loginInput"  placeholder="password" type="password" value="1234567q"/>
 							</div>
 							<button id="submitLog" type="submit">Submit</button>
 							<button id="registerBtn" onClick={this._reg}>Register</button>
@@ -64,19 +67,23 @@ var Login = React.createClass({
 module.exports= Login;
 
 function setToken(token) {
-	$.cookie("auth_token", token);
-	var backboneSync = Backbone.sync;
-	Backbone.sync = function(method,model,options) {
+	
+	var _sync = Backbone.sync;
+	Backbone.sync = function(post,model,options) {
+		if($.cookie('AuthToken')) {
 		options.headers = {
 			'Authorization': 'Token ' + token,
 		};
-		  if (!options.xhrFields) {
-      options.xhrFields = {withCredentials:true};
-    }
+	}
+		 
 		
 
-		backboneSync(method,model,options);
+		return _sync.call(this,post,model,options);
 	};
 }
+
+ if($.cookie('auth_token')) {
+ 	setToken($.cookie('auth_token'))
+ }
 
 

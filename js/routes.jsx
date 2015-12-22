@@ -27,7 +27,11 @@ var Router=Backbone.Router.extend({
 
 var router = new Router();
 
+
+
+
 router.on('route:profile', function(username){
+
 	$('#chat').hide()
 		var Goal = Backbone.Model.extend({
 			url:'https://safe-brook-9891.herokuapp.com/api/profiles/?username='+username

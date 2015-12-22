@@ -7,7 +7,8 @@ var Nav = React.createClass({
 		router.navigate('profile/' + this.props.username, {trigger:true});
 	},
 	render:function(){
-		return(<div id='navContainer'>
+		return(<div>
+				<div id='navContainer'>
 					<ul id="navUl">
 						<li onClick={this._profileNav}>Profile</li>
 						<li>Group</li>
@@ -15,6 +16,9 @@ var Nav = React.createClass({
 							<FriendRequest userID={this.props.uid} fromAll={this.props.fromAll}/>
 						</li>
 					</ul>
+
+				</div>
+				<div id="header"></div>
 				</div>)
 	}
 });

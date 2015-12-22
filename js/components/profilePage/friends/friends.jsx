@@ -14,7 +14,7 @@ var Friends = React.createClass({
 			return(<li key={obj.id} className="friendListItem"><ToFriendBtn toFriend={obj.to_friend.username} id={obj.to_friend.id} router={props.router}/></li>)
 		})
 				return(<div id="friendsContainer">
-					<h2>Friends</h2>
+					<h2 id='friendsHeader'>Friends</h2>
 					<div id="listContain">
 					<ul id="friendsUl">
 						{test}

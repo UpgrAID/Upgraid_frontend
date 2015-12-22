@@ -1,11 +1,13 @@
 body {
 	font-family: 'Roboto', sans-serif;
-	background: #DDD9D9;
+	background:#fbfcfe;
+
 }
 
 #container {
-	width: 100%;
-	
+	width: 1200px;
+	margin:auto;
+	position: relative;
 	margin-top: 50px;
 }
 

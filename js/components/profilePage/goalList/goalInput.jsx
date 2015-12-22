@@ -72,7 +72,7 @@ var GoalInput = React.createClass({
 			<input type='radio' className='theme' onClick={this._setValue} checked={this.state.radio}value='1'/>
 			<label className="selectCategory">Skills</label>
 			<input type='radio' className='theme' onClick={this._setValue} value='2'/>
-			<label className="selectCategory">Bad Habits</label>
+			<label className="selectCategory">Bad Habits</label><br/>
 			<input type='radio' className='theme' onClick={this._setValue} value='3'/>
 			<label className="selectCategory">Health and Fitness</label>
 			<button id="goalSubmit">Submit</button>

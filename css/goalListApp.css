@@ -1,10 +1,12 @@
 #goalContainer {
-  width:400px;
+  width:300px;
   background: #00c5cd;
-  text-align: center;
+  display: inline-block;
+  position: relative;
+  float: left;
 }
 #goalInput {
-    width:340px;
+    width:260px;
     padding-top:20px;
     border-radius: 5px;
     font-size: 0.8rem;
@@ -15,18 +17,19 @@
 }
 .goalContainer {
   margin:0;
-  width: 500px;
+  width: 360px;
 	padding:0;
   float: left;
 }
 .goalItem {
 	list-style: none;
-	width: 400px;
+	width: 300px;
   height: 40px;
   padding-top: 10px;
   font-size: 18px;
   background: #f7f7f7;
   position: relative;
+
 }
 
 .goalItem:last-child {
@@ -38,9 +41,11 @@
     margin-left: 10px;
     width: 100px;
     height: 30px;
-    border-radius: 4px;
+    border-top-left-radius: 4px;
+    border:1px solid #f7f7f7;
     font-size: 0.8rem;
     text-align: center;
+    float: right;
     padding: 3px;
     color: #fff;
     background: #27556C;
@@ -56,7 +61,21 @@
 
 .categoryLabel {
     float: left;
+    margin-left:15px;
+    width:240px;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    background: #f7f7f7;
+
 }
+
+.categoryLabel:hover  {
+  overflow: visible;
+  
+}
+
+
 #postList {
   width: 60%;
   margin: auto;
@@ -64,12 +83,13 @@
 .delete {
   float: right;
   margin-right: 10px;
-  width: 80px;
   height: 30px;
+  width:30px;
   padding: 5px;
   text-align: center;
   font-size: 0.6rem;
   border-radius: 3px;
+  border:1px solid #f7f7f7;
   background:#27556C;
   color:#fff;
 }
@@ -83,4 +103,5 @@
 
 .selectCategory {
   color: #fff;
+  
 }
