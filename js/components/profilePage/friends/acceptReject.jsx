@@ -38,7 +38,7 @@ var AcceptReject = React.createClass({
 
 	},
 	render: function(){
-		console.log(this.props);
+		
 		return (
 			<li className="reqObj">
 				<span className="requester">{this.props.requester.from_friend.username}</span>

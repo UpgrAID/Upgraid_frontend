@@ -7,13 +7,19 @@ var NavUserView = React.createClass({
 		router.navigate('profile/' + this.props.username, {trigger:true});
 	},
 	render:function(){
-		return(<div id='navContainerUser'>
-					<ul id="navUlUser">
-						<li onClick={this._profileNav}>Profile</li>
-						<li>Group</li>
-					</ul>
-					<div id="header"></div>
-				</div>)
+		return(<div>
+					<div id='navContainerUser'>
+						<ul id="navUlUser">
+							<li onClick={this._profileNav}>Profile</li>
+							<li>Group</li>
+						</ul>
+					
+					</div>
+				
+				<div id="header"></div>
+				
+				</div>
+				)
 	}
 });
 

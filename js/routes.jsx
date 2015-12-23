@@ -69,9 +69,10 @@ router.on('route:profile', function(username){
 				}
 			});
 
-			console.log('tofriends',toFriendsMap);
+			
 			
 			var groups=(data[0].user.group_set);
+			
 			var mapped=data[0].user.goal_set;
 			
 

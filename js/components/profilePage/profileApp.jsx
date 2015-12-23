@@ -17,7 +17,7 @@ var ProfileApp = React.createClass({
 				<Nav router={this.props.router} username={this.props.username} userId = {this.props.uid} fromAll ={this.props.fromAll}/>
 				<Greeting name={this.props.name}/>
 				<AvatarRankXp rank={this.props.rank} exp={this.props.exp}/>
-				<ProfilePostApp posts={this.props.posts}/>
+				<ProfilePostApp posts={this.props.posts} groups={this.props.groups}/>
 				<GoalListApp goals={this.props.goals} router={this.props.router}/>
 				<Friends fromFriends={this.props.fromFriends} toFriends={this.props.toFriends}  router={this.props.router}/>
 				<Group groups={this.props.groups} router={this.props.router}/>

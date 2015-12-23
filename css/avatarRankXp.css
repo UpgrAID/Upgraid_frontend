@@ -1,9 +1,10 @@
 #avatarDiv {
 	width:200px;
 	margin:0;
-	height:260px;
+	height:200px;
 	background: #fbfcfe;
 	position: relative;
+	top:30px;
 	font-family: 'Press Start 2P', cursive;
 	
 };
