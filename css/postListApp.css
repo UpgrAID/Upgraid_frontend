@@ -1,3 +1,25 @@
+#profilePostMaster {
+	width:505px;
+	height:505px;
+	overflow:scroll;
+	border:1px solid #f7f7f7;
+	position: relative;
+	left:100px;
+	top:-35px;
+	display: inline-block;
+}
+
+#postProfile {
+	width:505px;
+}
+
+#descriptionProfile {
+	width:500px;
+	height:50px;
+	display: block;
+}
+
+
 #postMaster {
 	width:505px;
 	height:505px;
@@ -6,8 +28,6 @@
 	position: relative;
 	
 }
-
-
 
 #titleInput {
 	width:500px;

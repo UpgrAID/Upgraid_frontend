@@ -12,6 +12,7 @@ var NavUserView = React.createClass({
 						<li onClick={this._profileNav}>Profile</li>
 						<li>Group</li>
 					</ul>
+					<div id="header"></div>
 				</div>)
 	}
 });

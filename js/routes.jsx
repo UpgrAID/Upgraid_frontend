@@ -45,13 +45,13 @@ router.on('route:profile', function(username){
 		test.fetch({
 			success: function(resp) {
 			var data=resp.toJSON();
-
+			console.log('data profile',data);
 			var loggedIn = _.extend(Store.data, {userId: data[0].user.id});
 
 			var userName = _.extend(Store.data, {userName: data[0].user.username});
 
 
-
+			var posts=data[0].user.post_set;
 			var rank = data[0].rank;
 			var exp = data[0].exp;
 			var uid = data[0].user.id;
@@ -76,7 +76,7 @@ router.on('route:profile', function(username){
 			
 
 
-			ReactDOM.render(<ProfileApp rank={rank}  exp={exp} router={router} username={username} name={name} goals={mapped} fromFriends={fromFriendsMap} fromAll={fromFriends} toFriends={toFriendsMap} groups={groups}/>,document.getElementById('container'));
+			ReactDOM.render(<ProfileApp rank={rank}  exp={exp} router={router} username={username} name={name} goals={mapped} fromFriends={fromFriendsMap} fromAll={fromFriends} toFriends={toFriendsMap} groups={groups} posts={posts}/>,document.getElementById('container'));
 
 
 			}
@@ -178,8 +178,9 @@ $('#chat').show()
 
 			}
 		});
+		
 
- var pusher = new Pusher('aa48a322f5c5c64fe315');
+ var pusher = new Pusher('4ddbac2023fa2cbd0fa7');
  var channel = pusher.subscribe('group_' + groupId);
  var eventName = 'new-message';
 
