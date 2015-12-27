@@ -42,8 +42,10 @@ var AcceptReject = React.createClass({
 		return (
 			<li className="reqObj">
 				<span className="requester">{this.props.requester.from_friend.username}</span>
-				<span className="accbutton"><button id="accept" onClick={this._handleAccept}>Accept</button></span>
-				<span className="rejbutton"><button id="decline" onClick={this._handleDecline}>Deline</button></span>
+				<span className="accRejContain">
+				<button className="accbutton" onClick={this._handleAccept}>Accept</button>
+				<button className="rejbutton" onClick={this._handleDecline}>Deline</button>
+				</span>
 			</li>
 
 		)
