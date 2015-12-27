@@ -1,9 +1,10 @@
 #goalContainer {
   width:300px;
-  background: #00c5cd;
+  background: #006d72;
   
   position: relative;
-  top:100px;
+  top:80px;
+  left:25px;
   float: left;
 }
 #goalInput {
@@ -12,9 +13,12 @@
     border-radius: 5px;
     font-size: 0.8rem;
     outline:none;
+    position: relative;
+    left:16px;
 }
 #goalHeader {
   color:#fff;
+  text-align: center;
 }
 .goalContainer {
   margin:0;
@@ -29,7 +33,7 @@
   height: 40px;
   padding-top: 10px;
   font-size: 18px;
-  background: #f7f7f7;
+  background: #fff;
   position: relative;
 
 }
@@ -68,7 +72,7 @@
     overflow:hidden;
     white-space:nowrap;
     text-overflow:ellipsis;
-    background: #f7f7f7;
+   
 
 }
 
@@ -101,9 +105,12 @@
 }
 #setGoal {
   margin-bottom: 20px;
+  position: relative;
 }
 
 .selectCategory {
   color: #fff;
-  
+  text-align: center;
+  position: relative;
+  top: 2px;
 }

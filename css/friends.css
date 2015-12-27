@@ -2,7 +2,7 @@
     width: 150px;
     height: 31px;
     
-    background: #00c5cd;
+    background: #006d72;
     outline: none;
     border: 1px solid #f7f7f7;
     text-align: right;
@@ -19,7 +19,7 @@
 	display: inline-block;
 	position: absolute;
 	top:470px;
-	right:0px;
+	right:25px;
 	border-left:2px solid #f7f7f7;
 }
 #setGoal {

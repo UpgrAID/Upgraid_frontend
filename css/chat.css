@@ -1,9 +1,17 @@
 #chatContain {
-	position: absolute;
-	bottom:40px;
+	position: fixed;
+	bottom:0px;
 	right:0px;
 	width:300px;
 
+}
+
+#chat {
+	height: 400px;
+    width: 300px;
+    overflow: scroll;
+    position: fixed;
+    float: right;
 }
 
 .userNameChat {

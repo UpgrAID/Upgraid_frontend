@@ -1,10 +1,11 @@
 #profilePostMaster {
-	width:504px;
+	width:501px;
 	height:505px;
-	border:1px solid #f7f7f7;
+	background:#fff;
+	border:1px solid black;
 	position: relative;
-	left:25px;
-	top:94px;
+	left:56px;
+	top:78px;
 	display: inline-block;
 
 }
@@ -18,9 +19,11 @@
 }
 
 #postProfile {
-	width:497px;
+	width:499px;
 	padding-top:15px;
 	margin:0;
+	border:none;
+	border-bottom:1px solid #f7f7f7;
 }
 
 .profileBtns {
@@ -33,12 +36,14 @@
 
 
 .profileBtn {
-	width:168px;
+	width:167px;
 	float: left;
 	height:30px;
 	outline:none;
-	border-right:1px solid #f7f7f7;
-	border-bottom:1px solid #f7f7f7;
+	border:1px solid #f7f7f7;
+	
+	background: #006d72;
+	color:#fff;
 }
 
 
@@ -49,12 +54,13 @@
 	display: block;
 	margin:0;
 	resize:none;
+	border:none;
 }
 
 
 #postMaster {
 	width:505px;
-	height:505px;
+	height:305px;
 	overflow:scroll;
 	border:1px solid #f7f7f7;
 	position: relative;
@@ -72,7 +78,7 @@
 	height:500px;
 	margin:auto;
 	position: relative;
-	top:100px;
+	top:305px;
 }
 
 #descriptionInput {
@@ -124,6 +130,8 @@
 }
 .postDescription {
 	background:#F7F2F2;
+	margin:0;
+	padding-left: 10px;
 }
 
 input {
