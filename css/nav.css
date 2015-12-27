@@ -13,11 +13,11 @@
 }
 
 #header {
-  height:155px;
+  height:215px;
   width:100%;
-  position: relative;
+  position: absolute;
   background: #001E1F;
-  position: relative;
+ 
 }
 
 #navUl {
