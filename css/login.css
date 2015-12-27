@@ -9,8 +9,9 @@
 	height:60px;
 	margin: auto;
 	background: #00C5CD;
-	position: relative;
-
+	position: fixed;
+	top:0;
+	left:0;
 }
 #loginOnly {
 	width:875px;
@@ -123,8 +124,10 @@
 }
 #bigTitle {
 	position: absolute;
-	top: 460px;
-	left: 220px;
+	top:300px;
+	width:300px;
+	
+	left:30%;
 	font-size: 2rem;
 	font-family: 'Roboto', sans-serif;
 	color: #019CF6;

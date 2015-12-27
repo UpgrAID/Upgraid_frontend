@@ -21,8 +21,8 @@ var Router=Backbone.Router.extend({
 		"":"index"
 	},
 	index: function(){
-		ReactDOM.render(<Login router={this}/>, document.getElementById('app'));
-		$('#container').hide();
+		ReactDOM.render(<Login router={this}/>, document.getElementById('container'));
+		
 	}
 });
 
@@ -32,7 +32,7 @@ var router = new Router();
 
 
 router.on('route:profile', function(username){
-	$('#container').show();
+
 	$('#chat').hide()
 		var Goal = Backbone.Model.extend({
 			url:'https://safe-brook-9891.herokuapp.com/api/profiles/?username='+username

@@ -79,7 +79,7 @@ var Login = React.createClass({
 				</div>
 				<div id="bigPic">
 					<div id="home-wrapper">
-					<p>Please login or register</p>
+					
 					<h1 id="bigTitle">Welcome to UpgrAID</h1>
 					</div>
 				</div>
