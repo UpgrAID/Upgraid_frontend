@@ -11,7 +11,20 @@ var PostCollection = Backbone.Collection.extend({
 
 var PostButtons = React.createClass({
 	getInitialState: function(e) {
-		return {value: ""}
+		return {value: "", themeName: null}
+	},
+	componentWillMount: function(){
+		switch(this.props.theme){
+			case 1:
+				this.setState({themeName: 'Skills'});
+				break;
+			case 2:
+				this.setState({themeName: 'Habits'});
+				break;
+			case 3:
+				this.setState({themeName: 'Health'});
+				break;
+		}
 	},
 	_submit: function(e) {
 			e.preventDefault();
@@ -46,7 +59,7 @@ var PostButtons = React.createClass({
 
 	render:function() {
 
-		return(<div className="profileBtnsDiv"><button className="profileBtn"  onClick={this._submit} value={this.props.id}>{this.props.id}</button></div>)
+		return(<div className="profileBtnsDiv"><button className="profileBtn"  onClick={this._submit} value={this.props.id}>{this.state.themeName}: {this.props.id}</button></div>)
 	}
 });
 
