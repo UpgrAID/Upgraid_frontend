@@ -4,6 +4,7 @@ var UserList = require('./userList/userList.jsx');
 var Nav = require('../nav/nav.jsx');
 var NavUserView = require('../nav/navUserView.jsx');
 
+
 var GroupApp = React.createClass({
 	render:function() {
 		return(<div>

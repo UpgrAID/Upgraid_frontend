@@ -8,6 +8,11 @@
     text-align: right;
     color: #c7c7c5;
 }
+
+.friend:hover {
+	background: #004a72;
+}
+
 .friendListItem {
 	display: inline-block;
 }
@@ -48,6 +53,7 @@
 #friendRequests {
 	color: #2A8889;
 	margin-left: 10px;
+	height:200px;
 }
 
 .accRejContain {

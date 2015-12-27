@@ -46,6 +46,10 @@
 	color:#fff;
 }
 
+.profileBtn:hover {
+	background: #004a72;
+}
+
 
 
 #descriptionProfile {
@@ -104,6 +108,7 @@
 	position: relative;
 	top:5px;
 	float: left;
+	color:#006d72;
 }
 .commentHeader {
 	text-align: left;
@@ -115,9 +120,10 @@
 	width:505px;
 	height: 30px;
 	font-size: 0.8rem;
+
 }
 .postUser {
-	background: #888;
+	color: #006d72;
 	width:505px;
 	margin:0;
 	padding-left: 10px;

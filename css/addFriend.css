@@ -1,9 +1,9 @@
 #addFriend {
 	position: absolute;
-	top:10px;
-	right:15px;
+	top:0px;
+	right:0px;
 	z-index: 2;
-	padding:5px;
+	padding:10px;
 	color:#fff;
 	background:#c2d22d;
 	border:1px solid #f7f7f7;
