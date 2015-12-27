@@ -2,8 +2,12 @@
 	width:400px;
 	height:290px;
 	background: #00C5CD;
-	position: relative;
+	position: absolute;
+	left: 50%;
+    margin-left: -200px;
+    top:80px;
 	border-radius:5px;
+	display: none;
 }
 
 
@@ -11,4 +15,14 @@
 	position: absolute;
 	right:3px;
 	top:3px;
+}
+
+.regInput {
+	width:300px;
+	padding-top: 20px;
+}
+
+#regHead {
+	text-align: center;
+	color: #fff;
 }
