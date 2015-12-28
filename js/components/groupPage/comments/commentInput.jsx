@@ -39,11 +39,9 @@ var CommentInput = React.createClass({
 
 			test.save({}, {
 				success: function(resp) {
-
 					collection.add(resp.toJSON());
 					props.addInput(collection.toJSON());
 					$('#comment').val('');
-
 				}
 			})
 		},
