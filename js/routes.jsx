@@ -74,7 +74,7 @@ router.on('route:profile', function(username){
 
 
 
-			ReactDOM.render(<ProfileApp rank={rank}  exp={exp} router={router} username={username} name={name} goals={mapped} fromFriends={fromFriendsMap} fromAll={fromFriends} toFriends={toFriendsMap} groups={groups} posts={posts}/>,document.getElementById('container'));
+			ReactDOM.render(<ProfileApp rank={rank} users={Store.data.users} exp={exp} router={router} username={username} name={name} goals={mapped} fromFriends={fromFriendsMap} fromAll={fromFriends} toFriends={toFriendsMap} groups={groups} posts={posts}/>,document.getElementById('container'));
 
 
 			}
@@ -206,32 +206,33 @@ $('#chat').show()
   };
   pusher.bind(eventName, callback);
 
+
+
 	var groupView = Backbone.Model.extend({
-			url:'https://safe-brook-9891.herokuapp.com/api/groups/'+ groupId
+			url:'https://safe-brook-9891.herokuapp.com/api/posts/?group='+ groupId
 		})
 		var GroupCollection = Backbone.Collection.extend({
 			Model:groupView,
-			url:'https://safe-brook-9891.herokuapp.com/api/groups/'+ groupId
+			url:'https://safe-brook-9891.herokuapp.com/api/posts/?group='+ groupId
 		})
 		var GroupData = new GroupCollection();
 		GroupData.fetch({
 			success: function(resp) {
 
 				var test = resp.toJSON();
+				console.log('test', test)
 
-
-				var posts=test[0].post_set.reverse();
-
-
-				var users = test[0].user;
 				var userName = Store.data.userName;
 				var chatList = Store.data.chats;
 				var chatInit = Store.data.chatInit;
-				var groupId = test[0].id;
-			
+
+				var userList = Store.data.userList;
 
 
-				ReactDOM.render(<GroupApp posts={posts} groupId={groupId} router={router} users={users} channel={channel} username={userName} chatList={chatList} chatInit={chatInit}/>,document.getElementById('container'));
+
+
+
+				ReactDOM.render(<GroupApp  data={test} groupId={groupId} router={router}  channel={channel} username={userName} chatList={chatList} chatInit={chatInit} userList={userList}/>,document.getElementById('container'));
 
 
 			}

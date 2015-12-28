@@ -6,7 +6,7 @@ var Post = require('./post.jsx');
 var PostListApp = React.createClass({
 	getInitialState: function () {
 		return {
-			data: this.props.posts,
+			data: this.props.data,
 
 		}
 	},
@@ -16,8 +16,7 @@ var PostListApp = React.createClass({
 			data: collection
 		})
 	},
-	// _addComment: function(){
-	// },
+	
 
 	render: function() {
 		props = this.props;
