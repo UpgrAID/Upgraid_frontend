@@ -6,7 +6,7 @@ var Post = require('./post.jsx');
 var PostListApp = React.createClass({
 	getInitialState: function () {
 		return {
-			data: this.props.posts,
+			data: this.props.data,
 
 		}
 	},

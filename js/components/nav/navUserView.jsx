@@ -1,5 +1,5 @@
 var React = require('react');
-
+var SearchUsers = require('./searchUsers.jsx')
 
 var NavUserView = React.createClass({
 	_profileNav: function(e){
@@ -12,6 +12,7 @@ var NavUserView = React.createClass({
 						<ul id="navUlUser">
 							<li onClick={this._profileNav}>Profile</li>
 							<li>Group</li>
+							
 						</ul>
 					
 					</div>

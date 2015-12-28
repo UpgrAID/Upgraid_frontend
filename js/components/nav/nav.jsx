@@ -1,5 +1,6 @@
 var React = require('react');
 var FriendRequest = require('../profilePage/friends/friendRequest.jsx');
+var SearchUsers = require('./searchUsers.jsx')
 
 var Nav = React.createClass({
 	_profileNav: function(e){
@@ -10,9 +11,10 @@ var Nav = React.createClass({
 		return(<div>
 				<div id='navContainer'>
 					<ul id="navUl">
-						<li onClick={this._profileNav}>Profile</li>
-						<li>Group</li>
-						<li id="friendLi">
+						<li className="mainLi"onClick={this._profileNav}>Profile</li>
+						<li className="mainLi">Group</li>
+						<li><SearchUsers users={this.props.users}/></li>
+						<li id="friendLi" className="mainLi">
 							<span id="square"></span>
 							<FriendRequest userID={this.props.uid} fromAll={this.props.fromAll}/>
 						</li>

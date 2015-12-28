@@ -3,7 +3,9 @@ var Store = {
 		userId: null,
 		userName:null,
 		chats: null,
-		chatInit: null
+		chatInit: null,
+		users: [],
+		userList:[],
 	}
 };
 
