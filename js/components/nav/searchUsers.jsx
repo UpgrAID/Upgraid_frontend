@@ -12,14 +12,11 @@ var SearchUsers = React.createClass({
 		$('#userModal').show();
 	},
 	
-	componentWillMount: function() {
-	
-	},
 	render:function() {
 
 		return(<div>
 			
-				<input id="searchUsers" onClick={this._look}/>
+				<input id="searchUsers" onClick={this._look} onChange={this.props.filterList}/>
 				<div id="userModal">
 					<span id="closeModal" onClick={this._close}>X</span>
 					<ul>

@@ -10,6 +10,19 @@ var Store= require('../../store.js')
 var ProfilePostApp = require('./profilePost/profilePostApp.jsx');
 
 var ProfileApp = React.createClass({
+	_filterList: function(e){
+	    var updatedList = this.state.users;
+	   
+	    updatedList = updatedList.filter(function(item){
+	      if(e.target.value.toLowerCase()!==-1) {
+	      		var newArr=[];
+	      		newArr.push(item);
+	      		return newArr
+	      }
+	    });
+	    this.setState({users: [{username: 'test'}]});
+	    
+	  },
 	getInitialState: function() {
 		return({
 			users: []
@@ -40,11 +53,12 @@ var ProfileApp = React.createClass({
 			}
 		});
 	},
+	
 	render: function() {
 		
 		return(<div>
 				
-				<Nav router={this.props.router} username={this.props.username} userId = {this.props.uid} fromAll={this.props.fromAll} users={this.state.users}/>
+				<Nav router={this.props.router} username={this.props.username} userId = {this.props.uid} fromAll={this.props.fromAll} users={this.state.users} filterList={this._filterList}/>
 				<Greeting name={this.props.name}/>
 				<AvatarRankXp rank={this.props.rank} exp={this.props.exp}/>
 				<ProfilePostApp posts={this.props.posts} groups={this.props.groups}/>

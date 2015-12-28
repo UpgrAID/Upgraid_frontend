@@ -16,8 +16,7 @@ var PostListApp = React.createClass({
 			data: collection
 		})
 	},
-	// _addComment: function(){
-	// },
+	
 
 	render: function() {
 		props = this.props;
