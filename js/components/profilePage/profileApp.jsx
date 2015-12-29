@@ -13,17 +13,19 @@ var ProfileApp = React.createClass({
 	_filterList: function(e){
 	    var updatedList = this.state.users;
 	    var test = this.state.users.map(function(obj){
-	    	return obj.username;
+	    	return {
+	    			username:obj.username,
+	    			id: obj.id
+	    			}
+	    		})
 
-	    });
+
 	    updatedList = test.filter(function(item){
-	     return item.toLowerCase().search(
-        e.target.value.toLowerCase()) !== -1;
-	      
-
+	     return item.username.toLowerCase().search(e.target.value.toLowerCase() !== -1);
 	    });
 	    this.setState({users: updatedList});
-	    console.log('test',test)
+	     console.log('test')
+	    
 	  },
 	getInitialState: function() {
 		return({
