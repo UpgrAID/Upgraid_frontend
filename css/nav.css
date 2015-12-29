@@ -75,7 +75,11 @@
 
 #randomQuote {
   color:#fff;
-  text-align: center;
+  margin:auto;
+  position: relative;
+  top:30px;
+  font-size: 45px;
+  width:545px;
 }
 
 
