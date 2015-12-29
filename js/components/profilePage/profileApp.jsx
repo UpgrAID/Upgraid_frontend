@@ -12,15 +12,19 @@ var ProfilePostApp = require('./profilePost/profilePostApp.jsx');
 var ProfileApp = React.createClass({
 	_filterList: function(e){
 	    var updatedList = this.state.users;
-	   
-	    updatedList = updatedList.filter(function(item){
-	      if(e.target.value.toLowerCase()!==-1) {
-	      		var newArr=[];
-	      		newArr.push(item);
-	      		return newArr
-	      }
+	    var test = this.state.users.map(function(obj){
+	    	return {
+	    			username:obj.username,
+	    			id: obj.id
+	    			}
+	    		})
+
+
+	    updatedList = test.filter(function(item){
+	     return item.username.toLowerCase().search(e.target.value.toLowerCase() !== -1);
 	    });
-	    this.setState({users: [{username: 'test'}]});
+	    this.setState({users: updatedList});
+	     console.log('test')
 	    
 	  },
 	getInitialState: function() {
