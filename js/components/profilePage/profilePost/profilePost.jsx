@@ -1,4 +1,10 @@
 var React = require('react');
+var Avatar = require('material-ui/lib/avatar');
+var Card = require('material-ui/lib/card/card');
+var CardHeader = require('material-ui/lib/card/card-header');
+var CardTitle = require('material-ui/lib/card/card-title');
+var CardText = require('material-ui/lib/card/card-text');
+
 var ProfilePost = React.createClass({
 
 	_delete: function(e) {
@@ -29,10 +35,14 @@ var ProfilePost = React.createClass({
 
 		return(
 			<div className="postContainer">
-						
-						<p className="postTitle">{this.props.title}</p>
-						<p className="postDescription">{this.props.description}</p>
-						
+					<Card>
+						<CardHeader
+							style={{background: '#AAEDEA'}} 
+							title={this.props.title}
+      				avatar="../../../../assets/avatar.png"/>
+						<CardText>{this.props.description}</CardText>
+					</Card>
+
 			</div>
 		)
 
@@ -40,3 +50,6 @@ var ProfilePost = React.createClass({
 });
 
 module.exports = ProfilePost;
+
+// <p className="postTitle">{this.props.title}</p>
+// <p className="postDescription">{this.props.description}</p>

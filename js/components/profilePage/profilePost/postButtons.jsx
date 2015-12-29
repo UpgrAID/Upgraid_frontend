@@ -29,7 +29,6 @@ var PostButtons = React.createClass({
 	_submit: function(e) {
 			e.preventDefault();
 			var props=this.props;
-			console.log(this.props);
 
 			var collection = new PostCollection(this.props.data);
 
@@ -59,7 +58,7 @@ var PostButtons = React.createClass({
 
 	render:function() {
 
-		return(<div className="profileBtnsDiv"><button className="profileBtn"  onClick={this._submit} value={this.props.id}>{this.state.themeName}: {this.props.id}</button></div>)
+		return(<div className="profileBtnsDiv"><button className="profileBtn"  onClick={this._submit} value={this.props.id}><span style={{color: "lightgrey"}}>Post to </span>{this.state.themeName}: {this.props.id}</button></div>)
 	}
 });
 

@@ -1,3 +1,5 @@
+
+
 #avatarDiv {
 	width:200px;
 	margin:0;
@@ -7,19 +9,12 @@
 	left:25px;
 	font-family: 'Press Start 2P', cursive;
 	color:green;
-	
-};
-
-
-
-
+}
 #rank1 {
 	text-align: left;
 	font-family: 'Press Start 2P', cursive;
 	color:green;
-	
 }
-
 #picture {
 	width:150px;
 	height: 150px;

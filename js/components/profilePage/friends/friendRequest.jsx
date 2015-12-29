@@ -14,7 +14,7 @@ var FriendRequest = React.createClass({
 		}
 	},
 	_loadReq: function(req){
-		
+
 		this.setState({
 			frRq: req
 		});
@@ -22,7 +22,7 @@ var FriendRequest = React.createClass({
 	componentWillMount: function(){
 				self=this;
 				fr = this.props.fromAll;
-				
+
 				f = fr.filter(function(usr){
 					if(!usr.accepted){
 						return true
@@ -32,16 +32,16 @@ var FriendRequest = React.createClass({
 				})
 					self._loadReq(f);
 				},
-			
-	
+
+
 
 	render: function(){
-		
+
 		return (
 			<ul id="friendRequests">
 				{this.state.frRq.map(function(req){
 					return(
-						<AcceptReject requester={req}/>)
+						<AcceptReject key={req.id} requester={req}/>)
 			})}
 			</ul>
 		)

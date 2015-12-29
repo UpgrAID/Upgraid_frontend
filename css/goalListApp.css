@@ -1,7 +1,7 @@
 #goalContainer {
   width:300px;
   background: #006d72;
-  
+
   position: relative;
   top:80px;
   left:25px;
@@ -22,10 +22,11 @@
 }
 .goalContainer {
   margin:0;
-  width: 360px;
+  width: 300px;
 	padding:0;
   position: relative;
   float: left;
+  border-bottom: 1px solid #fff;
 }
 .goalItem {
 	list-style: none;
@@ -72,13 +73,13 @@
     overflow:hidden;
     white-space:nowrap;
     text-overflow:ellipsis;
-   
+
 
 }
 
 .categoryLabel:hover  {
   overflow: visible;
-  
+
 }
 
 

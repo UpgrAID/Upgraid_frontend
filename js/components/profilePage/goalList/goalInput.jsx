@@ -41,7 +41,6 @@ var GoalInput = React.createClass({
 		var collection = new GoalCollection();
 		collection.fetch({}, {
 			success: function(resp) {
-				console.log(resp);
 			}
 		})
 		var test = new Goal();

@@ -29,11 +29,10 @@ var PusherChat = React.createClass({
 			success: function(resp) {
 			}
 		})
-		console.log(this.state.newChat);
-
+		
 	},
 	render: function() {
-		 
+
 		return(<div id="chatContain">
 				<div id="messageContain">
 				{this.props.chat.map(function(obj){

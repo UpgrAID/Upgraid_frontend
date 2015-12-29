@@ -2,10 +2,10 @@ var React = require('react');
 
 var Test = React.createClass({
 	render:function() {
-			
-		return(<div><p>{this.props.username}</p></div>)
-		
-				
+
+		return(<div id="userChoice"><p>{this.props.username}</p></div>)
+
+
 	}
 });
 

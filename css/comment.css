@@ -1,1 +1,9 @@
+.commenter {
+	font-size: 0.7rem;
+}
 
+.commentBox {
+	height: 30px;
+	font-size: 0.6rem;
+	padding-top: 8px;
+}

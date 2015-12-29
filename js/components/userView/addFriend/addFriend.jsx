@@ -18,10 +18,10 @@ var AddFriend = React.createClass({
 			from_friend:this.props.myId,
 			to_friend:this.props.userId
 		})
-		
+
 		friend.save({}, {
 			success: function(resp) {
-				console.log(resp);
+			
 			}
 		})
 	},

@@ -220,7 +220,6 @@ $('#chat').show()
 			success: function(resp) {
 
 				var test = resp.toJSON();
-				console.log('test', test)
 
 				var userName = Store.data.userName;
 				var chatList = Store.data.chats;
@@ -232,7 +231,7 @@ $('#chat').show()
 
 
 
-				ReactDOM.render(<GroupApp  data={test} groupId={groupId} router={router}  channel={channel} username={userName} chatList={chatList} chatInit={chatInit} userList={userList}/>,document.getElementById('container'));
+				ReactDOM.render(<GroupApp  data={test} groupId={groupId} router={router}  channel={channel} username={userName} chatList={chatList} chatInit={chatInit} userList={userList}/>, document.getElementById('container'));
 
 
 			}

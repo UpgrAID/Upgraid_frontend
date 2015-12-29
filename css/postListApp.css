@@ -17,66 +17,52 @@
 	position: absolute;
 	top:150px;
 }
-
-#postProfile {
-	width:499px;
-	padding-top:15px;
-	margin:0;
-	border:none;
-	border-bottom:1px solid #f7f7f7;
-}
-
 .profileBtns {
 	 padding:0;
 	 margin:0;
 	display: inline;
 }
-
-
-
-
 .profileBtn {
 	width:167px;
 	float: left;
 	height:30px;
 	outline:none;
 	border:1px solid #f7f7f7;
-	
 	background: #006d72;
 	color:#fff;
 }
-
 .profileBtn:hover {
 	background: #004a72;
 }
-
-
-
+#postProfile {
+	width:490px;
+	padding-top:0;
+	padding-left: 6px;
+	padding-bottom: 15px;
+	margin:0;
+	border:none;
+	border-bottom:1px solid #f7f7f7;
+	font-size: 0.7rem;
+}
 #descriptionProfile {
-	width:497px;
+	width:490px;
 	height:50px;
 	display: block;
+	padding-top: 2px;
+	padding-left: 6px;
 	margin:0;
 	resize:none;
 	border:none;
+	font-size: 0.7rem;
 }
-
-
 #postMaster {
 	width:505px;
 	height:305px;
 	overflow:scroll;
 	border:1px solid #f7f7f7;
 	position: relative;
-	
-}
 
-#titleInput {
-	width:500px;
-	height: 30px;
-	display: block;
 }
-
 #postInput {
 	width:500px;
 	height:500px;
@@ -84,11 +70,22 @@
 	position: relative;
 	top:305px;
 }
-
+#titleInput {
+	width:500px;
+	height: 30px;
+	display: block;
+	font-size: 0.7rem;
+	padding-top:0;
+	padding-left: 6px;
+	padding-bottom: 15px;
+}
 #descriptionInput {
 	width:500px;
 	height:50px;
 	display: block;
+	font-size: 0.7rem;
+	padding-top: 2px;
+	padding-left: 6px;
 }
 
 .commentBox {
@@ -147,4 +144,3 @@ input {
 textarea {
 	outline:none;
 }
-

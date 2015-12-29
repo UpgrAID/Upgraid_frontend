@@ -1,5 +1,10 @@
 var React = require('react');
 var ReactDOM=require('react-dom');
+var Avatar = require('material-ui/lib/avatar');
+var Card = require('material-ui/lib/card/card');
+var CardHeader = require('material-ui/lib/card/card-header');
+var CardTitle = require('material-ui/lib/card/card-title');
+var CardText = require('material-ui/lib/card/card-text');
 var CommentApp = require('../../../components/groupPage/comments/commentApp.jsx');
 
 var Post = React.createClass({
@@ -32,10 +37,15 @@ var Post = React.createClass({
 
 		return(
 			<div className="postContainer">
-						<p className="postUser">{this.props.user.username}:</p>
-						<p className="postTitle">{this.props.title}</p>
-						<p className="postDescription">{this.props.description}</p>
-						<CommentApp postId = {this.props.postId} comments={this.props.comments} />
+				<Card>
+					<CardHeader
+							style={{background: '#AAEDEA'}}
+      				title={this.props.user.username}
+      				subtitle={this.props.title}
+      				avatar="../../../../assets/avatar.png"/>
+						<CardText>{this.props.description}</CardText>
+				</Card>
+				<CommentApp postId = {this.props.postId} comments={this.props.comments} />
 			</div>
 		)
 
@@ -43,3 +53,8 @@ var Post = React.createClass({
 });
 
 module.exports = Post;
+
+
+// <p className="postUser">{this.props.user.username}:</p>
+// <p className="postTitle">{this.props.title}</p>
+// <p className="postDescription">{this.props.description}</p>
