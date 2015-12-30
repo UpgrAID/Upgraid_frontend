@@ -13,7 +13,7 @@ var SearchUsers = React.createClass({
 	},
 
 	render:function() {
-
+		var props=this.props;
 		return(<div>
 
 				<input id="searchUsers" onClick={this._look} onChange={this.props.filterList}/>
@@ -21,7 +21,7 @@ var SearchUsers = React.createClass({
 					<span id="closeModal" onClick={this._close}>X</span>
 					<ul>
 						{this.props.users.map(function(obj){
-							return(<Test key={obj.id} username={obj.username}/>)
+							return(<Test key={obj.id} username={obj.username} id={obj.id} router={props.router}/>)
 						})}
 
 					</ul>

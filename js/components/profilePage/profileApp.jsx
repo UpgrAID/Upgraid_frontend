@@ -19,12 +19,25 @@ var ProfileApp = React.createClass({
 	    			}
 	    		})
 
-
-	    updatedList = test.filter(function(item){
-	     return item.username.toLowerCase().search(e.target.value.toLowerCase() !== -1);
+	    var newTest = test.filter(function(item){
+	     if(e.target.value==='b') {
+	     	return item;
+	     }
 	    });
-	    this.setState({users: updatedList});
-	     console.log('test')
+	    var val=e.target.value;
+		for (var i = 0; i < test.length; i++) {
+        if (val.indexOf(test[i]) != -1) {
+             
+            	return true;
+            	console.log(test);
+            }
+        }
+      
+
+	    
+
+	    this.setState({users: newTest} );
+	     console.log(newTest)
 	    
 	  },
 	getInitialState: function() {

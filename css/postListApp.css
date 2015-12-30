@@ -70,6 +70,16 @@
 	position: relative;
 	top:305px;
 }
+
+#postBtn {
+	width:167px;
+	float: left;
+	height:30px;
+	outline:none;
+	border:1px solid #f7f7f7;
+	background: #006d72;
+	color:#fff;
+}
 #titleInput {
 	width:500px;
 	height: 30px;

@@ -33,7 +33,7 @@ var Nav = React.createClass({
 
 						<li className="mainLi" onClick={this._profileNav}>Profile</li>
 						<li className="mainLi">Group</li>
-						<li><SearchUsers users={this.props.users} filterList = {this.props.filterList}/></li>
+						<li><SearchUsers users={this.props.users} filterList = {this.props.filterList} router={this.props.router}/></li>
 						<li id="friendLi" className="mainLi">
 							<span id="square">Friend Requests</span>
 							<FriendRequest userID={this.props.uid} fromAll={this.props.fromAll}/>

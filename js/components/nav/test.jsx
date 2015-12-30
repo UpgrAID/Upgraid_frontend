@@ -1,9 +1,13 @@
 var React = require('react');
 
 var Test = React.createClass({
+	_nav: function() {
+		var router =this.props.router;
+		router.navigate('userView/' + this.props.id, {trigger:true});
+	},
 	render:function() {
 
-		return(<div id="userChoice"><p>{this.props.username}</p></div>)
+		return(<div id="userChoice"><p value={this.props.id} onClick={this._nav}>{this.props.username}</p></div>)
 
 
 	}
