@@ -33,7 +33,7 @@
 
 #friendLi {
   height:120px;
-  width:20px;
+  width:145px;
   float: right;
 }
 #friendLi:hover #friendRequests {
