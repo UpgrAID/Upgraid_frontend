@@ -37,6 +37,7 @@ var GroupApp = React.createClass({
 		})
 	},
 	render:function() {
+		console.log('a',this.props.data)
 		return(<div>
 				<NavUserView router={this.props.router} username={this.props.username}/>
 				<UserList users={this.props.users} router={this.props.router} data={this.props.data} groupList={this.state.groupList}/>
