@@ -6,15 +6,16 @@ var Friends = require('./friends/friends.jsx');
 var Group = require('./groups/groups.jsx');
 var AvatarRankXp = require('./avatarRankXp/avatarRankXp.jsx');
 var FriendRequest = require('./friends/friendRequest.jsx');
-var Store= require('../../store.js')
+var Store= require('../../store.js');
 var ProfilePostApp = require('./profilePost/profilePostApp.jsx');
-var Badges = require('./badges/badges.jsx')
+var Badges = require('./badges/badges.jsx');
+var MessageApp = require('./messaging/messageApp.jsx');
 var ProfileApp = React.createClass({
 	_doSearch:function(queryText){
         console.log(queryText)
         //get query result
         var queryResult=[];
-        this.state.filteredData.forEach(function(person){
+        var test=this.state.filteredData.forEach(function(person){
             if(person.username.toLowerCase().indexOf(queryText)!=-1)
             queryResult.push(person);
         });
@@ -23,6 +24,7 @@ var ProfileApp = React.createClass({
             query:queryText,
             filteredData: queryResult
         })
+        
     },
     getInitialState:function(){
         return{
@@ -36,6 +38,7 @@ var ProfileApp = React.createClass({
 		this.setState({
 			filteredData: Store.data.users
 		})
+		
 	},
 	componentWillMount: function() {
 			var Users = Backbone.Model.extend({
@@ -56,6 +59,7 @@ var ProfileApp = React.createClass({
 				that._test()
 			}
 		});
+		
 	},
 	
 	render: function() {
@@ -70,6 +74,7 @@ var ProfileApp = React.createClass({
 				<Badges username={this.props.username}/>
 				<Friends fromFriends={this.props.fromFriends} toFriends={this.props.toFriends}  router={this.props.router}/>
 				<Group groups={this.props.groups} router={this.props.router}/>
+				<MessageApp fromFriends={this.props.fromFriends} toFriends={this.props.toFriends}/>
 				</div>)
 	}
 })

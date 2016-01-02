@@ -3,7 +3,7 @@ var React = require('react');
 var Test = require('./test.jsx')
 var SearchUsers = React.createClass({
 	_doSearch:function(){
-        var query=this.refs.searchInput.getDOMNode().value; // this is the search text
+        var query=this.refs.searchInput.value; // this is the search text
         this.props.doSearch(query);
     },
 	_close:function() {
