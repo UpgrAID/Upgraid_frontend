@@ -13,7 +13,7 @@ var MessageApp = React.createClass({
 		this.setState({
 			friend: e.target.value
 		})
-
+		console.log(e.target.name)
 	},
 	_send: function(e){
 		

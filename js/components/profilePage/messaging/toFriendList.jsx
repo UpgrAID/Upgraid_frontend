@@ -1,7 +1,9 @@
 var React = require('react');
 var ToFriendList = React.createClass({
+
 	render:function(){
-		return(<div><button ref={this.props.toFriend} value={this.props.toFriend} onClick={this.props.friendSelect}>{this.props.toFriend}</button></div>)
+
+		return(<div><button name={this.props.id} value={this.props.toFriend} onClick={this.props.friendSelect}>{this.props.toFriend}</button></div>)
 	}
 });
 
