@@ -8,46 +8,33 @@ var AvatarRankXp = require('./avatarRankXp/avatarRankXp.jsx');
 var FriendRequest = require('./friends/friendRequest.jsx');
 var Store= require('../../store.js')
 var ProfilePostApp = require('./profilePost/profilePostApp.jsx');
-
+var Badges = require('./badges/badges.jsx')
 var ProfileApp = React.createClass({
-	_filterList: function(e){
-	    var updatedList = this.state.users;
-	    var test = this.state.users.map(function(obj){
-	    	return {
-	    			username:obj.username,
-	    			id: obj.id
-	    			}
-	    		})
-
-	    var newTest = test.filter(function(item){
-	     if(e.target.value==='b') {
-	     	return item;
-	     }
-	    });
-	    var val=e.target.value;
-		for (var i = 0; i < test.length; i++) {
-        if (val.indexOf(test[i]) != -1) {
-             
-            	return true;
-            	console.log(test);
-            }
+	_doSearch:function(queryText){
+        console.log(queryText)
+        //get query result
+        var queryResult=[];
+        this.state.filteredData.forEach(function(person){
+            if(person.username.toLowerCase().indexOf(queryText)!=-1)
+            queryResult.push(person);
+        });
+ 
+        this.setState({
+            query:queryText,
+            filteredData: queryResult
+        })
+    },
+    getInitialState:function(){
+        return{
+        	
+            query:'',
+            filteredData: Store.data.users
         }
-      
-
-	    
-
-	    this.setState({users: newTest} );
-	     console.log(newTest)
-	    
-	  },
-	getInitialState: function() {
-		return({
-			users: []
-		})
-	},
+    },
+	
 	_test: function() {
 		this.setState({
-			users: Store.data.users
+			filteredData: Store.data.users
 		})
 	},
 	componentWillMount: function() {
@@ -75,11 +62,12 @@ var ProfileApp = React.createClass({
 		
 		return(<div>
 				
-				<Nav router={this.props.router} username={this.props.username} userId = {this.props.uid} fromAll={this.props.fromAll} users={this.state.users} filterList={this._filterList}/>
+				<Nav router={this.props.router} username={this.props.username} userId = {this.props.uid} fromAll={this.props.fromAll} users={this.state.filteredData} query={this.state.query} doSearch={this._doSearch}/>
 				<Greeting name={this.props.name}/>
 				<AvatarRankXp rank={this.props.rank} exp={this.props.exp}/>
 				<ProfilePostApp posts={this.props.posts} groups={this.props.groups}/>
 				<GoalListApp goals={this.props.goals} router={this.props.router}/>
+				<Badges username={this.props.username}/>
 				<Friends fromFriends={this.props.fromFriends} toFriends={this.props.toFriends}  router={this.props.router}/>
 				<Group groups={this.props.groups} router={this.props.router}/>
 				</div>)

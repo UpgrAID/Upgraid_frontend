@@ -2,7 +2,10 @@ var React = require('react');
 
 var Test = require('./test.jsx')
 var SearchUsers = React.createClass({
-
+	_doSearch:function(){
+        var query=this.refs.searchInput.getDOMNode().value; // this is the search text
+        this.props.doSearch(query);
+    },
 	_close:function() {
 		$('#userModal').hide();
 
@@ -16,7 +19,7 @@ var SearchUsers = React.createClass({
 		var props=this.props;
 		return(<div>
 
-				<input id="searchUsers" onClick={this._look} onChange={this.props.filterList}/>
+				<input id="searchUsers" ref="searchInput" onClick={this._look} onChange={this._doSearch} value={this.props.query}/>
 				<div id="userModal">
 					<span id="closeModal" onClick={this._close}>X</span>
 					<ul>

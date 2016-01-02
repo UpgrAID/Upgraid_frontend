@@ -1,0 +1,19 @@
+#badgeContainer {
+	position: absolute;
+	left:25px;
+	width:300px;
+	background: #fff;
+}
+.badge {
+	width:20px;
+	height: 20px
+}
+
+#badgeHeader {
+	color:#fff;
+	background: #006d72;
+	margin: 0;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	text-align: center;
+}
