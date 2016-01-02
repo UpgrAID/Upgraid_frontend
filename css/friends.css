@@ -34,10 +34,13 @@
 #listContain {
 	width:150px;
 	margin:auto;
+	height:150px;
+	overflow: scroll;
 }
 
 #friendsUl {
 	padding: 0;
+	margin:0;
 }
 .requester {
     min-width: 40px;

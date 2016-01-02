@@ -16,10 +16,12 @@ var Friends = React.createClass({
 				return(<div id="friendsContainer">
 					<h2 id='friendsHeader'>Friends</h2>
 					<div id="listContain">
-					<ul id="friendsUl">
-						{test}
-						{toFriends}
-					</ul>
+						<div id="contain">
+							<ul id="friendsUl">
+								{test}
+								{toFriends}
+							</ul>
+						</div>
 					</div>
 					</div>)
 	}

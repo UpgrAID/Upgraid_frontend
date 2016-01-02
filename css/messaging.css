@@ -1,7 +1,18 @@
+
 #messageContainer {
-	width:200px;
-	position: absolute;
-	right:0px;
+	width: 300px;
+    height: 300px;
+    position: absolute;
+    right: 65px;
+    bottom: 0;
+    background: #fff;
+}
+
+#sendMessage {
+	background: #006d72;
+	color: #fff;
+	margin:0;
+	padding: 5px 0 5px 5px
 }
 
 .friendList {
@@ -12,4 +23,26 @@
     border: 1px solid #f7f7f7;
     text-align: right;
     color: #c7c7c5;
+}
+
+#message {
+	width: 212px;
+    padding-top: 10px;
+    position: relative;
+    top: 40px;
+    margin-left: 8px;
+}
+
+#friendListMessage {
+	width: 70px;
+    position: absolute;
+    right: 0px;
+    top: 28px;
+}
+
+#friendSelect {
+	position: absolute;
+    top: 50px;
+    margin:0px;
+    margin-left: 8px;
 }
