@@ -3,3 +3,13 @@
 	position: absolute;
 	right:0px;
 }
+
+.friendList {
+	width: 70px;
+    height: 31px;
+    background: #006d72;
+    outline: none;
+    border: 1px solid #f7f7f7;
+    text-align: right;
+    color: #c7c7c5;
+}

@@ -74,7 +74,7 @@ var ProfileApp = React.createClass({
 				<Badges username={this.props.username}/>
 				<Friends fromFriends={this.props.fromFriends} toFriends={this.props.toFriends}  router={this.props.router}/>
 				<Group groups={this.props.groups} router={this.props.router}/>
-				<MessageApp fromFriends={this.props.fromFriends} toFriends={this.props.toFriends}/>
+				<MessageApp fromFriends={this.props.fromFriends} toFriends={this.props.toFriends} username={this.props.username}/>
 				</div>)
 	}
 })

@@ -6,17 +6,49 @@ var ToFriendList = require('./toFriendList.jsx');
 var MessageApp = React.createClass({
 	getInitialState: function(){
 		return({
-			friend: ''
+			friend: '',
+			id: null,
+			message: ''
 		})
 	},
 	_friendSelect: function(e) {
 		this.setState({
-			friend: e.target.value
+			friend: e.target.value,
+			id: e.target.name,
 		})
-		console.log(e.target.name)
+		
+	},
+	_message: function(e){
+		this.setState({
+			message: e.target.value
+		})
 	},
 	_send: function(e){
-		
+		e.preventDefault();
+		console.log('test');
+		var Message=Backbone.Model.extend({
+			url:'http://safe-brook-9891.herokuapp.com/api/messages/user/'
+		})
+		var MessageCollection=Backbone.Collection.extend({
+			url:'http://safe-brook-9891.herokuapp.com/api/messages/user/',
+			model:Message
+		})
+
+		var sent = new Message();
+
+		sent.set({
+			sender: this.props.username,
+			receiver: this.state.id,
+			message: this.state.message
+		})
+		var that = this;
+		sent.save({},
+		{
+			success: function(resp){
+				console.log(resp.toJSON())
+				$('#message').val('')
+			}	
+		})
 	},
 	render:function(){
 		var that = this;
@@ -24,7 +56,9 @@ var MessageApp = React.createClass({
 			<div id="messageContainer">
 			<p>Send Message</p>
 			<p>{this.state.friend}</p>
-				<input id="message" onSubmit={this._send} placeholder="send a message"/>
+				<form onSubmit={this._send}>
+				<input id="message" placeholder="send a message" onChange={this._message}/>
+				</form>
 			<ul>	
 				{this.props.fromFriends.map(function(obj){
 					return(<li><FriendList key={obj.id}  id={obj.id} fromFriend={obj.from_friend.username} friendSelect={that._friendSelect}/></li>)
