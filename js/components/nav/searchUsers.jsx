@@ -21,13 +21,13 @@ var SearchUsers = React.createClass({
 
 				<input id="searchUsers" ref="searchInput" onClick={this._look} onChange={this._doSearch} value={this.props.query}/>
 				<div id="userModal">
-					<span id="closeModal" onClick={this._close}>X</span>
-					<ul>
+					<span id="closeModal" onClick={this._close}></span>
+					<div>
 						{this.props.users.map(function(obj){
 							return(<Test key={obj.id} username={obj.username} id={obj.id} router={props.router}/>)
 						})}
 
-					</ul>
+					</div>
 				</div>
 			</div>)
 	}

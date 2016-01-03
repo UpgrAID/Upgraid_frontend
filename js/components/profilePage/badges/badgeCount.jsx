@@ -5,7 +5,16 @@ var BadgeCount = React.createClass({
 		return(
 			<div>
 				{this.props.data.map(function(obj){
-					return(<p>{obj.achievement.badge_amount} x <img className="badge"src='/assets/badge.jpg'/></p>)
+					return(
+
+							<div className="badgeTest">
+								<span className="badge">{obj.achievement.badge_amount} x <img className="badge"src='/assets/badge.jpg'/></span>
+								<span className="achievementTitle">{obj.achievement.name}</span>
+							</div>
+							
+						
+						)
+
 				})}
 			</div>
 			)

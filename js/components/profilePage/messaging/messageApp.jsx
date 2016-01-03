@@ -1,7 +1,7 @@
 var React = require('react');
 var FriendList = require('./friendList.jsx');
 var ToFriendList = require('./toFriendList.jsx');
-
+var ViewMessage = require('./viewMessage.jsx');
 
 var MessageApp = React.createClass({
 	getInitialState: function(){
@@ -25,7 +25,7 @@ var MessageApp = React.createClass({
 	},
 	_send: function(e){
 		e.preventDefault();
-		console.log('test');
+		
 		var Message=Backbone.Model.extend({
 			url:'http://safe-brook-9891.herokuapp.com/api/messages/user/'
 		})
@@ -52,7 +52,7 @@ var MessageApp = React.createClass({
 	},
 	render:function(){
 		var that = this;
-		console.log('a',this.props)
+		
 		return(
 			<div id="messageContainer">
 			<h2 id="sendMessage">Send Message</h2>
@@ -68,7 +68,7 @@ var MessageApp = React.createClass({
 					return(<li><ToFriendList key={obj.id} id={obj.to_friend.id} toFriend={obj.to_friend.username} friendSelect={that._friendSelect}/></li>)
 				})}
 			</ul>
-
+			<ViewMessage username={that.props.username}/>
 			</div>
 				)
 	}

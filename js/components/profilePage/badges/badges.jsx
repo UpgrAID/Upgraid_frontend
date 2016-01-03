@@ -30,12 +30,6 @@ var Badges = React.createClass({
 		return(<div id="badgeContainer">
 				<p id="badgeHeader">Badges</p>
 				<BadgeCount data={this.state.data}/>
-				<ul>
-				{this.state.data.map(function(obj){
-					return(<li>{obj.achievement.name}</li>)
-				})}
-					
-				</ul>
 			</div>)
 	}
 });

@@ -52,3 +52,13 @@
     margin-left: 8px;
     color: #fff;
 }
+
+#allMessages {
+    width:300px;
+    height:232px;
+    overflow: scroll;
+}
+
+.message {
+    margin:0;
+}

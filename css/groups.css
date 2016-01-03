@@ -19,7 +19,9 @@
 	background: #004a72;
 }
 
-
+#groupHeader {
+	margin:0;
+}
 
 #groupsContainer {
 	width:150px;
