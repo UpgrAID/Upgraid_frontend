@@ -8,16 +8,16 @@
   float: left;
 }
 #goalInput {
-    width: 266px;
+    width: 282px;
     padding-top: 20px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     border: 1px solid #f7f7f7;
     font-size: 0.8rem;
     outline: none;
     position: relative;
     display: block;
     top: 10px;
-    left: 16px;
+    left: 0px;
 }
 #goalHeader {
   color:#fff;
@@ -27,6 +27,8 @@
 .goalContainer {
   margin:0;
   width: 300px;
+  height:150px;
+  background: #fff;
 	padding:0;
   position: relative;
   float: left;
@@ -60,7 +62,7 @@
     background: #27556C;
     position: absolute;
     top: 161px;
-    right: 14px;
+    right: 0px;
 }
 #goalSubmit:hover {
   background: blue;

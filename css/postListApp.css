@@ -53,6 +53,7 @@
 	margin:0;
 	resize:none;
 	border:none;
+	border-bottom:1px solid #f7f7f7;
 	font-size: 0.7rem;
 }
 #postMaster {

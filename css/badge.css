@@ -1,9 +1,10 @@
 #badgeContainer {
 	position: absolute;
-    bottom: 155px;
-    left: 25px;
-    width: 300px;
-    background: #fff;
+	bottom: 128px;
+	left: 25px;
+	width: 300px;
+	background: #fff;
+	height: 250px;
 }
 .badgeTest {
 	position: relative;
