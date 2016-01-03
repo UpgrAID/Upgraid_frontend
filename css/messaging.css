@@ -1,7 +1,6 @@
 
 #messageContainer {
 	width: 400px;
-    height: 300px;
     position: absolute;
     right: 65px;
     bottom: 0;
@@ -12,7 +11,7 @@
 	background: #006d72;
 	color: #fff;
 	margin:0;
-	padding: 5px 0 5px 5px
+	padding: 5px 0 5px 5px;
 }
 
 .friendList {
@@ -29,8 +28,8 @@
 	width: 282px;
     padding-top: 10px;
     position: relative;
-    top: 4px;
-    margin-left: 8px;
+    top: 0px;
+    
 }
 
 #friendListMessage {

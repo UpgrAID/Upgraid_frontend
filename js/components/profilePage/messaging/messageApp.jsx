@@ -8,7 +8,8 @@ var MessageApp = React.createClass({
 		return({
 			friend: '',
 			id: null,
-			message: ''
+			message: '',
+			hidden: false
 		})
 	},
 	_friendSelect: function(e) {
@@ -22,6 +23,16 @@ var MessageApp = React.createClass({
 		this.setState({
 			message: e.target.value
 		})
+	},
+	_hideShow: function(){
+		this.setState({
+			hidden: true
+		})
+		if(this.state.hidden===true){
+			this.setState({
+			hidden: false
+		})
+		}
 	},
 	_send: function(e){
 		e.preventDefault();
@@ -55,20 +66,23 @@ var MessageApp = React.createClass({
 		
 		return(
 			<div id="messageContainer">
-			<h2 id="sendMessage">Send Message</h2>
+			<h2 id="sendMessage" onClick={this._hideShow}>Send Message</h2>
 				<span id="friendSelect">{this.state.friend}</span>
-				<form onSubmit={this._send}>
-				<input id="message" placeholder="send a message" onChange={this._message}/>
-				</form>
-			<ul id="friendListMessage">	
-				{this.props.fromFriends.map(function(obj){
-					return(<li><FriendList key={obj.id}  id={obj.from_friend.id} fromFriend={obj.from_friend.username} friendSelect={that._friendSelect}/></li>)
-				})}
-				{this.props.toFriends.map(function(obj){
-					return(<li><ToFriendList key={obj.id} id={obj.to_friend.id} toFriend={obj.to_friend.username} friendSelect={that._friendSelect}/></li>)
-				})}
-			</ul>
-			<ViewMessage username={that.props.username}/>
+				{this.state.hidden ? null :
+				<div id="hideMessage">
+					<form onSubmit={this._send}>
+					<input id="message" placeholder="send a message" onChange={this._message}/>
+					</form>
+					<ul id="friendListMessage">	
+						{this.props.fromFriends.map(function(obj){
+							return(<li><FriendList key={obj.id}  id={obj.from_friend.id} fromFriend={obj.from_friend.username} friendSelect={that._friendSelect}/></li>)
+						})}
+						{this.props.toFriends.map(function(obj){
+							return(<li><ToFriendList key={obj.id} id={obj.to_friend.id} toFriend={obj.to_friend.username} friendSelect={that._friendSelect}/></li>)
+						})}
+					</ul>
+				<ViewMessage username={that.props.username}/>
+				</div>}
 			</div>
 				)
 	}

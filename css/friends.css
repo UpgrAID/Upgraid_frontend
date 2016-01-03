@@ -2,7 +2,7 @@
     width: 150px;
     height: 31px;
 
-    background: #006d72;
+    background: #7df;
     outline: none;
     border: 1px solid #f7f7f7;
     text-align: right;
@@ -28,6 +28,7 @@
     top: 412px;
     right: 25px;
     border-left: 2px solid #f7f7f7;
+    border: 1px solid #888;
 
 }
 #setGoal {
@@ -102,4 +103,6 @@
 
 #friendsHeader {
 	margin:0;
+    background: #006d72;
+    color:#fff;
 }

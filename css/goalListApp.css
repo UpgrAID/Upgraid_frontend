@@ -42,8 +42,9 @@
   font-size: 18px;
   background: #fff;
   position: relative;
-
+  border-bottom: 1px solid #888;
 }
+
 
 .goalItem:last-child {
     border-bottom: none;
