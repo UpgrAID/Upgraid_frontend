@@ -48,8 +48,7 @@ var Login = React.createClass({
 
 			router.navigate('profile/' + username, {trigger:true});
 		})
-		$("#app").hide();
-		$('#bigPic').hide();
+		
 	},
 	_reg: function(e) {
 		e.preventDefault();
@@ -66,10 +65,10 @@ var Login = React.createClass({
 						<form id="loginForm" method='POST' onSubmit={this._submit}>
 							<div id="inputContainer">
 								<div className="inputWindow">
-									<input id="username" className="loginInput"  placeholder="username" value="newUser"/>
+									<input id="username" className="loginInput"  placeholder="username" value="thomas1117"/>
 								</div>
 								<div className="inputWindow">
-									<input id="password" className="loginInput"  placeholder="password" type="password" value="newUser"/>
+									<input id="password" className="loginInput"  placeholder="password" type="password" value="1234567q"/>
 								</div>
 								<button id="submitLog" type="submit">Submit</button>
 								<button id="registerBtn" onClick={this._reg}>Register</button>

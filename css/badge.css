@@ -8,11 +8,14 @@
 }
 .badgeTest {
 	position: relative;
-	width:50px;
+	width:65px;
+	display: inline;
 }
 .badge {
 	width:40px;
-	height: 40px
+	height: 40px;
+	position: relative;
+	top:12px;
 }
 
 .achievementTitle {
@@ -26,6 +29,7 @@
 	width:240px;
     color: #fff;
     border-radius: 3px;
+    z-index: 2;
 }
 
 .badgeTest:hover .achievementTitle{

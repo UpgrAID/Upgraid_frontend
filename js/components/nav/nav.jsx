@@ -2,6 +2,7 @@ var React = require('react');
 var FriendRequest = require('../profilePage/friends/friendRequest.jsx');
 var SearchUsers = require('./searchUsers.jsx');
 var Quote = require('./quote.jsx');
+var quoteStore = require('../../quotes/quotes.js')
 
 var Nav = React.createClass({
 
@@ -15,7 +16,8 @@ var Nav = React.createClass({
 		function getRandomInt(min, max) {
   		return Math.floor(Math.random() * (max - min + 1)) + min;
 		}
-		var RandomQuote = quote[getRandomInt(0,1)];
+
+		var RandomQuote = quoteStore[getRandomInt(0,1)];
 		
 		this.setState({
 			quote: RandomQuote

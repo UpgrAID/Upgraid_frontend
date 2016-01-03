@@ -8,7 +8,7 @@ var BadgeCount = React.createClass({
 					return(
 
 							<div className="badgeTest">
-								<span className="badge">{obj.achievement.badge_amount} x <img className="badge"src='/assets/badge.jpg'/></span>
+								<span>{obj.achievement.badge_amount} x <img className="badge"src='/assets/badge.jpg'/></span>
 								<span className="achievementTitle">{obj.achievement.name}</span>
 							</div>
 							
