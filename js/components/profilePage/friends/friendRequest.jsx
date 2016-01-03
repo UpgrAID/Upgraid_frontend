@@ -14,7 +14,6 @@ var FriendRequest = React.createClass({
 		}
 	},
 	_loadReq: function(req){
-
 		this.setState({
 			frRq: req
 		});
@@ -22,7 +21,6 @@ var FriendRequest = React.createClass({
 	componentWillMount: function(){
 				self=this;
 				fr = this.props.fromAll;
-
 				f = fr.filter(function(usr){
 					if(!usr.accepted){
 						return true

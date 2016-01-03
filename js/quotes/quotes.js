@@ -37,7 +37,7 @@ var quote =
 
 '“To change the world takes time; to change yourself takes courage.” ― R.S. Lowel',
 
-'“In the event of a total loss of direction in life, be sure to sort our your own shit before you start telling people what to do.” ― A.C. Ping',
+'“In the event of a total loss of direction in life, be sure to sort out your own shit before you start telling people what to do.” ― A.C. Ping',
 
 '“Too many people overvalue what they are not and undervalue what they are.” ― Malcolm Forbes',
 
@@ -65,5 +65,3 @@ var quote =
 
 "'Though no one can go back and make a brand new start, anyone can start from now and make a brand new ending.' - Marcus Aurelius"
 ]
-
-console.log(quote[30]);

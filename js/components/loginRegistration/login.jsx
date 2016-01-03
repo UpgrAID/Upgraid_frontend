@@ -3,7 +3,7 @@ var ReactDOM = require('react-dom')
 var User = require('../../models/user');
 var Backbone = require('backbone');
 var Cookie = require('jquery.cookie');
-var Reg = require('../../models/registration');
+// var Reg = require('../../models/registration');
 
 var Registration = require('./registration.jsx');
 
@@ -20,7 +20,7 @@ var Login = React.createClass({
         })
        test.save({},{
         success: function(resp) {
-          
+
         }
        })
     },
@@ -51,11 +51,11 @@ var Login = React.createClass({
 		$("#app").hide();
 		$('#bigPic').hide();
 	},
-	_reg: function(e) {
-		e.preventDefault();
-		
-		$('#registrationContainer').show();
-	},
+	// // _reg: function(e) {
+	// // 	e.preventDefault();
+	// //
+	// // 	$('#registrationContainer').show();
+	// },
 	render: function() {
 		return(
 			<div id="loginPageWrapper">
@@ -79,7 +79,7 @@ var Login = React.createClass({
 				</div>
 				<div id="bigPic">
 					<div id="home-wrapper">
-					
+
 					<h1 id="bigTitle">Welcome to UpgrAID</h1>
 					</div>
 				</div>
@@ -88,15 +88,15 @@ var Login = React.createClass({
 	                <form onSubmit={this._regSubmit}>
 		                <span id="close" onClick={this._close}>X</span>
 		                <h1 id="regHead">Register</h1>
-		                   
+
 		                    	<input id="firstName" className="regInput" placeholder="First Name"/>
-		                    
+
 		                        <input  id="userName" className="regInput" type="text" placeholder="Username" />
-		                    
+
 		                        <input id="passwordReg" className="regInput" placeholder="password"/>
-		                    
+
 		                        <input type="password" className="regInput" placeholder=" Confirm password"/>
-		                    
+
 		                    <input id="email" className="regInput" placeholder="email"/>
 		                    <button id="submitReg" type="submit">Submit</button>
 	                </form>
@@ -109,7 +109,7 @@ var Login = React.createClass({
 module.exports= Login;
 
 function setToken(token) {
-	
+
 	var _sync = Backbone.sync;
 	Backbone.sync = function(post,model,options) {
 		if($.cookie('AuthToken')) {
@@ -117,8 +117,8 @@ function setToken(token) {
 			'Authorization': 'Token ' + token,
 		};
 	}
-		 
-		
+
+
 
 		return _sync.call(this,post,model,options);
 	};
@@ -127,5 +127,3 @@ function setToken(token) {
  if($.cookie('auth_token')) {
  	setToken($.cookie('auth_token'))
  }
-
-
