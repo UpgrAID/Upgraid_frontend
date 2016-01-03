@@ -66,10 +66,10 @@ var Login = React.createClass({
 						<form id="loginForm" method='POST' onSubmit={this._submit}>
 							<div id="inputContainer">
 								<div className="inputWindow">
-									<input id="username" className="loginInput"  placeholder="username" value="thomas1117"/>
+									<input id="username" className="loginInput"  placeholder="username" value="test"/>
 								</div>
 								<div className="inputWindow">
-									<input id="password" className="loginInput"  placeholder="password" type="password" value="1234567q"/>
+									<input id="password" className="loginInput"  placeholder="password" type="password" value="test"/>
 								</div>
 								<button id="submitLog" type="submit">Submit</button>
 								<button id="registerBtn" onClick={this._reg}>Register</button>

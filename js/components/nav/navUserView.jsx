@@ -8,7 +8,7 @@ var NavUserView = React.createClass({
 		router.navigate('profile/' + this.props.username, {trigger:true});
 	},
 	render:function(){
-		console.log('a',this.props)
+		
 		return(<div>
 					<div id='navContainerUser'>
 						<ul id="navUlUser">

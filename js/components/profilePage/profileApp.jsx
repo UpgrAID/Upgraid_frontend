@@ -66,7 +66,7 @@ var ProfileApp = React.createClass({
 		
 		return(<div>
 				
-				<Nav router={this.props.router} username={this.props.username} userId = {this.props.uid} fromAll={this.props.fromAll} users={this.state.filteredData} query={this.state.query} doSearch={this._doSearch}/>
+				<Nav router={this.props.router} username={this.props.username} userId = {this.props.userId} fromAll={this.props.fromAll} users={this.state.filteredData} query={this.state.query} doSearch={this._doSearch}/>
 				<Greeting name={this.props.name}/>
 				<AvatarRankXp rank={this.props.rank} exp={this.props.exp}/>
 				<ProfilePostApp posts={this.props.posts} groups={this.props.groups}/>

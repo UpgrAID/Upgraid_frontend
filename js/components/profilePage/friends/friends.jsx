@@ -8,7 +8,7 @@ var Friends = React.createClass({
 		props=this.props;
 		
 		var test=this.props.fromFriends.map(function(obj){
-			return(<li key={obj.id} className="friendListItem"><FriendsBtn friendName={obj.from_friend.username} id={obj.from_friend.id}  router={props.router} id={obj.id}/></li>)
+			return(<li key={obj.id} className="friendListItem"><FriendsBtn friendName={obj.from_friend.username} id={obj.from_friend.id}  router={props.router} /></li>)
 					})
 		var toFriends = this.props.toFriends.map(function(obj){
 			return(<li key={obj.id} className="friendListItem"><ToFriendBtn toFriend={obj.to_friend.username} id={obj.to_friend.id} router={props.router} /></li>)

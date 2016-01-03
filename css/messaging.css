@@ -1,6 +1,6 @@
 
 #messageContainer {
-	width: 300px;
+	width: 400px;
     height: 300px;
     position: absolute;
     right: 65px;
@@ -16,7 +16,7 @@
 }
 
 .friendList {
-	width: 70px;
+	width: 100px;
     height: 31px;
     background: #006d72;
     outline: none;
@@ -26,23 +26,29 @@
 }
 
 #message {
-	width: 212px;
+	width: 282px;
     padding-top: 10px;
     position: relative;
-    top: 40px;
+    top: 4px;
     margin-left: 8px;
 }
 
 #friendListMessage {
-	width: 70px;
+	width: 99px;
+	height:260px;
+	overflow:scroll;
     position: absolute;
+    margin: 0;
     right: 0px;
-    top: 28px;
+    padding:0;
+    top: 40px;
 }
 
 #friendSelect {
 	position: absolute;
-    top: 50px;
-    margin:0px;
+    top: 8px;
+    right: 18px;
+    margin: 0px;
     margin-left: 8px;
+    color: #fff;
 }

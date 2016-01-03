@@ -16,7 +16,7 @@ var Nav = React.createClass({
   		return Math.floor(Math.random() * (max - min + 1)) + min;
 		}
 		var RandomQuote = quote[getRandomInt(0,1)];
-		console.log(RandomQuote);
+		
 		this.setState({
 			quote: RandomQuote
 		});
@@ -36,7 +36,7 @@ var Nav = React.createClass({
 						<li><SearchUsers users={this.props.users} doSearch = {this.props.doSearch} query={this.props.query} router={this.props.router}/></li>
 						<li id="friendLi" className="mainLi">
 							<span id="square">Friend Requests</span>
-							<FriendRequest userID={this.props.uid} fromAll={this.props.fromAll}/>
+							<FriendRequest userId={this.props.userId} fromAll={this.props.fromAll}/>
 						</li>
 					</ul>
 

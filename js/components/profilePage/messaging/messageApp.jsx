@@ -52,19 +52,20 @@ var MessageApp = React.createClass({
 	},
 	render:function(){
 		var that = this;
+		console.log('a',this.props)
 		return(
 			<div id="messageContainer">
 			<h2 id="sendMessage">Send Message</h2>
-			<p id="friendSelect">{this.state.friend}</p>
+				<span id="friendSelect">{this.state.friend}</span>
 				<form onSubmit={this._send}>
-				<textarea id="message" placeholder="send a message" onChange={this._message}></textarea>
+				<input id="message" placeholder="send a message" onChange={this._message}/>
 				</form>
 			<ul id="friendListMessage">	
 				{this.props.fromFriends.map(function(obj){
-					return(<li><FriendList key={obj.id}  id={obj.id} fromFriend={obj.from_friend.username} friendSelect={that._friendSelect}/></li>)
+					return(<li><FriendList key={obj.id}  id={obj.from_friend.id} fromFriend={obj.from_friend.username} friendSelect={that._friendSelect}/></li>)
 				})}
 				{this.props.toFriends.map(function(obj){
-					return(<li><ToFriendList key={obj.id} id={obj.id} toFriend={obj.to_friend.username} friendSelect={that._friendSelect}/></li>)
+					return(<li><ToFriendList key={obj.id} id={obj.to_friend.id} toFriend={obj.to_friend.username} friendSelect={that._friendSelect}/></li>)
 				})}
 			</ul>
 
