@@ -20,7 +20,7 @@ var PostListApp = React.createClass({
 
 	render: function() {
 		props = this.props;
-
+		
 		state = this.state;
 		return(
 			<div id="postInput">

@@ -4,15 +4,10 @@ var quote =
 
 '“Those who cannot change their minds cannot change anything.”― George Bernard Shaw',
 
-'“A proud man is always looking down on things and people; and, of course, as long as you are looking down, you cannot see something that is above you.” ― C.S. Lewis',
-
 '“Make the most of yourself....for that is all there is of you.” ― Ralph Waldo Emerson',
 
 '“Once we accept our limits, we go beyond them.”― Albert Einstein',
 
-'“No matter who you are, no matter what you did, no matter where you\'ve come from, you can always change, become a better version of yourself.” ― Madonna',
-
-'“If you try anything, if you try to lose weight, or to improve yourself, or to love, or to make the world a better place, you have already achieved something wonderful, before you even begin.” ― Sarah Dessen',
 
 '“The curious paradox is that when I accept myself just as I am, then I can change.” ― Carl R. Rogers',
 
@@ -27,13 +22,11 @@ var quote =
 
 '“Lighten up on yourself. No one is perfect. Gently accept your humanness.” ― Deborah Day',
 
-'“As human beings, our greatness lies not so much in being able to remake the world - that is the myth of the atomic age - as in being able to remake ourselves.” ― Mahatma Gandhi',
 
 '"If you don\'t know where you are going, you will probably end up somewhere else. You have to have goals.” ― Zig Ziglar',
 
 '“Everything is practice.” ― Pelé',
 
-'“I build myself up from nothing, using only my bare hands and an assortment of Legos. I’m not the sort of man you want to step on. Ouch!” ― Jarod Kintz',
 
 '“To change the world takes time; to change yourself takes courage.” ― R.S. Lowel',
 

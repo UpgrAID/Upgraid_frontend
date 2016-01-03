@@ -65,11 +65,12 @@
 
 }
 #postInput {
-	width:500px;
-	height:500px;
-	margin:auto;
-	position: relative;
-	top:305px;
+	width: 511px;
+    height: 500px;
+    margin: auto;
+    position: relative;
+    top: 305px;
+    background: #fff;
 }
 
 #postBtn {
@@ -91,7 +92,7 @@
 	padding-bottom: 15px;
 }
 #descriptionInput {
-	width:500px;
+	width:511px;
 	height:50px;
 	display: block;
 	font-size: 0.7rem;

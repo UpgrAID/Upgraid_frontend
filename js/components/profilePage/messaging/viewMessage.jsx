@@ -13,7 +13,7 @@ var ViewMessage = React.createClass({
 		})
 	},
 	componentWillMount: function(){
-		console.log(this.props.username)
+		
 		var ViewMessage = Backbone.Model.extend({
 			url:'https://safe-brook-9891.herokuapp.com/api/messages/user/?username=' + this.props.username
 		});
