@@ -22,6 +22,7 @@ var Login = React.createClass({
         success: function(resp) {
 
         }
+
        })
     },
     _handleInputChange: function(e){
@@ -51,9 +52,7 @@ var Login = React.createClass({
 
 	},
 	 _reg: function(e) {
-	 	e.preventDefault();
-	
-		$('#registrationContainer').show();
+	 	this.props.show()
 	},
 	render: function() {
 		return(
@@ -71,9 +70,10 @@ var Login = React.createClass({
 									<input id="password" className="loginInput"  placeholder="password" type="password" value="1234567q"/>
 								</div>
 								<button id="submitLog" type="submit">Submit</button>
-								<button id="registerBtn" onClick={this._reg}>Register</button>
+								
 							</div>
 						</form>
+						<button id="registerBtn" onClick={this._reg}>Register</button>
 					</div>
 				</div>
 				<div id="bigPic">
@@ -83,23 +83,6 @@ var Login = React.createClass({
 					</div>
 				</div>
 
-				 <div id="registrationContainer">
-	                <form onSubmit={this._regSubmit}>
-		                <span id="close" onClick={this._close}>X</span>
-		                <h1 id="regHead">Register</h1>
-
-		                    	<input id="firstName" className="regInput" placeholder="First Name"/>
-
-		                        <input  id="userName" className="regInput" type="text" placeholder="Username" />
-
-		                        <input id="passwordReg" className="regInput" placeholder="password"/>
-
-		                        <input type="password" className="regInput" placeholder=" Confirm password"/>
-
-		                    <input id="email" className="regInput" placeholder="email"/>
-		                    <button id="submitReg" type="submit">Submit</button>
-	                </form>
-	            </div>
 		</div>
 			)
 	}

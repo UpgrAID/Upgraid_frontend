@@ -1,7 +1,7 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 var Backbone= require('backbone');
-var Login = require('./components/loginRegistration/login.jsx');
+var LoginRegApp = require('./components/loginRegistration/loginRegApp.jsx');
 var ProfileApp=require('./components/profilePage/profileApp.jsx');
 var UserViewApp = require('./components/userView/UserViewApp.jsx');
 var GroupApp = require('./components/groupPage/groupApp.jsx');
@@ -21,7 +21,7 @@ var Router=Backbone.Router.extend({
 		"":"index"
 	},
 	index: function(){
-		ReactDOM.render(<Login router={this}/>, document.getElementById('container'));
+		ReactDOM.render(<LoginRegApp router={this}/>, document.getElementById('container'));
 
 	}
 });

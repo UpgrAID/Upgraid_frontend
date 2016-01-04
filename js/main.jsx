@@ -6,7 +6,6 @@ require('../css/nav.css');
 require('../css/navUserView.css');
 require('../css/groupHome.css');
 require('../css/postListApp.css');
-require('../main.css');
 require('../css/friends.css');
 require('../css/groups.css');
 require('../css/comment.css')
