@@ -1,10 +1,10 @@
 .friend {
     width: 150px;
     height: 31px;
-
     background: #7dd;
     outline: none;
-    border: 1px solid #f7f7f7;
+    border: none;
+    border-bottom: 1px solid #f7f7f7;
     text-align: right;
     color: #fff;
 }
@@ -25,7 +25,7 @@
     margin-bottom: 10px;
     display: inline-block;
     position: absolute;
-    top: 412px;
+    top: 464px;
     right: 25px;
     border-left: 2px solid #f7f7f7;
     border: 1px solid #888;
@@ -61,6 +61,7 @@
 	color: #2A8889;
 	margin-left: 10px;
 	height:200px;
+    width:230px;
 }
 
 .accRejContain {
@@ -87,18 +88,19 @@
 }
 
 #square {
-	width:110px;
-	height:20px;
-	background: #fff;
-  padding: 5px 0 0 5px;
-  border-radius: 4px;
-  color: #00C5CD;
-  font-size: 0.7rem;
-	z-index: 2;
-  margin-right: 10px;
-	position: absolute;
-	top:15px;
-  right: 30px;
+	width: 28px;
+    height: 28px;
+    background: #fff;
+    padding: 5px 0 0 5px;
+    border-radius: 4px;
+    color: #00C5CD;
+    font-size: 0.7rem;
+    z-index: 2;
+    margin-right: 10px;
+    position: absolute;
+    top: 8px;
+    right: 30px;
+    font-size: 24px;
 }
 
 #friendsHeader {

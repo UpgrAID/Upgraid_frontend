@@ -1,10 +1,10 @@
 .group {
     width: 150px;
     height: 31px;
-    
     background: #7dd;
     outline: none;
-    border: 1px solid #f7f7f7;
+    border: none;
+    border-bottom: 1px solid #f7f7f7;
     text-align: right;
     color: #fff;
 }
@@ -31,12 +31,12 @@
     margin-bottom: 10px;
     display: inline-block;
     position: absolute;
-    top: 284px;
+    top: 314px;
     right: 25px;
     border-left: 2px solid #f7f7f7;
     background: #fff;
     border:1px solid #888;
-    height: 125px;
+    height: 121px;
 	
 }
 

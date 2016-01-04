@@ -33,17 +33,24 @@
   display: inline-block;
   margin-left: 20px;
 }
-#friendRequests {
+#friendRequests  {
   display: none;
   position: absolute;
   top:50px;
   right:0px;
+  padding:0;
   background: #fff;
+}
+#friendRequestsHeader {
+    color: #fff;
+    background: #006d72;
+    margin: 0;
+    text-align: center;
 }
 
 #friendLi {
   height:120px;
-  width:145px;
+  width:50px;
   float: right;
 }
 #friendLi:hover #friendRequests {
@@ -96,4 +103,11 @@
   top:30px;
   font-size: 38px;
   width:555px;
+}
+
+#searchUsers {
+    width: 156px;
+    padding-top: 8px;
+    border-radius: 2px;
+    border: 1px solid #f7f7f7;
 }
