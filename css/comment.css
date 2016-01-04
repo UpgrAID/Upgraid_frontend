@@ -6,4 +6,11 @@
 	height: 30px;
 	font-size: 0.6rem;
 	padding-top: 8px;
+	position: relative;
+}
+
+.likeBtn {
+	position: absolute;
+    right: 7px;
+    top: 12px;
 }

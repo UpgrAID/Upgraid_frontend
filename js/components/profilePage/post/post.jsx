@@ -45,7 +45,7 @@ var Post = React.createClass({
       				avatar="../../../../assets/avatar.png"/>
 						<CardText>{this.props.description}</CardText>
 				</Card>
-				<CommentApp postId = {this.props.postId} comments={this.props.comments} />
+				<CommentApp postId = {this.props.postId} comments={this.props.comments} username={this.props.username} />
 			</div>
 		)
 
