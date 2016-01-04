@@ -1,6 +1,6 @@
 var React = require('react');
 var FoundUsers = require('./foundUsers.jsx');
-var LeftNav = require('material-ui/lib/left-nav')
+
 
 var SearchUsers = React.createClass({
 	getIntialState: function(){
@@ -24,7 +24,7 @@ var SearchUsers = React.createClass({
 		return(
 			<div>
 				<input id="searchUsers" ref="searchInput" placeholder="Search Users..." onClick={this._look} onChange={this._doSearch} value={this.props.query}/>
-				<LeftNav open={this.state.open} id="userModal">
+				<div id="userModal">
 					<span id="closeModal" onClick={this._close}></span>
 					<div>
 						{this.props.users.map(function(obj){
@@ -32,9 +32,8 @@ var SearchUsers = React.createClass({
 								<FoundUsers key={obj.id} username={obj.username} id={obj.id} router={props.router}/>
 							)
 						})}
-
 					</div>
-				</LeftNav>
+				</div>
 			</div>)
 	}
 });
