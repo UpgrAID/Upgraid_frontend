@@ -26,7 +26,7 @@ var PostListApp = React.createClass({
 			<div id="postInput">
 					<PostInput data={this.state.data} addInput={this._addInput} groupId={this.props.groupId}/>
 					<div id="postMaster">
-					<PostItem data={this.state.data} addInput={this._addInput}/>
+					<PostItem data={this.state.data} addInput={this._addInput} username={this.props.username}/>
 					</div>
 			</div>
 			)
