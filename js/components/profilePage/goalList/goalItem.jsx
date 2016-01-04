@@ -9,7 +9,7 @@ var GoalItem = React.createClass({
 		return(<ul key={this.props.objectId} className="goalContainer">
 				{this.props.data.map(function(obj){
 
-					return(<Item  key={obj.id} addInput={props.addInput} data={obj.title} datas={props.data} theme={obj.theme} id={obj.id} completed={obj.completed}/>)
+					return(<Item  key={obj.id} addInput={props.addInput} data={obj.title} datas={props.data} theme={obj.theme} id={obj.id} completed={obj.completed} router={props.router}/>)
 				})}	
 
 

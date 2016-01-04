@@ -31,9 +31,11 @@ var ViewMessage = React.createClass({
 		})
 	},
 	render: function(){
+		var that = this;
+		
 		return(<div id="allMessages">
 				{this.state.messageList.map(function(obj){
-					return(<p className="message" key={obj.id}>{obj.message}</p>)
+					return(<div className="message"><span>{obj.sender}</span><p className="message" key={obj.id}>{obj.message}</p></div>)
 				})}
 				</div>)
 	}

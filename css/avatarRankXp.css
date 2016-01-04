@@ -1,7 +1,7 @@
 
 
 #avatarDiv {
-	width:200px;
+	width:255px;
 	margin:0;
 	height:200px;
 	position: relative;
@@ -14,10 +14,19 @@
 	text-align: left;
 	font-family: 'Press Start 2P', cursive;
 	color:green;
+	margin:0;
+	padding-right: 54px;
+}
+#exp {
+	text-align: left;
+	font-family: 'Press Start 2P', cursive;
+	color:green;
+	margin:0;
 }
 #picture {
 	width:150px;
 	height: 150px;
 	background: #fff;
 	content:url('../assets/avatar.png');
+	margin-bottom: 12px;
 }

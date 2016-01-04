@@ -58,8 +58,9 @@ var Login = React.createClass({
 		return(
 			<div id="loginPageWrapper">
 				<div id="loginContainer">
+				<span id="logoSpan">UpgrAID</span>
 				<div id="loginOnly">
-					<span id="logoSpan">UpgrAID</span>
+					
 					<span id="loginSpan">Login</span>
 						<form id="loginForm" method='POST' onSubmit={this._submit}>
 							<div id="inputContainer">
@@ -106,6 +107,6 @@ function setToken(token) {
 	};
 }
 
- if($.cookie('auth_token')) {
- 	setToken($.cookie('auth_token'))
+ if($.cookie('AuthToken')) {
+ 	setToken($.cookie('AuthToken'))
  }

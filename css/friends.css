@@ -59,15 +59,18 @@
 }
 #friendRequests {
 	color: #2A8889;
-	margin-left: 10px;
-	height:200px;
-    width:230px;
+    margin-left: 10px;
+    /* height: 200px; */
+    width: 230px;
+    padding-bottom: 8px;
+    position: absolute;
+    right:16px;
 }
 
 .accRejContain {
 	float: right;
 	position: relative;
-	right:-15px;
+	right:0px;
 }
 
 .rejbutton, .accbutton {
@@ -98,7 +101,7 @@
     z-index: 2;
     margin-right: 10px;
     position: absolute;
-    top: 8px;
+    top: 4px;
     right: 30px;
     font-size: 24px;
 }

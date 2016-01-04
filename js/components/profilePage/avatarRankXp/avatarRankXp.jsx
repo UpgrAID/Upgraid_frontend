@@ -6,11 +6,11 @@ var AvatarRankXp = React.createClass({
 				<div id="avatarDiv">
 				<div id="picture"></div>
 					
-					{(this.props.rank=== 1 ? <p id="rank1">Novice</p> : null)}
-					{(this.props.rank=== 2 ? <p id="rank2">JourneyMan</p> : null)}
-					{(this.props.rank=== 3 ? <p id="rank3">Mentor</p> : null)}
+					{(this.props.rank=== 1 ? <span id="rank1">Novice</span> : null)}
+					{(this.props.rank=== 2 ? <span id="rank2">JourneyMan</span> : null)}
+					{(this.props.rank=== 3 ? <span id="rank3">Mentor</span> : null)}
 
-					<p id="exp"><span>Exp: </span>{this.props.exp}</p>
+					<span id="exp"><span>Exp: </span>{this.props.exp}</span>
 				</div>
 
 			</div>)

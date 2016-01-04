@@ -29,6 +29,7 @@ var Nav = React.createClass({
 	render:function(){
 		return(<div>
 				<div id='navContainer'>
+					<div id="navContain">
 					<ul id="navUl">
 						<li className="logo"> UpgrAID</li>
 						<li className="mainLi" onClick={this._profileNav}> MyProfile</li>
@@ -38,7 +39,7 @@ var Nav = React.createClass({
 							<FriendRequest userId={this.props.userId} fromAll={this.props.fromAll}/>
 						</li>
 					</ul>
-
+					</div>
 				</div>
 				<div id="header"><Quote quote={this.state.quote}/></div>
 				</div>)

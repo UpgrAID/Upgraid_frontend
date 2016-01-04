@@ -9,7 +9,8 @@ var MessageApp = React.createClass({
 			friend: '',
 			id: null,
 			message: '',
-			hidden: false
+			hidden: false,
+			newMessage: ''
 		})
 	},
 	_friendSelect: function(e) {
@@ -58,12 +59,15 @@ var MessageApp = React.createClass({
 			success: function(resp){
 
 				$('#message').val('')
+				that.setState({
+					newMessage: resp.toJSON()
+				})
 			}
 		})
 	},
 	render:function(){
 		var that = this;
-
+		console.log('this.props',this.props);
 		return(
 			<div id="messageContainer">
 			<h2 id="sendMessage" onClick={this._hideShow}>Send Message</h2>
@@ -81,7 +85,7 @@ var MessageApp = React.createClass({
 							return(<li key={obj.id}><ToFriendList id={obj.to_friend.id} toFriend={obj.to_friend.username} friendSelect={that._friendSelect}/></li>)
 						})}
 					</ul>
-				<ViewMessage username={that.props.username}/>
+				<ViewMessage username={that.props.username} newMessage={this.state.newMessage}/>
 				</div>}
 			</div>
 				)

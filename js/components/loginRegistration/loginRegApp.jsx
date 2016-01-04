@@ -20,7 +20,8 @@ var LoginRegApp = React.createClass({
 	_hide: function(){
 		this.setState({
 			hidden: true
-		})
+		});
+		
 	},
 	render:function(){
 		return(
