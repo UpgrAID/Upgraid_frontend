@@ -50,11 +50,11 @@ var Login = React.createClass({
 		})
 
 	},
-	// // _reg: function(e) {
-	// // 	e.preventDefault();
-	// //
-	// // 	$('#registrationContainer').show();
-	// },
+	 _reg: function(e) {
+	 	e.preventDefault();
+	
+		$('#registrationContainer').show();
+	},
 	render: function() {
 		return(
 			<div id="loginPageWrapper">

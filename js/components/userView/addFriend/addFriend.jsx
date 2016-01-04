@@ -16,8 +16,8 @@ var AddFriend = React.createClass({
 
 		friend.set({
 			from_friend:this.props.myId,
-			to_friend:this.props.userId,
-			accepted: null
+			to_friend:this.props.userId
+			
 		})
 
 		friend.save();
