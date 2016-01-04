@@ -53,6 +53,7 @@
 	margin:0;
 	resize:none;
 	border:none;
+	border-bottom:1px solid #f7f7f7;
 	font-size: 0.7rem;
 }
 #postMaster {
@@ -64,11 +65,22 @@
 
 }
 #postInput {
-	width:500px;
-	height:500px;
-	margin:auto;
-	position: relative;
-	top:305px;
+	width: 511px;
+    height: 500px;
+    margin: auto;
+    position: relative;
+    top: 305px;
+    background: #fff;
+}
+
+#postBtn {
+	width:167px;
+	float: left;
+	height:30px;
+	outline:none;
+	border:1px solid #f7f7f7;
+	background: #006d72;
+	color:#fff;
 }
 #titleInput {
 	width:500px;
@@ -80,7 +92,7 @@
 	padding-bottom: 15px;
 }
 #descriptionInput {
-	width:500px;
+	width:511px;
 	height:50px;
 	display: block;
 	font-size: 0.7rem;

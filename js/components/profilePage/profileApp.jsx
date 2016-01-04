@@ -6,36 +6,39 @@ var Friends = require('./friends/friends.jsx');
 var Group = require('./groups/groups.jsx');
 var AvatarRankXp = require('./avatarRankXp/avatarRankXp.jsx');
 var FriendRequest = require('./friends/friendRequest.jsx');
-var Store= require('../../store.js')
+var Store= require('../../store.js');
 var ProfilePostApp = require('./profilePost/profilePostApp.jsx');
-
+var Badges = require('./badges/badges.jsx');
+var MessageApp = require('./messaging/messageApp.jsx');
 var ProfileApp = React.createClass({
-	_filterList: function(e){
-	    var updatedList = this.state.users;
-	    var test = this.state.users.map(function(obj){
-	    	return {
-	    			username:obj.username,
-	    			id: obj.id
-	    			}
-	    		})
+	_doSearch:function(queryText){
+      
+        //get query result
+        var queryResult=[];
+        var test=this.state.filteredData.forEach(function(person){
+            if(person.username.toLowerCase().indexOf(queryText)!=-1)
+            queryResult.push(person);
+        });
 
+        this.setState({
+            query:queryText,
+            filteredData: queryResult
+        })
 
-	    updatedList = test.filter(function(item){
-	     return item.username.toLowerCase().search(e.target.value.toLowerCase() !== -1);
-	    });
-	    this.setState({users: updatedList});
-	     console.log('test')
-	    
-	  },
-	getInitialState: function() {
-		return({
-			users: []
-		})
-	},
+    },
+    getInitialState:function(){
+        return{
+
+            query:'',
+            filteredData: Store.data.users
+        }
+    },
+
 	_test: function() {
 		this.setState({
-			users: Store.data.users
+			filteredData: Store.data.users
 		})
+
 	},
 	componentWillMount: function() {
 			var Users = Backbone.Model.extend({
@@ -50,25 +53,28 @@ var ProfileApp = React.createClass({
 		var that=this;
 		userCollect.fetch({
 			success:function(resp) {
-				
+
 				allUsers=resp.toJSON();
 				_.extend(Store.data, {users: allUsers});
 				that._test()
 			}
 		});
+
 	},
-	
+
 	render: function() {
-		
+
 		return(<div>
-				
-				<Nav router={this.props.router} username={this.props.username} userId = {this.props.uid} fromAll={this.props.fromAll} users={this.state.users} filterList={this._filterList}/>
+
+				<Nav router={this.props.router} username={this.props.username} userId = {this.props.userId} fromAll={this.props.fromAll} users={this.state.filteredData} query={this.state.query} doSearch={this._doSearch}/>
 				<Greeting name={this.props.name}/>
 				<AvatarRankXp rank={this.props.rank} exp={this.props.exp}/>
 				<ProfilePostApp posts={this.props.posts} groups={this.props.groups}/>
 				<GoalListApp goals={this.props.goals} router={this.props.router}/>
+				<Badges username={this.props.username}/>
 				<Friends fromFriends={this.props.fromFriends} toFriends={this.props.toFriends}  router={this.props.router}/>
 				<Group groups={this.props.groups} router={this.props.router}/>
+				<MessageApp fromFriends={this.props.fromFriends} toFriends={this.props.toFriends} username={this.props.username}/>
 				</div>)
 	}
 })

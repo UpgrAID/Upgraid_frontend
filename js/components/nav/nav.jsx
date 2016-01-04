@@ -2,6 +2,7 @@ var React = require('react');
 var FriendRequest = require('../profilePage/friends/friendRequest.jsx');
 var SearchUsers = require('./searchUsers.jsx');
 var Quote = require('./quote.jsx');
+var quoteStore = require('../../quotes/quotes.js')
 
 var Nav = React.createClass({
 
@@ -9,14 +10,13 @@ var Nav = React.createClass({
 		return({quote: ''})
 	},
 	componentWillMount: function() {
-		var quote = ['Life is 10% what happens to you and 90% how you react to it.',
-					"Don't watch the clock; do what it does. Keep going."
-		]
+
 		function getRandomInt(min, max) {
   		return Math.floor(Math.random() * (max - min + 1)) + min;
 		}
-		var RandomQuote = quote[getRandomInt(0,1)];
-		console.log(RandomQuote);
+
+		var RandomQuote = quoteStore[getRandomInt(0,28)];
+
 		this.setState({
 			quote: RandomQuote
 		});
@@ -30,13 +30,12 @@ var Nav = React.createClass({
 		return(<div>
 				<div id='navContainer'>
 					<ul id="navUl">
-
-						<li className="mainLi" onClick={this._profileNav}>Profile</li>
-						<li className="mainLi">Group</li>
-						<li><SearchUsers users={this.props.users} filterList = {this.props.filterList}/></li>
+						<li className="logo"> UpgrAID</li>
+						<li className="mainLi" onClick={this._profileNav}> MyProfile</li>
+						<li className="searchBar"><SearchUsers users={this.props.users} doSearch = {this.props.doSearch} query={this.props.query} router={this.props.router}/></li>
 						<li id="friendLi" className="mainLi">
 							<span id="square">Friend Requests</span>
-							<FriendRequest userID={this.props.uid} fromAll={this.props.fromAll}/>
+							<FriendRequest userId={this.props.userId} fromAll={this.props.fromAll}/>
 						</li>
 					</ul>
 

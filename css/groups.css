@@ -2,7 +2,7 @@
     width: 150px;
     height: 31px;
     
-    background: #006d72;
+    background: #7dd;
     outline: none;
     border: 1px solid #f7f7f7;
     text-align: right;
@@ -19,17 +19,24 @@
 	background: #004a72;
 }
 
-
+#groupsHeader {
+	margin:0;
+    background: #006d72;
+    color:#fff;
+}
 
 #groupsContainer {
-	width:150px;
-	text-align: center;
-	margin-bottom: 10px;
-	display: inline-block;
-	position: absolute;
-	top:245px;
-	right:25px;
-	border-left:2px solid #f7f7f7;
+	width: 150px;
+    text-align: center;
+    margin-bottom: 10px;
+    display: inline-block;
+    position: absolute;
+    top: 284px;
+    right: 25px;
+    border-left: 2px solid #f7f7f7;
+    background: #fff;
+    border:1px solid #888;
+    height: 125px;
 	
 }
 

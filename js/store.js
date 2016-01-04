@@ -6,6 +6,7 @@ var Store = {
 		chatInit: null,
 		users: [],
 		userList:[],
+		messageList:[],
 	}
 };
 

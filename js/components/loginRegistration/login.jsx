@@ -48,8 +48,7 @@ var Login = React.createClass({
 
 			router.navigate('profile/' + username, {trigger:true});
 		})
-		$("#app").hide();
-		$('#bigPic').hide();
+
 	},
 	// // _reg: function(e) {
 	// // 	e.preventDefault();
@@ -112,7 +111,7 @@ function setToken(token) {
 
 	var _sync = Backbone.sync;
 	Backbone.sync = function(post,model,options) {
-		if($.cookie('AuthToken')) {
+		if($.cookie('auth_token')) {
 		options.headers = {
 			'Authorization': 'Token ' + token,
 		};

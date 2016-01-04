@@ -1,0 +1,46 @@
+#badgeContainer {
+	position: absolute;
+	bottom: 128px;
+	left: 25px;
+	width: 300px;
+	background: #fff;
+	height: 250px;
+}
+.badgeTest {
+	position: relative;
+	width:65px;
+	display: inline;
+}
+.badge {
+	width:40px;
+	height: 40px;
+	position: relative;
+	top:12px;
+}
+
+.achievementTitle {
+	display: none;
+	position: absolute;
+	top:40px;
+	left:50px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background: #000;
+	width:240px;
+    color: #fff;
+    border-radius: 3px;
+    z-index: 2;
+}
+
+.badgeTest:hover .achievementTitle{
+	display:block;
+}
+
+#badgeHeader {
+	color:#fff;
+	background: #006d72;
+	margin: 0;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	text-align: center;
+}

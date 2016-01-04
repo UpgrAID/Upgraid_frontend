@@ -1,6 +1,5 @@
 var React = require('react');
-var SearchUsers = require('./searchUsers.jsx')
-var AddFriend = require('../userView/addFriend/addFriend.jsx');
+var SearchUsers = require('./searchUsers.jsx');
 
 var NavUserView = React.createClass({
 	_profileNav: function(e){
@@ -12,8 +11,8 @@ var NavUserView = React.createClass({
 		return(<div>
 					<div id='navContainerUser'>
 						<ul id="navUlUser">
-							<li onClick={this._profileNav}>Profile</li>
-							<li>{!this.props.friend ? <AddFriend /> : null}</li>
+							<li>UpgrAID </li>
+							<li onClick={this._profileNav}> MyProfile</li>
 						</ul>
 
 					</div>

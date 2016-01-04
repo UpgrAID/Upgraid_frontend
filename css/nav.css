@@ -6,7 +6,7 @@
   z-index: 1;
   width: 100%;
   height: 50px;
-  background-color: #00C5CD;
+  background-color: #006d72;
 }
 #header {
   height:245px;
@@ -15,13 +15,23 @@
   background: #001E1F;
 }
 #navUl {
-	margin-left: -35px;
+  margin-left: -20px;
+	margin-top: 10px;
 	list-style:none;
 }
 #navUl .mainLi {
 	color:#fff;
 	display: inline-block;
-  margin-right: 15px;
+  margin-left: 20px;
+  margin-right: 25px;
+}
+#navUl .logo {
+  margin-left: 15px;
+  display: inline-block;
+}
+#navUl .searchBar {
+  display: inline-block;
+  margin-left: 20px;
 }
 #friendRequests {
   display: none;
@@ -33,7 +43,7 @@
 
 #friendLi {
   height:120px;
-  width:20px;
+  width:145px;
   float: right;
 }
 #friendLi:hover #friendRequests {
@@ -44,15 +54,15 @@
   display: block;
 }
 
-#searchUsers {
+/*#searchUsers {
   position: absolute;
     top: 20px;
     left: 150px;
-}
+}*/
 
 #userModal {
   display: none;
-  color:blue;
+
   position: absolute;
   top:50px;
   left: 40px;
@@ -64,8 +74,11 @@
 #closeModal {
   position: absolute;
   width: 200px;
-  top: 5px;
-  left:5px;
+  top: 0px;
+  left:0px;
+  height: 25px;
+  width:25px;
+  background: red;
 }
 #userChoice {
   border-bottom: 1px solid black;
@@ -81,6 +94,6 @@
   margin:auto;
   position: relative;
   top:30px;
-  font-size: 45px;
-  width:545px;
+  font-size: 38px;
+  width:555px;
 }

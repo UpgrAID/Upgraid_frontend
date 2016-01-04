@@ -13,32 +13,33 @@ var AcceptReject = React.createClass({
 		var Fa = new Fra();
 		Fa.set({
 			id: this.props.requester.id,
-			to_friend: this.props.requester.to_friend,
-			from_friend: this.props.requester.from_friend,
+			from_friend: this.props.requester.from_friend.id,
+			to_friend: this.props.userId,
 			accepted: true
 		});
+	
 		Fa.save();
-		$('#reqObj').hide();
+
 	},
 
 	_handleDecline: function(event){
 		event.preventDefault();
 		var Frd = Backbone.Model.extend({
-			url:'https://safe-brook-9891.herokuapp.com/api/friends/' + this.props.requester.id
+			url:'https://safe-brook-9891.herokuapp.com/api/friends/'+ this.props.requester.id
 		});
 		var Fd = new Frd();
 		Fd.set({
 			id: this.props.requester.id,
-			to_friend: this.props.requester.to_friend,
+			to_friend: this.props.userId,
 			from_friend: this.props.requester.from_friend,
 			accepted: false
 		});
 		Fd.save();
-		$('.reqObj').hide();
+
 
 	},
 	render: function(){
-		
+
 		return (
 			<li className="reqObj">
 				<span className="requester">{this.props.requester.from_friend.username}</span>

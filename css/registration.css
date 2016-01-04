@@ -1,6 +1,6 @@
 #registrationContainer {
 	width:400px;
-	height:290px;
+	height:350px;
 	background: #00C5CD;
 	position: absolute;
 	left: 50%;
@@ -18,11 +18,30 @@
 }
 
 .regInput {
-	width:300px;
-	padding-top: 20px;
+	width: 300px;
+    padding-top: 20px;
+    margin-bottom: 18px;
+    left: 44px;
+    position: relative;
 }
+
+
 
 #regHead {
 	text-align: center;
 	color: #fff;
+	margin:0;
+	margin-bottom: 5px;
+}
+
+#submitReg {
+	display:block;
+    color: #fff;
+    background: #00F5CD;
+    outline: none;
+    border: 1px solid #F7F7F7;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    left: 45px;
 }

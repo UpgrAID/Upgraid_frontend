@@ -1,7 +1,7 @@
 var React = require('react');
 var OtherPosts= require('../../components/profilePage/post/othersPosts.jsx');
 var OtherGoals= require('../../components/profilePage/goalList/othersGoals.jsx');
-var Greeting = require('../../components/profilePage/greeting.jsx');
+var NameTag = require('./nameTag.jsx');
 var NavUserView = require('../../components/nav/navUserView.jsx');
 var Friendlies = require('../../collections/friendlies');
 var AddFriend = require('../userView/addFriend/addFriend.jsx');
@@ -22,12 +22,14 @@ var UserViewApp = React.createClass({
 		var props = this.props;
 		var self = this;
 		friendList = new Friendlies();
+
 		friendList.fetch({
 			success: function(resp){
 				fr = resp.toJSON();
 			var frs = fr.filter(function(f){
-				if (props.userId == f.to_friend && props.myId === f.from_friend){
+				if (props.userId == f.to_friends || props.myId === f.from_friends){
 					self._isTrue(true);
+
 				}
 			})
 			}
@@ -37,15 +39,14 @@ var UserViewApp = React.createClass({
 
 		return (
 			<div>
-				<NavUserView router={this.props.router} username={this.props.username}/>
-				<Greeting name={this.props.name}/>
+				<NavUserView router={this.props.router} username={this.props.username} userId={this.props.userId} myId={this.props.myId} friend={this.state.frnds}/>
+				<NameTag user={this.props.name} />
 				<AvatarRankXp rank={this.props.rank} exp={this.props.exp}/>
 				<Friends fromFriends={this.props.fromFriends} toFriends={this.props.toFriends} router={this.props.router}/>
 				<Group groups={this.props.groups} router={this.props.router}/>
 				<OtherPosts posts={this.props.posts}/>
 				<OtherGoals goals={this.props.goals}/>
-				{this.state.frnds ? null :
-				<AddFriend userId={this.props.userId} myId={this.props.myId}/>}
+
 			</div>
 		)
 	}

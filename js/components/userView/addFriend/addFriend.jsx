@@ -16,14 +16,11 @@ var AddFriend = React.createClass({
 
 		friend.set({
 			from_friend:this.props.myId,
-			to_friend:this.props.userId
+			to_friend:this.props.userId,
+			accepted: null
 		})
 
-		friend.save({}, {
-			success: function(resp) {
-			
-			}
-		})
+		friend.save();
 	},
 	render: function() {
 		return(

@@ -53,7 +53,7 @@ var Item = React.createClass({
 					(<li className="goalItem">
 
 						<label className="categoryLabel"htmlFor={this.props.objectId} value={this.props.data}>{this.props.data}</label>
-						<button className="delete" onClick={this._completed} value={this.props.theme}>C</button>
+						<button className="delete entypo-check" onClick={this._completed} value={this.props.theme}></button>
 					</li>))}
 				</div>)
 
