@@ -24,7 +24,7 @@ var ProfilePostApp = React.createClass({
 				
 				{this.props.goals.map(function(obj){
  					return(
- 						<div>
+ 						<div className="inputDesContain">
 
  						<ProfileInput/>
 						<PostButtons key={obj.id} theme={obj.theme} id={obj.group} title={obj.title} addInput={that._addInput} data={state.data} router={props.router}/>
