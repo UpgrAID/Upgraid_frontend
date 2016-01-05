@@ -21,12 +21,12 @@ var GoalInput = React.createClass({
 		this.setState({
 			category: e.target.value
 		})
-		
+
 
 	},
 	_submit: function(e) {
 		e.preventDefault();
-		
+
 		var state=this.state;
 		var props = this.props;
 		var Goal = Backbone.Model.extend({
@@ -68,6 +68,7 @@ var GoalInput = React.createClass({
 	render: function() {
 		return(
 			<form id="setGoal" method='POST' onSubmit={this._submit}>
+
 				<input id="goalInput" placeholder='Set a Goal here...' onChange={this._onChange} value={this.state.value}/>
 				<input type='radio' name="category" className='theme' onClick={this._setValue} checked={this.state.radio} value='1'/>
 				<label className="selectCategory">Skills</label>
@@ -75,21 +76,10 @@ var GoalInput = React.createClass({
 				<label className="selectCategory">Bad Habits</label>
 				<input type='radio' name="category" className='theme' onClick={this._setValue} value='3'/>
 				<label className="selectCategory">Health/Fitness</label>
-			
-			<p className="selectCategory">Please Select a Category</p>
+				<p className="selectCategory">Please Select a Category</p>
 			<button id="goalSubmit">Submit</button>
 			</form>)
 	}
 });
 
 module.exports = GoalInput;
-
-
-// 
-
-// <RadioButtonGroup name="category" onChange={this._setValue} >
-// 				<RadioButton value="1" name=label="Skills" style={{marginBottom:16}}/>
-// 				<RadioButton value="2" label="Bad Habits" style={{marginBottom:16}}/>
-// 				<RadioButton value="3" label="Health/Fitness" style={{marginBottom:16}}/>				
-// 			</RadioButtonGroup>
-

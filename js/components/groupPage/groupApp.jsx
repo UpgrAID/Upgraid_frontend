@@ -37,11 +37,10 @@ var GroupApp = React.createClass({
 		})
 	},
 	render:function() {
-		
 		return(<div>
 				<NavGroupView router={this.props.router} username={this.props.username}/>
-				<UserList users={this.props.users} router={this.props.router} data={this.props.data} groupList={this.state.groupList}/>
-				<PostListApp posts={this.props.posts} groupId = {this.props.groupId} data={this.props.data} username={this.props.username}/>
+				<UserList users={this.props.users} router={this.props.router} posts={this.props.posts} groupList={this.state.groupList}/>
+				<PostListApp posts={this.props.posts} groupId = {this.props.groupId} username={this.props.username}/>
 
 
 			</div>)

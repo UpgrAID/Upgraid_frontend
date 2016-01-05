@@ -1,17 +1,10 @@
 var React =require('react');
 var Reg = require('../../models/registration');
 
-var test = new Reg;
+var test = new Reg();
 
 var Registration = React.createClass({
-    getIntialState: function(){
-        return {
-            username: null,
-            firstName: null,
-            password: null,
-            passwordConfirmation: null
-        }
-    },
+
     _submit: function(e) {
         e.preventDefault();
         test.set({
@@ -28,28 +21,31 @@ var Registration = React.createClass({
         }
        })
     },
-    
-    _close: function(e) {
-        $('#register').hide();
+
+    _close: function() {
+      this.props.hide();
     },
     render: function() {
         return(
-            <div id="registrationContainer">
-                <form onSubmit={this._submit}>
-                <span id="close" onClick={this._close}>X</span>
-                <h1>Register</h1>
-                    <label>First Name:</label>
-                    <input id="firstName"/>
-                    <label htmlFor="username">Username</label>
-                        <input  id="userName" type="text" />
-                    <label htmlFor="password">Password</label>
-                        <input id="passwordReg"/>
-                    <label htmlFor="password-confirmation">Confirm Password</label>
-                        <input type="password"/>
-                    <label>Email</label>
-                    <input id="email"/>
-                    <button id="submitReg" type="submit">Submit</button>
-                </form>
+           <div>
+           {(this.props.hidden ? null :
+           <div id="registrationContainer">
+                    <form onSubmit={this._regSubmit}>
+                        <span id="close" onClick={this._close}>X</span>
+                        <h1 id="regHead">Register</h1>
+
+                                <input id="firstName" className="regInput" placeholder="First Name"/>
+
+                                <input  id="userName" className="regInput" type="text" placeholder="Username" />
+
+                                <input type="password" id="passwordReg" className="regInput" placeholder="password"/>
+
+                                <input type="password" className="regInput" placeholder=" Confirm password"/>
+
+                            <input id="email" className="regInput" placeholder="email"/>
+                            <button id="submitReg" type="submit">Submit</button>
+                    </form>
+                </div>)}
             </div>
             )
     }

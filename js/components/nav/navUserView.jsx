@@ -12,8 +12,8 @@ var NavUserView = React.createClass({
 		return(<div>
 					<div id='navContainerUser'>
 						<ul id="navUlUser">
-							<li onClick={this._profileNav}>Profile</li>
-							<li>{!this.props.friend ? <AddFriend /> : null}</li>
+							<li onClick={this._profileNav}>MyProfile</li>
+							<li>{!this.props.friend ? <AddFriend userId={this.props.userId} myId={this.props.myId}/> : null}</li>
 						</ul>
 
 					</div>

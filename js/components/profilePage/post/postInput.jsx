@@ -10,7 +10,7 @@ var PostCollection = Backbone.Collection.extend({
 		});
 
 var PostInput = React.createClass({
-	getInitialState: function(e) {
+	getInitialState: function() {
 		return {value: ""}
 	},
 	_submit: function(e) {

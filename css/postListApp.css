@@ -1,19 +1,19 @@
 #profilePostMaster {
-	width:501px;
-	height:505px;
-	background:#fff;
-	border:1px solid black;
-	position: relative;
-	left:56px;
-	top:78px;
-	display: inline-block;
+	width: 571px;
+   	height:609px;
+    background: #fff;
+    border: 1px solid black;
+    position: absolute;
+    left: 250px;
+    /* margin-left: 20.5%; */
+    top: 205px;
+    display: inline-block;
 
 }
 
 #master {
 	overflow-y: scroll;
-	height:300px;
-	width:500px;
+	height:450px;
 	position: absolute;
 	top:150px;
 }
@@ -23,7 +23,7 @@
 	display: inline;
 }
 .profileBtn {
-	width:167px;
+	width:190px;
 	float: left;
 	height:30px;
 	outline:none;
@@ -35,14 +35,15 @@
 	background: #004a72;
 }
 #postProfile {
-	width:490px;
-	padding-top:0;
-	padding-left: 6px;
-	padding-bottom: 15px;
-	margin:0;
-	border:none;
-	border-bottom:1px solid #f7f7f7;
-	font-size: 0.7rem;
+	width: 490px;
+    padding-top: 0;
+    padding-left: 6px;
+    padding-right: 75px;
+    padding-bottom: 15px;
+    margin: 0;
+    border: none;
+    border-bottom: 1px solid #888;
+    font-size: 0.7rem;
 }
 #descriptionProfile {
 	width:490px;
@@ -92,7 +93,7 @@
 	padding-bottom: 15px;
 }
 #descriptionInput {
-	width:511px;
+	width:501px;
 	height:50px;
 	display: block;
 	font-size: 0.7rem;

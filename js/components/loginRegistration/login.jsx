@@ -17,7 +17,7 @@ var Login = React.createClass({
 			username: null,
 			password: null
 		}
-	},	
+	},
 
 	_regSubmit: function(e) {
         e.preventDefault();
@@ -29,7 +29,7 @@ var Login = React.createClass({
         })
        test.save(null,{
         success: function(resp) {
-        	
+
         },
         error: function(err){
         	$('#error').html("There was an error--please try again");
@@ -70,39 +70,40 @@ var Login = React.createClass({
 	},
 	 _reg: function(e) {
 	 	e.preventDefault();
-	
-		$('#registrationContainer').show();
+	 	this.props.show();
 	},
 	render: function() {
 		return(
-			<div id="loginPageWrapper">
+			<div id="loginPagewrapper">
 				<div id="loginContainer">
+				<span id="logoSpan">UpgrAID</span>
 				<div id="loginOnly">
-					<span id="logoSpan">UpgrAID</span>
+
 					<span id="loginSpan">Login</span>
 						<form id="loginForm" method='POST' onSubmit={this._submit}>
 							<div id="inputContainer">
 
 								<div className="inputWindow">
-									<input id="username" 
-									className="loginInput" 
+									<input id="username"
+									className="loginInput"
 									autofocus="true"
-									placeholder="username" 
+									placeholder="username"
 									onChange={this._handleUsernameChange} />
 								</div>
 
 								<div className="inputWindow">
-									<input id="password" 
-									className="loginInput" 
-									placeholder="password" 
-									type="password" 
-									onChange={this._handlePasswordChange} /> 
+									<input id="password"
+									className="loginInput"
+									placeholder="password"
+									type="password"
+									onChange={this._handlePasswordChange} />
 								</div>
 
 								<button id="submitLog" type="submit">Submit</button>
-								<button id="registerBtn" onClick={this._reg}>Register</button>
+
 							</div>
 						</form>
+						<button id="registerBtn" onClick={this._reg}>Register</button>
 					</div>
 				</div>
 				<div id="bigPic">
@@ -112,24 +113,8 @@ var Login = React.createClass({
 					</div>
 				</div>
 
-				 <div id="registrationContainer">
-	                <form onSubmit={this._regSubmit}>
-		                <span id="close" onClick={this._close}>X</span>
-		                <h1 id="regHead">Register</h1>
 
-		                    	<input id="firstName" className="regInput" placeholder="First Name"/>
-
-		                        <input  id="userName" className="regInput" type="text" placeholder="Username" />
-
-		                        <input type="password" id="passwordReg" className="regInput" placeholder="password"/>
-
-		                        <input type="password" className="regInput" placeholder=" Confirm password"/>
-
-		                    <input id="email" className="regInput" placeholder="email"/>
-		                    <button id="submitReg" type="submit">Submit</button>
-	                </form>
-					</div>
-				</div>
+		</div>
 			)
 	}
 })
@@ -152,6 +137,6 @@ function setToken(token) {
 	};
 }
 
- if($.cookie('auth_token')) {
- 	setToken($.cookie('auth_token'))
+ if($.cookie('AuthToken')) {
+ 	setToken($.cookie('AuthToken'))
  }

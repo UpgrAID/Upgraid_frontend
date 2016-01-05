@@ -1,19 +1,17 @@
 #badgeContainer {
-	position: absolute;
-	top:600px;
-	left: 25px;
-	width: 300px;
-	background: #fff;
-	height: 250px;
+    background: #fff;
+    height: 308px;
 }
 .badgeTest {
 	position: relative;
 	width:65px;
 	display: inline;
+  margin-left: 10px;
 }
 .badge {
 	width:40px;
 	height: 40px;
+  margin-right: 10px;
 	position: relative;
 	top:12px;
 }
@@ -41,6 +39,6 @@
 	background: #006d72;
 	margin: 0;
 	padding-top: 8px;
-	padding-bottom: 8px;
+	padding-bottom: 12px;
 	text-align: center;
 }

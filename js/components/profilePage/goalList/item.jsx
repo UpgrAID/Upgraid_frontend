@@ -47,12 +47,20 @@ var Item = React.createClass({
 			value:''
 		})
 	},
+	_navGroup: function(){
+
+	},
+	componentDidMount: function(){
+		var count=[];
+		count.push(this.props.completed)
+
+	},
 	render: function() {
 
 		return (<div>{(this.props.completed ? null :
 					(<li className="goalItem">
 
-						<label className="categoryLabel"htmlFor={this.props.objectId} value={this.props.data}>{this.props.data}</label>
+						<label className="categoryLabel"htmlFor={this.props.objectId} value={this.props.data} onClick={this._navGroup}>{this.props.data}</label>
 						<button className="delete entypo-check" onClick={this._completed} value={this.props.theme}></button>
 					</li>))}
 				</div>)

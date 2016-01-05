@@ -6,7 +6,6 @@ require('../css/nav.css');
 require('../css/navUserView.css');
 require('../css/groupHome.css');
 require('../css/postListApp.css');
-require('../main.css');
 require('../css/friends.css');
 require('../css/groups.css');
 require('../css/comment.css')
@@ -17,7 +16,10 @@ require('../css/chat.css');
 require('../css/otherPosts.css');
 require('../css/otherGoals.css')
 require('../css/badge.css')
-require('../css/messaging.css')
+require('../css/messaging.css');
+require('../normalize.css');
+require('../css/profileLeft.css')
+require('../css/profileRight.css')
 
 
 var React = require('react');

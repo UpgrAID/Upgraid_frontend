@@ -36,9 +36,7 @@ var UserViewApp = React.createClass({
 		friendList.fetch({
 			success: function(resp){
 				friends = resp.toJSON();
-				console.log(props.userId)
 					friends.forEach(function(obj){
-						console.log(obj.from_friend, props.userId);
 						if(obj.from_friend == props.userId || obj.to_friend == props.userId && obj.accepted) {
 							self._isFriend();
 						}

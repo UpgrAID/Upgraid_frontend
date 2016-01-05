@@ -14,8 +14,7 @@ var SearchUsers = React.createClass({
 		$('#userModal').hide();
 
 	},
-
-	_look: function() {
+	_look:function() {
 		$('#userModal').show();
 	},
 

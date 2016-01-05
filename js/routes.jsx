@@ -1,7 +1,7 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 var Backbone= require('backbone');
-var Login = require('./components/loginRegistration/login.jsx');
+var LoginRegApp = require('./components/loginRegistration/loginRegApp.jsx');
 var ProfileApp=require('./components/profilePage/profileApp.jsx');
 var UserViewApp = require('./components/userView/UserViewApp.jsx');
 var GroupApp = require('./components/groupPage/groupApp.jsx');
@@ -21,7 +21,7 @@ var Router=Backbone.Router.extend({
 		"":"index"
 	},
 	index: function(){
-		ReactDOM.render(<Login router={this}/>, document.getElementById('container'));
+		ReactDOM.render(<LoginRegApp router={this}/>, document.getElementById('container'));
 
 	}
 });
@@ -209,19 +209,18 @@ $('#chat').show()
 
 
 
-	var groupView = Backbone.Model.extend({
+	var groupPost = Backbone.Model.extend({
 			url:'https://safe-brook-9891.herokuapp.com/api/posts/?group='+ groupId
 		})
-		var GroupCollection = Backbone.Collection.extend({
-			Model:groupView,
+		var GroupPostCollection = Backbone.Collection.extend({
+			Model:groupPost,
 			url:'https://safe-brook-9891.herokuapp.com/api/posts/?group='+ groupId
 		})
-		var GroupData = new GroupCollection();
-		GroupData.fetch({
+		var GroupPosts = new GroupPostCollection();
+		GroupPosts.fetch({
 			success: function(resp) {
 
-				var test = resp.toJSON();
-
+				var posts = resp.toJSON();
 				var userName = Store.data.userName;
 				var chatList = Store.data.chats;
 				var chatInit = Store.data.chatInit;
@@ -232,7 +231,7 @@ $('#chat').show()
 
 
 
-				ReactDOM.render(<GroupApp  data={test} groupId={groupId} router={router}  channel={channel} username={userName} chatList={chatList} chatInit={chatInit} userList={userList}/>, document.getElementById('container'));
+				ReactDOM.render(<GroupApp  posts={posts} groupId={groupId} router={router}  channel={channel} username={userName} chatList={chatList} chatInit={chatInit} userList={userList}/>, document.getElementById('container'));
 
 
 			}

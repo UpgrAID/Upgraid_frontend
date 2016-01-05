@@ -15,8 +15,11 @@ var AddFriend = React.createClass({
 		var friend = new Friendly();
 
 		friend.set({
-			from_friend: this.props.myId,
-			to_friend: this.props.userId
+
+			from_friend:this.props.myId,
+			to_friend:this.props.userId
+
+
 		})
 
 		friend.save();

@@ -14,17 +14,18 @@
 	left:0;
 }
 #loginOnly {
-	width:875px;
-	margin:auto;
+	width: 704px;
+    margin: auto;
+    position: relative;
 }
 
 #logoSpan {
-	display: inline-block;
-	margin-top: 15px;
-	margin-right: 50px;
-	margin-left: 5px;
-	color: white;
-	font-size: 1.2rem;
+	position: absolute;
+    margin-top: 15px;
+    margin-right: 50px;
+    margin-left: 5px;
+    color: white;
+    font-size: 1.2rem;
 }
 
 #loginSpan {
@@ -37,6 +38,7 @@
 
 #loginForm {
 	display: inline-block;
+    width: 525px;
 }
 
 .inputWindow {
@@ -94,12 +96,15 @@
 
 #registerBtn {
 	display: inline-block;
-	color:#fff;
-	background: #00F5CD;
-	outline:none;
-	border:1px solid #F7F7F7;
-	padding:10px;
-	border-radius:5px;
+    color: #fff;
+    background: #00F5CD;
+    outline: none;
+    border: 1px solid #F7F7F7;
+    padding: 10px;
+    border-radius: 5px;
+
+    top: 11px;
+    right: 98px;
 
 }
 
@@ -108,9 +113,9 @@
 }
 
 #bigPic {
-	background-image: url('../assets/UpGbackground.jpeg');
+	background-image: url('../assets/bestyearever.jpg');
 	margin-top: -20px;
-	
+
 	background-repeat: no-repeat;
 	background-size: contain;
 	width: 100%;
@@ -124,13 +129,10 @@
 }
 #bigTitle {
 	position: absolute;
-	top:300px;
-	width:300px;
-	
-	left:30%;
-	font-size: 2rem;
-	font-family: 'Roboto', sans-serif;
-	color: #019CF6;
+    top: 120px;
+    width: 600px;
+    left: 10%;
+    font-size: 4rem;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
 }
-
-
