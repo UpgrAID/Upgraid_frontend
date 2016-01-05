@@ -15,8 +15,8 @@ var SearchUsers = React.createClass({
 
 	},
 
-	_lookToggle: function() {
-		this.setState({open: !this.state.open});
+	_look: function() {
+		$('#userModal').show();
 	},
 
 	render:function() {

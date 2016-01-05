@@ -1,5 +1,6 @@
 var Backbone = require('backbone');
 var Friendly = require('../models/friendly');
+var Store = require('../store');
 
 
 var Friendlies = Backbone.Collection.extend({

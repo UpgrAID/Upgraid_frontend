@@ -23,13 +23,12 @@ var Registration = React.createClass({
        test.save({},{
         success: function(resp) {
 
+        },
+        error: function(resp) {
         }
        })
     },
-    // _handleInputChange: function(e){
-    //     e.preventDefault();
-    // 
-    // },
+    
     _close: function(e) {
         $('#register').hide();
     },

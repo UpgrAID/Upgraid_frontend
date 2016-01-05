@@ -22,8 +22,7 @@ var GoalList = React.createClass({
 			<div id='goalContainer'>
 				<h2 id="goalHeader">Your Goals</h2>
 				<GoalItem data={this.state.data} addInput={this._addInput}/>
-				<GoalInput data={this.state.data} router={this.props.router} addInput={this._addInput}/>
-				
+				<GoalInput data={this.state.data} router={this.props.router} addInput={this._addInput}/>				
 			</div>
 			)
 	}

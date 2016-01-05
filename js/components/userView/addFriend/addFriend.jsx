@@ -15,16 +15,15 @@ var AddFriend = React.createClass({
 		var friend = new Friendly();
 
 		friend.set({
-			from_friend:this.props.myId,
-			to_friend:this.props.userId,
-			accepted: null
+			from_friend: this.props.myId,
+			to_friend: this.props.userId
 		})
 
 		friend.save();
 	},
 	render: function() {
 		return(
-			<button id="addFriend" onClick={this._friend}>+Friend</button>
+			<button id="addFriend" onClick={this._friend}>+Invite Friend</button>
 		)
 	}
 });

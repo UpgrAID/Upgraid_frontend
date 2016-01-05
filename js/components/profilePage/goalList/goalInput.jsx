@@ -1,4 +1,6 @@
 var React = require('react');
+var RadioButton = require('material-ui/lib/radio-button');
+var RadioButtonGroup = require('material-ui/lib/radio-button-group');
 
 var GoalInput = React.createClass({
 
@@ -16,14 +18,15 @@ var GoalInput = React.createClass({
 
 	},
 	_setValue: function(e) {
-
 		this.setState({
 			category: e.target.value
 		})
+		
 
 	},
 	_submit: function(e) {
 		e.preventDefault();
+		
 		var state=this.state;
 		var props = this.props;
 		var Goal = Backbone.Model.extend({
@@ -46,8 +49,8 @@ var GoalInput = React.createClass({
 		var test = new Goal();
 		test.set({
 
-			'title':this.state.value,
-			'theme':this.state.category
+			'title': this.state.value,
+			'theme': this.state.category
 
 		})
 		test.save({}, {
@@ -65,16 +68,14 @@ var GoalInput = React.createClass({
 	render: function() {
 		return(
 			<form id="setGoal" method='POST' onSubmit={this._submit}>
-			<input id="goalInput" placeholder='Set a Goal here...' onChange={this._onChange} value={this.state.value}/>
-			
-			<div id="radioContain">
-				<input type='radio' className='theme' onClick={this._setValue} checked={this.state.radio}value='1'/>
+				<input id="goalInput" placeholder='Set a Goal here...' onChange={this._onChange} value={this.state.value}/>
+				<input type='radio' name="category" className='theme' onClick={this._setValue} checked={this.state.radio} value='1'/>
 				<label className="selectCategory">Skills</label>
-				<input type='radio' className='theme' onClick={this._setValue} value='2'/>
+				<input type='radio' name="category" className='theme' onClick={this._setValue} value='2'/>
 				<label className="selectCategory">Bad Habits</label>
-				<input type='radio' className='theme' onClick={this._setValue} value='3'/>
+				<input type='radio' name="category" className='theme' onClick={this._setValue} value='3'/>
 				<label className="selectCategory">Health/Fitness</label>
-			</div>
+			
 			<p className="selectCategory">Please Select a Category</p>
 			<button id="goalSubmit">Submit</button>
 			</form>)
@@ -82,3 +83,13 @@ var GoalInput = React.createClass({
 });
 
 module.exports = GoalInput;
+
+
+// 
+
+// <RadioButtonGroup name="category" onChange={this._setValue} >
+// 				<RadioButton value="1" name=label="Skills" style={{marginBottom:16}}/>
+// 				<RadioButton value="2" label="Bad Habits" style={{marginBottom:16}}/>
+// 				<RadioButton value="3" label="Health/Fitness" style={{marginBottom:16}}/>				
+// 			</RadioButtonGroup>
+
