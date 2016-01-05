@@ -1,5 +1,5 @@
 .friend {
-    height: 31px;
+    height: 42px;
     background: #f7f7f7;
     background: #f7f7f7;
     border: none;
@@ -18,7 +18,8 @@
 
 #friendsContainer {
 	
-    height: 320px;
+    height: 308px;
+    position: relative;
     background: #fff;
     text-align: center;
     margin-bottom: 10px;

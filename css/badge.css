@@ -8,8 +8,8 @@
 	display: inline;
 }
 .badge {
-	width:40px;
-	height: 40px;
+	width:60px;
+	height: 60px;
 	position: relative;
 	top:12px;
 }
@@ -18,11 +18,11 @@
 	display: none;
 	position: absolute;
 	top:40px;
-	left:50px;
+	left:25px;
 	padding-left: 5px;
 	padding-right: 5px;
 	background: #000;
-	width:240px;
+	width:145px;
     color: #fff;
     border-radius: 3px;
     z-index: 2;

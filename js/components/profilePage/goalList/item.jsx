@@ -54,7 +54,6 @@ var Item = React.createClass({
 		var count=[];
 		count.push(this.props.completed)
 		
-		console.log(count)
 
 	},
 	render: function() {

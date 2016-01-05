@@ -16,7 +16,7 @@ var LikeBtn = React.createClass({
 
 		var  username= Store.data.userName;
 
-		console.log('a',this.props.likeCount)
+		
 	},
 	_update: function(){
 		this.setState({

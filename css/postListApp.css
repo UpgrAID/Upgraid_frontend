@@ -1,12 +1,14 @@
 #profilePostMaster {
 	width: 571px;
-   	height:609px;
+   	/*height:609px;*/
+   	height:517px;
     background: #fff;
     border: 1px solid black;
     position: absolute;
     left: 250px;
     /* margin-left: 20.5%; */
-    top: 205px;
+    /*top: 205px;*/
+    top:296px;
     display: inline-block;
 
 }
@@ -23,7 +25,7 @@
 	display: inline;
 }
 .profileBtn {
-	width:190px;
+	width:100%;
 	float: left;
 	height:30px;
 	outline:none;

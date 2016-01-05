@@ -9,7 +9,7 @@ var Groups = React.createClass({
 					return(<p key={obj.id} className="groupButton"><GroupsBtn router={props.router} theme={obj.theme} id={obj.group} title = {obj.title} completed={obj.completed}/></p>)
 				  
 			})
-					return(<div id="groupsContainer"><h2 id="groupsHeader">Groups</h2>{test}</div>)
+					return(<div id="groupsContainer"><h2 id="groupsHeader">My Groups</h2>{test}</div>)
 			}
 		});
 

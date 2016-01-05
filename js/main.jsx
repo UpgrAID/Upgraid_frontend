@@ -20,6 +20,7 @@ require('../css/messaging.css');
 require('../normalize.css');
 require('../css/profileLeft.css')
 require('../css/profileRight.css')
+require('../css/info.css')
 
 
 var React = require('react');

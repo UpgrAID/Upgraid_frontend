@@ -69,14 +69,21 @@ router.on('route:profile', function(username){
 
 
 
-			var groups=(data[0].user.group_set);
-			console.log('a',groups);
+			
+			
 			console.log('b', data)
 			var goalInfo=data[0].user.goal_set;
+			var incomplete = goalInfo.filter(function(obj){
+				if(obj.completed===false) {
+					return obj
+				}
+			})
+			console.log('test',incomplete)
+			var groups=data[0].user.group_set;
 
 
 
-			ReactDOM.render(<ProfileApp rank={rank} users={Store.data.users} exp={exp} router={router} username={username} name={name} goals={goalInfo} fromFriends={fromFriendsMap} fromAll={fromFriends} toFriends={toFriendsMap} groups={groups} posts={posts} userId={uid}/>,document.getElementById('container'));
+			ReactDOM.render(<ProfileApp rank={rank} users={Store.data.users} exp={exp} router={router} username={username} name={name} goals={incomplete} fromFriends={fromFriendsMap} fromAll={fromFriends} toFriends={toFriendsMap} groups={groups} posts={posts} userId={uid}/>,document.getElementById('container'));
 
 
 			}

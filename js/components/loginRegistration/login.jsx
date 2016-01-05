@@ -40,7 +40,7 @@ var Login = React.createClass({
 
 		$.ajax({
 			url:'https://safe-brook-9891.herokuapp.com/api/api-token-auth/',
-			method:'post',
+			method:'POST',
 			data: {username: username, password:password}
 		}).then(function(resp){
 
@@ -95,7 +95,7 @@ function setToken(token) {
 
 	var _sync = Backbone.sync;
 	Backbone.sync = function(post,model,options) {
-		if($.cookie('auth_token')) {
+		if($.cookie('AuthToken')) {
 		options.headers = {
 			'Authorization': 'Token ' + token,
 		};

@@ -58,7 +58,7 @@ var PostButtons = React.createClass({
 
 	render:function() {
 
-		return(<div className="profileBtnsDiv"><button className="profileBtn"  onClick={this._submit} value={this.props.id}><span style={{color: "lightgrey"}}>Post to </span>{this.state.themeName}: {this.props.id}</button></div>)
+		return(<div className="profileBtnsDiv"><button className="profileBtn"  onClick={this._submit} value={this.props.id}><span style={{color: "lightgrey"}}>Post to </span>{this.state.themeName}: {this.props.title}</button></div>)
 	}
 });
 

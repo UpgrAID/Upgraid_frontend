@@ -22,11 +22,12 @@ var ProfilePostApp = React.createClass({
 		var state = this.state;
 		return(<div id="profilePostMaster">
 				
-				{this.props.groups.map(function(obj){
+				{this.props.goals.map(function(obj){
  					return(
  						<div>
+
  						<ProfileInput/>
-						<PostButtons key={obj.id} theme={obj.theme} id={obj.id} addInput={that._addInput} data={state.data}/>
+						<PostButtons key={obj.id} theme={obj.theme} id={obj.group} title={obj.title} addInput={that._addInput} data={state.data}/>
 						</div>
 					)
  					})}

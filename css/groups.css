@@ -1,13 +1,13 @@
 .group {
    
-    height: 31px;
+    height: 45px;
     background: #f7f7f7;
     background: #f7f7f7;
     border: none;
     border-bottom: 1px solid #888;
     text-align: left;
     width: 100%;
-    font-size: .85em;
+    font-size: 1em;
 
 }
 
@@ -36,7 +36,7 @@
     border-left: 2px solid #f7f7f7;
     background: #fff;
     border: 1px solid #888;
-    height: 121px;
+    height: 162px;
 	
 }
 

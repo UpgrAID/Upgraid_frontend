@@ -67,7 +67,7 @@ var MessageApp = React.createClass({
 	},
 	render:function(){
 		var that = this;
-		console.log('this.props',this.props);
+	
 		return(
 			<div id="messageContainer">
 			<h2 id="sendMessage" onClick={this._hideShow}>Send Message</h2>
