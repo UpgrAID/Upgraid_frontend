@@ -70,12 +70,13 @@ router.on('route:profile', function(username){
 
 
 			var groups=(data[0].user.group_set);
+			console.log('a',groups);
+			console.log('b', data)
+			var goalInfo=data[0].user.goal_set;
 
-			var mapped=data[0].user.goal_set;
 
 
-
-			ReactDOM.render(<ProfileApp rank={rank} users={Store.data.users} exp={exp} router={router} username={username} name={name} goals={mapped} fromFriends={fromFriendsMap} fromAll={fromFriends} toFriends={toFriendsMap} groups={groups} posts={posts} userId={uid}/>,document.getElementById('container'));
+			ReactDOM.render(<ProfileApp rank={rank} users={Store.data.users} exp={exp} router={router} username={username} name={name} goals={goalInfo} fromFriends={fromFriendsMap} fromAll={fromFriends} toFriends={toFriendsMap} groups={groups} posts={posts} userId={uid}/>,document.getElementById('container'));
 
 
 			}

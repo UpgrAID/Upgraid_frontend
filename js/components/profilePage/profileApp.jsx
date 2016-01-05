@@ -70,7 +70,7 @@ var ProfileApp = React.createClass({
 
 				<Nav router={this.props.router} username={this.props.username} userId = {this.props.userId} fromAll={this.props.fromAll} users={this.state.filteredData} query={this.state.query} doSearch={this._doSearch}/>
 
-				<ProfileLeft rank={this.props.rank} exp={this.props.exp} groups={this.props.groups} router={this.props.router} fromFriends={this.props.fromFriends} toFriends={this.props.toFriends}  router={this.props.router} name={this.props.name}/>
+				<ProfileLeft rank={this.props.rank} exp={this.props.exp} goals={this.props.goals} router={this.props.router} fromFriends={this.props.fromFriends} toFriends={this.props.toFriends}  router={this.props.router} name={this.props.name}/>
 				<ProfileRight goals={this.props.goals} router={this.props.router} username={this.props.username}/>
 				<ProfilePostApp posts={this.props.posts} groups={this.props.groups}/>
 				<MessageApp fromFriends={this.props.fromFriends} toFriends={this.props.toFriends} username={this.props.username}/>

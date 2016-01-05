@@ -18,7 +18,7 @@
 
 #friendsContainer {
 	
-    height: 178px;
+    height: 320px;
     background: #fff;
     text-align: center;
     margin-bottom: 10px;
@@ -32,7 +32,7 @@
 }
 
 #listContain {
-	height: 150px;
+	height: 292px;
     overflow: scroll;
 }
 
@@ -102,6 +102,6 @@
 
 #friendsHeader {
 	margin:0;
-    background: #006d72;
+    background: #8DB0CC;
     color:#fff;
 }

@@ -1,7 +1,7 @@
 #goalContainer {
   width: 377px;
   height: 280px;
-  background: #006d72;
+  background: #FFB146;
   border-top: 1px solid black;
 }
 #goalInput {
@@ -21,6 +21,8 @@
   color:#fff;
   text-align: center;
   margin:0;
+  padding-bottom: 6px;
+  background: #FFB146;
 }
 .goalContainer {
   margin:0;
@@ -41,14 +43,6 @@
   background: #fff;
   position: relative;
   border-bottom: 1px solid #888;
-}
-
-
-@import url(http://weloveiconfonts.com/api/?family=entypo);
-
-/* entypo */
-[class*="entypo-"]:before {
-  font-family: 'entypo', sans-serif;
 }
 
 .goalItem:last-child {
