@@ -21,13 +21,16 @@ var ProfilePostApp = React.createClass({
 		var that = this;
 		var state = this.state;
 		return(<div id="profilePostMaster">
-				<ProfileInput/>
+				
 				{this.props.groups.map(function(obj){
  					return(
+ 						<div>
+ 						<ProfileInput/>
 						<PostButtons key={obj.id} theme={obj.theme} id={obj.id} addInput={that._addInput} data={state.data}/>
+						</div>
 					)
  					})}
-				<ProfileItem data={this.state.data}/>
+				
 			</div>)
 	}
 });
