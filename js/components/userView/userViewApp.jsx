@@ -16,7 +16,7 @@ var UserViewApp = React.createClass({
 			frnds: null
 		}
 	},
-	_isTrue: function(){
+	_isFriend: function(){
 		this.setState({frnds: true});
 	},
 
@@ -24,12 +24,7 @@ var UserViewApp = React.createClass({
 		var props = this.props;
 		var self = this;
 
-		var Friendly = Backbone.Model.extend({
-			url:'https://safe-brook-9891.herokuapp.com/api/friends/',
-			initialize: function() {
 
-			}
-		});
 
 		var Friendlies = Backbone.Collection.extend({
 			url: 'https://safe-brook-9891.herokuapp.com/api/friends/?username=' + this.props.username,
@@ -45,9 +40,9 @@ var UserViewApp = React.createClass({
 					friends.forEach(function(obj){
 						console.log(obj.from_friend, props.userId);
 						if(obj.from_friend == props.userId || obj.to_friend == props.userId && obj.accepted) {
-							self._isTrue();
-						} 
-					});				
+							self._isFriend();
+						}
+					});
 			}
 		});
 	},
@@ -68,6 +63,3 @@ var UserViewApp = React.createClass({
 });
 
 module.exports = UserViewApp;
-
-
-
