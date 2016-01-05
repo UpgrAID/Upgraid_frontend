@@ -1,14 +1,11 @@
 
 
 #avatarDiv {
-	width:255px;
-	margin:0;
-	height:200px;
-	position: relative;
-	top:-10px;
-	left:25px;
-	font-family: 'Press Start 2P', cursive;
-	color:green;
+	width: 255px;
+    margin: 0;
+    height: 200px;
+    font-family: 'Press Start 2P', cursive;
+    color: green;
 }
 #rank1 {
 	text-align: left;
@@ -16,6 +13,7 @@
 	color:green;
 	margin:0;
 	padding-right: 54px;
+	display: block;
 }
 #exp {
 	text-align: left;

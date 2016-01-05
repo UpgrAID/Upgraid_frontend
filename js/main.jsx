@@ -17,7 +17,9 @@ require('../css/otherPosts.css');
 require('../css/otherGoals.css')
 require('../css/badge.css')
 require('../css/messaging.css');
-require('../normalize.css')
+require('../normalize.css');
+require('../css/profileLeft.css')
+require('../css/profileRight.css')
 
 
 var React = require('react');

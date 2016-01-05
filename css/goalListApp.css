@@ -1,14 +1,10 @@
 #goalContainer {
-  width:300px;
+  width: 380px;
+  height: 280px;
   background: #006d72;
-
-  position: relative;
-  top:80px;
-  left:25px;
-  float: left;
 }
 #goalInput {
-    width: 282px;
+    width: 325px;
     padding-top: 20px;
     /* border-radius: 5px; */
     border: none;
@@ -37,7 +33,7 @@
 }
 .goalItem {
 	list-style: none;
-	width: 300px;
+	width: 380px;
   height: 40px;
   padding-top: 10px;
   font-size: 18px;
@@ -135,7 +131,8 @@
 }
 
 #radioContain {
-    margin-left: 12px;
+    margin:auto;
+    width:280px;
     position: relative;
     top: -7px;
 }
@@ -143,4 +140,5 @@
 .theme {
   position: relative;
   top:10px;
+  padding-right:5px;
 }

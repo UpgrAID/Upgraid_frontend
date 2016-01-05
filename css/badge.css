@@ -1,10 +1,6 @@
 #badgeContainer {
-	position: absolute;
-	top:600px;
-	left: 25px;
-	width: 300px;
-	background: #fff;
-	height: 250px;
+    background: #fff;
+    height: 250px;
 }
 .badgeTest {
 	position: relative;

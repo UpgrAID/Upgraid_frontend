@@ -1,5 +1,5 @@
 .group {
-    width: 150px;
+   
     height: 31px;
     background: #7dd;
     outline: none;
@@ -7,10 +7,11 @@
     border-bottom: 1px solid #f7f7f7;
     text-align: right;
     color: #fff;
+    width:100%;
 }
 
 .groupButton {
-	display: inline-block;
+	display: block;
 	margin:0;
 	
 }
@@ -26,16 +27,13 @@
 }
 
 #groupsContainer {
-	width: 150px;
+	width:100%;
     text-align: center;
     margin-bottom: 10px;
     display: inline-block;
-    position: absolute;
-    top: 314px;
-    right: 25px;
     border-left: 2px solid #f7f7f7;
     background: #fff;
-    border:1px solid #888;
+    border: 1px solid #888;
     height: 121px;
 	
 }
