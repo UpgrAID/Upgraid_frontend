@@ -10,10 +10,11 @@
     background-color: #006d72;
 }
 #header {
-  height:155px;
-  width:100%;
-  position: absolute;
-  background: #001E1F;
+    height: 155px;
+    width: 950px;
+    left: 250px;
+    position: absolute;
+    background: #001E1F;
 }
 
 #navContain {

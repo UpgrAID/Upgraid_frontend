@@ -1,6 +1,7 @@
 .friend {
     display: block;
     height: 31px;
+    width:100%;
     background: #7dd;
     outline: none;
     border: none;
