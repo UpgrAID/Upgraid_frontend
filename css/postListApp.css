@@ -2,10 +2,9 @@
 	width: 571px;
    	/*height:609px;*/
    	height:517px;
-    background: #f7f7f7;
-    border: 1px solid black;
+    background: #f4f4f4;
     position: absolute;
-    left: 250px;
+    left: 251px;
     /* margin-left: 20.5%; */
     /*top: 205px;*/
     top:296px;
@@ -15,6 +14,8 @@
 
 .inputDesContain {
 	width:571px;
+	margin-bottom:34px;
+	margin-top:42px;
 }
 #newPostInputProfile {
 	width: 547px;
@@ -32,35 +33,35 @@
 	display: inline;
 }
 .profileBtn {
-	width: 550px;
-    height: 30px;
-    outline: none;
-    border: 1px solid #f7f7f7;
-    background: #006d72;
-    color: #fff;
-    position: relative;
-    border-radius: 4px;
-    left: 12px;
+	width: 518px;
+	height: 30px;
+	outline: none;
+	border: 1px solid #f7f7f7;
+	background: #1d5d76;
+	color: #fff;
+	position: relative;
+	border-radius: 4px;
+	left: 26px;
 }
 .profileBtn:hover {
 	background: #004a72;
 }
 #postProfile {
-	width: 540px;
+	width: 508px;
+    position: relative;
     padding-top: 0;
     padding-left: 6px;
     /* padding-right: 75px; */
-    padding-bottom: 15px;
+    padding-top: 15px;
     border: none;
-    border: 1px solid #888;
+    /* border: 1px solid #888; */
     font-size: 0.7rem;
     border-radius: 3px;
     margin: auto;
-    margin-bottom:8px;
-
+    left: 15px;
 }
 #descriptionProfile {
-	width: 540px;
+	width: 508px;
     height: 50px;
     display: block;
     padding-top: 2px;

@@ -10,21 +10,7 @@ var Registration = require('./registration.jsx');
 var test = new User();
 
 var Login = React.createClass({
-	_regSubmit: function(e) {
-        e.preventDefault();
-        test.set({
-            first_name: $('#firstName').val(),
-            username: $('#userName').val(),
-            password: $('#passwordReg').val(),
-            email: $('#email').val(),
-        })
-       test.save({},{
-        success: function(resp) {
-
-        }
-
-       })
-    },
+	
     _handleInputChange: function(e){
         e.preventDefault();
 
@@ -68,7 +54,7 @@ var Login = React.createClass({
 									<input id="username" className="loginInput"  placeholder="username" value="thomas1117"/>
 								</div>
 								<div className="inputWindow">
-									<input id="password" className="loginInput"  placeholder="password" type="password" value="1234567q"/>
+									<input id="password" className="loginInput"  placeholder="password" type="password" value="qqq"/>
 								</div>
 								<button id="submitLog" type="submit">Submit</button>
 								

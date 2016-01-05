@@ -1,7 +1,6 @@
 #goalContainer {
   width: 377px;
   height: 280px;
-  background: #FFB146;
   border-top: 1px solid black;
 }
 #goalInput {
@@ -18,11 +17,11 @@
     left: 0px;
 }
 #goalHeader {
-  color:#fff;
+  color:#889;
   text-align: center;
   margin:0;
   padding-bottom: 6px;
-  background: #FFB146;
+  background: #DDDCDC;
 }
 .goalContainer {
   margin:0;

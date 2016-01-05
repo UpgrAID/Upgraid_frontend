@@ -5,7 +5,7 @@ var test = new Reg();
 
 var Registration = React.createClass({
     
-    _submit: function(e) {
+    _regSubmit: function(e) {
         e.preventDefault();
         test.set({
             first_name: $('#firstName').val(),
@@ -15,7 +15,7 @@ var Registration = React.createClass({
         })
        test.save({},{
         success: function(resp) {
-
+            console.log(resp)
         }
        })
     },
