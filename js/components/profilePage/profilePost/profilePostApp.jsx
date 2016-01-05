@@ -27,7 +27,7 @@ var ProfilePostApp = React.createClass({
  						<div>
 
  						<ProfileInput/>
-						<PostButtons key={obj.id} theme={obj.theme} id={obj.group} title={obj.title} addInput={that._addInput} data={state.data}/>
+						<PostButtons key={obj.id} theme={obj.theme} id={obj.group} title={obj.title} addInput={that._addInput} data={state.data} router={props.router}/>
 						</div>
 					)
  					})}
