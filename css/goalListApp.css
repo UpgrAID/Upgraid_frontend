@@ -1,5 +1,5 @@
 #goalContainer {
-  width: 376px;
+  width: 377px;
   height: 280px;
   background: #006d72;
   border-top: 1px solid black;
@@ -34,7 +34,7 @@
 }
 .goalItem {
 	list-style: none;
-	width: 376px;
+	width: 377px;
   height: 40px;
   padding-top: 10px;
   font-size: 18px;

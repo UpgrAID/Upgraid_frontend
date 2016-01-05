@@ -1,6 +1,6 @@
 #profilePostMaster {
 	width: 571px;
-    height: 625px;
+   	height:609px;
     background: #fff;
     border: 1px solid black;
     position: absolute;
@@ -35,14 +35,15 @@
 	background: #004a72;
 }
 #postProfile {
-	width:490px;
-	padding-top:0;
-	padding-left: 6px;
-	padding-bottom: 15px;
-	margin:0;
-	border:none;
-	border-bottom:1px solid #f7f7f7;
-	font-size: 0.7rem;
+	width: 490px;
+    padding-top: 0;
+    padding-left: 6px;
+    padding-right: 75px;
+    padding-bottom: 15px;
+    margin: 0;
+    border: none;
+    border-bottom: 1px solid #888;
+    font-size: 0.7rem;
 }
 #descriptionProfile {
 	width:490px;

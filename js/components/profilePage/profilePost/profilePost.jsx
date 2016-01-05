@@ -37,7 +37,7 @@ var ProfilePost = React.createClass({
 			<div className="postContainer">
 					<Card>
 						<CardHeader
-							style={{background: '#AAEDEA'}} 
+							style={{background: '#f7f7f7'}} 
 							title={this.props.title}
       				avatar="../../../../assets/avatar.png"/>
 						<CardText>{this.props.description}</CardText>

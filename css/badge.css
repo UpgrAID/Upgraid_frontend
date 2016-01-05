@@ -1,6 +1,6 @@
 #badgeContainer {
     background: #fff;
-    height: 250px;
+    height: 308px;
 }
 .badgeTest {
 	position: relative;
@@ -37,6 +37,6 @@
 	background: #006d72;
 	margin: 0;
 	padding-top: 8px;
-	padding-bottom: 8px;
+	padding-bottom: 12px;
 	text-align: center;
 }
