@@ -93,17 +93,19 @@
   margin: auto;
 }
 .delete {
-  float: right;
-  margin-right: 10px;
-  height: 30px;
-  width:30px;
-  padding: 5px;
-  text-align: center;
-  font-size: 0.6rem;
-  border-radius: 3px;
-  border:1px solid #f7f7f7;
-  background:#27556C;
-  color:#fff;
+    float: right;
+    margin-right: 10px;
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    text-align: center;
+    font-size: 0.6rem;
+    border-radius: 3px;
+    border: 1px solid #f7f7f7;
+    background: #27556C;
+    color: #fff;
+    position: relative;
+    z-index: 2;
 }
 .delete:hover {
   background: red;
