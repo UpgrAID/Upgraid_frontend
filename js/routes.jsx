@@ -21,7 +21,7 @@ var Router=Backbone.Router.extend({
 		"":"index"
 	},
 	index: function(){
-		ReactDOM.render(<LoginRegApp router={this}/>, document.getElementById('container'));
+		ReactDOM.render(<LoginRegApp router={this}/>, document.getElementById('page-wrapper'));
 
 	}
 });
@@ -46,6 +46,7 @@ router.on('route:profile', function(username){
 		test.fetch({
 			success: function(resp) {
 			var data=resp.toJSON();
+			console.log(data);
 			var loggedIn = _.extend(Store.data, {userId: data[0].user.id});
 			var userName = _.extend(Store.data, {userName: data[0].user.username});
 			var posts=data[0].user.post_set;
@@ -69,8 +70,8 @@ router.on('route:profile', function(username){
 
 
 
-			
-			
+
+
 			console.log('b', data)
 			var goalInfo=data[0].user.goal_set;
 			var incomplete = goalInfo.filter(function(obj){
@@ -217,19 +218,18 @@ $('#chat').show()
 
 
 
-	var groupView = Backbone.Model.extend({
+	var groupPost = Backbone.Model.extend({
 			url:'https://safe-brook-9891.herokuapp.com/api/posts/?group='+ groupId
 		})
-		var GroupCollection = Backbone.Collection.extend({
-			Model:groupView,
+		var GroupPostCollection = Backbone.Collection.extend({
+			Model:groupPost,
 			url:'https://safe-brook-9891.herokuapp.com/api/posts/?group='+ groupId
 		})
-		var GroupData = new GroupCollection();
-		GroupData.fetch({
+		var GroupPosts = new GroupPostCollection();
+		GroupPosts.fetch({
 			success: function(resp) {
 
-				var test = resp.toJSON();
-
+				var posts = resp.toJSON();
 				var userName = Store.data.userName;
 				var chatList = Store.data.chats;
 				var chatInit = Store.data.chatInit;
@@ -240,7 +240,7 @@ $('#chat').show()
 
 
 
-				ReactDOM.render(<GroupApp  data={test} groupId={groupId} router={router}  channel={channel} username={userName} chatList={chatList} chatInit={chatInit} userList={userList}/>, document.getElementById('container'));
+				ReactDOM.render(<GroupApp  posts={posts} groupId={groupId} router={router}  channel={channel} username={userName} chatList={chatList} chatInit={chatInit} userList={userList}/>, document.getElementById('container'));
 
 
 			}

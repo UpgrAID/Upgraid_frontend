@@ -6,27 +6,28 @@ var Post = require('./post.jsx');
 var PostListApp = React.createClass({
 	getInitialState: function () {
 		return {
-			data: this.props.data,
+			posts: this.props.posts,
 
 		}
 	},
 	_addInput: function(collection) {
 
 			this.setState({
-			data: collection
+			posts: collection
 		})
 	},
-	
+
 
 	render: function() {
+
 		props = this.props;
-		
+
 		state = this.state;
 		return(
 			<div id="postInput">
-					<PostInput data={this.state.data} addInput={this._addInput} groupId={this.props.groupId}/>
+					<PostInput posts={this.state.posts} addInput={this._addInput} groupId={this.props.groupId}/>
 					<div id="postMaster">
-					<PostItem data={this.state.data} addInput={this._addInput} username={this.props.username}/>
+					<PostItem posts={this.state.posts} addInput={this._addInput} username={this.props.username}/>
 					</div>
 			</div>
 			)

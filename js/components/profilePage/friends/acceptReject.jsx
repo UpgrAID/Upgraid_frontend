@@ -7,34 +7,34 @@ var AcceptReject = React.createClass({
 	_handleAccept: function(event){
 
 		event.preventDefault();
-		var Fra = Backbone.Model.extend({
+		var FriendAccept = Backbone.Model.extend({
 			url:'https://safe-brook-9891.herokuapp.com/api/friends/' + this.props.requester.id
 		});
-		var Fa = new Fra();
-		Fa.set({
+		var Faccept = new FriendAccept();
+		Faccept.set({
 			id: this.props.requester.id,
 			from_friend: this.props.requester.from_friend.id,
 			to_friend: this.props.userId,
 			accepted: true
 		});
-	
-		Fa.save();
+
+		Faccept.save();
 
 	},
 
 	_handleDecline: function(event){
 		event.preventDefault();
-		var Frd = Backbone.Model.extend({
+		var FriendDecline = Backbone.Model.extend({
 			url:'https://safe-brook-9891.herokuapp.com/api/friends/'+ this.props.requester.id
 		});
-		var Fd = new Frd();
-		Fd.set({
+		var Fdecline = new FriendDecline();
+		Fdecline.set({
 			id: this.props.requester.id,
 			to_friend: this.props.userId,
 			from_friend: this.props.requester.from_friend,
 			accepted: false
 		});
-		Fd.save();
+		Fdecline.save();
 
 
 	},
@@ -45,7 +45,7 @@ var AcceptReject = React.createClass({
 				<span className="requester">{this.props.requester.from_friend.username}</span>
 				<span className="accRejContain">
 				<button className="accbutton" onClick={this._handleAccept}>Accept</button>
-				<button className="rejbutton" onClick={this._handleDecline}>Deline</button>
+				<button className="rejbutton" onClick={this._handleDecline}>Decline</button>
 				</span>
 			</li>
 

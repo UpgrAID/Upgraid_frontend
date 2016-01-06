@@ -6,7 +6,7 @@
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
 	background: #e3e3e3;
 	margin: 0;
 	padding:0;
@@ -52,7 +52,7 @@ h2 {
 }
 
 ul {
-	list-style:none; 
+	list-style:none;
 }
 
 

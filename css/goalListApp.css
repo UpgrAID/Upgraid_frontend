@@ -49,7 +49,6 @@
 }
 
 #goalSubmit {
-    
    width: 52px;
    height: 41px;
    border-top-right-radius: 4px;
@@ -120,7 +119,8 @@
   text-align: center;
   position: relative;
   top: 12px;
-  margin:0;
+  margin-left: 5px;
+  margin-right: 10px;
   margin-bottom: 15px;
 }
 

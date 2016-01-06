@@ -40,7 +40,7 @@ var Post = React.createClass({
 				<Card>
 					<CardHeader
 							style={{background: '#AAEDEA'}}
-      				title={this.props.username}
+      				title={this.props.author}
       				subtitle={this.props.title}
       				avatar="../../../../assets/avatar.png"/>
 						<CardText>{this.props.description}</CardText>

@@ -4,7 +4,8 @@ var Reg = require('../../models/registration');
 var test = new Reg();
 
 var Registration = React.createClass({
-    
+
+
     _regSubmit: function(e) {
         e.preventDefault();
         test.set({
@@ -19,22 +20,18 @@ var Registration = React.createClass({
         }
        })
     },
-    
+
     _close: function() {
-       
       this.props.hide();
-
-
     },
     render: function() {
-        console.log(this.props.hidden)
         return(
            <div>
            {(this.props.hidden ? null :
            <div id="registrationContainer">
                     <form onSubmit={this._regSubmit}>
                         <span id="close" onClick={this._close}>X</span>
-                        <h1 id="regHead">Register</h1>
+                        <h1 id="regHead">Sign up for UpgrAID!</h1>
 
                                 <input id="firstName" className="regInput" placeholder="First Name"/>
 

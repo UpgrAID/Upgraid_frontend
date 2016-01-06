@@ -2,7 +2,7 @@ var React = require('react');
 var PostListApp = require('../profilePage/post/PostListApp.jsx');
 var UserList = require('./userList/userList.jsx');
 var Nav = require('../nav/nav.jsx');
-var NavUserView = require('../nav/navUserView.jsx');
+var NavGroupView = require('../nav/navGroupView.jsx');
 var Store = require('../../store.js')
 
 var GroupApp = React.createClass({
@@ -37,11 +37,10 @@ var GroupApp = React.createClass({
 		})
 	},
 	render:function() {
-		
 		return(<div>
-				<NavUserView router={this.props.router} username={this.props.username}/>
-				<UserList users={this.props.users} router={this.props.router} data={this.props.data} groupList={this.state.groupList}/>
-				<PostListApp posts={this.props.posts} groupId = {this.props.groupId} data={this.props.data} username={this.props.username}/>
+				<NavGroupView router={this.props.router} username={this.props.username}/>
+				<UserList users={this.props.users} router={this.props.router} posts={this.props.posts} groupList={this.state.groupList}/>
+				<PostListApp posts={this.props.posts} groupId = {this.props.groupId} username={this.props.username}/>
 
 
 			</div>)

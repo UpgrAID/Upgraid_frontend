@@ -53,7 +53,6 @@ var Item = React.createClass({
 	componentDidMount: function(){
 		var count=[];
 		count.push(this.props.completed)
-		
 
 	},
 	render: function() {

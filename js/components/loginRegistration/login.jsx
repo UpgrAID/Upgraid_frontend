@@ -10,10 +10,10 @@ var Registration = require('./registration.jsx');
 var test = new User();
 
 var Login = React.createClass({
-	
-    
+
 	_submit: function(e) {
 		var router =this.props.router;
+		var self = this.props;
 		e.preventDefault();
 		var username = $("#username").val();
 		var password = $("#password").val();
@@ -25,45 +25,51 @@ var Login = React.createClass({
 		}).then(function(resp){
 
 			$.cookie('AuthToken',resp.token);
-			setToken(resp.token)
+			setToken(resp.token);
+
+			self.logIn();
 
 			router.navigate('profile/' + username, {trigger:true});
 		})
 
 	},
 	 _reg: function(e) {
-	 	this.props.show()
+	 	e.preventDefault();
+	 	this.props.show();
 	},
 	render: function() {
 		return(
 			<div id="loginPageWrapper">
 				<div id="loginContainer">
-				<span id="logoSpan">UpgrAID</span>
 				<div id="loginOnly">
-					
-					<span id="loginSpan">Login</span>
+
 						<form id="loginForm" method='POST' onSubmit={this._submit}>
 							<div id="inputContainer">
+								<div id="loginSpan">Login</div>
+
 								<div className="inputWindow">
-									<input id="username" className="loginInput"  placeholder="username" />
+									<input id="username"
+									className="loginInput"
+									autofocus="true"
+									placeholder="username"
+									onChange={this._handleUsernameChange} />
 								</div>
+
 								<div className="inputWindow">
-									<input id="password" className="loginInput"  placeholder="password" type="password" />
+									<input id="password"
+									className="loginInput"
+									placeholder="password"
+									type="password"
+									onChange={this._handlePasswordChange} />
 								</div>
-								<button id="submitLog" type="submit">Submit</button>
-								
+
+								<button id="submitLog" type="submit">Log In</button>
+
 							</div>
 						</form>
-						<button id="registerBtn" onClick={this._reg}>Register</button>
+						<button id="registerBtn" onClick={this._reg}>Sign up Today!</button>
 					</div>
 				</div>
-				<div id="bigPic">
-					<div id="home-wrapper">
-
-					<h1 id="bigTitle">Welcome to UpgrAID</h1>
-					</div>
-				</div>
-
 		</div>
 			)
 	}

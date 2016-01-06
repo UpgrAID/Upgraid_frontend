@@ -1,9 +1,10 @@
 var React = require('react');
+var Backbone = require('backbone');
 var OtherPosts= require('../../components/profilePage/post/othersPosts.jsx');
 var OtherGoals= require('../../components/profilePage/goalList/othersGoals.jsx');
 var NameTag = require('./nameTag.jsx');
 var NavUserView = require('../../components/nav/navUserView.jsx');
-var Friendlies = require('../../collections/friendlies');
+// var Friendlies = require('../../collections/friendlies');
 var AddFriend = require('../userView/addFriend/addFriend.jsx');
 var AvatarRankXp = require('../../components/profilePage/avatarRankXp/avatarRankXp.jsx');
 var Friends= require('../../components/profilePage/friends/friends.jsx');
@@ -15,28 +16,35 @@ var UserViewApp = React.createClass({
 			frnds: null
 		}
 	},
-	_isTrue: function(fr){
-		this.setState({frnds: fr});
+	_isFriend: function(){
+		this.setState({frnds: true});
 	},
+
 	componentWillMount: function(){
 		var props = this.props;
 		var self = this;
+
+
+
+		var Friendlies = Backbone.Collection.extend({
+			url: 'https://safe-brook-9891.herokuapp.com/api/friends/?username=' + this.props.username,
+			model: Friendly
+		});
+
 		friendList = new Friendlies();
 
 		friendList.fetch({
 			success: function(resp){
-				fr = resp.toJSON();
-			var frs = fr.filter(function(f){
-				if (props.userId == f.to_friends || props.myId === f.from_friends){
-					self._isTrue(true);
-
-				}
-			})
+				friends = resp.toJSON();
+					friends.forEach(function(obj){
+						if(obj.from_friend == props.userId || obj.to_friend == props.userId && obj.accepted) {
+							self._isFriend();
+						}
+					});
 			}
-		})
+		});
 	},
 	render:function() {
-
 		return (
 			<div>
 				<NavUserView router={this.props.router} username={this.props.username} userId={this.props.userId} myId={this.props.myId} friend={this.state.frnds}/>
