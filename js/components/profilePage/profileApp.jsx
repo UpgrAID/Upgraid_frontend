@@ -84,7 +84,7 @@ var ProfileApp = React.createClass({
 					username={this.props.username} 
 					rank={this.props.pRank} 
 					exp={this.props.pExp} 
-					goals={this.props.goals} 
+					goals={this.props.pGoals} 
 					router={this.props.router} 
 					fromFriends={this.props.fromFrProfile} 
 					toFriends={this.props.toFrProfile} 
@@ -92,14 +92,14 @@ var ProfileApp = React.createClass({
 					avatar={this.props.pAvatar}/>
 
 				<ProfileRight 
-					goals={this.props.goals} 
+					goals={this.props.pGoals} 
 					router={this.props.router} 
 					username={this.props.username}/>
 				
 				<ProfilePostApp 
 					posts={this.props.posts} 
 					groups={this.props.groups} 
-					goals={this.props.goals} 
+					goals={this.props.pGoals} 
 					router={this.props.router}/>
 
 				<MessageApp 

@@ -15,7 +15,8 @@ var Store = {
 		avatar: null,
 		name: null,
 		fromFrProfile: null,
-		toFrProfile: null
+		toFrProfile: null,
+		pGoals: null
 	}
 };
 

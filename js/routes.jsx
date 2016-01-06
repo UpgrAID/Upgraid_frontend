@@ -78,27 +78,25 @@ router.on('route:profile', function(username){
 				if(obj.completed===false) {
 					return obj
 				}
-			})
+			});
+
+			var pGoals=_extend(Store.data,{pGoals: incomplete})
 			
-			
-
-
-
 			ReactDOM.render(<ProfileApp 
 				pRank={Store.data.rank} 
 				users={Store.data.users}
-				pExp={Store.data.exp} 
+				pExp={Store.data.exp}
+				pName={Store.data.name}
+				fromFrProfile={Store.data.fromFrProfile}
+				toFrProfile={Store.data.toFrProfile}
+				userId={Store.data.uid}
+				pAvatar={Store.data.avatar}  
 				router={router}
 				username={username}
-				pName={Store.data.name}
-				goals={incomplete}
-				fromFrProfile={Store.data.fromFrProfile}
+				pGoals={Store.data.pGoals}
 				fromAll={fromFriends}
-				toFrProfile={Store.data.toFrProfile} 
 				groups={groups} 
-				posts={posts}
-				userId={Store.data.uid}
-				pAvatar={Store.data.avatar}/>,
+				posts={posts}/>,
 				document.getElementById('container'));
 
 
