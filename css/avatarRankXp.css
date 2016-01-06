@@ -26,6 +26,29 @@
 	width:150px;
 	height: 150px;
 	background: #fff;
-	content:url('../assets/avatar.png');
 	margin-bottom: 12px;
+}
+
+#avatarModal {
+	background: #fff;
+    width: 500px;
+    z-index: 2;
+    position: absolute;
+}
+
+#avatarUl {
+	margin:0;
+}
+
+#avatarModalHeader {
+	z-index: 2;
+}
+
+#avatarSubmit {
+	z-index: 2;
+	width:20px;
+}
+
+.avatars {
+	display: inline;
 }

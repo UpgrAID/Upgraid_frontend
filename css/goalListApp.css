@@ -1,5 +1,5 @@
 #goalContainer {
-  width: 377px;
+  width: 376px;
   height: 280px;
   border-top: 1px solid black;
 }
@@ -25,7 +25,7 @@
 }
 .goalContainer {
   margin:0;
-  width: 300px;
+  width: 376px;
   height:149px;
   background: #fff;
 	padding:0;
@@ -93,17 +93,19 @@
   margin: auto;
 }
 .delete {
-  float: right;
-  margin-right: 10px;
-  height: 30px;
-  width:30px;
-  padding: 5px;
-  text-align: center;
-  font-size: 0.6rem;
-  border-radius: 3px;
-  border:1px solid #f7f7f7;
-  background:#27556C;
-  color:#fff;
+    float: right;
+    margin-right: 10px;
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    text-align: center;
+    font-size: 0.6rem;
+    border-radius: 3px;
+    border: 1px solid #f7f7f7;
+    background: #27556C;
+    color: #fff;
+    position: relative;
+    z-index: 2;
 }
 .delete:hover {
   background: red;
@@ -112,10 +114,10 @@
 #setGoal {
   margin-bottom: 20px;
   position: relative;
+  height:245px;
 }
 
 .selectCategory {
-  color: #fff;
   text-align: center;
   position: relative;
   top: 12px;
@@ -135,4 +137,8 @@
   position: relative;
   top:10px;
   padding-right:5px;
+}
+
+#pleaseSelect {
+  margin:0;
 }

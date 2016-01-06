@@ -11,7 +11,6 @@ var test = new User();
 
 var Login = React.createClass({
 
-
 	_submit: function(e) {
 		var router =this.props.router;
 		var self = this.props;
@@ -23,7 +22,9 @@ var Login = React.createClass({
 			url:'https://safe-brook-9891.herokuapp.com/api/api-token-auth/',
 			method:'POST',
 			data: {username: username, password:password}
-		}).then(function(resp){			
+
+		}).then(function(resp){
+
 			setToken(resp.token);
 
 			self.logIn();
@@ -80,6 +81,7 @@ function setToken(token) {
 
 	var _sync = Backbone.sync;
 	Backbone.sync = function(post,model,options) {
+<<<<<<< HEAD
 		options.headers = {
 			'Authorization': 'Token ' + token,
 		};
@@ -87,3 +89,18 @@ function setToken(token) {
 		return _sync.call(this,post,model,options);
 	};
 };
+=======
+
+		options.headers = {
+			'Authorization': 'Token ' + token,
+		};
+
+
+
+
+		return _sync.call(this,post,model,options);
+	};
+}
+
+
+>>>>>>> 5fdbe71162abf4b009c76d7df309d6b621cf599d

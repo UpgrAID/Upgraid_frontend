@@ -19,7 +19,7 @@ var CommentInput = React.createClass({
 			e.preventDefault();
 			var props=this.props;
 			var Comment = Backbone.Model.extend({
-			url:'https://safe-brook-9891.herokuapp.com/api/comments/',
+			url:'https://safe-brook-9891.herokuapp.com/api/comments/?group=1',
 			initialize: function() {}
 
 		});
@@ -37,8 +37,10 @@ var CommentInput = React.createClass({
 				'description':this.state.description,
 			})
 
+
 			test.save({}, {
 				success: function(resp) {
+					console.log('comment',resp.toJSON())
 					collection.add(resp.toJSON());
 					props.addInput(collection.toJSON());
 					$('.commentField').val('');

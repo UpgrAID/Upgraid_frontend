@@ -8,7 +8,7 @@ var ProfileLeft = React.createClass({
 	render:function(){
 		return(
 			<div id="profileLeft">
-				<AvatarRankXp rank={this.props.rank} exp={this.props.exp}/>
+				<AvatarRankXp rank={this.props.rank} exp={this.props.exp} avatar={this.props.avatar} username={this.props.username}/>
 				<Greeting name={this.props.name}/>
 				<Group  goals={this.props.goals} router={this.props.router}/>
 				<Friends fromFriends={this.props.fromFriends} toFriends={this.props.toFriends}  router={this.props.router}/>

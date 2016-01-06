@@ -45,13 +45,14 @@ var UserViewApp = React.createClass({
 		});
 	},
 	render:function() {
+		console.log('a',this.props.groups)
 		return (
 			<div>
 				<NavUserView router={this.props.router} username={this.props.username} userId={this.props.userId} myId={this.props.myId} friend={this.state.frnds}/>
 				<NameTag user={this.props.name} />
 				<AvatarRankXp rank={this.props.rank} exp={this.props.exp}/>
 				<Friends fromFriends={this.props.fromFriends} toFriends={this.props.toFriends} router={this.props.router}/>
-				<Group groups={this.props.groups} router={this.props.router}/>
+				<Group groups={this.props.groups} goals={this.props.groups}  router={this.props.router}/>
 				<OtherPosts posts={this.props.posts}/>
 				<OtherGoals goals={this.props.goals}/>
 

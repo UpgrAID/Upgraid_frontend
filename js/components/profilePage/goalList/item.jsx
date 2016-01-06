@@ -9,7 +9,7 @@ var Item = React.createClass({
 	},
 	_completed: function(e) {
 		e.preventDefault();
-
+		console.log('test')
 		props=this.props;
 		this.setState({
 			theme: this.props.theme

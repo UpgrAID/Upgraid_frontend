@@ -69,13 +69,43 @@ var ProfileApp = React.createClass({
 
 		return(<div>
 
-				<Nav router={this.props.router} username={this.props.username} userId = {this.props.userId} fromAll={this.props.fromAll} users={this.state.filteredData} query={this.state.query} doSearch={this._doSearch}/>
+				<Nav 
+					router={this.props.router} 
+					username={this.props.username} 
+					userId = {this.props.userId} 
+					fromAll={this.props.fromAll} 
+					users={this.state.filteredData} 
+					query={this.state.query} 
+					doSearch={this._doSearch}/>
+
 				<Info/>
-				<ProfileLeft rank={this.props.rank} exp={this.props.exp} goals={this.props.goals} router={this.props.router} fromFriends={this.props.fromFriends} toFriends={this.props.toFriends}  router={this.props.router} name={this.props.name}/>
-				<ProfileRight goals={this.props.goals} router={this.props.router} username={this.props.username}/>
+
+				<ProfileLeft 
+					username={this.props.username} 
+					rank={this.props.pRank} 
+					exp={this.props.pExp} 
+					goals={this.props.pGoals} 
+					router={this.props.router} 
+					fromFriends={this.props.fromFrProfile} 
+					toFriends={this.props.toFrProfile} 
+					name={this.props.pName} 
+					avatar={this.props.pAvatar}/>
+
+				<ProfileRight 
+					goals={this.props.pGoals} 
+					router={this.props.router} 
+					username={this.props.username}/>
 				
-				<ProfilePostApp posts={this.props.posts} groups={this.props.groups} goals={this.props.goals} router={this.props.router}/>
-				<MessageApp fromFriends={this.props.fromFriends} toFriends={this.props.toFriends} username={this.props.username}/>
+				<ProfilePostApp 
+					posts={this.props.posts} 
+					groups={this.props.groups} 
+					goals={this.props.pGoals} 
+					router={this.props.router}/>
+
+				<MessageApp 
+					fromFriends={this.props.fromFrProfile} 
+					toFriends={this.props.toFrProfile} 
+					username={this.props.username}/>
 				</div>)
 	}
 })

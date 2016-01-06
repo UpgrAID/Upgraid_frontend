@@ -1,6 +1,6 @@
 var React = require('react');
 var PostListApp = require('../profilePage/post/PostListApp.jsx');
-var UserList = require('./userList/userList.jsx');
+var GroupLeft = require('./groupLeft.jsx')
 var Nav = require('../nav/nav.jsx');
 var NavGroupView = require('../nav/navGroupView.jsx');
 var Store = require('../../store.js')
@@ -37,13 +37,13 @@ var GroupApp = React.createClass({
 		})
 	},
 	render:function() {
-		return(<div>
+		return(
+			<div>
 				<NavGroupView router={this.props.router} username={this.props.username}/>
-				<UserList users={this.props.users} router={this.props.router} posts={this.props.posts} groupList={this.state.groupList}/>
+				<GroupLeft users={this.props.users} router={this.props.router} posts={this.props.posts} groupList={this.state.groupList}/>
 				<PostListApp posts={this.props.posts} groupId = {this.props.groupId} username={this.props.username}/>
-
-
-			</div>)
+			</div>
+			)
 	}
 });
 
