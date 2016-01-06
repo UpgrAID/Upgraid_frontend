@@ -7,7 +7,7 @@ var PostItem = React.createClass({
 		var props=this.props;
 			return(<div id="postContainer">
 					{this.props.posts.map(function(obj){
-						return(<Post key={obj.id} addInput={props.addInput} title={obj.title} description={obj.description} posts={props.posts} groupId={obj.id} author={obj.user} postId = {obj.id} comments ={obj.comment_set} username={this.props.username}/>)
+						return(<Post key={obj.id} addInput={props.addInput} title={obj.title} description={obj.description} posts={props.posts} groupId={obj.id} author={obj.user} posted={obj.created_at} postId = {obj.id} comments ={obj.comment_set} username={this.props.username}/>)
 					})}
 					</div>
 				)

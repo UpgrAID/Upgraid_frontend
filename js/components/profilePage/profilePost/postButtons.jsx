@@ -27,10 +27,9 @@ var PostButtons = React.createClass({
 		}
 	},
 	_submit: function(e) {
-		
+
 			e.preventDefault();
 			var props=this.props;
-			console.log('post',props)
 			var collection = new PostCollection(props.data);
 
 			var test = new Post();

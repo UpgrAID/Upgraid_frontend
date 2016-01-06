@@ -6,8 +6,18 @@ var CardHeader = require('material-ui/lib/card/card-header');
 var CardTitle = require('material-ui/lib/card/card-title');
 var CardText = require('material-ui/lib/card/card-text');
 var CommentApp = require('../../../components/groupPage/comments/commentApp.jsx');
+var Timeago = require('timeago-words');
 
 var Post = React.createClass({
+	getInitialState: function(){
+		return {
+			postedAt: this.props.posted
+		}
+	},
+	componentWillMount: function(){
+		var dateObj = new Date(this.props.posted)
+		this.setState({postedAt: Timeago(dateObj)});
+	},
 
 	_delete: function(e) {
 		e.preventDefault();
@@ -23,7 +33,7 @@ var Post = React.createClass({
 					model: Post
 			});
 
-		var collection = new PostCollection(this.props.datas);
+		var collection = new PostCollection(this.props.posts);
 		var item = collection.get(props.id);
 		item.destroy({
 			success: function(resp) {
@@ -34,13 +44,12 @@ var Post = React.createClass({
 	},
 
 	render: function() {
-
 		return(
 			<div className="postContainer">
 				<Card>
 					<CardHeader
 							style={{background: '#AAEDEA'}}
-      				title={this.props.author}
+      				title={this.props.author + ' Posted: ' + this.state.postedAt}
       				subtitle={this.props.title}
       				avatar="../../../../assets/avatar.png"/>
 						<CardText>{this.props.description}</CardText>

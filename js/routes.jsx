@@ -46,7 +46,6 @@ router.on('route:profile', function(username){
 		test.fetch({
 			success: function(resp) {
 			var data=resp.toJSON();
-			console.log(data);
 			var loggedIn = _.extend(Store.data, {userId: data[0].user.id});
 			var userName = _.extend(Store.data, {userName: data[0].user.username});
 			var posts=data[0].user.post_set;
@@ -69,17 +68,13 @@ router.on('route:profile', function(username){
 			});
 
 
-
-
-
-			console.log('b', data)
 			var goalInfo=data[0].user.goal_set;
 			var incomplete = goalInfo.filter(function(obj){
 				if(obj.completed===false) {
 					return obj
 				}
 			})
-			console.log('test',incomplete)
+			
 			var groups=data[0].user.group_set;
 
 
@@ -229,7 +224,8 @@ $('#chat').show()
 		GroupPosts.fetch({
 			success: function(resp) {
 
-				var posts = resp.toJSON();
+				var data = resp.toJSON();
+				var posts = data.reverse();
 				var userName = Store.data.userName;
 				var chatList = Store.data.chats;
 				var chatInit = Store.data.chatInit;

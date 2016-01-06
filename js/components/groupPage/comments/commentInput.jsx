@@ -5,12 +5,12 @@ var CommentInput = React.createClass({
 
 	getInitialState: function() {
 		return {
-			post: null,
-			description: null}
+			description: null
+		}
 	},
 	_onChange: function(e) {
 		this.setState({
-			value: e.target.value
+			description: e.target.value
 
 		});
 
@@ -34,14 +34,14 @@ var CommentInput = React.createClass({
 		var test = new Comment();
 			test.set({
 				'post': this.props.postId,
-				'description':this.state.value,
+				'description':this.state.description,
 			})
 
 			test.save({}, {
 				success: function(resp) {
 					collection.add(resp.toJSON());
 					props.addInput(collection.toJSON());
-					$('#comment').val('');
+					$('.commentField').val('');
 				}
 			})
 		},

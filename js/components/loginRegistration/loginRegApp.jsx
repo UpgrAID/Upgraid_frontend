@@ -23,13 +23,12 @@ var LoginRegApp = React.createClass({
 		});
 	},
 	_hideBigPic: function(){
-		$('#bigPic').fadeOut(500);
+		$('#bigPic').fadeOut(1000);
 	},
 	render:function(){
 		return(
 			<div>
 				<div id="bigPic">
-					<div id="error"></div>
 					<h2 id="splashText1">improving yourself is tough enough.</h2>
 					<h2 id="splashText2">let's do it together.</h2>
 					<h1 id="bigTitle">UpgrAID</h1>

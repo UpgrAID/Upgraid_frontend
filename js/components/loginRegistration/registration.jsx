@@ -16,7 +16,7 @@ var Registration = React.createClass({
         })
        test.save({},{
         success: function(resp) {
-            console.log(resp)
+          
         }
        })
     },

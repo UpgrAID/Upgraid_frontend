@@ -10,9 +10,7 @@ var PostCollection = Backbone.Collection.extend({
 		});
 
 var PostInput = React.createClass({
-	getInitialState: function() {
-		return {value: ""}
-	},
+
 	_submit: function(e) {
 			e.preventDefault();
 			var props=this.props;
@@ -38,16 +36,11 @@ var PostInput = React.createClass({
 				}
 			})
 		},
-	_onChange: function(e) {
-		this.setState({
-			value: e.target.value
-		})
-	},
+
 
 	render:function() {
 		return(
-			<form id="newPostInput" onSubmit={this._submit}>
-					
+			<form id="newPostInput" onSubmit={this._submit}>					
 					<input id="titleInput" placeholder="Add New Post - Title"/>
 					<textarea id="descriptionInput" placeholder="Add Description"></textarea>
 					<button  id="postBtn" type="submit" onSubmit={this._submit}>Submit</button>

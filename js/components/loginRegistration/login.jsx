@@ -23,9 +23,7 @@ var Login = React.createClass({
 			url:'https://safe-brook-9891.herokuapp.com/api/api-token-auth/',
 			method:'POST',
 			data: {username: username, password:password}
-		}).then(function(resp){
-
-			$.cookie('AuthToken',resp.token);
+		}).then(function(resp){			
 			setToken(resp.token);
 
 			self.logIn();
@@ -82,18 +80,10 @@ function setToken(token) {
 
 	var _sync = Backbone.sync;
 	Backbone.sync = function(post,model,options) {
-		if($.cookie('AuthToken')) {
 		options.headers = {
 			'Authorization': 'Token ' + token,
 		};
-	}
-
-
 
 		return _sync.call(this,post,model,options);
 	};
-}
-
- if($.cookie('AuthToken')) {
- 	setToken($.cookie('AuthToken'))
- }
+};

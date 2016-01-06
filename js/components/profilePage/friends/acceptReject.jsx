@@ -30,8 +30,8 @@ var AcceptReject = React.createClass({
 		var Fdecline = new FriendDecline();
 		Fdecline.set({
 			id: this.props.requester.id,
-			to_friend: this.props.userId,
 			from_friend: this.props.requester.from_friend,
+			to_friend: this.props.userId,			
 			accepted: false
 		});
 		Fdecline.save();
