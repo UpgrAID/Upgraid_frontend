@@ -112,7 +112,7 @@
 #setGoal {
   margin-bottom: 20px;
   position: relative;
-  background: #fff;
+  height:245px;
 }
 
 .selectCategory {
@@ -135,4 +135,8 @@
   position: relative;
   top:10px;
   padding-right:5px;
+}
+
+#pleaseSelect {
+  margin:0;
 }

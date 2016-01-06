@@ -5,8 +5,7 @@ var test = new Reg();
 
 var Registration = React.createClass({
 
-
-    _regSubmit: function(e) {
+        _regSubmit: function(e) {
         e.preventDefault();
         test.set({
             first_name: $('#firstName').val(),

@@ -90,15 +90,15 @@
 
 #registerBtn {
 	display: block;
-	position: absolute;
-  color: #fff;
-  background: #00F5CD;
-  outline: none;
-  border: 1px solid #F7F7F7;
-  padding: 10px;
-  border-radius: 5px;
-  top: 147px;
-  left: 95px;
+    position: absolute;
+    color: #fff;
+    background: #00F5CD;
+    outline: none;
+    border: 1px solid #F7F7F7;
+    padding: 10px;
+    border-radius: 5px;
+    top: 142px;
+    left: 112px;
 
 }
 

@@ -57,6 +57,7 @@ router.on('route:profile', function(username){
 			var name=data[0].user.first_name;
 			var fromFriends=data[0].user.to_friend_set;
 			var toFriends = data[0].user.friend_set;
+			var avatar = data[0].avatar;
 			var fromFriendsMap = fromFriends.filter(function(obj){
 				if(obj.accepted===true) {
 					return true
@@ -72,19 +73,19 @@ router.on('route:profile', function(username){
 
 
 
-			console.log('b', data)
+			console.log('b', data[0].avatar)
 			var goalInfo=data[0].user.goal_set;
 			var incomplete = goalInfo.filter(function(obj){
 				if(obj.completed===false) {
 					return obj
 				}
 			})
-			console.log('test',incomplete)
+			
 			var groups=data[0].user.group_set;
 
 
 
-			ReactDOM.render(<ProfileApp rank={rank} users={Store.data.users} exp={exp} router={router} username={username} name={name} goals={incomplete} fromFriends={fromFriendsMap} fromAll={fromFriends} toFriends={toFriendsMap} groups={groups} posts={posts} userId={uid}/>,document.getElementById('container'));
+			ReactDOM.render(<ProfileApp rank={rank} users={Store.data.users} exp={exp} router={router} username={username} name={name} goals={incomplete} fromFriends={fromFriendsMap} fromAll={fromFriends} toFriends={toFriendsMap} groups={groups} posts={posts} userId={uid} avatar={avatar}/>,document.getElementById('container'));
 
 
 			}
