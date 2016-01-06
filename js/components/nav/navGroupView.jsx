@@ -17,7 +17,7 @@ var NavUserView = React.createClass({
 
 					</div>
 
-				<div id="header"></div>
+				<div className="header"></div>
 
 				</div>
 				)

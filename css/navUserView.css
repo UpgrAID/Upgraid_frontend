@@ -1,12 +1,13 @@
 
 #navContainerUser {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 100%;
-  height: 50px;
-  background-color: #006d72;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    /* width: 1075px; */
+    margin: auto;
+    position: relative;
+    height: 50px;
+    background-color: #033A4C;
 }
 
 #navUlUser {

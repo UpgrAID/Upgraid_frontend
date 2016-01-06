@@ -29,3 +29,8 @@
     font-size: 1em;
     color: #fff;
 }
+
+.groupUser:hover {
+	background: #004a72;
+	color:#fff;
+}

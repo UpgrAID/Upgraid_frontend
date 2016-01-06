@@ -41,7 +41,7 @@ var Nav = React.createClass({
 					</ul>
 					</div>
 				</div>
-				<div id="header"><Quote quote={this.state.quote}/></div>
+				<div className="header"><Quote quote={this.state.quote}/></div>
 				</div>)
 	}
 });
