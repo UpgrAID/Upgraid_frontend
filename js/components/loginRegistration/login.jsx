@@ -24,7 +24,7 @@ var Login = React.createClass({
 			data: {username: username, password:password}
 		}).then(function(resp){
 
-			$.cookie('AuthToken',resp.token);
+			
 			setToken(resp.token);
 
 			self.logIn();
@@ -81,11 +81,11 @@ function setToken(token) {
 
 	var _sync = Backbone.sync;
 	Backbone.sync = function(post,model,options) {
-		if($.cookie('AuthToken')) {
+		
 		options.headers = {
 			'Authorization': 'Token ' + token,
 		};
-	}
+	
 
 
 
@@ -93,6 +93,4 @@ function setToken(token) {
 	};
 }
 
- if($.cookie('AuthToken')) {
- 	setToken($.cookie('AuthToken'))
- }
+

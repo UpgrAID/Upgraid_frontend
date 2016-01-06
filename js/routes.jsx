@@ -28,9 +28,6 @@ var Router=Backbone.Router.extend({
 
 var router = new Router();
 
-
-
-
 router.on('route:profile', function(username){
 
 	$('#chat').hide()
@@ -45,47 +42,64 @@ router.on('route:profile', function(username){
 		var test = new GoalCollection();
 		test.fetch({
 			success: function(resp) {
-			var data=resp.toJSON();
-			console.log(data);
-			var loggedIn = _.extend(Store.data, {userId: data[0].user.id});
+			var data     = resp.toJSON();
 			var userName = _.extend(Store.data, {userName: data[0].user.username});
-			var posts=data[0].user.post_set;
-			var rank = data[0].rank;
-			var exp = data[0].exp;
-			var uid = data[0].user.id;
+			var posts    = data[0].user.post_set;
+
+			var pRank     = _.extend(Store.data,{rank: data[0].rank});
+			var pExp      = _.extend(Store.data,{exp: data[0].exp});
+			var uid      = _.extend(Store.data,{uid: data[0].user.id});
 			var objectId = _.extend(Store.data, {objectId: data[0].id});
-			var name=data[0].user.first_name;
-			var fromFriends=data[0].user.to_friend_set;
-			var toFriends = data[0].user.friend_set;
-			var avatar = data[0].avatar;
+			var pAvatar   = _.extend(Store.data, {avatar: data[0].avatar});
+			var pName     = _.extend(Store.data,{name: data[0].user.first_name});
+			var fromFriends = data[0].user.to_friend_set;
+			var toFriends   = data[0].user.friend_set;
+			var groups      = data[0].user.group_set;
+
 			var fromFriendsMap = fromFriends.filter(function(obj){
 				if(obj.accepted===true) {
 					return true
 				}
 			});
-			var toFriendsMap = toFriends.filter(function(obj){
+
+			var fromFrProfile = _.extend(Store.data,{fromFrProfile: fromFriendsMap});
+
+			var toFriendsMap  = toFriends.filter(function(obj){
 				if(obj.accepted===true) {
 					return true
 				}
 			});
 
+			var toFrProfile = _.extend(Store.data,{toFrProfile: toFriendsMap});
 
 
-
-
-			console.log('b', data[0].avatar)
-			var goalInfo=data[0].user.goal_set;
-			var incomplete = goalInfo.filter(function(obj){
+			var goalInfo    = data[0].user.goal_set;
+			var incomplete  = goalInfo.filter(function(obj){
 				if(obj.completed===false) {
 					return obj
 				}
 			})
 			
-			var groups=data[0].user.group_set;
+			
 
 
 
-			ReactDOM.render(<ProfileApp rank={rank} users={Store.data.users} exp={exp} router={router} username={username} name={name} goals={incomplete} fromFriends={fromFriendsMap} fromAll={fromFriends} toFriends={toFriendsMap} groups={groups} posts={posts} userId={uid} avatar={avatar}/>,document.getElementById('container'));
+			ReactDOM.render(<ProfileApp 
+				pRank={Store.data.rank} 
+				users={Store.data.users}
+				pExp={Store.data.exp} 
+				router={router}
+				username={username}
+				pName={Store.data.name}
+				goals={incomplete}
+				fromFrProfile={Store.data.fromFrProfile}
+				fromAll={fromFriends}
+				toFrProfile={Store.data.toFrProfile} 
+				groups={groups} 
+				posts={posts}
+				userId={Store.data.uid}
+				pAvatar={Store.data.avatar}/>,
+				document.getElementById('container'));
 
 
 			}
@@ -156,7 +170,19 @@ router.on('route:userView', function(userId){
 			var myId = Store.data.userId;
 			var username = Store.data.userName;
 
-			ReactDOM.render(<UserViewApp rank={rank}  exp={exp} posts={post} goals={goalsMapped} name={name} router={router} username={username} userId={userId} myId={myId} fromFriends={fromFriendsMap} toFriends={toFriendsMap} groups={groups}/>,document.getElementById('container'));
+			ReactDOM.render(<UserViewApp 
+				rank={rank} 
+				exp={exp} posts={post}
+				goals={goalsMapped}
+				name={name} 
+				router={router}
+				username={username}
+				userId={userId}
+				myId={myId} 
+				fromFriends={fromFriendsMap} 
+				toFriends={toFriendsMap} 
+				groups={groups}/>,
+				document.getElementById('container'));
 
 
 			}
@@ -183,8 +209,12 @@ $('#chat').show()
 			success: function(resp) {
 				var data = resp.toJSON();
 				var dataReverse = data.reverse();
-				ReactDOM.render(<ChatApp chat={dataReverse} channel={channel} groupId = {groupId} />, document.getElementById('chat'));
 
+				ReactDOM.render(<ChatApp 
+				chat={dataReverse} 
+				channel={channel} 
+				groupId = {groupId} />, 
+				document.getElementById('chat'));
 			}
 		});
 
@@ -208,7 +238,12 @@ $('#chat').show()
 			success: function(resp) {
 				var data = resp.toJSON();
 				var dataReverse = data.reverse();
-				ReactDOM.render(<ChatApp chat={data} channel={channel} groupId = {groupId} />, document.getElementById('chat'));
+
+				ReactDOM.render(<ChatApp 
+				chat={data} 
+				channel={channel} 
+				groupId = {groupId} />,
+				document.getElementById('chat'));
 
 
 			}
@@ -234,14 +269,18 @@ $('#chat').show()
 				var userName = Store.data.userName;
 				var chatList = Store.data.chats;
 				var chatInit = Store.data.chatInit;
-
 				var userList = Store.data.userList;
 
-
-
-
-
-				ReactDOM.render(<GroupApp  posts={posts} groupId={groupId} router={router}  channel={channel} username={userName} chatList={chatList} chatInit={chatInit} userList={userList}/>, document.getElementById('container'));
+				ReactDOM.render(<GroupApp 
+				posts={posts} 
+				groupId={groupId}
+				router={router}  
+				channel={channel} 
+				username={userName} 
+				chatList={chatList} 
+				chatInit={chatInit} 
+				userList={userList}/>,
+				document.getElementById('container'));
 
 
 			}
