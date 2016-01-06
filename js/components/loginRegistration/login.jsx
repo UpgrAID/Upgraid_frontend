@@ -11,13 +11,7 @@ var test = new User();
 
 var Login = React.createClass({
 	
-    _handleInputChange: function(e){
-        e.preventDefault();
-
-    },
-    _close: function(e) {
-        $('#registrationContainer').hide();
-    },
+    
 	_submit: function(e) {
 		var router =this.props.router;
 		e.preventDefault();

@@ -1,5 +1,5 @@
 #goalContainer {
-  width: 377px;
+  width: 376px;
   height: 280px;
   border-top: 1px solid black;
 }
@@ -25,7 +25,7 @@
 }
 .goalContainer {
   margin:0;
-  width: 300px;
+  width: 376px;
   height:149px;
   background: #fff;
 	padding:0;
@@ -113,10 +113,10 @@
 #setGoal {
   margin-bottom: 20px;
   position: relative;
+  background: #fff;
 }
 
 .selectCategory {
-  color: #fff;
   text-align: center;
   position: relative;
   top: 12px;
