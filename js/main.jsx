@@ -14,13 +14,14 @@ require('../css/userList.css');
 require('../css/avatarRankXp.css');
 require('../css/chat.css');
 require('../css/otherPosts.css');
-require('../css/otherGoals.css')
-require('../css/badge.css')
+require('../css/otherGoals.css');
+require('../css/badge.css');
 require('../css/messaging.css');
 require('../normalize.css');
-require('../css/profileLeft.css')
-require('../css/profileRight.css')
-require('../css/info.css')
+require('../css/profileLeft.css');
+require('../css/profileRight.css');
+require('../css/info.css');
+require('../css/groupLeft.css');
 
 
 var React = require('react');
