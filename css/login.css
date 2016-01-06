@@ -1,22 +1,13 @@
-#loginPageWrapper {
+#wrapper {
 	width: 100%;
 	height: 100%;
 
 }
-#loginContainer {
-	width:100%;
-	min-width:875px;
-	height:60px;
-	margin: auto;
-	background: #00C5CD;
-	position: fixed;
-	top:0;
-	left:0;
-}
+
 #loginOnly {
 	width: 704px;
-    margin: auto;
-    position: relative;
+  margin-left: 100px;
+  position: relative;
 }
 
 #logoSpan {
@@ -30,8 +21,10 @@
 
 #loginSpan {
 	display: inline-block;
+	margin-left: 3px;
 	margin-top: 15px;
 	margin-right: 10px;
+	margin-bottom: 10px;
 	font-size: 0.9rem;
 	color:#fff;
 }
@@ -42,8 +35,9 @@
 }
 
 .inputWindow {
-	display: inline-block;
+	display: block;
 	margin-right: 20px;
+	margin-bottom: 10px;
 	width: 200px;
 	height: 40px;
 	background: white;
@@ -62,7 +56,7 @@
 	display: inline-block;
 	width: 700px;
 	height: 40px;
-	top:5px;
+	top:40px;
 }
 
 #user {
@@ -95,16 +89,16 @@
 }
 
 #registerBtn {
-	display: inline-block;
-    color: #fff;
-    background: #00F5CD;
-    outline: none;
-    border: 1px solid #F7F7F7;
-    padding: 10px;
-    border-radius: 5px;
-
-    top: 11px;
-    right: 98px;
+	display: block;
+	position: absolute;
+  color: #fff;
+  background: #00F5CD;
+  outline: none;
+  border: 1px solid #F7F7F7;
+  padding: 10px;
+  border-radius: 5px;
+  top: 147px;
+  left: 95px;
 
 }
 
@@ -114,12 +108,11 @@
 
 #bigPic {
 	background-image: url('../assets/bestyearever.jpg');
-	margin-top: -20px;
-
+	margin-top: -30px;
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: cover;
 	width: 100%;
-	height: 600px;
+	height: 1000px;
 }
 #home-wrapper {
 	position: relative;
@@ -129,10 +122,19 @@
 }
 #bigTitle {
 	position: absolute;
-    top: 120px;
-    width: 600px;
-    left: 10%;
-    font-size: 4rem;
-    font-family: 'Roboto', sans-serif;
-    color: #fff;
+  top: 220px;
+	left: 500px;
+  width: 400px;
+  font-size: 8rem;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: #26447A;
+}
+#splashText1 {
+	color: white;
+	padding-top: 60px;
+	margin-left: 50px;
+}
+#splashText2 {
+	color: white;
+	margin-left: 100px;
 }

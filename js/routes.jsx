@@ -21,7 +21,7 @@ var Router=Backbone.Router.extend({
 		"":"index"
 	},
 	index: function(){
-		ReactDOM.render(<LoginRegApp router={this}/>, document.getElementById('container'));
+		ReactDOM.render(<LoginRegApp router={this}/>, document.getElementById('page-wrapper'));
 
 	}
 });

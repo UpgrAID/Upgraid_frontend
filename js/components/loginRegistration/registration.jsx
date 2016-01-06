@@ -32,7 +32,7 @@ var Registration = React.createClass({
            <div id="registrationContainer">
                     <form onSubmit={this._regSubmit}>
                         <span id="close" onClick={this._close}>X</span>
-                        <h1 id="regHead">Register</h1>
+                        <h1 id="regHead">Sign up for UpgrAID!</h1>
 
                                 <input id="firstName" className="regInput" placeholder="First Name"/>
 
