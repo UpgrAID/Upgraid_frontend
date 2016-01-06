@@ -32,7 +32,7 @@ var LoginRegApp = React.createClass({
 				<div id="bigPic">
 					<div id="error"></div>
 					<h2 id="splashText1">improving yourself is tough enough.</h2>
-					<h2 id="splashText2">let&#40;s do it together.</h2>
+					<h2 id="splashText2">let&#39;s do it together.</h2>
 					<h1 id="bigTitle">UpgrAID</h1>
 				<Login router={this.props.router} show={this._show} logIn={this._hideBigPic}/>
 				<Registration hide={this._hide} hidden={this.state.hidden}/>

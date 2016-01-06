@@ -7,6 +7,7 @@ var Store = {
 		users: [],
 		userList:[],
 		messageList:[],
+		objectId: null,
 	}
 };
 

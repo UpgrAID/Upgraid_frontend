@@ -4,7 +4,8 @@ var AvatarRankXp = React.createClass({
 	getInitialState:function(){
 		return({
 			hidden: true,
-			avatar: this.props.avatar
+			avatar: this.props.avatar,
+			value: 1
 		})
 	},
 	_show:function(){
@@ -18,7 +19,10 @@ var AvatarRankXp = React.createClass({
 		})
 	},
 	_change: function(e) {
-		this.setState({avatar: e.target.id})
+		this.setState({
+			avatar: e.target.id,
+			value: e.target.id
+		})
 	},
 	render:function() {
 		
@@ -32,7 +36,7 @@ var AvatarRankXp = React.createClass({
 
 					<span id="exp"><span>Exp: </span>{this.props.exp}</span>
 				</div>
-				<AvatarChange hidden={this.state.hidden} hide={this._hide} change={this._change}/>
+				<AvatarChange hidden={this.state.hidden} hide={this._hide} change={this._change} username={this.props.username} value={this.state.value}/>
 			</div>)
 	}
 });

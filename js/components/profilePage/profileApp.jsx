@@ -71,7 +71,7 @@ var ProfileApp = React.createClass({
 
 				<Nav router={this.props.router} username={this.props.username} userId = {this.props.userId} fromAll={this.props.fromAll} users={this.state.filteredData} query={this.state.query} doSearch={this._doSearch}/>
 				<Info/>
-				<ProfileLeft rank={this.props.rank} exp={this.props.exp} goals={this.props.goals} router={this.props.router} fromFriends={this.props.fromFriends} toFriends={this.props.toFriends}  router={this.props.router} name={this.props.name} avatar={this.props.avatar}/>
+				<ProfileLeft username={this.props.username} rank={this.props.rank} exp={this.props.exp} goals={this.props.goals} router={this.props.router} fromFriends={this.props.fromFriends} toFriends={this.props.toFriends}  router={this.props.router} name={this.props.name} avatar={this.props.avatar}/>
 				<ProfileRight goals={this.props.goals} router={this.props.router} username={this.props.username}/>
 				
 				<ProfilePostApp posts={this.props.posts} groups={this.props.groups} goals={this.props.goals} router={this.props.router}/>
