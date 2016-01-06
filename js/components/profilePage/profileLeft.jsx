@@ -9,9 +9,10 @@ var ProfileLeft = React.createClass({
 		return(
 			<div id="profileLeft">
 				<AvatarRankXp rank={this.props.rank} exp={this.props.exp}/>
-				<Group  groups={this.props.groups} router={this.props.router}/>
-				<Friends fromFriends={this.props.fromFriends} toFriends={this.props.toFriends}  router={this.props.router}/>
 				<Greeting name={this.props.name}/>
+				<Group  goals={this.props.goals} router={this.props.router}/>
+				<Friends fromFriends={this.props.fromFriends} toFriends={this.props.toFriends}  router={this.props.router}/>
+				
 			</div>
 			)
 	}

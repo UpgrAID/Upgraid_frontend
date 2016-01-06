@@ -47,7 +47,7 @@ var PostInput = React.createClass({
 	render:function() {
 		return(
 			<form id="newPostInput" onSubmit={this._submit}>
-					<h2>Posts</h2>
+					
 					<input id="titleInput" placeholder="Add New Post - Title"/>
 					<textarea id="descriptionInput" placeholder="Add Description"></textarea>
 					<button  id="postBtn" type="submit" onSubmit={this._submit}>Submit</button>

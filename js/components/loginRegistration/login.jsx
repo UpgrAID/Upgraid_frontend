@@ -11,44 +11,7 @@ var test = new User();
 
 var Login = React.createClass({
 
-	getInitialState: function(){
-		return {
-			focused: true,
-			username: null,
-			password: null
-		}
-	},
 
-	_regSubmit: function(e) {
-        e.preventDefault();
-        test.set({
-            first_name: $('#firstName').val(),
-            username: $('#userName').val(),
-            password: $('#passwordReg').val(),
-            email: $('#email').val(),
-        })
-       test.save(null,{
-        success: function(resp) {
-
-        },
-        error: function(err){
-        	$('#error').html("There was an error--please try again");
-        }
-
-       })
-    },
-    _handleUsernameChange: function(e){
-      e.preventDefault();
-      this.setState({username: e.target.value});
-    },
-    _handlePasswordChange: function(e){
-    	e.preventDefault();
-    	this.setState({password: e.target.value});
-    },
-
-    _close: function(e) {
-        $('#registrationContainer').hide();
-    },
 	_submit: function(e) {
 		var router =this.props.router;
 		var self = this.props;
@@ -58,7 +21,7 @@ var Login = React.createClass({
 
 		$.ajax({
 			url:'https://safe-brook-9891.herokuapp.com/api/api-token-auth/',
-			method:'post',
+			method:'POST',
 			data: {username: username, password:password}
 		}).then(function(resp){
 
@@ -119,7 +82,7 @@ function setToken(token) {
 
 	var _sync = Backbone.sync;
 	Backbone.sync = function(post,model,options) {
-		if($.cookie('auth_token')) {
+		if($.cookie('AuthToken')) {
 		options.headers = {
 			'Authorization': 'Token ' + token,
 		};

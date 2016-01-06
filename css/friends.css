@@ -1,11 +1,11 @@
 .friend {
-    height: 31px;
-    background: #f7f7f7;
-    background: #f7f7f7;
+    height: 42px;
+    background: #1f667e;
     border: none;
-    border-bottom: 1px solid #888;
-    text-align: right;
+    border-bottom:1px solid #7BB;
+    text-align: left;
     width: 100%;
+    color: #fff;
 }
 
 .friend:hover {
@@ -17,22 +17,19 @@
 }
 
 #friendsContainer {
+    height: 308px;
+    position: relative;
 
-    height: 178px;
     background: #fff;
     text-align: center;
     margin-bottom: 10px;
-    border-left: 2px solid #f7f7f7;
-    border: 1px solid #888;
-
-
 }
 #setGoal {
 	margin:0;
 }
 
 #listContain {
-	height: 150px;
+	height: 292px;
     overflow: scroll;
 }
 
@@ -103,6 +100,6 @@
 
 #friendsHeader {
 	margin:0;
-    background: #006d72;
-    color:#fff;
+    background: #1e586e;
+    color:#889;
 }

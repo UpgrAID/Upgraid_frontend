@@ -46,6 +46,7 @@ router.on('route:profile', function(username){
 		test.fetch({
 			success: function(resp) {
 			var data=resp.toJSON();
+			console.log(data);
 			var loggedIn = _.extend(Store.data, {userId: data[0].user.id});
 			var userName = _.extend(Store.data, {userName: data[0].user.username});
 			var posts=data[0].user.post_set;
@@ -69,13 +70,21 @@ router.on('route:profile', function(username){
 
 
 
-			var groups=(data[0].user.group_set);
-
-			var mapped=data[0].user.goal_set;
 
 
+			console.log('b', data)
+			var goalInfo=data[0].user.goal_set;
+			var incomplete = goalInfo.filter(function(obj){
+				if(obj.completed===false) {
+					return obj
+				}
+			})
+			console.log('test',incomplete)
+			var groups=data[0].user.group_set;
 
-			ReactDOM.render(<ProfileApp rank={rank} users={Store.data.users} exp={exp} router={router} username={username} name={name} goals={mapped} fromFriends={fromFriendsMap} fromAll={fromFriends} toFriends={toFriendsMap} groups={groups} posts={posts} userId={uid}/>,document.getElementById('container'));
+
+
+			ReactDOM.render(<ProfileApp rank={rank} users={Store.data.users} exp={exp} router={router} username={username} name={name} goals={incomplete} fromFriends={fromFriendsMap} fromAll={fromFriends} toFriends={toFriendsMap} groups={groups} posts={posts} userId={uid}/>,document.getElementById('container'));
 
 
 			}

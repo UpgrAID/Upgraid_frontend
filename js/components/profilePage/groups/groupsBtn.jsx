@@ -28,7 +28,7 @@ var GroupsBtn = React.createClass({
 	},
 	render:function(){
 
-		return(<button className="group" onClick={this._GroupsNav}>{this.state.themeName}: {this.props.id}</button>)
+		return(<span>{(this.props.completed ? null :<button className="group" onClick={this._GroupsNav}><span className="groupName"></span>{this.props.title}</button>)}</span>)
 	}
 });
 
