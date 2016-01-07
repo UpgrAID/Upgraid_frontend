@@ -41,7 +41,7 @@ var Login = React.createClass({
 		return(
 			<div id="loginPageWrapper">
 				<div id="loginContainer">
-				<div id="loginOnly">
+					<div id="loginOnly">
 
 						<form id="loginForm" method='POST' onSubmit={this._submit}>
 							<div id="inputContainer">
@@ -70,7 +70,7 @@ var Login = React.createClass({
 						<button id="registerBtn" onClick={this._reg}>Sign up Today!</button>
 					</div>
 				</div>
-		</div>
+			</div>
 			)
 	}
 })

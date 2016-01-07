@@ -93,7 +93,7 @@
 }
 
 #postBtn {
-	width:167px;
+	width:100%;
 	float: left;
 	height:30px;
 	outline:none;

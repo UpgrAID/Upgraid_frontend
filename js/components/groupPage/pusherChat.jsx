@@ -2,8 +2,18 @@ var React = require('react');
 
 
 var PusherChat = React.createClass({
+	
 	getInitialState: function() {
-		return{newChat: this.props.chat}
+		return({
+			newChat: this.props.chat,
+			hidden: false
+				})
+	},
+	_hide:function(){
+		this.setState({hidden:true});
+		if(this.state.hidden===true){
+			this.setState({hidden:false})
+		}
 	},
 	_submit: function(e) {
 		e.preventDefault();
@@ -27,6 +37,7 @@ var PusherChat = React.createClass({
 
 		chat.save({}, {
 			success: function(resp) {
+				$('#chatInput').val('')
 			}
 		})
 		
@@ -34,14 +45,21 @@ var PusherChat = React.createClass({
 	render: function() {
 
 		return(<div id="chatContain">
-				<div id="messageContain">
-				{this.props.chat.map(function(obj){
-					return(<p className="message" key={obj.id}><span className="userNameChat">{obj.user}</span>{obj.message}</p>)
-				})}
-				</div>
-				<form onSubmit={this._submit}>
-					<input id="chatInput" placeholder="Chat here"/>
-				</form>
+					<h2 id="chatHeader" onClick={this._hide}>Chat</h2>
+					{(this.state.hidden ? null :
+
+						<div>
+							<div id="messageContain">
+
+							{this.props.chat.map(function(obj){
+							return(<p className="message" key={obj.id}><span className="userNameChat">{obj.user}</span>{obj.message}</p>)
+						})}
+							</div>
+					
+							<form onSubmit={this._submit}>
+								<input id="chatInput" placeholder="Chat here"/>
+							</form>
+						</div>)}
 			</div>
 		)
 	}

@@ -5,7 +5,7 @@ var CommentInput = React.createClass({
 
 	getInitialState: function() {
 		return {
-			post: null,
+			
 			description: null}
 	},
 	_onChange: function(e) {

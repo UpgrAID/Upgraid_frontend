@@ -9,7 +9,7 @@ var AddFriend = require('../userView/addFriend/addFriend.jsx');
 var AvatarRankXp = require('../../components/profilePage/avatarRankXp/avatarRankXp.jsx');
 var Friends= require('../../components/profilePage/friends/friends.jsx');
 var Group= require('../../components/profilePage/groups/groups.jsx');
-
+var ProfileLeft = require('../profilePage/profileLeft.jsx');
 var UserViewApp = React.createClass({
 	getInitialState: function(){
 		return {
@@ -45,15 +45,45 @@ var UserViewApp = React.createClass({
 		});
 	},
 	render:function() {
-		console.log('a',this.props.groups)
+		
 		return (
 			<div>
-				<NavUserView router={this.props.router} username={this.props.username} userId={this.props.userId} myId={this.props.myId} friend={this.state.frnds}/>
-				<NameTag user={this.props.name} />
-				<AvatarRankXp rank={this.props.rank} exp={this.props.exp}/>
-				<Friends fromFriends={this.props.fromFriends} toFriends={this.props.toFriends} router={this.props.router}/>
-				<Group groups={this.props.groups} goals={this.props.groups}  router={this.props.router}/>
+				<NavUserView 
+					router={this.props.router} 
+					username={this.props.username} 
+					userId={this.props.userId} 
+					myId={this.props.myId} 
+					friend={this.state.frnds}/>
+
+				<ProfileLeft
+					username={this.props.username} 
+					rank={this.props.pRank} 
+					exp={this.props.pExp} 
+					goals={this.props.pGoals} 
+					router={this.props.router} 
+					fromFriends={this.props.fromFrProfile} 
+					toFriends={this.props.toFrProfile} 
+					name={this.props.pName} 
+					avatar={this.props.pAvatar}/>
+
+				<NameTag user={this.props.name}/>
+
+				<AvatarRankXp 
+					rank={this.props.rank} 
+					exp={this.props.exp}/>
+
+				<Friends 
+					fromFriends={this.props.fromFriends} 
+					toFriends={this.props.toFriends} 
+					router={this.props.router}/>
+
+				<Group 
+					groups={this.props.groups} 
+					goals={this.props.groups}  
+					router={this.props.router}/>
+
 				<OtherPosts posts={this.props.posts}/>
+				
 				<OtherGoals goals={this.props.goals}/>
 
 			</div>

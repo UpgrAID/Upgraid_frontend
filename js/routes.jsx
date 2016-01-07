@@ -80,7 +80,7 @@ router.on('route:profile', function(username){
 				}
 			});
 
-			var pGoals=_extend(Store.data,{pGoals: incomplete})
+			var pGoals=_.extend(Store.data,{pGoals: incomplete})
 			
 			ReactDOM.render(<ProfileApp 
 				pRank={Store.data.rank} 
@@ -91,9 +91,9 @@ router.on('route:profile', function(username){
 				toFrProfile={Store.data.toFrProfile}
 				userId={Store.data.uid}
 				pAvatar={Store.data.avatar}  
+				pGoals={Store.data.pGoals}
 				router={router}
 				username={username}
-				pGoals={Store.data.pGoals}
 				fromAll={fromFriends}
 				groups={groups} 
 				posts={posts}/>,
@@ -168,7 +168,16 @@ router.on('route:userView', function(userId){
 			var myId = Store.data.userId;
 			var username = Store.data.userName;
 
-			ReactDOM.render(<UserViewApp 
+			ReactDOM.render(<UserViewApp
+				pRank={Store.data.rank} 
+				users={Store.data.users}
+				pExp={Store.data.exp}
+				pName={Store.data.name}
+				fromFrProfile={Store.data.fromFrProfile}
+				toFrProfile={Store.data.toFrProfile}
+				userId={Store.data.uid}
+				pAvatar={Store.data.avatar}  
+				pGoals={Store.data.pGoals}  
 				rank={rank} 
 				exp={exp} posts={post}
 				goals={goalsMapped}
@@ -269,7 +278,16 @@ $('#chat').show()
 				var chatInit = Store.data.chatInit;
 				var userList = Store.data.userList;
 
-				ReactDOM.render(<GroupApp 
+				ReactDOM.render(<GroupApp
+				pRank={Store.data.rank} 
+				users={Store.data.users}
+				pExp={Store.data.exp}
+				pName={Store.data.name}
+				fromFrProfile={Store.data.fromFrProfile}
+				toFrProfile={Store.data.toFrProfile}
+				userId={Store.data.uid}
+				pAvatar={Store.data.avatar}  
+				pGoals={Store.data.pGoals} 
 				posts={posts} 
 				groupId={groupId}
 				router={router}  
