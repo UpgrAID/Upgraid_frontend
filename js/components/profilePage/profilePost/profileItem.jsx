@@ -8,8 +8,16 @@ var ProfileItem = React.createClass({
 		
 			return(<div id="master">
 					{this.props.data.map(function(obj){
-						return(<ProfilePost key={obj.id} addInput={props.addInput} title={obj.title} description={obj.description} datas={props.data} groupId={obj.id} user={obj.user} postId = {obj.id} comments ={obj.comment_set}/>)
-					})}
+						return(<ProfilePost key={obj.id} 
+									addInput={props.addInput} 
+									title={obj.title} 
+									description={obj.description} 
+									datas={props.data} 
+									groupId={obj.id} 
+									user={obj.user} 
+									postId = {obj.id} 
+									comments ={obj.comment_set}/>)
+							})}
 					</div>
 				)
 		

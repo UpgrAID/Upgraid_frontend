@@ -3,7 +3,9 @@ var PostListApp = require('../profilePage/post/PostListApp.jsx');
 var GroupLeft = require('./groupLeft.jsx')
 var Nav = require('../nav/nav.jsx');
 var NavGroupView = require('../nav/navGroupView.jsx');
-var Store = require('../../store.js')
+var ProfileLeft = require('../profilePage/profileLeft.jsx');
+var UserList = require('./userList/userList.jsx')
+var Store = require('../../store.js');
 
 var GroupApp = React.createClass({
 	getInitialState: function() {
@@ -40,8 +42,18 @@ var GroupApp = React.createClass({
 		return(
 			<div>
 				<NavGroupView router={this.props.router} username={this.props.username}/>
-				<GroupLeft users={this.props.users} router={this.props.router} posts={this.props.posts} groupList={this.state.groupList}/>
+				<ProfileLeft 
+					username={this.props.username} 
+					rank={this.props.pRank} 
+					exp={this.props.pExp} 
+					goals={this.props.pGoals} 
+					router={this.props.router} 
+					fromFriends={this.props.fromFrProfile} 
+					toFriends={this.props.toFrProfile} 
+					name={this.props.pName} 
+					avatar={this.props.pAvatar}/>
 				<PostListApp posts={this.props.posts} groupId = {this.props.groupId} username={this.props.username}/>
+				<UserList groupList={this.state.groupList} router={this.props.router}/>
 			</div>
 			)
 	}
@@ -50,3 +62,4 @@ var GroupApp = React.createClass({
 module.exports = GroupApp;
 
 //<PusherChat groupId = {this.props.groupId} channel={this.props.channel} chatInit={this.props.chatInit} chatList={this.props.chatList}/>
+// <GroupLeft users={this.props.users} router={this.props.router} posts={this.props.posts} groupList={this.state.groupList}/>

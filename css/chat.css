@@ -1,7 +1,7 @@
 #chatContain {
 	position: fixed;
 	bottom:0px;
-	right:0px;
+	right:52px;
 	width:300px;
 
 }
@@ -12,10 +12,11 @@
     overflow: scroll;
     position: fixed;
     float: right;
+
 }
 
 .userNameChat {
-	font-size: 10px;
+	font-size: 17px;
 	padding-right:5px;
 }
 
@@ -24,8 +25,9 @@
 	height:300px;
 	overflow: scroll;
 	background: #fff;
-	padding-top: 20px;
+	
 	box-sizing:border-box;
+
 }
 
 #chatInput {
@@ -34,11 +36,23 @@
 	outline:none;
 }
 
+.message {
+	height:35px;
+}
 .message:nth-child(odd) {
 	background:#f7f7f7;
 	padding-top: 3px;
 	padding-bottom: 3px;
 	
+}
+
+#chatHeader {
+	color: #fff;
+    background: #033A4C;
+    margin: 0px;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 
 .message {

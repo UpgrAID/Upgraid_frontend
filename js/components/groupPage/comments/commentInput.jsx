@@ -4,9 +4,8 @@ var Backbone = require('backbone');
 var CommentInput = React.createClass({
 
 	getInitialState: function() {
-		return {
-			description: null
-		}
+		return {			
+			description: null}
 	},
 	_onChange: function(e) {
 		this.setState({
