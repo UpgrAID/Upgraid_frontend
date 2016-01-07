@@ -66,7 +66,7 @@ var UserViewApp = React.createClass({
 					name={this.props.pName}
 					avatar={this.props.pAvatar}/>
 
-				
+
 
 
 				<AvatarRankXpUser
@@ -86,9 +86,9 @@ var UserViewApp = React.createClass({
 					goals={this.props.groups}
 					router={this.props.router}/>
 
-				<OtherPosts posts={this.props.posts}/>
+				<OtherPosts posts={this.props.posts} theirName={this.props.name}/>
 
-				<OtherGoals goals={this.props.goals}/>
+				<OtherGoals goals={this.props.goals} theirName={this.props.name}/>
 
 			</div>
 		)

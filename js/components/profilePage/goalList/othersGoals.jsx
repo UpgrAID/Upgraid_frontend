@@ -2,12 +2,12 @@ var React = require('react');
 
 var OtherGoals = React.createClass({
 	render:function(){
-		
+
 		var test=this.props.goals.map(function(obj){
 			return(<p className="otherGoalsP" key={obj.id}>{obj.title}</p>)
 	})
 		return(<div id="otherGoalsContainer">
-			<h2 id="otherGoals">Their Goals</h2>
+			<h2 id="otherGoals">{this.props.theirName}'s Goals</h2>
 			{test}
 			</div>)
 	}

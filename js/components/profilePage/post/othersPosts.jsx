@@ -9,9 +9,9 @@ var OtherPosts = React.createClass({
 					    </div>
 					)})
 
-			
+
 				return(<div id="otherPostsContainer">
-							<h2>Posts</h2>
+							<h2>{this.props.theirName}'s Posts</h2>
 							{test}
 						</div>)
 	}
