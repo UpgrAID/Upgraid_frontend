@@ -1,23 +1,23 @@
 .otherPostTitle {
 	background: #ccc;
-	margin:0;
-	padding-top:2px;
-	padding-bottom: 2px;
+    margin: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .otherPostDescription {
-	background: #fff;
-	margin:0;
-	padding-top:2px;
-	padding-bottom: 2px;
+    background: #fff;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 2px;
 }
-
 #otherPostsContainer {
-	width:500px;
-	height:500px;
-	overflow: scroll;
-	left:362px;
-	top:50px;
-	position: relative;
-	background: #fff;
+	width: 647px;
+    height: 610px;
+    overflow: scroll;
+    left: 253px;
+    top: 205px;
+    position: absolute;
+    background: #fff;
+
 }

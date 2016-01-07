@@ -7,8 +7,8 @@ var NavUserView = require('../../components/nav/navUserView.jsx');
 var Friendly = require('../../models/friendly');
 var AddFriend = require('../userView/addFriend/addFriend.jsx');
 var AvatarRankXp = require('../../components/profilePage/avatarRankXp/avatarRankXp.jsx');
-var Friends= require('../../components/profilePage/friends/friends.jsx');
-var Group= require('../../components/profilePage/groups/groups.jsx');
+var FriendsUser= require('./friendsUserView/friendsUser.jsx');
+var GroupsUser = require('./groupsUserView/groupsUser.jsx')
 var ProfileLeft = require('../profilePage/profileLeft.jsx');
 var UserViewApp = React.createClass({
 	getInitialState: function(){
@@ -72,12 +72,12 @@ var UserViewApp = React.createClass({
 					rank={this.props.rank} 
 					exp={this.props.exp}/>
 
-				<Friends 
+				<FriendsUser 
 					fromFriends={this.props.fromFriends} 
 					toFriends={this.props.toFriends} 
 					router={this.props.router}/>
 
-				<Group 
+				<GroupsUser 
 					groups={this.props.groups} 
 					goals={this.props.groups}  
 					router={this.props.router}/>

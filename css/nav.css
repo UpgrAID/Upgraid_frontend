@@ -32,6 +32,7 @@
 #navUl .mainLi {
 	color:#fff;
 	display: inline-block;
+  font-size: 18px;
   margin-left: 20px;
   margin-right: 25px;
 }

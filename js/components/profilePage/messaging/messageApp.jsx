@@ -88,13 +88,3 @@ var MessageApp = React.createClass({
 });
 
 module.exports = MessageApp;
-
-// if(this.state.hidden){
-// 	this.setState({
-// 	hidden: false
-// })
-// }else {
-// this.setState({
-// 	hidden: true
-// })
-// }
