@@ -4,6 +4,7 @@ var Store = {
 		userName:null,
 		chats: null,
 		chatInit: null,
+		myId: null,
 		users: [],
 		userList:[],
 		messageList:[],

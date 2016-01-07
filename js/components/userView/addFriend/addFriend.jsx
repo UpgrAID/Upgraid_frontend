@@ -1,7 +1,7 @@
 var React = require('react');
 var Friendly = require('../../../models/friendly');
 var Friendlies = require('../../../collections/friendlies'); 
-
+var Store = require('../../../store.js')
 var AddFriend = React.createClass({
 
 	_friend: function(e) {
@@ -16,8 +16,8 @@ var AddFriend = React.createClass({
 
 		friend.set({
 
-			from_friend:this.props.myId,
-			to_friend:this.props.userId
+			from_friend:Store.data.uid,
+			to_friend:this.props.theirId
 
 
 		})

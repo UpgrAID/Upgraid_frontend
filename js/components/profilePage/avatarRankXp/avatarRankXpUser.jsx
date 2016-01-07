@@ -6,6 +6,7 @@ var AvatarRankXpUser = React.createClass({
 		
 		return(<div id="avatarRankXpContainerUser">
 				<div id="avatarDivUser">
+				<span id='usernameAvatar'>{this.props.user}</span>
 				<div id="pictureUser"><img className="avatarImgUser" onClick={this._show} src={'../../../assets/avatar'+1+'.png'}/></div>
 					
 					{(this.props.rank=== 1 ? <span id="rank1User">Novice</span> : null)}

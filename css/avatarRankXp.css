@@ -72,15 +72,21 @@
 
 
 #avatarDivUser {
-    width: 285px;
+        width: 285px;
+        position: relative;
+        top: 30px;
+        left: 92px;
+        margin: 0;
+        margin: auto;
+        height: 200px;
+        font-family: 'Press Start 2P', cursive;
+        color: green;
+        z-index: 2;
+}
+
+#usernameView {
     position: absolute;
-    top: 50px;
-    left:450px;
-    margin: 0;
-    margin: auto;
-    height: 200px;
-    font-family: 'Press Start 2P', cursive;
-    color: green;
+    top:100px;
 }
 
 #greeting {
@@ -88,4 +94,24 @@
     color: #AAEDEA;
     padding-left: 48px;
     top: 10px;
+}
+
+#avatarRankXpContainerUser {
+    width: 285px;
+    position: absolute;
+    top: 50px;
+    left:250px;
+    margin: 0;
+    margin: auto;
+    height: 200px;
+    font-family: 'Press Start 2P', cursive;
+    color: green;
+    z-index: 2;
+}
+
+#usernameAvatar{
+        color: #fff;
+        position: relative;
+        left: 22px;
+        bottom: 6px;
 }

@@ -13,7 +13,7 @@
     height: 205px;
     width: 950px;
     left: 250px;
-    z-index: 1;
+    z-index: 0;
     position: absolute;
     background: #001E1F;
     overflow: hidden;

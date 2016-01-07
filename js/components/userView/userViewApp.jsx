@@ -52,7 +52,7 @@ var UserViewApp = React.createClass({
 					router={this.props.router}
 					username={this.props.username}
 					userId={this.props.userId}
-					myId={this.props.myId}
+					theirId={this.props.theirId}
 					friend={this.state.frnds}/>
 
 				<ProfileLeft
@@ -66,12 +66,12 @@ var UserViewApp = React.createClass({
 					name={this.props.pName}
 					avatar={this.props.pAvatar}/>
 
-				<NameTag user={this.props.name}/>
+				
 
 
 				<AvatarRankXpUser
 					rank={this.props.rank}
-
+					user={this.props.name}
 					exp={this.props.exp}/>
 
 				<FriendsUser

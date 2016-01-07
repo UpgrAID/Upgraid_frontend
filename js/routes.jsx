@@ -46,7 +46,6 @@ router.on('route:profile', function(username){
 			var data     = resp.toJSON();
 			var userName = _.extend(Store.data, {userName: data[0].user.username});
 			var posts    = data[0].user.post_set;
-
 			var pRank     = _.extend(Store.data,{rank: data[0].rank});
 			var pExp      = _.extend(Store.data,{exp: data[0].exp});
 			var uid      = _.extend(Store.data,{uid: data[0].user.id});
@@ -141,7 +140,6 @@ router.on('route:userView', function(userId){
 			success: function(resp) {
 			var users=resp.toJSON();
 
-
 			var name = users[0].user.first_name;
 			var fromFriends = (users[0].user.to_friend_set);
 			var toFriends = users[0].user.friend_set;
@@ -167,7 +165,7 @@ router.on('route:userView', function(userId){
 			})
 
 
-
+			var theirId = users[0].user.id;
 			var myId = Store.data.userId;
 			var username = Store.data.userName;
 
@@ -188,7 +186,7 @@ router.on('route:userView', function(userId){
 				router={router}
 				username={username}
 				userId={userId}
-				myId={myId}
+				theirId={theirId}
 				fromFriends={fromFriendsMap}
 				toFriends={toFriendsMap}
 				groups={groups}/>,
