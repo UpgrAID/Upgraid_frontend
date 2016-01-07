@@ -70,6 +70,19 @@
 	display: inline;
 }
 
+
+#avatarDivUser {
+    width: 285px;
+    position: absolute;
+    top: 50px;
+    left:450px;
+    margin: 0;
+    margin: auto;
+    height: 200px;
+    font-family: 'Press Start 2P', cursive;
+    color: green;
+}
+
 #greeting {
     position: relative;
     color: #AAEDEA;
