@@ -4,19 +4,3 @@
 	top:510px;
 	right:0px;
 }
-.groupUser {
-	 height: 45px;
-    background: #1f667e;
-    border: none;
-    border-bottom: 1px solid #7BB;
-    text-align: left;
-    width: 300px;
-    font-size: 1em;
-    color: #fff;
-}
-
-.groupUserButton {
-    display: block;
-    margin:0;
-    
-}

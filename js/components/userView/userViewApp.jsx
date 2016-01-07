@@ -45,45 +45,47 @@ var UserViewApp = React.createClass({
 		});
 	},
 	render:function() {
-		
+
 		return (
 			<div>
-				<NavUserView 
-					router={this.props.router} 
-					username={this.props.username} 
-					userId={this.props.userId} 
-					myId={this.props.myId} 
+				<NavUserView
+					router={this.props.router}
+					username={this.props.username}
+					userId={this.props.userId}
+					myId={this.props.myId}
 					friend={this.state.frnds}/>
 
 				<ProfileLeft
-					username={this.props.username} 
-					rank={this.props.pRank} 
-					exp={this.props.pExp} 
-					goals={this.props.pGoals} 
-					router={this.props.router} 
-					fromFriends={this.props.fromFrProfile} 
-					toFriends={this.props.toFrProfile} 
-					name={this.props.pName} 
+					username={this.props.username}
+					rank={this.props.pRank}
+					exp={this.props.pExp}
+					goals={this.props.pGoals}
+					router={this.props.router}
+					fromFriends={this.props.fromFrProfile}
+					toFriends={this.props.toFrProfile}
+					name={this.props.pName}
 					avatar={this.props.pAvatar}/>
 
 				<NameTag user={this.props.name}/>
 
-				<AvatarRankXp 
-					rank={this.props.rank} 
+				<AvatarRankXp
+					rank={this.props.rank}
 					exp={this.props.exp}/>
 
-				<FriendsUser 
-					fromFriends={this.props.fromFriends} 
-					toFriends={this.props.toFriends} 
+				<FriendsUser
+					theirName = {this.props.name}
+					fromFriends={this.props.fromFriends}
+					toFriends={this.props.toFriends}
 					router={this.props.router}/>
 
-				<GroupsUser 
-					groups={this.props.groups} 
-					goals={this.props.groups}  
+				<GroupsUser
+					theirName={this.props.name}
+					groups={this.props.groups}
+					goals={this.props.groups}
 					router={this.props.router}/>
 
 				<OtherPosts posts={this.props.posts}/>
-				
+
 				<OtherGoals goals={this.props.goals}/>
 
 			</div>

@@ -5,10 +5,10 @@
 	color:#fff;
 }
 #userListContainer {
-	
+
 	text-align: center;
     position: absolute;
-    top: 205px;
+    top: 254px;
     width: 300px;
     position: absolute;
     right: 0px;
@@ -23,12 +23,12 @@
 }
 
 .groupUser {
-	    height: 45px;
+	  height: 45px;
     background: #1f667e;
     border: none;
     border-bottom: 1px solid #7BB;
     text-align: left;
-    width: 250px;
+    width: 300px;
     font-size: 1em;
     color: #fff;
 }

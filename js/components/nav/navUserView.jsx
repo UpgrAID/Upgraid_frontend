@@ -3,6 +3,8 @@ var SearchUsers = require('./searchUsers.jsx')
 var AddFriend = require('../userView/addFriend/addFriend.jsx');
 
 var NavUserView = React.createClass({
+
+	
 	_profileNav: function(e){
 		var router =this.props.router;
 		router.navigate('profile/' + this.props.username, {trigger:true});

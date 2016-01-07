@@ -13,9 +13,17 @@
     height: 205px;
     width: 950px;
     left: 250px;
+    z-index: 1;
     position: absolute;
     background: #001E1F;
     overflow: hidden;
+}
+.header h1 {
+  z-index: 5;
+  color: blue;
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 
 

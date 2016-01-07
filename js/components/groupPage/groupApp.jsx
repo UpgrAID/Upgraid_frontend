@@ -10,12 +10,16 @@ var Store = require('../../store.js');
 var GroupApp = React.createClass({
 	getInitialState: function() {
 		return({
-			groupList: []
+			groupList: [],
+			theme: null
 		})
 	},
-	_groupList: function() {
+	_groupList: function(groupUserList, theme) {
+		console.log(groupUserList);
+		console.log("themex: ", theme);
 		this.setState({
-			groupList: Store.data.userList
+			groupList: groupUserList,
+			theme: theme
 		})
 	},
 	componentWillMount: function() {
@@ -30,19 +34,24 @@ var GroupApp = React.createClass({
 		var that = this;
 		GroupUserList.fetch({
 			success:function(resp) {
-				var users=resp.toJSON();
-				var userData=users[0].user;
-				console.log(userData);
+				var group = resp.toJSON();
+				var theme = group[0].theme;
+				var userData=group[0].user;
 				var users = _.extend(Store.data, {userList: userData});
-				that._groupList();
+				that._groupList(userData, theme);
 
 			}
 		})
 	},
 	render:function() {
+		console.log('t', this.state.theme);
 		return(
 			<div>
-				<NavGroupView router={this.props.router} username={this.props.username}/>
+				<NavGroupView
+					router={this.props.router}
+					groupId={this.props.groupId}
+					theme={this.state.theme}
+					username={this.props.username}/>
 				<ProfileLeft
 					username={this.props.username}
 					rank={this.props.pRank}
