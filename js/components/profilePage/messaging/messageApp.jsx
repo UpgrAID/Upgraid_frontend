@@ -9,7 +9,7 @@ var MessageApp = React.createClass({
 			friend: '',
 			id: null,
 			message: '',
-			hidden: false,
+			hidden: true,
 			newMessage: ''
 		})
 	},
@@ -27,13 +27,8 @@ var MessageApp = React.createClass({
 	},
 	_hideShow: function(){
 		this.setState({
-			hidden: true
+			hidden: !this.state.hidden
 		})
-		if(this.state.hidden){
-			this.setState({
-			hidden: false
-		})
-		}
 	},
 	_send: function(e){
 		e.preventDefault();
@@ -93,3 +88,13 @@ var MessageApp = React.createClass({
 });
 
 module.exports = MessageApp;
+
+// if(this.state.hidden){
+// 	this.setState({
+// 	hidden: false
+// })
+// }else {
+// this.setState({
+// 	hidden: true
+// })
+// }

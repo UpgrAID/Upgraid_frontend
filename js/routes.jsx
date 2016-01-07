@@ -81,30 +81,20 @@ router.on('route:profile', function(username){
 				}
 			});
 
-<<<<<<< HEAD
+
 
 			var pGoals= _.extend(Store.data, {pGoals: incomplete})
 
 			ReactDOM.render(<ProfileApp
 				pRank={Store.data.rank}
-=======
-			var pGoals=_.extend(Store.data,{pGoals: incomplete})
-			
-			ReactDOM.render(<ProfileApp 
-				pRank={Store.data.rank} 
->>>>>>> dea0d23d87eaedeee7875ac86d7759fbb1e93b6b
 				users={Store.data.users}
 				pExp={Store.data.exp}
 				pName={Store.data.name}
 				fromFrProfile={Store.data.fromFrProfile}
 				toFrProfile={Store.data.toFrProfile}
 				userId={Store.data.uid}
-<<<<<<< HEAD
 				pAvatar={Store.data.avatar}
-=======
-				pAvatar={Store.data.avatar}  
 				pGoals={Store.data.pGoals}
->>>>>>> dea0d23d87eaedeee7875ac86d7759fbb1e93b6b
 				router={router}
 				username={username}
 				fromAll={fromFriends}
@@ -182,20 +172,16 @@ router.on('route:userView', function(userId){
 			var username = Store.data.userName;
 
 			ReactDOM.render(<UserViewApp
-<<<<<<< HEAD
-				rank={rank}
-=======
-				pRank={Store.data.rank} 
+				pRank={Store.data.rank}
 				users={Store.data.users}
 				pExp={Store.data.exp}
 				pName={Store.data.name}
 				fromFrProfile={Store.data.fromFrProfile}
 				toFrProfile={Store.data.toFrProfile}
 				userId={Store.data.uid}
-				pAvatar={Store.data.avatar}  
-				pGoals={Store.data.pGoals}  
-				rank={rank} 
->>>>>>> dea0d23d87eaedeee7875ac86d7759fbb1e93b6b
+				pAvatar={Store.data.avatar}
+				pGoals={Store.data.pGoals}
+				rank={rank}
 				exp={exp} posts={post}
 				goals={goalsMapped}
 				name={name}
@@ -297,20 +283,16 @@ $('#chat').show()
 				var userList = Store.data.userList;
 
 				ReactDOM.render(<GroupApp
-<<<<<<< HEAD
-				posts={posts}
-=======
-				pRank={Store.data.rank} 
+				pRank={Store.data.rank}
 				users={Store.data.users}
 				pExp={Store.data.exp}
 				pName={Store.data.name}
 				fromFrProfile={Store.data.fromFrProfile}
 				toFrProfile={Store.data.toFrProfile}
 				userId={Store.data.uid}
-				pAvatar={Store.data.avatar}  
-				pGoals={Store.data.pGoals} 
-				posts={posts} 
->>>>>>> dea0d23d87eaedeee7875ac86d7759fbb1e93b6b
+				pAvatar={Store.data.avatar}
+				pGoals={Store.data.pGoals}
+				posts={posts}
 				groupId={groupId}
 				router={router}
 				channel={channel}

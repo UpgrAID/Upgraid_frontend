@@ -140,5 +140,7 @@
 }
 
 #pleaseSelect {
-  margin:0;
+  margin-left: 106px;
+  margin-top: 5px;
+  font-size: 0.8rem;
 }

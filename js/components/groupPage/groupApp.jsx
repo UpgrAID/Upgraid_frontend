@@ -32,6 +32,7 @@ var GroupApp = React.createClass({
 			success:function(resp) {
 				var users=resp.toJSON();
 				var userData=users[0].user;
+				console.log(userData);
 				var users = _.extend(Store.data, {userList: userData});
 				that._groupList();
 
@@ -42,15 +43,15 @@ var GroupApp = React.createClass({
 		return(
 			<div>
 				<NavGroupView router={this.props.router} username={this.props.username}/>
-				<ProfileLeft 
-					username={this.props.username} 
-					rank={this.props.pRank} 
-					exp={this.props.pExp} 
-					goals={this.props.pGoals} 
-					router={this.props.router} 
-					fromFriends={this.props.fromFrProfile} 
-					toFriends={this.props.toFrProfile} 
-					name={this.props.pName} 
+				<ProfileLeft
+					username={this.props.username}
+					rank={this.props.pRank}
+					exp={this.props.pExp}
+					goals={this.props.pGoals}
+					router={this.props.router}
+					fromFriends={this.props.fromFrProfile}
+					toFriends={this.props.toFrProfile}
+					name={this.props.pName}
 					avatar={this.props.pAvatar}/>
 				<PostListApp posts={this.props.posts} groupId = {this.props.groupId} username={this.props.username}/>
 				<UserList groupList={this.state.groupList} router={this.props.router}/>

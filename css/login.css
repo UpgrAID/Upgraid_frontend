@@ -26,12 +26,14 @@
 	margin-right: 10px;
 	margin-bottom: 10px;
 	font-size: 0.9rem;
+	letter-spacing: 0.04em;
 	color:#fff;
 }
 
 #loginForm {
 	display: inline-block;
     width: 525px;
+		margin-left: 43px;
 }
 
 .inputWindow {
@@ -97,8 +99,8 @@
     border: 1px solid #F7F7F7;
     padding: 10px;
     border-radius: 5px;
-    top: 142px;
-    left: 112px;
+    top: 147px;
+    left: 133px;
 
 }
 
@@ -123,18 +125,21 @@
 #bigTitle {
 	position: absolute;
   top: 220px;
-	left: 500px;
+	left: 475px;
   width: 400px;
   font-size: 8rem;
+	letter-spacing: 0.04em;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   color: #26447A;
 }
 #splashText1 {
 	color: white;
+	letter-spacing: 0.04em;
 	padding-top: 60px;
 	margin-left: 50px;
 }
 #splashText2 {
 	color: white;
+	letter-spacing: 0.04em;
 	margin-left: 100px;
 }
