@@ -10,12 +10,15 @@
     background-color: #033A4C;
 }
 .header {
-    height: 155px;
+    height: 205px;
     width: 950px;
     left: 250px;
     position: absolute;
     background: #001E1F;
+    overflow: hidden;
 }
+
+
 
 #navContain {
   width:1150px;

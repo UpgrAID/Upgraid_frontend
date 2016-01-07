@@ -82,7 +82,7 @@ router.on('route:profile', function(username){
 			});
 
 
-			var pGoals=_extend(Store.data,{pGoals: incomplete})
+			var pGoals= _.extend(Store.data, {pGoals: incomplete})
 
 			ReactDOM.render(<ProfileApp
 				pRank={Store.data.rank}

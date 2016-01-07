@@ -51,7 +51,7 @@ var Post = React.createClass({
 							style={{background: '#AAEDEA'}}
       				title={this.props.author + ' Posted: ' + this.state.postedAt}
       				subtitle={this.props.title}
-      				avatar="../../../../assets/avatar.png"/>
+      				avatar="../../../../assets/avatar1.png"/>
 						<CardText>{this.props.description}</CardText>
 				</Card>
 				<CommentApp postId = {this.props.postId} comments={this.props.comments} username={this.props.username} />

@@ -88,7 +88,7 @@
     position: absolute;
     left: 250px;
     /* margin-left: 20.5%; */
-    top: 205px;
+    top: 255px;
     display: inline-block;
 }
 
@@ -178,5 +178,3 @@ textarea {
 .profileBtnsDiv {
 	width:571px;
 }
-
-

@@ -16,7 +16,13 @@ var Store = {
 		name: null,
 		fromFrProfile: null,
 		toFrProfile: null,
-		pGoals: null
+		pGoals: null,
+		profileAvatar: {
+				user1: {
+					username: 'blah',
+					avatar: 1
+				}
+		}
 	}
 };
 

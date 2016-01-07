@@ -81,7 +81,7 @@ function setToken(token) {
 
 	var _sync = Backbone.sync;
 	Backbone.sync = function(post,model,options) {
-<<<<<<< HEAD
+
 		options.headers = {
 			'Authorization': 'Token ' + token,
 		};
@@ -89,18 +89,3 @@ function setToken(token) {
 		return _sync.call(this,post,model,options);
 	};
 };
-=======
-
-		options.headers = {
-			'Authorization': 'Token ' + token,
-		};
-
-
-
-
-		return _sync.call(this,post,model,options);
-	};
-}
-
-
->>>>>>> 5fdbe71162abf4b009c76d7df309d6b621cf599d

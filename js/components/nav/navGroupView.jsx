@@ -17,7 +17,7 @@ var NavUserView = React.createClass({
 
 					</div>
 
-				<div className="header"></div>
+				<div className="header"><img src="../../assets/group-theme-2.jpg" /></div>
 
 				</div>
 				)
