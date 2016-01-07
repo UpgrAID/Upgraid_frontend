@@ -7,7 +7,7 @@ var OtherGoals = React.createClass({
 			return(<p className="otherGoalsP" key={obj.id}>{obj.title}</p>)
 	})
 		return(<div id="otherGoalsContainer">
-			<h2 id="otherGoals">Goals</h2>
+			<h2 id="otherGoals">Their Goals</h2>
 			{test}
 			</div>)
 	}

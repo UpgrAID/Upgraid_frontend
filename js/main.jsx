@@ -7,7 +7,9 @@ require('../css/navUserView.css');
 require('../css/groupHome.css');
 require('../css/postListApp.css');
 require('../css/friends.css');
+require('../css/friendsOther.css');
 require('../css/groups.css');
+require('../css/groupsOther.css');
 require('../css/comment.css')
 require('../css/addFriend.css');
 require('../css/userList.css');

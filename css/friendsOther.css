@@ -1,0 +1,34 @@
+#friendsContainerUser {
+    height: 352px;
+    width: 300px;
+    position: absolute;
+    top: 420px;
+    right: 0px;
+    text-align: center;
+    margin-bottom: 10px;
+    background: #fff;
+}
+
+.friendUser:hover {
+	background: #004a72;
+}
+
+#listContainUser {
+	height: 292px;
+    overflow: scroll;
+}
+
+#friendsUlUser {
+	padding: 0;
+	margin:0;
+}
+
+#friendsHeaderUser {
+        margin: 0;
+        background: #1e586e;
+        color: #fff;
+}
+
+.friendUser {
+    width:301px;
+}
