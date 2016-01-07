@@ -6,7 +6,7 @@ var NameTag = require('./nameTag.jsx');
 var NavUserView = require('../../components/nav/navUserView.jsx');
 var Friendly = require('../../models/friendly');
 var AddFriend = require('../userView/addFriend/addFriend.jsx');
-var AvatarRankXp = require('../../components/profilePage/avatarRankXp/avatarRankXp.jsx');
+var AvatarRankXpUser = require('../../components/profilePage/avatarRankXp/avatarRankXpUser.jsx');
 var FriendsUser= require('./friendsUserView/friendsUser.jsx');
 var GroupsUser = require('./groupsUserView/groupsUser.jsx')
 var ProfileLeft = require('../profilePage/profileLeft.jsx');
@@ -68,8 +68,10 @@ var UserViewApp = React.createClass({
 
 				<NameTag user={this.props.name}/>
 
-				<AvatarRankXp
+
+				<AvatarRankXpUser
 					rank={this.props.rank}
+
 					exp={this.props.exp}/>
 
 				<FriendsUser

@@ -48,7 +48,8 @@ var Post = React.createClass({
 			<div className="postContainer">
 				<Card>
 					<CardHeader
-							style={{background: '#AAEDEA'}}
+							style={{background: '#AAEDEA',
+									width: '570px'}}
       				title={this.props.author + ' Posted: ' + this.state.postedAt}
       				subtitle={this.props.title}
       				avatar="../../../../assets/avatar1.png"/>
@@ -64,6 +65,3 @@ var Post = React.createClass({
 module.exports = Post;
 
 
-// <p className="postUser">{this.props.user.username}:</p>
-// <p className="postTitle">{this.props.title}</p>
-// <p className="postDescription">{this.props.description}</p>

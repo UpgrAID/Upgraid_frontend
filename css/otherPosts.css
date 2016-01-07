@@ -3,6 +3,7 @@
     margin: 0;
     padding-top: 16px;
     padding-bottom: 16px;
+    padding-left: 8px;
 }
 
 .otherPostDescription {
@@ -10,14 +11,14 @@
     margin: 0;
     padding-top: 10px;
     padding-bottom: 2px;
+    padding-left: 8px;
 }
 #otherPostsContainer {
-	width: 647px;
+	width: 649px;
     height: 610px;
     overflow: scroll;
-    left: 253px;
-    top: 225px;
+    left: 251px;
+    top: 205px;
     position: absolute;
-    background: #fff;
-
+    background: #fdfdfd;
 }

@@ -1,6 +1,11 @@
 #infoContain {
-	left:273px;
-	width:500px;
-	position: absolute;
-	top:240px;
+	left: 278px;
+    width: 500px;
+    position: absolute;
+    top: 240px;
+    z-index: 2;
+}
+
+#infoContain p {
+	font-size:22px;
 }

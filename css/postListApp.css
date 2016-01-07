@@ -1,15 +1,18 @@
 #profilePostMaster {
-	width: 571px;
-   	/*height:609px;*/
-   	height:507px;
-    background: #f4f4f4;
-    position: absolute;
-    left: 251px;
-    /* margin-left: 20.5%; */
-    /*top: 205px;*/
-    top: 316px;
-    display: inline-block;
-
+		width: 571px;
+	    height: 560px;
+	    background: #fdfdfd;
+	    position: absolute;
+	    left: 251px;
+	    top: 255px;
+	    display: inline-block;
+	    padding-top: 40px;
+	    box-sizing: border-box;
+	    border-right: 1px solid black;
+	
+}
+#postContainer {
+	border-right: 1px solid #000;
 }
 
 .inputDesContain {
@@ -36,7 +39,7 @@
 	width: 518px;
 	height: 30px;
 	outline: none;
-	border: 1px solid #f7f7f7;
+	border: none;
 	background: #1d5d76;
 	color: #fff;
 	position: relative;
@@ -54,8 +57,8 @@
     /* padding-right: 75px; */
     padding-top: 15px;
     border: none;
-    /* border: 1px solid #888; */
-    font-size: 0.7rem;
+     border: 1px solid #888; 
+    font-size: 0.9rem;
     border-radius: 3px;
     margin: auto;
     left: 15px;
@@ -69,12 +72,12 @@
     margin: auto;
     resize: none;
     border: 1px solid #888;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     border-radius: 5px;
 }
 #postMaster {
 	width:571px;
-	height:450px;
+	height:427px;
 	overflow:scroll;
 	border:1px solid #f7f7f7;
 	position: relative;
@@ -82,11 +85,12 @@
 }
 #postInput {
 	width: 571px;
-    height: 609px;
+    height: 558px;
     background: #fff;
-    border: 1px solid black;
+    border-right:1px solid #000;
+    /* border: 1px solid black; */
     position: absolute;
-    left: 250px;
+    left: 251px;
     /* margin-left: 20.5%; */
     top: 255px;
     display: inline-block;
@@ -97,59 +101,33 @@
 	float: left;
 	height:30px;
 	outline:none;
-	border:1px solid #f7f7f7;
+	border:none;
 	background: #006d72;
 	color:#fff;
 }
 #titleInput {
-	width:560px;
+	width: 564px;
 	height: 30px;
 	display: block;
-	font-size: 0.7rem;
-	padding-top:0;
+	font-size: 0.9rem;
+	padding-top: 0;
 	padding-left: 6px;
 	padding-bottom: 15px;
+	border: none;
+	border-bottom: 1px solid #888;
 }
 #descriptionInput {
-	width:560px;
-	height:50px;
-	display: block;
-	font-size: 0.7rem;
-	padding-top: 2px;
-	padding-left: 6px;
-}
-
-.commentBox {
-	border-bottom: 1px solid #888;
-	padding: 5px 0;
-	margin: 0;
-	text-indent: 10px;
-	background: #f7f7f7;
+	width: 561px;
+    height: 50px;
+    display: block;
+    font-size: 0.9rem;
+    padding-top: 2px;
+    padding-left: 6px;
+    resize: none;
+    border: none;
 
 }
 
-.commentBox:last-child() {
-	border-bottom:none;
-}
-.commenter {
-	font-size: 10px;
-	position: relative;
-	top:5px;
-	float: left;
-	color:#006d72;
-}
-.commentHeader {
-	text-align: left;
-	margin-top: 10px;
-	margin-bottom: 20px;
-}
-.commentField {
-	display: block;
-	width:100%;
-	height: 30px;
-	font-size: 0.8rem;
-
-}
 .postUser {
 	color: #006d72;
 	width:505px;

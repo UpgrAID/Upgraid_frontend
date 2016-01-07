@@ -23,17 +23,36 @@
 }
 
 .groupUser {
-	  height: 45px;
+
+	height: 45px;
     background: #1f667e;
     border: none;
     border-bottom: 1px solid #7BB;
     text-align: left;
+    padding-left: 8px;
     width: 300px;
     font-size: 1em;
     color: #fff;
 }
 
 .groupUser:hover {
+	background: #004a72;
+	color:#fff;
+}
+
+.userListBtn {
+    height: 45px;
+    background: #1f667e;
+    border: none;
+    border-bottom: 1px solid #7BB;
+    text-align: left;
+    padding-left: 8px;
+    width: 292px;
+    font-size: 1em;
+    color: #fff;
+}
+
+.userListBtn:hover {
 	background: #004a72;
 	color:#fff;
 }
