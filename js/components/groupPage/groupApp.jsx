@@ -11,12 +11,12 @@ var GroupApp = React.createClass({
 	getInitialState: function() {
 		return({
 			groupList: [],
-			theme: null
+			theme: null,
+
 		})
 	},
 	_groupList: function(groupUserList, theme) {
 		console.log(groupUserList);
-		console.log("themex: ", theme);
 		this.setState({
 			groupList: groupUserList,
 			theme: theme

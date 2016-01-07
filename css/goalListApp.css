@@ -127,8 +127,8 @@
 }
 
 #radioContain {
-    margin:auto;
-    width:227px;
+  margin: auto;
+    width:280px;
     position: relative;
     top: -7px;
 }
@@ -140,7 +140,7 @@
 }
 
 #pleaseSelect {
-  margin-left: 106px;
+  margin-left: 125px;
   margin-top: 5px;
   font-size: 0.8rem;
 }

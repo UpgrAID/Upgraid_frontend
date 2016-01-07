@@ -69,7 +69,7 @@ var GoalInput = React.createClass({
 		return(
 			<form id="setGoal" method='POST' onSubmit={this._submit}>
 
-			<input id="goalInput" placeholder='Make a goal to accomplish...' onChange={this._onChange} value={this.state.value}/>
+			<input id="goalInput" placeholder='Set a goal to accomplish...' onChange={this._onChange} value={this.state.value}/>
 
 			<div id="radioContain">
 				<input type='radio' className='theme' name='category' onClick={this._setValue} checked={this.state.radio}value='1'/>
@@ -78,8 +78,8 @@ var GoalInput = React.createClass({
 				<label className="selectCategory">Bad Habits</label>
 				<input type='radio' name="category" className='theme' onClick={this._setValue} value='3'/>
 				<label className="selectCategory">Health/Fitness</label>
-			</div>	
-				<p id="pleaseSelect">Please Select a Category</p>
+			</div>
+				<div id="pleaseSelect">Please Select a Category</div>
 			<button id="goalSubmit">Submit</button>
 
 			</form>)

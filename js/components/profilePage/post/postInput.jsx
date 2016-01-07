@@ -40,10 +40,10 @@ var PostInput = React.createClass({
 
 	render:function() {
 		return(
-			<form id="newPostInput" onSubmit={this._submit}>					
+			<form id="newPostInput" onSubmit={this._submit}>
 					<input id="titleInput" placeholder="Add New Post - Title"/>
 					<textarea id="descriptionInput" placeholder="Add Description"></textarea>
-					<button  id="postBtn" type="submit" onSubmit={this._submit}>Submit</button>
+					<button  id="postBtn" type="submit" onSubmit={this._submit}>Submit Post</button>
 			</form>
 			  )
 		}

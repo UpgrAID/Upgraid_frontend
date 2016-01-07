@@ -27,7 +27,7 @@ var NavGroupView = React.createClass({
 						 	<h1 className="groupHeader">Bad Habits: Group {this.props.groupId}</h1>
 						 </div> : null)}
 					{(this.props.theme=== 3 ?
-						 <div className="header"><img src="../../assets/group-theme-3.jpg" />
+						 <div className="header"><img src="../../assets/group-theme-3.png" />
 						 	<h1 className="groupHeader">Health & Fitness: Group {this.props.groupId}</h1>
 						 </div> : null)}
 
