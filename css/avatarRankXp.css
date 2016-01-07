@@ -1,12 +1,20 @@
 #avatarDiv {
-	width: 255px;
+	width: 150px;
     position: relative;
     top: 20px;
-    left: 50px;
+    /* left: 50px; */
     margin: 0;
+    margin: auto;
     height: 200px;
     font-family: 'Press Start 2P', cursive;
     color: green;
+}
+
+.avatarImg {
+    
+    position: relative;
+    left: 11px;
+    top:12px;
 }
 #rank1 {
 	text-align: left;
@@ -37,18 +45,34 @@
 }
 
 #avatarUl {
-	margin:0;
+	margin: 0;
+    height: 175px;
 }
 
 #avatarModalHeader {
 	z-index: 2;
+    text-align: center;
 }
 
 #avatarSubmit {
-	z-index: 2;
-	width:20px;
+    z-index: 2;
+    width: 62px;
+    height: 40px;
+    color: #fff;
+    background: #27556C;
+    outline: 0px;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
-
 .avatars {
 	display: inline;
+}
+
+#greeting {
+    position: relative;
+    color: #AAEDEA;
+    padding-left: 48px;
+    top: 10px;
 }

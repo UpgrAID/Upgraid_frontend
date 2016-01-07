@@ -28,7 +28,7 @@ var AvatarRankXp = React.createClass({
 		
 		return(<div id="avatarRankXpContainer">
 				<div id="avatarDiv">
-				<div id="picture"><img onClick={this._show} src={'../../../assets/avatar'+this.state.avatar+'.png'}/></div>
+				<div id="picture"><img className="avatarImg" onClick={this._show} src={'../../../assets/avatar'+this.state.avatar+'.png'}/></div>
 					
 					{(this.props.rank=== 1 ? <span id="rank1">Novice</span> : null)}
 					{(this.props.rank=== 2 ? <span id="rank2">JourneyMan</span> : null)}

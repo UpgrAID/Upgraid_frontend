@@ -1,16 +1,55 @@
-.commenter {
-	font-size: 0.7rem;
-}
 
 .commentBox {
-	height: 30px;
-	font-size: 0.6rem;
-	padding-top: 8px;
-	position: relative;
+    border-bottom: 1px solid #888;
+    padding: 5px 0;
+    margin: 0;
+    text-indent: 10px;
+    background: #f7f7f7;
+    width: 570px;
+    position: relative;
+
 }
 
-.likeBtn {
-	position: absolute;
+.commentBox:last-child() {
+    border-bottom:none;
+}
+.commenter {
+    font-size: 10px;
+    position: relative;
+    top:5px;
+    float: left;
+    color:#006d72;
+}
+.commentHeader {
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.commentField {
+    display: block;
+    width: 564px;
+    height: 30px;
+    font-size: 0.8rem;
+
+}
+
+.likeBtnSpan {
+    position: absolute;
+    z-index: 2;
     right: 7px;
-    top: 12px;
+    top: 1px;
+}
+.likeBtn {
+	color: #fff;
+    width: 38px;
+    height: 26px;
+    background: #033A4C;
+    outline: none;
+    border: 1px solid #f7f7f7;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.likeCount {
+	padding-right: 3px;
 }

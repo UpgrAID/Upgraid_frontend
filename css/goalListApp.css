@@ -1,5 +1,5 @@
 #goalContainer {
-  width: 376px;
+  width: 377px;
   height: 280px;
   border-top: 1px solid black;
 }
@@ -27,7 +27,7 @@
   margin:0;
   width: 376px;
   height:149px;
-  background: #fff;
+  background: #fdfdfd;
 	padding:0;
   position: relative;
   float: left;
@@ -39,7 +39,7 @@
   height: 40px;
   padding-top: 10px;
   font-size: 18px;
-  background: #fff;
+  background: #fdfdfd;
   position: relative;
   border-bottom: 1px solid #888;
 }

@@ -16,13 +16,4 @@
 .title {
 	float: left;
 }
-.groupUser {
-	background: #006d72;
-	border-bottom: 1px solid #888;
-	padding-left: 5px;
-	color:#fff;
-}
-.groupUser:hover {
-	background: lightBlue;
-	color: blue;
-}
+

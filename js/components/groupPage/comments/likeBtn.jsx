@@ -46,7 +46,7 @@ var LikeBtn = React.createClass({
 	},
 	render:function(){
 		
-		return(<button onClick={this._likeSubmit}>
+		return(<button onClick={this._likeSubmit} className='likeBtn'>
 				{(this.state.count=== 0 ? null : 
 				
 				<span className='likeCount' ref='count' value={this.state.count}>{this.state.count}</span>)}

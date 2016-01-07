@@ -10,7 +10,7 @@ var User = React.createClass({
 		var props=this.props;
 			return(
 				<div>
-					<li className="groupUser" value={this.props.id} onClick={this._profileNav}>{this.props.username}</li>
+					<li className="userListBtn" value={this.props.id} onClick={this._profileNav}>{this.props.username}</li>
 				</div>
 			)
 

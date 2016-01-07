@@ -17,19 +17,18 @@
 }
 
 #friendsContainer {
-    height: 352px;
+    height: 351px;
     position: relative;
 
-    background: #fff;
+    background: #eff;
     text-align: center;
-    margin-bottom: 10px;
 }
 /*#setGoal {
 	margin:0;
 }*/
 
 #listContain {
-	height: 292px;
+	height: 317px;
     overflow: scroll;
 }
 
