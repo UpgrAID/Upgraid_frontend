@@ -22,7 +22,7 @@ var SearchUsers = React.createClass({
 		var props=this.props;
 		return(
 			<div>
-				<input id="searchUsers" ref="searchInput" placeholder="Search Users..." onClick={this._look} onChange={this._doSearch} value={this.props.query}/>
+				<input className="searchUsers" ref="searchInput" placeholder="Search Users..." onClick={this._look} onChange={this._doSearch} value={this.props.query}/>
 				<div id="userModal">
 					<span id="closeModal" onClick={this._close}></span>
 					<div>
