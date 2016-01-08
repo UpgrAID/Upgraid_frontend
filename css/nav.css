@@ -9,6 +9,17 @@
     height: 50px;
     background-color: #033A4C;
 }
+
+#navContainerGroup {
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    /*width: 1075px;*/
+    margin: auto;
+    position: relative;
+    height: 50px;
+    background-color: #033A4C;
+}
 .header {
     height: 205px;
     width: 950px;
@@ -37,15 +48,50 @@
     position: relative;
     top: 5px;
 }
+#navUlUser {
+    margin: 0;
+    list-style: none;
+    position: relative;
+    top: 5px;
+}
+#navUlGroup{
+    margin: 0;
+    list-style: none;
+    position: relative;
+    top: 5px;
+}
 #navUl .mainLi {
-	    color: #fff;
-      display: inline-block;
-      font-size: 18px;
-      margin-left: 54px;
-      margin-right: 25px;
+	  color: #fff;
+        display: inline-block;
+        font-size: 18px;
+        margin-left: 54px;
+        margin-right: 25px;
+        position: relative;
+        top: 8px;
+
+}
+#navUlUser .mainLi {
+    color: #fff;
+        display: inline-block;
+        font-size: 18px;
+        margin-left: 54px;
+        margin-right: 25px;
+        position: relative;
+        top: 8px;
+
+}
+#navUlGroup .mainLi {
+   color: #fff;
+       display: inline-block;
+       font-size: 18px;
+       margin-left: 54px;
+       margin-right: 25px;
+       position: relative;
+       top: 8px;
+
 }
 
-.mailLi:hover .maniLi {
+.mailLi:hover .mainLi {
   color:#34BAD9;
   cursor: pointer;
 }
@@ -58,6 +104,33 @@
     top:4px;
     left: 0;
     padding-right: 5px;
+}
+#navUlGroup .logo {
+    margin-left: 15px;
+    display: inline-block;
+    color: #34BAD9;
+    position: absolute;
+    font-size: 22px;
+    top:4px;
+    left: 0;
+    padding-right: 5px;
+}
+#navUlUser .logo {
+    margin-left: 15px;
+    display: inline-block;
+    color: #34BAD9;
+    position: absolute;
+    font-size: 22px;
+    top:4px;
+    left: 0;
+    padding-right: 5px;
+}
+
+#navUlGroup {
+  margin: 0;
+  list-style: none;
+  position: relative;
+  top: 5px;
 }
 #navUl .searchBar {
   display: inline-block;
@@ -91,10 +164,11 @@
   display: block;
 }
 
-#searchUsers {
+.searchUsers {
     width: 156px;
     padding-top: 8px;
-    position: relative;
+    position: absolute;
+    left: 170px;
     top: 4px;
     border-radius: 2px;
     border: 1px solid #f7f7f7;

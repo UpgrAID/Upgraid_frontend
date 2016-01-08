@@ -3,7 +3,7 @@ var Quote = require('./quote.jsx');
 var quoteStore = require('../../quotes/quotes.js')
 var MainNav = require('./mainNav.jsx');
 var SearchUsers = require('./searchUsers.jsx');
-
+var FriendRequest = require('../profilePage/friends/friendRequest.jsx')
 var Nav = React.createClass({
 
 	getInitialState: function() {
