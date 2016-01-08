@@ -2,18 +2,16 @@ var React = require('react');
 
 
 var PusherChat = React.createClass({
-	
+
 	getInitialState: function() {
 		return({
 			newChat: this.props.chat,
-			hidden: false
+			hidden: true
 				})
 	},
 	_hide:function(){
-		this.setState({hidden:true});
-		if(this.state.hidden===true){
-			this.setState({hidden:false})
-		}
+		this.setState({hidden: !this.state.hidden});
+
 	},
 	_submit: function(e) {
 		e.preventDefault();
@@ -40,7 +38,7 @@ var PusherChat = React.createClass({
 				$('#chatInput').val('')
 			}
 		})
-		
+
 	},
 	render: function() {
 
@@ -55,7 +53,7 @@ var PusherChat = React.createClass({
 							return(<p className="message" key={obj.id}><span className="userNameChat">{obj.user}</span>{obj.message}</p>)
 						})}
 							</div>
-					
+
 							<form onSubmit={this._submit}>
 								<input id="chatInput" placeholder="Chat here"/>
 							</form>
