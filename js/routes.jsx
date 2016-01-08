@@ -153,11 +153,13 @@ router.on('route:userView', function(userId){
 					return true
 				}
 			});
-			var groups=(users[0].user.group_set);
+			
 			var post= users[0].user.post_set;
 			var rank = users[0].rank;
 			var exp = users[0].exp;
 			var goals = users[0].user.goal_set;
+			var groupsUser = users[0].user.goal_set;
+			console.log('groupsUser',groupsUser)
 			var goalsMapped = goals.filter(function(obj){
 				if(obj.completed===false) {
 					return true;
@@ -182,14 +184,14 @@ router.on('route:userView', function(userId){
 				rank={rank}
 				exp={exp} posts={post}
 				goals={goalsMapped}
+				groupsUser={groupsUser}
 				name={name}
 				router={router}
 				username={username}
 				userId={userId}
 				theirId={theirId}
 				fromFriends={fromFriendsMap}
-				toFriends={toFriendsMap}
-				groups={groups}/>,
+				toFriends={toFriendsMap}/>,
 				document.getElementById('container'));
 
 

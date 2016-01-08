@@ -28,7 +28,7 @@ var Badges = React.createClass({
 },
 	render:function() {
 		return(<div id="badgeContainer">
-				<p id="badgeHeader">Badges</p>
+				<h2 id="badgeHeader">Badges</h2>
 				<BadgeCount data={this.state.data}/>
 			</div>)
 	}

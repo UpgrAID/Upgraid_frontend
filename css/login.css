@@ -5,7 +5,7 @@
 }
 
 #loginOnly {
-	width: 704px;
+	width: 250px;
   margin-left: 100px;
   position: relative;
 }
@@ -32,7 +32,7 @@
 
 #loginForm {
 	display: inline-block;
-    width: 525px;
+    width: 215px;
 		margin-left: 43px;
 }
 
@@ -78,7 +78,7 @@
 #submitLog {
 	display: inline-block;
 	color:#fff;
-	background: #00F5CD;
+	background: #3b68ab;
 	outline:none;
 	border:1px solid #F7F7F7;
 	padding:10px;
@@ -92,16 +92,15 @@
 
 #registerBtn {
 	display: block;
-    position: absolute;
-    color: #fff;
-    background: #00F5CD;
-    outline: none;
-    border: 1px solid #F7F7F7;
-    padding: 10px;
-    border-radius: 5px;
-    top: 147px;
-    left: 133px;
-
+	position: absolute;
+	color: #fff;
+	background: #3b68ab;
+	outline: none;
+	border: 1px solid #F7F7F7;
+	padding: 10px;
+	border-radius: 5px;
+	bottom: -12px;
+	right: 2px;
 }
 
 #registerBtn:hover {

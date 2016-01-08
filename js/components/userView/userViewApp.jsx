@@ -82,8 +82,8 @@ var UserViewApp = React.createClass({
 
 				<GroupsUser
 					theirName={this.props.name}
-					groups={this.props.groups}
-					goals={this.props.groups}
+					groupsUser={this.props.groupsUser}
+					
 					router={this.props.router}/>
 
 				<OtherPosts posts={this.props.posts} theirName={this.props.name}/>

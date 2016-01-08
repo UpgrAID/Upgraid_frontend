@@ -84,7 +84,7 @@
 	var Goals = __webpack_require__(228);
 	var Router = __webpack_require__(284);
 	var AvatarRankXp = __webpack_require__(298);
-	var Pusher = __webpack_require__(360);
+	var Pusher = __webpack_require__(361);
 
 
 /***/ },
@@ -122,7 +122,7 @@
 
 
 	// module
-	exports.push([module.id, "#wrapper {\n\twidth: 100%;\n\theight: 100%;\n\n}\n\n#loginOnly {\n\twidth: 704px;\n  margin-left: 100px;\n  position: relative;\n}\n\n#logoSpan {\n\tposition: absolute;\n    margin-top: 15px;\n    margin-right: 50px;\n    margin-left: 5px;\n    color: white;\n    font-size: 1.2rem;\n}\n\n#loginSpan {\n\tdisplay: inline-block;\n\tmargin-left: 3px;\n\tmargin-top: 15px;\n\tmargin-right: 10px;\n\tmargin-bottom: 10px;\n\tfont-size: 0.9rem;\n\tletter-spacing: 0.04em;\n\tcolor:#fff;\n}\n\n#loginForm {\n\tdisplay: inline-block;\n    width: 525px;\n\t\tmargin-left: 43px;\n}\n\n.inputWindow {\n\tdisplay: block;\n\tmargin-right: 20px;\n\tmargin-bottom: 10px;\n\twidth: 200px;\n\theight: 40px;\n\tbackground: white;\n\tborder-radius: 5px;\n}\n\n.loginInput {\n\twidth:200px;\n\theight:35px;\n\toutline: none;\n\tfont-size: 0.8rem;\n\tborder-radius: 5px;\n}\n\n#inputContainer {\n\tdisplay: inline-block;\n\twidth: 700px;\n\theight: 40px;\n\ttop:40px;\n}\n\n#user {\n\tposition: absolute;\n\ttop:-10px;\n\tleft:10px;\n}\n\n#pass {\n\tposition: absolute;\n\ttop:-10px;\n\tleft:10px;\n}\n.valContain {\n\tposition: relative;\n}\n#submitLog {\n\tdisplay: inline-block;\n\tcolor:#fff;\n\tbackground: #00F5CD;\n\toutline:none;\n\tborder:1px solid #F7F7F7;\n\tpadding:10px;\n\tborder-radius:5px;\n\tmargin-right: 10px;\n}\n\n#submitLog:hover {\n\tbackground: #33A1FF;\n}\n\n#registerBtn {\n\tdisplay: block;\n    position: absolute;\n    color: #fff;\n    background: #00F5CD;\n    outline: none;\n    border: 1px solid #F7F7F7;\n    padding: 10px;\n    border-radius: 5px;\n    top: 147px;\n    left: 133px;\n\n}\n\n#registerBtn:hover {\n\tbackground: #33A1FF;\n}\n\n#bigPic {\n\tbackground-image: url(" + __webpack_require__(4) + ");\n\tmargin-top: -30px;\n\tbackground-repeat: no-repeat;\n\tbackground-size: cover;\n\twidth: 100%;\n\theight: 1000px;\n}\n#home-wrapper {\n\tposition: relative;\n\twidth: 60%;\n\tmargin: auto;\n\ttext-align: center;\n}\n#bigTitle {\n\tposition: absolute;\n  top: 220px;\n\tleft: 475px;\n  width: 400px;\n  font-size: 8rem;\n\tletter-spacing: 0.04em;\n  font-family: 'Yanone Kaffeesatz', sans-serif;\n  color: #26447A;\n}\n#splashText1 {\n\tcolor: white;\n\tletter-spacing: 0.04em;\n\tpadding-top: 60px;\n\tmargin-left: 50px;\n}\n#splashText2 {\n\tcolor: white;\n\tletter-spacing: 0.04em;\n\tmargin-left: 100px;\n}\n", ""]);
+	exports.push([module.id, "#wrapper {\n\twidth: 100%;\n\theight: 100%;\n\n}\n\n#loginOnly {\n\twidth: 250px;\n  margin-left: 100px;\n  position: relative;\n}\n\n#logoSpan {\n\tposition: absolute;\n    margin-top: 15px;\n    margin-right: 50px;\n    margin-left: 5px;\n    color: white;\n    font-size: 1.2rem;\n}\n\n#loginSpan {\n\tdisplay: inline-block;\n\tmargin-left: 3px;\n\tmargin-top: 15px;\n\tmargin-right: 10px;\n\tmargin-bottom: 10px;\n\tfont-size: 0.9rem;\n\tletter-spacing: 0.04em;\n\tcolor:#fff;\n}\n\n#loginForm {\n\tdisplay: inline-block;\n    width: 215px;\n\t\tmargin-left: 43px;\n}\n\n.inputWindow {\n\tdisplay: block;\n\tmargin-right: 20px;\n\tmargin-bottom: 10px;\n\twidth: 200px;\n\theight: 40px;\n\tbackground: white;\n\tborder-radius: 5px;\n}\n\n.loginInput {\n\twidth:200px;\n\theight:35px;\n\toutline: none;\n\tfont-size: 0.8rem;\n\tborder-radius: 5px;\n}\n\n#inputContainer {\n\tdisplay: inline-block;\n\twidth: 700px;\n\theight: 40px;\n\ttop:40px;\n}\n\n#user {\n\tposition: absolute;\n\ttop:-10px;\n\tleft:10px;\n}\n\n#pass {\n\tposition: absolute;\n\ttop:-10px;\n\tleft:10px;\n}\n.valContain {\n\tposition: relative;\n}\n#submitLog {\n\tdisplay: inline-block;\n\tcolor:#fff;\n\tbackground: #3b68ab;\n\toutline:none;\n\tborder:1px solid #F7F7F7;\n\tpadding:10px;\n\tborder-radius:5px;\n\tmargin-right: 10px;\n}\n\n#submitLog:hover {\n\tbackground: #33A1FF;\n}\n\n#registerBtn {\n\tdisplay: block;\n\tposition: absolute;\n\tcolor: #fff;\n\tbackground: #3b68ab;\n\toutline: none;\n\tborder: 1px solid #F7F7F7;\n\tpadding: 10px;\n\tborder-radius: 5px;\n\tbottom: -12px;\n\tright: 2px;\n}\n\n#registerBtn:hover {\n\tbackground: #33A1FF;\n}\n\n#bigPic {\n\tbackground-image: url(" + __webpack_require__(4) + ");\n\tmargin-top: -30px;\n\tbackground-repeat: no-repeat;\n\tbackground-size: cover;\n\twidth: 100%;\n\theight: 1000px;\n}\n#home-wrapper {\n\tposition: relative;\n\twidth: 60%;\n\tmargin: auto;\n\ttext-align: center;\n}\n#bigTitle {\n\tposition: absolute;\n  top: 220px;\n\tleft: 475px;\n  width: 400px;\n  font-size: 8rem;\n\tletter-spacing: 0.04em;\n  font-family: 'Yanone Kaffeesatz', sans-serif;\n  color: #26447A;\n}\n#splashText1 {\n\tcolor: white;\n\tletter-spacing: 0.04em;\n\tpadding-top: 60px;\n\tmargin-left: 50px;\n}\n#splashText2 {\n\tcolor: white;\n\tletter-spacing: 0.04em;\n\tmargin-left: 100px;\n}\n", ""]);
 
 	// exports
 
@@ -478,7 +478,7 @@
 
 
 	// module
-	exports.push([module.id, "#registrationContainer {\n    width: 500px;\n    height: 396px;\n    background: #fff;\n    position: absolute;\n    left: 50%;\n    margin-left: -250px;\n    top: 80px;\n    border-radius: 5px;\n\tz-index: 2;\n}\n\n\n#close {\n\tposition: absolute;\n\tright:3px;\n\ttop:3px;\n}\n\n.regInput {\n\twidth: 406px;\n    padding-top: 20px;\n    margin-bottom: 18px;\n    left: 44px;\n    position: relative;\n}\n\n\n\n#regHead {\n\ttext-align: center;\n    color: #fff;\n    margin: 0;\n    margin-bottom: 15px;\n    background: #00C5CD;\n\n}\n\n#submitReg {\n\tdisplay:block;\n    color: #fff;\n    background: #00F5CD;\n    outline: none;\n    border: 1px solid #F7F7F7;\n    padding: 10px;\n    border-radius: 5px;\n    position: relative;\n    left: 45px;\n    top:-10px;\n}\n", ""]);
+	exports.push([module.id, "#registrationContainer {\n    width: 500px;\n    height: 396px;\n    background: #fff;\n    position: absolute;\n    left: 50%;\n    margin-left: -250px;\n    top: 80px;\n    border-radius: 5px;\n\tz-index: 2;\n    overflow: hidden;\n}\n\n\n#close {\n\tposition: absolute;\n\tright:3px;\n\ttop:3px;\n}\n\n.regInput {\n\twidth: 406px;\n    padding-top: 20px;\n    margin-bottom: 18px;\n    left: 44px;\n    position: relative;\n}\n\n\n\n#regHead {\n\ttext-align: center;\n    color: #fff;\n    margin: 0;\n    margin-bottom: 15px;\n    background: #00C5CD;\n\n}\n\n#submitReg {\n\tdisplay:block;\n    color: #fff;\n    background: #00F5CD;\n    outline: none;\n    border: 1px solid #F7F7F7;\n    padding: 10px;\n    border-radius: 5px;\n    position: relative;\n    left: 45px;\n    top:-10px;\n}\n", ""]);
 
 	// exports
 
@@ -518,7 +518,7 @@
 
 
 	// module
-	exports.push([module.id, "#goalContainer {\n  width: 377px;\n  height: 280px;\n  border-top: 1px solid black;\n}\n#goalInput {\n    width: 325px;\n    padding-top: 20px;\n    /* border-radius: 5px; */\n    border: none;\n    border-top:1px solid #888;\n    font-size: 1rem;\n    outline: none;\n    position: relative;\n    display: block;\n    top: 0px;\n    left: 0px;\n}\n#goalHeader {\n  color:#889;\n  text-align: center;\n  margin:0;\n  padding-bottom: 6px;\n  background: #DDDCDC;\n}\n.goalContainer {\n  margin:0;\n  width: 376px;\n  height:149px;\n  background: #fdfdfd;\n\tpadding:0;\n  position: relative;\n  float: left;\n  border-bottom: 1px solid #fff;\n}\n.goalItem {\n\tlist-style: none;\n\twidth: 377px;\n  height: 40px;\n  padding-top: 10px;\n  font-size: 18px;\n  background: #fdfdfd;\n  position: relative;\n  border-bottom: 1px solid #888;\n}\n\n.goalItem:last-child {\n    border-bottom: none;\n}\n\n#goalSubmit {\n   width: 52px;\n   height: 41px;\n   border-top-right-radius: 4px;\n   border: none;\n   font-size: 0.8rem;\n   text-align: center;\n   padding: 3px;\n   color: #fff;\n   background: #27556C;\n   position: absolute;\n   top: 150px;\n   right: 0px;\n}\n#goalSubmit:hover {\n  background: blue;\n  color: white;\n}\n\n.categoryCheckbox {\n    float: left;\n}\n\n.categoryLabel {\n    float: left;\n    margin-left:15px;\n    width:240px;\n    overflow:hidden;\n    white-space:nowrap;\n    text-overflow:ellipsis;\n\n\n}\n\n.categoryLabel:hover  {\n  overflow: visible;\n\n}\n\n\n#postList {\n  width: 60%;\n  margin: auto;\n}\n.delete {\n    float: right;\n    margin-right: 10px;\n    height: 30px;\n    width: 30px;\n    padding: 5px;\n    text-align: center;\n    font-size: 0.6rem;\n    border-radius: 3px;\n    border: 1px solid #f7f7f7;\n    background: #27556C;\n    color: #fff;\n    position: relative;\n    z-index: 2;\n}\n.delete:hover {\n  background: red;\n  color: white;\n}\n#setGoal {\n  margin-bottom: 20px;\n  position: relative;\n  height:245px;\n}\n\n.selectCategory {\n  text-align: center;\n  position: relative;\n  top: 12px;\n  margin-left: 5px;\n  margin-right: 10px;\n  margin-bottom: 15px;\n}\n\n#radioContain {\n    margin:auto;\n    width:227px;\n    position: relative;\n    top: -7px;\n}\n\n.theme {\n  position: relative;\n  top:10px;\n  padding-right:5px;\n}\n\n#pleaseSelect {\n  margin-left: 106px;\n  margin-top: 5px;\n  font-size: 0.8rem;\n}\n", ""]);
+	exports.push([module.id, "#goalContainer {\n  width: 378px;\n  height: 280px;\n  border-top: 1px solid black;\n}\n#goalInput {\n    width: 325px;\n    padding-top: 20px;\n    /* border-radius: 5px; */\n    border: none;\n    border-top:1px solid #888;\n    font-size: 1rem;\n    outline: none;\n    position: relative;\n    display: block;\n    top: 0px;\n    left: 0px;\n}\n#goalHeader {\n  color:#889;\n  text-align: center;\n  margin:0;\n  padding-bottom: 6px;\n  background: #DDDCDC;\n}\n.goalContainer {\n  margin:0;\n  width: 376px;\n  height:149px;\n  background: #fdfdfd;\n\tpadding:0;\n  position: relative;\n  float: left;\n  border-bottom: 1px solid #fff;\n}\n.goalItem {\n\tlist-style: none;\n\twidth: 377px;\n  height: 40px;\n  padding-top: 10px;\n  font-size: 18px;\n  background: #fdfdfd;\n  position: relative;\n  border-bottom: 1px solid #888;\n}\n\n.goalItem:last-child {\n    border-bottom: none;\n}\n\n#goalSubmit {\n   width: 52px;\n   height: 41px;\n   border-top-right-radius: 4px;\n   border: none;\n   font-size: 0.8rem;\n   text-align: center;\n   padding: 3px;\n   color: #fff;\n   background: #27556C;\n   position: absolute;\n   top: 150px;\n   right: 0px;\n}\n#goalSubmit:hover {\n  background: blue;\n  color: white;\n}\n\n.categoryCheckbox {\n    float: left;\n}\n\n.categoryLabel {\n    float: left;\n    margin-left:15px;\n    width:240px;\n    overflow:hidden;\n    white-space:nowrap;\n    text-overflow:ellipsis;\n\n\n}\n\n.categoryLabel:hover  {\n  overflow: visible;\n\n}\n\n\n#postList {\n  width: 60%;\n  margin: auto;\n}\n.delete {\n    float: right;\n    margin-right: 10px;\n    height: 30px;\n    width: 30px;\n    padding: 5px;\n    text-align: center;\n    font-size: 0.6rem;\n    border-radius: 3px;\n    border: 1px solid #f7f7f7;\n    background: #27556C;\n    color: #fff;\n    position: relative;\n    z-index: 2;\n}\n.delete:hover {\n  background: red;\n  color: white;\n}\n#setGoal {\n  margin-bottom: 20px;\n  position: relative;\n  height:245px;\n}\n\n.selectCategory {\n  text-align: center;\n  position: relative;\n  top: 12px;\n  margin-left: 5px;\n  margin-right: 10px;\n  margin-bottom: 15px;\n}\n\n#radioContain {\n  margin: auto;\n    width:280px;\n    position: relative;\n    top: -7px;\n}\n\n.theme {\n  position: relative;\n  top:10px;\n  padding-right:5px;\n}\n\n#pleaseSelect {\n  margin-left: 125px;\n  margin-top: 5px;\n  font-size: 0.8rem;\n}\n", ""]);
 
 	// exports
 
@@ -558,7 +558,7 @@
 	exports.push([module.id, "@import url(http://weloveiconfonts.com/api/?family=entypo);", ""]);
 
 	// module
-	exports.push([module.id, "entypo\n[class*=\"entypo-\"]:before {\n  font-family: 'entypo', sans-serif;\n}\n\nbody {\n\tfont-family: 'Yanone Kaffeesatz', sans-serif;\n\tbackground: #e3e3e3;\n\tmargin: 0;\n\tpadding:0;\n}\n/*#page-wrapper {\n\twidth: 100%;\n\theight: 100%;\n}*/\n\n#container {\n\tmax-width: 1200px;\n\tmin-width: 1200px;\n\theight: 815px;\n\tbox-sizing:border-box;\n\tmargin:auto;\n\tposition: relative;\n\tbackground: #f7f7f7;\n\tbox-shadow:10px 10px 8px 0px rgba(0, 0, 0, 0.5);\n\tbox-shadow-bottom:1px;\n\n}\n\n.overlay {\n\tbackground: #000;\n\topacity: 80%;\n}\n\nul {\n\tlist-style: none;\n}\n\nul li {\n\tlist-style: none;\n}\n\n#greeting {\n\tposition: relative;\n\tcolor: #AAEDEA;\n\tpadding-left: 76px;\n  padding-top: 7px;\n}\n\nh2 {\n\tcolor: #001E1F;\n}\n\nul {\n\tlist-style:none;\n}\n\n\n\n#chat {\n\theight:400px;\n\twidth:300px;\n\toverflow: scroll;\n\tposition: absolute;\n\ttop:70px;\n\tright:0px;\n\n}\n\n#register {\n\tz-index: 2;\n\tposition: absolute;\n\ttop:10px;\n}\n\nbutton {\n\toutline:none;\n}\n", ""]);
+	exports.push([module.id, "entypo\n[class*=\"entypo-\"]:before {\n  font-family: 'entypo', sans-serif;\n}\n\n\nbody {\n\tfont-family: 'Yanone Kaffeesatz', sans-serif;\n\tbackground: #e3e3e3;\n\tmargin: 0;\n\tpadding:0;\n}\n\n\n#container {\n\tmax-width: 1200px;\n\tmin-width: 1200px;\n\tposition: relative;\n\theight: 100%;\n\tbox-sizing:border-box;\n\tmargin:auto;\n\tposition: relative;\n\tbackground: #f7f7f7;\n\tbox-shadow:10px 10px 8px 0px rgba(0, 0, 0, 0.5);\n\tbox-shadow-bottom:1px;\n\n}\n\n.overlay {\n\tbackground: #000;\n\topacity: 80%;\n}\n\nul {\n\tlist-style: none;\n}\n\nul li {\n\tlist-style: none;\n}\n\n#greeting {\n\tposition: relative;\n\tcolor: #AAEDEA;\n\tpadding-left: 76px;\n  padding-top: 7px;\n}\n\nh2 {\n\tcolor: #001E1F;\n}\n\nul {\n\tlist-style:none;\n}\n\n\n\n#chat {\n\theight:400px;\n\twidth:300px;\n\toverflow: scroll;\n\tposition: absolute;\n\ttop:70px;\n\tright:0px;\n\n}\n\n#register {\n\tz-index: 2;\n\tposition: absolute;\n\ttop:10px;\n}\n\nbutton {\n\toutline:none;\n}\n", ""]);
 
 	// exports
 
@@ -598,7 +598,7 @@
 
 
 	// module
-	exports.push([module.id, "\n#navContainer {\n    top: 0;\n    left: 0;\n    z-index: 1;\n    /*width: 1075px;*/\n    margin: auto;\n    position: relative;\n    height: 50px;\n    background-color: #033A4C;\n}\n.header {\n    height: 205px;\n    width: 950px;\n    left: 250px;\n    position: absolute;\n    background: #001E1F;\n    overflow: hidden;\n}\n\n\n\n#navContain {\n  width:1150px;\n}\n#navUl {\n    margin: 0;\n    list-style: none;\n    position: relative;\n    top: 5px;\n}\n#navUl .mainLi {\n\t    color: #fff;\n      display: inline-block;\n      font-size: 18px;\n      margin-left: 54px;\n      margin-right: 25px;\n}\n\n.mailLi:hover .maniLi {\n  color:#34BAD9;\n  cursor: pointer;\n}\n#navUl .logo {\n    margin-left: 15px;\n    display: inline-block;\n    color: #34BAD9;\n    position: absolute;\n    font-size: 22px;\n    top:4px;\n    left: 0;\n    padding-right: 5px;\n}\n#navUl .searchBar {\n  display: inline-block;\n  margin-left: 20px;\n}\n#friendRequests  {\n  display: none;\n  position: absolute;\n  top:50px;\n  right:0px;\n  padding:0;\n  background: #fff;\n}\n#friendRequestsHeader {\n    color: #fff;\n    background: #006d72;\n    margin: 0;\n    text-align: center;\n}\n\n#friendLi {\n  height:120px;\n  width:50px;\n  float: right;\n}\n#friendLi:hover #friendRequests {\n  display: block;\n}\n\n#friendRequests:hover .reqObj {\n  display: block;\n}\n\n#searchUsers {\n    width: 156px;\n    padding-top: 8px;\n    position: relative;\n    top: 4px;\n    border-radius: 2px;\n    border: 1px solid #f7f7f7;\n}\n\n#userModal {\n    display: none;\n    position: absolute;\n    top: 46px;\n    left: 188px;\n    width: 300px;\n    height: 300px;\n    background: #fff;\n    overflow: scroll;\n    z-index: 3;\n  \n}\n#closeModal {\n  position: absolute;\n  width: 200px;\n  top: 0px;\n  right:0px;\n  height: 25px;\n  width:25px;\n  background: red;\n}\n\n\n#userChoice {\n  border-bottom: 1px solid black;\n  padding-left: 55px;\n}\n\n.allUsers {\n  color:#000;\n}\n\n\n#randomQuote {\n  color:#fff;\n  margin:auto;\n  position: relative;\n  top:30px;\n  font-size: 30px;\n  width:700px;\n}\n\n#searchUsers {\n    width: 156px;\n    padding-top: 8px;\n    border-radius: 2px;\n    border: 1px solid #f7f7f7;\n}\n", ""]);
+	exports.push([module.id, "\n#navContainer {\n    top: 0;\n    left: 0;\n    z-index: 1000;\n    /*width: 1075px;*/\n    margin: auto;\n    position: relative;\n    height: 50px;\n    background-color: #033A4C;\n}\n.header {\n    height: 205px;\n    width: 950px;\n    left: 250px;\n    z-index: 0;\n    position: absolute;\n    background: #001E1F;\n    overflow: hidden;\n}\n.header h1 {\n  z-index: 5;\n  color: blue;\n  position: absolute;\n  top: 10px;\n  left: 10px;\n}\n\n\n\n#navContain {\n  width:1150px;\n}\n#navUl {\n    margin: 0;\n    list-style: none;\n    position: relative;\n    top: 5px;\n}\n#navUl .mainLi {\n\t    color: #fff;\n      display: inline-block;\n      font-size: 18px;\n      margin-left: 54px;\n      margin-right: 25px;\n}\n\n.mailLi:hover .maniLi {\n  color:#34BAD9;\n  cursor: pointer;\n}\n#navUl .logo {\n    margin-left: 15px;\n    display: inline-block;\n    color: #34BAD9;\n    position: absolute;\n    font-size: 22px;\n    top:4px;\n    left: 0;\n    padding-right: 5px;\n}\n#navUl .searchBar {\n  display: inline-block;\n  margin-left: 20px;\n}\n#friendRequests  {\n  display: none;\n  position: absolute;\n  top:50px;\n  right:0px;\n  padding:0;\n  background: #fff;\n}\n#friendRequestsHeader {\n    color: #fff;\n    background: #006d72;\n    margin: 0;\n    text-align: center;\n}\n\n#friendLi {\n  height:120px;\n  width:50px;\n  float: right;\n}\n#friendLi:hover #friendRequests {\n  display: block;\n}\n\n#friendRequests:hover .reqObj {\n  display: block;\n}\n\n#searchUsers {\n    width: 156px;\n    padding-top: 8px;\n    position: relative;\n    top: 4px;\n    border-radius: 2px;\n    border: 1px solid #f7f7f7;\n}\n\n\n#userModal {\n    display: none;\n    position: absolute;\n    top: 46px;\n    left: 188px;\n    width: 300px;\n    height: 300px;\n    background: #fff;\n    overflow: scroll;\n    z-index: 3;\n  \n}\n#closeModal {\n  position: absolute;\n  width: 200px;\n  top: 0px;\n  right:0px;\n  height: 25px;\n  width:25px;\n  background: red;\n}\n\n\n#userChoice {\n  border-bottom: 1px solid black;\n  padding-left: 55px;\n}\n\n.allUsers {\n  color:#000;\n}\n\n\n#randomQuote {\n  color:#fff;\n  margin:auto;\n  position: relative;\n  top:30px;\n  font-size: 30px;\n  width:700px;\n}\n\n#searchUsers {\n    width: 156px;\n    padding-top: 8px;\n    border-radius: 2px;\n    border: 1px solid #f7f7f7;\n}\n", ""]);
 
 	// exports
 
@@ -678,7 +678,7 @@
 
 
 	// module
-	exports.push([module.id, "\n.singlePost {\n\tbackground: #8CF7F3;\n\tborder: 1px solid grey;\n\tborder-radius: 5px;\n\tpadding-left: 10px;\n}\n.postText {\n\tline-height: 80%;\n}\n.userName {\n\tfont-weight: bold;\n\tfloat: left;\n\tmargin-right: 30px;\n}\n.title {\n\tfloat: left;\n}\n\n", ""]);
+	exports.push([module.id, "\n.singlePost {\n\tbackground: #8CF7F3;\n\tborder: 1px solid grey;\n\tborder-radius: 5px;\n\tpadding-left: 10px;\n}\n.postText {\n\tline-height: 80%;\n}\n.userName {\n\tfont-weight: bold;\n\tfloat: left;\n\tmargin-right: 30px;\n}\n.title {\n\tfloat: left;\n}\n", ""]);
 
 	// exports
 
@@ -718,7 +718,7 @@
 
 
 	// module
-	exports.push([module.id, "#profilePostMaster {\n\t\twidth: 571px;\n\t    height: 560px;\n\t    background: #fdfdfd;\n\t    position: absolute;\n\t    left: 251px;\n\t    top: 255px;\n\t    display: inline-block;\n\t    padding-top: 20px;\n\t    box-sizing: border-box;\n\t    border-right: 1px solid black;\n\t\n}\n#postContainer {\n\tborder-right: 1px solid #000;\n}\n\n.inputDesContain {\n\twidth:571px;\n\tmargin-bottom:34px;\n\tmargin-top:42px;\n}\n#newPostInputProfile {\n\twidth: 547px;\n    margin: auto;\n}\n#master {\n\toverflow-y: scroll;\n\theight:450px;\n\tposition: absolute;\n\ttop:120px;\n}\n.profileBtns {\n\t padding:0;\n\t margin:0;\n\tdisplay: inline;\n}\n.profileBtn {\n\twidth: 518px;\n\theight: 30px;\n\toutline: none;\n\tborder: none;\n\tbackground: #1d5d76;\n\tcolor: #fff;\n\tposition: relative;\n\tborder-radius: 4px;\n\tleft: 26px;\n}\n.profileBtn:hover {\n\tbackground: #004a72;\n}\n#postProfile {\n\twidth: 508px;\n    position: relative;\n    padding-top: 0;\n    padding-left: 6px;\n    /* padding-right: 75px; */\n    padding-top: 15px;\n    border: none;\n     border: 1px solid #888; \n    font-size: 0.9rem;\n    border-radius: 3px;\n    margin: auto;\n    left: 15px;\n}\n#descriptionProfile {\n\twidth: 508px;\n    height: 50px;\n    display: block;\n    padding-top: 2px;\n    padding-left: 6px;\n    margin: auto;\n    resize: none;\n    border: 1px solid #888;\n    font-size: 0.9rem;\n    border-radius: 5px;\n}\n#postMaster {\n\twidth:571px;\n\theight:427px;\n\toverflow:scroll;\n\tborder:1px solid #f7f7f7;\n\tposition: relative;\n\n}\n#postInput {\n\twidth: 571px;\n    height: 558px;\n    background: #fff;\n    border-right:1px solid #000;\n    /* border: 1px solid black; */\n    position: absolute;\n    left: 251px;\n    /* margin-left: 20.5%; */\n    top: 255px;\n    display: inline-block;\n}\n\n#postBtn {\n\twidth:100%;\n\tfloat: left;\n\theight:30px;\n\toutline:none;\n\tborder:none;\n\tbackground: #006d72;\n\tcolor:#fff;\n}\n#titleInput {\n\twidth: 564px;\n\theight: 30px;\n\tdisplay: block;\n\tfont-size: 0.9rem;\n\tpadding-top: 0;\n\tpadding-left: 6px;\n\tpadding-bottom: 15px;\n\tborder: none;\n\tborder-bottom: 1px solid #888;\n}\n#descriptionInput {\n\twidth: 561px;\n    height: 50px;\n    display: block;\n    font-size: 0.9rem;\n    padding-top: 2px;\n    padding-left: 6px;\n    resize: none;\n    border: none;\n\n}\n\n.postUser {\n\tcolor: #006d72;\n\twidth:505px;\n\tmargin:0;\n\tpadding-left: 10px;\n}\n\n.postTitle {\n\tbackground: #fff;\n\tmargin:0;\n\tpadding-left: 10px;\n}\n.postDescription {\n\tbackground:#F7F2F2;\n\tmargin:0;\n\tpadding-left: 10px;\n}\n\ninput {\n\toutline: none;\n}\n\ntextarea {\n\toutline:none;\n}\n.profileBtnsDiv {\n\twidth:571px;\n}\n", ""]);
+	exports.push([module.id, "#profilePostMaster {\n\t\twidth: 571px;\n\t    height: 560px;\n\t    background: #fdfdfd;\n\t    position: absolute;\n\t    left: 251px;\n\t    top: 255px;\n\t    display: inline-block;\n\t    padding-top: 40px;\n\t    box-sizing: border-box;\n\t    border-right: 1px solid black;\n\t\n}\n#postContainer {\n\tborder-right: 1px solid #000;\n}\n\n.inputDesContain {\n\twidth:571px;\n\tmargin-bottom:34px;\n\tmargin-top:42px;\n}\n#newPostInputProfile {\n\twidth: 547px;\n    margin: auto;\n}\n#master {\n\toverflow-y: scroll;\n\theight:450px;\n\tposition: absolute;\n\ttop:120px;\n}\n.profileBtns {\n\t padding:0;\n\t margin:0;\n\tdisplay: inline;\n}\n.profileBtn {\n\twidth: 518px;\n\theight: 30px;\n\toutline: none;\n\tborder: none;\n\tbackground: #1d5d76;\n\tcolor: #fff;\n\tposition: relative;\n\tborder-radius: 4px;\n\tleft: 26px;\n}\n.profileBtn:hover {\n\tbackground: #004a72;\n}\n#postProfile {\n\twidth: 508px;\n    position: relative;\n    padding-top: 0;\n    padding-left: 6px;\n    /* padding-right: 75px; */\n    padding-top: 15px;\n    border: none;\n     border: 1px solid #888; \n    font-size: 0.9rem;\n    border-radius: 3px;\n    margin: auto;\n    left: 15px;\n}\n#descriptionProfile {\n\twidth: 508px;\n    height: 50px;\n    display: block;\n    padding-top: 2px;\n    padding-left: 6px;\n    margin: auto;\n    resize: none;\n    border: 1px solid #888;\n    font-size: 0.9rem;\n    border-radius: 5px;\n}\n#postMaster {\n\twidth:571px;\n\theight:427px;\n\toverflow:scroll;\n\tborder:1px solid #f7f7f7;\n\tposition: relative;\n\n}\n#postInput {\n\twidth: 571px;\n    height: 558px;\n    background: #fff;\n    border-right:1px solid #000;\n    /* border: 1px solid black; */\n    position: absolute;\n    left: 251px;\n    /* margin-left: 20.5%; */\n    top: 255px;\n    display: inline-block;\n}\n\n#postBtn {\n\twidth:100%;\n\tfloat: left;\n\theight:30px;\n\toutline:none;\n\tborder:none;\n\tbackground: #006d72;\n\tcolor:#fff;\n}\n#titleInput {\n\twidth: 564px;\n\theight: 30px;\n\tdisplay: block;\n\tfont-size: 0.9rem;\n\tpadding-top: 0;\n\tpadding-left: 6px;\n\tpadding-bottom: 15px;\n\tborder: none;\n\tborder-bottom: 1px solid #888;\n}\n#descriptionInput {\n\twidth: 561px;\n    height: 50px;\n    display: block;\n    font-size: 0.9rem;\n    padding-top: 2px;\n    padding-left: 6px;\n    resize: none;\n    border: none;\n\n}\n\n.postUser {\n\tcolor: #006d72;\n\twidth:505px;\n\tmargin:0;\n\tpadding-left: 10px;\n}\n\n.postTitle {\n\tbackground: #fff;\n\tmargin:0;\n\tpadding-left: 10px;\n}\n.postDescription {\n\tbackground:#F7F2F2;\n\tmargin:0;\n\tpadding-left: 10px;\n}\n\ninput {\n\toutline: none;\n}\n\ntextarea {\n\toutline:none;\n}\n.profileBtnsDiv {\n\twidth:571px;\n}\n", ""]);
 
 	// exports
 
@@ -878,7 +878,7 @@
 
 
 	// module
-	exports.push([module.id, "#groupsUserContainer {\n\twidth: 300px;\n    height: 304px;\n    position: absolute;\n    background: #fff;\n    top: 510px;\n    right: 0px;\n}\n\n#groupsUserHeader {\n    margin:0;\n    background: #1e586e;\n    color:#fff;\n}\n\n\n.groupUserButton {\n    display: block;\n    margin:0;\n    \n}", ""]);
+	exports.push([module.id, "#groupsUserContainer {\n\twidth: 300px;\n    height: 304px;\n    position: absolute;\n    background: #fff;\n    top: 510px;\n    right: 0px;\n}\n\n\n#groupsUserHeader {\n    margin: auto;\n\t\ttext-align: center;\n    background: #1e586e;\n    color:#fff;\n    text-align: center;\n}\n\n\n.groupUserButton {\n    display: block;\n    margin:0;\n\n}\n", ""]);
 
 	// exports
 
@@ -998,7 +998,7 @@
 
 
 	// module
-	exports.push([module.id, "#members {\n\tmargin:0;\n\tmargin:auto;\n\tbackground: #1e586e;\n\tcolor:#fff;\n}\n#userListContainer {\n\t\n\ttext-align: center;\n    position: absolute;\n    top: 254px;\n    width: 300px;\n    position: absolute;\n    right: 0px;\n}\n\n\n#userListUl {\n\tmargin:0;\n\tpadding:0;\n\tborder-radius: 5px;\n\n}\n\n.groupUser {\n\theight: 45px;\n    background: #1f667e;\n    border: none;\n    border-bottom: 1px solid #7BB;\n    text-align: left;\n    padding-left: 8px;\n    width: 300px;\n    font-size: 1em;\n    color: #fff;\n}\n\n.groupUser:hover {\n\tbackground: #004a72;\n\tcolor:#fff;\n}\n\n.userListBtn {\n    height: 45px;\n    background: #1f667e;\n    border: none;\n    border-bottom: 1px solid #7BB;\n    text-align: left;\n    padding-left: 8px;\n    width: 292px;\n    font-size: 1em;\n    color: #fff;\n}\n\n.userListBtn:hover {\n\tbackground: #004a72;\n\tcolor:#fff;\n}\n", ""]);
+	exports.push([module.id, "#members {\n\tmargin:0;\n\tmargin:auto;\n\tbackground: #1e586e;\n\tcolor:#fff;\n}\n#userListContainer {\n\n\ttext-align: center;\n    position: absolute;\n    top: 254px;\n    width: 300px;\n    position: absolute;\n    right: 0px;\n}\n\n\n#userListUl {\n\tmargin:0;\n\tpadding:0;\n\tborder-radius: 5px;\n\n}\n\n.groupUser {\n\n\theight: 45px;\n    background: #1f667e;\n    border: none;\n    border-bottom: 1px solid #7BB;\n    text-align: left;\n    padding-left: 8px;\n    width: 300px;\n    font-size: 1em;\n    color: #fff;\n}\n\n.groupUser:hover {\n\tbackground: #004a72;\n\tcolor:#fff;\n}\n\n.userListBtn {\n    height: 45px;\n    background: #1f667e;\n    border: none;\n    border-bottom: 1px solid #7BB;\n    text-align: left;\n    padding-left: 8px;\n    width: 292px;\n    font-size: 1em;\n    color: #fff;\n}\n\n.userListBtn:hover {\n\tbackground: #004a72;\n\tcolor:#fff;\n}\n", ""]);
 
 	// exports
 
@@ -1038,7 +1038,7 @@
 
 
 	// module
-	exports.push([module.id, "#avatarDiv {\n\twidth: 150px;\n    position: relative;\n    top: 20px;\n    /* left: 50px; */\n    margin: 0;\n    margin: auto;\n    height: 200px;\n    font-family: 'Press Start 2P', cursive;\n    color: green;\n}\n\n.avatarImg {\n    \n    position: relative;\n    left: 11px;\n    top:12px;\n}\n#rank1 {\n\ttext-align: left;\n\tfont-family: 'Press Start 2P', cursive;\n\tcolor:#fff;\n\tmargin:0;\n\tpadding-right: 54px;\n\tdisplay: block;\n}\n#exp {\n\ttext-align: left;\n\tfont-family: 'Press Start 2P', cursive;\n\tcolor:#fff;\n\tmargin:0;\n}\n#picture {\n\twidth:150px;\n\theight: 150px;\n\tbackground: #fff;\n\tmargin-bottom: 12px;\n}\n\n#avatarModal {\n\tbackground: #fff;\n    width: 500px;\n    z-index: 2;\n    position: absolute;\n}\n\n#avatarUl {\n\tmargin: 0;\n    height: 175px;\n}\n\n#avatarModalHeader {\n\tz-index: 2;\n    text-align: center;\n}\n\n#avatarSubmit {\n    z-index: 2;\n    width: 62px;\n    height: 40px;\n    color: #fff;\n    background: #27556C;\n    outline: 0px;\n    border: none;\n    position: absolute;\n    bottom: 0;\n    right: 0;\n}\n.avatars {\n\tdisplay: inline;\n}\n\n#greeting {\n    position: relative;\n    color: #AAEDEA;\n    padding-left: 48px;\n    top: 10px;\n}\n", ""]);
+	exports.push([module.id, "#avatarDiv {\n\twidth: 150px;\n    position: relative;\n    top: 20px;\n    /* left: 50px; */\n    margin: 0;\n    margin: auto;\n    height: 200px;\n    font-family: 'Press Start 2P', cursive;\n    color: green;\n}\n\n.avatarImg {\n    \n    position: relative;\n    left: 11px;\n    top:12px;\n}\n#rank1 {\n\ttext-align: left;\n\tfont-family: 'Press Start 2P', cursive;\n\tcolor:#fff;\n\tmargin:0;\n\tpadding-right: 54px;\n\tdisplay: block;\n}\n#exp {\n\ttext-align: left;\n\tfont-family: 'Press Start 2P', cursive;\n\tcolor:#fff;\n\tmargin:0;\n}\n#picture {\n\twidth:150px;\n\theight: 150px;\n\tbackground: #fff;\n\tmargin-bottom: 12px;\n}\n\n#avatarModal {\n\tbackground: #fff;\n    width: 500px;\n    z-index: 2;\n    position: absolute;\n}\n\n#avatarUl {\n\tmargin: 0;\n    height: 175px;\n}\n\n#avatarModalHeader {\n\tz-index: 2;\n    text-align: center;\n}\n\n#avatarSubmit {\n    z-index: 2;\n    width: 62px;\n    height: 40px;\n    color: #fff;\n    background: #27556C;\n    outline: 0px;\n    border: none;\n    position: absolute;\n    bottom: 0;\n    right: 0;\n}\n.avatars {\n\tdisplay: inline;\n}\n\n\n#avatarDivUser {\n        width: 285px;\n        position: relative;\n        top: 30px;\n        left: 92px;\n        margin: 0;\n        margin: auto;\n        height: 200px;\n        font-family: 'Press Start 2P', cursive;\n        color: green;\n        z-index: 2;\n}\n\n#usernameView {\n    position: absolute;\n    top:100px;\n}\n\n#greeting {\n    position: relative;\n    color: #AAEDEA;\n    padding-left: 48px;\n    top: 10px;\n}\n\n#avatarRankXpContainerUser {\n    width: 285px;\n    position: absolute;\n    top: 50px;\n    left:250px;\n    margin: 0;\n    margin: auto;\n    height: 200px;\n    font-family: 'Press Start 2P', cursive;\n    color: green;\n    z-index: 2;\n}\n\n#usernameAvatar{\n        color: #fff;\n        position: relative;\n        left: 22px;\n        bottom: 6px;\n}\n", ""]);
 
 	// exports
 
@@ -1118,7 +1118,7 @@
 
 
 	// module
-	exports.push([module.id, ".otherPostTitle {\n\tbackground: #ccc;\n    margin: 0;\n    padding-top: 16px;\n    padding-bottom: 16px;\n    padding-left: 8px;\n}\n\n.otherPostDescription {\n    background: #fff;\n    margin: 0;\n    padding-top: 10px;\n    padding-bottom: 2px;\n    padding-left: 8px;\n}\n#otherPostsContainer {\n\twidth: 649px;\n    height: 610px;\n    overflow: scroll;\n    left: 251px;\n    top: 205px;\n    position: absolute;\n    background: #fdfdfd;\n}", ""]);
+	exports.push([module.id, ".otherPostTitle {\n\tbackground: #ccc;\n    margin: 0;\n    padding-top: 16px;\n    padding-bottom: 16px;\n    padding-left: 8px;\n}\n\n.otherPostDescription {\n    background: #fff;\n    margin: 0;\n    padding-top: 10px;\n    padding-bottom: 2px;\n    padding-left: 8px;\n}\n#otherPostsContainer {\n\twidth: 649px;\n    height: 560px;\n    overflow: scroll;\n    left: 251px;\n    top: 255px;\n    position: absolute;\n    background: #fdfdfd;\n}\n", ""]);
 
 	// exports
 
@@ -1158,7 +1158,7 @@
 
 
 	// module
-	exports.push([module.id, "#otherGoals {\n\tcolor:#fff;\n  background: #1f667e;\n  margin:0;\n}\n#otherGoalsContainer {\n\t  width: 300px;\n    text-align: center;\n    position: absolute;\n    top: 205px;\n    right: 0px;\n    background: #fff;\n}\n\n.otherGoalsP {\n\twidth: 300px;\n  height: 40px;\n  padding-top: 10px;\n  font-size: 18px;\n  background: #f7f7f7;\n  position: relative;\n  margin:0;\n}", ""]);
+	exports.push([module.id, "#otherGoals {\n\tcolor:#fff;\n  background: #1f667e;\n  margin:0;\n}\n#otherGoalsContainer {\n\t  width: 300px;\n    text-align: center;\n    position: absolute;\n    top: 255px;\n    right: 0px;\n    background: #fff;\n}\n\n.otherGoalsP {\n\twidth: 300px;\n  height: 40px;\n  padding-top: 10px;\n  font-size: 18px;\n  background: #f7f7f7;\n  position: relative;\n  margin:0;\n}\n", ""]);
 
 	// exports
 
@@ -1198,7 +1198,7 @@
 
 
 	// module
-	exports.push([module.id, "#badgeContainer {\n  margin-top: 15px;\n  background: #fff;\n  height: 265px;\n}\n.badgeTest {\n\tposition: relative;\n\twidth:65px;\n\tdisplay: inline;\n  margin-left: 10px;\n}\n.badge {\n  margin-right: 10px;\n\twidth:60px;\n\theight: 60px;\n\tposition: relative;\n\ttop:12px;\n}\n\n.achievementTitle {\n\tdisplay: none;\n\tposition: absolute;\n\ttop:40px;\n\tleft:25px;\n\tpadding-left: 5px;\n\tpadding-right: 5px;\n\tbackground: #000;\n\twidth:145px;\n    color: #fff;\n    border-radius: 3px;\n    z-index: 2;\n}\n\n.badgeTest:hover .achievementTitle{\n\tdisplay:block;\n}\n\n#badgeHeader {\n\tcolor:#889;\n\tbackground: #DDDCDC;\n\tmargin: 0;\n\tpadding-top: 8px;\n\tpadding-bottom: 12px;\n\ttext-align: center;\n}\n", ""]);
+	exports.push([module.id, "#badgeContainer {\n  margin-top: 15px;\n  background: #fff;\n  height: 265px;\n}\n.badgeTest {\n\tposition: relative;\n\twidth:65px;\n\tdisplay: inline;\n  margin-left: 10px;\n}\n.badge {\n  margin-right: 10px;\n\twidth:60px;\n\theight: 60px;\n\tposition: relative;\n\ttop:12px;\n}\n\n.achievementTitle {\n\tdisplay: none;\n\tposition: absolute;\n\ttop:40px;\n\tleft:25px;\n\tpadding-left: 5px;\n\tpadding-right: 5px;\n\tbackground: #000;\n\twidth:145px;\n    color: #fff;\n    border-radius: 3px;\n    z-index: 2;\n}\n\n.badgeTest:hover .achievementTitle{\n\tdisplay:block;\n}\n\n#badgeHeader {\n\tcolor:#889;\n\ttext-align: center;\n\tmargin:0;\n\tpadding-bottom: 6px;\n\tbackground: #DDDCDC;\n}\n", ""]);
 
 	// exports
 
@@ -34341,7 +34341,7 @@
 			return(
 				React.createElement("form", {id: "setGoal", method: "POST", onSubmit: this._submit}, 
 
-				React.createElement("input", {id: "goalInput", placeholder: "Make a goal to accomplish...", onChange: this._onChange, value: this.state.value}), 
+				React.createElement("input", {id: "goalInput", placeholder: "Set a goal to accomplish...", onChange: this._onChange, value: this.state.value}), 
 
 				React.createElement("div", {id: "radioContain"}, 
 					React.createElement("input", {type: "radio", className: "theme", name: "category", onClick: this._setValue, checked: this.state.radio, value: "1"}), 
@@ -34350,8 +34350,8 @@
 					React.createElement("label", {className: "selectCategory"}, "Bad Habits"), 
 					React.createElement("input", {type: "radio", name: "category", className: "theme", onClick: this._setValue, value: "3"}), 
 					React.createElement("label", {className: "selectCategory"}, "Health/Fitness")
-				), 	
-					React.createElement("p", {id: "pleaseSelect"}, "Please Select a Category"), 
+				), 
+					React.createElement("div", {id: "pleaseSelect"}, "Please Select a Category"), 
 				React.createElement("button", {id: "goalSubmit"}, "Submit")
 
 				))
@@ -39290,10 +39290,10 @@
 	var LoginRegApp = __webpack_require__(285);
 	var ProfileApp=__webpack_require__(286);
 	var UserViewApp = __webpack_require__(335);
-	var GroupApp = __webpack_require__(346);
+	var GroupApp = __webpack_require__(347);
 	var Store = __webpack_require__(290);
-	var Pusher = __webpack_require__(360);
-	var ChatApp=__webpack_require__(361);
+	var Pusher = __webpack_require__(361);
+	var ChatApp=__webpack_require__(362);
 	var Friendlies = ('./collections/friendlies');
 
 	var Router=Backbone.Router.extend({
@@ -39332,7 +39332,6 @@
 				var data     = resp.toJSON();
 				var userName = _.extend(Store.data, {userName: data[0].user.username});
 				var posts    = data[0].user.post_set;
-
 				var pRank     = _.extend(Store.data,{rank: data[0].rank});
 				var pExp      = _.extend(Store.data,{exp: data[0].exp});
 				var uid      = _.extend(Store.data,{uid: data[0].user.id});
@@ -39427,7 +39426,6 @@
 				success: function(resp) {
 				var users=resp.toJSON();
 
-
 				var name = users[0].user.first_name;
 				var fromFriends = (users[0].user.to_friend_set);
 				var toFriends = users[0].user.friend_set;
@@ -39453,7 +39451,7 @@
 				})
 
 
-
+				var theirId = users[0].user.id;
 				var myId = Store.data.userId;
 				var username = Store.data.userName;
 
@@ -39474,7 +39472,7 @@
 					router: router, 
 					username: username, 
 					userId: userId, 
-					myId: myId, 
+					theirId: theirId, 
 					fromFriends: fromFriendsMap, 
 					toFriends: toFriendsMap, 
 					groups: groups}),
@@ -39914,6 +39912,7 @@
 			userName:null,
 			chats: null,
 			chatInit: null,
+			myId: null,
 			users: [],
 			userList:[],
 			messageList:[],
@@ -42453,7 +42452,7 @@
 	},
 		render:function() {
 			return(React.createElement("div", {id: "badgeContainer"}, 
-					React.createElement("p", {id: "badgeHeader"}, "Badges"), 
+					React.createElement("h2", {id: "badgeHeader"}, "Badges"), 
 					React.createElement(BadgeCount, {data: this.state.data})
 				))
 		}
@@ -42744,9 +42743,9 @@
 	var NavUserView = __webpack_require__(339);
 	var Friendly = __webpack_require__(289);
 	var AddFriend = __webpack_require__(340);
-	var AvatarRankXp = __webpack_require__(298);
-	var FriendsUser= __webpack_require__(341);
-	var GroupsUser = __webpack_require__(344)
+	var AvatarRankXpUser = __webpack_require__(341);
+	var FriendsUser= __webpack_require__(342);
+	var GroupsUser = __webpack_require__(345)
 	var ProfileLeft = __webpack_require__(332);
 	var UserViewApp = React.createClass({displayName: "UserViewApp",
 		getInitialState: function(){
@@ -42783,14 +42782,14 @@
 			});
 		},
 		render:function() {
-			
+
 			return (
 				React.createElement("div", null, 
 					React.createElement(NavUserView, {
 						router: this.props.router, 
 						username: this.props.username, 
 						userId: this.props.userId, 
-						myId: this.props.myId, 
+						theirId: this.props.theirId, 
 						friend: this.state.frnds}), 
 
 					React.createElement(ProfileLeft, {
@@ -42804,25 +42803,30 @@
 						name: this.props.pName, 
 						avatar: this.props.pAvatar}), 
 
-					React.createElement(NameTag, {user: this.props.name}), 
 
-					React.createElement(AvatarRankXp, {
+
+
+					React.createElement(AvatarRankXpUser, {
 						rank: this.props.rank, 
+						user: this.props.name, 
 						exp: this.props.exp}), 
 
 					React.createElement(FriendsUser, {
+						theirName: this.props.name, 
 						fromFriends: this.props.fromFriends, 
 						toFriends: this.props.toFriends, 
 						router: this.props.router}), 
 
 					React.createElement(GroupsUser, {
+						theirName: this.props.name, 
 						groups: this.props.groups, 
 						goals: this.props.groups, 
 						router: this.props.router}), 
 
-					React.createElement(OtherPosts, {posts: this.props.posts}), 
-					
-					React.createElement(OtherGoals, {goals: this.props.goals})
+					React.createElement(OtherPosts, {posts: this.props.posts, theirName: this.props.name}), 
+
+
+					React.createElement(OtherGoals, {goals: this.props.goals, theirName: this.props.name})
 
 				)
 			)
@@ -42847,9 +42851,9 @@
 						    )
 						)})
 
-				
+
 					return(React.createElement("div", {id: "otherPostsContainer"}, 
-								React.createElement("h2", null, "Posts"), 
+								React.createElement("h2", null, this.props.theirName, "'s Posts"), 
 								test
 							))
 		}
@@ -42866,12 +42870,12 @@
 
 	var OtherGoals = React.createClass({displayName: "OtherGoals",
 		render:function(){
-			
+
 			var test=this.props.goals.map(function(obj){
 				return(React.createElement("p", {className: "otherGoalsP", key: obj.id}, obj.title))
 		})
 			return(React.createElement("div", {id: "otherGoalsContainer"}, 
-				React.createElement("h2", {id: "otherGoals"}, "Their Goals"), 
+				React.createElement("h2", {id: "otherGoals"}, this.props.theirName, "'s Goals"), 
 				test
 				))
 		}
@@ -42889,7 +42893,7 @@
 	var NameTag = React.createClass({displayName: "NameTag",
 		render: function() {
 			return(
-				React.createElement("div", {id: "greeting"}, 
+				React.createElement("div", {id: "usernameView"}, 
 					React.createElement("p", null, " User: ", this.props.user)				
 				)
 			)
@@ -42908,6 +42912,8 @@
 	var AddFriend = __webpack_require__(340);
 
 	var NavUserView = React.createClass({displayName: "NavUserView",
+
+		
 		_profileNav: function(e){
 			var router =this.props.router;
 			router.navigate('profile/' + this.props.username, {trigger:true});
@@ -42918,7 +42924,7 @@
 						React.createElement("div", {id: "navContainerUser"}, 
 							React.createElement("ul", {id: "navUlUser"}, 
 								React.createElement("li", {onClick: this._profileNav}, "MyProfile"), 
-								React.createElement("li", null, !this.props.friend ? React.createElement(AddFriend, {userId: this.props.userId, myId: this.props.myId}) : null)
+								React.createElement("li", null, !this.props.friend ? React.createElement(AddFriend, {userId: this.props.userId, theirId: this.props.theirId}) : null)
 							)
 
 						), 
@@ -42940,7 +42946,7 @@
 	/** @jsx React.DOM */var React = __webpack_require__(56);
 	var Friendly = __webpack_require__(289);
 	var Friendlies = __webpack_require__(291); 
-
+	var Store = __webpack_require__(290)
 	var AddFriend = React.createClass({displayName: "AddFriend",
 
 		_friend: function(e) {
@@ -42955,8 +42961,8 @@
 
 			friend.set({
 
-				from_friend:this.props.myId,
-				to_friend:this.props.userId
+				from_friend:Store.data.uid,
+				to_friend:this.props.theirId
 
 
 			})
@@ -42978,14 +42984,42 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(56);
-	var FriendsUserBtn = __webpack_require__(342);
-	var ToFriendUserBtn = __webpack_require__(343);
+	var AvatarChange = __webpack_require__(299);
+	var AvatarRankXpUser = React.createClass({displayName: "AvatarRankXpUser",
+		
+		render:function() {
+			
+			return(React.createElement("div", {id: "avatarRankXpContainerUser"}, 
+					React.createElement("div", {id: "avatarDivUser"}, 
+					React.createElement("span", {id: "usernameAvatar"}, this.props.user), 
+					React.createElement("div", {id: "pictureUser"}, React.createElement("img", {className: "avatarImgUser", onClick: this._show, src: '../../../assets/avatar'+1+'.png'})), 
+						
+						(this.props.rank=== 1 ? React.createElement("span", {id: "rank1User"}, "Novice") : null), 
+						(this.props.rank=== 2 ? React.createElement("span", {id: "rank2User"}, "JourneyMan") : null), 
+						(this.props.rank=== 3 ? React.createElement("span", {id: "rank3User"}, "Mentor") : null), 
+
+						React.createElement("span", {id: "expUser"}, React.createElement("span", null, "Exp: "), this.props.exp)
+					)
+					
+				))
+		}
+	});
+
+	module.exports = AvatarRankXpUser;
+
+/***/ },
+/* 342 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/** @jsx React.DOM */var React = __webpack_require__(56);
+	var FriendsUserBtn = __webpack_require__(343);
+	var ToFriendUserBtn = __webpack_require__(344);
 
 	var FriendsUser = React.createClass({displayName: "FriendsUser",
 
 		render: function() {
 			props=this.props;
-			
+
 			var test=this.props.fromFriends.map(function(obj){
 				return(React.createElement("li", {key: obj.id, className: "friendListItemUser"}, React.createElement(FriendsUserBtn, {friendName: obj.from_friend.username, id: obj.from_friend.id, router: props.router})))
 						})
@@ -42993,7 +43027,7 @@
 				return(React.createElement("li", {key: obj.id, className: "friendListItemUser"}, React.createElement(ToFriendUserBtn, {toFriend: obj.to_friend.username, id: obj.to_friend.id, router: props.router})))
 			})
 					return(React.createElement("div", {id: "friendsContainerUser"}, 
-						React.createElement("h2", {id: "friendsHeaderUser"}, "Their Friends"), 
+						React.createElement("h2", {id: "friendsHeaderUser"}, this.props.theirName, "'s Friends"), 
 						React.createElement("div", {id: "listContainUser"}, 
 							React.createElement("div", {id: "containUser"}, 
 								React.createElement("ul", {id: "friendsUlUser"}, 
@@ -43008,8 +43042,9 @@
 
 	module.exports = FriendsUser;
 
+
 /***/ },
-/* 342 */
+/* 343 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(56);
@@ -43030,7 +43065,7 @@
 	module.exports = FromFriendsBtn;
 
 /***/ },
-/* 343 */
+/* 344 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(56);
@@ -43051,28 +43086,29 @@
 	module.exports = ToFriendsBtn;
 
 /***/ },
-/* 344 */
+/* 345 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(56);
-	var GroupsBtn = __webpack_require__(345);
+	var GroupsBtn = __webpack_require__(346);
 	var GroupsUser = React.createClass({displayName: "GroupsUser",
 		render: function(){
 			var props = this.props;
-			
+
 			var test=this.props.goals.map(function(obj){
-				
-						return(React.createElement("p", {key: obj.id, className: "groupUserButton"}, React.createElement(GroupsBtn, {router: props.router, theme: obj.theme, id: obj.group, title: obj.title, completed: obj.completed})))
-					  
+
+						return(React.createElement("p", {key: obj.id, className: "groupUserButton"}, React.createElement(GroupsUserBtn, {router: props.router, theme: obj.theme, id: obj.group, title: obj.title, completed: obj.completed})))
+
 				})
-						return(React.createElement("div", {id: "groupsUserContainer"}, React.createElement("h2", {id: "groupsUserHeader"}, "Their Groups"), test))
+						return(React.createElement("div", {id: "groupsUserContainer"}, React.createElement("h2", {id: "groupsUserHeader"}, this.props.theirName, "'s Groups"), test))
 				}
 			});
 
 	module.exports = GroupsUser;
 
+
 /***/ },
-/* 345 */
+/* 346 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(56);
@@ -43112,27 +43148,31 @@
 	module.exports = GroupsUserBtn;
 
 /***/ },
-/* 346 */
+/* 347 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(_) {/** @jsx React.DOM */var React = __webpack_require__(56);
-	var PostListApp = __webpack_require__(347);
-	var GroupLeft = __webpack_require__(356)
+	var PostListApp = __webpack_require__(348);
+	var GroupLeft = __webpack_require__(357)
 	var Nav = __webpack_require__(287);
-	var NavGroupView = __webpack_require__(359);
+	var NavGroupView = __webpack_require__(360);
 	var ProfileLeft = __webpack_require__(332);
-	var UserList = __webpack_require__(357)
+	var UserList = __webpack_require__(358)
 	var Store = __webpack_require__(290);
 
 	var GroupApp = React.createClass({displayName: "GroupApp",
 		getInitialState: function() {
 			return({
-				groupList: []
+				groupList: [],
+				theme: null,
+
 			})
 		},
-		_groupList: function() {
+		_groupList: function(groupUserList, theme) {
+			console.log(groupUserList);
 			this.setState({
-				groupList: Store.data.userList
+				groupList: groupUserList,
+				theme: theme
 			})
 		},
 		componentWillMount: function() {
@@ -43147,19 +43187,24 @@
 			var that = this;
 			GroupUserList.fetch({
 				success:function(resp) {
-					var users=resp.toJSON();
-					var userData=users[0].user;
-					console.log(userData);
+					var group = resp.toJSON();
+					var theme = group[0].theme;
+					var userData=group[0].user;
 					var users = _.extend(Store.data, {userList: userData});
-					that._groupList();
+					that._groupList(userData, theme);
 
 				}
 			})
 		},
 		render:function() {
+			console.log('t', this.state.theme);
 			return(
 				React.createElement("div", null, 
-					React.createElement(NavGroupView, {router: this.props.router, username: this.props.username}), 
+					React.createElement(NavGroupView, {
+						router: this.props.router, 
+						groupId: this.props.groupId, 
+						theme: this.state.theme, 
+						username: this.props.username}), 
 					React.createElement(ProfileLeft, {
 						username: this.props.username, 
 						rank: this.props.pRank, 
@@ -43185,13 +43230,13 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(218)))
 
 /***/ },
-/* 347 */
+/* 348 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(56);
-	var PostInput = __webpack_require__(348);
-	var PostItem = __webpack_require__(349);
-	var Post = __webpack_require__(350);
+	var PostInput = __webpack_require__(349);
+	var PostItem = __webpack_require__(350);
+	var Post = __webpack_require__(351);
 
 	var PostListApp = React.createClass({displayName: "PostListApp",
 		getInitialState: function () {
@@ -43234,7 +43279,7 @@
 
 
 /***/ },
-/* 348 */
+/* 349 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {/** @jsx React.DOM */var React = __webpack_require__(56);
@@ -43279,10 +43324,10 @@
 
 		render:function() {
 			return(
-				React.createElement("form", {id: "newPostInput", onSubmit: this._submit}, 					
+				React.createElement("form", {id: "newPostInput", onSubmit: this._submit}, 
 						React.createElement("input", {id: "titleInput", placeholder: "Add New Post - Title"}), 
 						React.createElement("textarea", {id: "descriptionInput", placeholder: "Add Description"}), 
-						React.createElement("button", {id: "postBtn", type: "submit", onSubmit: this._submit}, "Submit")
+						React.createElement("button", {id: "postBtn", type: "submit", onSubmit: this._submit}, "Submit Post")
 				)
 				  )
 			}
@@ -43293,11 +43338,11 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(215)))
 
 /***/ },
-/* 349 */
+/* 350 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(56);
-	var Post = __webpack_require__(350);
+	var Post = __webpack_require__(351);
 
 	var PostItem = React.createClass({displayName: "PostItem",
 
@@ -43318,7 +43363,7 @@
 
 
 /***/ },
-/* 350 */
+/* 351 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(56);
@@ -43328,8 +43373,8 @@
 	var CardHeader = __webpack_require__(318);
 	var CardTitle = __webpack_require__(323);
 	var CardText = __webpack_require__(324);
-	var CommentApp = __webpack_require__(351);
-	var Timeago = __webpack_require__(355);
+	var CommentApp = __webpack_require__(352);
+	var Timeago = __webpack_require__(356);
 
 	var Post = React.createClass({displayName: "Post",
 		getInitialState: function(){
@@ -43391,12 +43436,12 @@
 
 
 /***/ },
-/* 351 */
+/* 352 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(56);
-	var CommentInput = __webpack_require__(352);
-	var Comment = __webpack_require__(353);
+	var CommentInput = __webpack_require__(353);
+	var Comment = __webpack_require__(354);
 
 	var CommentApp = React.createClass({displayName: "CommentApp",
 		getInitialState: function () {
@@ -43431,7 +43476,7 @@
 	module.exports = CommentApp;
 
 /***/ },
-/* 352 */
+/* 353 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {/** @jsx React.DOM */var React = __webpack_require__(56);
@@ -43496,11 +43541,11 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(215)))
 
 /***/ },
-/* 353 */
+/* 354 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(56);
-	var LikeBtn = __webpack_require__(354);
+	var LikeBtn = __webpack_require__(355);
 	var Store = __webpack_require__(290)
 	var Comment = React.createClass({displayName: "Comment",
 
@@ -43524,7 +43569,7 @@
 
 
 /***/ },
-/* 354 */
+/* 355 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(56);
@@ -43588,7 +43633,7 @@
 	module.exports= LikeBtn;
 
 /***/ },
-/* 355 */
+/* 356 */
 /***/ function(module, exports) {
 
 	// Generated by CoffeeScript 1.6.3
@@ -43685,11 +43730,11 @@
 
 
 /***/ },
-/* 356 */
+/* 357 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(56);
-	var UserList = __webpack_require__(357);
+	var UserList = __webpack_require__(358);
 	var GroupLeft = React.createClass({displayName: "GroupLeft",
 		render:function(){
 			return(
@@ -43703,11 +43748,11 @@
 	module.exports = GroupLeft;
 
 /***/ },
-/* 357 */
+/* 358 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(56);
-	var User = __webpack_require__(358);
+	var User = __webpack_require__(359);
 	var UserList = React.createClass({displayName: "UserList",
 		
 		render:function() {
@@ -43731,7 +43776,7 @@
 
 
 /***/ },
-/* 358 */
+/* 359 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(56);
@@ -43757,13 +43802,15 @@
 
 
 /***/ },
-/* 359 */
+/* 360 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(56);
 	var SearchUsers = __webpack_require__(294);
 
-	var NavUserView = React.createClass({displayName: "NavUserView",
+	var NavGroupView = React.createClass({displayName: "NavGroupView",
+
+
 		_profileNav: function(e){
 			var router =this.props.router;
 			router.navigate('profile/' + this.props.username, {trigger:true});
@@ -43774,23 +43821,34 @@
 						React.createElement("div", {id: "navContainerUser"}, 
 							React.createElement("ul", {id: "navUlUser"}, 
 								React.createElement("li", null, "UpgrAID "), 
-								React.createElement("li", {onClick: this._profileNav}, " MyProfile")
+								React.createElement("li", {onClick: this._profileNav}, "MyProfile")
 							)
 
 						), 
+						(this.props.theme=== 1 ?
+							React.createElement("div", {className: "header"}, React.createElement("img", {src: "../../assets/group-theme-1.jpg"}), 
+								React.createElement("h1", {className: "groupHeader"}, "Skills: Group ", this.props.groupId)
+							) : null), 
+						(this.props.theme=== 2 ?
+							 React.createElement("div", {className: "header"}, React.createElement("img", {src: "../../assets/group-theme-2.jpg"}), 
+							 	React.createElement("h1", {className: "groupHeader"}, "Bad Habits: Group ", this.props.groupId)
+							 ) : null), 
+						(this.props.theme=== 3 ?
+							 React.createElement("div", {className: "header"}, React.createElement("img", {src: "../../assets/group-theme-3.png"}), 
+							 	React.createElement("h1", {className: "groupHeader"}, "Health & Fitness: Group ", this.props.groupId)
+							 ) : null)
 
-					React.createElement("div", {className: "header"}, React.createElement("img", {src: "../../assets/group-theme-2.jpg"}))
 
 					)
 					)
 		}
 	});
 
-	module.exports = NavUserView;
+	module.exports = NavGroupView;
 
 
 /***/ },
-/* 360 */
+/* 361 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -47781,7 +47839,7 @@
 
 
 /***/ },
-/* 361 */
+/* 362 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {/** @jsx React.DOM */var React = __webpack_require__(56);
