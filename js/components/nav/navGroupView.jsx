@@ -15,6 +15,11 @@ var NavGroupView = React.createClass({
 						<ul id="navUlUser">
 							<li>UpgrAID </li>
 							<li onClick={this._profileNav}>MyProfile</li>
+							<SearchUsers
+								users={[]} 
+								doSearch = {[]} 
+								query={[]}  
+								router={this.props.router}/>
 						</ul>
 
 					</div>

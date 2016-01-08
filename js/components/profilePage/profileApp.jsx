@@ -40,7 +40,9 @@ var ProfileApp = React.createClass({
 	_test: function() {
 		this.setState({
 			filteredData: Store.data.users
-		})
+		});
+
+		var filter = _.extend(Store.nav,{filter: this.state.filteredData});
 
 	},
 	componentWillMount: function() {
@@ -59,6 +61,7 @@ var ProfileApp = React.createClass({
 
 				allUsers=resp.toJSON();
 				_.extend(Store.data, {users: allUsers});
+				_.extend(Store.nav, {allUsers: allUsers});
 				that._test()
 			}
 		});
