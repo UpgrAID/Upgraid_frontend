@@ -8,7 +8,7 @@ var FoundUsers = React.createClass({
 	//navigates to clicked user in search window
 	render:function() {
 
-		return(<div id="userChoice"><p value={this.props.id} onClick={this._nav}>{this.props.username}</p></div>)
+		return(<div id="userChoice"><span><img className='avatarUserList' src='../../assets/avatar1.png'/></span><p value={this.props.id} onClick={this._nav}>{this.props.username}</p></div>)
 
 
 	}

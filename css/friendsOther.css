@@ -1,12 +1,11 @@
 #friendsContainerUser {
-    height:434px;
-    width: 300px;
-    position: absolute;
-    top: 420px;
-    right: 0px;
-    text-align: center;
-
-    background: #fff;
+   height: 202px;
+   width: 300px;
+   position: absolute;
+   top: 612px;
+   right: 0px;
+   text-align: center;
+   background: #fff;
 }
 
 .friendUser:hover {

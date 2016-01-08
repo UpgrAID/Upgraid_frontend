@@ -42,14 +42,15 @@
 	margin-bottom: 10px;
 	width: 200px;
 	height: 40px;
-	background: white;
+	
 	border-radius: 5px;
 }
 
 .loginInput {
-	width:200px;
-	height:35px;
+	width: 203px;
+	height: 35px;
 	outline: none;
+	border: 2px solid #f7f7f7;
 	font-size: 0.8rem;
 	border-radius: 5px;
 }
@@ -80,7 +81,7 @@
 	color:#fff;
 	background: #3b68ab;
 	outline:none;
-	border:1px solid #F7F7F7;
+	border:none;
 	padding:10px;
 	border-radius:5px;
 	margin-right: 10px;
@@ -96,11 +97,11 @@
 	color: #fff;
 	background: #3b68ab;
 	outline: none;
-	border: 1px solid #F7F7F7;
+	border:none;
 	padding: 10px;
 	border-radius: 5px;
-	bottom: -12px;
-	right: 2px;
+	bottom: -11px;
+	right: -2px;
 }
 
 #registerBtn:hover {

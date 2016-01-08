@@ -82,9 +82,9 @@
 	var Reg = __webpack_require__(221);
 	var User = __webpack_require__(216);
 	var Goals = __webpack_require__(228);
-	var Router = __webpack_require__(284);
-	var AvatarRankXp = __webpack_require__(298);
-	var Pusher = __webpack_require__(361);
+	var Router = __webpack_require__(233);
+	var AvatarRankXp = __webpack_require__(321);
+	var Pusher = __webpack_require__(352);
 
 
 /***/ },
@@ -122,7 +122,7 @@
 
 
 	// module
-	exports.push([module.id, "#wrapper {\n\twidth: 100%;\n\theight: 100%;\n\n}\n\n#loginOnly {\n\twidth: 250px;\n  margin-left: 100px;\n  position: relative;\n}\n\n#logoSpan {\n\tposition: absolute;\n    margin-top: 15px;\n    margin-right: 50px;\n    margin-left: 5px;\n    color: white;\n    font-size: 1.2rem;\n}\n\n#loginSpan {\n\tdisplay: inline-block;\n\tmargin-left: 3px;\n\tmargin-top: 15px;\n\tmargin-right: 10px;\n\tmargin-bottom: 10px;\n\tfont-size: 0.9rem;\n\tletter-spacing: 0.04em;\n\tcolor:#fff;\n}\n\n#loginForm {\n\tdisplay: inline-block;\n    width: 215px;\n\t\tmargin-left: 43px;\n}\n\n.inputWindow {\n\tdisplay: block;\n\tmargin-right: 20px;\n\tmargin-bottom: 10px;\n\twidth: 200px;\n\theight: 40px;\n\tbackground: white;\n\tborder-radius: 5px;\n}\n\n.loginInput {\n\twidth:200px;\n\theight:35px;\n\toutline: none;\n\tfont-size: 0.8rem;\n\tborder-radius: 5px;\n}\n\n#inputContainer {\n\tdisplay: inline-block;\n\twidth: 700px;\n\theight: 40px;\n\ttop:40px;\n}\n\n#user {\n\tposition: absolute;\n\ttop:-10px;\n\tleft:10px;\n}\n\n#pass {\n\tposition: absolute;\n\ttop:-10px;\n\tleft:10px;\n}\n.valContain {\n\tposition: relative;\n}\n#submitLog {\n\tdisplay: inline-block;\n\tcolor:#fff;\n\tbackground: #3b68ab;\n\toutline:none;\n\tborder:1px solid #F7F7F7;\n\tpadding:10px;\n\tborder-radius:5px;\n\tmargin-right: 10px;\n}\n\n#submitLog:hover {\n\tbackground: #33A1FF;\n}\n\n#registerBtn {\n\tdisplay: block;\n\tposition: absolute;\n\tcolor: #fff;\n\tbackground: #3b68ab;\n\toutline: none;\n\tborder: 1px solid #F7F7F7;\n\tpadding: 10px;\n\tborder-radius: 5px;\n\tbottom: -12px;\n\tright: 2px;\n}\n\n#registerBtn:hover {\n\tbackground: #33A1FF;\n}\n\n#bigPic {\n\tbackground-image: url(" + __webpack_require__(4) + ");\n\tmargin-top: -30px;\n\tbackground-repeat: no-repeat;\n\tbackground-size: cover;\n\twidth: 100%;\n\theight: 1000px;\n}\n#home-wrapper {\n\tposition: relative;\n\twidth: 60%;\n\tmargin: auto;\n\ttext-align: center;\n}\n#bigTitle {\n\tposition: absolute;\n  top: 220px;\n\tleft: 475px;\n  width: 400px;\n  font-size: 8rem;\n\tletter-spacing: 0.04em;\n  font-family: 'Yanone Kaffeesatz', sans-serif;\n  color: #26447A;\n}\n#splashText1 {\n\tcolor: white;\n\tletter-spacing: 0.04em;\n\tpadding-top: 60px;\n\tmargin-left: 50px;\n}\n#splashText2 {\n\tcolor: white;\n\tletter-spacing: 0.04em;\n\tmargin-left: 100px;\n}\n", ""]);
+	exports.push([module.id, "#wrapper {\n\twidth: 100%;\n\theight: 100%;\n\n}\n\n#loginOnly {\n\twidth: 250px;\n  margin-left: 100px;\n  position: relative;\n}\n\n#logoSpan {\n\tposition: absolute;\n    margin-top: 15px;\n    margin-right: 50px;\n    margin-left: 5px;\n    color: white;\n    font-size: 1.2rem;\n}\n\n#loginSpan {\n\tdisplay: inline-block;\n\tmargin-left: 3px;\n\tmargin-top: 15px;\n\tmargin-right: 10px;\n\tmargin-bottom: 10px;\n\tfont-size: 0.9rem;\n\tletter-spacing: 0.04em;\n\tcolor:#fff;\n}\n\n#loginForm {\n\tdisplay: inline-block;\n    width: 215px;\n\t\tmargin-left: 43px;\n}\n\n.inputWindow {\n\tdisplay: block;\n\tmargin-right: 20px;\n\tmargin-bottom: 10px;\n\twidth: 200px;\n\theight: 40px;\n\t\n\tborder-radius: 5px;\n}\n\n.loginInput {\n\twidth: 203px;\n\theight: 35px;\n\toutline: none;\n\tborder: 2px solid #f7f7f7;\n\tfont-size: 0.8rem;\n\tborder-radius: 5px;\n}\n\n#inputContainer {\n\tdisplay: inline-block;\n\twidth: 700px;\n\theight: 40px;\n\ttop:40px;\n}\n\n#user {\n\tposition: absolute;\n\ttop:-10px;\n\tleft:10px;\n}\n\n#pass {\n\tposition: absolute;\n\ttop:-10px;\n\tleft:10px;\n}\n.valContain {\n\tposition: relative;\n}\n#submitLog {\n\tdisplay: inline-block;\n\tcolor:#fff;\n\tbackground: #3b68ab;\n\toutline:none;\n\tborder:none;\n\tpadding:10px;\n\tborder-radius:5px;\n\tmargin-right: 10px;\n}\n\n#submitLog:hover {\n\tbackground: #33A1FF;\n}\n\n#registerBtn {\n\tdisplay: block;\n\tposition: absolute;\n\tcolor: #fff;\n\tbackground: #3b68ab;\n\toutline: none;\n\tborder:none;\n\tpadding: 10px;\n\tborder-radius: 5px;\n\tbottom: -11px;\n\tright: -2px;\n}\n\n#registerBtn:hover {\n\tbackground: #33A1FF;\n}\n\n#bigPic {\n\tbackground-image: url(" + __webpack_require__(4) + ");\n\tmargin-top: -30px;\n\tbackground-repeat: no-repeat;\n\tbackground-size: cover;\n\twidth: 100%;\n\theight: 1000px;\n}\n#home-wrapper {\n\tposition: relative;\n\twidth: 60%;\n\tmargin: auto;\n\ttext-align: center;\n}\n#bigTitle {\n\tposition: absolute;\n  top: 220px;\n\tleft: 475px;\n  width: 400px;\n  font-size: 8rem;\n\tletter-spacing: 0.04em;\n  font-family: 'Yanone Kaffeesatz', sans-serif;\n  color: #26447A;\n}\n#splashText1 {\n\tcolor: white;\n\tletter-spacing: 0.04em;\n\tpadding-top: 60px;\n\tmargin-left: 50px;\n}\n#splashText2 {\n\tcolor: white;\n\tletter-spacing: 0.04em;\n\tmargin-left: 100px;\n}\n", ""]);
 
 	// exports
 
@@ -478,7 +478,7 @@
 
 
 	// module
-	exports.push([module.id, "#registrationContainer {\n    width: 500px;\n    height: 396px;\n    background: #fff;\n    position: absolute;\n    left: 50%;\n    margin-left: -250px;\n    top: 80px;\n    border-radius: 5px;\n\tz-index: 2;\n    overflow: hidden;\n}\n\n\n#close {\n\tposition: absolute;\n\tright:3px;\n\ttop:3px;\n}\n\n.regInput {\n\twidth: 406px;\n    padding-top: 20px;\n    margin-bottom: 18px;\n    left: 44px;\n    position: relative;\n}\n\n\n\n#regHead {\n\ttext-align: center;\n    color: #fff;\n    margin: 0;\n    margin-bottom: 15px;\n    background: #00C5CD;\n\n}\n\n#submitReg {\n\tdisplay:block;\n    color: #fff;\n    background: #00F5CD;\n    outline: none;\n    border: 1px solid #F7F7F7;\n    padding: 10px;\n    border-radius: 5px;\n    position: relative;\n    left: 45px;\n    top:-10px;\n}\n", ""]);
+	exports.push([module.id, "#registrationContainer {\n    width: 500px;\n    height: 406px;\n    background: #fff;\n    position: absolute;\n    left: 50%;\n    margin-left: -250px;\n    top: 80px;\n    border-radius: 5px;\n\tz-index: 2;\n    overflow: hidden;\n}\n\n\n#close {\n\tposition: absolute;\n   \n    width:15px;\n\tright:3px;\n\ttop:3px;\n}\n\n.regInput {\n\twidth: 406px;\n    padding-top: 20px;\n    margin-bottom: 18px;\n    left: 44px;\n    position: relative;\n}\n\n\n\n#regHead {\n\ttext-align: center;\n    color: #fff;\n    margin: 0;\n    margin-bottom: 15px;\n    padding-bottom: 4px;\n    background: #5EE;\n\n}\n\n#submitReg {\n\tdisplay:block;\n    color: #fff;\n    background: #5EE;\n    outline: none;\n    border: 1px solid #F7F7F7;\n    padding: 10px;\n    border-radius: 5px;\n    position: relative;\n    left: 45px;\n    top:-10px;\n}\n", ""]);
 
 	// exports
 
@@ -558,7 +558,7 @@
 	exports.push([module.id, "@import url(http://weloveiconfonts.com/api/?family=entypo);", ""]);
 
 	// module
-	exports.push([module.id, "entypo\n[class*=\"entypo-\"]:before {\n  font-family: 'entypo', sans-serif;\n}\n\n\nbody {\n\tfont-family: 'Yanone Kaffeesatz', sans-serif;\n\tbackground: #e3e3e3;\n\tmargin: 0;\n\tpadding:0;\n}\n\n\n#container {\n\tmax-width: 1200px;\n\tmin-width: 1200px;\n\tposition: relative;\n\theight: 100%;\n\tbox-sizing:border-box;\n\tmargin:auto;\n\tposition: relative;\n\tbackground: #f7f7f7;\n\tbox-shadow:10px 10px 8px 0px rgba(0, 0, 0, 0.5);\n\tbox-shadow-bottom:1px;\n\n}\n\n.overlay {\n\tbackground: #000;\n\topacity: 80%;\n}\n\nul {\n\tlist-style: none;\n}\n\nul li {\n\tlist-style: none;\n}\n\n#greeting {\n\tposition: relative;\n\tcolor: #AAEDEA;\n\tpadding-left: 76px;\n  padding-top: 7px;\n}\n\nh2 {\n\tcolor: #001E1F;\n}\n\nul {\n\tlist-style:none;\n}\n\n\n\n#chat {\n\theight:400px;\n\twidth:300px;\n\toverflow: scroll;\n\tposition: absolute;\n\ttop:70px;\n\tright:0px;\n\n}\n\n#register {\n\tz-index: 2;\n\tposition: absolute;\n\ttop:10px;\n}\n\nbutton {\n\toutline:none;\n}\n", ""]);
+	exports.push([module.id, "entypo\n[class*=\"entypo-\"]:before {\n  font-family: 'entypo', sans-serif;\n}\n\n\nbody {\n\tfont-family: 'Yanone Kaffeesatz', sans-serif;\n\tbackground: #e3e3e3;\n\tmargin: 0;\n\tpadding:0;\n}\n\n\n#container {\n\tmax-width: 1200px;\n\tmin-width: 1200px;\n\tposition: relative;\n\theight: 100%;\n\tbox-sizing:border-box;\n\tmargin:auto;\n\tposition: relative;\n\tbackground: #f7f7f7;\n\tbox-shadow:10px 10px 8px 0px rgba(0, 0, 0, 0.5);\n\tbox-shadow-bottom:1px;\n\n}\n\n.overlay {\n\tbackground: #000;\n\topacity: 80%;\n}\n\nul {\n\tlist-style: none;\n\tmargin:0;\n}\n\nul li {\n\tlist-style: none;\n}\n\n#greeting {\n\tposition: relative;\n\tcolor: #AAEDEA;\n\tpadding-left: 76px;\n  padding-top: 7px;\n}\n\nh2 {\n\tcolor: #001E1F;\n}\n\nul {\n\tlist-style:none;\n}\n\n\n\n#chat {\n\theight:400px;\n\twidth:300px;\n\toverflow: scroll;\n\tposition: absolute;\n\ttop:70px;\n\tright:0px;\n\n}\n\n#register {\n\tz-index: 2;\n\tposition: absolute;\n\ttop:10px;\n}\n\nbutton {\n\toutline:none;\n}\n", ""]);
 
 	// exports
 
@@ -598,7 +598,7 @@
 
 
 	// module
-	exports.push([module.id, "\n#navContainer {\n    top: 0;\n    left: 0;\n    z-index: 1000;\n    /*width: 1075px;*/\n    margin: auto;\n    position: relative;\n    height: 50px;\n    background-color: #033A4C;\n}\n.header {\n    height: 205px;\n    width: 950px;\n    left: 250px;\n    z-index: 0;\n    position: absolute;\n    background: #001E1F;\n    overflow: hidden;\n}\n.header h1 {\n  z-index: 5;\n  color: blue;\n  position: absolute;\n  top: 10px;\n  left: 10px;\n}\n\n\n\n#navContain {\n  width:1150px;\n}\n#navUl {\n    margin: 0;\n    list-style: none;\n    position: relative;\n    top: 5px;\n}\n#navUl .mainLi {\n\t    color: #fff;\n      display: inline-block;\n      font-size: 18px;\n      margin-left: 54px;\n      margin-right: 25px;\n}\n\n.mailLi:hover .maniLi {\n  color:#34BAD9;\n  cursor: pointer;\n}\n#navUl .logo {\n    margin-left: 15px;\n    display: inline-block;\n    color: #34BAD9;\n    position: absolute;\n    font-size: 22px;\n    top:4px;\n    left: 0;\n    padding-right: 5px;\n}\n#navUl .searchBar {\n  display: inline-block;\n  margin-left: 20px;\n}\n#friendRequests  {\n  display: none;\n  position: absolute;\n  top:50px;\n  right:0px;\n  padding:0;\n  background: #fff;\n}\n#friendRequestsHeader {\n    color: #fff;\n    background: #006d72;\n    margin: 0;\n    text-align: center;\n}\n\n#friendLi {\n  height:120px;\n  width:50px;\n  float: right;\n}\n#friendLi:hover #friendRequests {\n  display: block;\n}\n\n#friendRequests:hover .reqObj {\n  display: block;\n}\n\n#searchUsers {\n    width: 156px;\n    padding-top: 8px;\n    position: relative;\n    top: 4px;\n    border-radius: 2px;\n    border: 1px solid #f7f7f7;\n}\n\n\n#userModal {\n    display: none;\n    position: absolute;\n    top: 46px;\n    left: 188px;\n    width: 300px;\n    height: 300px;\n    background: #fff;\n    overflow: scroll;\n    z-index: 3;\n  \n}\n#closeModal {\n  position: absolute;\n  width: 200px;\n  top: 0px;\n  right:0px;\n  height: 25px;\n  width:25px;\n  background: red;\n}\n\n\n#userChoice {\n  border-bottom: 1px solid black;\n  padding-left: 55px;\n}\n\n.allUsers {\n  color:#000;\n}\n\n\n#randomQuote {\n  color:#fff;\n  margin:auto;\n  position: relative;\n  top:30px;\n  font-size: 30px;\n  width:700px;\n}\n\n#searchUsers {\n    width: 156px;\n    padding-top: 8px;\n    border-radius: 2px;\n    border: 1px solid #f7f7f7;\n}\n", ""]);
+	exports.push([module.id, "\n.navContainer {\n    top: 0;\n    left: 0;\n    z-index: 1000;\n    /*width: 1075px;*/\n    margin: auto;\n    position: relative;\n    height: 50px;\n    background-color: #033A4C;\n}\n\n\n.header {\n    height: 205px;\n    width: 950px;\n    left: 250px;\n    z-index: 0;\n    position: absolute;\n    background: #001E1F;\n    overflow: hidden;\n}\n.header h1 {\n  z-index: 5;\n  color: blue;\n  position: absolute;\n  top: 10px;\n  left: 10px;\n}\n\n\n\n#navContain {\n  width:1150px;\n}\n#navUl {\n    margin: 0;\n    list-style: none;\n    position: relative;\n    top: 5px;\n}\n#navUlUser {\n    margin: 0;\n    list-style: none;\n    position: relative;\n    top: 5px;\n}\n#navUlGroup{\n    margin: 0;\n    list-style: none;\n    position: relative;\n    top: 5px;\n}\n\n.mainLi {\n   color: #fff;\n       display: inline-block;\n       font-size: 18px;\n       margin-left: 54px;\n       margin-right: 25px;\n       position: relative;\n       top: 8px;\n\n}\n\n.mainLi:hover{\n  color:#34BAD9;\n  cursor: pointer;\n}\n .logo {\n    margin-left: 15px;\n    display: inline-block;\n    color: #34BAD9;\n    position: absolute;\n    font-size: 22px;\n    top:4px;\n    left: 0;\n    padding-right: 5px;\n}\n\n\n#navUlGroup {\n  margin: 0;\n  list-style: none;\n  position: relative;\n  top: 5px;\n}\n#navUl .searchBar {\n  display: inline-block;\n  margin-left: 20px;\n}\n#friendRequests  {\n  display: none;\n  position: absolute;\n  top:50px;\n  right:0px;\n  padding:0;\n  background: #fff;\n}\n#friendRequestsHeader {\n    color: #fff;\n    background: #1e586e;\n    margin: 0;\n    text-align: center;\n}\n\n#friendLi {\n  height:120px;\n  width:50px;\n  float: right;\n}\n#friendLi:hover #friendRequests {\n  display: block;\n}\n\n#friendRequests:hover .reqObj {\n  display: block;\n}\n\n.searchUsers {\n    width: 156px;\n    padding-top: 8px;\n    position: absolute;\n    left: 228px;\n    top: 4px;\n    border-radius: 2px;\n    border: 1px solid #f7f7f7;\n}\n\n\n#userModal {\n    display: none;\n    position: absolute;\n    top: 46px;\n    left: 228px;\n    width: 300px;\n    height: 300px;\n    background: #fff;\n    overflow: scroll;\n    z-index: 3;\n    font-size: 19px;\n  \n}\n#closeModal {\n    position: absolute;\n    width: 200px;\n    top: 0px;\n    right: 0px;\n    height: 25px;\n    width: 25px;\n    background: #1e586e;\n}\n\n\n#userChoice {\n  border-bottom: 1px solid #ebebeb;\n  padding-left: 55px;\n  color: #3b6bb8;\n  position:relative;\n}\n\n.allUsers {\n  color:#000;\n}\n\n\n#randomQuote {\n  color:#fff;\n  margin:auto;\n  position: relative;\n  top:30px;\n  font-size: 30px;\n  width:700px;\n}\n\n#searchUsers {\n    width: 156px;\n    padding-top: 8px;\n    border-radius: 2px;\n    border: 1px solid #f7f7f7;\n}\n", ""]);
 
 	// exports
 
@@ -758,7 +758,7 @@
 
 
 	// module
-	exports.push([module.id, ".friend {\n    height: 42px;\n    background: #1f667e;\n    border: none;\n    border-bottom:1px solid #7BB;\n    text-align: left;\n    width: 100%;\n    color: #fff;\n}\n\n.friend:hover {\n\tbackground: #004a72;\n}\n\n.friendListItem {\n\tdisplay: block;\n}\n\n#friendsContainer {\n    height: 351px;\n    position: relative;\n\n    background: #eff;\n    text-align: center;\n}\n/*#setGoal {\n\tmargin:0;\n}*/\n\n#listContain {\n\theight: 317px;\n    overflow: scroll;\n}\n\n#friendsUl {\n\tpadding: 0;\n\tmargin:0;\n}\n.requester {\n    min-width: 40px;\n    margin-right: 15px;\n    color: black;\n    position: absolute;\n    left: 5px;\n}\n.reqObj {\n\tmargin-top: 10px;\n\tmargin-left: 10px;\n}\n#friendRequests {\n\tcolor: #2A8889;\n    margin-left: 10px;\n    /* height: 200px; */\n    width: 230px;\n    padding-bottom: 8px;\n    position: absolute;\n    right:16px;\n}\n\n.accRejContain {\n\tfloat: right;\n\tposition: relative;\n\tright:0px;\n}\n\n.rejbutton, .accbutton {\n\tmargin-right: 5px;\n\twidth: 60px;\n\theight: 22px;\n  padding: 6px;\n\tborder-radius: 3px;\n\tborder:1px solid #f7f7f7;\n\tbackground: #00C5CD;\n}\n.rejbutton:hover {\n\tbackground: red;\n\tcolor: white;\n}\n.accbutton:hover {\n\tbackground: green;\n\tcolor: white;\n}\n\n#square {\n\twidth: 28px;\n    height: 28px;\n    background: #fff;\n    padding: 5px 0 0 5px;\n    border-radius: 4px;\n    color: #00C5CD;\n    font-size: 0.7rem;\n    z-index: 2;\n    margin-right: 10px;\n    position: absolute;\n    top: 4px;\n    right: 30px;\n    font-size: 24px;\n}\n\n#friendsHeader {\n\tmargin:0;\n    background: #1e586e;\n    color:#fff;\n}\n", ""]);
+	exports.push([module.id, ".friend {\n    height: 42px;\n    background: #1f667e;\n    border: none;\n    border-bottom:1px solid #7BB;\n    text-align: left;\n    width: 100%;\n    color: #fff;\n}\n\n.friend:hover {\n\tbackground: #004a72;\n}\n\n.friendListItem {\n\tdisplay: block;\n}\n\n#friendsContainer {\n    height: 351px;\n    position: relative;\n\n    background: #eff;\n    text-align: center;\n}\n\n\n#listContain {\n\theight: 317px;\n    overflow: scroll;\n}\n\n#friendsUl {\n\tpadding: 0;\n\tmargin:0;\n}\n.requester {\n    min-width: 40px;\n    margin-right: 15px;\n    color: black;\n    position: absolute;\n    left: 5px;\n}\n.reqObj {\n\tmargin-top: 10px;\n\tmargin-left: 10px;\n}\n#friendRequests {\n\tcolor: #2A8889;\n    margin-left: 10px;\n    height: 200px; \n    width: 230px;\n    padding-bottom: 8px;\n    top:36px;\n    position: absolute;\n    right:16px;\n}\n\n.accRejContain {\n\tfloat: right;\n\tposition: relative;\n\tright:0px;\n}\n\n.rejbutton, .accbutton {\n\tmargin-right: 5px;\n\twidth: 60px;\n\theight: 22px;\n  padding: 6px;\n\tborder-radius: 3px;\n\tborder:1px solid #f7f7f7;\n\tbackground: #00C5CD;\n}\n.rejbutton:hover {\n\tbackground: red;\n\tcolor: white;\n}\n.accbutton:hover {\n\tbackground: green;\n\tcolor: white;\n}\n\n#square {\n\twidth: 28px;\n    height: 28px;\n    background: #fff;\n    padding: 5px 0 0 5px;\n    border-radius: 4px;\n    color: #00C5CD;\n    font-size: 0.7rem;\n    z-index: 2;\n    margin-right: 10px;\n    position: absolute;\n    top: -4px;\n    right: 30px;\n    font-size: 24px;\n}\n\n#friendsHeader {\n\tmargin:0;\n    background: #1e586e;\n    color:#fff;\n}\n", ""]);
 
 	// exports
 
@@ -798,7 +798,7 @@
 
 
 	// module
-	exports.push([module.id, "#friendsContainerUser {\n    height: 352px;\n    width: 300px;\n    position: absolute;\n    top: 420px;\n    right: 0px;\n    text-align: center;\n\n    background: #fff;\n}\n\n.friendUser:hover {\n\tbackground: #004a72;\n}\n\n#listContainUser {\n\theight: 292px;\n    overflow: scroll;\n}\n\n#friendsUlUser {\n\tpadding: 0;\n\tmargin:0;\n}\n\n#friendsHeaderUser {\n        margin: 0;\n        background: #1e586e;\n        color: #fff;\n}\n\n.friendUser {\n    width:301px;\n    outline:0;\n}\n", ""]);
+	exports.push([module.id, "#friendsContainerUser {\n   height: 202px;\n   width: 300px;\n   position: absolute;\n   top: 612px;\n   right: 0px;\n   text-align: center;\n   background: #fff;\n}\n\n.friendUser:hover {\n\tbackground: #004a72;\n}\n\n#listContainUser {\n\theight: 292px;\n    overflow: scroll;\n}\n\n#friendsUlUser {\n\tpadding: 0;\n\tmargin:0;\n}\n\n#friendsHeaderUser {\n        margin: 0;\n        background: #1e586e;\n        color: #fff;\n}\n\n.friendUser {\n    width: 85px;\n    height:34px;\n    display: block;\n    border: none;\n    background: #1f667e;\n    color: #fff;\n    outline: 0;\n}\n", ""]);
 
 	// exports
 
@@ -878,7 +878,7 @@
 
 
 	// module
-	exports.push([module.id, "#groupsUserContainer {\n\twidth: 300px;\n    height: 304px;\n    position: absolute;\n    background: #fff;\n    top: 510px;\n    right: 0px;\n}\n\n\n#groupsUserHeader {\n    margin: auto;\n\t\ttext-align: center;\n    background: #1e586e;\n    color:#fff;\n    text-align: center;\n}\n\n\n.groupUserButton {\n    display: block;\n    margin:0;\n\n}\n", ""]);
+	exports.push([module.id, "#groupsUserContainer {\n\t        height: 192px;\n            width: 300px;\n            position: absolute;\n            top: 420px;\n            right: 0px;\n            text-align: center;\n            background: #EFF;\n}\n\n\n#groupsUserHeader {\n    margin: auto;\n\t\ttext-align: center;\n    background: #1e586e;\n    color:#fff;\n    text-align: center;\n}\n\n\n.groupUserButton {\n    display: block;\n    margin:0;\n\n}\n", ""]);
 
 	// exports
 
@@ -958,7 +958,7 @@
 
 
 	// module
-	exports.push([module.id, "#addFriend {\n\tposition: absolute;\n\ttop:10px;\n\tright:10px;\n\tz-index: 2;\n\tpadding:10px;\n\tcolor:#fff;\n\tbackground:#c2d22d;\n\tborder:1px solid #f7f7f7;\n}\n", ""]);
+	exports.push([module.id, "#addFriend {\n\tposition: absolute;\n\ttop:0px;\n\tright:10px;\n\tz-index: 2;\n\tpadding:10px;\n\tcolor:#fff;\n\tbackground:#c2d22d;\n\tborder:1px solid #f7f7f7;\n}\n", ""]);
 
 	// exports
 
@@ -998,7 +998,7 @@
 
 
 	// module
-	exports.push([module.id, "#members {\n\tmargin:0;\n\tmargin:auto;\n\tbackground: #1e586e;\n\tcolor:#fff;\n}\n#userListContainer {\n\n\ttext-align: center;\n    position: absolute;\n    top: 254px;\n    width: 300px;\n    position: absolute;\n    right: 0px;\n}\n\n\n#userListUl {\n\tmargin:0;\n\tpadding:0;\n\tborder-radius: 5px;\n\n}\n\n.groupUser {\n\n\theight: 45px;\n    background: #1f667e;\n    border: none;\n    border-bottom: 1px solid #7BB;\n    text-align: left;\n    padding-left: 8px;\n    width: 300px;\n    font-size: 1em;\n    color: #fff;\n}\n\n.groupUser:hover {\n\tbackground: #004a72;\n\tcolor:#fff;\n}\n\n.userListBtn {\n    height: 45px;\n    background: #1f667e;\n    border: none;\n    border-bottom: 1px solid #7BB;\n    text-align: left;\n    padding-left: 8px;\n    width: 292px;\n    font-size: 1em;\n    color: #fff;\n}\n\n.userListBtn:hover {\n\tbackground: #004a72;\n\tcolor:#fff;\n}\n", ""]);
+	exports.push([module.id, "#members {\n\tmargin:0;\n\tmargin:auto;\n\tbackground: #1e586e;\n\tcolor:#fff;\n}\n#userListContainer {\n\n\ttext-align: center;\n    position: absolute;\n    top: 254px;\n    width: 300px;\n    position: absolute;\n    right: 0px;\n}\n\n\n#userListUl {\n\tmargin:0;\n\tpadding:0;\n\tborder-radius: 5px;\n\n}\n\n.groupUser {\n\n\theight: 45px;\n    background: #1f667e;\n    border: none;\n    border-bottom: 1px solid #7BB;\n    text-align: left;\n    padding-left: 8px;\n    width: 300px;\n    font-size: 1em;\n    color: #fff;\n}\n\n.groupUser:hover {\n\tbackground: #004a72;\n\tcolor:#fff;\n}\n\n.userListBtn {\n    height: 45px;\n    background: #1f667e;\n    border: none;\n    border-bottom: 1px solid #7BB;\n    text-align: left;\n    padding-left: 8px;\n    width: 292px;\n    font-size: 1em;\n    color: #fff;\n}\n\n.avatarUserList {\n    width: 38px;\n    position: absolute;\n    left: 7px;\n    top: -7px;\n}\n\n.userListBtn:hover {\n\tbackground: #004a72;\n\tcolor:#fff;\n}\n", ""]);
 
 	// exports
 
@@ -1038,7 +1038,7 @@
 
 
 	// module
-	exports.push([module.id, "#avatarDiv {\n\twidth: 150px;\n    position: relative;\n    top: 20px;\n    /* left: 50px; */\n    margin: 0;\n    margin: auto;\n    height: 200px;\n    font-family: 'Press Start 2P', cursive;\n    color: green;\n}\n\n.avatarImg {\n    \n    position: relative;\n    left: 11px;\n    top:12px;\n}\n#rank1 {\n\ttext-align: left;\n\tfont-family: 'Press Start 2P', cursive;\n\tcolor:#fff;\n\tmargin:0;\n\tpadding-right: 54px;\n\tdisplay: block;\n}\n#exp {\n\ttext-align: left;\n\tfont-family: 'Press Start 2P', cursive;\n\tcolor:#fff;\n\tmargin:0;\n}\n#picture {\n\twidth:150px;\n\theight: 150px;\n\tbackground: #fff;\n\tmargin-bottom: 12px;\n}\n\n#avatarModal {\n\tbackground: #fff;\n    width: 500px;\n    z-index: 2;\n    position: absolute;\n}\n\n#avatarUl {\n\tmargin: 0;\n    height: 175px;\n}\n\n#avatarModalHeader {\n\tz-index: 2;\n    text-align: center;\n}\n\n#avatarSubmit {\n    z-index: 2;\n    width: 62px;\n    height: 40px;\n    color: #fff;\n    background: #27556C;\n    outline: 0px;\n    border: none;\n    position: absolute;\n    bottom: 0;\n    right: 0;\n}\n.avatars {\n\tdisplay: inline;\n}\n\n\n#avatarDivUser {\n        width: 285px;\n        position: relative;\n        top: 30px;\n        left: 92px;\n        margin: 0;\n        margin: auto;\n        height: 200px;\n        font-family: 'Press Start 2P', cursive;\n        color: green;\n        z-index: 2;\n}\n\n#usernameView {\n    position: absolute;\n    top:100px;\n}\n\n#greeting {\n    position: relative;\n    color: #AAEDEA;\n    padding-left: 48px;\n    top: 10px;\n}\n\n#avatarRankXpContainerUser {\n    width: 285px;\n    position: absolute;\n    top: 50px;\n    left:250px;\n    margin: 0;\n    margin: auto;\n    height: 200px;\n    font-family: 'Press Start 2P', cursive;\n    color: green;\n    z-index: 2;\n}\n\n#usernameAvatar{\n        color: #fff;\n        position: relative;\n        left: 22px;\n        bottom: 6px;\n}\n", ""]);
+	exports.push([module.id, "#avatarDiv {\n\twidth: 150px;\n    position: relative;\n    top: 20px;\n    /* left: 50px; */\n    margin: 0;\n    margin: auto;\n    height: 200px;\n    font-family: 'Press Start 2P', cursive;\n    color: green;\n}\n\n.avatarImg {\n    \n    position: relative;\n    left: 11px;\n    top:12px;\n}\n\n.avatarImg:hover {\n    cursor:pointer;\n}\n#rank1 {\n\ttext-align: left;\n\tfont-family: 'Press Start 2P', cursive;\n\tcolor:#fff;\n\tmargin:0;\n\tpadding-right: 54px;\n\tdisplay: block;\n}\n#exp {\n\ttext-align: left;\n\tfont-family: 'Press Start 2P', cursive;\n\tcolor:#fff;\n\tmargin:0;\n}\n#picture {\n\twidth:150px;\n\theight: 150px;\n\tbackground: #fff;\n\tmargin-bottom: 12px;\n}\n\n#avatarModal {\n\tbackground: #fff;\n    width: 500px;\n    z-index: 2;\n    position: absolute;\n}\n\n#avatarUl {\n\tmargin: 0;\n    height: 175px;\n}\n\n#avatarModalHeader {\n\tz-index: 2;\n    text-align: center;\n}\n\n#avatarSubmit {\n    z-index: 2;\n    width: 62px;\n    height: 40px;\n    color: #fff;\n    background: #27556C;\n    outline: 0px;\n    border: none;\n    position: absolute;\n    bottom: 0;\n    right: 0;\n}\n.avatars {\n\tdisplay: inline;\n}\n\n\n#avatarDivUser {\n        width: 285px;\n        position: relative;\n        top: 60px;\n        left: 15px;\n        margin: 0;\n        margin: auto;\n        height: 200px;\n        font-family: 'Press Start 2P', cursive;\n        color: green;\n        z-index: 2;\n}\n\n#usernameView {\n    position: absolute;\n    top:100px;\n}\n\n#greeting {\n    position: relative;\n    color: #AAEDEA;\n    padding-left: 48px;\n    top: 10px;\n}\n\n#avatarRankXpContainerUser {\n    width: 285px;\n    position: absolute;\n    top: 50px;\n    left:250px;\n    margin: 0;\n    margin: auto;\n    height: 200px;\n    font-family: 'Press Start 2P', cursive;\n    color: green;\n    z-index: 2;\n}\n\n#usernameAvatar{\n        color: #fff;\n        position: relative;\n        left: 22px;\n        bottom: 6px;\n}\n\n#rank1User {\n    position: absolute;\n    top:0px;\n    left: 37px;\n    \n}\n\n#expUser {\n    position: absolute;\n    top:20px;\n    left: 37px;\n    \n}\n", ""]);
 
 	// exports
 
@@ -1118,7 +1118,7 @@
 
 
 	// module
-	exports.push([module.id, ".otherPostTitle {\n\tbackground: #ccc;\n    margin: 0;\n    padding-top: 16px;\n    padding-bottom: 16px;\n    padding-left: 8px;\n}\n\n.otherPostDescription {\n    background: #fff;\n    margin: 0;\n    padding-top: 10px;\n    padding-bottom: 2px;\n    padding-left: 8px;\n}\n#otherPostsContainer {\n\twidth: 649px;\n    height: 560px;\n    overflow: scroll;\n    left: 251px;\n    top: 255px;\n    position: absolute;\n    background: #fdfdfd;\n}\n", ""]);
+	exports.push([module.id, ".otherPostTitle {\n\tbackground: #BEE;\n    margin: 0;\n    padding-top: 16px;\n    padding-bottom: 16px;\n    padding-left: 8px;\n}\n\n.otherPostDescription {\n    background: #fff;\n    margin: 0;\n    padding-top: 10px;\n    padding-bottom: 2px;\n    padding-left: 8px;\n}\n#otherPostsContainer {\n\twidth: 649px;\n    height: 560px;\n    overflow: scroll;\n    left: 251px;\n    top: 255px;\n    position: absolute;\n    background: #fdfdfd;\n}\n\n#otherPostsHeader {\n    margin-left: 8px;\n}\n", ""]);
 
 	// exports
 
@@ -21062,6 +21062,7 @@
 			var username = $("#username").val();
 			var password = $("#password").val();
 
+			//intial ajax call to set authorization token for future api requests
 			$.ajax({
 				url:'https://safe-brook-9891.herokuapp.com/api/api-token-auth/',
 				method:'POST',
@@ -21077,6 +21078,7 @@
 			})
 
 		},
+		// opens user registration window
 		 _reg: function(e) {
 		 	e.preventDefault();
 		 	this.props.show();
@@ -21122,7 +21124,7 @@
 	module.exports= Login;
 
 	function setToken(token) {
-
+	//Backbone.sync to set/save auth token for future api calls
 		var _sync = Backbone.sync;
 		Backbone.sync = function(post,model,options) {
 
@@ -33967,7 +33969,7 @@
 	var test = new Reg();
 
 	var Registration = React.createClass({displayName: "Registration",
-
+	  //sets registration values
 	        _regSubmit: function(e) {
 	        var props = this.props;
 	        e.preventDefault();
@@ -33983,7 +33985,7 @@
 	        }
 	       })
 	    },
-
+	//hides registration window
 	    _close: function() {
 	      this.props.hide();
 	    },
@@ -34071,15 +34073,15 @@
 	var ToFriendBtn = __webpack_require__(225);
 
 	var Friends = React.createClass({displayName: "Friends",
-
+	//maps friends to friend list div
 		render: function() {
 			props=this.props;
-			
+
 			var test=this.props.fromFriends.map(function(obj){
 				return(React.createElement("li", {key: obj.id, className: "friendListItem"}, React.createElement(FriendsBtn, {friendName: obj.from_friend.username, id: obj.from_friend.id, router: props.router})))
 						})
 			var toFriends = this.props.toFriends.map(function(obj){
-				return(React.createElement("li", {key: obj.id, className: "friendListItem"}, React.createElement(ToFriendBtn, {toFriend: obj.to_friend.username, id: obj.to_friend.id, router: props.router})))
+				return(React.createElement("li", {key: obj.id, 	className: "friendListItem"}, React.createElement(ToFriendBtn, {toFriend: obj.to_friend.username, id: obj.to_friend.id, router: props.router})))
 			})
 					return(React.createElement("div", {id: "friendsContainer"}, 
 						React.createElement("h2", {id: "friendsHeader"}, "Friends"), 
@@ -34104,12 +34106,13 @@
 
 	/** @jsx React.DOM */var React = __webpack_require__(56);
 
+	//navigates to userView on click of user
 	var FriendsBtn = React.createClass({displayName: "FriendsBtn",
 		_profileNav: function(e) {
 			var router = this.props.router;
 			e.preventDefault();
 			var userId = this.props.id;
-			
+
 			router.navigate('userView/'+ userId , {trigger:true})
 		},
 		render:function(){
@@ -34148,6 +34151,8 @@
 	/** @jsx React.DOM */var React = __webpack_require__(56);
 	var GroupsBtn = __webpack_require__(227);
 
+
+	//renders buttons which are links to groups based on how many goals they have.
 	var Groups = React.createClass({displayName: "Groups",
 		render: function(){
 			var props = this.props;
@@ -34169,6 +34174,8 @@
 
 	/** @jsx React.DOM */var React = __webpack_require__(56);
 
+
+	//renders the button with goal name.
 	var GroupsBtn = React.createClass({displayName: "GroupsBtn",
 		getInitialState: function(){
 			return {
@@ -34231,10 +34238,10 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(56);
-	var ReactDOM = __webpack_require__(213)
 	var GoalInput = __webpack_require__(230);
-	var GoalItem = __webpack_require__(282);
+	var GoalItem = __webpack_require__(231);
 
+	//renders the list of goals and their input.
 	var GoalList = React.createClass({displayName: "GoalList",
 		getInitialState: function () {
 
@@ -34254,10 +34261,14 @@
 				React.createElement("div", {id: "goalContainer"}, 
 					React.createElement("h2", {id: "goalHeader"}, "Your Goals"), 
 
-					React.createElement(GoalItem, {data: this.state.data, addInput: this._addInput, router: this.props.router}), 
-					React.createElement(GoalInput, {data: this.state.data, router: this.props.router, addInput: this._addInput})
-
-
+					React.createElement(GoalItem, {
+						data: this.state.data, 
+						addInput: this._addInput, 
+						router: this.props.router}), 
+					React.createElement(GoalInput, {
+						data: this.state.data, 
+						router: this.props.router, 
+						addInput: this._addInput})
 				)
 				)
 		}
@@ -34271,8 +34282,12 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {/** @jsx React.DOM */var React = __webpack_require__(56);
-	var RadioButton = __webpack_require__(231);
-	var RadioButtonGroup = __webpack_require__(281);
+
+
+	//renders goal input a theme and title are sent to api.
+	//on success of goal creation, users are routed to group 
+	//page with other people with similiar goals.
+	//sets and uploads new user goals
 
 	var GoalInput = React.createClass({displayName: "GoalInput",
 
@@ -34366,6 +34381,1241 @@
 /* 231 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/** @jsx React.DOM */var React = __webpack_require__(56);
+	var Item = __webpack_require__(232)
+
+	//goals are rendered the theme is passed along to item.
+	var GoalItem = React.createClass({displayName: "GoalItem",
+
+		render: function() {
+			var props =this.props;
+			
+			return(React.createElement("ul", {key: this.props.objectId, className: "goalContainer"}, 
+					this.props.data.map(function(obj){
+
+						return(React.createElement(Item, {
+									key: obj.id, 
+									addInput: props.addInput, 
+									data: obj.title, 
+									datas: props.data, 
+									theme: obj.theme, 
+									id: obj.id, 
+									completed: obj.completed, 
+									router: props.router}))
+					})	
+
+
+					)
+
+				)
+		}
+	})
+
+	module.exports= GoalItem;
+
+
+/***/ },
+/* 232 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function($) {/** @jsx React.DOM */var React = __webpack_require__(56);
+
+	//renders the goals if goals are completed they will not be displayed. User has option to 
+	//remove goals as well.
+	var Item = React.createClass({displayName: "Item",
+		getInitialState: function() {
+			return{value: $('.categoryLabel').val(),
+					category: this.props.category,
+					theme: null
+				}
+		},
+		_completed: function(e) {
+			e.preventDefault();
+			props=this.props;
+			this.setState({
+				theme: this.props.theme
+			})
+
+			var Goal = Backbone.Model.extend({
+				url:'https://safe-brook-9891.herokuapp.com/api/goals/'+props.id,
+				initialize: function() {
+
+					}
+				})
+
+			var GoalCollection = Backbone.Collection.extend({
+				url:'https://safe-brook-9891.herokuapp.com/api/goals/'+props.id,
+				model: Goal
+
+			});
+
+			var collection = new GoalCollection(this.props.datas);
+
+			var item = collection.get(props.id);
+			item.set({
+				'title':this.props.data,
+				'theme':this.props.theme,
+				 'completed': true
+			});
+			item.save();
+			collection.add(item);
+			props.addInput(collection.toJSON());
+
+			this.setState({
+				value:''
+			})
+		},
+		_navGroup: function(){
+
+		},
+		componentDidMount: function(){
+			var count=[];
+			count.push(this.props.completed)
+
+		},
+		render: function() {
+
+			return (React.createElement("div", null, (this.props.completed ? null :
+						(React.createElement("li", {className: "goalItem"}, 
+
+							React.createElement("label", {className: "categoryLabel", htmlFor: this.props.objectId, value: this.props.data, onClick: this._navGroup}, this.props.data), 
+							React.createElement("button", {className: "delete entypo-check", onClick: this._completed, value: this.props.theme})
+						)))
+					))
+
+		}
+	})
+
+	module.exports= Item;
+
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(215)))
+
+/***/ },
+/* 233 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function($, _) {/** @jsx React.DOM */var React = __webpack_require__(56);
+	var ReactDOM = __webpack_require__(213);
+	var Backbone= __webpack_require__(217);
+	var LoginRegApp = __webpack_require__(234);
+	var ProfileApp=__webpack_require__(235);
+	var UserViewApp = __webpack_require__(327);
+	var GroupApp = __webpack_require__(339);
+	var Store = __webpack_require__(244);
+	var Pusher = __webpack_require__(352);
+	var ChatApp=__webpack_require__(353);
+	var Friendlies = ('./collections/friendlies');
+
+	var Router=Backbone.Router.extend({
+		initialize:function() {
+			Backbone.history.start({pushState:true});
+		},
+		routes:{
+			'userView/:id':'userView',
+			'group/:userId': 'group',
+			'profile/:username': 'profile',
+			"":"index"
+		},
+		index: function(){
+			ReactDOM.render(React.createElement(LoginRegApp, {router: this}), document.getElementById('page-wrapper'));
+
+		}
+	});
+
+	var router = new Router();
+
+	router.on('route:profile', function(username){
+
+		$('#chat').hide()
+			var Goal = Backbone.Model.extend({
+				url:'https://safe-brook-9891.herokuapp.com/api/profiles/?username='+username
+			})
+			var GoalCollection = Backbone.Collection.extend({
+				Model:Goal,
+				url:'https://safe-brook-9891.herokuapp.com/api/profiles/?username='+username
+			})
+
+			var test = new GoalCollection();
+			test.fetch({
+				success: function(resp) {
+
+				var data     = resp.toJSON();
+				var userName = _.extend(Store.data, {userName: data[0].user.username});
+				var posts    = data[0].user.post_set;
+				var pRank     = _.extend(Store.data,{rank: data[0].rank});
+				var pExp      = _.extend(Store.data,{exp: data[0].exp});
+				var uid      = _.extend(Store.data,{uid: data[0].user.id});
+				var objectId = _.extend(Store.data, {objectId: data[0].id});
+				var pAvatar   = _.extend(Store.data, {avatar: data[0].avatar});
+				var pName     = _.extend(Store.data,{name: data[0].user.first_name});
+				var fromFriends = data[0].user.to_friend_set;
+				var toFriends   = data[0].user.friend_set;
+				var groups      = data[0].user.group_set;
+
+				var fromFriendsMap = fromFriends.filter(function(obj){
+					if(obj.accepted===true) {
+						return true
+					}
+				});
+
+				var fromFrProfile = _.extend(Store.data,{fromFrProfile: fromFriendsMap});
+
+				var toFriendsMap  = toFriends.filter(function(obj){
+					if(obj.accepted===true) {
+						return true
+					}
+				});
+
+				var toFrProfile = _.extend(Store.data,{toFrProfile: toFriendsMap});
+
+
+				var goalInfo    = data[0].user.goal_set;
+				var incomplete  = goalInfo.filter(function(obj){
+					if(obj.completed===false) {
+						return obj
+					}
+				});
+
+
+
+				var pGoals= _.extend(Store.data, {pGoals: incomplete})
+
+				ReactDOM.render(React.createElement(ProfileApp, {
+					pRank: Store.data.rank, 
+					users: Store.data.users, 
+					pExp: Store.data.exp, 
+					pName: Store.data.name, 
+					fromFrProfile: Store.data.fromFrProfile, 
+					toFrProfile: Store.data.toFrProfile, 
+					userId: Store.data.uid, 
+					pAvatar: Store.data.avatar, 
+					pGoals: Store.data.pGoals, 
+					router: router, 
+					username: username, 
+					fromAll: fromFriends, 
+					groups: groups, 
+					posts: posts}),
+					document.getElementById('container'));
+
+
+				}
+			})
+
+
+			var Post = Backbone.Model.extend({
+				url:'https://safe-brook-9891.herokuapp.com/api/profiles/?username='+username
+			})
+
+			var PostCollection = Backbone.Collection.extend({
+				Model:Post,
+				url:'https://safe-brook-9891.herokuapp.com/api/profiles/?username='+username
+			})
+			var post = new PostCollection();
+			post.fetch({
+				success: function(resp) {
+				test=resp.toJSON();
+				var goalId = test[0].user.goal_set;
+				var posts=test[0].user.post_set;
+
+				}
+			})
+	})
+
+	router.on('route:userView', function(userId){
+			$('#chat').hide()
+
+			var userView = Backbone.Model.extend({
+				url:'https://safe-brook-9891.herokuapp.com/api/profiles/?user='+userId
+			})
+			var UserCollection = Backbone.Collection.extend({
+				Model:userView,
+				url:'https://safe-brook-9891.herokuapp.com/api/profiles/?user='+userId
+			})
+			var UserProfile = new UserCollection();
+			UserProfile.fetch({
+				success: function(resp) {
+				var users=resp.toJSON();
+
+				var name = users[0].user.first_name;
+				var fromFriends = (users[0].user.to_friend_set);
+				var toFriends = users[0].user.friend_set;
+				var fromFriendsMap = fromFriends.filter(function(obj){
+					if(obj.accepted) {
+						return true
+					}
+				});
+				var toFriendsMap = toFriends.filter(function(obj){
+					if(obj.accepted) {
+						return true
+					}
+				});
+				
+				var post= users[0].user.post_set;
+				var rank = users[0].rank;
+				var exp = users[0].exp;
+				var goals = users[0].user.goal_set;
+				var groupsUser = users[0].user.goal_set;
+				console.log('groupsUser',groupsUser)
+				var goalsMapped = goals.filter(function(obj){
+					if(obj.completed===false) {
+						return true;
+					}
+				})
+
+
+				var theirId = users[0].user.id;
+				var myId = Store.data.userId;
+				var username = Store.data.userName;
+
+				ReactDOM.render(React.createElement(UserViewApp, {
+					pRank: Store.data.rank, 
+					users: Store.data.users, 
+					pExp: Store.data.exp, 
+					pName: Store.data.name, 
+					fromFrProfile: Store.data.fromFrProfile, 
+					toFrProfile: Store.data.toFrProfile, 
+					userId: Store.data.uid, 
+					pAvatar: Store.data.avatar, 
+					pGoals: Store.data.pGoals, 
+					rank: rank, 
+					exp: exp, posts: post, 
+					goals: goalsMapped, 
+					groupsUser: groupsUser, 
+					name: name, 
+					router: router, 
+					username: username, 
+					userId: userId, 
+					theirId: theirId, 
+					fromFriends: fromFriendsMap, 
+					toFriends: toFriendsMap}),
+					document.getElementById('container'));
+
+
+				}
+		});
+
+	});
+
+
+
+	router.on('route:group', function(groupId){
+	$('#chat').show()
+
+	 var ChatMessage = Backbone.Model.extend({
+				url:'https://safe-brook-9891.herokuapp.com/api/messages/group/?group=' +groupId
+			});
+
+			var ChatCollection = Backbone.Collection.extend({
+				Model:ChatMessage,
+				url:'https://safe-brook-9891.herokuapp.com/api/messages/group/?group=' +groupId
+
+			})
+			var Chat = new ChatCollection();
+			Chat.fetch({
+				success: function(resp) {
+					var data = resp.toJSON();
+					var dataReverse = data.reverse();
+
+					ReactDOM.render(React.createElement(ChatApp, {
+					chat: dataReverse, 
+					channel: channel, 
+					groupId: groupId}),
+					document.getElementById('chat'));
+				}
+			});
+
+
+	 var pusher = new Pusher('4ddbac2023fa2cbd0fa7');
+	 var channel = pusher.subscribe('group_' + groupId);
+	 var eventName = 'new-message';
+
+	 var callback = function(data) {
+	  	var ChatMessage = Backbone.Model.extend({
+				url:'https://safe-brook-9891.herokuapp.com/api/messages/group/?group=' +groupId
+			});
+
+			var ChatCollection = Backbone.Collection.extend({
+				Model:ChatMessage,
+				url:'https://safe-brook-9891.herokuapp.com/api/messages/group/?group=' +groupId
+
+			})
+			var Chat = new ChatCollection();
+			Chat.fetch({
+				success: function(resp) {
+					var data = resp.toJSON();
+					var dataReverse = data.reverse();
+
+					ReactDOM.render(React.createElement(ChatApp, {
+					chat: data, 
+					channel: channel, 
+					groupId: groupId}),
+					document.getElementById('chat'));
+
+
+				}
+			})
+
+	  };
+	  pusher.bind(eventName, callback);
+
+
+
+		var groupPost = Backbone.Model.extend({
+				url:'https://safe-brook-9891.herokuapp.com/api/posts/?group='+ groupId
+			})
+			var GroupPostCollection = Backbone.Collection.extend({
+				Model:groupPost,
+				url:'https://safe-brook-9891.herokuapp.com/api/posts/?group='+ groupId
+			})
+			var GroupPosts = new GroupPostCollection();
+			GroupPosts.fetch({
+				success: function(resp) {
+
+					var data = resp.toJSON();
+					var posts = data.reverse();
+					var userName = Store.data.userName;
+					var chatList = Store.data.chats;
+					var chatInit = Store.data.chatInit;
+					var userList = Store.data.userList;
+
+					ReactDOM.render(React.createElement(GroupApp, {
+					pRank: Store.data.rank, 
+					users: Store.data.users, 
+					pExp: Store.data.exp, 
+					pName: Store.data.name, 
+					fromFrProfile: Store.data.fromFrProfile, 
+					toFrProfile: Store.data.toFrProfile, 
+					userId: Store.data.uid, 
+					pAvatar: Store.data.avatar, 
+					pGoals: Store.data.pGoals, 
+					posts: posts, 
+					groupId: groupId, 
+					router: router, 
+					channel: channel, 
+					username: userName, 
+					chatList: chatList, 
+					chatInit: chatInit, 
+					userList: userList}),
+					document.getElementById('container'));
+
+
+				}
+			})
+	});
+
+
+
+
+
+	module.exports = Router;
+
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(215), __webpack_require__(218)))
+
+/***/ },
+/* 234 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function($) {/** @jsx React.DOM */var React = __webpack_require__(56);
+
+	var Login = __webpack_require__(214);
+	var Registration = __webpack_require__(220);
+
+	var LoginRegApp = React.createClass({displayName: "LoginRegApp",
+		getInitialState:function(){
+			return({
+				hidden: true
+			});
+		},
+	//show/hide registration window
+		_show: function(){
+			this.setState({
+				hidden:false
+			})
+
+
+		},
+		_hide: function(){
+			this.setState({
+				hidden: true
+			});
+			console.log('test')
+		},
+		//fades to profile page
+		_hideBigPic: function(){
+			$('#bigPic').fadeOut(1000);
+		},
+		render:function(){
+			return(
+				React.createElement("div", null, 
+					React.createElement("div", {id: "bigPic"}, 
+						React.createElement("h2", {id: "splashText1"}, "improving yourself is tough enough."), 
+						React.createElement("h2", {id: "splashText2"}, "let's do it together."), 
+						React.createElement("h1", {id: "bigTitle"}, "UpgrAID"), 
+					React.createElement(Login, {router: this.props.router, show: this._show, logIn: this._hideBigPic}), 
+					React.createElement(Registration, {hide: this._hide, hidden: this.state.hidden})
+					)
+				)
+				)
+		}
+	});
+
+	module.exports = LoginRegApp;
+
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(215)))
+
+/***/ },
+/* 235 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(_) {/** @jsx React.DOM */var React = __webpack_require__(56);
+	var Nav = __webpack_require__(236);
+	var Store= __webpack_require__(244);
+	var ProfilePostApp = __webpack_require__(248);
+	var MessageApp = __webpack_require__(316);
+	var ProfileLeft = __webpack_require__(320);
+	var ProfileRight = __webpack_require__(323);
+	var Info = __webpack_require__(326);
+	var ProfileApp = React.createClass({displayName: "ProfileApp",
+		_doSearch:function(queryText){
+	      
+	        //get query result
+	        var queryResult=[];
+	        var test=this.state.filteredData.forEach(function(person){
+	            if(person.username.toLowerCase().indexOf(queryText)!=-1)
+	            queryResult.push(person);
+	        });
+
+	        this.setState({
+	            query:queryText,
+	            filteredData: queryResult
+	        })
+
+	    },
+	    getInitialState:function(){
+	        return{
+
+	            query:'',
+	            filteredData: Store.data.users
+	        }
+	    },
+
+		_test: function() {
+			this.setState({
+				filteredData: Store.data.users
+			});
+
+			var filter = _.extend(Store.nav,{filter: this.state.filteredData});
+
+		},
+		componentWillMount: function() {
+				var Users = Backbone.Model.extend({
+				url:'https://safe-brook-9891.herokuapp.com/api/users/'
+				})
+				var UserCollection = Backbone.Collection.extend({
+				Model:Users,
+				url:'https://safe-brook-9891.herokuapp.com/api/users/'
+				})
+
+			var userCollect = new UserCollection;
+			var that=this;
+			userCollect.fetch({
+				success:function(resp) {
+
+					allUsers=resp.toJSON();
+					_.extend(Store.data, {users: allUsers});
+					_.extend(Store.nav, {allUsers: allUsers});
+					that._test()
+				}
+			});
+
+		},
+
+		render: function() {
+
+			return(React.createElement("div", null, 
+
+					React.createElement(Nav, {
+						router: this.props.router, 
+						username: this.props.username, 
+						userId: this.props.userId, 
+						fromAll: this.props.fromAll, 
+						users: this.state.filteredData, 
+						query: this.state.query, 
+						doSearch: this._doSearch}), 
+
+					React.createElement(Info, null), 
+
+					React.createElement(ProfileLeft, {
+						username: this.props.username, 
+						rank: this.props.pRank, 
+						exp: this.props.pExp, 
+						goals: this.props.pGoals, 
+						router: this.props.router, 
+						fromFriends: this.props.fromFrProfile, 
+						toFriends: this.props.toFrProfile, 
+						name: this.props.pName, 
+						avatar: this.props.pAvatar}), 
+
+					React.createElement(ProfileRight, {
+						goals: this.props.pGoals, 
+						router: this.props.router, 
+						username: this.props.username}), 
+					
+					React.createElement(ProfilePostApp, {
+						posts: this.props.posts, 
+						groups: this.props.groups, 
+						goals: this.props.pGoals, 
+						router: this.props.router}), 
+
+					React.createElement(MessageApp, {
+						fromFriends: this.props.fromFrProfile, 
+						toFriends: this.props.toFrProfile, 
+						username: this.props.username})
+					))
+		}
+	})
+
+	module.exports = ProfileApp;
+
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(218)))
+
+/***/ },
+/* 236 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/** @jsx React.DOM */var React = __webpack_require__(56);
+	var Quote = __webpack_require__(237);
+	var quoteStore = __webpack_require__(238)
+	var MainNav = __webpack_require__(239);
+	var SearchUsers = __webpack_require__(240);
+	var FriendRequest = __webpack_require__(242)
+	var Nav = React.createClass({displayName: "Nav",
+
+		getInitialState: function() {
+			return({quote: ''})
+		},
+		//quote generator for profile page
+		componentWillMount: function() {
+
+			function getRandomInt(min, max) {
+	  		return Math.floor(Math.random() * (max - min + 1)) + min;
+			}
+
+			var RandomQuote = quoteStore[getRandomInt(0,28)];
+
+			this.setState({
+				quote: RandomQuote
+			});
+		},
+		//search bar and friend request send
+		render:function(){
+			return(React.createElement("div", null, 
+
+					React.createElement("div", {className: "navContainer"}, 
+						React.createElement("div", {id: "navContain"}, 
+						React.createElement("ul", {id: "navUl"}, 
+							React.createElement("li", {className: "logo"}, " UpgrAID"), 
+							React.createElement("li", {className: "mainLi", onClick: this._profileNav}, " MyProfile"), 
+							React.createElement("li", {className: "searchBar"}, 
+								React.createElement(SearchUsers, {
+									users: this.props.users, 
+									doSearch: this.props.doSearch, 
+									query: this.props.query, 
+									router: this.props.router})
+							), 
+							React.createElement("li", {id: "friendLi", className: "mainLi"}, 
+								React.createElement("span", {id: "square", className: "entypo-users"}), 
+								React.createElement(FriendRequest, {userId: this.props.userId, fromAll: this.props.fromAll})
+							)
+						)
+						)
+					), 
+
+					React.createElement("div", {className: "header"}, React.createElement(Quote, {quote: this.state.quote}))
+					))
+		}
+	});
+
+	module.exports = Nav;
+
+
+/***/ },
+/* 237 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/** @jsx React.DOM */var React = __webpack_require__(56);
+
+	var Quote = React.createClass({displayName: "Quote",
+		render:function() {
+			return(React.createElement("p", {id: "randomQuote"}, this.props.quote))
+		}
+	});
+
+	module.exports = Quote;
+
+/***/ },
+/* 238 */
+/***/ function(module, exports) {
+
+	var quote =
+	[
+	'"There is nothing noble in being superior to your fellow man; true nobility is being superior to your former self." ― Ernest Hemingway',
+
+	'“Those who cannot change their minds cannot change anything.”― George Bernard Shaw',
+
+	'“Make the most of yourself....for that is all there is of you.” ― Ralph Waldo Emerson',
+
+	'“Once we accept our limits, we go beyond them.”― Albert Einstein',
+
+
+	'“The curious paradox is that when I accept myself just as I am, then I can change.” ― Carl R. Rogers',
+
+	'“There is only one corner of the universe you can be certain of improving, and that\'s your own self.” ― Aldous Huxley',
+
+	'“I went to a bookstore and asked the saleswoman, Where\’s the self-help section? She said if she told me, it would defeat the purpose.” ― Steven Wright',
+
+	'“You willed yourself to where you are today, so will yourself out of it.” ― Stephen Richards',
+
+
+	'“Keeping busy and making optimism a way of life can restore your faith in yourself.” ― Lucille Ball',
+
+	'“Lighten up on yourself. No one is perfect. Gently accept your humanness.” ― Deborah Day',
+
+
+	'"If you don\'t know where you are going, you will probably end up somewhere else. You have to have goals.” ― Zig Ziglar',
+
+	'“Everything is practice.” ― Pelé',
+
+
+	'“To change the world takes time; to change yourself takes courage.” ― R.S. Lowel',
+
+	'“In the event of a total loss of direction in life, be sure to sort out your own shit before you start telling people what to do.” ― A.C. Ping',
+
+	'“Too many people overvalue what they are not and undervalue what they are.” ― Malcolm Forbes',
+
+	'“The way to achieve your goals is step by step, you just need to build enough track, to be ahead of the train." - John Milton Lawrence”',
+
+	'“Any youth which is not misspent is, by definition, misspent.” ― Hermester Barrington',
+
+	'"Man only learns in two ways, one by reading, and the other by association with smarter people." - Will Rogers',
+
+	 '"He who conquers others is strong; He who conquers himself is mighty." - Lao Tzu',
+
+	'"Every day do something that will inch you closer to a better tomorrow." - Doug Firebaugh',
+
+	'"Insist on yourself. Never imitate." - Ralph Waldo Emerson',
+
+	'"If we all did the things we are capable of, we would astound ourselves." - Thomas Edison',
+
+	'"Reality is merely an illusion, albeit a very persistent one." - Albert Einstein',
+
+	'"I believe in the discipline of silence, and could talk for hours about it." - George Bernard Shaw',
+
+	'"The greatest thief this world ever produced is procrastination, and he is still at large." - Henry Wheeler Shaw',
+
+	'"I always wanted to be somebody, but now I realize I should have been more specific." - Lily Tomlin',
+
+	"'Though no one can go back and make a brand new start, anyone can start from now and make a brand new ending.' - Marcus Aurelius"
+	]
+
+
+	module.exports = quote;
+
+
+/***/ },
+/* 239 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/** @jsx React.DOM */var React = __webpack_require__(56);
+	var SearchUsers = __webpack_require__(240);
+	var FriendRequest = __webpack_require__(242);
+
+	var MainNav = React.createClass({displayName: "MainNav",
+		_profileNav: function(e){
+			var router =this.props.router;
+			router.navigate('profile/' + this.props.username, {trigger:true});
+		},
+		//input for search, button to send friend request
+		render:function(){
+			return(
+				React.createElement("div", {className: "navContainer"}, 
+					React.createElement("div", {id: "navContain"}, 
+					React.createElement("ul", {id: "navUl"}, 
+						React.createElement("li", {className: "logo"}, " UpgrAID"), 
+						React.createElement("li", {className: "mainLi", onClick: this._profileNav}, " MyProfile"), 
+						React.createElement("li", {className: "searchBar"}, React.createElement(SearchUsers, {users: this.props.users, doSearch: this.props.doSearch, query: this.props.query, router: this.props.router})), 
+						React.createElement("li", {id: "friendLi", className: "mainLi"}, 
+							React.createElement("span", {id: "square", className: "entypo-users"}), 
+							React.createElement(FriendRequest, {userId: this.props.userId, fromAll: this.props.fromAll})
+						)
+					)
+					)
+				)
+				)
+		}
+	});
+
+	module.exports = MainNav;
+
+
+/***/ },
+/* 240 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function($) {/** @jsx React.DOM */var React = __webpack_require__(56);
+	var FoundUsers = __webpack_require__(241);
+
+
+	var SearchUsers = React.createClass({displayName: "SearchUsers",
+		getIntialState: function(){
+			open: false
+		},
+		//accepts single input characters and searches for matches in user list, removing non-matches
+		_doSearch:function(){
+	        var query=this.refs.searchInput.value; // this is the search text
+	        this.props.doSearch(query);
+	    },
+		_close:function() {
+			$('#userModal').hide();
+
+		},
+		_look:function() {
+			$('#userModal').show();
+		},
+
+		render:function() {
+			var props=this.props;
+			return(
+				React.createElement("div", null, 
+					React.createElement("input", {className: "searchUsers", ref: "searchInput", placeholder: "Search Users...", onClick: this._look, onChange: this._doSearch, value: this.props.query}), 
+					React.createElement("div", {id: "userModal"}, 
+						React.createElement("span", {id: "closeModal", onClick: this._close}), 
+						React.createElement("div", null, 
+							this.props.users.map(function(obj){
+								return (
+									React.createElement(FoundUsers, {key: obj.id, username: obj.username, id: obj.id, router: props.router})
+								)
+							})
+						)
+					)
+				))
+		}
+	});
+
+	module.exports = SearchUsers;
+
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(215)))
+
+/***/ },
+/* 241 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/** @jsx React.DOM */var React = __webpack_require__(56);
+
+	var FoundUsers = React.createClass({displayName: "FoundUsers",
+		_nav: function() {
+			var router =this.props.router;
+			router.navigate('userView/' + this.props.id, {trigger:true});
+		},
+		//navigates to clicked user in search window
+		render:function() {
+
+			return(React.createElement("div", {id: "userChoice"}, React.createElement("span", null, React.createElement("img", {className: "avatarUserList", src: "../../assets/avatar1.png"})), React.createElement("p", {value: this.props.id, onClick: this._nav}, this.props.username)))
+
+
+		}
+	});
+
+	module.exports = FoundUsers;
+
+
+/***/ },
+/* 242 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/** @jsx React.DOM */var React = __webpack_require__(56);
+	var Friendly = __webpack_require__(243);
+	var Friendlies = __webpack_require__(245);
+	var Store = __webpack_require__(244);
+	var User = __webpack_require__(216);
+	var Users = __webpack_require__(246);
+	var AcceptReject = __webpack_require__(247);
+
+
+	var FriendRequest = React.createClass({displayName: "FriendRequest",
+		getInitialState: function(){
+			return {
+				frRq: []
+			}
+		},
+
+		_loadReq: function(req){
+			this.setState({
+				frRq: req
+			});
+		},
+
+		componentWillMount: function(){
+					self=this;
+					fr = this.props.fromAll;
+					f = fr.filter(function(usr){
+						if(!usr.accepted){
+							return true
+						}else {
+							return false
+						}
+					})
+			self._loadReq(f);
+		},
+
+		render: function(){
+			var that = this;
+			return (
+
+				React.createElement("ul", {id: "friendRequests"}, 
+				React.createElement("li", null, React.createElement("h2", {id: "friendRequestsHeader"}, "FriendRequests")), 
+					this.state.frRq.map(function(req){
+						return(
+							React.createElement(AcceptReject, {key: req.id, requester: req, userId: that.props.userId}))
+				})
+				)
+
+			)
+		},
+
+	});
+
+	module.exports = FriendRequest;
+
+
+/***/ },
+/* 243 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var Backbone = __webpack_require__(217);
+	var Store = __webpack_require__(244);
+
+
+	var Friendly = Backbone.Model.extend({
+		url:'https://safe-brook-9891.herokuapp.com/api/friends/',
+		initialize: function() {
+
+		}
+	});
+
+	module.exports = Friendly;
+
+
+/***/ },
+/* 244 */
+/***/ function(module, exports) {
+
+	var Store = {
+		data: {
+			userId: null,
+			userName:null,
+			chats: null,
+			chatInit: null,
+			myId: null,
+			users: [],
+			userList:[],
+			messageList:[],
+			objectId: null,
+			rank: null,
+			exp: null,
+			uid: null,
+			objectId: null,
+			avatar: null,
+			name: null,
+			fromFrProfile: null,
+			toFrProfile: null,
+			pGoals: null,
+			profileAvatar: {
+					user1: {
+						username: 'blah',
+						avatar: 1
+					}
+			}
+		},
+		nav: {
+			allusers: null,
+			filter: null,
+		}
+	};
+
+	module.exports = Store;
+
+
+/***/ },
+/* 245 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var Backbone = __webpack_require__(217);
+	var Friendly = __webpack_require__(243);
+	var Store = __webpack_require__(244);
+
+
+	var Friendlies = Backbone.Collection.extend({
+		url: 'https://safe-brook-9891.herokuapp.com/api/friends/?username=' + Store.data.userName,
+		model: Friendly
+	});
+
+	module.exports = Friendlies;
+
+
+/***/ },
+/* 246 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var Backbone = __webpack_require__(217);
+	var User =  __webpack_require__(216);
+
+	var Users = Backbone.Collection.extend({
+		url: 'https://safe-brook-9891.herokuapp.com/api/users/',
+		model: User
+	});
+
+	module.exports = Users;
+
+
+/***/ },
+/* 247 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/** @jsx React.DOM */var React = __webpack_require__(56);
+	var Backbone = __webpack_require__(217);
+
+
+	var AcceptReject = React.createClass({displayName: "AcceptReject",
+	//logic to accept/reject friend requests --sets state of 'accepted:' and updates friends api endpoint
+		_handleAccept: function(event){
+	//accept friend
+			event.preventDefault();
+			var FriendAccept = Backbone.Model.extend({
+				url:'https://safe-brook-9891.herokuapp.com/api/friends/' + this.props.requester.id
+			});
+			var Faccept = new FriendAccept();
+			Faccept.set({
+				id: this.props.requester.id,
+				from_friend: this.props.requester.from_friend.id,
+				to_friend: this.props.userId,
+				accepted: true
+			});
+
+			Faccept.save();
+
+		},
+	//decline friend
+		_handleDecline: function(event){
+			event.preventDefault();
+			var FriendDecline = Backbone.Model.extend({
+				url:'https://safe-brook-9891.herokuapp.com/api/friends/'+ this.props.requester.id
+			});
+			var Fdecline = new FriendDecline();
+			Fdecline.set({
+				id: this.props.requester.id,
+				from_friend: this.props.requester.from_friend,
+				to_friend: this.props.userId,
+				accepted: false
+			});
+			Fdecline.save();
+
+
+		},
+		render: function(){
+
+			return (
+				React.createElement("li", {className: "reqObj"}, 
+					React.createElement("span", {className: "requester"}, this.props.requester.from_friend.username), 
+					React.createElement("span", {className: "accRejContain"}, 
+					React.createElement("button", {className: "accbutton", onClick: this._handleAccept}, "Accept"), 
+					React.createElement("button", {className: "rejbutton", onClick: this._handleDecline}, "Decline")
+					)
+				)
+
+			)
+		}
+	});
+
+	module.exports = AcceptReject;
+
+
+/***/ },
+/* 248 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/** @jsx React.DOM */var React = __webpack_require__(56);
+	var ProfileInput = __webpack_require__(249);
+	var ProfileItem = __webpack_require__(250);
+	var PostButtons = __webpack_require__(315)
+
+	var ProfilePostApp = React.createClass({displayName: "ProfilePostApp",
+		getInitialState: function () {
+			return {
+				data: this.props.posts,
+
+			}
+		},
+		_addInput: function(collection) {
+				this.setState({
+				data: collection
+			})
+		},
+		render: function() {
+			var props = this.props;
+			var that = this;
+			var state = this.state;
+			return(React.createElement("div", {id: "profilePostMaster"}, 
+
+					this.props.goals.map(function(obj){
+	 					return(
+	 						React.createElement("div", {className: "inputDesContain"}, 
+
+	 						React.createElement(ProfileInput, null), 
+							React.createElement(PostButtons, {
+								key: obj.id, 
+								theme: obj.theme, 
+								id: obj.group, 
+								title: obj.title, 
+								addInput: that._addInput, 
+								data: state.data, 
+								router: props.router})
+							)
+						)
+	 					})
+
+				))
+		}
+	});
+
+	module.exports = ProfilePostApp;
+
+
+/***/ },
+/* 249 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/** @jsx React.DOM */var React = __webpack_require__(56);
+
+	var ProfileInput = React.createClass({displayName: "ProfileInput",
+		//input fields for new posts in profile view
+		render:function() {
+			return(
+				React.createElement("form", {id: "newPostInputProfile", onSubmit: this._submit}, 
+
+						React.createElement("input", {id: "postProfile", placeholder: "Add New Post - Title"}), 
+						React.createElement("textarea", {id: "descriptionProfile", placeholder: "Add Description"})
+
+				)
+				  )
+			}
+	})
+
+
+
+
+	module.exports = ProfileInput;
+
+
+/***/ },
+/* 250 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/** @jsx React.DOM */var React = __webpack_require__(56);
+	var ProfilePost = __webpack_require__(251);
+
+	var ProfileItem = React.createClass({displayName: "ProfileItem",
+		 //renders posts in profile view -- path for input callback
+		render: function() {
+			var props=this.props;
+
+				return(React.createElement("div", {id: "master"}, 
+						this.props.data.map(function(obj){
+							return(React.createElement(ProfilePost, {key: obj.id, 
+										addInput: props.addInput, 
+										title: obj.title, 
+										description: obj.description, 
+										datas: props.data, 
+										groupId: obj.id, 
+										user: obj.user, 
+										postId: obj.id, 
+										comments: obj.comment_set}))
+								})
+						)
+					)
+
+
+		}
+	});
+
+	module.exports = ProfileItem;
+
+
+/***/ },
+/* 251 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/** @jsx React.DOM */var React = __webpack_require__(56);
+	var Avatar = __webpack_require__(252);
+	var Card = __webpack_require__(277);
+	var CardHeader = __webpack_require__(308);
+	var CardTitle = __webpack_require__(313);
+	var CardText = __webpack_require__(314);
+
+	var ProfilePost = React.createClass({displayName: "ProfilePost",
+
+		_delete: function(e) {
+			e.preventDefault();
+			props=this.props;
+
+				var Post = Backbone.Model.extend({
+					url:'https://safe-brook-9891.herokuapp.com/api/posts/'+props.id,
+					initialize: function() {
+				}
+
+				});
+					var PostCollection = Backbone.Collection.extend({
+						model: Post
+				});
+
+			var collection = new PostCollection(this.props.datas);
+			var item = collection.get(props.id);
+			item.destroy({
+				success: function(resp) {
+					collection.remove(resp)
+					props.addInput(collection.toJSON());
+				}
+			})
+		},
+	//Material UI cards for post rendering
+		render: function() {
+
+			return(
+				React.createElement("div", {className: "postContainer"}, 
+						React.createElement(Card, null, 
+							React.createElement(CardHeader, {
+								style: {background: '#f7f7f7'}, 
+								title: this.props.title, 
+	      				avatar: "../../../../assets/avatar.png"}), 
+							React.createElement(CardText, null, this.props.description)
+						)
+
+				)
+			)
+
+		}
+	});
+
+	module.exports = ProfilePost;
+
+	// <p className="postTitle">{this.props.title}</p>
+	// <p className="postDescription">{this.props.description}</p>
+
+
+/***/ },
+/* 252 */
+/***/ function(module, exports, __webpack_require__) {
+
 	'use strict';
 
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -34373,16 +35623,13 @@
 	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
 	var React = __webpack_require__(56);
-	var StylePropable = __webpack_require__(232);
-	var Transitions = __webpack_require__(250);
-	var EnhancedSwitch = __webpack_require__(251);
-	var RadioButtonOff = __webpack_require__(278);
-	var RadioButtonOn = __webpack_require__(280);
-	var DefaultRawTheme = __webpack_require__(258);
-	var ThemeManager = __webpack_require__(262);
+	var StylePropable = __webpack_require__(253);
+	var Colors = __webpack_require__(271);
+	var DefaultRawTheme = __webpack_require__(272);
+	var ThemeManager = __webpack_require__(275);
 
-	var RadioButton = React.createClass({
-	  displayName: 'RadioButton',
+	var Avatar = React.createClass({
+	  displayName: 'Avatar',
 
 	  mixins: [StylePropable],
 
@@ -34401,6 +35648,15 @@
 	    };
 	  },
 
+	  propTypes: {
+	    backgroundColor: React.PropTypes.string,
+	    color: React.PropTypes.string,
+	    icon: React.PropTypes.element,
+	    size: React.PropTypes.number,
+	    src: React.PropTypes.string,
+	    style: React.PropTypes.object
+	  },
+
 	  getInitialState: function getInitialState() {
 	    return {
 	      muiTheme: this.context.muiTheme ? this.context.muiTheme : ThemeManager.getMuiTheme(DefaultRawTheme)
@@ -34414,136 +35670,86 @@
 	    this.setState({ muiTheme: newMuiTheme });
 	  },
 
-	  propTypes: {
-	    iconStyle: React.PropTypes.object,
-	    labelStyle: React.PropTypes.object,
-	    onCheck: React.PropTypes.func,
-	    checked: React.PropTypes.bool,
-	    labelPosition: React.PropTypes.oneOf(['left', 'right']),
-	    disabled: React.PropTypes.bool,
-	    value: React.PropTypes.bool
-	  },
-
-	  getTheme: function getTheme() {
-	    return this.state.muiTheme.radioButton;
-	  },
-
-	  getStyles: function getStyles() {
-	    var styles = {
-	      icon: {
-	        height: this.getTheme().size,
-	        width: this.getTheme().size
-	      },
-	      target: {
-	        transition: Transitions.easeOut(),
-	        position: 'absolute',
-	        opacity: 1,
-	        transform: 'scale(1)',
-	        fill: this.getTheme().borderColor
-	      },
-	      fill: {
-	        position: 'absolute',
-	        opacity: 1,
-	        transform: 'scale(0)',
-	        transformOrigin: '50% 50%',
-	        transition: Transitions.easeOut(),
-	        fill: this.getTheme().checkedColor
-	      },
-	      targetWhenChecked: {
-	        opacity: 0,
-	        transform: 'scale(0)'
-	      },
-	      fillWhenChecked: {
-	        opacity: 1,
-	        transform: 'scale(1)'
-	      },
-	      targetWhenDisabled: {
-	        fill: this.getTheme().disabledColor
-	      },
-	      fillWhenDisabled: {
-	        fill: this.getTheme().disabledColor
-	      },
-	      label: {
-	        color: this.props.disabled ? this.getTheme().labelDisabledColor : this.getTheme().labelColor
-	      }
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      backgroundColor: Colors.grey400,
+	      color: Colors.white,
+	      size: 40
 	    };
-
-	    return styles;
 	  },
 
 	  render: function render() {
 	    var _props = this.props;
-	    var onCheck = _props.onCheck;
+	    var backgroundColor = _props.backgroundColor;
+	    var color = _props.color;
+	    var icon = _props.icon;
+	    var size = _props.size;
+	    var src = _props.src;
+	    var style = _props.style;
 
-	    var other = _objectWithoutProperties(_props, ['onCheck']);
+	    var other = _objectWithoutProperties(_props, ['backgroundColor', 'color', 'icon', 'size', 'src', 'style']);
 
-	    var styles = this.getStyles();
-	    var onStyles = this.mergeStyles(styles.target, this.props.checked && styles.targetWhenChecked, this.props.iconStyle, this.props.disabled && styles.targetWhenDisabled);
-	    var offStyles = this.mergeStyles(styles.fill, this.props.checked && styles.fillWhenChecked, this.props.iconStyle, this.props.disabled && styles.fillWhenDisabled);
-
-	    var radioButtonElement = React.createElement(
-	      'div',
-	      null,
-	      React.createElement(RadioButtonOff, { style: onStyles }),
-	      React.createElement(RadioButtonOn, { style: offStyles })
-	    );
-
-	    var rippleColor = this.props.checked ? this.getTheme().checkedColor : this.getTheme().borderColor;
-
-	    var iconStyle = this.mergeStyles(styles.icon, this.props.iconStyle);
-
-	    var labelStyle = this.mergeStyles(styles.label, this.props.labelStyle);
-
-	    var enhancedSwitchProps = {
-	      ref: "enhancedSwitch",
-	      inputType: "radio",
-	      switched: this.props.checked || false,
-	      switchElement: radioButtonElement,
-	      rippleColor: rippleColor,
-	      iconStyle: iconStyle,
-	      labelStyle: labelStyle,
-	      onSwitch: this._handleCheck,
-	      onParentShouldUpdate: this._handleStateChange,
-	      labelPosition: this.props.labelPosition ? this.props.labelPosition : "right"
+	    var styles = {
+	      root: {
+	        height: size,
+	        width: size,
+	        userSelect: 'none',
+	        borderRadius: '50%',
+	        display: 'inline-block'
+	      }
 	    };
 
-	    return React.createElement(EnhancedSwitch, _extends({}, other, enhancedSwitchProps));
-	  },
+	    if (src) {
+	      var borderColor = this.state.muiTheme.avatar.borderColor;
 
-	  // Only called when selected, not when unselected.
-	  _handleCheck: function _handleCheck(e) {
-	    if (this.props.onCheck) this.props.onCheck(e, this.props.value);
-	  },
+	      if (borderColor) {
+	        styles.root = this.mergeStyles(styles.root, {
+	          height: size - 2,
+	          width: size - 2,
+	          border: 'solid 1px ' + borderColor
+	        });
+	      }
 
-	  _handleStateChange: function _handleStateChange() {},
+	      return React.createElement('img', _extends({}, other, { src: src, style: this.prepareStyles(styles.root, style) }));
+	    } else {
+	      styles.root = this.mergeStyles(styles.root, {
+	        backgroundColor: backgroundColor,
+	        textAlign: 'center',
+	        lineHeight: size + 'px',
+	        fontSize: size / 2 + 4,
+	        color: color
+	      });
 
-	  isChecked: function isChecked() {
-	    return this.refs.enhancedSwitch.isSwitched();
-	  },
+	      var styleIcon = {
+	        margin: 8
+	      };
 
-	  // Use RadioButtonGroup.setSelectedValue(newSelectionValue) to set a
-	  // RadioButton's checked value.
-	  setChecked: function setChecked(newCheckedValue) {
-	    this.refs.enhancedSwitch.setSwitched(newCheckedValue);
-	  },
+	      var iconElement = icon ? React.cloneElement(icon, {
+	        color: color,
+	        style: this.mergeStyles(styleIcon, icon.props.style)
+	      }) : null;
 
-	  getValue: function getValue() {
-	    return this.refs.enhancedSwitch.getValue();
+	      return React.createElement(
+	        'div',
+	        _extends({}, other, { style: this.prepareStyles(styles.root, style) }),
+	        iconElement,
+	        this.props.children
+	      );
+	    }
 	  }
-
 	});
 
-	module.exports = RadioButton;
+	module.exports = Avatar;
 
 /***/ },
-/* 232 */
+/* 253 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var React = __webpack_require__(56);
-	var ImmutabilityHelper = __webpack_require__(233);
-	var Styles = __webpack_require__(236);
+	var ImmutabilityHelper = __webpack_require__(254);
+	var Styles = __webpack_require__(257);
 
 	// This mixin isn't necessary and will be removed in v0.11
 
@@ -34581,13 +35787,13 @@
 	};
 
 /***/ },
-/* 233 */
+/* 254 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var React = __webpack_require__(56);
-	var update = __webpack_require__(234);
+	var update = __webpack_require__(255);
 
 	function mergeSingle(objA, objB) {
 	  if (!objA) return objB;
@@ -34627,13 +35833,13 @@
 	};
 
 /***/ },
-/* 234 */
+/* 255 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(235);
+	module.exports = __webpack_require__(256);
 
 /***/ },
-/* 235 */
+/* 256 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -34746,13 +35952,13 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(59)))
 
 /***/ },
-/* 236 */
+/* 257 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 
-	var AutoPrefix = __webpack_require__(237);
-	var ImmutabilityHelper = __webpack_require__(233);
+	var AutoPrefix = __webpack_require__(258);
+	var ImmutabilityHelper = __webpack_require__(254);
 
 	var reTranslate = /((^|\s)translate(3d|X)?\()(\-?[\d]+)/;
 
@@ -34855,7 +36061,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(59)))
 
 /***/ },
-/* 237 */
+/* 258 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -34866,7 +36072,7 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _inlineStylePrefixer = __webpack_require__(238);
+	var _inlineStylePrefixer = __webpack_require__(259);
 
 	var _inlineStylePrefixer2 = _interopRequireDefault(_inlineStylePrefixer);
 
@@ -34940,7 +36146,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 238 */
+/* 259 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -34955,19 +36161,19 @@
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
-	var _getBrowserInformation = __webpack_require__(239);
+	var _getBrowserInformation = __webpack_require__(260);
 
 	var _getBrowserInformation2 = _interopRequireDefault(_getBrowserInformation);
 
-	var _getPrefixedKeyframes = __webpack_require__(241);
+	var _getPrefixedKeyframes = __webpack_require__(262);
 
 	var _getPrefixedKeyframes2 = _interopRequireDefault(_getPrefixedKeyframes);
 
-	var _caniuseData = __webpack_require__(242);
+	var _caniuseData = __webpack_require__(263);
 
 	var _caniuseData2 = _interopRequireDefault(_caniuseData);
 
-	var _Plugins = __webpack_require__(243);
+	var _Plugins = __webpack_require__(264);
 
 	var _Plugins2 = _interopRequireDefault(_Plugins);
 
@@ -35140,7 +36346,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(59)))
 
 /***/ },
-/* 239 */
+/* 260 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -35151,7 +36357,7 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _bowser = __webpack_require__(240);
+	var _bowser = __webpack_require__(261);
 
 	var _bowser2 = _interopRequireDefault(_bowser);
 
@@ -35349,7 +36555,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 240 */
+/* 261 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -35646,7 +36852,7 @@
 
 
 /***/ },
-/* 241 */
+/* 262 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -35670,13 +36876,13 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 242 */
+/* 263 */
 /***/ function(module, exports) {
 
 	var caniuseData = {"chrome":{"transform":35,"transformOrigin":35,"transformOriginX":35,"transformOriginY":35,"backfaceVisibility":35,"perspective":35,"perspectiveOrigin":35,"transformStyle":35,"transformOriginZ":35,"animation":42,"animationDelay":42,"animationDirection":42,"animationFillMode":42,"animationDuration":42,"animationIterationCount":42,"animationName":42,"animationPlayState":42,"animationTimingFunction":42,"appearance":49,"userSelect":49,"fontKerning":32,"textEmphasisPosition":49,"textEmphasis":49,"textEmphasisStyle":49,"textEmphasisColor":49,"boxDecorationBreak":49,"clipPath":49,"maskImage":49,"maskMode":49,"maskRepeat":49,"maskPosition":49,"maskClip":49,"maskOrigin":49,"maskSize":49,"maskComposite":49,"mask":49,"maskBorderSource":49,"maskBorderMode":49,"maskBorderSlice":49,"maskBorderWidth":49,"maskBorderOutset":49,"maskBorderRepeat":49,"maskBorder":49,"maskType":49,"textDecorationStyle":49,"textDecorationSkip":49,"textDecorationLine":49,"textDecorationColor":49,"filter":49,"fontFeatureSettings":49,"breakAfter":49,"breakBefore":49,"breakInside":49,"columnCount":49,"columnFill":49,"columnGap":49,"columnRule":49,"columnRuleColor":49,"columnRuleStyle":49,"columnRuleWidth":49,"columns":49,"columnSpan":49,"columnWidth":49},"safari":{"flex":8,"flexBasis":8,"flexDirection":8,"flexGrow":8,"flexFlow":8,"flexShrink":8,"flexWrap":8,"alignContent":8,"alignItems":8,"alignSelf":8,"justifyContent":8,"order":8,"transition":6,"transitionDelay":6,"transitionDuration":6,"transitionProperty":6,"transitionTimingFunction":6,"transform":8,"transformOrigin":8,"transformOriginX":8,"transformOriginY":8,"backfaceVisibility":8,"perspective":8,"perspectiveOrigin":8,"transformStyle":8,"transformOriginZ":8,"animation":8,"animationDelay":8,"animationDirection":8,"animationFillMode":8,"animationDuration":8,"animationIterationCount":8,"animationName":8,"animationPlayState":8,"animationTimingFunction":8,"appearance":9,"userSelect":9,"backdropFilter":9,"fontKerning":9,"scrollSnapType":9,"scrollSnapPointsX":9,"scrollSnapPointsY":9,"scrollSnapDestination":9,"scrollSnapCoordinate":9,"textEmphasisPosition":7,"textEmphasis":7,"textEmphasisStyle":7,"textEmphasisColor":7,"boxDecorationBreak":9,"clipPath":9,"maskImage":9,"maskMode":9,"maskRepeat":9,"maskPosition":9,"maskClip":9,"maskOrigin":9,"maskSize":9,"maskComposite":9,"mask":9,"maskBorderSource":9,"maskBorderMode":9,"maskBorderSlice":9,"maskBorderWidth":9,"maskBorderOutset":9,"maskBorderRepeat":9,"maskBorder":9,"maskType":9,"textDecorationStyle":9,"textDecorationSkip":9,"textDecorationLine":9,"textDecorationColor":9,"shapeImageThreshold":9,"shapeImageMargin":9,"shapeImageOutside":9,"filter":9,"hyphens":9,"flowInto":9,"flowFrom":9,"breakBefore":8,"breakAfter":8,"breakInside":8,"regionFragment":9,"columnCount":8,"columnFill":8,"columnGap":8,"columnRule":8,"columnRuleColor":8,"columnRuleStyle":8,"columnRuleWidth":8,"columns":8,"columnSpan":8,"columnWidth":8},"firefox":{"appearance":45,"userSelect":45,"boxSizing":28,"textAlignLast":45,"textDecorationStyle":35,"textDecorationSkip":35,"textDecorationLine":35,"textDecorationColor":35,"tabSize":45,"hyphens":42,"fontFeatureSettings":33,"breakAfter":45,"breakBefore":45,"breakInside":45,"columnCount":45,"columnFill":45,"columnGap":45,"columnRule":45,"columnRuleColor":45,"columnRuleStyle":45,"columnRuleWidth":45,"columns":45,"columnSpan":45,"columnWidth":45},"opera":{"flex":16,"flexBasis":16,"flexDirection":16,"flexGrow":16,"flexFlow":16,"flexShrink":16,"flexWrap":16,"alignContent":16,"alignItems":16,"alignSelf":16,"justifyContent":16,"order":16,"transform":22,"transformOrigin":22,"transformOriginX":22,"transformOriginY":22,"backfaceVisibility":22,"perspective":22,"perspectiveOrigin":22,"transformStyle":22,"transformOriginZ":22,"animation":29,"animationDelay":29,"animationDirection":29,"animationFillMode":29,"animationDuration":29,"animationIterationCount":29,"animationName":29,"animationPlayState":29,"animationTimingFunction":29,"appearance":35,"userSelect":35,"fontKerning":19,"textEmphasisPosition":35,"textEmphasis":35,"textEmphasisStyle":35,"textEmphasisColor":35,"boxDecorationBreak":35,"clipPath":35,"maskImage":35,"maskMode":35,"maskRepeat":35,"maskPosition":35,"maskClip":35,"maskOrigin":35,"maskSize":35,"maskComposite":35,"mask":35,"maskBorderSource":35,"maskBorderMode":35,"maskBorderSlice":35,"maskBorderWidth":35,"maskBorderOutset":35,"maskBorderRepeat":35,"maskBorder":35,"maskType":35,"filter":35,"fontFeatureSettings":35,"breakAfter":35,"breakBefore":35,"breakInside":35,"columnCount":35,"columnFill":35,"columnGap":35,"columnRule":35,"columnRuleColor":35,"columnRuleStyle":35,"columnRuleWidth":35,"columns":35,"columnSpan":35,"columnWidth":35},"ie":{"gridTemplateRows":11,"grid":11,"flowInto":11,"flexDirection":10,"touchAction":10,"gridRow":11,"scrollSnapPointsX":11,"wrapMargin":11,"breakBefore":11,"gridRowEnd":11,"gridRowStart":11,"breakInside":11,"transformOrigin":9,"scrollSnapType":11,"scrollSnapDestination":11,"gridTemplate":11,"flexWrap":10,"transformOriginX":9,"flowFrom":11,"gridColumnStart":11,"userSelect":11,"wrapFlow":11,"scrollSnapCoordinate":11,"gridGap":11,"gridAutoRows":11,"hyphens":11,"regionFragment":11,"flex":10,"columnGap":11,"wrapThrough":11,"transformOriginY":9,"breakAfter":11,"rowGap":11,"gridTemplateColumns":11,"gridArea":11,"transform":9,"gridAutoFlow":11,"flexFlow":10,"gridTemplateAreas":11,"gridColumn":11,"gridAutoColumns":11,"scrollSnapPointsY":11,"textSizeAdjust":11},"ios_saf":{"flex":8.1,"flexBasis":8.1,"flexDirection":8.1,"flexGrow":8.1,"flexFlow":8.1,"flexShrink":8.1,"flexWrap":8.1,"alignContent":8.1,"alignItems":8.1,"alignSelf":8.1,"justifyContent":8.1,"order":8.1,"transition":6,"transitionDelay":6,"transitionDuration":6,"transitionProperty":6,"transitionTimingFunction":6,"transform":8.1,"transformOrigin":8.1,"transformOriginX":8.1,"transformOriginY":8.1,"backfaceVisibility":8.1,"perspective":8.1,"perspectiveOrigin":8.1,"transformStyle":8.1,"transformOriginZ":8.1,"animation":8.1,"animationDelay":8.1,"animationDirection":8.1,"animationFillMode":8.1,"animationDuration":8.1,"animationIterationCount":8.1,"animationName":8.1,"animationPlayState":8.1,"animationTimingFunction":8.1,"appearance":9,"userSelect":9,"backdropFilter":9,"fontKerning":9,"scrollSnapType":9,"scrollSnapPointsX":9,"scrollSnapPointsY":9,"scrollSnapDestination":9,"scrollSnapCoordinate":9,"boxDecorationBreak":9,"clipPath":9,"maskImage":9,"maskMode":9,"maskRepeat":9,"maskPosition":9,"maskClip":9,"maskOrigin":9,"maskSize":9,"maskComposite":9,"mask":9,"maskBorderSource":9,"maskBorderMode":9,"maskBorderSlice":9,"maskBorderWidth":9,"maskBorderOutset":9,"maskBorderRepeat":9,"maskBorder":9,"maskType":9,"textSizeAdjust":9,"textDecorationStyle":9,"textDecorationSkip":9,"textDecorationLine":9,"textDecorationColor":9,"shapeImageThreshold":9,"shapeImageMargin":9,"shapeImageOutside":9,"filter":9,"hyphens":9,"flowInto":9,"flowFrom":9,"breakBefore":8.1,"breakAfter":8.1,"breakInside":8.1,"regionFragment":9,"columnCount":8.1,"columnFill":8.1,"columnGap":8.1,"columnRule":8.1,"columnRuleColor":8.1,"columnRuleStyle":8.1,"columnRuleWidth":8.1,"columns":8.1,"columnSpan":8.1,"columnWidth":8.1},"android":{"borderImage":4.2,"borderImageOutset":4.2,"borderImageRepeat":4.2,"borderImageSlice":4.2,"borderImageSource":4.2,"borderImageWidth":4.2,"flex":4.2,"flexBasis":4.2,"flexDirection":4.2,"flexGrow":4.2,"flexFlow":4.2,"flexShrink":4.2,"flexWrap":4.2,"alignContent":4.2,"alignItems":4.2,"alignSelf":4.2,"justifyContent":4.2,"order":4.2,"transition":4.2,"transitionDelay":4.2,"transitionDuration":4.2,"transitionProperty":4.2,"transitionTimingFunction":4.2,"transform":4.4,"transformOrigin":4.4,"transformOriginX":4.4,"transformOriginY":4.4,"backfaceVisibility":4.4,"perspective":4.4,"perspectiveOrigin":4.4,"transformStyle":4.4,"transformOriginZ":4.4,"animation":4.4,"animationDelay":4.4,"animationDirection":4.4,"animationFillMode":4.4,"animationDuration":4.4,"animationIterationCount":4.4,"animationName":4.4,"animationPlayState":4.4,"animationTimingFunction":4.4,"appearance":44,"userSelect":44,"fontKerning":4.4,"textEmphasisPosition":44,"textEmphasis":44,"textEmphasisStyle":44,"textEmphasisColor":44,"boxDecorationBreak":44,"clipPath":44,"maskImage":44,"maskMode":44,"maskRepeat":44,"maskPosition":44,"maskClip":44,"maskOrigin":44,"maskSize":44,"maskComposite":44,"mask":44,"maskBorderSource":44,"maskBorderMode":44,"maskBorderSlice":44,"maskBorderWidth":44,"maskBorderOutset":44,"maskBorderRepeat":44,"maskBorder":44,"maskType":44,"filter":44,"fontFeatureSettings":44,"breakAfter":44,"breakBefore":44,"breakInside":44,"columnCount":44,"columnFill":44,"columnGap":44,"columnRule":44,"columnRuleColor":44,"columnRuleStyle":44,"columnRuleWidth":44,"columns":44,"columnSpan":44,"columnWidth":44},"and_chr":{"appearance":46,"userSelect":46,"textEmphasisPosition":46,"textEmphasis":46,"textEmphasisStyle":46,"textEmphasisColor":46,"boxDecorationBreak":46,"clipPath":46,"maskImage":46,"maskMode":46,"maskRepeat":46,"maskPosition":46,"maskClip":46,"maskOrigin":46,"maskSize":46,"maskComposite":46,"mask":46,"maskBorderSource":46,"maskBorderMode":46,"maskBorderSlice":46,"maskBorderWidth":46,"maskBorderOutset":46,"maskBorderRepeat":46,"maskBorder":46,"maskType":46,"textDecorationStyle":46,"textDecorationSkip":46,"textDecorationLine":46,"textDecorationColor":46,"filter":46,"fontFeatureSettings":46,"breakAfter":46,"breakBefore":46,"breakInside":46,"columnCount":46,"columnFill":46,"columnGap":46,"columnRule":46,"columnRuleColor":46,"columnRuleStyle":46,"columnRuleWidth":46,"columns":46,"columnSpan":46,"columnWidth":46},"and_uc":{"flex":9.9,"flexBasis":9.9,"flexDirection":9.9,"flexGrow":9.9,"flexFlow":9.9,"flexShrink":9.9,"flexWrap":9.9,"alignContent":9.9,"alignItems":9.9,"alignSelf":9.9,"justifyContent":9.9,"order":9.9,"transition":9.9,"transitionDelay":9.9,"transitionDuration":9.9,"transitionProperty":9.9,"transitionTimingFunction":9.9,"transform":9.9,"transformOrigin":9.9,"transformOriginX":9.9,"transformOriginY":9.9,"backfaceVisibility":9.9,"perspective":9.9,"perspectiveOrigin":9.9,"transformStyle":9.9,"transformOriginZ":9.9,"animation":9.9,"animationDelay":9.9,"animationDirection":9.9,"animationFillMode":9.9,"animationDuration":9.9,"animationIterationCount":9.9,"animationName":9.9,"animationPlayState":9.9,"animationTimingFunction":9.9,"appearance":9.9,"userSelect":9.9,"fontKerning":9.9,"textEmphasisPosition":9.9,"textEmphasis":9.9,"textEmphasisStyle":9.9,"textEmphasisColor":9.9,"maskImage":9.9,"maskMode":9.9,"maskRepeat":9.9,"maskPosition":9.9,"maskClip":9.9,"maskOrigin":9.9,"maskSize":9.9,"maskComposite":9.9,"mask":9.9,"maskBorderSource":9.9,"maskBorderMode":9.9,"maskBorderSlice":9.9,"maskBorderWidth":9.9,"maskBorderOutset":9.9,"maskBorderRepeat":9.9,"maskBorder":9.9,"maskType":9.9,"textSizeAdjust":9.9,"filter":9.9,"hyphens":9.9,"flowInto":9.9,"flowFrom":9.9,"breakBefore":9.9,"breakAfter":9.9,"breakInside":9.9,"regionFragment":9.9,"fontFeatureSettings":9.9,"columnCount":9.9,"columnFill":9.9,"columnGap":9.9,"columnRule":9.9,"columnRuleColor":9.9,"columnRuleStyle":9.9,"columnRuleWidth":9.9,"columns":9.9,"columnSpan":9.9,"columnWidth":9.9},"op_mini":{"borderImage":5,"borderImageOutset":5,"borderImageRepeat":5,"borderImageSlice":5,"borderImageSource":5,"borderImageWidth":5,"tabSize":5,"objectFit":5,"objectPosition":5}}; module.exports = caniuseData
 
 /***/ },
-/* 243 */
+/* 264 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -35687,29 +36893,29 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _pluginsCursor = __webpack_require__(244);
+	var _pluginsCursor = __webpack_require__(265);
 
 	var _pluginsCursor2 = _interopRequireDefault(_pluginsCursor);
 
-	var _pluginsFlex = __webpack_require__(245);
+	var _pluginsFlex = __webpack_require__(266);
 
 	var _pluginsFlex2 = _interopRequireDefault(_pluginsFlex);
 
-	var _pluginsSizing = __webpack_require__(246);
+	var _pluginsSizing = __webpack_require__(267);
 
 	var _pluginsSizing2 = _interopRequireDefault(_pluginsSizing);
 
-	var _pluginsGradient = __webpack_require__(247);
+	var _pluginsGradient = __webpack_require__(268);
 
 	var _pluginsGradient2 = _interopRequireDefault(_pluginsGradient);
 
 	// special flexbox specifications
 
-	var _pluginsFlexboxIE = __webpack_require__(248);
+	var _pluginsFlexboxIE = __webpack_require__(269);
 
 	var _pluginsFlexboxIE2 = _interopRequireDefault(_pluginsFlexboxIE);
 
-	var _pluginsFlexboxOld = __webpack_require__(249);
+	var _pluginsFlexboxOld = __webpack_require__(270);
 
 	var _pluginsFlexboxOld2 = _interopRequireDefault(_pluginsFlexboxOld);
 
@@ -35717,7 +36923,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 244 */
+/* 265 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -35743,7 +36949,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 245 */
+/* 266 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -35769,7 +36975,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 246 */
+/* 267 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -35798,7 +37004,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 247 */
+/* 268 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -35825,7 +37031,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 248 */
+/* 269 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -35871,7 +37077,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 249 */
+/* 270 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -35923,839 +37129,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 250 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var AutoPrefix = __webpack_require__(237);
-
-	module.exports = {
-
-	  easeOutFunction: 'cubic-bezier(0.23, 1, 0.32, 1)',
-	  easeInOutFunction: 'cubic-bezier(0.445, 0.05, 0.55, 0.95)',
-
-	  easeOut: function easeOut(duration, property, delay, easeFunction) {
-
-	    easeFunction = easeFunction || this.easeOutFunction;
-
-	    if (property && Object.prototype.toString.call(property) === '[object Array]') {
-
-	      var transitions = '';
-	      for (var i = 0; i < property.length; i++) {
-	        if (transitions) transitions += ',';
-	        transitions += this.create(duration, property[i], delay, easeFunction);
-	      }
-	      return transitions;
-	    } else {
-	      return this.create(duration, property, delay, easeFunction);
-	    }
-	  },
-
-	  create: function create(duration, property, delay, easeFunction) {
-	    duration = duration || '450ms';
-	    property = property || 'all';
-	    delay = delay || '0ms';
-	    easeFunction = easeFunction || "linear";
-
-	    return property + ' ' + duration + ' ' + easeFunction + ' ' + delay;
-	  }
-	};
-
-/***/ },
-/* 251 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
-
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-
-	var React = __webpack_require__(56);
-	var ReactDOM = __webpack_require__(213);
-	var KeyCode = __webpack_require__(252);
-	var StylePropable = __webpack_require__(232);
-	var Transitions = __webpack_require__(250);
-	var UniqueId = __webpack_require__(253);
-	var WindowListenable = __webpack_require__(254);
-	var ClearFix = __webpack_require__(256);
-	var FocusRipple = __webpack_require__(264);
-	var TouchRipple = __webpack_require__(273);
-	var Paper = __webpack_require__(276);
-	var DefaultRawTheme = __webpack_require__(258);
-	var ThemeManager = __webpack_require__(262);
-
-	var EnhancedSwitch = React.createClass({
-	  displayName: 'EnhancedSwitch',
-
-	  mixins: [WindowListenable, StylePropable],
-
-	  contextTypes: {
-	    muiTheme: React.PropTypes.object
-	  },
-
-	  //for passing default theme context to children
-	  childContextTypes: {
-	    muiTheme: React.PropTypes.object
-	  },
-
-	  getChildContext: function getChildContext() {
-	    return {
-	      muiTheme: this.state.muiTheme
-	    };
-	  },
-
-	  propTypes: {
-	    id: React.PropTypes.string,
-	    inputType: React.PropTypes.string.isRequired,
-	    switchElement: React.PropTypes.element.isRequired,
-	    onParentShouldUpdate: React.PropTypes.func.isRequired,
-	    switched: React.PropTypes.bool.isRequired,
-	    rippleStyle: React.PropTypes.object,
-	    rippleColor: React.PropTypes.string,
-	    iconStyle: React.PropTypes.object,
-	    thumbStyle: React.PropTypes.object,
-	    trackStyle: React.PropTypes.object,
-	    labelStyle: React.PropTypes.object,
-	    name: React.PropTypes.string,
-	    value: React.PropTypes.string,
-	    label: React.PropTypes.node,
-	    onSwitch: React.PropTypes.func,
-	    required: React.PropTypes.bool,
-	    disabled: React.PropTypes.bool,
-	    defaultSwitched: React.PropTypes.bool,
-	    labelPosition: React.PropTypes.oneOf(['left', 'right']),
-	    disableFocusRipple: React.PropTypes.bool,
-	    disableTouchRipple: React.PropTypes.bool,
-	    style: React.PropTypes.object
-	  },
-
-	  windowListeners: {
-	    keydown: '_handleWindowKeydown',
-	    keyup: '_handleWindowKeyup'
-	  },
-
-	  getInitialState: function getInitialState() {
-	    return {
-	      isKeyboardFocused: false,
-	      parentWidth: 100,
-	      muiTheme: this.context.muiTheme ? this.context.muiTheme : ThemeManager.getMuiTheme(DefaultRawTheme)
-	    };
-	  },
-
-	  getEvenWidth: function getEvenWidth() {
-	    return parseInt(window.getComputedStyle(ReactDOM.findDOMNode(this.refs.root)).getPropertyValue('width'), 10);
-	  },
-
-	  componentDidMount: function componentDidMount() {
-	    var inputNode = ReactDOM.findDOMNode(this.refs.checkbox);
-	    if (!this.props.switched || inputNode.checked !== this.props.switched) {
-	      this.props.onParentShouldUpdate(inputNode.checked);
-	    }
-
-	    window.addEventListener("resize", this._handleResize);
-
-	    this._handleResize();
-	  },
-
-	  componentWillUnmount: function componentWillUnmount() {
-	    window.removeEventListener("resize", this._handleResize);
-	  },
-
-	  componentWillReceiveProps: function componentWillReceiveProps(nextProps, nextContext) {
-	    var hasCheckedLinkProp = nextProps.hasOwnProperty('checkedLink');
-	    var hasCheckedProp = nextProps.hasOwnProperty('checked');
-	    var hasToggledProp = nextProps.hasOwnProperty('toggled');
-	    var hasNewDefaultProp = nextProps.hasOwnProperty('defaultSwitched') && nextProps.defaultSwitched !== this.props.defaultSwitched;
-	    var newState = {};
-	    newState.muiTheme = nextContext.muiTheme ? nextContext.muiTheme : this.state.muiTheme;
-
-	    if (hasCheckedProp) {
-	      newState.switched = nextProps.checked;
-	    } else if (hasToggledProp) {
-	      newState.switched = nextProps.toggled;
-	    } else if (hasCheckedLinkProp) {
-	      newState.switched = nextProps.checkedLink.value;
-	    } else if (hasNewDefaultProp) {
-	      newState.switched = nextProps.defaultSwitched;
-	    }
-
-	    if (newState.switched !== undefined && newState.switched !== this.props.switched) {
-	      this.props.onParentShouldUpdate(newState.switched);
-	    }
-
-	    this.setState(newState);
-	  },
-
-	  getTheme: function getTheme() {
-	    return this.state.muiTheme.rawTheme.palette;
-	  },
-
-	  getStyles: function getStyles() {
-	    var spacing = this.state.muiTheme.rawTheme.spacing;
-	    var switchWidth = 60 - spacing.desktopGutterLess;
-	    var labelWidth = 'calc(100% - 60px)';
-	    var styles = {
-	      root: {
-	        position: 'relative',
-	        cursor: this.props.disabled ? 'default' : 'pointer',
-	        overflow: 'visible',
-	        display: 'table',
-	        height: 'auto',
-	        width: '100%'
-	      },
-	      input: {
-	        position: 'absolute',
-	        cursor: this.props.disabled ? 'default' : 'pointer',
-	        pointerEvents: 'all',
-	        opacity: 0,
-	        width: '100%',
-	        height: '100%',
-	        zIndex: 2,
-	        left: 0,
-	        boxSizing: 'border-box',
-	        padding: 0,
-	        margin: 0
-	      },
-	      controls: {
-	        width: '100%',
-	        height: '100%'
-	      },
-	      label: {
-	        float: 'left',
-	        position: 'relative',
-	        display: 'block',
-	        width: labelWidth,
-	        lineHeight: '24px',
-	        color: this.getTheme().textColor
-	      },
-	      wrap: {
-	        transition: Transitions.easeOut(),
-	        float: 'left',
-	        position: 'relative',
-	        display: 'block',
-	        width: switchWidth,
-	        marginRight: this.props.labelPosition === 'right' ? spacing.desktopGutterLess : 0,
-	        marginLeft: this.props.labelPosition === 'left' ? spacing.desktopGutterLess : 0
-	      },
-	      ripple: {
-	        height: '200%',
-	        width: '200%',
-	        top: -12,
-	        left: -12
-	      }
-	    };
-
-	    return styles;
-	  },
-
-	  render: function render() {
-	    var _props = this.props;
-	    var type = _props.type;
-	    var name = _props.name;
-	    var value = _props.value;
-	    var label = _props.label;
-	    var onSwitch = _props.onSwitch;
-	    var defaultSwitched = _props.defaultSwitched;
-	    var onBlur = _props.onBlur;
-	    var onFocus = _props.onFocus;
-	    var onMouseUp = _props.onMouseUp;
-	    var onMouseDown = _props.onMouseDown;
-	    var onMouseLeave = _props.onMouseLeave;
-	    var onTouchStart = _props.onTouchStart;
-	    var onTouchEnd = _props.onTouchEnd;
-	    var disableTouchRipple = _props.disableTouchRipple;
-	    var disableFocusRipple = _props.disableFocusRipple;
-	    var className = _props.className;
-
-	    var other = _objectWithoutProperties(_props, ['type', 'name', 'value', 'label', 'onSwitch', 'defaultSwitched', 'onBlur', 'onFocus', 'onMouseUp', 'onMouseDown', 'onMouseLeave', 'onTouchStart', 'onTouchEnd', 'disableTouchRipple', 'disableFocusRipple', 'className']);
-
-	    var styles = this.getStyles();
-	    var wrapStyles = this.prepareStyles(styles.wrap, this.props.iconStyle);
-	    var rippleStyle = this.prepareStyles(styles.ripple, this.props.rippleStyle);
-	    var rippleColor = this.props.hasOwnProperty('rippleColor') ? this.props.rippleColor : this.getTheme().primary1Color;
-
-	    if (this.props.thumbStyle) {
-	      wrapStyles.marginLeft /= 2;
-	      wrapStyles.marginRight /= 2;
-	    }
-
-	    var inputId = this.props.id || UniqueId.generate();
-
-	    var labelStyle = this.prepareStyles(styles.label, this.props.labelStyle);
-	    var labelElement = this.props.label ? React.createElement(
-	      'label',
-	      { style: labelStyle, htmlFor: inputId },
-	      this.props.label
-	    ) : null;
-
-	    var inputProps = {
-	      ref: "checkbox",
-	      type: this.props.inputType,
-	      style: this.prepareStyles(styles.input),
-	      name: this.props.name,
-	      value: this.props.value,
-	      defaultChecked: this.props.defaultSwitched,
-	      onBlur: this._handleBlur,
-	      onFocus: this._handleFocus
-	    };
-
-	    var hideTouchRipple = this.props.disabled || disableTouchRipple;
-
-	    if (!hideTouchRipple) {
-	      inputProps.onMouseUp = this._handleMouseUp;
-	      inputProps.onMouseDown = this._handleMouseDown;
-	      inputProps.onMouseLeave = this._handleMouseLeave;
-	      inputProps.onTouchStart = this._handleTouchStart;
-	      inputProps.onTouchEnd = this._handleTouchEnd;
-	    }
-
-	    if (!this.props.hasOwnProperty('checkedLink')) {
-	      inputProps.onChange = this._handleChange;
-	    }
-
-	    var inputElement = React.createElement('input', _extends({}, other, inputProps));
-
-	    var touchRipple = React.createElement(TouchRipple, {
-	      ref: 'touchRipple',
-	      key: 'touchRipple',
-	      style: rippleStyle,
-	      color: rippleColor,
-	      centerRipple: true });
-
-	    var focusRipple = React.createElement(FocusRipple, {
-	      key: 'focusRipple',
-	      innerStyle: rippleStyle,
-	      color: rippleColor,
-	      show: this.state.isKeyboardFocused });
-
-	    var ripples = [hideTouchRipple ? null : touchRipple, this.props.disabled || disableFocusRipple ? null : focusRipple];
-
-	    // If toggle component (indicated by whether the style includes thumb) manually lay out
-	    // elements in order to nest ripple elements
-	    var switchElement = !this.props.thumbStyle ? React.createElement(
-	      'div',
-	      { style: wrapStyles },
-	      this.props.switchElement,
-	      ripples
-	    ) : React.createElement(
-	      'div',
-	      { style: wrapStyles },
-	      React.createElement('div', { style: this.prepareStyles(this.props.trackStyle) }),
-	      React.createElement(
-	        Paper,
-	        { style: this.props.thumbStyle, zDepth: 1, circle: true },
-	        ' ',
-	        ripples,
-	        ' '
-	      )
-	    );
-
-	    var labelPositionExist = this.props.labelPosition;
-
-	    // Position is left if not defined or invalid.
-	    var elementsInOrder = labelPositionExist && this.props.labelPosition.toUpperCase() === "RIGHT" ? React.createElement(
-	      ClearFix,
-	      { style: styles.controls },
-	      switchElement,
-	      labelElement
-	    ) : React.createElement(
-	      ClearFix,
-	      { style: styles.controls },
-	      labelElement,
-	      switchElement
-	    );
-
-	    return React.createElement(
-	      'div',
-	      { ref: 'root', className: className, style: this.prepareStyles(styles.root, this.props.style) },
-	      inputElement,
-	      elementsInOrder
-	    );
-	  },
-
-	  isSwitched: function isSwitched() {
-	    return ReactDOM.findDOMNode(this.refs.checkbox).checked;
-	  },
-
-	  // no callback here because there is no event
-	  setSwitched: function setSwitched(newSwitchedValue) {
-	    if (!this.props.hasOwnProperty('checked') || this.props.checked === false) {
-	      this.props.onParentShouldUpdate(newSwitchedValue);
-	      ReactDOM.findDOMNode(this.refs.checkbox).checked = newSwitchedValue;
-	    } else if (process.env.NODE_ENV !== 'production') {
-	      var message = 'Cannot call set method while checked is defined as a property.';
-	      console.error(message);
-	    }
-	  },
-
-	  getValue: function getValue() {
-	    return ReactDOM.findDOMNode(this.refs.checkbox).value;
-	  },
-
-	  isKeyboardFocused: function isKeyboardFocused() {
-	    return this.state.isKeyboardFocused;
-	  },
-
-	  _handleChange: function _handleChange(e) {
-	    this._tabPressed = false;
-	    this.setState({
-	      isKeyboardFocused: false
-	    });
-
-	    var isInputChecked = ReactDOM.findDOMNode(this.refs.checkbox).checked;
-
-	    if (!this.props.hasOwnProperty('checked')) {
-	      this.props.onParentShouldUpdate(isInputChecked);
-	    }
-	    if (this.props.onSwitch) {
-	      this.props.onSwitch(e, isInputChecked);
-	    }
-	  },
-
-	  // Checkbox inputs only use SPACE to change their state. Using ENTER will
-	  // update the ui but not the input.
-	  _handleWindowKeydown: function _handleWindowKeydown(e) {
-	    if (e.keyCode === KeyCode.TAB) {
-	      this._tabPressed = true;
-	    }
-	    if (e.keyCode === KeyCode.SPACE && this.state.isKeyboardFocused) {
-	      this._handleChange(e);
-	    }
-	  },
-
-	  _handleWindowKeyup: function _handleWindowKeyup(e) {
-	    if (e.keyCode === KeyCode.SPACE && this.state.isKeyboardFocused) {
-	      this._handleChange(e);
-	    }
-	  },
-
-	  /**
-	   * Because both the ripples and the checkbox input cannot share pointer
-	   * events, the checkbox input takes control of pointer events and calls
-	   * ripple animations manually.
-	   */
-	  _handleMouseDown: function _handleMouseDown(e) {
-	    //only listen to left clicks
-	    if (e.button === 0) {
-	      this.refs.touchRipple.start(e);
-	    }
-	  },
-
-	  _handleMouseUp: function _handleMouseUp() {
-	    this.refs.touchRipple.end();
-	  },
-
-	  _handleMouseLeave: function _handleMouseLeave() {
-	    this.refs.touchRipple.end();
-	  },
-
-	  _handleTouchStart: function _handleTouchStart(e) {
-	    this.refs.touchRipple.start(e);
-	  },
-
-	  _handleTouchEnd: function _handleTouchEnd() {
-	    this.refs.touchRipple.end();
-	  },
-
-	  _handleBlur: function _handleBlur(e) {
-	    this.setState({
-	      isKeyboardFocused: false
-	    });
-
-	    if (this.props.onBlur) {
-	      this.props.onBlur(e);
-	    }
-	  },
-
-	  _handleFocus: function _handleFocus(e) {
-	    var _this = this;
-
-	    //setTimeout is needed becuase the focus event fires first
-	    //Wait so that we can capture if this was a keyboard focus
-	    //or touch focus
-	    setTimeout(function () {
-	      if (_this._tabPressed) {
-	        _this.setState({
-	          isKeyboardFocused: true
-	        });
-	      }
-	    }, 150);
-
-	    if (this.props.onFocus) {
-	      this.props.onFocus(e);
-	    }
-	  },
-
-	  _handleResize: function _handleResize() {
-	    this.setState({ parentWidth: this.getEvenWidth() });
-	  }
-
-	});
-
-	module.exports = EnhancedSwitch;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(59)))
-
-/***/ },
-/* 252 */
-/***/ function(module, exports) {
-
-	"use strict";
-
-	module.exports = {
-	  DOWN: 40,
-	  ESC: 27,
-	  ENTER: 13,
-	  LEFT: 37,
-	  RIGHT: 39,
-	  SPACE: 32,
-	  TAB: 9,
-	  UP: 38
-	};
-
-/***/ },
-/* 253 */
-/***/ function(module, exports) {
-
-	"use strict";
-
-	var index = 0;
-
-	module.exports = {
-	  generate: function generate() {
-	    return "mui-id-" + index++;
-	  }
-	};
-
-/***/ },
-/* 254 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var Events = __webpack_require__(255);
-
-	module.exports = {
-
-	  componentDidMount: function componentDidMount() {
-	    var listeners = this.windowListeners;
-
-	    for (var eventName in listeners) {
-	      var callbackName = listeners[eventName];
-	      Events.on(window, eventName, this[callbackName]);
-	    }
-	  },
-
-	  componentWillUnmount: function componentWillUnmount() {
-	    var listeners = this.windowListeners;
-
-	    for (var eventName in listeners) {
-	      var callbackName = listeners[eventName];
-	      Events.off(window, eventName, this[callbackName]);
-	    }
-	  }
-
-	};
-
-/***/ },
-/* 255 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	module.exports = {
-
-	  once: function once(el, type, callback) {
-	    var typeArray = type ? type.split(' ') : [];
-	    var recursiveFunction = function recursiveFunction(e) {
-	      e.target.removeEventListener(e.type, recursiveFunction);
-	      return callback(e);
-	    };
-
-	    for (var i = typeArray.length - 1; i >= 0; i--) {
-	      this.on(el, typeArray[i], recursiveFunction);
-	    }
-	  },
-
-	  on: function on(el, type, callback) {
-	    if (el.addEventListener) {
-	      el.addEventListener(type, callback);
-	    } else {
-	      // IE8+ Support
-	      el.attachEvent('on' + type, function () {
-	        callback.call(el);
-	      });
-	    }
-	  },
-
-	  off: function off(el, type, callback) {
-	    if (el.removeEventListener) {
-	      el.removeEventListener(type, callback);
-	    } else {
-	      // IE8+ Support
-	      el.detachEvent('on' + type, callback);
-	    }
-	  },
-
-	  isKeyboard: function isKeyboard(e) {
-	    return ['keydown', 'keypress', 'keyup'].indexOf(e.type) !== -1;
-	  }
-	};
-
-/***/ },
-/* 256 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-
-	var React = __webpack_require__(56);
-	var BeforeAfterWrapper = __webpack_require__(257);
-	var StylePropable = __webpack_require__(232);
-	var DefaultRawTheme = __webpack_require__(258);
-	var ThemeManager = __webpack_require__(262);
-
-	var ClearFix = React.createClass({
-	  displayName: 'ClearFix',
-
-	  mixins: [StylePropable],
-
-	  contextTypes: {
-	    muiTheme: React.PropTypes.object
-	  },
-
-	  propTypes: {
-	    style: React.PropTypes.object
-	  },
-
-	  //for passing default theme context to children
-	  childContextTypes: {
-	    muiTheme: React.PropTypes.object
-	  },
-
-	  getChildContext: function getChildContext() {
-	    return {
-	      muiTheme: this.state.muiTheme
-	    };
-	  },
-
-	  getInitialState: function getInitialState() {
-	    return {
-	      muiTheme: this.context.muiTheme ? this.context.muiTheme : ThemeManager.getMuiTheme(DefaultRawTheme)
-	    };
-	  },
-
-	  //to update theme inside state whenever a new theme is passed down
-	  //from the parent / owner using context
-	  componentWillReceiveProps: function componentWillReceiveProps(nextProps, nextContext) {
-	    var newMuiTheme = nextContext.muiTheme ? nextContext.muiTheme : this.state.muiTheme;
-	    this.setState({ muiTheme: newMuiTheme });
-	  },
-
-	  render: function render() {
-	    var _props = this.props;
-	    var style = _props.style;
-
-	    var other = _objectWithoutProperties(_props, ['style']);
-
-	    var before = function before() {
-	      return {
-	        content: "' '",
-	        display: 'table'
-	      };
-	    };
-
-	    var after = before();
-	    after.clear = 'both';
-
-	    return React.createElement(
-	      BeforeAfterWrapper,
-	      _extends({}, other, {
-	        beforeStyle: before(),
-	        afterStyle: after,
-	        style: style }),
-	      this.props.children
-	    );
-	  }
-	});
-
-	module.exports = ClearFix;
-
-/***/ },
-/* 257 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-
-	var React = __webpack_require__(56);
-	var StylePropable = __webpack_require__(232);
-	var AutoPrefix = __webpack_require__(237);
-	var DefaultRawTheme = __webpack_require__(258);
-	var ThemeManager = __webpack_require__(262);
-
-	/**
-	 *  BeforeAfterWrapper
-	 *    An alternative for the ::before and ::after css pseudo-elements for
-	 *    components whose styles are defined in javascript instead of css.
-	 *
-	 *  Usage: For the element that we want to apply before and after elements to,
-	 *    wrap its children with BeforeAfterWrapper. For example:
-	 *
-	 *                                            <Paper>
-	 *  <Paper>                                     <div> // See notice
-	 *    <BeforeAfterWrapper>        renders         <div/> // before element
-	 *      [children of paper]       ------>         [children of paper]
-	 *    </BeforeAfterWrapper>                       <div/> // after element
-	 *  </Paper>                                    </div>
-	 *                                            </Paper>
-	 *
-	 *  Notice: Notice that this div bundles together our elements. If the element
-	 *    that we want to apply before and after elements is a HTML tag (i.e. a
-	 *    div, p, or button tag), we can avoid this extra nesting by passing using
-	 *    the BeforeAfterWrapper in place of said tag like so:
-	 *
-	 *  <p>
-	 *    <BeforeAfterWrapper>   do this instead   <BeforeAfterWrapper elementType='p'>
-	 *      [children of p]          ------>         [children of p]
-	 *    </BeforeAfterWrapper>                    </BeforeAfterWrapper>
-	 *  </p>
-	 *
-	 *  BeforeAfterWrapper features spread functionality. This means that we can
-	 *  pass HTML tag properties directly into the BeforeAfterWrapper tag.
-	 *
-	 *  When using BeforeAfterWrapper, ensure that the parent of the beforeElement
-	 *  and afterElement have a defined style position.
-	 */
-
-	var BeforeAfterWrapper = React.createClass({
-	  displayName: 'BeforeAfterWrapper',
-
-	  mixins: [StylePropable],
-
-	  contextTypes: {
-	    muiTheme: React.PropTypes.object
-	  },
-
-	  propTypes: {
-	    beforeStyle: React.PropTypes.object,
-	    afterStyle: React.PropTypes.object,
-	    beforeElementType: React.PropTypes.string,
-	    afterElementType: React.PropTypes.string,
-	    elementType: React.PropTypes.string,
-	    style: React.PropTypes.object
-	  },
-
-	  getDefaultProps: function getDefaultProps() {
-	    return {
-	      beforeElementType: 'div',
-	      afterElementType: 'div',
-	      elementType: 'div'
-	    };
-	  },
-
-	  //for passing default theme context to children
-	  childContextTypes: {
-	    muiTheme: React.PropTypes.object
-	  },
-
-	  getChildContext: function getChildContext() {
-	    return {
-	      muiTheme: this.state.muiTheme
-	    };
-	  },
-
-	  getInitialState: function getInitialState() {
-	    return {
-	      muiTheme: this.context.muiTheme ? this.context.muiTheme : ThemeManager.getMuiTheme(DefaultRawTheme)
-	    };
-	  },
-
-	  //to update theme inside state whenever a new theme is passed down
-	  //from the parent / owner using context
-	  componentWillReceiveProps: function componentWillReceiveProps(nextProps, nextContext) {
-	    var newMuiTheme = nextContext.muiTheme ? nextContext.muiTheme : this.state.muiTheme;
-	    this.setState({ muiTheme: newMuiTheme });
-	  },
-
-	  render: function render() {
-	    var _props = this.props;
-	    var beforeStyle = _props.beforeStyle;
-	    var afterStyle = _props.afterStyle;
-	    var beforeElementType = _props.beforeElementType;
-	    var afterElementType = _props.afterElementType;
-	    var elementType = _props.elementType;
-
-	    var other = _objectWithoutProperties(_props, ['beforeStyle', 'afterStyle', 'beforeElementType', 'afterElementType', 'elementType']);
-
-	    var beforeElement = undefined,
-	        afterElement = undefined;
-
-	    beforeStyle = AutoPrefix.all({ boxSizing: 'border-box' });
-	    afterStyle = AutoPrefix.all({ boxSizing: 'border-box' });
-
-	    if (this.props.beforeStyle) beforeElement = React.createElement(this.props.beforeElementType, {
-	      style: this.prepareStyles(beforeStyle, this.props.beforeStyle),
-	      key: "::before"
-	    });
-	    if (this.props.afterStyle) afterElement = React.createElement(this.props.afterElementType, {
-	      style: this.prepareStyles(afterStyle, this.props.afterStyle),
-	      key: "::after"
-	    });
-
-	    var children = [beforeElement, this.props.children, afterElement];
-
-	    var props = other;
-	    props.style = this.prepareStyles(this.props.style);
-
-	    return React.createElement(this.props.elementType, props, children);
-	  }
-
-	});
-
-	module.exports = BeforeAfterWrapper;
-
-/***/ },
-/* 258 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var Colors = __webpack_require__(259);
-	var ColorManipulator = __webpack_require__(260);
-	var Spacing = __webpack_require__(261);
-
-	/*
-	 *  Light Theme is the default theme used in material-ui. It is guaranteed to
-	 *  have all theme variables needed for every component. Variables not defined
-	 *  in a custom theme will default to these values.
-	 */
-
-	module.exports = {
-	  spacing: Spacing,
-	  fontFamily: 'Roboto, sans-serif',
-	  palette: {
-	    primary1Color: Colors.cyan500,
-	    primary2Color: Colors.cyan700,
-	    primary3Color: Colors.grey400,
-	    accent1Color: Colors.pinkA200,
-	    accent2Color: Colors.grey100,
-	    accent3Color: Colors.grey500,
-	    textColor: Colors.darkBlack,
-	    alternateTextColor: Colors.white,
-	    canvasColor: Colors.white,
-	    borderColor: Colors.grey300,
-	    disabledColor: ColorManipulator.fade(Colors.darkBlack, 0.3)
-	  }
-	};
-
-/***/ },
-/* 259 */
+/* 271 */
 /***/ function(module, exports) {
 
 	// To include this file in your project:
@@ -37055,7 +37429,41 @@
 	};
 
 /***/ },
-/* 260 */
+/* 272 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var Colors = __webpack_require__(271);
+	var ColorManipulator = __webpack_require__(273);
+	var Spacing = __webpack_require__(274);
+
+	/*
+	 *  Light Theme is the default theme used in material-ui. It is guaranteed to
+	 *  have all theme variables needed for every component. Variables not defined
+	 *  in a custom theme will default to these values.
+	 */
+
+	module.exports = {
+	  spacing: Spacing,
+	  fontFamily: 'Roboto, sans-serif',
+	  palette: {
+	    primary1Color: Colors.cyan500,
+	    primary2Color: Colors.cyan700,
+	    primary3Color: Colors.grey400,
+	    accent1Color: Colors.pinkA200,
+	    accent2Color: Colors.grey100,
+	    accent3Color: Colors.grey500,
+	    textColor: Colors.darkBlack,
+	    alternateTextColor: Colors.white,
+	    canvasColor: Colors.white,
+	    borderColor: Colors.grey300,
+	    disabledColor: ColorManipulator.fade(Colors.darkBlack, 0.3)
+	  }
+	};
+
+/***/ },
+/* 273 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -37234,7 +37642,7 @@
 	};
 
 /***/ },
-/* 261 */
+/* 274 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -37255,15 +37663,15 @@
 	};
 
 /***/ },
-/* 262 */
+/* 275 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var Colors = __webpack_require__(259);
-	var ColorManipulator = __webpack_require__(260);
-	var Extend = __webpack_require__(263);
-	var update = __webpack_require__(234);
+	var Colors = __webpack_require__(271);
+	var ColorManipulator = __webpack_require__(273);
+	var Extend = __webpack_require__(276);
+	var update = __webpack_require__(255);
 
 	module.exports = {
 
@@ -37514,7 +37922,7 @@
 	};
 
 /***/ },
-/* 263 */
+/* 276 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -37568,224 +37976,7 @@
 	module.exports = extend;
 
 /***/ },
-/* 264 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var React = __webpack_require__(56);
-	var ReactDOM = __webpack_require__(213);
-	var PureRenderMixin = __webpack_require__(265);
-	var StylePropable = __webpack_require__(232);
-	var AutoPrefix = __webpack_require__(237);
-	var Colors = __webpack_require__(259);
-	var Transitions = __webpack_require__(250);
-	var ScaleInTransitionGroup = __webpack_require__(268);
-
-	var pulsateDuration = 750;
-
-	var FocusRipple = React.createClass({
-	  displayName: 'FocusRipple',
-
-	  mixins: [PureRenderMixin, StylePropable],
-
-	  propTypes: {
-	    color: React.PropTypes.string,
-	    innerStyle: React.PropTypes.object,
-	    opacity: React.PropTypes.number,
-	    show: React.PropTypes.bool,
-	    style: React.PropTypes.object
-	  },
-
-	  getDefaultProps: function getDefaultProps() {
-	    return {
-	      color: Colors.darkBlack
-	    };
-	  },
-
-	  componentDidMount: function componentDidMount() {
-	    if (this.props.show) {
-	      this._setRippleSize();
-	      this._pulsate();
-	    }
-	  },
-
-	  componentDidUpdate: function componentDidUpdate() {
-	    if (this.props.show) {
-	      this._setRippleSize();
-	      this._pulsate();
-	    } else {
-	      if (this._timeout) clearTimeout(this._timeout);
-	    }
-	  },
-
-	  render: function render() {
-	    var _props = this.props;
-	    var show = _props.show;
-	    var style = _props.style;
-
-	    var mergedRootStyles = this.mergeStyles({
-	      height: '100%',
-	      width: '100%',
-	      position: 'absolute',
-	      top: 0,
-	      left: 0
-	    }, style);
-
-	    var ripple = show ? this._getRippleElement(this.props) : null;
-
-	    return React.createElement(
-	      ScaleInTransitionGroup,
-	      {
-	        maxScale: 0.85,
-	        style: mergedRootStyles },
-	      ripple
-	    );
-	  },
-
-	  _getRippleElement: function _getRippleElement(props) {
-	    var color = props.color;
-	    var innerStyle = props.innerStyle;
-	    var opacity = props.opacity;
-
-	    var innerStyles = this.mergeAndPrefix({
-	      position: 'absolute',
-	      height: '100%',
-	      width: '100%',
-	      borderRadius: '50%',
-	      opacity: opacity ? opacity : 0.16,
-	      backgroundColor: color,
-	      transition: Transitions.easeOut(pulsateDuration + 'ms', 'transform', null, Transitions.easeInOutFunction)
-	    }, innerStyle);
-
-	    return React.createElement('div', { ref: 'innerCircle', style: innerStyles });
-	  },
-
-	  _pulsate: function _pulsate() {
-	    if (!this.isMounted()) return;
-
-	    var innerCircle = ReactDOM.findDOMNode(this.refs.innerCircle);
-	    if (!innerCircle) return;
-
-	    var startScale = 'scale(1)';
-	    var endScale = 'scale(0.85)';
-	    var currentScale = innerCircle.style.transform;
-	    var nextScale = undefined;
-
-	    currentScale = currentScale || startScale;
-	    nextScale = currentScale === startScale ? endScale : startScale;
-
-	    AutoPrefix.set(innerCircle.style, 'transform', nextScale);
-	    this._timeout = setTimeout(this._pulsate, pulsateDuration);
-	  },
-
-	  _setRippleSize: function _setRippleSize() {
-	    var el = ReactDOM.findDOMNode(this.refs.innerCircle);
-	    var height = el.offsetHeight;
-	    var width = el.offsetWidth;
-	    var size = Math.max(height, width);
-
-	    var oldTop = 0;
-	    // For browsers that don't support endsWith()
-	    if (el.style.top.indexOf('px', el.style.top.length - 2) !== -1) {
-	      oldTop = parseInt(el.style.top);
-	    }
-	    el.style.height = size + 'px';
-	    el.style.top = height / 2 - size / 2 + oldTop + 'px';
-	  }
-
-	});
-
-	module.exports = FocusRipple;
-
-/***/ },
-/* 265 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(266);
-
-/***/ },
-/* 266 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Copyright 2013-2015, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule ReactComponentWithPureRenderMixin
-	 */
-
-	'use strict';
-
-	var shallowCompare = __webpack_require__(267);
-
-	/**
-	 * If your React component's render function is "pure", e.g. it will render the
-	 * same result given the same props and state, provide this Mixin for a
-	 * considerable performance boost.
-	 *
-	 * Most React components have pure render functions.
-	 *
-	 * Example:
-	 *
-	 *   var ReactComponentWithPureRenderMixin =
-	 *     require('ReactComponentWithPureRenderMixin');
-	 *   React.createClass({
-	 *     mixins: [ReactComponentWithPureRenderMixin],
-	 *
-	 *     render: function() {
-	 *       return <div className={this.props.className}>foo</div>;
-	 *     }
-	 *   });
-	 *
-	 * Note: This only checks shallow equality for props and state. If these contain
-	 * complex data structures this mixin may have false-negatives for deeper
-	 * differences. Only mixin to components which have simple props and state, or
-	 * use `forceUpdate()` when you know deep data structures have changed.
-	 */
-	var ReactComponentWithPureRenderMixin = {
-	  shouldComponentUpdate: function (nextProps, nextState) {
-	    return shallowCompare(this, nextProps, nextState);
-	  }
-	};
-
-	module.exports = ReactComponentWithPureRenderMixin;
-
-/***/ },
-/* 267 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Copyright 2013-2015, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	* @providesModule shallowCompare
-	*/
-
-	'use strict';
-
-	var shallowEqual = __webpack_require__(172);
-
-	/**
-	 * Does a shallow comparison for props and state.
-	 * See ReactComponentWithPureRenderMixin
-	 */
-	function shallowCompare(instance, nextProps, nextState) {
-	  return !shallowEqual(instance.props, nextProps) || !shallowEqual(instance.state, nextState);
-	}
-
-	module.exports = shallowCompare;
-
-/***/ },
-/* 268 */
+/* 277 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37795,424 +37986,91 @@
 	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
 	var React = __webpack_require__(56);
-	var PureRenderMixin = __webpack_require__(265);
-	var ReactTransitionGroup = __webpack_require__(269);
-	var StylePropable = __webpack_require__(232);
-	var ScaleInChild = __webpack_require__(272);
-	var DefaultRawTheme = __webpack_require__(258);
-	var ThemeManager = __webpack_require__(262);
+	var Paper = __webpack_require__(278);
+	var StylePropable = __webpack_require__(253);
+	var CardExpandable = __webpack_require__(284);
 
-	var ScaleIn = React.createClass({
-	  displayName: 'ScaleIn',
+	var Card = React.createClass({
+	  displayName: 'Card',
 
-	  mixins: [PureRenderMixin, StylePropable],
-
-	  contextTypes: {
-	    muiTheme: React.PropTypes.object
-	  },
-
-	  //for passing default theme context to children
-	  childContextTypes: {
-	    muiTheme: React.PropTypes.object
-	  },
-
-	  getChildContext: function getChildContext() {
-	    return {
-	      muiTheme: this.state.muiTheme
-	    };
-	  },
+	  mixins: [StylePropable],
 
 	  getInitialState: function getInitialState() {
-	    return {
-	      muiTheme: this.context.muiTheme ? this.context.muiTheme : ThemeManager.getMuiTheme(DefaultRawTheme)
-	    };
-	  },
-
-	  //to update theme inside state whenever a new theme is passed down
-	  //from the parent / owner using context
-	  componentWillReceiveProps: function componentWillReceiveProps(nextProps, nextContext) {
-	    var newMuiTheme = nextContext.muiTheme ? nextContext.muiTheme : this.state.muiTheme;
-	    this.setState({ muiTheme: newMuiTheme });
+	    return { expanded: this.props.initiallyExpanded ? true : false };
 	  },
 
 	  propTypes: {
-	    childStyle: React.PropTypes.object,
-	    enterDelay: React.PropTypes.number,
-	    maxScale: React.PropTypes.number,
-	    minScale: React.PropTypes.number,
-	    style: React.PropTypes.object
+	    style: React.PropTypes.object,
+	    expandable: React.PropTypes.bool,
+	    initiallyExpanded: React.PropTypes.bool,
+	    onExpandChange: React.PropTypes.func,
+	    actAsExpander: React.PropTypes.bool,
+	    showExpandableButton: React.PropTypes.bool
 	  },
 
-	  getDefaultProps: function getDefaultProps() {
-	    return {
-	      enterDelay: 0
-	    };
+	  _onExpandable: function _onExpandable() {
+	    var newExpandedState = !(this.state.expanded === true);
+	    this.setState({ expanded: newExpandedState });
+	    if (this.props.onExpandChange) this.props.onExpandChange(newExpandedState);
 	  },
 
 	  render: function render() {
+	    var _this = this;
+
+	    var lastElement = undefined;
+	    var newChildren = React.Children.map(this.props.children, function (currentChild) {
+	      var doClone = false;
+	      var newChild = undefined;
+	      var newProps = {};
+	      var element = currentChild;
+	      if (!currentChild || !currentChild.props) {
+	        return null;
+	      }
+	      if (_this.state.expanded === false && currentChild.props.expandable === true) return;
+	      if (currentChild.props.actAsExpander === true) {
+	        doClone = true;
+	        newProps.onTouchTap = _this._onExpandable;
+	        newProps.style = _this.mergeStyles({ cursor: 'pointer' }, currentChild.props.style);
+	      }
+	      if (currentChild.props.showExpandableButton === true) {
+	        doClone = true;
+	        newChild = React.createElement(CardExpandable, { expanded: _this.state.expanded, onExpanding: _this._onExpandable });
+	      }
+	      if (doClone) {
+	        element = React.cloneElement(currentChild, newProps, currentChild.props.children, newChild);
+	      }
+	      return element;
+	    }, this);
+
+	    // If the last element is text or a title we should add
+	    // 8px padding to the bottom of the card
+	    var addBottomPadding = lastElement && (lastElement.type.displayName === "CardText" || lastElement.type.displayName === "CardTitle");
 	    var _props = this.props;
-	    var children = _props.children;
-	    var childStyle = _props.childStyle;
-	    var enterDelay = _props.enterDelay;
-	    var maxScale = _props.maxScale;
-	    var minScale = _props.minScale;
 	    var style = _props.style;
 
-	    var other = _objectWithoutProperties(_props, ['children', 'childStyle', 'enterDelay', 'maxScale', 'minScale', 'style']);
+	    var other = _objectWithoutProperties(_props, ['style']);
 
-	    var mergedRootStyles = this.prepareStyles({
-	      position: 'relative',
+	    var mergedStyles = this.mergeStyles({
 	      overflow: 'hidden',
-	      height: '100%'
+	      zIndex: 1
 	    }, style);
 
-	    var newChildren = React.Children.map(children, function (child) {
-	      return React.createElement(
-	        ScaleInChild,
-	        {
-	          key: child.key,
-	          enterDelay: enterDelay,
-	          maxScale: maxScale,
-	          minScale: minScale,
-	          style: childStyle },
-	        child
-	      );
-	    });
-
 	    return React.createElement(
-	      ReactTransitionGroup,
-	      _extends({}, other, {
-	        style: mergedRootStyles,
-	        component: 'div' }),
-	      newChildren
+	      Paper,
+	      _extends({}, other, { style: mergedStyles }),
+	      React.createElement(
+	        'div',
+	        { style: { paddingBottom: addBottomPadding ? 8 : 0 } },
+	        newChildren
+	      )
 	    );
 	  }
-
 	});
 
-	module.exports = ScaleIn;
+	module.exports = Card;
 
 /***/ },
-/* 269 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(270);
-
-/***/ },
-/* 270 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Copyright 2013-2015, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule ReactTransitionGroup
-	 */
-
-	'use strict';
-
-	var React = __webpack_require__(57);
-	var ReactTransitionChildMapping = __webpack_require__(271);
-
-	var assign = __webpack_require__(94);
-	var emptyFunction = __webpack_require__(70);
-
-	var ReactTransitionGroup = React.createClass({
-	  displayName: 'ReactTransitionGroup',
-
-	  propTypes: {
-	    component: React.PropTypes.any,
-	    childFactory: React.PropTypes.func
-	  },
-
-	  getDefaultProps: function () {
-	    return {
-	      component: 'span',
-	      childFactory: emptyFunction.thatReturnsArgument
-	    };
-	  },
-
-	  getInitialState: function () {
-	    return {
-	      children: ReactTransitionChildMapping.getChildMapping(this.props.children)
-	    };
-	  },
-
-	  componentWillMount: function () {
-	    this.currentlyTransitioningKeys = {};
-	    this.keysToEnter = [];
-	    this.keysToLeave = [];
-	  },
-
-	  componentDidMount: function () {
-	    var initialChildMapping = this.state.children;
-	    for (var key in initialChildMapping) {
-	      if (initialChildMapping[key]) {
-	        this.performAppear(key);
-	      }
-	    }
-	  },
-
-	  componentWillReceiveProps: function (nextProps) {
-	    var nextChildMapping = ReactTransitionChildMapping.getChildMapping(nextProps.children);
-	    var prevChildMapping = this.state.children;
-
-	    this.setState({
-	      children: ReactTransitionChildMapping.mergeChildMappings(prevChildMapping, nextChildMapping)
-	    });
-
-	    var key;
-
-	    for (key in nextChildMapping) {
-	      var hasPrev = prevChildMapping && prevChildMapping.hasOwnProperty(key);
-	      if (nextChildMapping[key] && !hasPrev && !this.currentlyTransitioningKeys[key]) {
-	        this.keysToEnter.push(key);
-	      }
-	    }
-
-	    for (key in prevChildMapping) {
-	      var hasNext = nextChildMapping && nextChildMapping.hasOwnProperty(key);
-	      if (prevChildMapping[key] && !hasNext && !this.currentlyTransitioningKeys[key]) {
-	        this.keysToLeave.push(key);
-	      }
-	    }
-
-	    // If we want to someday check for reordering, we could do it here.
-	  },
-
-	  componentDidUpdate: function () {
-	    var keysToEnter = this.keysToEnter;
-	    this.keysToEnter = [];
-	    keysToEnter.forEach(this.performEnter);
-
-	    var keysToLeave = this.keysToLeave;
-	    this.keysToLeave = [];
-	    keysToLeave.forEach(this.performLeave);
-	  },
-
-	  performAppear: function (key) {
-	    this.currentlyTransitioningKeys[key] = true;
-
-	    var component = this.refs[key];
-
-	    if (component.componentWillAppear) {
-	      component.componentWillAppear(this._handleDoneAppearing.bind(this, key));
-	    } else {
-	      this._handleDoneAppearing(key);
-	    }
-	  },
-
-	  _handleDoneAppearing: function (key) {
-	    var component = this.refs[key];
-	    if (component.componentDidAppear) {
-	      component.componentDidAppear();
-	    }
-
-	    delete this.currentlyTransitioningKeys[key];
-
-	    var currentChildMapping = ReactTransitionChildMapping.getChildMapping(this.props.children);
-
-	    if (!currentChildMapping || !currentChildMapping.hasOwnProperty(key)) {
-	      // This was removed before it had fully appeared. Remove it.
-	      this.performLeave(key);
-	    }
-	  },
-
-	  performEnter: function (key) {
-	    this.currentlyTransitioningKeys[key] = true;
-
-	    var component = this.refs[key];
-
-	    if (component.componentWillEnter) {
-	      component.componentWillEnter(this._handleDoneEntering.bind(this, key));
-	    } else {
-	      this._handleDoneEntering(key);
-	    }
-	  },
-
-	  _handleDoneEntering: function (key) {
-	    var component = this.refs[key];
-	    if (component.componentDidEnter) {
-	      component.componentDidEnter();
-	    }
-
-	    delete this.currentlyTransitioningKeys[key];
-
-	    var currentChildMapping = ReactTransitionChildMapping.getChildMapping(this.props.children);
-
-	    if (!currentChildMapping || !currentChildMapping.hasOwnProperty(key)) {
-	      // This was removed before it had fully entered. Remove it.
-	      this.performLeave(key);
-	    }
-	  },
-
-	  performLeave: function (key) {
-	    this.currentlyTransitioningKeys[key] = true;
-
-	    var component = this.refs[key];
-	    if (component.componentWillLeave) {
-	      component.componentWillLeave(this._handleDoneLeaving.bind(this, key));
-	    } else {
-	      // Note that this is somewhat dangerous b/c it calls setState()
-	      // again, effectively mutating the component before all the work
-	      // is done.
-	      this._handleDoneLeaving(key);
-	    }
-	  },
-
-	  _handleDoneLeaving: function (key) {
-	    var component = this.refs[key];
-
-	    if (component.componentDidLeave) {
-	      component.componentDidLeave();
-	    }
-
-	    delete this.currentlyTransitioningKeys[key];
-
-	    var currentChildMapping = ReactTransitionChildMapping.getChildMapping(this.props.children);
-
-	    if (currentChildMapping && currentChildMapping.hasOwnProperty(key)) {
-	      // This entered again before it fully left. Add it again.
-	      this.performEnter(key);
-	    } else {
-	      this.setState(function (state) {
-	        var newChildren = assign({}, state.children);
-	        delete newChildren[key];
-	        return { children: newChildren };
-	      });
-	    }
-	  },
-
-	  render: function () {
-	    // TODO: we could get rid of the need for the wrapper node
-	    // by cloning a single child
-	    var childrenToRender = [];
-	    for (var key in this.state.children) {
-	      var child = this.state.children[key];
-	      if (child) {
-	        // You may need to apply reactive updates to a child as it is leaving.
-	        // The normal React way to do it won't work since the child will have
-	        // already been removed. In case you need this behavior you can provide
-	        // a childFactory function to wrap every child, even the ones that are
-	        // leaving.
-	        childrenToRender.push(React.cloneElement(this.props.childFactory(child), { ref: key, key: key }));
-	      }
-	    }
-	    return React.createElement(this.props.component, this.props, childrenToRender);
-	  }
-	});
-
-	module.exports = ReactTransitionGroup;
-
-/***/ },
-/* 271 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Copyright 2013-2015, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @typechecks static-only
-	 * @providesModule ReactTransitionChildMapping
-	 */
-
-	'use strict';
-
-	var flattenChildren = __webpack_require__(171);
-
-	var ReactTransitionChildMapping = {
-	  /**
-	   * Given `this.props.children`, return an object mapping key to child. Just
-	   * simple syntactic sugar around flattenChildren().
-	   *
-	   * @param {*} children `this.props.children`
-	   * @return {object} Mapping of key to child
-	   */
-	  getChildMapping: function (children) {
-	    if (!children) {
-	      return children;
-	    }
-	    return flattenChildren(children);
-	  },
-
-	  /**
-	   * When you're adding or removing children some may be added or removed in the
-	   * same render pass. We want to show *both* since we want to simultaneously
-	   * animate elements in and out. This function takes a previous set of keys
-	   * and a new set of keys and merges them with its best guess of the correct
-	   * ordering. In the future we may expose some of the utilities in
-	   * ReactMultiChild to make this easy, but for now React itself does not
-	   * directly have this concept of the union of prevChildren and nextChildren
-	   * so we implement it here.
-	   *
-	   * @param {object} prev prev children as returned from
-	   * `ReactTransitionChildMapping.getChildMapping()`.
-	   * @param {object} next next children as returned from
-	   * `ReactTransitionChildMapping.getChildMapping()`.
-	   * @return {object} a key set that contains all keys in `prev` and all keys
-	   * in `next` in a reasonable order.
-	   */
-	  mergeChildMappings: function (prev, next) {
-	    prev = prev || {};
-	    next = next || {};
-
-	    function getValueForKey(key) {
-	      if (next.hasOwnProperty(key)) {
-	        return next[key];
-	      } else {
-	        return prev[key];
-	      }
-	    }
-
-	    // For each key of `next`, the list of keys to insert before that key in
-	    // the combined list
-	    var nextKeysPending = {};
-
-	    var pendingKeys = [];
-	    for (var prevKey in prev) {
-	      if (next.hasOwnProperty(prevKey)) {
-	        if (pendingKeys.length) {
-	          nextKeysPending[prevKey] = pendingKeys;
-	          pendingKeys = [];
-	        }
-	      } else {
-	        pendingKeys.push(prevKey);
-	      }
-	    }
-
-	    var i;
-	    var childMapping = {};
-	    for (var nextKey in next) {
-	      if (nextKeysPending.hasOwnProperty(nextKey)) {
-	        for (i = 0; i < nextKeysPending[nextKey].length; i++) {
-	          var pendingNextKey = nextKeysPending[nextKey][i];
-	          childMapping[nextKeysPending[nextKey][i]] = getValueForKey(pendingNextKey);
-	        }
-	      }
-	      childMapping[nextKey] = getValueForKey(nextKey);
-	    }
-
-	    // Finally, add the keys which didn't appear before any key in `next`
-	    for (i = 0; i < pendingKeys.length; i++) {
-	      childMapping[pendingKeys[i]] = getValueForKey(pendingKeys[i]);
-	    }
-
-	    return childMapping;
-	  }
-	};
-
-	module.exports = ReactTransitionChildMapping;
-
-/***/ },
-/* 272 */
+/* 278 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -38222,509 +38080,12 @@
 	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
 	var React = __webpack_require__(56);
-	var ReactDOM = __webpack_require__(213);
-	var PureRenderMixin = __webpack_require__(265);
-	var StylePropable = __webpack_require__(232);
-	var AutoPrefix = __webpack_require__(237);
-	var Transitions = __webpack_require__(250);
-	var DefaultRawTheme = __webpack_require__(258);
-	var ThemeManager = __webpack_require__(262);
-
-	var ScaleInChild = React.createClass({
-	  displayName: 'ScaleInChild',
-
-	  mixins: [PureRenderMixin, StylePropable],
-
-	  contextTypes: {
-	    muiTheme: React.PropTypes.object
-	  },
-
-	  //for passing default theme context to children
-	  childContextTypes: {
-	    muiTheme: React.PropTypes.object
-	  },
-
-	  getChildContext: function getChildContext() {
-	    return {
-	      muiTheme: this.state.muiTheme
-	    };
-	  },
-
-	  getInitialState: function getInitialState() {
-	    return {
-	      muiTheme: this.context.muiTheme ? this.context.muiTheme : ThemeManager.getMuiTheme(DefaultRawTheme)
-	    };
-	  },
-
-	  //to update theme inside state whenever a new theme is passed down
-	  //from the parent / owner using context
-	  componentWillReceiveProps: function componentWillReceiveProps(nextProps, nextContext) {
-	    var newMuiTheme = nextContext.muiTheme ? nextContext.muiTheme : this.state.muiTheme;
-	    this.setState({ muiTheme: newMuiTheme });
-	  },
-
-	  propTypes: {
-	    enterDelay: React.PropTypes.number,
-	    maxScale: React.PropTypes.number,
-	    minScale: React.PropTypes.number,
-	    style: React.PropTypes.object
-	  },
-
-	  getDefaultProps: function getDefaultProps() {
-	    return {
-	      enterDelay: 0,
-	      maxScale: 1,
-	      minScale: 0
-	    };
-	  },
-
-	  componentWillAppear: function componentWillAppear(callback) {
-	    this._initializeAnimation(callback);
-	  },
-
-	  componentWillEnter: function componentWillEnter(callback) {
-	    this._initializeAnimation(callback);
-	  },
-
-	  componentDidAppear: function componentDidAppear() {
-	    this._animate();
-	  },
-
-	  componentDidEnter: function componentDidEnter() {
-	    this._animate();
-	  },
-
-	  componentWillLeave: function componentWillLeave(callback) {
-	    var _this = this;
-
-	    var style = ReactDOM.findDOMNode(this).style;
-
-	    style.opacity = '0';
-	    AutoPrefix.set(style, 'transform', 'scale(' + this.props.minScale + ')');
-
-	    setTimeout(function () {
-	      if (_this.isMounted()) callback();
-	    }, 450);
-	  },
-
-	  render: function render() {
-	    var _props = this.props;
-	    var children = _props.children;
-	    var enterDelay = _props.enterDelay;
-	    var style = _props.style;
-
-	    var other = _objectWithoutProperties(_props, ['children', 'enterDelay', 'style']);
-
-	    var mergedRootStyles = this.prepareStyles({
-	      position: 'absolute',
-	      height: '100%',
-	      width: '100%',
-	      top: 0,
-	      left: 0,
-	      transition: Transitions.easeOut(null, ['transform', 'opacity'])
-	    }, style);
-
-	    return React.createElement(
-	      'div',
-	      _extends({}, other, { style: mergedRootStyles }),
-	      children
-	    );
-	  },
-
-	  _animate: function _animate() {
-	    var style = ReactDOM.findDOMNode(this).style;
-
-	    style.opacity = '1';
-	    AutoPrefix.set(style, 'transform', 'scale(' + this.props.maxScale + ')');
-	  },
-
-	  _initializeAnimation: function _initializeAnimation(callback) {
-	    var _this2 = this;
-
-	    var style = ReactDOM.findDOMNode(this).style;
-
-	    style.opacity = '0';
-	    AutoPrefix.set(style, 'transform', 'scale(0)');
-
-	    setTimeout(function () {
-	      if (_this2.isMounted()) callback();
-	    }, this.props.enterDelay);
-	  }
-
-	});
-
-	module.exports = ScaleInChild;
-
-/***/ },
-/* 273 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var React = __webpack_require__(56);
-	var ReactDOM = __webpack_require__(213);
-	var PureRenderMixin = __webpack_require__(265);
-	var ReactTransitionGroup = __webpack_require__(269);
-	var StylePropable = __webpack_require__(232);
-	var Dom = __webpack_require__(274);
-	var ImmutabilityHelper = __webpack_require__(233);
-	var CircleRipple = __webpack_require__(275);
-
-	var TouchRipple = React.createClass({
-	  displayName: 'TouchRipple',
-
-	  mixins: [PureRenderMixin, StylePropable],
-
-	  propTypes: {
-	    centerRipple: React.PropTypes.bool,
-	    color: React.PropTypes.string,
-	    opacity: React.PropTypes.number,
-	    style: React.PropTypes.object
-	  },
-
-	  getInitialState: function getInitialState() {
-	    //Touch start produces a mouse down event for compat reasons. To avoid
-	    //showing ripples twice we skip showing a ripple for the first mouse down
-	    //after a touch start. Note we don't store ignoreNextMouseDown in this.state
-	    //to avoid re-rendering when we change it
-	    this._ignoreNextMouseDown = false;
-
-	    return {
-	      //This prop allows us to only render the ReactTransitionGroup
-	      //on the first click of the component, making the inital
-	      //render faster
-	      hasRipples: false,
-	      nextKey: 0,
-	      ripples: []
-	    };
-	  },
-
-	  render: function render() {
-	    var _props = this.props;
-	    var children = _props.children;
-	    var style = _props.style;
-	    var _state = this.state;
-	    var hasRipples = _state.hasRipples;
-	    var ripples = _state.ripples;
-
-	    var rippleGroup = undefined;
-	    if (hasRipples) {
-	      var mergedStyles = this.mergeAndPrefix({
-	        height: '100%',
-	        width: '100%',
-	        position: 'absolute',
-	        top: 0,
-	        left: 0,
-	        overflow: 'hidden'
-	      }, style);
-
-	      rippleGroup = React.createElement(
-	        ReactTransitionGroup,
-	        { style: mergedStyles },
-	        ripples
-	      );
-	    }
-
-	    return React.createElement(
-	      'div',
-	      {
-	        onMouseUp: this._handleMouseUp,
-	        onMouseDown: this._handleMouseDown,
-	        onMouseLeave: this._handleMouseLeave,
-	        onTouchStart: this._handleTouchStart,
-	        onTouchEnd: this._handleTouchEnd },
-	      rippleGroup,
-	      children
-	    );
-	  },
-
-	  start: function start(e, isRippleTouchGenerated) {
-	    if (this._ignoreNextMouseDown && !isRippleTouchGenerated) {
-	      this._ignoreNextMouseDown = false;
-	      return;
-	    }
-
-	    var ripples = this.state.ripples;
-
-	    //Add a ripple to the ripples array
-	    ripples = ImmutabilityHelper.push(ripples, React.createElement(CircleRipple, {
-	      key: this.state.nextKey,
-	      style: !this.props.centerRipple ? this._getRippleStyle(e) : {},
-	      color: this.props.color,
-	      opacity: this.props.opacity,
-	      touchGenerated: isRippleTouchGenerated }));
-
-	    this._ignoreNextMouseDown = isRippleTouchGenerated;
-	    this.setState({
-	      hasRipples: true,
-	      nextKey: this.state.nextKey + 1,
-	      ripples: ripples
-	    });
-	  },
-
-	  end: function end() {
-	    var currentRipples = this.state.ripples;
-	    this.setState({
-	      ripples: ImmutabilityHelper.shift(currentRipples)
-	    });
-	  },
-
-	  _handleMouseDown: function _handleMouseDown(e) {
-	    //only listen to left clicks
-	    if (e.button === 0) this.start(e, false);
-	  },
-
-	  _handleMouseUp: function _handleMouseUp() {
-	    this.end();
-	  },
-
-	  _handleMouseLeave: function _handleMouseLeave() {
-	    this.end();
-	  },
-
-	  _handleTouchStart: function _handleTouchStart(e) {
-	    this.start(e, true);
-	  },
-
-	  _handleTouchEnd: function _handleTouchEnd() {
-	    this.end();
-	  },
-
-	  _getRippleStyle: function _getRippleStyle(e) {
-	    var style = {};
-	    var el = ReactDOM.findDOMNode(this);
-	    var elHeight = el.offsetHeight;
-	    var elWidth = el.offsetWidth;
-	    var offset = Dom.offset(el);
-	    var isTouchEvent = e.touches && e.touches.length;
-	    var pageX = isTouchEvent ? e.touches[0].pageX : e.pageX;
-	    var pageY = isTouchEvent ? e.touches[0].pageY : e.pageY;
-	    var pointerX = pageX - offset.left;
-	    var pointerY = pageY - offset.top;
-	    var topLeftDiag = this._calcDiag(pointerX, pointerY);
-	    var topRightDiag = this._calcDiag(elWidth - pointerX, pointerY);
-	    var botRightDiag = this._calcDiag(elWidth - pointerX, elHeight - pointerY);
-	    var botLeftDiag = this._calcDiag(pointerX, elHeight - pointerY);
-	    var rippleRadius = Math.max(topLeftDiag, topRightDiag, botRightDiag, botLeftDiag);
-	    var rippleSize = rippleRadius * 2;
-	    var left = pointerX - rippleRadius;
-	    var top = pointerY - rippleRadius;
-
-	    style.height = rippleSize + 'px';
-	    style.width = rippleSize + 'px';
-	    style.top = top + 'px';
-	    style.left = left + 'px';
-
-	    return style;
-	  },
-
-	  _calcDiag: function _calcDiag(a, b) {
-	    return Math.sqrt(a * a + b * b);
-	  }
-
-	});
-
-	module.exports = TouchRipple;
-
-/***/ },
-/* 274 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	module.exports = {
-
-	  isDescendant: function isDescendant(parent, child) {
-	    var node = child.parentNode;
-
-	    while (node !== null) {
-	      if (node === parent) return true;
-	      node = node.parentNode;
-	    }
-
-	    return false;
-	  },
-
-	  offset: function offset(el) {
-	    var rect = el.getBoundingClientRect();
-	    return {
-	      top: rect.top + document.body.scrollTop,
-	      left: rect.left + document.body.scrollLeft
-	    };
-	  },
-
-	  getStyleAttributeAsNumber: function getStyleAttributeAsNumber(el, attr) {
-	    var attrStyle = el.style[attr];
-	    var attrNum = 0;
-	    if (attrStyle && attrStyle.length) {
-	      attrNum = parseInt(attrStyle);
-	    }
-
-	    return attrNum;
-	  },
-
-	  addClass: function addClass(el, className) {
-	    if (el.classList) el.classList.add(className);else el.className += ' ' + className;
-	  },
-
-	  removeClass: function removeClass(el, className) {
-	    if (el.classList) el.classList.remove(className);else el.className = el.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
-	  },
-
-	  hasClass: function hasClass(el, className) {
-	    if (el.classList) return el.classList.contains(className);else return new RegExp('(^| )' + className + '( |$)', 'gi').test(el.className);
-	  },
-
-	  toggleClass: function toggleClass(el, className) {
-	    if (this.hasClass(el, className)) this.removeClass(el, className);else this.addClass(el, className);
-	  },
-
-	  forceRedraw: function forceRedraw(el) {
-	    var originalDisplay = el.style.display;
-
-	    el.style.display = 'none';
-	    el.style.display = originalDisplay;
-	  },
-
-	  withoutTransition: function withoutTransition(el, callback) {
-	    var originalTransition = el.style.transition;
-
-	    //turn off transition
-	    el.style.transition = null;
-
-	    callback();
-
-	    //force a redraw
-	    this.forceRedraw(el);
-
-	    //put the transition back
-	    el.style.transition = originalTransition;
-	  }
-
-	};
-
-/***/ },
-/* 275 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-
-	var React = __webpack_require__(56);
-	var ReactDOM = __webpack_require__(213);
-	var PureRenderMixin = __webpack_require__(265);
-	var StylePropable = __webpack_require__(232);
-	var AutoPrefix = __webpack_require__(237);
-	var Transitions = __webpack_require__(250);
-	var Colors = __webpack_require__(259);
-
-	var CircleRipple = React.createClass({
-	  displayName: 'CircleRipple',
-
-	  mixins: [PureRenderMixin, StylePropable],
-
-	  propTypes: {
-	    color: React.PropTypes.string,
-	    opacity: React.PropTypes.number,
-	    style: React.PropTypes.object
-	  },
-
-	  getDefaultProps: function getDefaultProps() {
-	    return {
-	      color: Colors.darkBlack,
-	      opacity: 0.16
-	    };
-	  },
-
-	  componentWillAppear: function componentWillAppear(callback) {
-	    this._initializeAnimation(callback);
-	  },
-
-	  componentWillEnter: function componentWillEnter(callback) {
-	    this._initializeAnimation(callback);
-	  },
-
-	  componentDidAppear: function componentDidAppear() {
-	    this._animate();
-	  },
-
-	  componentDidEnter: function componentDidEnter() {
-	    this._animate();
-	  },
-
-	  componentWillLeave: function componentWillLeave(callback) {
-	    var _this = this;
-
-	    var style = ReactDOM.findDOMNode(this).style;
-	    style.opacity = 0;
-	    setTimeout(function () {
-	      if (_this.isMounted()) callback();
-	    }, 2000);
-	  },
-
-	  render: function render() {
-	    var _props = this.props;
-	    var color = _props.color;
-	    var opacity = _props.opacity;
-	    var style = _props.style;
-
-	    var other = _objectWithoutProperties(_props, ['color', 'opacity', 'style']);
-
-	    var mergedStyles = this.mergeAndPrefix({
-	      position: 'absolute',
-	      top: 0,
-	      left: 0,
-	      height: '100%',
-	      width: '100%',
-	      borderRadius: '50%',
-	      backgroundColor: color
-	    }, style);
-
-	    return React.createElement('div', _extends({}, other, { style: mergedStyles }));
-	  },
-
-	  _animate: function _animate() {
-	    var style = ReactDOM.findDOMNode(this).style;
-	    var transitionValue = Transitions.easeOut('2s', 'opacity') + ',' + Transitions.easeOut('1s', 'transform');
-	    AutoPrefix.set(style, 'transition', transitionValue);
-	    AutoPrefix.set(style, 'transform', 'scale(1)');
-	  },
-
-	  _initializeAnimation: function _initializeAnimation(callback) {
-	    var _this2 = this;
-
-	    var style = ReactDOM.findDOMNode(this).style;
-	    style.opacity = this.props.opacity;
-	    AutoPrefix.set(style, 'transform', 'scale(0)');
-	    setTimeout(function () {
-	      if (_this2.isMounted()) callback();
-	    }, 0);
-	  }
-
-	});
-
-	module.exports = CircleRipple;
-
-/***/ },
-/* 276 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-
-	var React = __webpack_require__(56);
-	var PureRenderMixin = __webpack_require__(265);
-	var StylePropable = __webpack_require__(232);
-	var PropTypes = __webpack_require__(277);
-	var Transitions = __webpack_require__(250);
-	var DefaultRawTheme = __webpack_require__(258);
-	var ThemeManager = __webpack_require__(262);
+	var PureRenderMixin = __webpack_require__(279);
+	var StylePropable = __webpack_require__(253);
+	var PropTypes = __webpack_require__(282);
+	var Transitions = __webpack_require__(283);
+	var DefaultRawTheme = __webpack_require__(272);
+	var ThemeManager = __webpack_require__(275);
 
 	var Paper = React.createClass({
 	  displayName: 'Paper',
@@ -38815,7 +38176,93 @@
 	module.exports = Paper;
 
 /***/ },
-/* 277 */
+/* 279 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(280);
+
+/***/ },
+/* 280 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2013-2015, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule ReactComponentWithPureRenderMixin
+	 */
+
+	'use strict';
+
+	var shallowCompare = __webpack_require__(281);
+
+	/**
+	 * If your React component's render function is "pure", e.g. it will render the
+	 * same result given the same props and state, provide this Mixin for a
+	 * considerable performance boost.
+	 *
+	 * Most React components have pure render functions.
+	 *
+	 * Example:
+	 *
+	 *   var ReactComponentWithPureRenderMixin =
+	 *     require('ReactComponentWithPureRenderMixin');
+	 *   React.createClass({
+	 *     mixins: [ReactComponentWithPureRenderMixin],
+	 *
+	 *     render: function() {
+	 *       return <div className={this.props.className}>foo</div>;
+	 *     }
+	 *   });
+	 *
+	 * Note: This only checks shallow equality for props and state. If these contain
+	 * complex data structures this mixin may have false-negatives for deeper
+	 * differences. Only mixin to components which have simple props and state, or
+	 * use `forceUpdate()` when you know deep data structures have changed.
+	 */
+	var ReactComponentWithPureRenderMixin = {
+	  shouldComponentUpdate: function (nextProps, nextState) {
+	    return shallowCompare(this, nextProps, nextState);
+	  }
+	};
+
+	module.exports = ReactComponentWithPureRenderMixin;
+
+/***/ },
+/* 281 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2013-2015, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	* @providesModule shallowCompare
+	*/
+
+	'use strict';
+
+	var shallowEqual = __webpack_require__(172);
+
+	/**
+	 * Does a shallow comparison for props and state.
+	 * See ReactComponentWithPureRenderMixin
+	 */
+	function shallowCompare(instance, nextProps, nextState) {
+	  return !shallowEqual(instance.props, nextProps) || !shallowEqual(instance.state, nextState);
+	}
+
+	module.exports = shallowCompare;
+
+/***/ },
+/* 282 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -38847,17 +38294,164 @@
 	};
 
 /***/ },
-/* 278 */
+/* 283 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var AutoPrefix = __webpack_require__(258);
+
+	module.exports = {
+
+	  easeOutFunction: 'cubic-bezier(0.23, 1, 0.32, 1)',
+	  easeInOutFunction: 'cubic-bezier(0.445, 0.05, 0.55, 0.95)',
+
+	  easeOut: function easeOut(duration, property, delay, easeFunction) {
+
+	    easeFunction = easeFunction || this.easeOutFunction;
+
+	    if (property && Object.prototype.toString.call(property) === '[object Array]') {
+
+	      var transitions = '';
+	      for (var i = 0; i < property.length; i++) {
+	        if (transitions) transitions += ',';
+	        transitions += this.create(duration, property[i], delay, easeFunction);
+	      }
+	      return transitions;
+	    } else {
+	      return this.create(duration, property, delay, easeFunction);
+	    }
+	  },
+
+	  create: function create(duration, property, delay, easeFunction) {
+	    duration = duration || '450ms';
+	    property = property || 'all';
+	    delay = delay || '0ms';
+	    easeFunction = easeFunction || "linear";
+
+	    return property + ' ' + duration + ' ' + easeFunction + ' ' + delay;
+	  }
+	};
+
+/***/ },
+/* 284 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var React = __webpack_require__(56);
-	var PureRenderMixin = __webpack_require__(265);
-	var SvgIcon = __webpack_require__(279);
+	var Extend = __webpack_require__(276);
+	var OpenIcon = __webpack_require__(285);
+	var CloseIcon = __webpack_require__(287);
+	var IconButton = __webpack_require__(288);
+	var StylePropable = __webpack_require__(253);
+	var DefaultRawTheme = __webpack_require__(272);
+	var ThemeManager = __webpack_require__(275);
+	var ContextPure = __webpack_require__(289);
 
-	var ToggleRadioButtonUnchecked = React.createClass({
-	  displayName: 'ToggleRadioButtonUnchecked',
+	var CardExpandable = React.createClass({
+	  displayName: 'CardExpandable',
+
+	  mixins: [StylePropable, ContextPure],
+
+	  getStyles: function getStyles() {
+	    var contextKeys = this.constructor.getRelevantContextKeys(this.state.muiTheme);
+
+	    var directionStyle = contextKeys.isRtl ? {
+	      left: 4
+	    } : {
+	      right: 4
+	    };
+
+	    return {
+	      root: Extend({
+	        top: 0,
+	        bottom: 0,
+	        margin: 'auto',
+	        position: 'absolute'
+	      }, directionStyle)
+	    };
+	  },
+
+	  contextTypes: {
+	    muiTheme: React.PropTypes.object
+	  },
+
+	  propTypes: {
+	    onExpanding: React.PropTypes.func.isRequired,
+	    expanded: React.PropTypes.bool,
+	    style: React.PropTypes.object
+	  },
+
+	  //for passing default theme context to children
+	  childContextTypes: {
+	    muiTheme: React.PropTypes.object
+	  },
+
+	  getChildContext: function getChildContext() {
+	    return {
+	      muiTheme: this.state.muiTheme
+	    };
+	  },
+
+	  statics: {
+	    getRelevantContextKeys: function getRelevantContextKeys(muiTheme) {
+	      return {
+	        isRtl: muiTheme.isRtl
+	      };
+	    },
+	    getChildrenClasses: function getChildrenClasses() {
+	      return [IconButton];
+	    }
+	  },
+
+	  getInitialState: function getInitialState() {
+	    return {
+	      muiTheme: this.context.muiTheme ? this.context.muiTheme : ThemeManager.getMuiTheme(DefaultRawTheme)
+	    };
+	  },
+
+	  //to update theme inside state whenever a new theme is passed down
+	  //from the parent / owner using context
+	  componentWillReceiveProps: function componentWillReceiveProps(nextProps, nextContext) {
+	    var newMuiTheme = nextContext.muiTheme ? nextContext.muiTheme : this.state.muiTheme;
+	    this.setState({ muiTheme: newMuiTheme });
+	  },
+
+	  render: function render() {
+	    var styles = this.getStyles();
+
+	    var expandable = undefined;
+	    if (this.props.expanded === true) expandable = React.createElement(OpenIcon, null);else expandable = React.createElement(CloseIcon, null);
+
+	    var mergedStyles = this.mergeStyles(styles.root, this.props.style);
+
+	    var expandableBtn = React.createElement(
+	      IconButton,
+	      {
+	        style: mergedStyles,
+	        onTouchTap: this.props.onExpanding },
+	      expandable
+	    );
+
+	    return expandableBtn;
+	  }
+	});
+
+	module.exports = CardExpandable;
+
+/***/ },
+/* 285 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var React = __webpack_require__(56);
+	var PureRenderMixin = __webpack_require__(279);
+	var SvgIcon = __webpack_require__(286);
+
+	var HardwareKeyboardArrowUp = React.createClass({
+	  displayName: 'HardwareKeyboardArrowUp',
 
 	  mixins: [PureRenderMixin],
 
@@ -38865,16 +38459,16 @@
 	    return React.createElement(
 	      SvgIcon,
 	      this.props,
-	      React.createElement('path', { d: 'M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z' })
+	      React.createElement('path', { d: 'M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z' })
 	    );
 	  }
 
 	});
 
-	module.exports = ToggleRadioButtonUnchecked;
+	module.exports = HardwareKeyboardArrowUp;
 
 /***/ },
-/* 279 */
+/* 286 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -38884,10 +38478,10 @@
 	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
 	var React = __webpack_require__(56);
-	var StylePropable = __webpack_require__(232);
-	var Transitions = __webpack_require__(250);
-	var DefaultRawTheme = __webpack_require__(258);
-	var ThemeManager = __webpack_require__(262);
+	var StylePropable = __webpack_require__(253);
+	var Transitions = __webpack_require__(283);
+	var DefaultRawTheme = __webpack_require__(272);
+	var ThemeManager = __webpack_require__(275);
 
 	var SvgIcon = React.createClass({
 	  displayName: 'SvgIcon',
@@ -38994,1835 +38588,14 @@
 	module.exports = SvgIcon;
 
 /***/ },
-/* 280 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var React = __webpack_require__(56);
-	var PureRenderMixin = __webpack_require__(265);
-	var SvgIcon = __webpack_require__(279);
-
-	var ToggleRadioButtonChecked = React.createClass({
-	  displayName: 'ToggleRadioButtonChecked',
-
-	  mixins: [PureRenderMixin],
-
-	  render: function render() {
-	    return React.createElement(
-	      SvgIcon,
-	      this.props,
-	      React.createElement('path', { d: 'M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z' })
-	    );
-	  }
-
-	});
-
-	module.exports = ToggleRadioButtonChecked;
-
-/***/ },
-/* 281 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
-
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-
-	var React = __webpack_require__(56);
-	var RadioButton = __webpack_require__(231);
-	var StylePropable = __webpack_require__(232);
-	var DefaultRawTheme = __webpack_require__(258);
-	var ThemeManager = __webpack_require__(262);
-
-	var RadioButtonGroup = React.createClass({
-	  displayName: 'RadioButtonGroup',
-
-	  mixins: [StylePropable],
-
-	  contextTypes: {
-	    muiTheme: React.PropTypes.object
-	  },
-
-	  //for passing default theme context to children
-	  childContextTypes: {
-	    muiTheme: React.PropTypes.object
-	  },
-
-	  getChildContext: function getChildContext() {
-	    return {
-	      muiTheme: this.state.muiTheme
-	    };
-	  },
-
-	  propTypes: {
-	    name: React.PropTypes.string.isRequired,
-	    valueSelected: React.PropTypes.string,
-	    defaultSelected: React.PropTypes.string,
-	    labelPosition: React.PropTypes.oneOf(['left', 'right']),
-	    onChange: React.PropTypes.func,
-	    style: React.PropTypes.object,
-	    className: React.PropTypes.string
-	  },
-
-	  _hasCheckAttribute: function _hasCheckAttribute(radioButton) {
-	    return radioButton.props.hasOwnProperty('checked') && radioButton.props.checked;
-	  },
-
-	  getInitialState: function getInitialState() {
-	    return {
-	      numberCheckedRadioButtons: 0,
-	      selected: this.props.valueSelected || this.props.defaultSelected || '',
-	      muiTheme: this.context.muiTheme ? this.context.muiTheme : ThemeManager.getMuiTheme(DefaultRawTheme)
-	    };
-	  },
-
-	  getDefaultProps: function getDefaultProps() {
-	    return {
-	      style: {}
-	    };
-	  },
-
-	  componentWillMount: function componentWillMount() {
-	    var _this = this;
-
-	    var cnt = 0;
-
-	    React.Children.forEach(this.props.children, function (option) {
-	      if (_this._hasCheckAttribute(option)) cnt++;
-	    }, this);
-
-	    this.setState({ numberCheckedRadioButtons: cnt });
-	  },
-
-	  componentWillReceiveProps: function componentWillReceiveProps(nextProps, nextContext) {
-	    var newMuiTheme = nextContext.muiTheme ? nextContext.muiTheme : this.state.muiTheme;
-	    var newState = { muiTheme: newMuiTheme };
-
-	    if (nextProps.hasOwnProperty('valueSelected')) {
-	      newState.selected = nextProps.valueSelected;
-	    }
-
-	    this.setState(newState);
-	  },
-
-	  render: function render() {
-	    var _this2 = this;
-
-	    var options = React.Children.map(this.props.children, function (option) {
-	      var _option$props = option.props;
-	      var name = _option$props.name;
-	      var value = _option$props.value;
-	      var label = _option$props.label;
-	      var onCheck = _option$props.onCheck;
-
-	      var other = _objectWithoutProperties(_option$props, ['name', 'value', 'label', 'onCheck']);
-
-	      return React.createElement(RadioButton, _extends({}, other, {
-	        ref: option.props.value,
-	        name: _this2.props.name,
-	        key: option.props.value,
-	        value: option.props.value,
-	        label: option.props.label,
-	        labelPosition: _this2.props.labelPosition,
-	        onCheck: _this2._onChange,
-	        checked: option.props.value === _this2.state.selected }));
-	    }, this);
-
-	    return React.createElement(
-	      'div',
-	      {
-	        style: this.prepareStyles(this.props.style),
-	        className: this.props.className || '' },
-	      options
-	    );
-	  },
-
-	  _updateRadioButtons: function _updateRadioButtons(newSelection) {
-	    if (this.state.numberCheckedRadioButtons === 0) {
-	      this.setState({ selected: newSelection });
-	    } else if (process.env.NODE_ENV !== 'production') {
-	      var message = "Cannot select a different radio button while another radio button " + "has the 'checked' property set to true.";
-	      console.error(message);
-	    }
-	  },
-
-	  _onChange: function _onChange(e, newSelection) {
-	    this._updateRadioButtons(newSelection);
-
-	    // Successful update
-	    if (this.state.numberCheckedRadioButtons === 0) {
-	      if (this.props.onChange) this.props.onChange(e, newSelection);
-	    }
-	  },
-
-	  getSelectedValue: function getSelectedValue() {
-	    return this.state.selected;
-	  },
-
-	  setSelectedValue: function setSelectedValue(newSelectionValue) {
-	    this._updateRadioButtons(newSelectionValue);
-	  },
-
-	  clearValue: function clearValue() {
-	    this.setSelectedValue('');
-	  }
-
-	});
-
-	module.exports = RadioButtonGroup;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(59)))
-
-/***/ },
-/* 282 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/** @jsx React.DOM */var React = __webpack_require__(56);
-	var Item = __webpack_require__(283)
-
-	var GoalItem = React.createClass({displayName: "GoalItem",
-
-		render: function() {
-			var props =this.props;
-			
-			return(React.createElement("ul", {key: this.props.objectId, className: "goalContainer"}, 
-					this.props.data.map(function(obj){
-
-						return(React.createElement(Item, {key: obj.id, addInput: props.addInput, data: obj.title, datas: props.data, theme: obj.theme, id: obj.id, completed: obj.completed, router: props.router}))
-					})	
-
-
-					)
-
-				)
-		}
-	})
-
-	module.exports= GoalItem;
-
-
-/***/ },
-/* 283 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function($) {/** @jsx React.DOM */var React = __webpack_require__(56);
-
-	var Item = React.createClass({displayName: "Item",
-		getInitialState: function() {
-			return{value: $('.categoryLabel').val(),
-					category: this.props.category,
-					theme: null
-				}
-		},
-		_completed: function(e) {
-			e.preventDefault();
-			console.log('test')
-			props=this.props;
-			this.setState({
-				theme: this.props.theme
-			})
-
-			var Goal = Backbone.Model.extend({
-				url:'https://safe-brook-9891.herokuapp.com/api/goals/'+props.id,
-				initialize: function() {
-
-					}
-				})
-
-			var GoalCollection = Backbone.Collection.extend({
-				url:'https://safe-brook-9891.herokuapp.com/api/goals/'+props.id,
-				model: Goal
-
-			});
-
-			var collection = new GoalCollection(this.props.datas);
-
-			var item = collection.get(props.id);
-			item.set({
-				'title':this.props.data,
-				'theme':this.props.theme,
-				 'completed': true
-			});
-			item.save({},{
-				success: function(resp) {
-				}
-			})
-			collection.add(item);
-			props.addInput(collection.toJSON());
-
-			this.setState({
-				value:''
-			})
-		},
-		_navGroup: function(){
-
-		},
-		componentDidMount: function(){
-			var count=[];
-			count.push(this.props.completed)
-
-		},
-		render: function() {
-
-			return (React.createElement("div", null, (this.props.completed ? null :
-						(React.createElement("li", {className: "goalItem"}, 
-
-							React.createElement("label", {className: "categoryLabel", htmlFor: this.props.objectId, value: this.props.data, onClick: this._navGroup}, this.props.data), 
-							React.createElement("button", {className: "delete entypo-check", onClick: this._completed, value: this.props.theme})
-						)))
-					))
-
-		}
-	})
-
-	module.exports= Item;
-
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(215)))
-
-/***/ },
-/* 284 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function($, _) {/** @jsx React.DOM */var React = __webpack_require__(56);
-	var ReactDOM = __webpack_require__(213);
-	var Backbone= __webpack_require__(217);
-	var LoginRegApp = __webpack_require__(285);
-	var ProfileApp=__webpack_require__(286);
-	var UserViewApp = __webpack_require__(335);
-	var GroupApp = __webpack_require__(347);
-	var Store = __webpack_require__(290);
-	var Pusher = __webpack_require__(361);
-	var ChatApp=__webpack_require__(362);
-	var Friendlies = ('./collections/friendlies');
-
-	var Router=Backbone.Router.extend({
-		initialize:function() {
-			Backbone.history.start({pushState:true});
-		},
-		routes:{
-			'userView/:id':'userView',
-			'group/:userId': 'group',
-			'profile/:username': 'profile',
-			"":"index"
-		},
-		index: function(){
-			ReactDOM.render(React.createElement(LoginRegApp, {router: this}), document.getElementById('page-wrapper'));
-
-		}
-	});
-
-	var router = new Router();
-
-	router.on('route:profile', function(username){
-
-		$('#chat').hide()
-			var Goal = Backbone.Model.extend({
-				url:'https://safe-brook-9891.herokuapp.com/api/profiles/?username='+username
-			})
-			var GoalCollection = Backbone.Collection.extend({
-				Model:Goal,
-				url:'https://safe-brook-9891.herokuapp.com/api/profiles/?username='+username
-			})
-
-			var test = new GoalCollection();
-			test.fetch({
-				success: function(resp) {
-
-				var data     = resp.toJSON();
-				var userName = _.extend(Store.data, {userName: data[0].user.username});
-				var posts    = data[0].user.post_set;
-				var pRank     = _.extend(Store.data,{rank: data[0].rank});
-				var pExp      = _.extend(Store.data,{exp: data[0].exp});
-				var uid      = _.extend(Store.data,{uid: data[0].user.id});
-				var objectId = _.extend(Store.data, {objectId: data[0].id});
-				var pAvatar   = _.extend(Store.data, {avatar: data[0].avatar});
-				var pName     = _.extend(Store.data,{name: data[0].user.first_name});
-				var fromFriends = data[0].user.to_friend_set;
-				var toFriends   = data[0].user.friend_set;
-				var groups      = data[0].user.group_set;
-
-				var fromFriendsMap = fromFriends.filter(function(obj){
-					if(obj.accepted===true) {
-						return true
-					}
-				});
-
-				var fromFrProfile = _.extend(Store.data,{fromFrProfile: fromFriendsMap});
-
-				var toFriendsMap  = toFriends.filter(function(obj){
-					if(obj.accepted===true) {
-						return true
-					}
-				});
-
-				var toFrProfile = _.extend(Store.data,{toFrProfile: toFriendsMap});
-
-
-				var goalInfo    = data[0].user.goal_set;
-				var incomplete  = goalInfo.filter(function(obj){
-					if(obj.completed===false) {
-						return obj
-					}
-				});
-
-
-
-				var pGoals= _.extend(Store.data, {pGoals: incomplete})
-
-				ReactDOM.render(React.createElement(ProfileApp, {
-					pRank: Store.data.rank, 
-					users: Store.data.users, 
-					pExp: Store.data.exp, 
-					pName: Store.data.name, 
-					fromFrProfile: Store.data.fromFrProfile, 
-					toFrProfile: Store.data.toFrProfile, 
-					userId: Store.data.uid, 
-					pAvatar: Store.data.avatar, 
-					pGoals: Store.data.pGoals, 
-					router: router, 
-					username: username, 
-					fromAll: fromFriends, 
-					groups: groups, 
-					posts: posts}),
-					document.getElementById('container'));
-
-
-				}
-			})
-
-
-			var Post = Backbone.Model.extend({
-				url:'https://safe-brook-9891.herokuapp.com/api/profiles/?username='+username
-			})
-
-			var PostCollection = Backbone.Collection.extend({
-				Model:Post,
-				url:'https://safe-brook-9891.herokuapp.com/api/profiles/?username='+username
-			})
-			var post = new PostCollection();
-			post.fetch({
-				success: function(resp) {
-				test=resp.toJSON();
-				var goalId = test[0].user.goal_set;
-				var posts=test[0].user.post_set;
-
-				}
-			})
-	})
-
-	router.on('route:userView', function(userId){
-			$('#chat').hide()
-
-			var userView = Backbone.Model.extend({
-				url:'https://safe-brook-9891.herokuapp.com/api/profiles/?user='+userId
-			})
-			var UserCollection = Backbone.Collection.extend({
-				Model:userView,
-				url:'https://safe-brook-9891.herokuapp.com/api/profiles/?user='+userId
-			})
-			var UserProfile = new UserCollection();
-			UserProfile.fetch({
-				success: function(resp) {
-				var users=resp.toJSON();
-
-				var name = users[0].user.first_name;
-				var fromFriends = (users[0].user.to_friend_set);
-				var toFriends = users[0].user.friend_set;
-				var fromFriendsMap = fromFriends.filter(function(obj){
-					if(obj.accepted) {
-						return true
-					}
-				});
-				var toFriendsMap = toFriends.filter(function(obj){
-					if(obj.accepted) {
-						return true
-					}
-				});
-				var groups=(users[0].user.group_set);
-				var post= users[0].user.post_set;
-				var rank = users[0].rank;
-				var exp = users[0].exp;
-				var goals = users[0].user.goal_set;
-				var goalsMapped = goals.filter(function(obj){
-					if(obj.completed===false) {
-						return true;
-					}
-				})
-
-
-				var theirId = users[0].user.id;
-				var myId = Store.data.userId;
-				var username = Store.data.userName;
-
-				ReactDOM.render(React.createElement(UserViewApp, {
-					pRank: Store.data.rank, 
-					users: Store.data.users, 
-					pExp: Store.data.exp, 
-					pName: Store.data.name, 
-					fromFrProfile: Store.data.fromFrProfile, 
-					toFrProfile: Store.data.toFrProfile, 
-					userId: Store.data.uid, 
-					pAvatar: Store.data.avatar, 
-					pGoals: Store.data.pGoals, 
-					rank: rank, 
-					exp: exp, posts: post, 
-					goals: goalsMapped, 
-					name: name, 
-					router: router, 
-					username: username, 
-					userId: userId, 
-					theirId: theirId, 
-					fromFriends: fromFriendsMap, 
-					toFriends: toFriendsMap, 
-					groups: groups}),
-					document.getElementById('container'));
-
-
-				}
-		});
-
-	});
-
-
-
-	router.on('route:group', function(groupId){
-	$('#chat').show()
-
-	 var ChatMessage = Backbone.Model.extend({
-				url:'https://safe-brook-9891.herokuapp.com/api/messages/group/?group=' +groupId
-			});
-
-			var ChatCollection = Backbone.Collection.extend({
-				Model:ChatMessage,
-				url:'https://safe-brook-9891.herokuapp.com/api/messages/group/?group=' +groupId
-
-			})
-			var Chat = new ChatCollection();
-			Chat.fetch({
-				success: function(resp) {
-					var data = resp.toJSON();
-					var dataReverse = data.reverse();
-
-					ReactDOM.render(React.createElement(ChatApp, {
-					chat: dataReverse, 
-					channel: channel, 
-					groupId: groupId}),
-					document.getElementById('chat'));
-				}
-			});
-
-
-	 var pusher = new Pusher('4ddbac2023fa2cbd0fa7');
-	 var channel = pusher.subscribe('group_' + groupId);
-	 var eventName = 'new-message';
-
-	 var callback = function(data) {
-	  	var ChatMessage = Backbone.Model.extend({
-				url:'https://safe-brook-9891.herokuapp.com/api/messages/group/?group=' +groupId
-			});
-
-			var ChatCollection = Backbone.Collection.extend({
-				Model:ChatMessage,
-				url:'https://safe-brook-9891.herokuapp.com/api/messages/group/?group=' +groupId
-
-			})
-			var Chat = new ChatCollection();
-			Chat.fetch({
-				success: function(resp) {
-					var data = resp.toJSON();
-					var dataReverse = data.reverse();
-
-					ReactDOM.render(React.createElement(ChatApp, {
-					chat: data, 
-					channel: channel, 
-					groupId: groupId}),
-					document.getElementById('chat'));
-
-
-				}
-			})
-
-	  };
-	  pusher.bind(eventName, callback);
-
-
-
-		var groupPost = Backbone.Model.extend({
-				url:'https://safe-brook-9891.herokuapp.com/api/posts/?group='+ groupId
-			})
-			var GroupPostCollection = Backbone.Collection.extend({
-				Model:groupPost,
-				url:'https://safe-brook-9891.herokuapp.com/api/posts/?group='+ groupId
-			})
-			var GroupPosts = new GroupPostCollection();
-			GroupPosts.fetch({
-				success: function(resp) {
-
-					var data = resp.toJSON();
-					var posts = data.reverse();
-					var userName = Store.data.userName;
-					var chatList = Store.data.chats;
-					var chatInit = Store.data.chatInit;
-					var userList = Store.data.userList;
-
-					ReactDOM.render(React.createElement(GroupApp, {
-					pRank: Store.data.rank, 
-					users: Store.data.users, 
-					pExp: Store.data.exp, 
-					pName: Store.data.name, 
-					fromFrProfile: Store.data.fromFrProfile, 
-					toFrProfile: Store.data.toFrProfile, 
-					userId: Store.data.uid, 
-					pAvatar: Store.data.avatar, 
-					pGoals: Store.data.pGoals, 
-					posts: posts, 
-					groupId: groupId, 
-					router: router, 
-					channel: channel, 
-					username: userName, 
-					chatList: chatList, 
-					chatInit: chatInit, 
-					userList: userList}),
-					document.getElementById('container'));
-
-
-				}
-			})
-	});
-
-
-
-
-
-	module.exports = Router;
-
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(215), __webpack_require__(218)))
-
-/***/ },
-/* 285 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function($) {/** @jsx React.DOM */var React = __webpack_require__(56);
-
-	var Login = __webpack_require__(214);
-	var Registration = __webpack_require__(220);
-
-	var LoginRegApp = React.createClass({displayName: "LoginRegApp",
-		getInitialState:function(){
-			return({
-				hidden: true
-			});
-		},
-
-		_show: function(){
-			this.setState({
-				hidden:false
-			})
-
-
-		},
-		_hide: function(){
-			this.setState({
-				hidden: true
-			});
-			console.log('test')
-		},
-		_hideBigPic: function(){
-			$('#bigPic').fadeOut(1000);
-		},
-		render:function(){
-			return(
-				React.createElement("div", null, 
-					React.createElement("div", {id: "bigPic"}, 
-						React.createElement("h2", {id: "splashText1"}, "improving yourself is tough enough."), 
-						React.createElement("h2", {id: "splashText2"}, "let's do it together."), 
-						React.createElement("h1", {id: "bigTitle"}, "UpgrAID"), 
-					React.createElement(Login, {router: this.props.router, show: this._show, logIn: this._hideBigPic}), 
-					React.createElement(Registration, {hide: this._hide, hidden: this.state.hidden})
-					)
-				)
-				)
-		}
-	});
-
-	module.exports = LoginRegApp;
-
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(215)))
-
-/***/ },
-/* 286 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(_) {/** @jsx React.DOM */var React = __webpack_require__(56);
-	var Nav = __webpack_require__(287);
-	var Greeting =__webpack_require__(222);
-	var GoalListApp = __webpack_require__(229);
-	var Friends = __webpack_require__(223);
-	var Group = __webpack_require__(226);
-	var AvatarRankXp = __webpack_require__(298);
-	var FriendRequest = __webpack_require__(288);
-	var Store= __webpack_require__(290);
-	var ProfilePostApp = __webpack_require__(300);
-	var Badges = __webpack_require__(326);
-	var MessageApp = __webpack_require__(328);
-	var ProfileLeft = __webpack_require__(332);
-	var ProfileRight = __webpack_require__(333);
-	var Info = __webpack_require__(334);
-	var ProfileApp = React.createClass({displayName: "ProfileApp",
-		_doSearch:function(queryText){
-	      
-	        //get query result
-	        var queryResult=[];
-	        var test=this.state.filteredData.forEach(function(person){
-	            if(person.username.toLowerCase().indexOf(queryText)!=-1)
-	            queryResult.push(person);
-	        });
-
-	        this.setState({
-	            query:queryText,
-	            filteredData: queryResult
-	        })
-
-	    },
-	    getInitialState:function(){
-	        return{
-
-	            query:'',
-	            filteredData: Store.data.users
-	        }
-	    },
-
-		_test: function() {
-			this.setState({
-				filteredData: Store.data.users
-			})
-
-		},
-		componentWillMount: function() {
-				var Users = Backbone.Model.extend({
-				url:'https://safe-brook-9891.herokuapp.com/api/users/'
-				})
-				var UserCollection = Backbone.Collection.extend({
-				Model:Users,
-				url:'https://safe-brook-9891.herokuapp.com/api/users/'
-				})
-
-			var userCollect = new UserCollection;
-			var that=this;
-			userCollect.fetch({
-				success:function(resp) {
-
-					allUsers=resp.toJSON();
-					_.extend(Store.data, {users: allUsers});
-					that._test()
-				}
-			});
-
-		},
-
-		render: function() {
-
-			return(React.createElement("div", null, 
-
-					React.createElement(Nav, {
-						router: this.props.router, 
-						username: this.props.username, 
-						userId: this.props.userId, 
-						fromAll: this.props.fromAll, 
-						users: this.state.filteredData, 
-						query: this.state.query, 
-						doSearch: this._doSearch}), 
-
-					React.createElement(Info, null), 
-
-					React.createElement(ProfileLeft, {
-						username: this.props.username, 
-						rank: this.props.pRank, 
-						exp: this.props.pExp, 
-						goals: this.props.pGoals, 
-						router: this.props.router, 
-						fromFriends: this.props.fromFrProfile, 
-						toFriends: this.props.toFrProfile, 
-						name: this.props.pName, 
-						avatar: this.props.pAvatar}), 
-
-					React.createElement(ProfileRight, {
-						goals: this.props.pGoals, 
-						router: this.props.router, 
-						username: this.props.username}), 
-					
-					React.createElement(ProfilePostApp, {
-						posts: this.props.posts, 
-						groups: this.props.groups, 
-						goals: this.props.pGoals, 
-						router: this.props.router}), 
-
-					React.createElement(MessageApp, {
-						fromFriends: this.props.fromFrProfile, 
-						toFriends: this.props.toFrProfile, 
-						username: this.props.username})
-					))
-		}
-	})
-
-	module.exports = ProfileApp;
-
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(218)))
-
-/***/ },
 /* 287 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/** @jsx React.DOM */var React = __webpack_require__(56);
-	var FriendRequest = __webpack_require__(288);
-	var SearchUsers = __webpack_require__(294);
-	var Quote = __webpack_require__(296);
-	var quoteStore = __webpack_require__(297)
-
-	var Nav = React.createClass({displayName: "Nav",
-
-		getInitialState: function() {
-			return({quote: ''})
-		},
-		componentWillMount: function() {
-
-			function getRandomInt(min, max) {
-	  		return Math.floor(Math.random() * (max - min + 1)) + min;
-			}
-
-			var RandomQuote = quoteStore[getRandomInt(0,28)];
-
-			this.setState({
-				quote: RandomQuote
-			});
-		},
-
-		_profileNav: function(e){
-			var router =this.props.router;
-			router.navigate('profile/' + this.props.username, {trigger:true});
-		},
-		render:function(){
-			return(React.createElement("div", null, 
-					React.createElement("div", {id: "navContainer"}, 
-						React.createElement("div", {id: "navContain"}, 
-						React.createElement("ul", {id: "navUl"}, 
-							React.createElement("li", {className: "logo"}, " UpgrAID"), 
-							React.createElement("li", {className: "mainLi", onClick: this._profileNav}, " MyProfile"), 
-							React.createElement("li", {className: "searchBar"}, React.createElement(SearchUsers, {users: this.props.users, doSearch: this.props.doSearch, query: this.props.query, router: this.props.router})), 
-							React.createElement("li", {id: "friendLi", className: "mainLi"}, 
-								React.createElement("span", {id: "square", className: "entypo-users"}), 
-								React.createElement(FriendRequest, {userId: this.props.userId, fromAll: this.props.fromAll})
-							)
-						)
-						)
-					), 
-					React.createElement("div", {className: "header"}, React.createElement(Quote, {quote: this.state.quote}))
-					))
-		}
-	});
-
-	module.exports = Nav;
-
-
-/***/ },
-/* 288 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/** @jsx React.DOM */var React = __webpack_require__(56);
-	var Friendly = __webpack_require__(289);
-	var Friendlies = __webpack_require__(291);
-	var Store = __webpack_require__(290);
-	var User = __webpack_require__(216);
-	var Users = __webpack_require__(292);
-	var AcceptReject = __webpack_require__(293);
-
-
-	var FriendRequest = React.createClass({displayName: "FriendRequest",
-		getInitialState: function(){
-			return {
-				frRq: []
-			}
-		},
-		_loadReq: function(req){
-			this.setState({
-				frRq: req
-			});
-		},
-		componentWillMount: function(){
-					self=this;
-					fr = this.props.fromAll;
-					f = fr.filter(function(usr){
-						if(!usr.accepted){
-							return true
-						}else {
-							return false
-						}
-					})
-						self._loadReq(f);
-					},
-
-
-
-		render: function(){
-			var that = this;
-			return (
-				
-				React.createElement("ul", {id: "friendRequests"}, 
-				React.createElement("li", null, React.createElement("h2", {id: "friendRequestsHeader"}, "FriendRequests")), 
-					this.state.frRq.map(function(req){
-						return(
-							React.createElement(AcceptReject, {key: req.id, requester: req, userId: that.props.userId}))
-				})
-				)
-				
-			)
-		},
-
-	});
-
-	module.exports = FriendRequest;
-
-
-/***/ },
-/* 289 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var Backbone = __webpack_require__(217);
-	var Store = __webpack_require__(290);
-
-
-	var Friendly = Backbone.Model.extend({
-		url:'https://safe-brook-9891.herokuapp.com/api/friends/',
-		initialize: function() {
-
-		}
-	});
-
-	module.exports = Friendly;
-
-
-/***/ },
-/* 290 */
-/***/ function(module, exports) {
-
-	var Store = {
-		data: {
-			userId: null,
-			userName:null,
-			chats: null,
-			chatInit: null,
-			myId: null,
-			users: [],
-			userList:[],
-			messageList:[],
-			objectId: null,
-			rank: null,
-			exp: null,
-			uid: null,
-			objectId: null,
-			avatar: null,
-			name: null,
-			fromFrProfile: null,
-			toFrProfile: null,
-			pGoals: null,
-			profileAvatar: {
-					user1: {
-						username: 'blah',
-						avatar: 1
-					}
-			}
-		}
-	};
-
-	module.exports = Store;
-
-
-/***/ },
-/* 291 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var Backbone = __webpack_require__(217);
-	var Friendly = __webpack_require__(289);
-	var Store = __webpack_require__(290);
-
-
-	var Friendlies = Backbone.Collection.extend({
-		url: 'https://safe-brook-9891.herokuapp.com/api/friends/?username=' + Store.data.userName,
-		model: Friendly
-	});
-
-	module.exports = Friendlies;
-
-
-/***/ },
-/* 292 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var Backbone = __webpack_require__(217);
-	var User =  __webpack_require__(216);
-
-	var Users = Backbone.Collection.extend({
-		url: 'https://safe-brook-9891.herokuapp.com/api/users/',
-		model: User
-	});
-
-	module.exports = Users;
-
-
-/***/ },
-/* 293 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/** @jsx React.DOM */var React = __webpack_require__(56);
-	var Backbone = __webpack_require__(217);
-
-
-	var AcceptReject = React.createClass({displayName: "AcceptReject",
-
-		_handleAccept: function(event){
-
-			event.preventDefault();
-			var FriendAccept = Backbone.Model.extend({
-				url:'https://safe-brook-9891.herokuapp.com/api/friends/' + this.props.requester.id
-			});
-			var Faccept = new FriendAccept();
-			Faccept.set({
-				id: this.props.requester.id,
-				from_friend: this.props.requester.from_friend.id,
-				to_friend: this.props.userId,
-				accepted: true
-			});
-
-			Faccept.save();
-
-		},
-
-		_handleDecline: function(event){
-			event.preventDefault();
-			var FriendDecline = Backbone.Model.extend({
-				url:'https://safe-brook-9891.herokuapp.com/api/friends/'+ this.props.requester.id
-			});
-			var Fdecline = new FriendDecline();
-			Fdecline.set({
-				id: this.props.requester.id,
-				from_friend: this.props.requester.from_friend,
-				to_friend: this.props.userId,			
-				accepted: false
-			});
-			Fdecline.save();
-
-
-		},
-		render: function(){
-
-			return (
-				React.createElement("li", {className: "reqObj"}, 
-					React.createElement("span", {className: "requester"}, this.props.requester.from_friend.username), 
-					React.createElement("span", {className: "accRejContain"}, 
-					React.createElement("button", {className: "accbutton", onClick: this._handleAccept}, "Accept"), 
-					React.createElement("button", {className: "rejbutton", onClick: this._handleDecline}, "Decline")
-					)
-				)
-
-			)
-		}
-	});
-
-	module.exports = AcceptReject;
-
-
-/***/ },
-/* 294 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function($) {/** @jsx React.DOM */var React = __webpack_require__(56);
-	var FoundUsers = __webpack_require__(295);
-
-
-	var SearchUsers = React.createClass({displayName: "SearchUsers",
-		getIntialState: function(){
-			open: false
-		},
-		_doSearch:function(){
-	        var query=this.refs.searchInput.value; // this is the search text
-	        this.props.doSearch(query);
-	    },
-		_close:function() {
-			$('#userModal').hide();
-
-		},
-		_look:function() {
-			$('#userModal').show();
-		},
-
-		render:function() {
-			var props=this.props;
-			return(
-				React.createElement("div", null, 
-					React.createElement("input", {id: "searchUsers", ref: "searchInput", placeholder: "Search Users...", onClick: this._look, onChange: this._doSearch, value: this.props.query}), 
-					React.createElement("div", {id: "userModal"}, 
-						React.createElement("span", {id: "closeModal", onClick: this._close}), 
-						React.createElement("div", null, 
-							this.props.users.map(function(obj){
-								return (
-									React.createElement(FoundUsers, {key: obj.id, username: obj.username, id: obj.id, router: props.router})
-								)
-							})
-						)
-					)
-				))
-		}
-	});
-
-	module.exports = SearchUsers;
-
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(215)))
-
-/***/ },
-/* 295 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/** @jsx React.DOM */var React = __webpack_require__(56);
-
-	var FoundUsers = React.createClass({displayName: "FoundUsers",
-		_nav: function() {
-			var router =this.props.router;
-			router.navigate('userView/' + this.props.id, {trigger:true});
-		},
-		render:function() {
-
-			return(React.createElement("div", {id: "userChoice"}, React.createElement("p", {value: this.props.id, onClick: this._nav}, this.props.username)))
-
-
-		}
-	});
-
-	module.exports = FoundUsers;
-
-
-/***/ },
-/* 296 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/** @jsx React.DOM */var React = __webpack_require__(56);
-
-	var Quote = React.createClass({displayName: "Quote",
-		render:function() {
-			return(React.createElement("p", {id: "randomQuote"}, this.props.quote))
-		}
-	});
-
-	module.exports = Quote;
-
-/***/ },
-/* 297 */
-/***/ function(module, exports) {
-
-	var quote =
-	[
-	'"There is nothing noble in being superior to your fellow man; true nobility is being superior to your former self." ― Ernest Hemingway',
-
-	'“Those who cannot change their minds cannot change anything.”― George Bernard Shaw',
-
-	'“Make the most of yourself....for that is all there is of you.” ― Ralph Waldo Emerson',
-
-	'“Once we accept our limits, we go beyond them.”― Albert Einstein',
-
-
-	'“The curious paradox is that when I accept myself just as I am, then I can change.” ― Carl R. Rogers',
-
-	'“There is only one corner of the universe you can be certain of improving, and that\'s your own self.” ― Aldous Huxley',
-
-	'“I went to a bookstore and asked the saleswoman, Where\’s the self-help section? She said if she told me, it would defeat the purpose.” ― Steven Wright',
-
-	'“You willed yourself to where you are today, so will yourself out of it.” ― Stephen Richards',
-
-
-	'“Keeping busy and making optimism a way of life can restore your faith in yourself.” ― Lucille Ball',
-
-	'“Lighten up on yourself. No one is perfect. Gently accept your humanness.” ― Deborah Day',
-
-
-	'"If you don\'t know where you are going, you will probably end up somewhere else. You have to have goals.” ― Zig Ziglar',
-
-	'“Everything is practice.” ― Pelé',
-
-
-	'“To change the world takes time; to change yourself takes courage.” ― R.S. Lowel',
-
-	'“In the event of a total loss of direction in life, be sure to sort out your own shit before you start telling people what to do.” ― A.C. Ping',
-
-	'“Too many people overvalue what they are not and undervalue what they are.” ― Malcolm Forbes',
-
-	'“The way to achieve your goals is step by step, you just need to build enough track, to be ahead of the train." - John Milton Lawrence”',
-
-	'“Any youth which is not misspent is, by definition, misspent.” ― Hermester Barrington',
-
-	'"Man only learns in two ways, one by reading, and the other by association with smarter people." - Will Rogers',
-
-	 '"He who conquers others is strong; He who conquers himself is mighty." - Lao Tzu',
-
-	'"Every day do something that will inch you closer to a better tomorrow." - Doug Firebaugh',
-
-	'"Insist on yourself. Never imitate." - Ralph Waldo Emerson',
-
-	'"If we all did the things we are capable of, we would astound ourselves." - Thomas Edison',
-
-	'"Reality is merely an illusion, albeit a very persistent one." - Albert Einstein',
-
-	'"I believe in the discipline of silence, and could talk for hours about it." - George Bernard Shaw',
-
-	'"The greatest thief this world ever produced is procrastination, and he is still at large." - Henry Wheeler Shaw',
-
-	'"I always wanted to be somebody, but now I realize I should have been more specific." - Lily Tomlin',
-
-	"'Though no one can go back and make a brand new start, anyone can start from now and make a brand new ending.' - Marcus Aurelius"
-	]
-
-
-	module.exports = quote;
-
-
-/***/ },
-/* 298 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/** @jsx React.DOM */var React = __webpack_require__(56);
-	var AvatarChange = __webpack_require__(299);
-	var AvatarRankXp = React.createClass({displayName: "AvatarRankXp",
-		getInitialState:function(){
-			return({
-				hidden: true,
-				avatar: this.props.avatar,
-				value: 1
-			})
-		},
-		_show:function(){
-			this.setState({
-				hidden: false
-			})
-		},
-		_hide:function(){
-			this.setState({
-				hidden: true
-			})
-		},
-		_change: function(e) {
-			this.setState({
-				avatar: e.target.id,
-				value: e.target.id
-			})
-		},
-		render:function() {
-			
-			return(React.createElement("div", {id: "avatarRankXpContainer"}, 
-					React.createElement("div", {id: "avatarDiv"}, 
-					React.createElement("div", {id: "picture"}, React.createElement("img", {className: "avatarImg", onClick: this._show, src: '../../../assets/avatar'+this.state.avatar+'.png'})), 
-						
-						(this.props.rank=== 1 ? React.createElement("span", {id: "rank1"}, "Novice") : null), 
-						(this.props.rank=== 2 ? React.createElement("span", {id: "rank2"}, "JourneyMan") : null), 
-						(this.props.rank=== 3 ? React.createElement("span", {id: "rank3"}, "Mentor") : null), 
-
-						React.createElement("span", {id: "exp"}, React.createElement("span", null, "Exp: "), this.props.exp)
-					), 
-					React.createElement(AvatarChange, {hidden: this.state.hidden, hide: this._hide, change: this._change, username: this.props.username, value: this.state.value})
-				))
-		}
-	});
-
-	module.exports = AvatarRankXp;
-
-
-/***/ },
-/* 299 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function($) {/** @jsx React.DOM */var React = __webpack_require__(56);
-	var Store = __webpack_require__(290)
-	var AvatarChange = React.createClass({displayName: "AvatarChange",
-		getInitialState: function(){
-			return({
-				avatar: '../../../assets/avatar'
-				
-			})
-		},
-		
-		_update:function(e){
-			this.props.hide()
-			console.log('obId',Store.data.objectId)
-			$.ajax({
-				url:'https://safe-brook-9891.herokuapp.com/api/profiles/'+ Store.data.objectId,
-				method:'PUT',
-				data: {avatar: e.target.value }
-			}).then(function(resp){
-
-				console.log(resp)
-			})
-
-		},
-		render:function(){
-			
-			return(React.createElement("div", null, (this.props.hidden ? null :
-				
-				React.createElement("div", {id: "avatarModal"}, 
-				React.createElement("h2", {id: "avatarModalHeader"}, "Pick a new Avatar"), 
-					React.createElement("ul", {id: "avatarUl"}, 
-						React.createElement("li", {className: "avatars"}, React.createElement("img", {id: "1", src: this.state.avatar+'1.png', onClick: this.props.change})), 
-						React.createElement("li", {className: "avatars"}, React.createElement("img", {id: "2", src: this.state.avatar+'2.png', onClick: this.props.change})), 
-						React.createElement("li", {className: "avatars"}, React.createElement("img", {id: "3", src: this.state.avatar+'3.png', onClick: this.props.change}))
-						
-					), 
-					React.createElement("button", {id: "avatarSubmit", value: this.props.value, onClick: this._update}, "Got it!")
-				)
-				
-				
-				
-				
-				)
-				)
-			)
-		}
-	});
-	module.exports = AvatarChange;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(215)))
-
-/***/ },
-/* 300 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/** @jsx React.DOM */var React = __webpack_require__(56);
-	var ProfileInput = __webpack_require__(301);
-	var ProfileItem = __webpack_require__(302);
-	var PostButtons = __webpack_require__(325)
-
-	var ProfilePostApp = React.createClass({displayName: "ProfilePostApp",
-		getInitialState: function () {
-			return {
-				data: this.props.posts,
-
-			}
-		},
-		_addInput: function(collection) {
-
-				this.setState({
-				data: collection
-			})
-		},
-		render: function() {
-			var props = this.props;
-			var that = this;
-			var state = this.state;
-			return(React.createElement("div", {id: "profilePostMaster"}, 
-					
-					this.props.goals.map(function(obj){
-	 					return(
-	 						React.createElement("div", {className: "inputDesContain"}, 
-
-	 						React.createElement(ProfileInput, null), 
-							React.createElement(PostButtons, {
-								key: obj.id, 
-								theme: obj.theme, 
-								id: obj.group, 
-								title: obj.title, 
-								addInput: that._addInput, 
-								data: state.data, 
-								router: props.router})
-							)
-						)
-	 					})
-					
-				))
-		}
-	});
-
-	module.exports = ProfilePostApp;
-
-
-/***/ },
-/* 301 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/** @jsx React.DOM */var React = __webpack_require__(56);
-
-	var ProfileInput = React.createClass({displayName: "ProfileInput",
-		render:function() {
-			return(
-				React.createElement("form", {id: "newPostInputProfile", onSubmit: this._submit}, 
-						
-						React.createElement("input", {id: "postProfile", placeholder: "Add New Post - Title"}), 
-						React.createElement("textarea", {id: "descriptionProfile", placeholder: "Add Description"})
-						
-				)
-				  )
-			}
-	})
-
-		
-
-
-	module.exports = ProfileInput;
-
-/***/ },
-/* 302 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/** @jsx React.DOM */var React = __webpack_require__(56);
-	var ProfilePost = __webpack_require__(303);
-
-	var ProfileItem = React.createClass({displayName: "ProfileItem",
-		
-		render: function() {
-			var props=this.props;
-			
-				return(React.createElement("div", {id: "master"}, 
-						this.props.data.map(function(obj){
-							return(React.createElement(ProfilePost, {key: obj.id, 
-										addInput: props.addInput, 
-										title: obj.title, 
-										description: obj.description, 
-										datas: props.data, 
-										groupId: obj.id, 
-										user: obj.user, 
-										postId: obj.id, 
-										comments: obj.comment_set}))
-								})
-						)
-					)
-			
-			
-		}
-	});
-
-	module.exports = ProfileItem;
-
-/***/ },
-/* 303 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/** @jsx React.DOM */var React = __webpack_require__(56);
-	var Avatar = __webpack_require__(304);
-	var Card = __webpack_require__(305);
-	var CardHeader = __webpack_require__(318);
-	var CardTitle = __webpack_require__(323);
-	var CardText = __webpack_require__(324);
-
-	var ProfilePost = React.createClass({displayName: "ProfilePost",
-
-		_delete: function(e) {
-			e.preventDefault();
-			props=this.props;
-
-				var Post = Backbone.Model.extend({
-					url:'https://safe-brook-9891.herokuapp.com/api/posts/'+props.id,
-					initialize: function() {
-				}
-
-				});
-					var PostCollection = Backbone.Collection.extend({
-						model: Post
-				});
-
-			var collection = new PostCollection(this.props.datas);
-			var item = collection.get(props.id);
-			item.destroy({
-				success: function(resp) {
-					collection.remove(resp)
-					props.addInput(collection.toJSON());
-				}
-			})
-		},
-
-		render: function() {
-
-			return(
-				React.createElement("div", {className: "postContainer"}, 
-						React.createElement(Card, null, 
-							React.createElement(CardHeader, {
-								style: {background: '#f7f7f7'}, 
-								title: this.props.title, 
-	      				avatar: "../../../../assets/avatar.png"}), 
-							React.createElement(CardText, null, this.props.description)
-						)
-
-				)
-			)
-
-		}
-	});
-
-	module.exports = ProfilePost;
-
-	// <p className="postTitle">{this.props.title}</p>
-	// <p className="postDescription">{this.props.description}</p>
-
-
-/***/ },
-/* 304 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-
-	var React = __webpack_require__(56);
-	var StylePropable = __webpack_require__(232);
-	var Colors = __webpack_require__(259);
-	var DefaultRawTheme = __webpack_require__(258);
-	var ThemeManager = __webpack_require__(262);
-
-	var Avatar = React.createClass({
-	  displayName: 'Avatar',
-
-	  mixins: [StylePropable],
-
-	  contextTypes: {
-	    muiTheme: React.PropTypes.object
-	  },
-
-	  //for passing default theme context to children
-	  childContextTypes: {
-	    muiTheme: React.PropTypes.object
-	  },
-
-	  getChildContext: function getChildContext() {
-	    return {
-	      muiTheme: this.state.muiTheme
-	    };
-	  },
-
-	  propTypes: {
-	    backgroundColor: React.PropTypes.string,
-	    color: React.PropTypes.string,
-	    icon: React.PropTypes.element,
-	    size: React.PropTypes.number,
-	    src: React.PropTypes.string,
-	    style: React.PropTypes.object
-	  },
-
-	  getInitialState: function getInitialState() {
-	    return {
-	      muiTheme: this.context.muiTheme ? this.context.muiTheme : ThemeManager.getMuiTheme(DefaultRawTheme)
-	    };
-	  },
-
-	  //to update theme inside state whenever a new theme is passed down
-	  //from the parent / owner using context
-	  componentWillReceiveProps: function componentWillReceiveProps(nextProps, nextContext) {
-	    var newMuiTheme = nextContext.muiTheme ? nextContext.muiTheme : this.state.muiTheme;
-	    this.setState({ muiTheme: newMuiTheme });
-	  },
-
-	  getDefaultProps: function getDefaultProps() {
-	    return {
-	      backgroundColor: Colors.grey400,
-	      color: Colors.white,
-	      size: 40
-	    };
-	  },
-
-	  render: function render() {
-	    var _props = this.props;
-	    var backgroundColor = _props.backgroundColor;
-	    var color = _props.color;
-	    var icon = _props.icon;
-	    var size = _props.size;
-	    var src = _props.src;
-	    var style = _props.style;
-
-	    var other = _objectWithoutProperties(_props, ['backgroundColor', 'color', 'icon', 'size', 'src', 'style']);
-
-	    var styles = {
-	      root: {
-	        height: size,
-	        width: size,
-	        userSelect: 'none',
-	        borderRadius: '50%',
-	        display: 'inline-block'
-	      }
-	    };
-
-	    if (src) {
-	      var borderColor = this.state.muiTheme.avatar.borderColor;
-
-	      if (borderColor) {
-	        styles.root = this.mergeStyles(styles.root, {
-	          height: size - 2,
-	          width: size - 2,
-	          border: 'solid 1px ' + borderColor
-	        });
-	      }
-
-	      return React.createElement('img', _extends({}, other, { src: src, style: this.prepareStyles(styles.root, style) }));
-	    } else {
-	      styles.root = this.mergeStyles(styles.root, {
-	        backgroundColor: backgroundColor,
-	        textAlign: 'center',
-	        lineHeight: size + 'px',
-	        fontSize: size / 2 + 4,
-	        color: color
-	      });
-
-	      var styleIcon = {
-	        margin: 8
-	      };
-
-	      var iconElement = icon ? React.cloneElement(icon, {
-	        color: color,
-	        style: this.mergeStyles(styleIcon, icon.props.style)
-	      }) : null;
-
-	      return React.createElement(
-	        'div',
-	        _extends({}, other, { style: this.prepareStyles(styles.root, style) }),
-	        iconElement,
-	        this.props.children
-	      );
-	    }
-	  }
-	});
-
-	module.exports = Avatar;
-
-/***/ },
-/* 305 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-
-	var React = __webpack_require__(56);
-	var Paper = __webpack_require__(276);
-	var StylePropable = __webpack_require__(232);
-	var CardExpandable = __webpack_require__(306);
-
-	var Card = React.createClass({
-	  displayName: 'Card',
-
-	  mixins: [StylePropable],
-
-	  getInitialState: function getInitialState() {
-	    return { expanded: this.props.initiallyExpanded ? true : false };
-	  },
-
-	  propTypes: {
-	    style: React.PropTypes.object,
-	    expandable: React.PropTypes.bool,
-	    initiallyExpanded: React.PropTypes.bool,
-	    onExpandChange: React.PropTypes.func,
-	    actAsExpander: React.PropTypes.bool,
-	    showExpandableButton: React.PropTypes.bool
-	  },
-
-	  _onExpandable: function _onExpandable() {
-	    var newExpandedState = !(this.state.expanded === true);
-	    this.setState({ expanded: newExpandedState });
-	    if (this.props.onExpandChange) this.props.onExpandChange(newExpandedState);
-	  },
-
-	  render: function render() {
-	    var _this = this;
-
-	    var lastElement = undefined;
-	    var newChildren = React.Children.map(this.props.children, function (currentChild) {
-	      var doClone = false;
-	      var newChild = undefined;
-	      var newProps = {};
-	      var element = currentChild;
-	      if (!currentChild || !currentChild.props) {
-	        return null;
-	      }
-	      if (_this.state.expanded === false && currentChild.props.expandable === true) return;
-	      if (currentChild.props.actAsExpander === true) {
-	        doClone = true;
-	        newProps.onTouchTap = _this._onExpandable;
-	        newProps.style = _this.mergeStyles({ cursor: 'pointer' }, currentChild.props.style);
-	      }
-	      if (currentChild.props.showExpandableButton === true) {
-	        doClone = true;
-	        newChild = React.createElement(CardExpandable, { expanded: _this.state.expanded, onExpanding: _this._onExpandable });
-	      }
-	      if (doClone) {
-	        element = React.cloneElement(currentChild, newProps, currentChild.props.children, newChild);
-	      }
-	      return element;
-	    }, this);
-
-	    // If the last element is text or a title we should add
-	    // 8px padding to the bottom of the card
-	    var addBottomPadding = lastElement && (lastElement.type.displayName === "CardText" || lastElement.type.displayName === "CardTitle");
-	    var _props = this.props;
-	    var style = _props.style;
-
-	    var other = _objectWithoutProperties(_props, ['style']);
-
-	    var mergedStyles = this.mergeStyles({
-	      overflow: 'hidden',
-	      zIndex: 1
-	    }, style);
-
-	    return React.createElement(
-	      Paper,
-	      _extends({}, other, { style: mergedStyles }),
-	      React.createElement(
-	        'div',
-	        { style: { paddingBottom: addBottomPadding ? 8 : 0 } },
-	        newChildren
-	      )
-	    );
-	  }
-	});
-
-	module.exports = Card;
-
-/***/ },
-/* 306 */
-/***/ function(module, exports, __webpack_require__) {
-
 	'use strict';
 
 	var React = __webpack_require__(56);
-	var Extend = __webpack_require__(263);
-	var OpenIcon = __webpack_require__(307);
-	var CloseIcon = __webpack_require__(308);
-	var IconButton = __webpack_require__(309);
-	var StylePropable = __webpack_require__(232);
-	var DefaultRawTheme = __webpack_require__(258);
-	var ThemeManager = __webpack_require__(262);
-	var ContextPure = __webpack_require__(310);
-
-	var CardExpandable = React.createClass({
-	  displayName: 'CardExpandable',
-
-	  mixins: [StylePropable, ContextPure],
-
-	  getStyles: function getStyles() {
-	    var contextKeys = this.constructor.getRelevantContextKeys(this.state.muiTheme);
-
-	    var directionStyle = contextKeys.isRtl ? {
-	      left: 4
-	    } : {
-	      right: 4
-	    };
-
-	    return {
-	      root: Extend({
-	        top: 0,
-	        bottom: 0,
-	        margin: 'auto',
-	        position: 'absolute'
-	      }, directionStyle)
-	    };
-	  },
-
-	  contextTypes: {
-	    muiTheme: React.PropTypes.object
-	  },
-
-	  propTypes: {
-	    onExpanding: React.PropTypes.func.isRequired,
-	    expanded: React.PropTypes.bool,
-	    style: React.PropTypes.object
-	  },
-
-	  //for passing default theme context to children
-	  childContextTypes: {
-	    muiTheme: React.PropTypes.object
-	  },
-
-	  getChildContext: function getChildContext() {
-	    return {
-	      muiTheme: this.state.muiTheme
-	    };
-	  },
-
-	  statics: {
-	    getRelevantContextKeys: function getRelevantContextKeys(muiTheme) {
-	      return {
-	        isRtl: muiTheme.isRtl
-	      };
-	    },
-	    getChildrenClasses: function getChildrenClasses() {
-	      return [IconButton];
-	    }
-	  },
-
-	  getInitialState: function getInitialState() {
-	    return {
-	      muiTheme: this.context.muiTheme ? this.context.muiTheme : ThemeManager.getMuiTheme(DefaultRawTheme)
-	    };
-	  },
-
-	  //to update theme inside state whenever a new theme is passed down
-	  //from the parent / owner using context
-	  componentWillReceiveProps: function componentWillReceiveProps(nextProps, nextContext) {
-	    var newMuiTheme = nextContext.muiTheme ? nextContext.muiTheme : this.state.muiTheme;
-	    this.setState({ muiTheme: newMuiTheme });
-	  },
-
-	  render: function render() {
-	    var styles = this.getStyles();
-
-	    var expandable = undefined;
-	    if (this.props.expanded === true) expandable = React.createElement(OpenIcon, null);else expandable = React.createElement(CloseIcon, null);
-
-	    var mergedStyles = this.mergeStyles(styles.root, this.props.style);
-
-	    var expandableBtn = React.createElement(
-	      IconButton,
-	      {
-	        style: mergedStyles,
-	        onTouchTap: this.props.onExpanding },
-	      expandable
-	    );
-
-	    return expandableBtn;
-	  }
-	});
-
-	module.exports = CardExpandable;
-
-/***/ },
-/* 307 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var React = __webpack_require__(56);
-	var PureRenderMixin = __webpack_require__(265);
-	var SvgIcon = __webpack_require__(279);
-
-	var HardwareKeyboardArrowUp = React.createClass({
-	  displayName: 'HardwareKeyboardArrowUp',
-
-	  mixins: [PureRenderMixin],
-
-	  render: function render() {
-	    return React.createElement(
-	      SvgIcon,
-	      this.props,
-	      React.createElement('path', { d: 'M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z' })
-	    );
-	  }
-
-	});
-
-	module.exports = HardwareKeyboardArrowUp;
-
-/***/ },
-/* 308 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var React = __webpack_require__(56);
-	var PureRenderMixin = __webpack_require__(265);
-	var SvgIcon = __webpack_require__(279);
+	var PureRenderMixin = __webpack_require__(279);
+	var SvgIcon = __webpack_require__(286);
 
 	var HardwareKeyboardArrowDown = React.createClass({
 	  displayName: 'HardwareKeyboardArrowDown',
@@ -40842,7 +38615,7 @@
 	module.exports = HardwareKeyboardArrowDown;
 
 /***/ },
-/* 309 */
+/* 288 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40852,16 +38625,16 @@
 	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
 	var React = __webpack_require__(56);
-	var StylePropable = __webpack_require__(232);
-	var ContextPure = __webpack_require__(310);
-	var Transitions = __webpack_require__(250);
-	var PropTypes = __webpack_require__(277);
-	var EnhancedButton = __webpack_require__(312);
-	var FontIcon = __webpack_require__(316);
-	var Tooltip = __webpack_require__(317);
-	var Children = __webpack_require__(313);
-	var DefaultRawTheme = __webpack_require__(258);
-	var ThemeManager = __webpack_require__(262);
+	var StylePropable = __webpack_require__(253);
+	var ContextPure = __webpack_require__(289);
+	var Transitions = __webpack_require__(283);
+	var PropTypes = __webpack_require__(282);
+	var EnhancedButton = __webpack_require__(291);
+	var FontIcon = __webpack_require__(306);
+	var Tooltip = __webpack_require__(307);
+	var Children = __webpack_require__(292);
+	var DefaultRawTheme = __webpack_require__(272);
+	var ThemeManager = __webpack_require__(275);
 
 	var IconButton = React.createClass({
 	  displayName: 'IconButton',
@@ -41090,12 +38863,12 @@
 	module.exports = IconButton;
 
 /***/ },
-/* 310 */
+/* 289 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var shallowEqual = __webpack_require__(311);
+	var shallowEqual = __webpack_require__(290);
 
 	function relevantContextKeysEqual(classObject, currentContext, nextContext) {
 
@@ -41151,7 +38924,7 @@
 	};
 
 /***/ },
-/* 311 */
+/* 290 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -41191,7 +38964,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 312 */
+/* 291 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41201,16 +38974,16 @@
 	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
 	var React = __webpack_require__(56);
-	var PureRenderMixin = __webpack_require__(265);
-	var StylePropable = __webpack_require__(232);
-	var Colors = __webpack_require__(259);
-	var Children = __webpack_require__(313);
-	var Events = __webpack_require__(255);
-	var KeyCode = __webpack_require__(252);
-	var FocusRipple = __webpack_require__(264);
-	var TouchRipple = __webpack_require__(273);
-	var DefaultRawTheme = __webpack_require__(258);
-	var ThemeManager = __webpack_require__(262);
+	var PureRenderMixin = __webpack_require__(279);
+	var StylePropable = __webpack_require__(253);
+	var Colors = __webpack_require__(271);
+	var Children = __webpack_require__(292);
+	var Events = __webpack_require__(295);
+	var KeyCode = __webpack_require__(296);
+	var FocusRipple = __webpack_require__(297);
+	var TouchRipple = __webpack_require__(303);
+	var DefaultRawTheme = __webpack_require__(272);
+	var ThemeManager = __webpack_require__(275);
 
 	var styleInjected = false;
 	var listening = false;
@@ -41497,13 +39270,13 @@
 	module.exports = EnhancedButton;
 
 /***/ },
-/* 313 */
+/* 292 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var React = __webpack_require__(56);
-	var createFragment = __webpack_require__(314);
+	var createFragment = __webpack_require__(293);
 
 	module.exports = {
 
@@ -41543,13 +39316,13 @@
 	};
 
 /***/ },
-/* 314 */
+/* 293 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(315).create;
+	module.exports = __webpack_require__(294).create;
 
 /***/ },
-/* 315 */
+/* 294 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -41619,7 +39392,200 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(59)))
 
 /***/ },
-/* 316 */
+/* 295 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	module.exports = {
+
+	  once: function once(el, type, callback) {
+	    var typeArray = type ? type.split(' ') : [];
+	    var recursiveFunction = function recursiveFunction(e) {
+	      e.target.removeEventListener(e.type, recursiveFunction);
+	      return callback(e);
+	    };
+
+	    for (var i = typeArray.length - 1; i >= 0; i--) {
+	      this.on(el, typeArray[i], recursiveFunction);
+	    }
+	  },
+
+	  on: function on(el, type, callback) {
+	    if (el.addEventListener) {
+	      el.addEventListener(type, callback);
+	    } else {
+	      // IE8+ Support
+	      el.attachEvent('on' + type, function () {
+	        callback.call(el);
+	      });
+	    }
+	  },
+
+	  off: function off(el, type, callback) {
+	    if (el.removeEventListener) {
+	      el.removeEventListener(type, callback);
+	    } else {
+	      // IE8+ Support
+	      el.detachEvent('on' + type, callback);
+	    }
+	  },
+
+	  isKeyboard: function isKeyboard(e) {
+	    return ['keydown', 'keypress', 'keyup'].indexOf(e.type) !== -1;
+	  }
+	};
+
+/***/ },
+/* 296 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	module.exports = {
+	  DOWN: 40,
+	  ESC: 27,
+	  ENTER: 13,
+	  LEFT: 37,
+	  RIGHT: 39,
+	  SPACE: 32,
+	  TAB: 9,
+	  UP: 38
+	};
+
+/***/ },
+/* 297 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var React = __webpack_require__(56);
+	var ReactDOM = __webpack_require__(213);
+	var PureRenderMixin = __webpack_require__(279);
+	var StylePropable = __webpack_require__(253);
+	var AutoPrefix = __webpack_require__(258);
+	var Colors = __webpack_require__(271);
+	var Transitions = __webpack_require__(283);
+	var ScaleInTransitionGroup = __webpack_require__(298);
+
+	var pulsateDuration = 750;
+
+	var FocusRipple = React.createClass({
+	  displayName: 'FocusRipple',
+
+	  mixins: [PureRenderMixin, StylePropable],
+
+	  propTypes: {
+	    color: React.PropTypes.string,
+	    innerStyle: React.PropTypes.object,
+	    opacity: React.PropTypes.number,
+	    show: React.PropTypes.bool,
+	    style: React.PropTypes.object
+	  },
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      color: Colors.darkBlack
+	    };
+	  },
+
+	  componentDidMount: function componentDidMount() {
+	    if (this.props.show) {
+	      this._setRippleSize();
+	      this._pulsate();
+	    }
+	  },
+
+	  componentDidUpdate: function componentDidUpdate() {
+	    if (this.props.show) {
+	      this._setRippleSize();
+	      this._pulsate();
+	    } else {
+	      if (this._timeout) clearTimeout(this._timeout);
+	    }
+	  },
+
+	  render: function render() {
+	    var _props = this.props;
+	    var show = _props.show;
+	    var style = _props.style;
+
+	    var mergedRootStyles = this.mergeStyles({
+	      height: '100%',
+	      width: '100%',
+	      position: 'absolute',
+	      top: 0,
+	      left: 0
+	    }, style);
+
+	    var ripple = show ? this._getRippleElement(this.props) : null;
+
+	    return React.createElement(
+	      ScaleInTransitionGroup,
+	      {
+	        maxScale: 0.85,
+	        style: mergedRootStyles },
+	      ripple
+	    );
+	  },
+
+	  _getRippleElement: function _getRippleElement(props) {
+	    var color = props.color;
+	    var innerStyle = props.innerStyle;
+	    var opacity = props.opacity;
+
+	    var innerStyles = this.mergeAndPrefix({
+	      position: 'absolute',
+	      height: '100%',
+	      width: '100%',
+	      borderRadius: '50%',
+	      opacity: opacity ? opacity : 0.16,
+	      backgroundColor: color,
+	      transition: Transitions.easeOut(pulsateDuration + 'ms', 'transform', null, Transitions.easeInOutFunction)
+	    }, innerStyle);
+
+	    return React.createElement('div', { ref: 'innerCircle', style: innerStyles });
+	  },
+
+	  _pulsate: function _pulsate() {
+	    if (!this.isMounted()) return;
+
+	    var innerCircle = ReactDOM.findDOMNode(this.refs.innerCircle);
+	    if (!innerCircle) return;
+
+	    var startScale = 'scale(1)';
+	    var endScale = 'scale(0.85)';
+	    var currentScale = innerCircle.style.transform;
+	    var nextScale = undefined;
+
+	    currentScale = currentScale || startScale;
+	    nextScale = currentScale === startScale ? endScale : startScale;
+
+	    AutoPrefix.set(innerCircle.style, 'transform', nextScale);
+	    this._timeout = setTimeout(this._pulsate, pulsateDuration);
+	  },
+
+	  _setRippleSize: function _setRippleSize() {
+	    var el = ReactDOM.findDOMNode(this.refs.innerCircle);
+	    var height = el.offsetHeight;
+	    var width = el.offsetWidth;
+	    var size = Math.max(height, width);
+
+	    var oldTop = 0;
+	    // For browsers that don't support endsWith()
+	    if (el.style.top.indexOf('px', el.style.top.length - 2) !== -1) {
+	      oldTop = parseInt(el.style.top);
+	    }
+	    el.style.height = size + 'px';
+	    el.style.top = height / 2 - size / 2 + oldTop + 'px';
+	  }
+
+	});
+
+	module.exports = FocusRipple;
+
+/***/ },
+/* 298 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41629,10 +39595,934 @@
 	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
 	var React = __webpack_require__(56);
-	var StylePropable = __webpack_require__(232);
-	var Transitions = __webpack_require__(250);
-	var DefaultRawTheme = __webpack_require__(258);
-	var ThemeManager = __webpack_require__(262);
+	var PureRenderMixin = __webpack_require__(279);
+	var ReactTransitionGroup = __webpack_require__(299);
+	var StylePropable = __webpack_require__(253);
+	var ScaleInChild = __webpack_require__(302);
+	var DefaultRawTheme = __webpack_require__(272);
+	var ThemeManager = __webpack_require__(275);
+
+	var ScaleIn = React.createClass({
+	  displayName: 'ScaleIn',
+
+	  mixins: [PureRenderMixin, StylePropable],
+
+	  contextTypes: {
+	    muiTheme: React.PropTypes.object
+	  },
+
+	  //for passing default theme context to children
+	  childContextTypes: {
+	    muiTheme: React.PropTypes.object
+	  },
+
+	  getChildContext: function getChildContext() {
+	    return {
+	      muiTheme: this.state.muiTheme
+	    };
+	  },
+
+	  getInitialState: function getInitialState() {
+	    return {
+	      muiTheme: this.context.muiTheme ? this.context.muiTheme : ThemeManager.getMuiTheme(DefaultRawTheme)
+	    };
+	  },
+
+	  //to update theme inside state whenever a new theme is passed down
+	  //from the parent / owner using context
+	  componentWillReceiveProps: function componentWillReceiveProps(nextProps, nextContext) {
+	    var newMuiTheme = nextContext.muiTheme ? nextContext.muiTheme : this.state.muiTheme;
+	    this.setState({ muiTheme: newMuiTheme });
+	  },
+
+	  propTypes: {
+	    childStyle: React.PropTypes.object,
+	    enterDelay: React.PropTypes.number,
+	    maxScale: React.PropTypes.number,
+	    minScale: React.PropTypes.number,
+	    style: React.PropTypes.object
+	  },
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      enterDelay: 0
+	    };
+	  },
+
+	  render: function render() {
+	    var _props = this.props;
+	    var children = _props.children;
+	    var childStyle = _props.childStyle;
+	    var enterDelay = _props.enterDelay;
+	    var maxScale = _props.maxScale;
+	    var minScale = _props.minScale;
+	    var style = _props.style;
+
+	    var other = _objectWithoutProperties(_props, ['children', 'childStyle', 'enterDelay', 'maxScale', 'minScale', 'style']);
+
+	    var mergedRootStyles = this.prepareStyles({
+	      position: 'relative',
+	      overflow: 'hidden',
+	      height: '100%'
+	    }, style);
+
+	    var newChildren = React.Children.map(children, function (child) {
+	      return React.createElement(
+	        ScaleInChild,
+	        {
+	          key: child.key,
+	          enterDelay: enterDelay,
+	          maxScale: maxScale,
+	          minScale: minScale,
+	          style: childStyle },
+	        child
+	      );
+	    });
+
+	    return React.createElement(
+	      ReactTransitionGroup,
+	      _extends({}, other, {
+	        style: mergedRootStyles,
+	        component: 'div' }),
+	      newChildren
+	    );
+	  }
+
+	});
+
+	module.exports = ScaleIn;
+
+/***/ },
+/* 299 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(300);
+
+/***/ },
+/* 300 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2013-2015, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule ReactTransitionGroup
+	 */
+
+	'use strict';
+
+	var React = __webpack_require__(57);
+	var ReactTransitionChildMapping = __webpack_require__(301);
+
+	var assign = __webpack_require__(94);
+	var emptyFunction = __webpack_require__(70);
+
+	var ReactTransitionGroup = React.createClass({
+	  displayName: 'ReactTransitionGroup',
+
+	  propTypes: {
+	    component: React.PropTypes.any,
+	    childFactory: React.PropTypes.func
+	  },
+
+	  getDefaultProps: function () {
+	    return {
+	      component: 'span',
+	      childFactory: emptyFunction.thatReturnsArgument
+	    };
+	  },
+
+	  getInitialState: function () {
+	    return {
+	      children: ReactTransitionChildMapping.getChildMapping(this.props.children)
+	    };
+	  },
+
+	  componentWillMount: function () {
+	    this.currentlyTransitioningKeys = {};
+	    this.keysToEnter = [];
+	    this.keysToLeave = [];
+	  },
+
+	  componentDidMount: function () {
+	    var initialChildMapping = this.state.children;
+	    for (var key in initialChildMapping) {
+	      if (initialChildMapping[key]) {
+	        this.performAppear(key);
+	      }
+	    }
+	  },
+
+	  componentWillReceiveProps: function (nextProps) {
+	    var nextChildMapping = ReactTransitionChildMapping.getChildMapping(nextProps.children);
+	    var prevChildMapping = this.state.children;
+
+	    this.setState({
+	      children: ReactTransitionChildMapping.mergeChildMappings(prevChildMapping, nextChildMapping)
+	    });
+
+	    var key;
+
+	    for (key in nextChildMapping) {
+	      var hasPrev = prevChildMapping && prevChildMapping.hasOwnProperty(key);
+	      if (nextChildMapping[key] && !hasPrev && !this.currentlyTransitioningKeys[key]) {
+	        this.keysToEnter.push(key);
+	      }
+	    }
+
+	    for (key in prevChildMapping) {
+	      var hasNext = nextChildMapping && nextChildMapping.hasOwnProperty(key);
+	      if (prevChildMapping[key] && !hasNext && !this.currentlyTransitioningKeys[key]) {
+	        this.keysToLeave.push(key);
+	      }
+	    }
+
+	    // If we want to someday check for reordering, we could do it here.
+	  },
+
+	  componentDidUpdate: function () {
+	    var keysToEnter = this.keysToEnter;
+	    this.keysToEnter = [];
+	    keysToEnter.forEach(this.performEnter);
+
+	    var keysToLeave = this.keysToLeave;
+	    this.keysToLeave = [];
+	    keysToLeave.forEach(this.performLeave);
+	  },
+
+	  performAppear: function (key) {
+	    this.currentlyTransitioningKeys[key] = true;
+
+	    var component = this.refs[key];
+
+	    if (component.componentWillAppear) {
+	      component.componentWillAppear(this._handleDoneAppearing.bind(this, key));
+	    } else {
+	      this._handleDoneAppearing(key);
+	    }
+	  },
+
+	  _handleDoneAppearing: function (key) {
+	    var component = this.refs[key];
+	    if (component.componentDidAppear) {
+	      component.componentDidAppear();
+	    }
+
+	    delete this.currentlyTransitioningKeys[key];
+
+	    var currentChildMapping = ReactTransitionChildMapping.getChildMapping(this.props.children);
+
+	    if (!currentChildMapping || !currentChildMapping.hasOwnProperty(key)) {
+	      // This was removed before it had fully appeared. Remove it.
+	      this.performLeave(key);
+	    }
+	  },
+
+	  performEnter: function (key) {
+	    this.currentlyTransitioningKeys[key] = true;
+
+	    var component = this.refs[key];
+
+	    if (component.componentWillEnter) {
+	      component.componentWillEnter(this._handleDoneEntering.bind(this, key));
+	    } else {
+	      this._handleDoneEntering(key);
+	    }
+	  },
+
+	  _handleDoneEntering: function (key) {
+	    var component = this.refs[key];
+	    if (component.componentDidEnter) {
+	      component.componentDidEnter();
+	    }
+
+	    delete this.currentlyTransitioningKeys[key];
+
+	    var currentChildMapping = ReactTransitionChildMapping.getChildMapping(this.props.children);
+
+	    if (!currentChildMapping || !currentChildMapping.hasOwnProperty(key)) {
+	      // This was removed before it had fully entered. Remove it.
+	      this.performLeave(key);
+	    }
+	  },
+
+	  performLeave: function (key) {
+	    this.currentlyTransitioningKeys[key] = true;
+
+	    var component = this.refs[key];
+	    if (component.componentWillLeave) {
+	      component.componentWillLeave(this._handleDoneLeaving.bind(this, key));
+	    } else {
+	      // Note that this is somewhat dangerous b/c it calls setState()
+	      // again, effectively mutating the component before all the work
+	      // is done.
+	      this._handleDoneLeaving(key);
+	    }
+	  },
+
+	  _handleDoneLeaving: function (key) {
+	    var component = this.refs[key];
+
+	    if (component.componentDidLeave) {
+	      component.componentDidLeave();
+	    }
+
+	    delete this.currentlyTransitioningKeys[key];
+
+	    var currentChildMapping = ReactTransitionChildMapping.getChildMapping(this.props.children);
+
+	    if (currentChildMapping && currentChildMapping.hasOwnProperty(key)) {
+	      // This entered again before it fully left. Add it again.
+	      this.performEnter(key);
+	    } else {
+	      this.setState(function (state) {
+	        var newChildren = assign({}, state.children);
+	        delete newChildren[key];
+	        return { children: newChildren };
+	      });
+	    }
+	  },
+
+	  render: function () {
+	    // TODO: we could get rid of the need for the wrapper node
+	    // by cloning a single child
+	    var childrenToRender = [];
+	    for (var key in this.state.children) {
+	      var child = this.state.children[key];
+	      if (child) {
+	        // You may need to apply reactive updates to a child as it is leaving.
+	        // The normal React way to do it won't work since the child will have
+	        // already been removed. In case you need this behavior you can provide
+	        // a childFactory function to wrap every child, even the ones that are
+	        // leaving.
+	        childrenToRender.push(React.cloneElement(this.props.childFactory(child), { ref: key, key: key }));
+	      }
+	    }
+	    return React.createElement(this.props.component, this.props, childrenToRender);
+	  }
+	});
+
+	module.exports = ReactTransitionGroup;
+
+/***/ },
+/* 301 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2013-2015, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @typechecks static-only
+	 * @providesModule ReactTransitionChildMapping
+	 */
+
+	'use strict';
+
+	var flattenChildren = __webpack_require__(171);
+
+	var ReactTransitionChildMapping = {
+	  /**
+	   * Given `this.props.children`, return an object mapping key to child. Just
+	   * simple syntactic sugar around flattenChildren().
+	   *
+	   * @param {*} children `this.props.children`
+	   * @return {object} Mapping of key to child
+	   */
+	  getChildMapping: function (children) {
+	    if (!children) {
+	      return children;
+	    }
+	    return flattenChildren(children);
+	  },
+
+	  /**
+	   * When you're adding or removing children some may be added or removed in the
+	   * same render pass. We want to show *both* since we want to simultaneously
+	   * animate elements in and out. This function takes a previous set of keys
+	   * and a new set of keys and merges them with its best guess of the correct
+	   * ordering. In the future we may expose some of the utilities in
+	   * ReactMultiChild to make this easy, but for now React itself does not
+	   * directly have this concept of the union of prevChildren and nextChildren
+	   * so we implement it here.
+	   *
+	   * @param {object} prev prev children as returned from
+	   * `ReactTransitionChildMapping.getChildMapping()`.
+	   * @param {object} next next children as returned from
+	   * `ReactTransitionChildMapping.getChildMapping()`.
+	   * @return {object} a key set that contains all keys in `prev` and all keys
+	   * in `next` in a reasonable order.
+	   */
+	  mergeChildMappings: function (prev, next) {
+	    prev = prev || {};
+	    next = next || {};
+
+	    function getValueForKey(key) {
+	      if (next.hasOwnProperty(key)) {
+	        return next[key];
+	      } else {
+	        return prev[key];
+	      }
+	    }
+
+	    // For each key of `next`, the list of keys to insert before that key in
+	    // the combined list
+	    var nextKeysPending = {};
+
+	    var pendingKeys = [];
+	    for (var prevKey in prev) {
+	      if (next.hasOwnProperty(prevKey)) {
+	        if (pendingKeys.length) {
+	          nextKeysPending[prevKey] = pendingKeys;
+	          pendingKeys = [];
+	        }
+	      } else {
+	        pendingKeys.push(prevKey);
+	      }
+	    }
+
+	    var i;
+	    var childMapping = {};
+	    for (var nextKey in next) {
+	      if (nextKeysPending.hasOwnProperty(nextKey)) {
+	        for (i = 0; i < nextKeysPending[nextKey].length; i++) {
+	          var pendingNextKey = nextKeysPending[nextKey][i];
+	          childMapping[nextKeysPending[nextKey][i]] = getValueForKey(pendingNextKey);
+	        }
+	      }
+	      childMapping[nextKey] = getValueForKey(nextKey);
+	    }
+
+	    // Finally, add the keys which didn't appear before any key in `next`
+	    for (i = 0; i < pendingKeys.length; i++) {
+	      childMapping[pendingKeys[i]] = getValueForKey(pendingKeys[i]);
+	    }
+
+	    return childMapping;
+	  }
+	};
+
+	module.exports = ReactTransitionChildMapping;
+
+/***/ },
+/* 302 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+	var React = __webpack_require__(56);
+	var ReactDOM = __webpack_require__(213);
+	var PureRenderMixin = __webpack_require__(279);
+	var StylePropable = __webpack_require__(253);
+	var AutoPrefix = __webpack_require__(258);
+	var Transitions = __webpack_require__(283);
+	var DefaultRawTheme = __webpack_require__(272);
+	var ThemeManager = __webpack_require__(275);
+
+	var ScaleInChild = React.createClass({
+	  displayName: 'ScaleInChild',
+
+	  mixins: [PureRenderMixin, StylePropable],
+
+	  contextTypes: {
+	    muiTheme: React.PropTypes.object
+	  },
+
+	  //for passing default theme context to children
+	  childContextTypes: {
+	    muiTheme: React.PropTypes.object
+	  },
+
+	  getChildContext: function getChildContext() {
+	    return {
+	      muiTheme: this.state.muiTheme
+	    };
+	  },
+
+	  getInitialState: function getInitialState() {
+	    return {
+	      muiTheme: this.context.muiTheme ? this.context.muiTheme : ThemeManager.getMuiTheme(DefaultRawTheme)
+	    };
+	  },
+
+	  //to update theme inside state whenever a new theme is passed down
+	  //from the parent / owner using context
+	  componentWillReceiveProps: function componentWillReceiveProps(nextProps, nextContext) {
+	    var newMuiTheme = nextContext.muiTheme ? nextContext.muiTheme : this.state.muiTheme;
+	    this.setState({ muiTheme: newMuiTheme });
+	  },
+
+	  propTypes: {
+	    enterDelay: React.PropTypes.number,
+	    maxScale: React.PropTypes.number,
+	    minScale: React.PropTypes.number,
+	    style: React.PropTypes.object
+	  },
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      enterDelay: 0,
+	      maxScale: 1,
+	      minScale: 0
+	    };
+	  },
+
+	  componentWillAppear: function componentWillAppear(callback) {
+	    this._initializeAnimation(callback);
+	  },
+
+	  componentWillEnter: function componentWillEnter(callback) {
+	    this._initializeAnimation(callback);
+	  },
+
+	  componentDidAppear: function componentDidAppear() {
+	    this._animate();
+	  },
+
+	  componentDidEnter: function componentDidEnter() {
+	    this._animate();
+	  },
+
+	  componentWillLeave: function componentWillLeave(callback) {
+	    var _this = this;
+
+	    var style = ReactDOM.findDOMNode(this).style;
+
+	    style.opacity = '0';
+	    AutoPrefix.set(style, 'transform', 'scale(' + this.props.minScale + ')');
+
+	    setTimeout(function () {
+	      if (_this.isMounted()) callback();
+	    }, 450);
+	  },
+
+	  render: function render() {
+	    var _props = this.props;
+	    var children = _props.children;
+	    var enterDelay = _props.enterDelay;
+	    var style = _props.style;
+
+	    var other = _objectWithoutProperties(_props, ['children', 'enterDelay', 'style']);
+
+	    var mergedRootStyles = this.prepareStyles({
+	      position: 'absolute',
+	      height: '100%',
+	      width: '100%',
+	      top: 0,
+	      left: 0,
+	      transition: Transitions.easeOut(null, ['transform', 'opacity'])
+	    }, style);
+
+	    return React.createElement(
+	      'div',
+	      _extends({}, other, { style: mergedRootStyles }),
+	      children
+	    );
+	  },
+
+	  _animate: function _animate() {
+	    var style = ReactDOM.findDOMNode(this).style;
+
+	    style.opacity = '1';
+	    AutoPrefix.set(style, 'transform', 'scale(' + this.props.maxScale + ')');
+	  },
+
+	  _initializeAnimation: function _initializeAnimation(callback) {
+	    var _this2 = this;
+
+	    var style = ReactDOM.findDOMNode(this).style;
+
+	    style.opacity = '0';
+	    AutoPrefix.set(style, 'transform', 'scale(0)');
+
+	    setTimeout(function () {
+	      if (_this2.isMounted()) callback();
+	    }, this.props.enterDelay);
+	  }
+
+	});
+
+	module.exports = ScaleInChild;
+
+/***/ },
+/* 303 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var React = __webpack_require__(56);
+	var ReactDOM = __webpack_require__(213);
+	var PureRenderMixin = __webpack_require__(279);
+	var ReactTransitionGroup = __webpack_require__(299);
+	var StylePropable = __webpack_require__(253);
+	var Dom = __webpack_require__(304);
+	var ImmutabilityHelper = __webpack_require__(254);
+	var CircleRipple = __webpack_require__(305);
+
+	var TouchRipple = React.createClass({
+	  displayName: 'TouchRipple',
+
+	  mixins: [PureRenderMixin, StylePropable],
+
+	  propTypes: {
+	    centerRipple: React.PropTypes.bool,
+	    color: React.PropTypes.string,
+	    opacity: React.PropTypes.number,
+	    style: React.PropTypes.object
+	  },
+
+	  getInitialState: function getInitialState() {
+	    //Touch start produces a mouse down event for compat reasons. To avoid
+	    //showing ripples twice we skip showing a ripple for the first mouse down
+	    //after a touch start. Note we don't store ignoreNextMouseDown in this.state
+	    //to avoid re-rendering when we change it
+	    this._ignoreNextMouseDown = false;
+
+	    return {
+	      //This prop allows us to only render the ReactTransitionGroup
+	      //on the first click of the component, making the inital
+	      //render faster
+	      hasRipples: false,
+	      nextKey: 0,
+	      ripples: []
+	    };
+	  },
+
+	  render: function render() {
+	    var _props = this.props;
+	    var children = _props.children;
+	    var style = _props.style;
+	    var _state = this.state;
+	    var hasRipples = _state.hasRipples;
+	    var ripples = _state.ripples;
+
+	    var rippleGroup = undefined;
+	    if (hasRipples) {
+	      var mergedStyles = this.mergeAndPrefix({
+	        height: '100%',
+	        width: '100%',
+	        position: 'absolute',
+	        top: 0,
+	        left: 0,
+	        overflow: 'hidden'
+	      }, style);
+
+	      rippleGroup = React.createElement(
+	        ReactTransitionGroup,
+	        { style: mergedStyles },
+	        ripples
+	      );
+	    }
+
+	    return React.createElement(
+	      'div',
+	      {
+	        onMouseUp: this._handleMouseUp,
+	        onMouseDown: this._handleMouseDown,
+	        onMouseLeave: this._handleMouseLeave,
+	        onTouchStart: this._handleTouchStart,
+	        onTouchEnd: this._handleTouchEnd },
+	      rippleGroup,
+	      children
+	    );
+	  },
+
+	  start: function start(e, isRippleTouchGenerated) {
+	    if (this._ignoreNextMouseDown && !isRippleTouchGenerated) {
+	      this._ignoreNextMouseDown = false;
+	      return;
+	    }
+
+	    var ripples = this.state.ripples;
+
+	    //Add a ripple to the ripples array
+	    ripples = ImmutabilityHelper.push(ripples, React.createElement(CircleRipple, {
+	      key: this.state.nextKey,
+	      style: !this.props.centerRipple ? this._getRippleStyle(e) : {},
+	      color: this.props.color,
+	      opacity: this.props.opacity,
+	      touchGenerated: isRippleTouchGenerated }));
+
+	    this._ignoreNextMouseDown = isRippleTouchGenerated;
+	    this.setState({
+	      hasRipples: true,
+	      nextKey: this.state.nextKey + 1,
+	      ripples: ripples
+	    });
+	  },
+
+	  end: function end() {
+	    var currentRipples = this.state.ripples;
+	    this.setState({
+	      ripples: ImmutabilityHelper.shift(currentRipples)
+	    });
+	  },
+
+	  _handleMouseDown: function _handleMouseDown(e) {
+	    //only listen to left clicks
+	    if (e.button === 0) this.start(e, false);
+	  },
+
+	  _handleMouseUp: function _handleMouseUp() {
+	    this.end();
+	  },
+
+	  _handleMouseLeave: function _handleMouseLeave() {
+	    this.end();
+	  },
+
+	  _handleTouchStart: function _handleTouchStart(e) {
+	    this.start(e, true);
+	  },
+
+	  _handleTouchEnd: function _handleTouchEnd() {
+	    this.end();
+	  },
+
+	  _getRippleStyle: function _getRippleStyle(e) {
+	    var style = {};
+	    var el = ReactDOM.findDOMNode(this);
+	    var elHeight = el.offsetHeight;
+	    var elWidth = el.offsetWidth;
+	    var offset = Dom.offset(el);
+	    var isTouchEvent = e.touches && e.touches.length;
+	    var pageX = isTouchEvent ? e.touches[0].pageX : e.pageX;
+	    var pageY = isTouchEvent ? e.touches[0].pageY : e.pageY;
+	    var pointerX = pageX - offset.left;
+	    var pointerY = pageY - offset.top;
+	    var topLeftDiag = this._calcDiag(pointerX, pointerY);
+	    var topRightDiag = this._calcDiag(elWidth - pointerX, pointerY);
+	    var botRightDiag = this._calcDiag(elWidth - pointerX, elHeight - pointerY);
+	    var botLeftDiag = this._calcDiag(pointerX, elHeight - pointerY);
+	    var rippleRadius = Math.max(topLeftDiag, topRightDiag, botRightDiag, botLeftDiag);
+	    var rippleSize = rippleRadius * 2;
+	    var left = pointerX - rippleRadius;
+	    var top = pointerY - rippleRadius;
+
+	    style.height = rippleSize + 'px';
+	    style.width = rippleSize + 'px';
+	    style.top = top + 'px';
+	    style.left = left + 'px';
+
+	    return style;
+	  },
+
+	  _calcDiag: function _calcDiag(a, b) {
+	    return Math.sqrt(a * a + b * b);
+	  }
+
+	});
+
+	module.exports = TouchRipple;
+
+/***/ },
+/* 304 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	module.exports = {
+
+	  isDescendant: function isDescendant(parent, child) {
+	    var node = child.parentNode;
+
+	    while (node !== null) {
+	      if (node === parent) return true;
+	      node = node.parentNode;
+	    }
+
+	    return false;
+	  },
+
+	  offset: function offset(el) {
+	    var rect = el.getBoundingClientRect();
+	    return {
+	      top: rect.top + document.body.scrollTop,
+	      left: rect.left + document.body.scrollLeft
+	    };
+	  },
+
+	  getStyleAttributeAsNumber: function getStyleAttributeAsNumber(el, attr) {
+	    var attrStyle = el.style[attr];
+	    var attrNum = 0;
+	    if (attrStyle && attrStyle.length) {
+	      attrNum = parseInt(attrStyle);
+	    }
+
+	    return attrNum;
+	  },
+
+	  addClass: function addClass(el, className) {
+	    if (el.classList) el.classList.add(className);else el.className += ' ' + className;
+	  },
+
+	  removeClass: function removeClass(el, className) {
+	    if (el.classList) el.classList.remove(className);else el.className = el.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+	  },
+
+	  hasClass: function hasClass(el, className) {
+	    if (el.classList) return el.classList.contains(className);else return new RegExp('(^| )' + className + '( |$)', 'gi').test(el.className);
+	  },
+
+	  toggleClass: function toggleClass(el, className) {
+	    if (this.hasClass(el, className)) this.removeClass(el, className);else this.addClass(el, className);
+	  },
+
+	  forceRedraw: function forceRedraw(el) {
+	    var originalDisplay = el.style.display;
+
+	    el.style.display = 'none';
+	    el.style.display = originalDisplay;
+	  },
+
+	  withoutTransition: function withoutTransition(el, callback) {
+	    var originalTransition = el.style.transition;
+
+	    //turn off transition
+	    el.style.transition = null;
+
+	    callback();
+
+	    //force a redraw
+	    this.forceRedraw(el);
+
+	    //put the transition back
+	    el.style.transition = originalTransition;
+	  }
+
+	};
+
+/***/ },
+/* 305 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+	var React = __webpack_require__(56);
+	var ReactDOM = __webpack_require__(213);
+	var PureRenderMixin = __webpack_require__(279);
+	var StylePropable = __webpack_require__(253);
+	var AutoPrefix = __webpack_require__(258);
+	var Transitions = __webpack_require__(283);
+	var Colors = __webpack_require__(271);
+
+	var CircleRipple = React.createClass({
+	  displayName: 'CircleRipple',
+
+	  mixins: [PureRenderMixin, StylePropable],
+
+	  propTypes: {
+	    color: React.PropTypes.string,
+	    opacity: React.PropTypes.number,
+	    style: React.PropTypes.object
+	  },
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      color: Colors.darkBlack,
+	      opacity: 0.16
+	    };
+	  },
+
+	  componentWillAppear: function componentWillAppear(callback) {
+	    this._initializeAnimation(callback);
+	  },
+
+	  componentWillEnter: function componentWillEnter(callback) {
+	    this._initializeAnimation(callback);
+	  },
+
+	  componentDidAppear: function componentDidAppear() {
+	    this._animate();
+	  },
+
+	  componentDidEnter: function componentDidEnter() {
+	    this._animate();
+	  },
+
+	  componentWillLeave: function componentWillLeave(callback) {
+	    var _this = this;
+
+	    var style = ReactDOM.findDOMNode(this).style;
+	    style.opacity = 0;
+	    setTimeout(function () {
+	      if (_this.isMounted()) callback();
+	    }, 2000);
+	  },
+
+	  render: function render() {
+	    var _props = this.props;
+	    var color = _props.color;
+	    var opacity = _props.opacity;
+	    var style = _props.style;
+
+	    var other = _objectWithoutProperties(_props, ['color', 'opacity', 'style']);
+
+	    var mergedStyles = this.mergeAndPrefix({
+	      position: 'absolute',
+	      top: 0,
+	      left: 0,
+	      height: '100%',
+	      width: '100%',
+	      borderRadius: '50%',
+	      backgroundColor: color
+	    }, style);
+
+	    return React.createElement('div', _extends({}, other, { style: mergedStyles }));
+	  },
+
+	  _animate: function _animate() {
+	    var style = ReactDOM.findDOMNode(this).style;
+	    var transitionValue = Transitions.easeOut('2s', 'opacity') + ',' + Transitions.easeOut('1s', 'transform');
+	    AutoPrefix.set(style, 'transition', transitionValue);
+	    AutoPrefix.set(style, 'transform', 'scale(1)');
+	  },
+
+	  _initializeAnimation: function _initializeAnimation(callback) {
+	    var _this2 = this;
+
+	    var style = ReactDOM.findDOMNode(this).style;
+	    style.opacity = this.props.opacity;
+	    AutoPrefix.set(style, 'transform', 'scale(0)');
+	    setTimeout(function () {
+	      if (_this2.isMounted()) callback();
+	    }, 0);
+	  }
+
+	});
+
+	module.exports = CircleRipple;
+
+/***/ },
+/* 306 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+	var React = __webpack_require__(56);
+	var StylePropable = __webpack_require__(253);
+	var Transitions = __webpack_require__(283);
+	var DefaultRawTheme = __webpack_require__(272);
+	var ThemeManager = __webpack_require__(275);
 
 	var FontIcon = React.createClass({
 	  displayName: 'FontIcon',
@@ -41726,7 +40616,7 @@
 	module.exports = FontIcon;
 
 /***/ },
-/* 317 */
+/* 307 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41737,11 +40627,11 @@
 
 	var React = __webpack_require__(56);
 	var ReactDOM = __webpack_require__(213);
-	var StylePropable = __webpack_require__(232);
-	var Transitions = __webpack_require__(250);
-	var Colors = __webpack_require__(259);
-	var DefaultRawTheme = __webpack_require__(258);
-	var ThemeManager = __webpack_require__(262);
+	var StylePropable = __webpack_require__(253);
+	var Transitions = __webpack_require__(283);
+	var Colors = __webpack_require__(271);
+	var DefaultRawTheme = __webpack_require__(272);
+	var ThemeManager = __webpack_require__(275);
 
 	var Tooltip = React.createClass({
 	  displayName: 'Tooltip',
@@ -41903,7 +40793,7 @@
 	module.exports = Tooltip;
 
 /***/ },
-/* 318 */
+/* 308 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41911,11 +40801,11 @@
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 	var React = __webpack_require__(56);
-	var Styles = __webpack_require__(319);
-	var Avatar = __webpack_require__(304);
-	var StylePropable = __webpack_require__(232);
-	var ThemeManager = __webpack_require__(262);
-	var DefaultRawTheme = __webpack_require__(258);
+	var Styles = __webpack_require__(309);
+	var Avatar = __webpack_require__(252);
+	var StylePropable = __webpack_require__(253);
+	var ThemeManager = __webpack_require__(275);
+	var DefaultRawTheme = __webpack_require__(272);
 
 	var CardHeader = React.createClass({
 	  displayName: 'CardHeader',
@@ -42040,32 +40930,32 @@
 	module.exports = CardHeader;
 
 /***/ },
-/* 319 */
+/* 309 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	module.exports = {
-	  AutoPrefix: __webpack_require__(237),
-	  Colors: __webpack_require__(259),
-	  Spacing: __webpack_require__(261),
-	  ThemeManager: __webpack_require__(262),
-	  Transitions: __webpack_require__(250),
-	  Typography: __webpack_require__(320),
-	  LightRawTheme: __webpack_require__(258),
-	  DarkRawTheme: __webpack_require__(321),
-	  ThemeDecorator: __webpack_require__(322)
+	  AutoPrefix: __webpack_require__(258),
+	  Colors: __webpack_require__(271),
+	  Spacing: __webpack_require__(274),
+	  ThemeManager: __webpack_require__(275),
+	  Transitions: __webpack_require__(283),
+	  Typography: __webpack_require__(310),
+	  LightRawTheme: __webpack_require__(272),
+	  DarkRawTheme: __webpack_require__(311),
+	  ThemeDecorator: __webpack_require__(312)
 	};
 
 /***/ },
-/* 320 */
+/* 310 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
-	var Colors = __webpack_require__(259);
+	var Colors = __webpack_require__(271);
 
 	var Typography = function Typography() {
 	  _classCallCheck(this, Typography);
@@ -42090,14 +40980,14 @@
 	module.exports = new Typography();
 
 /***/ },
-/* 321 */
+/* 311 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var Colors = __webpack_require__(259);
-	var ColorManipulator = __webpack_require__(260);
-	var Spacing = __webpack_require__(261);
+	var Colors = __webpack_require__(271);
+	var ColorManipulator = __webpack_require__(273);
+	var Spacing = __webpack_require__(274);
 
 	module.exports = {
 	  spacing: Spacing,
@@ -42118,7 +41008,7 @@
 	};
 
 /***/ },
-/* 322 */
+/* 312 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42149,7 +41039,7 @@
 	};
 
 /***/ },
-/* 323 */
+/* 313 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42157,10 +41047,10 @@
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 	var React = __webpack_require__(56);
-	var Styles = __webpack_require__(319);
-	var StylePropable = __webpack_require__(232);
-	var ThemeManager = __webpack_require__(262);
-	var DefaultRawTheme = __webpack_require__(258);
+	var Styles = __webpack_require__(309);
+	var StylePropable = __webpack_require__(253);
+	var ThemeManager = __webpack_require__(275);
+	var DefaultRawTheme = __webpack_require__(272);
 
 	var CardTitle = React.createClass({
 	  displayName: 'CardTitle',
@@ -42262,7 +41152,7 @@
 	module.exports = CardTitle;
 
 /***/ },
-/* 324 */
+/* 314 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42270,10 +41160,10 @@
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 	var React = __webpack_require__(56);
-	var Styles = __webpack_require__(319);
-	var StylePropable = __webpack_require__(232);
-	var ThemeManager = __webpack_require__(262);
-	var DefaultRawTheme = __webpack_require__(258);
+	var Styles = __webpack_require__(309);
+	var StylePropable = __webpack_require__(253);
+	var ThemeManager = __webpack_require__(275);
+	var DefaultRawTheme = __webpack_require__(272);
 
 	var CardText = React.createClass({
 	  displayName: 'CardText',
@@ -42341,7 +41231,7 @@
 	module.exports = CardText;
 
 /***/ },
-/* 325 */
+/* 315 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {/** @jsx React.DOM */var React = __webpack_require__(56);
@@ -42359,6 +41249,7 @@
 		getInitialState: function(e) {
 			return {value: "", themeName: null}
 		},
+		//assigns theme names to post buttons to assign posts to groups
 		componentWillMount: function(){
 			switch(this.props.theme){
 				case 1:
@@ -42419,87 +41310,17 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(215)))
 
 /***/ },
-/* 326 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/** @jsx React.DOM */var React = __webpack_require__(56);
-	var BadgeCount = __webpack_require__(327)
-	var Badges = React.createClass({displayName: "Badges",
-		getInitialState: function(){
-			return({
-				data: []
-			})
-		},
-		componentWillMount: function() {
-		var that = this;
-		var Badge = Backbone.Model.extend({
-				url:'https://safe-brook-9891.herokuapp.com/api/earned/?username='+ this.props.username
-				})
-				var BadgeCollection = Backbone.Collection.extend({
-				Model:Badge,
-				url:'https://safe-brook-9891.herokuapp.com/api/earned/?username='+this.props.username
-				})
-				var BadgeCollection = new BadgeCollection();
-
-				BadgeCollection.fetch({
-					success:function(resp){
-					
-						that.setState({
-							data:resp.toJSON()
-						})
-					}
-				})
-	},
-		render:function() {
-			return(React.createElement("div", {id: "badgeContainer"}, 
-					React.createElement("h2", {id: "badgeHeader"}, "Badges"), 
-					React.createElement(BadgeCount, {data: this.state.data})
-				))
-		}
-	});
-
-	module.exports = Badges;
-
-
-/***/ },
-/* 327 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/** @jsx React.DOM */var React = __webpack_require__(56);
-
-	var BadgeCount = React.createClass({displayName: "BadgeCount",
-		render:function(){
-			return(
-				React.createElement("div", null, 
-					this.props.data.map(function(obj){
-						return(
-
-								React.createElement("div", {className: "badgeTest", key: obj.id}, 
-									React.createElement("span", null, obj.achievement.badge_amount, " x ", React.createElement("img", {className: "badge", src: "/assets/badge.jpg"})), 
-									React.createElement("span", {className: "achievementTitle"}, obj.achievement.name)
-								)
-
-
-							)
-
-					})
-				)
-				)
-		}
-	})
-
-	module.exports = BadgeCount;
-
-
-/***/ },
-/* 328 */
+/* 316 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {/** @jsx React.DOM */var React = __webpack_require__(56);
-	var FriendList = __webpack_require__(329);
-	var ToFriendList = __webpack_require__(330);
-	var ViewMessage = __webpack_require__(331);
+	var FriendList = __webpack_require__(317);
+	var ToFriendList = __webpack_require__(318);
+	var ViewMessage = __webpack_require__(319);
 
+
+	//renders the message app which pulls the friends a user has and enables 
+	//them to send a private message. User can toggle the message app from hidden to shown.
 	var MessageApp = React.createClass({displayName: "MessageApp",
 		getInitialState: function(){
 			return({
@@ -42554,6 +41375,8 @@
 					that.setState({
 						newMessage: resp.toJSON()
 					})
+
+					
 				}
 			})
 		},
@@ -42589,10 +41412,13 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(215)))
 
 /***/ },
-/* 329 */
+/* 317 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(56);
+
+	//displays fromfriend button on messaging friendselect is a function 
+	//which passes the friends id to the message model.
 	var FriendList = React.createClass({displayName: "FriendList",
 
 		render:function(){
@@ -42605,10 +41431,13 @@
 
 
 /***/ },
-/* 330 */
+/* 318 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(56);
+
+	//displays fromfriend button on messaging friendselect is a function 
+	//which passes the friends id to the message model.
 	var ToFriendList = React.createClass({displayName: "ToFriendList",
 
 		render:function(){
@@ -42620,12 +41449,14 @@
 	module.exports = ToFriendList;
 
 /***/ },
-/* 331 */
+/* 319 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(_) {/** @jsx React.DOM */var React = __webpack_require__(56);
-	var Store = __webpack_require__(290)
+	var Store = __webpack_require__(244)
 
+
+	//users sees all private messages he sent and received. Updates in realtime.
 	var ViewMessage = React.createClass({displayName: "ViewMessage",
 		getInitialState: function(){
 			return({
@@ -42652,6 +41483,7 @@
 				success:function(resp){
 					_.extend(Store.data,{messageList:resp.toJSON()});
 					that._update();
+					
 				}
 			})
 		},
@@ -42671,11 +41503,11 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(218)))
 
 /***/ },
-/* 332 */
+/* 320 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(56);
-	var AvatarRankXp = __webpack_require__(298);
+	var AvatarRankXp = __webpack_require__(321);
 	var Friends = __webpack_require__(223);
 	var Group = __webpack_require__(226);
 	var Greeting =__webpack_require__(222);
@@ -42699,12 +41531,122 @@
 
 
 /***/ },
-/* 333 */
+/* 321 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/** @jsx React.DOM */var React = __webpack_require__(56);
+	var AvatarChange = __webpack_require__(322);
+
+	//avatars state is set here. Hide and show are called here for the avatar modal. 
+	//_change previews the avatar for the user.
+	//rank and experience is displayed here as well.
+	//ternary displays the correct rank xp of the user.
+	var AvatarRankXp = React.createClass({displayName: "AvatarRankXp",
+		getInitialState:function(){
+			return({
+				hidden: true,
+				avatar: this.props.avatar,
+				value: 1
+			})
+		},
+		//show/hide avatar selection window
+		_show:function(){
+			this.setState({
+				hidden: false
+			})
+		},
+		_hide:function(){
+			this.setState({
+				hidden: true
+			})
+		},
+		_change: function(e) {
+			this.setState({
+				avatar: e.target.id,
+				value: e.target.id
+			})
+		},
+		render:function() {
+
+			return(React.createElement("div", {id: "avatarRankXpContainer"}, 
+					React.createElement("div", {id: "avatarDiv"}, 
+					React.createElement("div", {id: "picture"}, React.createElement("img", {className: "avatarImg", onClick: this._show, src: '../../../assets/avatar'+this.state.avatar+'.png'})), 
+
+						(this.props.rank=== 1 ? React.createElement("span", {id: "rank1"}, "Novice") : null), 
+						(this.props.rank=== 2 ? React.createElement("span", {id: "rank2"}, "JourneyMan") : null), 
+						(this.props.rank=== 3 ? React.createElement("span", {id: "rank3"}, "Mentor") : null), 
+
+						React.createElement("span", {id: "exp"}, React.createElement("span", null, "Exp: "), this.props.exp)
+					), 
+					React.createElement(AvatarChange, {hidden: this.state.hidden, hide: this._hide, change: this._change, username: this.props.username, value: this.state.value})
+				))
+		}
+	});
+
+	module.exports = AvatarRankXp;
+
+
+/***/ },
+/* 322 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function($) {/** @jsx React.DOM */var React = __webpack_require__(56);
+	var Store = __webpack_require__(244);
+
+	//avatars can be selected by clicking on the respective images.
+	//onclick a function is called which updates the avatar.
+	//avatar submit sends the state up to the api.
+	//this modal is hidden until one hits the avatar on their profile.
+	var AvatarChange = React.createClass({displayName: "AvatarChange",
+		getInitialState: function(){
+			return({
+				avatar: '../../../assets/avatar'
+				
+			})
+		},
+		
+		_update:function(e){
+			this.props.hide()
+			$.ajax({
+				url:'https://safe-brook-9891.herokuapp.com/api/profiles/'+ Store.data.objectId,
+				method:'PUT',
+				data: {avatar: e.target.value }
+			})
+
+		},
+		render:function(){
+			
+			return(React.createElement("div", null, (this.props.hidden ? null :
+				
+				React.createElement("div", {id: "avatarModal"}, 
+				React.createElement("h2", {id: "avatarModalHeader"}, "Pick a new Avatar"), 
+					React.createElement("ul", {id: "avatarUl"}, 
+						React.createElement("li", {className: "avatars"}, React.createElement("img", {id: "1", src: this.state.avatar+'1.png', onClick: this.props.change})), 
+						React.createElement("li", {className: "avatars"}, React.createElement("img", {id: "2", src: this.state.avatar+'2.png', onClick: this.props.change})), 
+						React.createElement("li", {className: "avatars"}, React.createElement("img", {id: "3", src: this.state.avatar+'3.png', onClick: this.props.change}))
+						
+					), 
+					React.createElement("button", {id: "avatarSubmit", value: this.props.value, onClick: this._update}, "Got it!")
+				)
+				
+				
+				
+				
+				)
+				)
+			)
+		}
+	});
+	module.exports = AvatarChange;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(215)))
+
+/***/ },
+/* 323 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(56);
 	var GoalListApp = __webpack_require__(229);
-	var Badges = __webpack_require__(326);
+	var Badges = __webpack_require__(324);
 
 	var ProfileRight = React.createClass({displayName: "ProfileRight",
 		render:function(){
@@ -42718,7 +41660,82 @@
 	module.exports = ProfileRight;
 
 /***/ },
-/* 334 */
+/* 324 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/** @jsx React.DOM */var React = __webpack_require__(56);
+	var BadgeCount = __webpack_require__(325)
+	var Badges = React.createClass({displayName: "Badges",
+		getInitialState: function(){
+			return({
+				data: []
+			})
+		},
+		//retrieve award/badge date from api
+		componentWillMount: function() {
+		var that = this;
+		var Badge = Backbone.Model.extend({
+				url:'https://safe-brook-9891.herokuapp.com/api/earned/?username='+ this.props.username
+				})
+				var BadgeCollection = Backbone.Collection.extend({
+				Model:Badge,
+				url:'https://safe-brook-9891.herokuapp.com/api/earned/?username='+this.props.username
+				})
+				var BadgeCollection = new BadgeCollection();
+
+				BadgeCollection.fetch({
+					success:function(resp){
+
+						that.setState({
+							data:resp.toJSON()
+						})
+					}
+				})
+	},
+		render:function() {
+			return(React.createElement("div", {id: "badgeContainer"}, 
+					React.createElement("h2", {id: "badgeHeader"}, "Badges"), 
+					React.createElement(BadgeCount, {data: this.state.data})
+				))
+		}
+	});
+
+	module.exports = Badges;
+
+
+/***/ },
+/* 325 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/** @jsx React.DOM */var React = __webpack_require__(56);
+
+	//display earned user badges
+	var BadgeCount = React.createClass({displayName: "BadgeCount",
+		render:function(){
+			return(
+				React.createElement("div", null, 
+					this.props.data.map(function(obj){
+						return(
+
+								React.createElement("div", {className: "badgeTest", key: obj.id}, 
+									React.createElement("span", null, obj.achievement.badge_amount, " x ", React.createElement("img", {className: "badge", src: "/assets/badge.jpg"})), 
+									React.createElement("span", {className: "achievementTitle"}, obj.achievement.name)
+								)
+
+
+							)
+
+					})
+				)
+				)
+		}
+	})
+
+	module.exports = BadgeCount;
+
+
+/***/ },
+/* 326 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(56);
@@ -42732,21 +41749,21 @@
 	module.exports = Info;
 
 /***/ },
-/* 335 */
+/* 327 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(56);
 	var Backbone = __webpack_require__(217);
-	var OtherPosts= __webpack_require__(336);
-	var OtherGoals= __webpack_require__(337);
-	var NameTag = __webpack_require__(338);
-	var NavUserView = __webpack_require__(339);
-	var Friendly = __webpack_require__(289);
-	var AddFriend = __webpack_require__(340);
-	var AvatarRankXpUser = __webpack_require__(341);
-	var FriendsUser= __webpack_require__(342);
-	var GroupsUser = __webpack_require__(345)
-	var ProfileLeft = __webpack_require__(332);
+	var OtherPosts= __webpack_require__(328);
+	var OtherGoals= __webpack_require__(329);
+	var NameTag = __webpack_require__(330);
+	var NavUserView = __webpack_require__(331);
+	var Friendly = __webpack_require__(243);
+	var AddFriend = __webpack_require__(332);
+	var AvatarRankXpUser = __webpack_require__(333);
+	var FriendsUser= __webpack_require__(334);
+	var GroupsUser = __webpack_require__(337)
+	var ProfileLeft = __webpack_require__(320);
 	var UserViewApp = React.createClass({displayName: "UserViewApp",
 		getInitialState: function(){
 			return {
@@ -42819,8 +41836,8 @@
 
 					React.createElement(GroupsUser, {
 						theirName: this.props.name, 
-						groups: this.props.groups, 
-						goals: this.props.groups, 
+						groupsUser: this.props.groupsUser, 
+						
 						router: this.props.router}), 
 
 					React.createElement(OtherPosts, {posts: this.props.posts, theirName: this.props.name}), 
@@ -42837,11 +41854,12 @@
 
 
 /***/ },
-/* 336 */
+/* 328 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(56);
 
+	//sends posts to userView page
 	var OtherPosts = React.createClass({displayName: "OtherPosts",
 		render: function() {
 			var test=this.props.posts.map(function(obj){
@@ -42853,7 +41871,7 @@
 
 
 					return(React.createElement("div", {id: "otherPostsContainer"}, 
-								React.createElement("h2", null, this.props.theirName, "'s Posts"), 
+								React.createElement("h2", {id: "otherPostsHeader"}, this.props.theirName, "'s Posts"), 
 								test
 							))
 		}
@@ -42863,11 +41881,12 @@
 
 
 /***/ },
-/* 337 */
+/* 329 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(56);
 
+	//displays other users goals.
 	var OtherGoals = React.createClass({displayName: "OtherGoals",
 		render:function(){
 
@@ -42885,7 +41904,7 @@
 
 
 /***/ },
-/* 338 */
+/* 330 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(56);
@@ -42904,26 +41923,35 @@
 
 
 /***/ },
-/* 339 */
+/* 331 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(56);
-	var SearchUsers = __webpack_require__(294)
-	var AddFriend = __webpack_require__(340);
+	var SearchUsers = __webpack_require__(240)
+	var AddFriend = __webpack_require__(332);
 
 	var NavUserView = React.createClass({displayName: "NavUserView",
 
-		
+
 		_profileNav: function(e){
 			var router =this.props.router;
 			router.navigate('profile/' + this.props.username, {trigger:true});
 		},
+		//logic to hide AddFriend button if target user has already been sent a friend request
 		render:function(){
 
 			return(React.createElement("div", null, 
-						React.createElement("div", {id: "navContainerUser"}, 
+						React.createElement("div", {className: "navContainer"}, 
 							React.createElement("ul", {id: "navUlUser"}, 
-								React.createElement("li", {onClick: this._profileNav}, "MyProfile"), 
+								React.createElement("li", {className: "logo"}, "UpgrAID"), 
+								React.createElement("li", {className: "mainLi", onClick: this._profileNav}, "MyProfile"), 
+								React.createElement("li", {className: "searchBar"}, 
+									React.createElement(SearchUsers, {
+										users: [], 
+										doSearch: [], 
+										query: [], 
+										router: this.props.router})
+								), 
 								React.createElement("li", null, !this.props.friend ? React.createElement(AddFriend, {userId: this.props.userId, theirId: this.props.theirId}) : null)
 							)
 
@@ -42940,13 +41968,13 @@
 
 
 /***/ },
-/* 340 */
+/* 332 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(56);
-	var Friendly = __webpack_require__(289);
-	var Friendlies = __webpack_require__(291); 
-	var Store = __webpack_require__(290)
+	var Friendly = __webpack_require__(243);
+	var Friendlies = __webpack_require__(245); 
+	var Store = __webpack_require__(244)
 	var AddFriend = React.createClass({displayName: "AddFriend",
 
 		_friend: function(e) {
@@ -42980,40 +42008,43 @@
 
 
 /***/ },
-/* 341 */
+/* 333 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(56);
-	var AvatarChange = __webpack_require__(299);
+	var AvatarChange = __webpack_require__(322);
 	var AvatarRankXpUser = React.createClass({displayName: "AvatarRankXpUser",
-		
+
+		//select user rank based on api rank value
 		render:function() {
-			
+
 			return(React.createElement("div", {id: "avatarRankXpContainerUser"}, 
 					React.createElement("div", {id: "avatarDivUser"}, 
 					React.createElement("span", {id: "usernameAvatar"}, this.props.user), 
-					React.createElement("div", {id: "pictureUser"}, React.createElement("img", {className: "avatarImgUser", onClick: this._show, src: '../../../assets/avatar'+1+'.png'})), 
+					React.createElement("div", {id: "pictureUser"}, React.createElement("img", {className: "avatarImgUser", onClick: this._show, src: '../../../assets/avatar'+1+'.png'}))
+
 						
-						(this.props.rank=== 1 ? React.createElement("span", {id: "rank1User"}, "Novice") : null), 
+					), 
+
+					(this.props.rank=== 1 ? React.createElement("span", {id: "rank1User"}, "Novice") : null), 
 						(this.props.rank=== 2 ? React.createElement("span", {id: "rank2User"}, "JourneyMan") : null), 
 						(this.props.rank=== 3 ? React.createElement("span", {id: "rank3User"}, "Mentor") : null), 
 
 						React.createElement("span", {id: "expUser"}, React.createElement("span", null, "Exp: "), this.props.exp)
-					)
-					
 				))
 		}
 	});
 
 	module.exports = AvatarRankXpUser;
 
+
 /***/ },
-/* 342 */
+/* 334 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(56);
-	var FriendsUserBtn = __webpack_require__(343);
-	var ToFriendUserBtn = __webpack_require__(344);
+	var FriendsUserBtn = __webpack_require__(335);
+	var ToFriendUserBtn = __webpack_require__(336);
 
 	var FriendsUser = React.createClass({displayName: "FriendsUser",
 
@@ -43044,7 +42075,7 @@
 
 
 /***/ },
-/* 343 */
+/* 335 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(56);
@@ -43065,7 +42096,7 @@
 	module.exports = FromFriendsBtn;
 
 /***/ },
-/* 344 */
+/* 336 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(56);
@@ -43086,21 +42117,21 @@
 	module.exports = ToFriendsBtn;
 
 /***/ },
-/* 345 */
+/* 337 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(56);
-	var GroupsBtn = __webpack_require__(346);
+	var GroupsUserBtn = __webpack_require__(338);
 	var GroupsUser = React.createClass({displayName: "GroupsUser",
 		render: function(){
 			var props = this.props;
-
-			var test=this.props.goals.map(function(obj){
+			
+			var test=this.props.groupsUser.map(function(obj){
 
 						return(React.createElement("p", {key: obj.id, className: "groupUserButton"}, React.createElement(GroupsUserBtn, {router: props.router, theme: obj.theme, id: obj.group, title: obj.title, completed: obj.completed})))
 
 				})
-						return(React.createElement("div", {id: "groupsUserContainer"}, React.createElement("h2", {id: "groupsUserHeader"}, this.props.theirName, "'s Groups"), test))
+						return(React.createElement("div", {id: "groupsUserContainer"}, React.createElement("h2", {id: "groupsUserHeader"}, this.props.theirName, "s Groups"), test))
 				}
 			});
 
@@ -43108,7 +42139,7 @@
 
 
 /***/ },
-/* 346 */
+/* 338 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(56);
@@ -43148,18 +42179,18 @@
 	module.exports = GroupsUserBtn;
 
 /***/ },
-/* 347 */
+/* 339 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(_) {/** @jsx React.DOM */var React = __webpack_require__(56);
-	var PostListApp = __webpack_require__(348);
-	var GroupLeft = __webpack_require__(357)
-	var Nav = __webpack_require__(287);
-	var NavGroupView = __webpack_require__(360);
-	var ProfileLeft = __webpack_require__(332);
-	var UserList = __webpack_require__(358)
-	var Store = __webpack_require__(290);
+	var PostListApp = __webpack_require__(340);
+	var Nav = __webpack_require__(236);
+	var NavGroupView = __webpack_require__(349);
+	var ProfileLeft = __webpack_require__(320);
+	var UserList = __webpack_require__(350)
+	var Store = __webpack_require__(244);
 
+	//renders the group app: contains profile left(a persistent nav) group posts and a list of members.
 	var GroupApp = React.createClass({displayName: "GroupApp",
 		getInitialState: function() {
 			return({
@@ -43169,7 +42200,7 @@
 			})
 		},
 		_groupList: function(groupUserList, theme) {
-			console.log(groupUserList);
+			
 			this.setState({
 				groupList: groupUserList,
 				theme: theme
@@ -43197,7 +42228,7 @@
 			})
 		},
 		render:function() {
-			console.log('t', this.state.theme);
+			
 			return(
 				React.createElement("div", null, 
 					React.createElement(NavGroupView, {
@@ -43230,13 +42261,13 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(218)))
 
 /***/ },
-/* 348 */
+/* 340 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(56);
-	var PostInput = __webpack_require__(349);
-	var PostItem = __webpack_require__(350);
-	var Post = __webpack_require__(351);
+	var PostInput = __webpack_require__(341);
+	var PostItem = __webpack_require__(342);
+	var Post = __webpack_require__(343);
 
 	var PostListApp = React.createClass({displayName: "PostListApp",
 		getInitialState: function () {
@@ -43245,8 +42276,8 @@
 
 			}
 		},
-		_addInput: function(collection) {
-
+		//callback function for post input
+			_addInput: function(collection) {
 				this.setState({
 				posts: collection
 			})
@@ -43279,7 +42310,7 @@
 
 
 /***/ },
-/* 349 */
+/* 341 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {/** @jsx React.DOM */var React = __webpack_require__(56);
@@ -43294,7 +42325,7 @@
 			});
 
 	var PostInput = React.createClass({displayName: "PostInput",
-
+	// sends inputed posts to backend
 		_submit: function(e) {
 				e.preventDefault();
 				var props=this.props;
@@ -43338,14 +42369,14 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(215)))
 
 /***/ },
-/* 350 */
+/* 342 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(56);
-	var Post = __webpack_require__(351);
+	var Post = __webpack_require__(343);
 
 	var PostItem = React.createClass({displayName: "PostItem",
-
+	//maps and displays individual posts
 		render: function() {
 			var props=this.props;
 				return(React.createElement("div", {id: "postContainer"}, 
@@ -43363,18 +42394,18 @@
 
 
 /***/ },
-/* 351 */
+/* 343 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(56);
 	var ReactDOM=__webpack_require__(213);
-	var Avatar = __webpack_require__(304);
-	var Card = __webpack_require__(305);
-	var CardHeader = __webpack_require__(318);
-	var CardTitle = __webpack_require__(323);
-	var CardText = __webpack_require__(324);
-	var CommentApp = __webpack_require__(352);
-	var Timeago = __webpack_require__(356);
+	var Avatar = __webpack_require__(252);
+	var Card = __webpack_require__(277);
+	var CardHeader = __webpack_require__(308);
+	var CardTitle = __webpack_require__(313);
+	var CardText = __webpack_require__(314);
+	var CommentApp = __webpack_require__(344);
+	var Timeago = __webpack_require__(348);
 
 	var Post = React.createClass({displayName: "Post",
 		getInitialState: function(){
@@ -43382,6 +42413,7 @@
 				postedAt: this.props.posted
 			}
 		},
+		//sets 'timeago-words' value for post date/time
 		componentWillMount: function(){
 			var dateObj = new Date(this.props.posted)
 			this.setState({postedAt: Timeago(dateObj)});
@@ -43400,7 +42432,7 @@
 					var PostCollection = Backbone.Collection.extend({
 						model: Post
 				});
-
+			//sets re-render of post list afer delete
 			var collection = new PostCollection(this.props.posts);
 			var item = collection.get(props.id);
 			item.destroy({
@@ -43433,16 +42465,15 @@
 	module.exports = Post;
 
 
-
-
 /***/ },
-/* 352 */
+/* 344 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(56);
-	var CommentInput = __webpack_require__(353);
-	var Comment = __webpack_require__(354);
+	var CommentInput = __webpack_require__(345);
+	var Comment = __webpack_require__(346);
 
+	//An input and the comments are rendered to each post. This is applied to all posts.
 	var CommentApp = React.createClass({displayName: "CommentApp",
 		getInitialState: function () {
 			return {
@@ -43476,11 +42507,12 @@
 	module.exports = CommentApp;
 
 /***/ },
-/* 353 */
+/* 345 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {/** @jsx React.DOM */var React = __webpack_require__(56);
-	var Backbone = __webpack_require__(217);
+
+	//This sets the input and saves the comment to the api. This also updates comments in realtime.
 
 	var CommentInput = React.createClass({displayName: "CommentInput",
 
@@ -43499,7 +42531,7 @@
 				e.preventDefault();
 				var props=this.props;
 				var Comment = Backbone.Model.extend({
-				url:'https://safe-brook-9891.herokuapp.com/api/comments/?group=1',
+				url:'https://safe-brook-9891.herokuapp.com/api/comments/',
 				initialize: function() {}
 
 			});
@@ -43529,6 +42561,7 @@
 			},
 
 		render:function() {
+			
 			return(React.createElement("form", {onSubmit: this._submit}, 
 						React.createElement("input", {className: "commentField", onChange: this._onChange, placeholder: "Add a comment"})
 					)
@@ -43541,16 +42574,19 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(215)))
 
 /***/ },
-/* 354 */
+/* 346 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(56);
-	var LikeBtn = __webpack_require__(355);
-	var Store = __webpack_require__(290)
+	var LikeBtn = __webpack_require__(347);
+	var Store = __webpack_require__(244)
+
+	//Renders the comments and passes the username of the user who make the comment.
+	//A like button is rendered here as well...A count is passed and an id as props.
 	var Comment = React.createClass({displayName: "Comment",
 
 		render:function(){
-			console.log('this.props.data',this.props.data)
+
 			var test=this.props.data.map(function(obj){
 				return(
 					React.createElement("p", {className: "commentBox", key: obj.id}, 
@@ -43569,11 +42605,13 @@
 
 
 /***/ },
-/* 355 */
+/* 347 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(56);
-	var Store = __webpack_require__(290)
+	var Store = __webpack_require__(244);
+
+	//renders the like button and submits the count to memory. User can only like a comment once.
 	var LikeBtn = React.createClass({displayName: "LikeBtn",
 		getInitialState: function() {
 			return({
@@ -43633,7 +42671,7 @@
 	module.exports= LikeBtn;
 
 /***/ },
-/* 356 */
+/* 348 */
 /***/ function(module, exports) {
 
 	// Generated by CoffeeScript 1.6.3
@@ -43730,83 +42768,11 @@
 
 
 /***/ },
-/* 357 */
+/* 349 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var React = __webpack_require__(56);
-	var UserList = __webpack_require__(358);
-	var GroupLeft = React.createClass({displayName: "GroupLeft",
-		render:function(){
-			return(
-				React.createElement("div", {id: "groupLeft"}, 
-					React.createElement(UserList, {users: this.props.users, router: this.props.router, posts: this.props.posts, groupList: this.props.groupList})
-				)
-				)
-		}
-	});
-
-	module.exports = GroupLeft;
-
-/***/ },
-/* 358 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/** @jsx React.DOM */var React = __webpack_require__(56);
-	var User = __webpack_require__(359);
-	var UserList = React.createClass({displayName: "UserList",
-		
-		render:function() {
-			var props=this.props;
-			
-				return(
-					React.createElement("div", {id: "userListContainer"}, 
-					React.createElement("h2", {id: "members"}, "Members"), 
-					React.createElement("ul", {id: "userListUl"}, 
-						this.props.groupList.map(function(obj){
-							return(
-								React.createElement(User, {key: obj.id, username: obj.username, id: obj.id, router: props.router}))
-						})
-					)
-					)
-					)
-		}
-	});
-
-	module.exports = UserList;
-
-
-/***/ },
-/* 359 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/** @jsx React.DOM */var React = __webpack_require__(56);
-
-	var User = React.createClass({displayName: "User",
-		_profileNav: function() {
-			var router = this.props.router;
-			var userId=this.props.id;
-			router.navigate('userView/'+ userId , {trigger:true});
-		},
-		render:function() {
-			var props=this.props;
-				return(
-					React.createElement("div", null, 
-						React.createElement("li", {className: "userListBtn", value: this.props.id, onClick: this._profileNav}, this.props.username)
-					)
-				)
-
-		}
-	});
-
-	module.exports = User;
-
-
-/***/ },
-/* 360 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/** @jsx React.DOM */var React = __webpack_require__(56);
-	var SearchUsers = __webpack_require__(294);
+	var SearchUsers = __webpack_require__(240);
 
 	var NavGroupView = React.createClass({displayName: "NavGroupView",
 
@@ -43815,13 +42781,19 @@
 			var router =this.props.router;
 			router.navigate('profile/' + this.props.username, {trigger:true});
 		},
+		//logic to render specific pictures based on theme 
 		render:function(){
 
 			return(React.createElement("div", null, 
-						React.createElement("div", {id: "navContainerUser"}, 
-							React.createElement("ul", {id: "navUlUser"}, 
-								React.createElement("li", null, "UpgrAID "), 
-								React.createElement("li", {onClick: this._profileNav}, "MyProfile")
+						React.createElement("div", {className: "navContainer"}, 
+							React.createElement("ul", {id: "navUlGroup"}, 
+								React.createElement("li", {className: "logo"}, "UpgrAID "), 
+								React.createElement("li", {className: "mainLi", onClick: this._profileNav}, "MyProfile"), 
+								React.createElement("li", {className: "searchBar"}, React.createElement(SearchUsers, {
+									users: [], 
+									doSearch: [], 
+									query: [], 
+									router: this.props.router}))
 							)
 
 						), 
@@ -43848,7 +42820,63 @@
 
 
 /***/ },
-/* 361 */
+/* 350 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/** @jsx React.DOM */var React = __webpack_require__(56);
+	var User = __webpack_require__(351);
+	//renders and contains members in a group username and ids are passed to route user to respective profiles.
+	var UserList = React.createClass({displayName: "UserList",
+		
+		render:function() {
+			var props=this.props;
+			
+				return(
+					React.createElement("div", {id: "userListContainer"}, 
+					React.createElement("h2", {id: "members"}, "Members"), 
+					React.createElement("ul", {id: "userListUl"}, 
+						this.props.groupList.map(function(obj){
+							return(
+								React.createElement(User, {key: obj.id, username: obj.username, id: obj.id, router: props.router}))
+						})
+					)
+					)
+					)
+		}
+	});
+
+	module.exports = UserList;
+
+
+/***/ },
+/* 351 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/** @jsx React.DOM */var React = __webpack_require__(56);
+
+	//renders a button for each member in a group. Navigates user to user profiles.
+	var User = React.createClass({displayName: "User",
+		_profileNav: function() {
+			var router = this.props.router;
+			var userId=this.props.id;
+			router.navigate('userView/'+ userId , {trigger:true});
+		},
+		render:function() {
+			var props=this.props;
+				return(
+					React.createElement("div", null, 
+						React.createElement("li", {className: "userListBtn", value: this.props.id, onClick: this._profileNav}, this.props.username)
+					)
+				)
+
+		}
+	});
+
+	module.exports = User;
+
+
+/***/ },
+/* 352 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -47839,25 +46867,26 @@
 
 
 /***/ },
-/* 362 */
+/* 353 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {/** @jsx React.DOM */var React = __webpack_require__(56);
 
-
+	//this is the chat application using pusher. On submit of a chat message, a channel, event name,
+	//message and group name are passed to the api. A trigger then gets sent to pusher which sends the data back to the app.
+	//The chat app hides and shows on click of header.
 	var PusherChat = React.createClass({displayName: "PusherChat",
-		
+
 		getInitialState: function() {
 			return({
 				newChat: this.props.chat,
-				hidden: false
+				hidden: true
 					})
 		},
+		//toggle display of chat window
 		_hide:function(){
-			this.setState({hidden:true});
-			if(this.state.hidden===true){
-				this.setState({hidden:false})
-			}
+			this.setState({hidden: !this.state.hidden});
+
 		},
 		_submit: function(e) {
 			e.preventDefault();
@@ -47884,7 +46913,7 @@
 					$('#chatInput').val('')
 				}
 			})
-			
+
 		},
 		render: function() {
 
@@ -47899,7 +46928,7 @@
 								return(React.createElement("p", {className: "message", key: obj.id}, React.createElement("span", {className: "userNameChat"}, obj.user), obj.message))
 							})
 								), 
-						
+
 								React.createElement("form", {onSubmit: this._submit}, 
 									React.createElement("input", {id: "chatInput", placeholder: "Chat here"})
 								)

@@ -155,7 +155,8 @@
 #userChoice {
   border-bottom: 1px solid #ebebeb;
   padding-left: 55px;
-  color: #3b6bb8
+  color: #3b6bb8;
+  position:relative;
 }
 
 .allUsers {

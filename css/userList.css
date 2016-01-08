@@ -52,6 +52,13 @@
     color: #fff;
 }
 
+.avatarUserList {
+    width: 38px;
+    position: absolute;
+    left: 7px;
+    top: -7px;
+}
+
 .userListBtn:hover {
 	background: #004a72;
 	color:#fff;

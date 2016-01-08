@@ -1,14 +1,7 @@
 var React = require('react');
 var Nav = require('../nav/nav.jsx');
-var Greeting =require('./greeting.jsx');
-var GoalListApp = require('./goalList/goalListApp.jsx');
-var Friends = require('./friends/friends.jsx');
-var Group = require('./groups/groups.jsx');
-var AvatarRankXp = require('./avatarRankXp/avatarRankXp.jsx');
-var FriendRequest = require('./friends/friendRequest.jsx');
 var Store= require('../../store.js');
 var ProfilePostApp = require('./profilePost/profilePostApp.jsx');
-var Badges = require('./badges/badges.jsx');
 var MessageApp = require('./messaging/messageApp.jsx');
 var ProfileLeft = require('./profileLeft.jsx');
 var ProfileRight = require('./profileRight.jsx');
