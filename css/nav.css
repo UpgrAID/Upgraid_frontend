@@ -1,5 +1,5 @@
 
-#navContainer {
+.navContainer {
     top: 0;
     left: 0;
     z-index: 1000;
@@ -10,16 +10,7 @@
     background-color: #033A4C;
 }
 
-#navContainerGroup {
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    /*width: 1075px;*/
-    margin: auto;
-    position: relative;
-    height: 50px;
-    background-color: #033A4C;
-}
+
 .header {
     height: 205px;
     width: 950px;
@@ -72,11 +63,11 @@
 
 }
 
-.mailLi:hover .mainLi {
+.mainLi:hover{
   color:#34BAD9;
   cursor: pointer;
 }
-#navUl .logo {
+ .logo {
     margin-left: 15px;
     display: inline-block;
     color: #34BAD9;
@@ -86,26 +77,7 @@
     left: 0;
     padding-right: 5px;
 }
-#navUlGroup .logo {
-    margin-left: 15px;
-    display: inline-block;
-    color: #34BAD9;
-    position: absolute;
-    font-size: 22px;
-    top:4px;
-    left: 0;
-    padding-right: 5px;
-}
-#navUlUser .logo {
-    margin-left: 15px;
-    display: inline-block;
-    color: #34BAD9;
-    position: absolute;
-    font-size: 22px;
-    top:4px;
-    left: 0;
-    padding-right: 5px;
-}
+
 
 #navUlGroup {
   margin: 0;
@@ -127,7 +99,7 @@
 }
 #friendRequestsHeader {
     color: #fff;
-    background: #006d72;
+    background: #1e586e;
     margin: 0;
     text-align: center;
 }

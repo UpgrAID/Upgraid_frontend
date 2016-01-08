@@ -12,7 +12,7 @@ var NavGroupView = React.createClass({
 	render:function(){
 
 		return(<div>
-					<div id='navContainerGroup'>
+					<div className='navContainer'>
 						<ul id="navUlGroup">
 							<li className="logo">UpgrAID </li>
 							<li className="mainLi"onClick={this._profileNav}>MyProfile</li>

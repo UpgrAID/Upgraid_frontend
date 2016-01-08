@@ -23,9 +23,7 @@
     background: #eff;
     text-align: center;
 }
-/*#setGoal {
-	margin:0;
-}*/
+
 
 #listContain {
 	height: 317px;
@@ -50,9 +48,10 @@
 #friendRequests {
 	color: #2A8889;
     margin-left: 10px;
-    /* height: 200px; */
+    height: 200px; 
     width: 230px;
     padding-bottom: 8px;
+    top:36px;
     position: absolute;
     right:16px;
 }

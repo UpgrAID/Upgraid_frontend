@@ -29,6 +29,7 @@ var ViewMessage = React.createClass({
 			success:function(resp){
 				_.extend(Store.data,{messageList:resp.toJSON()});
 				that._update();
+				
 			}
 		})
 	},

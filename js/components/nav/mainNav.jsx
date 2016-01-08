@@ -10,7 +10,7 @@ var MainNav = React.createClass({
 	//input for search, button to send friend request
 	render:function(){
 		return(
-			<div id='navContainer'>
+			<div className='navContainer'>
 				<div id="navContain">
 				<ul id="navUl">
 					<li className="logo"> UpgrAID</li>

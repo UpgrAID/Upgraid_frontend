@@ -26,7 +26,7 @@ var Nav = React.createClass({
 	render:function(){
 		return(<div>
 
-				<div id='navContainer'>
+				<div className='navContainer'>
 					<div id="navContain">
 					<ul id="navUl">
 						<li className="logo"> UpgrAID</li>

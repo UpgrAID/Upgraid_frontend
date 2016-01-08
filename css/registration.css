@@ -1,6 +1,6 @@
 #registrationContainer {
     width: 500px;
-    height: 396px;
+    height: 406px;
     background: #fff;
     position: absolute;
     left: 50%;
@@ -14,6 +14,8 @@
 
 #close {
 	position: absolute;
+   
+    width:15px;
 	right:3px;
 	top:3px;
 }
@@ -33,14 +35,15 @@
     color: #fff;
     margin: 0;
     margin-bottom: 15px;
-    background: #00C5CD;
+    padding-bottom: 4px;
+    background: #5EE;
 
 }
 
 #submitReg {
 	display:block;
     color: #fff;
-    background: #00F5CD;
+    background: #5EE;
     outline: none;
     border: 1px solid #F7F7F7;
     padding: 10px;

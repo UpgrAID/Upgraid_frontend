@@ -60,6 +60,8 @@ var MessageApp = React.createClass({
 				that.setState({
 					newMessage: resp.toJSON()
 				})
+
+				
 			}
 		})
 	},

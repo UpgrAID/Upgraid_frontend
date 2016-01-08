@@ -13,7 +13,7 @@ var NavUserView = React.createClass({
 	render:function(){
 
 		return(<div>
-					<div id='navContainerUser'>
+					<div className='navContainer'>
 						<ul id="navUlUser">
 							<li className="logo">UpgrAID</li>
 							<li className="mainLi" onClick={this._profileNav}>MyProfile</li>

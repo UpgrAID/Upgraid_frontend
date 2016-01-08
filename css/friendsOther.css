@@ -1,5 +1,5 @@
 #friendsContainerUser {
-    height: 352px;
+    height:434px;
     width: 300px;
     position: absolute;
     top: 420px;
@@ -30,6 +30,11 @@
 }
 
 .friendUser {
-    width:301px;
-    outline:0;
+    width: 85px;
+    height:34px;
+    display: block;
+    border: none;
+    background: #1f667e;
+    color: #fff;
+    outline: 0;
 }
