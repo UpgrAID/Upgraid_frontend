@@ -13,6 +13,7 @@ var PostButtons = React.createClass({
 	getInitialState: function(e) {
 		return {value: "", themeName: null}
 	},
+	//assigns theme names to post buttons to assign posts to groups
 	componentWillMount: function(){
 		switch(this.props.theme){
 			case 1:

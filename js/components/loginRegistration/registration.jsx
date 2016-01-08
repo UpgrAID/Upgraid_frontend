@@ -4,7 +4,7 @@ var Reg = require('../../models/registration');
 var test = new Reg();
 
 var Registration = React.createClass({
-
+  //sets registration values
         _regSubmit: function(e) {
         var props = this.props;
         e.preventDefault();
@@ -20,7 +20,7 @@ var Registration = React.createClass({
         }
        })
     },
-
+//hides registration window
     _close: function() {
       this.props.hide();
     },

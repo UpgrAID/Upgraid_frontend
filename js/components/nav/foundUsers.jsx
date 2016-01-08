@@ -5,6 +5,7 @@ var FoundUsers = React.createClass({
 		var router =this.props.router;
 		router.navigate('userView/' + this.props.id, {trigger:true});
 	},
+	//navigates to clicked user in search window
 	render:function() {
 
 		return(<div id="userChoice"><p value={this.props.id} onClick={this._nav}>{this.props.username}</p></div>)

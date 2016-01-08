@@ -6,6 +6,7 @@ var SearchUsers = React.createClass({
 	getIntialState: function(){
 		open: false
 	},
+	//accepts single input characters and searches for matches in user list, removing non-matches
 	_doSearch:function(){
         var query=this.refs.searchInput.value; // this is the search text
         this.props.doSearch(query);

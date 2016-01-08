@@ -11,7 +11,6 @@ var ProfilePostApp = React.createClass({
 		}
 	},
 	_addInput: function(collection) {
-
 			this.setState({
 			data: collection
 		})
@@ -21,24 +20,24 @@ var ProfilePostApp = React.createClass({
 		var that = this;
 		var state = this.state;
 		return(<div id="profilePostMaster">
-				
+
 				{this.props.goals.map(function(obj){
  					return(
  						<div className="inputDesContain">
 
  						<ProfileInput/>
-						<PostButtons 
-							key={obj.id} 
-							theme={obj.theme} 
-							id={obj.group} 
-							title={obj.title} 
-							addInput={that._addInput} 
-							data={state.data} 
+						<PostButtons
+							key={obj.id}
+							theme={obj.theme}
+							id={obj.group}
+							title={obj.title}
+							addInput={that._addInput}
+							data={state.data}
 							router={props.router}/>
 						</div>
 					)
  					})}
-				
+
 			</div>)
 	}
 });

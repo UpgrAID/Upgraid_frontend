@@ -6,6 +6,7 @@ var Badges = React.createClass({
 			data: []
 		})
 	},
+	//retrieve award/badge date from api
 	componentWillMount: function() {
 	var that = this;
 	var Badge = Backbone.Model.extend({
@@ -19,7 +20,7 @@ var Badges = React.createClass({
 
 			BadgeCollection.fetch({
 				success:function(resp){
-				
+
 					that.setState({
 						data:resp.toJSON()
 					})

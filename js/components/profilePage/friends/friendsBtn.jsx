@@ -1,11 +1,12 @@
 var React = require('react');
 
+//navigates to userView on click of user
 var FriendsBtn = React.createClass({
 	_profileNav: function(e) {
 		var router = this.props.router;
 		e.preventDefault();
 		var userId = this.props.id;
-		
+
 		router.navigate('userView/'+ userId , {trigger:true})
 	},
 	render:function(){

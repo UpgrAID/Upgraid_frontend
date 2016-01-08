@@ -1,5 +1,6 @@
 var React = require('react');
 
+//sends posts to userView page
 var OtherPosts = React.createClass({
 	render: function() {
 		var test=this.props.posts.map(function(obj){

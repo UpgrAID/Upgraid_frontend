@@ -9,6 +9,7 @@ var Nav = React.createClass({
 	getInitialState: function() {
 		return({quote: ''})
 	},
+	//quote generator for profile page
 	componentWillMount: function() {
 
 		function getRandomInt(min, max) {
@@ -21,6 +22,7 @@ var Nav = React.createClass({
 			quote: RandomQuote
 		});
 	},
+	//search bar and friend request send
 	render:function(){
 		return(<div>
 
@@ -30,10 +32,10 @@ var Nav = React.createClass({
 						<li className="logo"> UpgrAID</li>
 						<li className="mainLi" onClick={this._profileNav}> MyProfile</li>
 						<li className="searchBar">
-							<SearchUsers 
-								users={this.props.users} 
-								doSearch = {this.props.doSearch} 
-								query={this.props.query} 
+							<SearchUsers
+								users={this.props.users}
+								doSearch = {this.props.doSearch}
+								query={this.props.query}
 								router={this.props.router}/>
 						</li>
 						<li id="friendLi" className="mainLi">

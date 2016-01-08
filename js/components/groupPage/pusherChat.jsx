@@ -9,6 +9,7 @@ var PusherChat = React.createClass({
 			hidden: true
 				})
 	},
+	//toggle display of chat window
 	_hide:function(){
 		this.setState({hidden: !this.state.hidden});
 

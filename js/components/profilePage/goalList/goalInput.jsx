@@ -1,7 +1,6 @@
 var React = require('react');
-var RadioButton = require('material-ui/lib/radio-button');
-var RadioButtonGroup = require('material-ui/lib/radio-button-group');
 
+//sets and uploads new user goals
 var GoalInput = React.createClass({
 
 	getInitialState: function(e) {

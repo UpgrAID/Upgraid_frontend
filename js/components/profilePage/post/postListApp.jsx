@@ -10,8 +10,8 @@ var PostListApp = React.createClass({
 
 		}
 	},
-	_addInput: function(collection) {
-
+	//callback function for post input
+		_addInput: function(collection) {
 			this.setState({
 			posts: collection
 		})
