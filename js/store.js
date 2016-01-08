@@ -24,6 +24,10 @@ var Store = {
 					avatar: 1
 				}
 		}
+	},
+	nav: {
+		allusers: null,
+		filter: null,
 	}
 };
 

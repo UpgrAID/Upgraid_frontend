@@ -23,15 +23,26 @@ var Nav = React.createClass({
 	},
 	render:function(){
 		return(<div>
-				<MainNav  
-					username={this.props.username}
-					router={this.props.router}
-					users={this.props.users} 
-					doSearch = {this.props.doSearch} 
-					query={this.props.query} 
-					router={this.props.router} 
-					userId={this.props.userId} 
-					fromAll={this.props.fromAll}/>
+
+				<div id='navContainer'>
+					<div id="navContain">
+					<ul id="navUl">
+						<li className="logo"> UpgrAID</li>
+						<li className="mainLi" onClick={this._profileNav}> MyProfile</li>
+						<li className="searchBar">
+							<SearchUsers 
+								users={this.props.users} 
+								doSearch = {this.props.doSearch} 
+								query={this.props.query} 
+								router={this.props.router}/>
+						</li>
+						<li id="friendLi" className="mainLi">
+							<span id="square" className='entypo-users'></span>
+							<FriendRequest userId={this.props.userId} fromAll={this.props.fromAll}/>
+						</li>
+					</ul>
+					</div>
+				</div>
 
 				<div className="header"><Quote quote={this.state.quote}/></div>
 				</div>)
