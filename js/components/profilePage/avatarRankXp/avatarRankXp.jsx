@@ -13,6 +13,7 @@ var AvatarRankXp = React.createClass({
 			value: 1
 		})
 	},
+	//show/hide avatar selection window
 	_show:function(){
 		this.setState({
 			hidden: false
@@ -30,11 +31,11 @@ var AvatarRankXp = React.createClass({
 		})
 	},
 	render:function() {
-		
+
 		return(<div id="avatarRankXpContainer">
 				<div id="avatarDiv">
 				<div id="picture"><img className="avatarImg" onClick={this._show} src={'../../../assets/avatar'+this.state.avatar+'.png'}/></div>
-					
+
 					{(this.props.rank=== 1 ? <span id="rank1">Novice</span> : null)}
 					{(this.props.rank=== 2 ? <span id="rank2">JourneyMan</span> : null)}
 					{(this.props.rank=== 3 ? <span id="rank3">Mentor</span> : null)}

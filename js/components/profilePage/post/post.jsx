@@ -14,6 +14,7 @@ var Post = React.createClass({
 			postedAt: this.props.posted
 		}
 	},
+	//sets 'timeago-words' value for post date/time
 	componentWillMount: function(){
 		var dateObj = new Date(this.props.posted)
 		this.setState({postedAt: Timeago(dateObj)});
@@ -32,7 +33,7 @@ var Post = React.createClass({
 				var PostCollection = Backbone.Collection.extend({
 					model: Post
 			});
-
+		//sets re-render of post list afer delete
 		var collection = new PostCollection(this.props.posts);
 		var item = collection.get(props.id);
 		item.destroy({
@@ -63,5 +64,3 @@ var Post = React.createClass({
 });
 
 module.exports = Post;
-
-

@@ -1,5 +1,6 @@
 var React = require('react');
 
+//display earned user badges
 var BadgeCount = React.createClass({
 	render:function(){
 		return(

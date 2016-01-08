@@ -7,6 +7,7 @@ var MainNav = React.createClass({
 		var router =this.props.router;
 		router.navigate('profile/' + this.props.username, {trigger:true});
 	},
+	//input for search, button to send friend request
 	render:function(){
 		return(
 			<div id='navContainer'>

@@ -9,7 +9,7 @@ var LoginRegApp = React.createClass({
 			hidden: true
 		});
 	},
-
+//show/hide registration window
 	_show: function(){
 		this.setState({
 			hidden:false
@@ -23,6 +23,7 @@ var LoginRegApp = React.createClass({
 		});
 		console.log('test')
 	},
+	//fades to profile page
 	_hideBigPic: function(){
 		$('#bigPic').fadeOut(1000);
 	},

@@ -10,7 +10,7 @@ var PostCollection = Backbone.Collection.extend({
 		});
 
 var PostInput = React.createClass({
-
+// sends inputed posts to backend
 	_submit: function(e) {
 			e.preventDefault();
 			var props=this.props;

@@ -18,6 +18,7 @@ var Login = React.createClass({
 		var username = $("#username").val();
 		var password = $("#password").val();
 
+		//intial ajax call to set authorization token for future api requests
 		$.ajax({
 			url:'https://safe-brook-9891.herokuapp.com/api/api-token-auth/',
 			method:'POST',
@@ -33,6 +34,7 @@ var Login = React.createClass({
 		})
 
 	},
+	// opens user registration window
 	 _reg: function(e) {
 	 	e.preventDefault();
 	 	this.props.show();
@@ -78,7 +80,7 @@ var Login = React.createClass({
 module.exports= Login;
 
 function setToken(token) {
-
+//Backbone.sync to set/save auth token for future api calls
 	var _sync = Backbone.sync;
 	Backbone.sync = function(post,model,options) {
 

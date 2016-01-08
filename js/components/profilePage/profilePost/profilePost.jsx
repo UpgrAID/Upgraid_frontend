@@ -30,14 +30,14 @@ var ProfilePost = React.createClass({
 			}
 		})
 	},
-
+//Material UI cards for post rendering
 	render: function() {
 
 		return(
 			<div className="postContainer">
 					<Card>
 						<CardHeader
-							style={{background: '#f7f7f7'}} 
+							style={{background: '#f7f7f7'}}
 							title={this.props.title}
       				avatar="../../../../assets/avatar.png"/>
 						<CardText>{this.props.description}</CardText>

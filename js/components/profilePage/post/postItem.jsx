@@ -2,7 +2,7 @@ var React = require('react');
 var Post = require('./post.jsx');
 
 var PostItem = React.createClass({
-
+//maps and displays individual posts
 	render: function() {
 		var props=this.props;
 			return(<div id="postContainer">

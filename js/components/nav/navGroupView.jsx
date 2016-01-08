@@ -8,6 +8,7 @@ var NavGroupView = React.createClass({
 		var router =this.props.router;
 		router.navigate('profile/' + this.props.username, {trigger:true});
 	},
+	//logic to render specific pictures based on theme 
 	render:function(){
 
 		return(<div>
@@ -16,9 +17,9 @@ var NavGroupView = React.createClass({
 							<li className="logo">UpgrAID </li>
 							<li className="mainLi"onClick={this._profileNav}>MyProfile</li>
 							<li className="searchBar"><SearchUsers
-								users={[]} 
-								doSearch = {[]} 
-								query={[]}  
+								users={[]}
+								doSearch = {[]}
+								query={[]}
 								router={this.props.router}/></li>
 						</ul>
 

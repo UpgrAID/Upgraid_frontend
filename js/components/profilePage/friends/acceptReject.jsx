@@ -3,9 +3,9 @@ var Backbone = require('backbone');
 
 
 var AcceptReject = React.createClass({
-
+//logic to accept/reject friend requests --sets state of 'accepted:' and updates friends api endpoint
 	_handleAccept: function(event){
-
+//accept friend
 		event.preventDefault();
 		var FriendAccept = Backbone.Model.extend({
 			url:'https://safe-brook-9891.herokuapp.com/api/friends/' + this.props.requester.id
@@ -21,7 +21,7 @@ var AcceptReject = React.createClass({
 		Faccept.save();
 
 	},
-
+//decline friend
 	_handleDecline: function(event){
 		event.preventDefault();
 		var FriendDecline = Backbone.Model.extend({
@@ -31,7 +31,7 @@ var AcceptReject = React.createClass({
 		Fdecline.set({
 			id: this.props.requester.id,
 			from_friend: this.props.requester.from_friend,
-			to_friend: this.props.userId,			
+			to_friend: this.props.userId,
 			accepted: false
 		});
 		Fdecline.save();
