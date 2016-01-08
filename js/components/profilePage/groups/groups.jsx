@@ -1,6 +1,8 @@
 var React = require('react');
 var GroupsBtn = require('./groupsBtn.jsx');
 
+
+//renders buttons which are links to groups based on how many goals they have.
 var Groups = React.createClass({
 	render: function(){
 		var props = this.props;

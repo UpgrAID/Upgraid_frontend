@@ -3,6 +3,9 @@ var FriendList = require('./friendList.jsx');
 var ToFriendList = require('./toFriendList.jsx');
 var ViewMessage = require('./viewMessage.jsx');
 
+
+//renders the message app which pulls the friends a user has and enables 
+//them to send a private message. User can toggle the message app from hidden to shown.
 var MessageApp = React.createClass({
 	getInitialState: function(){
 		return({

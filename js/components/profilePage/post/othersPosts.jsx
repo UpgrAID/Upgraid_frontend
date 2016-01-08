@@ -11,7 +11,7 @@ var OtherPosts = React.createClass({
 
 
 				return(<div id="otherPostsContainer">
-							<h2>{this.props.theirName}'s Posts</h2>
+							<h2>{this.props.theirName}&39#;s Posts</h2>
 							{test}
 						</div>)
 	}

@@ -1,4 +1,7 @@
 var React = require('react');
+
+//displays fromfriend button on messaging friendselect is a function 
+//which passes the friends id to the message model.
 var FriendList = React.createClass({
 
 	render:function(){

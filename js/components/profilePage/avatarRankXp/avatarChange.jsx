@@ -1,5 +1,10 @@
 var React = require('react');
-var Store = require('../../../store.js')
+var Store = require('../../../store.js');
+
+//avatars can be selected by clicking on the respective images.
+//onclick a function is called which updates the avatar.
+//avatar submit sends the state up to the api.
+//this modal is hidden until one hits the avatar on their profile.
 var AvatarChange = React.createClass({
 	getInitialState: function(){
 		return({
@@ -10,14 +15,10 @@ var AvatarChange = React.createClass({
 	
 	_update:function(e){
 		this.props.hide()
-		console.log('obId',Store.data.objectId)
 		$.ajax({
 			url:'https://safe-brook-9891.herokuapp.com/api/profiles/'+ Store.data.objectId,
 			method:'PUT',
 			data: {avatar: e.target.value }
-		}).then(function(resp){
-
-			console.log(resp)
 		})
 
 	},

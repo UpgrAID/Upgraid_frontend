@@ -1,5 +1,6 @@
 var React = require('react');
 var User = require('./user.jsx');
+//renders and contains members in a group username and ids are passed to route user to respective profiles.
 var UserList = React.createClass({
 	
 	render:function() {

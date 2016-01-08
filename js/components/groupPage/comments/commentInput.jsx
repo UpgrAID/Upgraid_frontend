@@ -1,5 +1,6 @@
 var React = require('react');
-var Backbone = require('backbone');
+
+//This sets the input and saves the comment to the api. This also updates comments in realtime.
 
 var CommentInput = React.createClass({
 
@@ -18,7 +19,7 @@ var CommentInput = React.createClass({
 			e.preventDefault();
 			var props=this.props;
 			var Comment = Backbone.Model.extend({
-			url:'https://safe-brook-9891.herokuapp.com/api/comments/?group=1',
+			url:'https://safe-brook-9891.herokuapp.com/api/comments/',
 			initialize: function() {}
 
 		});
@@ -48,6 +49,7 @@ var CommentInput = React.createClass({
 		},
 
 	render:function() {
+		
 		return(<form onSubmit={this._submit}>
 					<input className="commentField" onChange={this._onChange} placeholder="Add a comment"/>
 				</form>

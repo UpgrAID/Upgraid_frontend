@@ -1,5 +1,6 @@
 var React = require('react');
 
+//renders a button for each member in a group. Navigates user to user profiles.
 var User = React.createClass({
 	_profileNav: function() {
 		var router = this.props.router;

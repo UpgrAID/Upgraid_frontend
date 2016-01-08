@@ -1,12 +1,12 @@
 var React = require('react');
 var PostListApp = require('../profilePage/post/PostListApp.jsx');
-var GroupLeft = require('./groupLeft.jsx')
 var Nav = require('../nav/nav.jsx');
 var NavGroupView = require('../nav/navGroupView.jsx');
 var ProfileLeft = require('../profilePage/profileLeft.jsx');
 var UserList = require('./userList/userList.jsx')
 var Store = require('../../store.js');
 
+//renders the group app: contains profile left(a persistent nav) group posts and a list of members.
 var GroupApp = React.createClass({
 	getInitialState: function() {
 		return({
@@ -16,7 +16,7 @@ var GroupApp = React.createClass({
 		})
 	},
 	_groupList: function(groupUserList, theme) {
-		console.log(groupUserList);
+		
 		this.setState({
 			groupList: groupUserList,
 			theme: theme
@@ -44,7 +44,7 @@ var GroupApp = React.createClass({
 		})
 	},
 	render:function() {
-		console.log('t', this.state.theme);
+		
 		return(
 			<div>
 				<NavGroupView

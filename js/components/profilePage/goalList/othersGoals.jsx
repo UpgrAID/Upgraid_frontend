@@ -1,5 +1,6 @@
 var React = require('react');
 
+//displays other users goals.
 var OtherGoals = React.createClass({
 	render:function(){
 
@@ -7,7 +8,7 @@ var OtherGoals = React.createClass({
 			return(<p className="otherGoalsP" key={obj.id}>{obj.title}</p>)
 	})
 		return(<div id="otherGoalsContainer">
-			<h2 id="otherGoals">{this.props.theirName}'s Goals</h2>
+			<h2 id="otherGoals">{this.props.theirName}&#39;s Goals</h2>
 			{test}
 			</div>)
 	}

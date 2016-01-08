@@ -2,6 +2,7 @@ var React = require('react');
 var CommentInput = require('./commentInput.jsx');
 var Comment = require('./comment.jsx');
 
+//An input and the comments are rendered to each post. This is applied to all posts.
 var CommentApp = React.createClass({
 	getInitialState: function () {
 		return {

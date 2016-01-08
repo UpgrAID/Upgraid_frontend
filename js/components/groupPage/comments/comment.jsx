@@ -1,10 +1,13 @@
 var React = require('react');
 var LikeBtn = require('./likeBtn.jsx');
 var Store = require('../../../store.js')
+
+//Renders the comments and passes the username of the user who make the comment.
+//A like button is rendered here as well...A count is passed and an id as props.
 var Comment = React.createClass({
 
 	render:function(){
-		console.log('this.props.data',this.props.data)
+
 		var test=this.props.data.map(function(obj){
 			return(
 				<p className="commentBox" key={obj.id}>

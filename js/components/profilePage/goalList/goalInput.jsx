@@ -1,7 +1,9 @@
 var React = require('react');
 var RadioButton = require('material-ui/lib/radio-button');
-var RadioButtonGroup = require('material-ui/lib/radio-button-group');
 
+//renders goal input a theme and title are sent to api.
+//on success of goal creation, users are routed to group 
+//page with other people with similiar goals.
 var GoalInput = React.createClass({
 
 	getInitialState: function(e) {

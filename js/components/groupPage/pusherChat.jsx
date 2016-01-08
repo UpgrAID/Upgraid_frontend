@@ -1,6 +1,8 @@
 var React = require('react');
 
-
+//this is the chat application using pusher. On submit of a chat message, a channel, event name,
+//message and group name are passed to the api. A trigger then gets sent to pusher which sends the data back to the app.
+//The chat app hides and shows on click of header.
 var PusherChat = React.createClass({
 
 	getInitialState: function() {

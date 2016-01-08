@@ -1,5 +1,7 @@
 var React = require('react');
-var Store = require('../../../store.js')
+var Store = require('../../../store.js');
+
+//renders the like button and submits the count to memory. User can only like a comment once.
 var LikeBtn = React.createClass({
 	getInitialState: function() {
 		return({

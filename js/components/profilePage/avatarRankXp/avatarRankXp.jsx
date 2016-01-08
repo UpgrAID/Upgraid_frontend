@@ -1,5 +1,10 @@
 var React = require('react');
 var AvatarChange = require('./avatarChange.jsx');
+
+//avatars state is set here. Hide and show are called here for the avatar modal. 
+//_change previews the avatar for the user.
+//rank and experience is displayed here as well.
+//ternary displays the correct rank xp of the user.
 var AvatarRankXp = React.createClass({
 	getInitialState:function(){
 		return({

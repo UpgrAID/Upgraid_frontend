@@ -1,5 +1,7 @@
 var React = require('react');
 
+
+//renders the button with goal name.
 var GroupsBtn = React.createClass({
 	getInitialState: function(){
 		return {

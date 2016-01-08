@@ -1,6 +1,8 @@
 var React = require('react');
 var Store = require('../../../store.js')
 
+
+//users sees all private messages he sent and received. Updates in realtime.
 var ViewMessage = React.createClass({
 	getInitialState: function(){
 		return({
